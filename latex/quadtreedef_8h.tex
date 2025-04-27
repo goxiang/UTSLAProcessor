@@ -1,0 +1,117 @@
+\doxysection{Scan\+Lines\+Sortor/quadtreedef.h 文件参考}
+\hypertarget{quadtreedef_8h}{}\label{quadtreedef_8h}\index{ScanLinesSortor/quadtreedef.h@{ScanLinesSortor/quadtreedef.h}}
+{\ttfamily \#include $<$QSet$>$}\newline
+{\ttfamily \#include $<$QMap$>$}\newline
+{\ttfamily \#include $<$QVector$>$}\newline
+{\ttfamily \#include $<$Qt\+Global$>$}\newline
+{\ttfamily \#include $<$QShared\+Pointer$>$}\newline
+{\ttfamily \#include "{}bpccommon.\+h"{}}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_m_pt_info}{MPt\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}}
+\item 
+struct \mbox{\hyperlink{struct_end_node}{End\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_search_result}{Search\+Result}}
+\item 
+struct \mbox{\hyperlink{struct_node_searcher}{Node\+Searcher}}
+\item 
+struct \mbox{\hyperlink{struct_m_quad_tree}{MQuad\+Tree}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{quadtreedef_8h_abd248dfeac0c8ce81036f413b893110d}{POPO}}~0.\+01
+\item 
+\#define \mbox{\hyperlink{quadtreedef_8h_a38521aa912493bb69f2ea39865729462}{Max\+Depths}}~16
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef QShared\+Pointer$<$ \mbox{\hyperlink{struct_m_pt_info}{MPt\+Info}} $>$ \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16}{Node\+Type}} \{ \newline
+\mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16adb45120aafd37a973140edee24708065}{LEFT}} = 0x0001
+, \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16aec8379af7490bb9eaaf579cf17876f38}{RIGHT}} = 0x0010
+, \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16aba595d8bca8bc5e67c37c0a9d89becfa}{UP}} = 0x0100
+, \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a9b0b4a95b99523966e0e34ffdadac9da}{DOWN}} = 0x1000
+, \newline
+\mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd}{UL}} = UP \texorpdfstring{$\vert$}{|} LEFT
+, \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a48f352c6b2ee876ca2d402ba78b3646b}{UR}} = UP \texorpdfstring{$\vert$}{|} RIGHT
+, \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a4e833cccfa9ee34732424662a9b3513e}{DL}} = DOWN \texorpdfstring{$\vert$}{|} LEFT
+, \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a5dbd956e60d5dc6c0ad15606e75b5459}{DR}} = DOWN \texorpdfstring{$\vert$}{|} RIGHT
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{quadtreedef_8h_a38521aa912493bb69f2ea39865729462}\index{quadtreedef.h@{quadtreedef.h}!MaxDepths@{MaxDepths}}
+\index{MaxDepths@{MaxDepths}!quadtreedef.h@{quadtreedef.h}}
+\doxysubsubsection{\texorpdfstring{MaxDepths}{MaxDepths}}
+{\footnotesize\ttfamily \label{quadtreedef_8h_a38521aa912493bb69f2ea39865729462} 
+\#define Max\+Depths~16}
+
+\Hypertarget{quadtreedef_8h_abd248dfeac0c8ce81036f413b893110d}\index{quadtreedef.h@{quadtreedef.h}!POPO@{POPO}}
+\index{POPO@{POPO}!quadtreedef.h@{quadtreedef.h}}
+\doxysubsubsection{\texorpdfstring{POPO}{POPO}}
+{\footnotesize\ttfamily \label{quadtreedef_8h_abd248dfeac0c8ce81036f413b893110d} 
+\#define POPO~0.\+01}
+
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}\index{quadtreedef.h@{quadtreedef.h}!MPtInfoPtr@{MPtInfoPtr}}
+\index{MPtInfoPtr@{MPtInfoPtr}!quadtreedef.h@{quadtreedef.h}}
+\doxysubsubsection{\texorpdfstring{MPtInfoPtr}{MPtInfoPtr}}
+{\footnotesize\ttfamily \label{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897} 
+typedef QShared\+Pointer$<$\mbox{\hyperlink{struct_m_pt_info}{MPt\+Info}}$>$ \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}}}
+
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16}\index{quadtreedef.h@{quadtreedef.h}!NodeType@{NodeType}}
+\index{NodeType@{NodeType}!quadtreedef.h@{quadtreedef.h}}
+\doxysubsubsection{\texorpdfstring{NodeType}{NodeType}}
+{\footnotesize\ttfamily \label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16} 
+enum \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16}{Node\+Type}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!LEFT@{LEFT}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16adb45120aafd37a973140edee24708065}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16adb45120aafd37a973140edee24708065} 
+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!RIGHT@{RIGHT}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16aec8379af7490bb9eaaf579cf17876f38}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16aec8379af7490bb9eaaf579cf17876f38} 
+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!UP@{UP}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16aba595d8bca8bc5e67c37c0a9d89becfa}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16aba595d8bca8bc5e67c37c0a9d89becfa} 
+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWN@{DOWN}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!DOWN@{DOWN}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a9b0b4a95b99523966e0e34ffdadac9da}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a9b0b4a95b99523966e0e34ffdadac9da} 
+DOWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UL@{UL}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!UL@{UL}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd} 
+UL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UR@{UR}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!UR@{UR}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a48f352c6b2ee876ca2d402ba78b3646b}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a48f352c6b2ee876ca2d402ba78b3646b} 
+UR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DL@{DL}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!DL@{DL}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a4e833cccfa9ee34732424662a9b3513e}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a4e833cccfa9ee34732424662a9b3513e} 
+DL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR@{DR}!quadtreedef.h@{quadtreedef.h}}\index{quadtreedef.h@{quadtreedef.h}!DR@{DR}}}\Hypertarget{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a5dbd956e60d5dc6c0ad15606e75b5459}\label{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a5dbd956e60d5dc6c0ad15606e75b5459} 
+DR&\\
+\hline
+
+\end{DoxyEnumFields}

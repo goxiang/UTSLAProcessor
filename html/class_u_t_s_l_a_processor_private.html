@@ -1,0 +1,1244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: UTSLAProcessorPrivate类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_u_t_s_l_a_processor_private.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_u_t_s_l_a_processor_private-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">UTSLAProcessorPrivate类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="utslaprocessorprivate_8h_source.html">utslaprocessorprivate.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a42e3e18cc51ecfb4fe1385654fe539fe" id="r_a42e3e18cc51ecfb4fe1385654fe539fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42e3e18cc51ecfb4fe1385654fe539fe">UTSLAProcessorPrivate</a> (<a class="el" href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a> *)</td></tr>
+<tr class="separator:a42e3e18cc51ecfb4fe1385654fe539fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973592f44164f63c46dd401195e0f508" id="r_a973592f44164f63c46dd401195e0f508"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a973592f44164f63c46dd401195e0f508">processing</a> (const int &amp;, const int &amp;, const QJsonObject &amp;)</td></tr>
+<tr class="separator:a973592f44164f63c46dd401195e0f508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a5b7e6a21ff95215ecead0db3c968e" id="r_a84a5b7e6a21ff95215ecead0db3c968e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84a5b7e6a21ff95215ecead0db3c968e">stopBuildProcessing</a> ()</td></tr>
+<tr class="separator:a84a5b7e6a21ff95215ecead0db3c968e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4695360a0fd9af8fe114d0df2f6f3c" id="r_a9a4695360a0fd9af8fe114d0df2f6f3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4695360a0fd9af8fe114d0df2f6f3c">loadParameters</a> (const QString &amp;, const QString &amp;)</td></tr>
+<tr class="separator:a9a4695360a0fd9af8fe114d0df2f6f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a136767835fb2725962b6d238856bc939" id="r_a136767835fb2725962b6d238856bc939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a136767835fb2725962b6d238856bc939">building</a> (const int &amp;, const int &amp;)</td></tr>
+<tr class="separator:a136767835fb2725962b6d238856bc939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd1ac7a5b0b847913251c1906c178a2" id="r_acbd1ac7a5b0b847913251c1906c178a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbd1ac7a5b0b847913251c1906c178a2">buildProcessing</a> ()</td></tr>
+<tr class="separator:acbd1ac7a5b0b847913251c1906c178a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8ddb46eefb400f8d540167a740276e" id="r_a8b8ddb46eefb400f8d540167a740276e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b8ddb46eefb400f8d540167a740276e">partProcessing</a> (const int &amp;)</td></tr>
+<tr class="separator:a8b8ddb46eefb400f8d540167a740276e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57398b2dd4cf24b34dafee39b57e91a" id="r_ac57398b2dd4cf24b34dafee39b57e91a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac57398b2dd4cf24b34dafee39b57e91a">readDatas</a> (const int &amp;)</td></tr>
+<tr class="separator:ac57398b2dd4cf24b34dafee39b57e91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9adcce8c1dfff095b3e1d5d0d5ab82d5" id="r_a9adcce8c1dfff095b3e1d5d0d5ab82d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9adcce8c1dfff095b3e1d5d0d5ab82d5">calcLayerDatas</a> (const int &amp;, const int &amp;, const int &amp;, const <a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;, <a class="el" href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a> &amp;)</td></tr>
+<tr class="separator:a9adcce8c1dfff095b3e1d5d0d5ab82d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd6ce0d5de54aa5d416bf2b0b241d19" id="r_a3cd6ce0d5de54aa5d416bf2b0b241d19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cd6ce0d5de54aa5d416bf2b0b241d19">readLayerDatas</a> (const int &amp;, const int &amp;, const <a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;, <a class="el" href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a> &amp;)</td></tr>
+<tr class="separator:a3cd6ce0d5de54aa5d416bf2b0b241d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df5e72ef017efc546303f112715d5ff" id="r_a5df5e72ef017efc546303f112715d5ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5df5e72ef017efc546303f112715d5ff">getPreLayerHei</a> (const int &amp;, const int &amp;)</td></tr>
+<tr class="separator:a5df5e72ef017efc546303f112715d5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbe0429325d15d300f3708b3d0a5447" id="r_a5fbe0429325d15d300f3708b3d0a5447"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fbe0429325d15d300f3708b3d0a5447">getNextLayerHei</a> (const int &amp;, const int &amp;)</td></tr>
+<tr class="separator:a5fbe0429325d15d300f3708b3d0a5447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fb93c9f5dc3558aefed35fc1508e00" id="r_ad7fb93c9f5dc3558aefed35fc1508e00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7fb93c9f5dc3558aefed35fc1508e00">updateLayerSplicingInfo</a> ()</td></tr>
+<tr class="separator:ad7fb93c9f5dc3558aefed35fc1508e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1f0a79c0c09079e1329425db719147" id="r_ada1f0a79c0c09079e1329425db719147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada1f0a79c0c09079e1329425db719147">parsingDatas</a> (const int &amp;, QList&lt; AREAINFOPTR &gt; &amp;)</td></tr>
+<tr class="separator:ada1f0a79c0c09079e1329425db719147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef2dc274d39855958998f965c0d975d" id="r_a6ef2dc274d39855958998f965c0d975d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ef2dc274d39855958998f965c0d975d">updateProgress</a> ()</td></tr>
+<tr class="separator:a6ef2dc274d39855958998f965c0d975d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af098d565d1ac3b1178f6287eae8315ba" id="r_af098d565d1ac3b1178f6287eae8315ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af098d565d1ac3b1178f6287eae8315ba">updateProgress</a> (const double &amp;)</td></tr>
+<tr class="separator:af098d565d1ac3b1178f6287eae8315ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9734ab13f7fe584988ecc1119465aabc" id="r_a9734ab13f7fe584988ecc1119465aabc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9734ab13f7fe584988ecc1119465aabc">createJsonResult</a> (QJsonObject &amp;)</td></tr>
+<tr class="separator:a9734ab13f7fe584988ecc1119465aabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd5ec189903193eb9f37400c32f9ff2" id="r_afcd5ec189903193eb9f37400c32f9ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcd5ec189903193eb9f37400c32f9ff2">createJsonResultWithCompress</a> (QJsonObject &amp;)</td></tr>
+<tr class="separator:afcd5ec189903193eb9f37400c32f9ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e294c1f92f0c3652b757e19ae1a185e" id="r_a3e294c1f92f0c3652b757e19ae1a185e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e294c1f92f0c3652b757e19ae1a185e">createJobFileResult</a> (QJsonObject &amp;)</td></tr>
+<tr class="separator:a3e294c1f92f0c3652b757e19ae1a185e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf145af44406c4020bd603db1040d101" id="r_aaf145af44406c4020bd603db1040d101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf145af44406c4020bd603db1040d101">loadExportParameters</a> ()</td></tr>
+<tr class="separator:aaf145af44406c4020bd603db1040d101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac998355b32ae504da47cc21e353a9b26" id="r_ac998355b32ae504da47cc21e353a9b26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac998355b32ae504da47cc21e353a9b26">calcSLMScale</a> (QList&lt; AREAINFOPTR &gt; &amp;)</td></tr>
+<tr class="separator:ac998355b32ae504da47cc21e353a9b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca791cb383f324b607216908e612f48b" id="r_aca791cb383f324b607216908e612f48b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca791cb383f324b607216908e612f48b">createFileWriter</a> (const int &amp;, <a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;)</td></tr>
+<tr class="separator:aca791cb383f324b607216908e612f48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116192aae131c51591d998ab4037f8cf" id="r_a116192aae131c51591d998ab4037f8cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a116192aae131c51591d998ab4037f8cf">createFileWriter</a> (const int &amp;, const QString &amp;, <a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;)</td></tr>
+<tr class="separator:a116192aae131c51591d998ab4037f8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f66947c693c2fc2ac80dede4994047" id="r_a36f66947c693c2fc2ac80dede4994047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36f66947c693c2fc2ac80dede4994047">initializeLattice</a> ()</td></tr>
+<tr class="separator:a36f66947c693c2fc2ac80dede4994047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9497b1624393ae7f31233586860827" id="r_a3e9497b1624393ae7f31233586860827"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e9497b1624393ae7f31233586860827">createLattice</a> (Paths &amp;, const Paths &amp;, const int &amp;, Paths &amp;, <a class="el" href="struct_lattice_layer_info.html">LatticeLayerInfo</a> &amp;)</td></tr>
+<tr class="separator:a3e9497b1624393ae7f31233586860827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:aa839e815c12558f700bf697afa585899" id="r_aa839e815c12558f700bf697afa585899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa839e815c12558f700bf697afa585899">q_ptr</a> = nullptr</td></tr>
+<tr class="separator:aa839e815c12558f700bf697afa585899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3189fc5af5627964dd62c5e61cef9239" id="r_a3189fc5af5627964dd62c5e61cef9239"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3189fc5af5627964dd62c5e61cef9239">strBPPName</a> = &quot;&quot;</td></tr>
+<tr class="separator:a3189fc5af5627964dd62c5e61cef9239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95b8cf666b6c5ecd45ac977bd1f5759" id="r_ac95b8cf666b6c5ecd45ac977bd1f5759"><td class="memItemLeft" align="right" valign="top">QFutureWatcher&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac95b8cf666b6c5ecd45ac977bd1f5759">futureWatcher</a></td></tr>
+<tr class="separator:ac95b8cf666b6c5ecd45ac977bd1f5759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af805f6fb804786f598ec3dfe99578d86" id="r_af805f6fb804786f598ec3dfe99578d86"><td class="memItemLeft" align="right" valign="top">QSharedPointer&lt; <a class="el" href="class_self_adaptive_module.html">SelfAdaptiveModule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af805f6fb804786f598ec3dfe99578d86">_selfAdaptiveModule</a> = nullptr</td></tr>
+<tr class="separator:af805f6fb804786f598ec3dfe99578d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32de06a2d734e0e9de048c4f14a7ffc" id="r_aa32de06a2d734e0e9de048c4f14a7ffc"><td class="memItemLeft" align="right" valign="top">QSharedPointer&lt; <a class="el" href="struct_writer_buffer_paras.html">WriterBufferParas</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa32de06a2d734e0e9de048c4f14a7ffc">_writerBufferParas</a> = nullptr</td></tr>
+<tr class="separator:aa32de06a2d734e0e9de048c4f14a7ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab139396957d882816ffc0d24fea64c04" id="r_ab139396957d882816ffc0d24fea64c04"><td class="memItemLeft" align="right" valign="top">QSharedPointer&lt; <a class="el" href="class_lattice_interface.html">LatticeInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab139396957d882816ffc0d24fea64c04">_latticeInfPtr</a> = nullptr</td></tr>
+<tr class="separator:ab139396957d882816ffc0d24fea64c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836ae48837ff41939a08fc31fce45684" id="r_a836ae48837ff41939a08fc31fce45684"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a836ae48837ff41939a08fc31fce45684">_progressPos</a> = -1</td></tr>
+<tr class="separator:a836ae48837ff41939a08fc31fce45684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76fea8eef93b12fe1386c83ec42bc22" id="r_af76fea8eef93b12fe1386c83ec42bc22"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af76fea8eef93b12fe1386c83ec42bc22">fProcessing</a> = 0.0</td></tr>
+<tr class="separator:af76fea8eef93b12fe1386c83ec42bc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bfe84a944f299cb27d99c4e34eabe97" id="r_a8bfe84a944f299cb27d99c4e34eabe97"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bfe84a944f299cb27d99c4e34eabe97">fSinglePartRatio</a> = 1.0</td></tr>
+<tr class="separator:a8bfe84a944f299cb27d99c4e34eabe97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e6b92cbd22028b7615f3dcdd8dd1a9" id="r_a73e6b92cbd22028b7615f3dcdd8dd1a9"><td class="memItemLeft" align="right" valign="top">QJsonArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73e6b92cbd22028b7615f3dcdd8dd1a9">objZipDescFile</a></td></tr>
+<tr class="separator:a73e6b92cbd22028b7615f3dcdd8dd1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399cd4bc7462ed99aac5eb0ebc207450" id="r_a399cd4bc7462ed99aac5eb0ebc207450"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a399cd4bc7462ed99aac5eb0ebc207450">nExportFileMode</a> = <a class="el" href="publicheader_8h.html#a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c">EXPORT_NORMAL</a></td></tr>
+<tr class="separator:a399cd4bc7462ed99aac5eb0ebc207450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039840ee45d05cb679d6f82e900d61f7" id="r_a039840ee45d05cb679d6f82e900d61f7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a039840ee45d05cb679d6f82e900d61f7">fScaleX</a> = 1.0</td></tr>
+<tr class="separator:a039840ee45d05cb679d6f82e900d61f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c12befd18d4e256baaa91d4b6780e9" id="r_a57c12befd18d4e256baaa91d4b6780e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57c12befd18d4e256baaa91d4b6780e9">fScaleY</a> = 1.0</td></tr>
+<tr class="separator:a57c12befd18d4e256baaa91d4b6780e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc725cd95cac906b9a239f58a464e29f" id="r_abc725cd95cac906b9a239f58a464e29f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc725cd95cac906b9a239f58a464e29f">_threadCount</a> = 1</td></tr>
+<tr class="separator:abc725cd95cac906b9a239f58a464e29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aa99af7976873dfad34d605ab8c3fb96b" id="r_aa99af7976873dfad34d605ab8c3fb96b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa99af7976873dfad34d605ab8c3fb96b">DividerProcessor</a></td></tr>
+<tr class="separator:aa99af7976873dfad34d605ab8c3fb96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a42e3e18cc51ecfb4fe1385654fe539fe" name="a42e3e18cc51ecfb4fe1385654fe539fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e3e18cc51ecfb4fe1385654fe539fe">&#9670;&#160;</a></span>UTSLAProcessorPrivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UTSLAProcessorPrivate::UTSLAProcessorPrivate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a> *</td>          <td class="paramname"><span class="paramname"><em>q</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a136767835fb2725962b6d238856bc939" name="a136767835fb2725962b6d238856bc939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136767835fb2725962b6d238856bc939">&#9670;&#160;</a></span>building()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::building </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSLayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nELayer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbd1ac7a5b0b847913251c1906c178a2" name="acbd1ac7a5b0b847913251c1906c178a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd1ac7a5b0b847913251c1906c178a2">&#9670;&#160;</a></span>buildProcessing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::buildProcessing </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9adcce8c1dfff095b3e1d5d0d5ab82d5" name="a9adcce8c1dfff095b3e1d5d0d5ab82d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9adcce8c1dfff095b3e1d5d0d5ab82d5">&#9670;&#160;</a></span>calcLayerDatas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::calcLayerDatas </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>layerThickness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>uspWriter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>solidPath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac998355b32ae504da47cc21e353a9b26" name="ac998355b32ae504da47cc21e353a9b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac998355b32ae504da47cc21e353a9b26">&#9670;&#160;</a></span>calcSLMScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::calcSLMScale </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; AREAINFOPTR &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>areaInfoList</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a116192aae131c51591d998ab4037f8cf" name="a116192aae131c51591d998ab4037f8cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116192aae131c51591d998ab4037f8cf">&#9670;&#160;</a></span>createFileWriter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UTSLAProcessorPrivate::createFileWriter </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>strBuildName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>uspWriter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca791cb383f324b607216908e612f48b" name="aca791cb383f324b607216908e612f48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca791cb383f324b607216908e612f48b">&#9670;&#160;</a></span>createFileWriter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UTSLAProcessorPrivate::createFileWriter </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>uspWriter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e294c1f92f0c3652b757e19ae1a185e" name="a3e294c1f92f0c3652b757e19ae1a185e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e294c1f92f0c3652b757e19ae1a185e">&#9670;&#160;</a></span>createJobFileResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::createJobFileResult </td>
+          <td>(</td>
+          <td class="paramtype">QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonResult</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9734ab13f7fe584988ecc1119465aabc" name="a9734ab13f7fe584988ecc1119465aabc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9734ab13f7fe584988ecc1119465aabc">&#9670;&#160;</a></span>createJsonResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::createJsonResult </td>
+          <td>(</td>
+          <td class="paramtype">QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonResult</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcd5ec189903193eb9f37400c32f9ff2" name="afcd5ec189903193eb9f37400c32f9ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd5ec189903193eb9f37400c32f9ff2">&#9670;&#160;</a></span>createJsonResultWithCompress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::createJsonResultWithCompress </td>
+          <td>(</td>
+          <td class="paramtype">QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonResult</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e9497b1624393ae7f31233586860827" name="a3e9497b1624393ae7f31233586860827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9497b1624393ae7f31233586860827">&#9670;&#160;</a></span>createLattice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::createLattice </td>
+          <td>(</td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>paths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>refPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>layerHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>lattices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_lattice_layer_info.html">LatticeLayerInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>latticeLayerInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fbe0429325d15d300f3708b3d0a5447" name="a5fbe0429325d15d300f3708b3d0a5447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fbe0429325d15d300f3708b3d0a5447">&#9670;&#160;</a></span>getNextLayerHei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UTSLAProcessorPrivate::getNextLayerHei </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nStartLayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5df5e72ef017efc546303f112715d5ff" name="a5df5e72ef017efc546303f112715d5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df5e72ef017efc546303f112715d5ff">&#9670;&#160;</a></span>getPreLayerHei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UTSLAProcessorPrivate::getPreLayerHei </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nStartLayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36f66947c693c2fc2ac80dede4994047" name="a36f66947c693c2fc2ac80dede4994047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f66947c693c2fc2ac80dede4994047">&#9670;&#160;</a></span>initializeLattice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::initializeLattice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf145af44406c4020bd603db1040d101" name="aaf145af44406c4020bd603db1040d101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf145af44406c4020bd603db1040d101">&#9670;&#160;</a></span>loadExportParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::loadExportParameters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a4695360a0fd9af8fe114d0df2f6f3c" name="a9a4695360a0fd9af8fe114d0df2f6f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4695360a0fd9af8fe114d0df2f6f3c">&#9670;&#160;</a></span>loadParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UTSLAProcessorPrivate::loadParameters </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>strBppPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>strIniPath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada1f0a79c0c09079e1329425db719147" name="ada1f0a79c0c09079e1329425db719147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1f0a79c0c09079e1329425db719147">&#9670;&#160;</a></span>parsingDatas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::parsingDatas </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; AREAINFOPTR &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listAreaPtr</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b8ddb46eefb400f8d540167a740276e" name="a8b8ddb46eefb400f8d540167a740276e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8ddb46eefb400f8d540167a740276e">&#9670;&#160;</a></span>partProcessing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::partProcessing </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a973592f44164f63c46dd401195e0f508" name="a973592f44164f63c46dd401195e0f508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973592f44164f63c46dd401195e0f508">&#9670;&#160;</a></span>processing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::processing </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSLayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nELayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonObj</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac57398b2dd4cf24b34dafee39b57e91a" name="ac57398b2dd4cf24b34dafee39b57e91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57398b2dd4cf24b34dafee39b57e91a">&#9670;&#160;</a></span>readDatas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::readDatas </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nHei</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cd6ce0d5de54aa5d416bf2b0b241d19" name="a3cd6ce0d5de54aa5d416bf2b0b241d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd6ce0d5de54aa5d416bf2b0b241d19">&#9670;&#160;</a></span>readLayerDatas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::readLayerDatas </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>uspWriter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>solidPath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84a5b7e6a21ff95215ecead0db3c968e" name="a84a5b7e6a21ff95215ecead0db3c968e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a5b7e6a21ff95215ecead0db3c968e">&#9670;&#160;</a></span>stopBuildProcessing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::stopBuildProcessing </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7fb93c9f5dc3558aefed35fc1508e00" name="ad7fb93c9f5dc3558aefed35fc1508e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7fb93c9f5dc3558aefed35fc1508e00">&#9670;&#160;</a></span>updateLayerSplicingInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::updateLayerSplicingInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ef2dc274d39855958998f965c0d975d" name="a6ef2dc274d39855958998f965c0d975d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef2dc274d39855958998f965c0d975d">&#9670;&#160;</a></span>updateProgress() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::updateProgress </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af098d565d1ac3b1178f6287eae8315ba" name="af098d565d1ac3b1178f6287eae8315ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af098d565d1ac3b1178f6287eae8315ba">&#9670;&#160;</a></span>updateProgress() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UTSLAProcessorPrivate::updateProgress </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>temp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="aa99af7976873dfad34d605ab8c3fb96b" name="aa99af7976873dfad34d605ab8c3fb96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99af7976873dfad34d605ab8c3fb96b">&#9670;&#160;</a></span>DividerProcessor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_divider_processor.html">DividerProcessor</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ab139396957d882816ffc0d24fea64c04" name="ab139396957d882816ffc0d24fea64c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab139396957d882816ffc0d24fea64c04">&#9670;&#160;</a></span>_latticeInfPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSharedPointer&lt;<a class="el" href="class_lattice_interface.html">LatticeInterface</a>&gt; UTSLAProcessorPrivate::_latticeInfPtr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a836ae48837ff41939a08fc31fce45684" name="a836ae48837ff41939a08fc31fce45684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836ae48837ff41939a08fc31fce45684">&#9670;&#160;</a></span>_progressPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UTSLAProcessorPrivate::_progressPos = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af805f6fb804786f598ec3dfe99578d86" name="af805f6fb804786f598ec3dfe99578d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af805f6fb804786f598ec3dfe99578d86">&#9670;&#160;</a></span>_selfAdaptiveModule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSharedPointer&lt;<a class="el" href="class_self_adaptive_module.html">SelfAdaptiveModule</a>&gt; UTSLAProcessorPrivate::_selfAdaptiveModule = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc725cd95cac906b9a239f58a464e29f" name="abc725cd95cac906b9a239f58a464e29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc725cd95cac906b9a239f58a464e29f">&#9670;&#160;</a></span>_threadCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UTSLAProcessorPrivate::_threadCount = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa32de06a2d734e0e9de048c4f14a7ffc" name="aa32de06a2d734e0e9de048c4f14a7ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa32de06a2d734e0e9de048c4f14a7ffc">&#9670;&#160;</a></span>_writerBufferParas</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSharedPointer&lt;<a class="el" href="struct_writer_buffer_paras.html">WriterBufferParas</a>&gt; UTSLAProcessorPrivate::_writerBufferParas = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af76fea8eef93b12fe1386c83ec42bc22" name="af76fea8eef93b12fe1386c83ec42bc22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af76fea8eef93b12fe1386c83ec42bc22">&#9670;&#160;</a></span>fProcessing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UTSLAProcessorPrivate::fProcessing = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a039840ee45d05cb679d6f82e900d61f7" name="a039840ee45d05cb679d6f82e900d61f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039840ee45d05cb679d6f82e900d61f7">&#9670;&#160;</a></span>fScaleX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UTSLAProcessorPrivate::fScaleX = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57c12befd18d4e256baaa91d4b6780e9" name="a57c12befd18d4e256baaa91d4b6780e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c12befd18d4e256baaa91d4b6780e9">&#9670;&#160;</a></span>fScaleY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UTSLAProcessorPrivate::fScaleY = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bfe84a944f299cb27d99c4e34eabe97" name="a8bfe84a944f299cb27d99c4e34eabe97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bfe84a944f299cb27d99c4e34eabe97">&#9670;&#160;</a></span>fSinglePartRatio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UTSLAProcessorPrivate::fSinglePartRatio = 1.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac95b8cf666b6c5ecd45ac977bd1f5759" name="ac95b8cf666b6c5ecd45ac977bd1f5759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95b8cf666b6c5ecd45ac977bd1f5759">&#9670;&#160;</a></span>futureWatcher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFutureWatcher&lt;void&gt; UTSLAProcessorPrivate::futureWatcher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a399cd4bc7462ed99aac5eb0ebc207450" name="a399cd4bc7462ed99aac5eb0ebc207450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399cd4bc7462ed99aac5eb0ebc207450">&#9670;&#160;</a></span>nExportFileMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UTSLAProcessorPrivate::nExportFileMode = <a class="el" href="publicheader_8h.html#a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c">EXPORT_NORMAL</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73e6b92cbd22028b7615f3dcdd8dd1a9" name="a73e6b92cbd22028b7615f3dcdd8dd1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e6b92cbd22028b7615f3dcdd8dd1a9">&#9670;&#160;</a></span>objZipDescFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonArray UTSLAProcessorPrivate::objZipDescFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa839e815c12558f700bf697afa585899" name="aa839e815c12558f700bf697afa585899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa839e815c12558f700bf697afa585899">&#9670;&#160;</a></span>q_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a>* const UTSLAProcessorPrivate::q_ptr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3189fc5af5627964dd62c5e61cef9239" name="a3189fc5af5627964dd62c5e61cef9239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3189fc5af5627964dd62c5e61cef9239">&#9670;&#160;</a></span>strBPPName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString UTSLAProcessorPrivate::strBPPName = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="utslaprocessorprivate_8h_source.html">utslaprocessorprivate.h</a></li>
+<li><a class="el" href="utslaprocessorprivate_8cpp.html">utslaprocessorprivate.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_u_t_s_l_a_processor_private.html">UTSLAProcessorPrivate</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

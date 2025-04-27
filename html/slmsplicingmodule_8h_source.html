@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: SplicingModule/slmsplicingmodule.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('slmsplicingmodule_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">slmsplicingmodule.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="slmsplicingmodule_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SLMSPLICINGMODULE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SLMSPLICINGMODULE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QSharedPointer&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;utbpprocessbase.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="splicingheader_8h.html">splicingheader.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_writer_buffer_paras.html">WriterBufferParas</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">struct </span>BPCUSTOMERPARAS;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_u_f_f_w_r_i_t_e_d_a_t_a.html">UFFWRITEDATA</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_layer_splicing_area.html">LayerSplicingArea</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_scanner_splicing_area.html">ScannerSplicingArea</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span><a class="code hl_class" href="class_s_l_m_splicing_module_priv.html">SLMSplicingModulePriv</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="slmsplicingmodule_8h.html#a052c172e189217a363ea3ac6eadc72ff">   19</a></span><span class="keyword">typedef</span> std::function&lt;void(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> Paths &amp;)&gt; <a class="code hl_typedef" href="slmsplicingmodule_8h.html#a052c172e189217a363ea3ac6eadc72ff">FuncSplit</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_s_l_m_splicing_module.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="class_s_l_m_splicing_module.html#ac994c3d953eedd18ffdbad664cd75a61">SLMSplicingModule</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_s_l_m_splicing_module.html#ac994c3d953eedd18ffdbad664cd75a61">SLMSplicingModule</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_m_splicing_module.html#ab3e2f23121b3fb9da0da2b8bcb565428">initializeParas</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_writer_buffer_paras.html">WriterBufferParas</a> *);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_s_l_m_splicing_module.html#acdb43a757101d92b5a2985b1479b8ac1">   31</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_m_splicing_module.html#acdb43a757101d92b5a2985b1479b8ac1">calcScannerArea</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_m_splicing_module.html#a29b4d4e09bb229f3d72f31d44a42163d">recalcSplicingArea</a>(Paths &amp;, QList&lt;AREAINFOPTR&gt; &amp;, <span class="keyword">const</span> QList&lt;AREAINFOPTR&gt; &amp;solidPaths = QList&lt;AREAINFOPTR&gt;());</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_m_splicing_module.html#af864143bf8d91ed76eabe69888be52fd">addLayerSplicingArea</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_m_splicing_module.html#ad803bf06e44992c8caf75c6c2b5f083a">splitSupportData</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_layer_splicing_area.html">LayerSplicingArea</a> &amp;, <span class="keyword">const</span> Paths &amp;, <a class="code hl_typedef" href="slmsplicingmodule_8h.html#a052c172e189217a363ea3ac6eadc72ff">FuncSplit</a> &amp;&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_m_splicing_module.html#a33ea44ac525bf23a24f672775d445a30">splitBorderData</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_layer_splicing_area.html">LayerSplicingArea</a> &amp;, <span class="keyword">const</span> Paths &amp;, <a class="code hl_typedef" href="slmsplicingmodule_8h.html#a052c172e189217a363ea3ac6eadc72ff">FuncSplit</a> &amp;&amp;, <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                         <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(Paths &amp;)&gt; &amp;&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_m_splicing_module.html#a313d74e7231dd93c8abf579ca4d07ced">splitSolidData</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_layer_splicing_area.html">LayerSplicingArea</a> &amp;, <span class="keyword">const</span> Paths &amp;, <a class="code hl_typedef" href="slmsplicingmodule_8h.html#a052c172e189217a363ea3ac6eadc72ff">FuncSplit</a> &amp;&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">inline</span> QSharedPointer&lt;ScannerSplicingArea&gt; <a class="code hl_function" href="class_s_l_m_splicing_module.html#a8527bdca5d969b36d304aa9b374433d3">getSplicingArea</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_struct" href="struct_layer_splicing_area.html">LayerSplicingArea</a> <a class="code hl_function" href="class_s_l_m_splicing_module.html#a6df6bbb109037af08ffe2796782ed809">getLayerSplicing</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_s_l_m_splicing_module.html#ab8323a17c05e0b8c67bfcfcc87c7a06c">   45</a></span>    QSharedPointer&lt;SLMSplicingModulePriv&gt; <a class="code hl_variable" href="class_s_l_m_splicing_module.html#ab8323a17c05e0b8c67bfcfcc87c7a06c">d</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// SLMSPLICINGMODULE_H</span></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_a29b4d4e09bb229f3d72f31d44a42163d"><div class="ttname"><a href="class_s_l_m_splicing_module.html#a29b4d4e09bb229f3d72f31d44a42163d">SLMSplicingModule::recalcSplicingArea</a></div><div class="ttdeci">void recalcSplicingArea(Paths &amp;, QList&lt; AREAINFOPTR &gt; &amp;, const QList&lt; AREAINFOPTR &gt; &amp;solidPaths=QList&lt; AREAINFOPTR &gt;())</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:291</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_a313d74e7231dd93c8abf579ca4d07ced"><div class="ttname"><a href="class_s_l_m_splicing_module.html#a313d74e7231dd93c8abf579ca4d07ced">SLMSplicingModule::splitSolidData</a></div><div class="ttdeci">void splitSolidData(const LayerSplicingArea &amp;, const Paths &amp;, FuncSplit &amp;&amp;) const</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:481</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_a33ea44ac525bf23a24f672775d445a30"><div class="ttname"><a href="class_s_l_m_splicing_module.html#a33ea44ac525bf23a24f672775d445a30">SLMSplicingModule::splitBorderData</a></div><div class="ttdeci">void splitBorderData(const LayerSplicingArea &amp;, const Paths &amp;, FuncSplit &amp;&amp;, const bool &amp;, const std::function&lt; void(Paths &amp;)&gt; &amp;&amp;) const</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:443</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_a6df6bbb109037af08ffe2796782ed809"><div class="ttname"><a href="class_s_l_m_splicing_module.html#a6df6bbb109037af08ffe2796782ed809">SLMSplicingModule::getLayerSplicing</a></div><div class="ttdeci">LayerSplicingArea getLayerSplicing(const int &amp;) const</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:420</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_a8527bdca5d969b36d304aa9b374433d3"><div class="ttname"><a href="class_s_l_m_splicing_module.html#a8527bdca5d969b36d304aa9b374433d3">SLMSplicingModule::getSplicingArea</a></div><div class="ttdeci">QSharedPointer&lt; ScannerSplicingArea &gt; getSplicingArea() const</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:415</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_ab3e2f23121b3fb9da0da2b8bcb565428"><div class="ttname"><a href="class_s_l_m_splicing_module.html#ab3e2f23121b3fb9da0da2b8bcb565428">SLMSplicingModule::initializeParas</a></div><div class="ttdeci">void initializeParas(const WriterBufferParas *)</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:17</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_ab8323a17c05e0b8c67bfcfcc87c7a06c"><div class="ttname"><a href="class_s_l_m_splicing_module.html#ab8323a17c05e0b8c67bfcfcc87c7a06c">SLMSplicingModule::d</a></div><div class="ttdeci">QSharedPointer&lt; SLMSplicingModulePriv &gt; d</div><div class="ttdef"><b>定义</b> slmsplicingmodule.h:45</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_ac994c3d953eedd18ffdbad664cd75a61"><div class="ttname"><a href="class_s_l_m_splicing_module.html#ac994c3d953eedd18ffdbad664cd75a61">SLMSplicingModule::SLMSplicingModule</a></div><div class="ttdeci">SLMSplicingModule()</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:12</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_acdb43a757101d92b5a2985b1479b8ac1"><div class="ttname"><a href="class_s_l_m_splicing_module.html#acdb43a757101d92b5a2985b1479b8ac1">SLMSplicingModule::calcScannerArea</a></div><div class="ttdeci">void calcScannerArea()</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_ad803bf06e44992c8caf75c6c2b5f083a"><div class="ttname"><a href="class_s_l_m_splicing_module.html#ad803bf06e44992c8caf75c6c2b5f083a">SLMSplicingModule::splitSupportData</a></div><div class="ttdeci">void splitSupportData(const LayerSplicingArea &amp;, const Paths &amp;, FuncSplit &amp;&amp;) const</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:426</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_html_af864143bf8d91ed76eabe69888be52fd"><div class="ttname"><a href="class_s_l_m_splicing_module.html#af864143bf8d91ed76eabe69888be52fd">SLMSplicingModule::addLayerSplicingArea</a></div><div class="ttdeci">void addLayerSplicingArea(const int &amp;)</div><div class="ttdef"><b>定义</b> slmsplicingmodule.cpp:362</div></div>
+<div class="ttc" id="aclass_s_l_m_splicing_module_priv_html"><div class="ttname"><a href="class_s_l_m_splicing_module_priv.html">SLMSplicingModulePriv</a></div><div class="ttdef"><b>定义</b> splicingmodulepriv.h:11</div></div>
+<div class="ttc" id="aslmsplicingmodule_8h_html_a052c172e189217a363ea3ac6eadc72ff"><div class="ttname"><a href="slmsplicingmodule_8h.html#a052c172e189217a363ea3ac6eadc72ff">FuncSplit</a></div><div class="ttdeci">std::function&lt; void(const int &amp;, const Paths &amp;)&gt; FuncSplit</div><div class="ttdef"><b>定义</b> slmsplicingmodule.h:19</div></div>
+<div class="ttc" id="asplicingheader_8h_html"><div class="ttname"><a href="splicingheader_8h.html">splicingheader.h</a></div></div>
+<div class="ttc" id="astruct_layer_splicing_area_html"><div class="ttname"><a href="struct_layer_splicing_area.html">LayerSplicingArea</a></div><div class="ttdef"><b>定义</b> splicingheader.h:33</div></div>
+<div class="ttc" id="astruct_p_a_r_a_w_r_i_t_e_b_u_f_f_html"><div class="ttname"><a href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a></div><div class="ttdef"><b>定义</b> publicheader.h:85</div></div>
+<div class="ttc" id="astruct_scanner_splicing_area_html"><div class="ttname"><a href="struct_scanner_splicing_area.html">ScannerSplicingArea</a></div><div class="ttdef"><b>定义</b> splicingheader.h:39</div></div>
+<div class="ttc" id="astruct_u_f_f_w_r_i_t_e_d_a_t_a_html"><div class="ttname"><a href="struct_u_f_f_w_r_i_t_e_d_a_t_a.html">UFFWRITEDATA</a></div><div class="ttdef"><b>定义</b> uspfiledef.h:63</div></div>
+<div class="ttc" id="astruct_writer_buffer_paras_html"><div class="ttname"><a href="struct_writer_buffer_paras.html">WriterBufferParas</a></div><div class="ttdef"><b>定义</b> publicheader.h:62</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_964bc10f3154efc8cc1d6ea5d4f805c5.html">SplicingModule</a></li><li class="navelem"><a class="el" href="slmsplicingmodule_8h.html">slmsplicingmodule.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

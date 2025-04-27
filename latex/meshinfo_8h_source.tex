@@ -1,0 +1,83 @@
+\doxysection{meshinfo.\+h}
+\hypertarget{meshinfo_8h_source}{}\label{meshinfo_8h_source}\mbox{\hyperlink{meshinfo_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MESHINFO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MESHINFO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ glMeshInfo\ MeshInfo::getInstance()}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_sort_line_info}{SortLineInfo}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sort_line_info_a0d4eb887ffd5c88c92c538a26020f41f}{x1}}\ =\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sort_line_info_af090761e95c2076d982e1dad75bf54e1}{y1}}\ =\ 0;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sort_line_info_ae068a639046c88da4922717823423446}{x2}}\ =\ 0;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sort_line_info_a2004466806ceeb669c6fde21e1bfc084}{y2}}\ =\ 0;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sort_line_info_ae5f6b0c045ba7d5d93d029c7058914fd}{nStartPos}}\ =\ 0;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sort_line_info_a7b23dcfb2e2caba8f929bf2e5822a9e8}{nEndPos}}\ =\ 0;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_sort_line_info_a5882fa77272bb2b64d615e10c6da38c7}{reversed}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_matched_line_info}{MatchedLineInfo}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_matched_line_info_a48d9a2f147bf74427152e8be83e724d5}{endPtX}}\ =\ 0;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_matched_line_info_a26cf21203d8bdd762c8c7a57265fa97b}{endPtY}}\ =\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_matched_line_info_a6204ee5b05fbb7864b99a5e1d8d0d736}{meshCoorX}}\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_matched_line_info_af33dfcfbc5f0f21f4800d9b9a4cce9f7}{meshCoorY}}\ =\ 0;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_matched_line_info_ae9b6d98341c1a5e601e8280e76a93f24}{lineIndex}}\ =\ -\/1;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_matched_line_info_aadb8490347a85449f72aed6d21caa5eb}{needReverse}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_matched_line_info_a506f69684c28fd117297aadd8a7158c7}{delta}}\ =\ 1e300;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matched_line_info_af0414b60a586ee6d089de2a24381c6da}{resetValue}}(\mbox{\hyperlink{struct_sort_line_info}{SortLineInfo}}\ *lpLine)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{false}\ ==\ lpLine-\/>\mbox{\hyperlink{struct_sort_line_info_a5882fa77272bb2b64d615e10c6da38c7}{reversed}})}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_matched_line_info_a48d9a2f147bf74427152e8be83e724d5}{endPtX}}\ =\ lpLine-\/>\mbox{\hyperlink{struct_sort_line_info_ae068a639046c88da4922717823423446}{x2}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_matched_line_info_a26cf21203d8bdd762c8c7a57265fa97b}{endPtY}}\ =\ lpLine-\/>\mbox{\hyperlink{struct_sort_line_info_a2004466806ceeb669c6fde21e1bfc084}{y2}};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_matched_line_info_a48d9a2f147bf74427152e8be83e724d5}{endPtX}}\ =\ lpLine-\/>\mbox{\hyperlink{struct_sort_line_info_a0d4eb887ffd5c88c92c538a26020f41f}{x1}};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_matched_line_info_a26cf21203d8bdd762c8c7a57265fa97b}{endPtY}}\ =\ lpLine-\/>\mbox{\hyperlink{struct_sort_line_info_af090761e95c2076d982e1dad75bf54e1}{y1}};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_matched_line_info_ae9b6d98341c1a5e601e8280e76a93f24}{lineIndex}}\ =\ -\/1;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_matched_line_info_a506f69684c28fd117297aadd8a7158c7}{delta}}\ =\ 1e300;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_matched_line_info_aadb8490347a85449f72aed6d21caa5eb}{needReverse}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_offset_coor_ac6c26c543819560f1401d7dbb087b15a}{OffsetCoor}}\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_offset_coor_a1c1d417a735d18632c0bf156483df557}{nOffsetX}}\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_offset_coor_af6e67881fa0897101b185d6e12c00ff5}{nOffsetY}}\ =\ 0;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{struct_offset_coor_ac6c26c543819560f1401d7dbb087b15a}{OffsetCoor}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&x\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&y\ =\ 0)\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_offset_coor_a1c1d417a735d18632c0bf156483df557}{nOffsetX}}\ =\ x;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_offset_coor_af6e67881fa0897101b185d6e12c00ff5}{nOffsetY}}\ =\ y;}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_offset_coor_aa40dc9c5d134caa27a9bfecfa5294d56}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_offset_coor_ac6c26c543819560f1401d7dbb087b15a}{OffsetCoor}}\ \&coor)\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{struct_offset_coor_a1c1d417a735d18632c0bf156483df557}{nOffsetX}}\ ==\ coor.\mbox{\hyperlink{struct_offset_coor_a1c1d417a735d18632c0bf156483df557}{nOffsetX}}\ \&\&\ \mbox{\hyperlink{struct_offset_coor_af6e67881fa0897101b185d6e12c00ff5}{nOffsetY}}\ ==\ coor.\mbox{\hyperlink{struct_offset_coor_af6e67881fa0897101b185d6e12c00ff5}{nOffsetY}});}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mesh_info_a2704685e8bd5df848e92ba950cd5e717}{MeshInfo}}}
+\DoxyCodeLine{00062\ \{}
+\DoxyCodeLine{00063\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_mesh_info_a2704685e8bd5df848e92ba950cd5e717}{MeshInfo}}\ *\mbox{\hyperlink{class_mesh_info_a79538310ff9022ed142818da8418eb37}{getInstance}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{const}\ QVector<OffsetCoor>\ \mbox{\hyperlink{class_mesh_info_a087fab127c9cd8e574e16dd0efc5da53}{getCoorList}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_mesh_info_a2704685e8bd5df848e92ba950cd5e717}{MeshInfo}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{meshinfo_8h_ae03e08f5240040800dc1677928c29293}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_offset_coor}{OffsetCoor}}\ \&p)}
+\DoxyCodeLine{00073\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}("{}}\ <<\ p.\mbox{\hyperlink{struct_offset_coor_a1c1d417a735d18632c0bf156483df557}{nOffsetX}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ p.\mbox{\hyperlink{struct_offset_coor_af6e67881fa0897101b185d6e12c00ff5}{nOffsetY}}\ <<\ \textcolor{stringliteral}{"{})\ "{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00076\ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MESHINFO\_H}}
+
+\end{DoxyCode}

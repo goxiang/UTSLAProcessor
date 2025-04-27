@@ -1,0 +1,50 @@
+\doxysection{slmsplicingmodule.\+h}
+\hypertarget{slmsplicingmodule_8h_source}{}\label{slmsplicingmodule_8h_source}\index{SplicingModule/slmsplicingmodule.h@{SplicingModule/slmsplicingmodule.h}}
+\mbox{\hyperlink{slmsplicingmodule_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SLMSPLICINGMODULE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SLMSPLICINGMODULE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}utbpprocessbase.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{splicingheader_8h}{splicingheader.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_writer_buffer_paras}{WriterBufferParas}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }BPCUSTOMERPARAS;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_layer_splicing_area}{LayerSplicingArea}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_scanner_splicing_area}{ScannerSplicingArea}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_m_splicing_module_priv}{SLMSplicingModulePriv}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ std::function<void(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ Paths\ \&)>\ \mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{FuncSplit}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_m_splicing_module_ac994c3d953eedd18ffdbad664cd75a61}{SLMSplicingModule}}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_s_l_m_splicing_module_ac994c3d953eedd18ffdbad664cd75a61}{SLMSplicingModule}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_ab3e2f23121b3fb9da0da2b8bcb565428}{initializeParas}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_writer_buffer_paras}{WriterBufferParas}}\ *);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_acdb43a757101d92b5a2985b1479b8ac1}{calcScannerArea}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_a29b4d4e09bb229f3d72f31d44a42163d}{recalcSplicingArea}}(Paths\ \&,\ QList<AREAINFOPTR>\ \&,\ \textcolor{keyword}{const}\ QList<AREAINFOPTR>\ \&solidPaths\ =\ QList<AREAINFOPTR>());}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_af864143bf8d91ed76eabe69888be52fd}{addLayerSplicingArea}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_ad803bf06e44992c8caf75c6c2b5f083a}{splitSupportData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_layer_splicing_area}{LayerSplicingArea}}\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ \mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{FuncSplit}}\ \&\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_a33ea44ac525bf23a24f672775d445a30}{splitBorderData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_layer_splicing_area}{LayerSplicingArea}}\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ \mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{FuncSplit}}\ \&\&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \&,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::function<\textcolor{keywordtype}{void}(Paths\ \&)>\ \&\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_a313d74e7231dd93c8abf579ca4d07ced}{splitSolidData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_layer_splicing_area}{LayerSplicingArea}}\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ \mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{FuncSplit}}\ \&\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{inline}\ QSharedPointer<ScannerSplicingArea>\ \mbox{\hyperlink{class_s_l_m_splicing_module_a8527bdca5d969b36d304aa9b374433d3}{getSplicingArea}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{struct_layer_splicing_area}{LayerSplicingArea}}\ \mbox{\hyperlink{class_s_l_m_splicing_module_a6df6bbb109037af08ffe2796782ed809}{getLayerSplicing}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ QSharedPointer<SLMSplicingModulePriv>\ \mbox{\hyperlink{class_s_l_m_splicing_module_ab8323a17c05e0b8c67bfcfcc87c7a06c}{d}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SLMSPLICINGMODULE\_H}}
+
+\end{DoxyCode}

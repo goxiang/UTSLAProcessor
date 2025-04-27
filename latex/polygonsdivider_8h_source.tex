@@ -1,0 +1,52 @@
+\doxysection{polygonsdivider.\+h}
+\hypertarget{polygonsdivider_8h_source}{}\label{polygonsdivider_8h_source}\index{DynamicDivider/PolygonsDivider/polygonsdivider.h@{DynamicDivider/PolygonsDivider/polygonsdivider.h}}
+\mbox{\hyperlink{polygonsdivider_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POLYGONSDIVIDER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POLYGONSDIVIDER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Clipper/clipper.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_min_err_result}{MinErrResult}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_earing_triangle}{EaringTriangle}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_polygons_divider_a387390e254f31a01c7e6c02866e9e2e5}{PolygonsDivider}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_polygons_divider_a387390e254f31a01c7e6c02866e9e2e5}{PolygonsDivider}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_polygons_divider_a719d1d72fb19cdc21d347b0697c948d6}{calcWeightPos}}(\textcolor{keyword}{const}\ ClipperLib::Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keywordtype}{int}\ \&splitHorizon);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_ac4c408f4f7f142c59eb65553535ccb50}{setMaxError}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_af5e3cdfc7ecd8d08e8fa040d5baac165}{createEaring}}(\textcolor{keyword}{const}\ ClipperLib::Paths\ \&);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_polygons_divider_a8bff5e9263be7f7d4f5dd17d6162d95d}{getWeightPos}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_acbf25686d387ecb53f1c248e226e4c4d}{pathsToList}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&,\ std::list<ClipperLib::IntPoint>\ \&ptList);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a852a7756cd92dc88137711a55378e725}{createEaring\_outter}}(std::list<ClipperLib::IntPoint>\ \&ptList);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a88c4c2b576d3e10a0cc9e9251349c707}{createEaring\_inner}}(std::list<ClipperLib::IntPoint>\ \&ptList);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a50c519b5d0dee2062e8019704796f673}{appendEaringTriangle}}(\textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&,\ \ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a50c519b5d0dee2062e8019704796f673}{appendEaringTriangle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_earing_triangle}{EaringTriangle}}\ \&);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a8bff5e9263be7f7d4f5dd17d6162d95d}{getWeightPos}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,\ \mbox{\hyperlink{struct_min_err_result}{MinErrResult}}\ \&);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a218dee6d076831f1ec34aafc5767cec9}{calcInsertPt}}(\textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&,\ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ClipperLib::DoublePoint\ \&);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a15cd25a2a91f1ca9e63fa0fd6546a9c7}{divideTriangle}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a3d4f2a630050b589099e2f4cf92331f6}{getWeightPos\_ver}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,\ \mbox{\hyperlink{struct_min_err_result}{MinErrResult}}\ \&);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_a1783d1d28c7178821a3f518c1ece0dc6}{calcInsertPt\_ver}}(\textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&,\ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ClipperLib::DoublePoint\ \&);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polygons_divider_aa061992918d29228d934f20e13f6fc91}{divideTriangle\_ver}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \&,\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_polygons_divider_1_1_priv}{Priv}};}
+\DoxyCodeLine{00047\ \ \ \ \ std::shared\_ptr<Priv>\ \mbox{\hyperlink{class_polygons_divider_a19e6251e754e231a4ee435748939f72a}{\_d}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POLYGONSDIVIDER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,135 @@
+\doxysection{Algorithm\+Checker类 参考}
+\hypertarget{class_algorithm_checker}{}\label{class_algorithm_checker}\index{AlgorithmChecker@{AlgorithmChecker}}
+
+
+{\ttfamily \#include $<$algorithmchecker.\+h$>$}
+
+类 Algorithm\+Checker 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_algorithm_checker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_checker_af554b1e17edc99f418662ec03420e05a}{create\+Checkers}} (const QJson\+Object \&, const int \&plat\+Width, const int \&plat\+Height)
+\item 
+void \mbox{\hyperlink{class_algorithm_checker_acadce095b6130ba34e54e6b8e8835e41}{change\+Layer\+Odd\+Info}} ()
+\item 
+double \mbox{\hyperlink{class_algorithm_checker_a13b0121b03c7ea049f6e6c2dad512cea}{get\+Rotate\+Angle}} ()
+\item 
+bool \mbox{\hyperlink{class_algorithm_checker_a074f1bcdd4fdf010d5a6eb8e94566480}{scan\+Checker\+Border}} ()
+\item 
+QList$<$ Paths $>$ \& \mbox{\hyperlink{class_algorithm_checker_a9cf488596540998172fcf83c48466b13}{get\+Checker\+List}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_checker_a82e20fdec61147dfdcd8be8dcd9b3b74}{create\+Overlap\+Checkers}} (const int \&, const int \&, const int \&plat\+Width, const int \&plat\+Height, const int \&overlap\+Wid, const int \&offset\+Checker)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_algorithm_checker_a53f7f3b4fafecafbef3f841ad674c0be}{b\+Odd\+Layer}} = false
+\item 
+int \mbox{\hyperlink{class_algorithm_checker_aa4b728b189ee6a7139c5e4f353f95004}{n\+Offset\+Checker}} = 0
+\item 
+int \mbox{\hyperlink{class_algorithm_checker_ab68cd986adf414b98ee6a0b4b2188581}{n\+Scan\+Checker\+Border}} = 0
+\item 
+double \mbox{\hyperlink{class_algorithm_checker_a6559e2476b897a86e8dbe1196db2fb7a}{f\+Rotate\+Angle}} = 0.\+0
+\item 
+QList$<$ Paths $>$ \mbox{\hyperlink{class_algorithm_checker_a0688205de9c8fb624d0111e222042dd6}{checker\+List}}
+\item 
+QList$<$ Paths $>$ \mbox{\hyperlink{class_algorithm_checker_a86cc0437fb76ad394b7c15129fc4f3fb}{checker\+List\+Offset}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Algorithm\+Checker}
+用于路径规划的验证和控制,独立类 
+\end{DoxyParagraph}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_algorithm_checker_acadce095b6130ba34e54e6b8e8835e41}\index{AlgorithmChecker@{AlgorithmChecker}!changeLayerOddInfo@{changeLayerOddInfo}}
+\index{changeLayerOddInfo@{changeLayerOddInfo}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{changeLayerOddInfo()}{changeLayerOddInfo()}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_acadce095b6130ba34e54e6b8e8835e41} 
+void Algorithm\+Checker\+::change\+Layer\+Odd\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_algorithm_checker_af554b1e17edc99f418662ec03420e05a}\index{AlgorithmChecker@{AlgorithmChecker}!createCheckers@{createCheckers}}
+\index{createCheckers@{createCheckers}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{createCheckers()}{createCheckers()}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_af554b1e17edc99f418662ec03420e05a} 
+void Algorithm\+Checker\+::create\+Checkers (\begin{DoxyParamCaption}\item[{const QJson\+Object \&}]{json\+Obj}{, }\item[{const int \&}]{plat\+Width}{, }\item[{const int \&}]{plat\+Height}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_checker_a82e20fdec61147dfdcd8be8dcd9b3b74}\index{AlgorithmChecker@{AlgorithmChecker}!createOverlapCheckers@{createOverlapCheckers}}
+\index{createOverlapCheckers@{createOverlapCheckers}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{createOverlapCheckers()}{createOverlapCheckers()}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a82e20fdec61147dfdcd8be8dcd9b3b74} 
+void Algorithm\+Checker\+::create\+Overlap\+Checkers (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Wid}{, }\item[{const int \&}]{n\+Hei}{, }\item[{const int \&}]{plat\+Width}{, }\item[{const int \&}]{plat\+Height}{, }\item[{const int \&}]{overlap\+Wid}{, }\item[{const int \&}]{offset\+Checker}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_checker_a9cf488596540998172fcf83c48466b13}\index{AlgorithmChecker@{AlgorithmChecker}!getCheckerList@{getCheckerList}}
+\index{getCheckerList@{getCheckerList}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{getCheckerList()}{getCheckerList()}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a9cf488596540998172fcf83c48466b13} 
+QList$<$ Paths $>$ \& Algorithm\+Checker\+::get\+Checker\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_algorithm_checker_a13b0121b03c7ea049f6e6c2dad512cea}\index{AlgorithmChecker@{AlgorithmChecker}!getRotateAngle@{getRotateAngle}}
+\index{getRotateAngle@{getRotateAngle}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{getRotateAngle()}{getRotateAngle()}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a13b0121b03c7ea049f6e6c2dad512cea} 
+double Algorithm\+Checker\+::get\+Rotate\+Angle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_algorithm_checker_a074f1bcdd4fdf010d5a6eb8e94566480}\index{AlgorithmChecker@{AlgorithmChecker}!scanCheckerBorder@{scanCheckerBorder}}
+\index{scanCheckerBorder@{scanCheckerBorder}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{scanCheckerBorder()}{scanCheckerBorder()}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a074f1bcdd4fdf010d5a6eb8e94566480} 
+bool Algorithm\+Checker\+::scan\+Checker\+Border (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_algorithm_checker_a53f7f3b4fafecafbef3f841ad674c0be}\index{AlgorithmChecker@{AlgorithmChecker}!bOddLayer@{bOddLayer}}
+\index{bOddLayer@{bOddLayer}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{bOddLayer}{bOddLayer}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a53f7f3b4fafecafbef3f841ad674c0be} 
+bool Algorithm\+Checker\+::b\+Odd\+Layer = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_checker_a0688205de9c8fb624d0111e222042dd6}\index{AlgorithmChecker@{AlgorithmChecker}!checkerList@{checkerList}}
+\index{checkerList@{checkerList}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{checkerList}{checkerList}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a0688205de9c8fb624d0111e222042dd6} 
+QList$<$Paths$>$ Algorithm\+Checker\+::checker\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_checker_a86cc0437fb76ad394b7c15129fc4f3fb}\index{AlgorithmChecker@{AlgorithmChecker}!checkerListOffset@{checkerListOffset}}
+\index{checkerListOffset@{checkerListOffset}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{checkerListOffset}{checkerListOffset}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a86cc0437fb76ad394b7c15129fc4f3fb} 
+QList$<$Paths$>$ Algorithm\+Checker\+::checker\+List\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_checker_a6559e2476b897a86e8dbe1196db2fb7a}\index{AlgorithmChecker@{AlgorithmChecker}!fRotateAngle@{fRotateAngle}}
+\index{fRotateAngle@{fRotateAngle}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{fRotateAngle}{fRotateAngle}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_a6559e2476b897a86e8dbe1196db2fb7a} 
+double Algorithm\+Checker\+::f\+Rotate\+Angle = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_checker_aa4b728b189ee6a7139c5e4f353f95004}\index{AlgorithmChecker@{AlgorithmChecker}!nOffsetChecker@{nOffsetChecker}}
+\index{nOffsetChecker@{nOffsetChecker}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{nOffsetChecker}{nOffsetChecker}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_aa4b728b189ee6a7139c5e4f353f95004} 
+int Algorithm\+Checker\+::n\+Offset\+Checker = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_checker_ab68cd986adf414b98ee6a0b4b2188581}\index{AlgorithmChecker@{AlgorithmChecker}!nScanCheckerBorder@{nScanCheckerBorder}}
+\index{nScanCheckerBorder@{nScanCheckerBorder}!AlgorithmChecker@{AlgorithmChecker}}
+\doxysubsubsection{\texorpdfstring{nScanCheckerBorder}{nScanCheckerBorder}}
+{\footnotesize\ttfamily \label{class_algorithm_checker_ab68cd986adf414b98ee6a0b4b2188581} 
+int Algorithm\+Checker\+::n\+Scan\+Checker\+Border = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algorithmchecker_8h}{algorithmchecker.\+h}}\item 
+\mbox{\hyperlink{algorithmchecker_8cpp}{algorithmchecker.\+cpp}}\end{DoxyCompactItemize}

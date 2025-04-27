@@ -1,0 +1,210 @@
+\doxysection{Node\+Searcher结构体 参考}
+\hypertarget{struct_node_searcher}{}\label{struct_node_searcher}\index{NodeSearcher@{NodeSearcher}}
+
+
+{\ttfamily \#include $<$quadtreedef.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_node_searcher_aa136fb75a806a781a749c40efc0a0acd}{Node\+Searcher}} ()=default
+\item 
+\mbox{\hyperlink{struct_node_searcher_a3146902754f91fac6bf4c657f9af7598}{Node\+Searcher}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}, const int \&)
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_node_searcher}{Node\+Searcher} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_node_searcher_ab1376746d0a8832c2ccc2092a77b8c35}{get\+Node\+Type}} (const int \&node\+Type, int \&search\+Type)
+\begin{DoxyCompactList}\small\item\em 获取下一个搜索节点类型 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_node_searcher_ab4b9619af5bdbc894d0d5480390c8a12}{find\+Near\+Node}} (\mbox{\hyperlink{struct_search_result}{Search\+Result}} \&searched\+Info)
+\begin{DoxyCompactList}\small\item\em 查找临近节点 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_node_searcher_af7d47ff75171b71c63d022cc06288276}{find\+Near\+Node\+\_\+root}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}nood, \mbox{\hyperlink{struct_search_result}{Search\+Result}} \&searched\+Info)
+\begin{DoxyCompactList}\small\item\em 从根节点开始查找最近点 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_node_searcher_aa617094120668ed6588e7a3737589a57}{find\+Near\+Node\+\_\+root}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}nood, const int \&, \mbox{\hyperlink{struct_search_result}{Search\+Result}} \&searched\+Info)
+\begin{DoxyCompactList}\small\item\em 在指定方向搜索最近点 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node_searcher_a4882184b65017188d34fb74eb7b41895}{\+\_\+node}} = nullptr
+\item 
+int \mbox{\hyperlink{struct_node_searcher_a5c94dd1dd5fa6d5b8ce5e9544440a384}{\+\_\+cur\+Search\+Type}} = 0
+\item 
+QList$<$ int $>$ \mbox{\hyperlink{struct_node_searcher_a04b79e2ec0d3484d53d86917814aad01}{\+\_\+node\+Type\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_node_searcher_aa136fb75a806a781a749c40efc0a0acd}\index{NodeSearcher@{NodeSearcher}!NodeSearcher@{NodeSearcher}}
+\index{NodeSearcher@{NodeSearcher}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{NodeSearcher()}{NodeSearcher()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_node_searcher_aa136fb75a806a781a749c40efc0a0acd} 
+Node\+Searcher\+::\+Node\+Searcher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_node_searcher_a3146902754f91fac6bf4c657f9af7598}\index{NodeSearcher@{NodeSearcher}!NodeSearcher@{NodeSearcher}}
+\index{NodeSearcher@{NodeSearcher}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{NodeSearcher()}{NodeSearcher()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_node_searcher_a3146902754f91fac6bf4c657f9af7598} 
+Node\+Searcher\+::\+Node\+Searcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{const int \&}]{search\+Type}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{struct_node_searcher}{Node\+Searcher} 
+
+Node\+Searcher类构造函数
+
+
+\begin{DoxyParams}{参数}
+{\em node} & 要搜索的节点指针 \\
+\hline
+{\em search\+Type} & 搜索类型\\
+\hline
+\end{DoxyParams}
+初始化节点搜索器,设置起始节点和搜索类型 
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_node_searcher_ab4b9619af5bdbc894d0d5480390c8a12}\index{NodeSearcher@{NodeSearcher}!findNearNode@{findNearNode}}
+\index{findNearNode@{findNearNode}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{findNearNode()}{findNearNode()}}
+{\footnotesize\ttfamily \label{struct_node_searcher_ab4b9619af5bdbc894d0d5480390c8a12} 
+bool Node\+Searcher\+::find\+Near\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_search_result}{Search\+Result}} \&}]{searched\+Info}{}\end{DoxyParamCaption})}
+
+
+
+查找临近节点 
+
+
+\begin{DoxyParams}{参数}
+{\em searched\+Info} & 搜索结果信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 查找成功返回true,失败返回false
+\end{DoxyReturn}
+节点查找过程\+:
+\begin{DoxyEnumerate}
+\item 向上搜索阶段(\+\_\+cur\+Search\+Type不为0)\+:
+\begin{DoxyItemize}
+\item 计算并记录下一个搜索节点类型
+\item 移动到父节点继续搜索
+\end{DoxyItemize}
+\item 向下搜索阶段(\+\_\+cur\+Search\+Type为0)\+:
+\begin{DoxyItemize}
+\item 检查节点有效性
+\item 获取下一个要搜索的节点类型
+\item 移动到对应的子节点
+\item 到达目标节点时计算最近点 
+\end{DoxyItemize}
+\end{DoxyEnumerate}\Hypertarget{struct_node_searcher_aa617094120668ed6588e7a3737589a57}\index{NodeSearcher@{NodeSearcher}!findNearNode\_root@{findNearNode\_root}}
+\index{findNearNode\_root@{findNearNode\_root}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{findNearNode\_root()}{findNearNode\_root()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_node_searcher_aa617094120668ed6588e7a3737589a57} 
+bool Node\+Searcher\+::find\+Near\+Node\+\_\+root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{const int \&}]{direct}{, }\item[{\mbox{\hyperlink{struct_search_result}{Search\+Result}} \&}]{searched\+Info}{}\end{DoxyParamCaption})}
+
+
+
+在指定方向搜索最近点 
+
+
+\begin{DoxyParams}{参数}
+{\em node} & 当前节点指针 \\
+\hline
+{\em direct} & 搜索方向(UL/\+UR/\+DL/\+DR) \\
+\hline
+{\em searched\+Info} & 搜索结果信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 搜索成功返回true,失败返回false
+\end{DoxyReturn}
+定向搜索流程\+:
+\begin{DoxyEnumerate}
+\item 检查指定方向是否存在子节点
+\item 检查子节点的节点计数
+\item 递归搜索子节点 
+\end{DoxyEnumerate}\Hypertarget{struct_node_searcher_af7d47ff75171b71c63d022cc06288276}\index{NodeSearcher@{NodeSearcher}!findNearNode\_root@{findNearNode\_root}}
+\index{findNearNode\_root@{findNearNode\_root}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{findNearNode\_root()}{findNearNode\_root()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_node_searcher_af7d47ff75171b71c63d022cc06288276} 
+bool Node\+Searcher\+::find\+Near\+Node\+\_\+root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{\mbox{\hyperlink{struct_search_result}{Search\+Result}} \&}]{searched\+Info}{}\end{DoxyParamCaption})}
+
+
+
+从根节点开始查找最近点 
+
+
+\begin{DoxyParams}{参数}
+{\em node} & 当前节点指针 \\
+\hline
+{\em searched\+Info} & 搜索结果信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 查找成功返回true,失败返回false
+\end{DoxyReturn}
+从根节点递归查找的流程\+:
+\begin{DoxyEnumerate}
+\item 基本检查\+:
+\begin{DoxyItemize}
+\item 节点有效性检查
+\item 节点计数检查
+\item 到达最大深度时计算最近点
+\end{DoxyItemize}
+\item 区域判断\+:
+\begin{DoxyItemize}
+\item 判断参考点是否在当前节点区域内
+\item 根据参考点位置决定搜索顺序
+\end{DoxyItemize}
+\item 递归搜索\+:
+\begin{DoxyItemize}
+\item 按照优先级顺序搜索四个象限
+\item 根据搜索结果决定是否继续其他象限 
+\end{DoxyItemize}
+\end{DoxyEnumerate}\Hypertarget{struct_node_searcher_ab1376746d0a8832c2ccc2092a77b8c35}\index{NodeSearcher@{NodeSearcher}!getNodeType@{getNodeType}}
+\index{getNodeType@{getNodeType}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{getNodeType()}{getNodeType()}}
+{\footnotesize\ttfamily \label{struct_node_searcher_ab1376746d0a8832c2ccc2092a77b8c35} 
+int Node\+Searcher\+::get\+Node\+Type (\begin{DoxyParamCaption}\item[{const int \&}]{node\+Type}{, }\item[{int \&}]{search\+Type}{}\end{DoxyParamCaption})}
+
+
+
+获取下一个搜索节点类型 
+
+
+\begin{DoxyParams}{参数}
+{\em node\+Type} & 当前节点类型 \\
+\hline
+{\em search\+Type} & 搜索类型(入参和出参) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+int 返回下一个节点类型
+\end{DoxyReturn}
+通过位运算确定搜索方向\+:
+\begin{DoxyEnumerate}
+\item 0x11处理左右方向
+\item 0x1100处理上下方向
+\item 更新搜索类型 
+\end{DoxyEnumerate}
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_node_searcher_a5c94dd1dd5fa6d5b8ce5e9544440a384}\index{NodeSearcher@{NodeSearcher}!\_curSearchType@{\_curSearchType}}
+\index{\_curSearchType@{\_curSearchType}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{\_curSearchType}{\_curSearchType}}
+{\footnotesize\ttfamily \label{struct_node_searcher_a5c94dd1dd5fa6d5b8ce5e9544440a384} 
+int Node\+Searcher\+::\+\_\+cur\+Search\+Type = 0}
+
+\Hypertarget{struct_node_searcher_a4882184b65017188d34fb74eb7b41895}\index{NodeSearcher@{NodeSearcher}!\_node@{\_node}}
+\index{\_node@{\_node}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{\_node}{\_node}}
+{\footnotesize\ttfamily \label{struct_node_searcher_a4882184b65017188d34fb74eb7b41895} 
+\mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*} Node\+Searcher\+::\+\_\+node = nullptr}
+
+\Hypertarget{struct_node_searcher_a04b79e2ec0d3484d53d86917814aad01}\index{NodeSearcher@{NodeSearcher}!\_nodeTypeList@{\_nodeTypeList}}
+\index{\_nodeTypeList@{\_nodeTypeList}!NodeSearcher@{NodeSearcher}}
+\doxysubsubsection{\texorpdfstring{\_nodeTypeList}{\_nodeTypeList}}
+{\footnotesize\ttfamily \label{struct_node_searcher_a04b79e2ec0d3484d53d86917814aad01} 
+QList$<$int$>$ Node\+Searcher\+::\+\_\+node\+Type\+List}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8h}{quadtreedef.\+h}}\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8cpp}{quadtreedef.\+cpp}}\end{DoxyCompactItemize}

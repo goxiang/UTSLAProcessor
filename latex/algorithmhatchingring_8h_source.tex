@@ -1,0 +1,160 @@
+\doxysection{algorithmhatchingring.\+h}
+\hypertarget{algorithmhatchingring_8h_source}{}\label{algorithmhatchingring_8h_source}\mbox{\hyperlink{algorithmhatchingring_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORITHMHATCHINGRING\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORITHMHATCHINGRING\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmbase_8h}{algorithmbase.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_wnd_info}{WndInfo}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ uint\ \mbox{\hyperlink{struct_wnd_info_ac03d1e45960715fb5102c3eb0911aad5}{nWndBegin}}\ \ =\ 0;}
+\DoxyCodeLine{00011\ \ \ \ \ uint\ \mbox{\hyperlink{struct_wnd_info_aedbaa0364c3e646c0578584185bab90b}{nWndEnd1}}\ \ \ =\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ uint\ \mbox{\hyperlink{struct_wnd_info_a5715fabd8d33dbf62544fad5d7789bbb}{nWndEnd2}}\ \ \ =\ 0;}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{algorithmhatchingring_8h_ae6b3af827cde5e49f0f23b149a972500}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_wnd_info}{WndInfo}}\ \&wndInfo)}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}WndInfo"{}}\ <<\ \textcolor{stringliteral}{"{}\{\ "{}};}
+\DoxyCodeLine{00018\ \ \ \ \ debug\ <<\ wndInfo.\mbox{\hyperlink{struct_wnd_info_ac03d1e45960715fb5102c3eb0911aad5}{nWndBegin}}\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ wndInfo.\mbox{\hyperlink{struct_wnd_info_aedbaa0364c3e646c0578584185bab90b}{nWndEnd1}}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ "{}}<<\ wndInfo.\mbox{\hyperlink{struct_wnd_info_a5715fabd8d33dbf62544fad5d7789bbb}{nWndEnd2}};}
+\DoxyCodeLine{00020\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}\ \}\ "{}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00022\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ring_wnd_info}{RingWndInfo}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{struct_wnd_info}{WndInfo}}\ \mbox{\hyperlink{struct_ring_wnd_info_aca9be5af7c12e4be6ef85de0c258c902}{curWnd}};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{struct_wnd_info}{WndInfo}}\ \mbox{\hyperlink{struct_ring_wnd_info_aabae255f506b8edfaa7563be3073f337}{bigWnd}};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_wnd_info}{WndInfo}}\ \mbox{\hyperlink{struct_ring_wnd_info_a342d75b3a49ad862fe4612eb295f9fee}{tempWnd}};}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_wnd_pos}{WndPos}};}
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_bigger_wnd}{BiggerWnd}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_pocket_node_ade80cb9428652c61098a3a9dda8708f7}{PocketNode}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_pocket_node_ae1569776a24c75563580e62569dda75f}{nLevel}}\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_pocket_node_a4bbd5362def01bd56faa216eb728b3cb}{fArea}}\ =\ 0.0;}
+\DoxyCodeLine{00036\ \ \ \ \ BoundingBox\ \mbox{\hyperlink{struct_pocket_node_a90232666ed780c6c7cb0957f57c1588b}{bBox}};}
+\DoxyCodeLine{00037\ \ \ \ \ Path\ \mbox{\hyperlink{struct_pocket_node_a057cd68590f98ecd0c1f01d92e22b745}{circle}};}
+\DoxyCodeLine{00038\ \ \ \ \ QList<int>\ \mbox{\hyperlink{struct_pocket_node_af7548a392c0658bb4f6883965ae2e44d}{subBranchList}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{struct_wnd_info}{WndInfo}}\ \mbox{\hyperlink{struct_pocket_node_a7039883205b654951dd0d9a9fac03c4a}{wndInfo}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{struct_ring_wnd_info}{RingWndInfo}}\ \mbox{\hyperlink{struct_pocket_node_a77bfd5b4b3b197835263c401cdc5221d}{ringWndInfo}};}
+\DoxyCodeLine{00043\ \ \ \ \ QList<PocketNode\ *>\ \mbox{\hyperlink{struct_pocket_node_a31b4a9358b9cea876834b34c914294a2}{listNodeWnd}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{struct_pocket_node_ade80cb9428652c61098a3a9dda8708f7}{PocketNode}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{struct_pocket_node_ade80cb9428652c61098a3a9dda8708f7}{PocketNode}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&level,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&area,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ BoundingBox\ \&box,\ \textcolor{keyword}{const}\ Path\ \&path);}
+\DoxyCodeLine{00048\ \ \ \ \ IntPoint\ \mbox{\hyperlink{struct_pocket_node_a13a697e4ef4b1be0187a71d82df83197}{firstCoor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_pocket_node_a046f1537a84272a45ef89c3ea996af39}{containsCoor}}(\textcolor{keyword}{const}\ IntPoint\ \&coor)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}{PocketBranch}}\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd}{Inner}}\ =\ 0,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7}{Outer}}}
+\DoxyCodeLine{00056\ \ \ \ \ \};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_pocket_branch_a5e9d55893f501073b683089558663033}{bMerged}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00058\ \ \ \ \ qint8\ \mbox{\hyperlink{struct_pocket_branch_a94c3b9034db6a337b962889a39dbb3ac}{mCircleType}}\ =\ \mbox{\hyperlink{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7}{Outer}};}
+\DoxyCodeLine{00059\ \ \ \ \ QList<PocketNode>\ \mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{mNodeList}};}
+\DoxyCodeLine{00060\ \ \ \ \ QList<PocketBranch>\ \mbox{\hyperlink{struct_pocket_branch_a3097b0d85c662e40d4647454e1e0206e}{mSubBranchList}};}
+\DoxyCodeLine{00061\ \ \ \ \ QList<int>\ \mbox{\hyperlink{struct_pocket_branch_afdd64b56e2d95ebb6e3a41f09297b58c}{mNestingList}};}
+\DoxyCodeLine{00062\ \ \ \ \ QList<int>\ \mbox{\hyperlink{struct_pocket_branch_ada7b26a2fa671884c6b7c898e33de12d}{mTempIndexList}};}
+\DoxyCodeLine{00063\ \ \ \ \ Path\ \mbox{\hyperlink{struct_pocket_branch_a53c08d2964bac69dc9479a5f4b9c07d4}{spiralPath}};}
+\DoxyCodeLine{00064\ \ \ \ \ Path\ \mbox{\hyperlink{struct_pocket_branch_a649db231646e2f47e1ddfe867710a009}{fermatSpiralPath}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}{PocketBranch}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}{PocketBranch}}(\textcolor{keyword}{const}\ qint8\ \&circleType,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_node}{PocketNode}}\ \&node);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_pocket_branch_a75789da4375db35506f6fdba021e9fd9}{containsNode}}(\textcolor{keyword}{const}\ IntPoint\ \&coor,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&index);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_pocket_branch_a7e5a73d16ded6b69185ed000c6e0e709}{containsInNode}}(\mbox{\hyperlink{struct_pocket_node}{PocketNode}}\ \&node,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_aeb937f063c9fa5fa00c35ce3f7ef1b30}{updateNestingList}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&thisIndex,\ \mbox{\hyperlink{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}{PocketBranch}}\ \&branch,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&subIndex);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_a6bc7c5b62ea47c0b5450c48d28787bb7}{addNode}}(QList<PocketNode>\ \&tempNodeList);}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_pocket_branch_aae31d805dd949b4a54b28656bf6ba513}{addInnerBranch}}(\mbox{\hyperlink{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}{PocketBranch}}\ \&innerBranch);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_pocket_branch_acf1aba9a7a1eb71cd40fac9fcbc6d449}{addInnerBranch\_upgrade}}(\mbox{\hyperlink{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}{PocketBranch}}\ \&innerBranch);}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_ad6189cb99d9b46fd9a3dd4b520de15f9}{updateBranchOrder}}();}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_pocket_branch_aecb36257b1106a1a93d5d07aff050860}{maxArea}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_a073a85d451e64b062b8cd0a9f7821079}{getNodeCnt}}(\textcolor{keywordtype}{int}\ \&nodeCnt)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_ac23ca20725bb929f161d3fdccc0ddc9c}{createSpiral}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_a7c254843d14f6b8b939d48f56849010e}{calcNodeWndPos\_Spiral}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_ad3c6a88c1969e5e34e6316e932ca27c8}{calcClosedPt}}(Path\ \&bigger,\ \mbox{\hyperlink{struct_wnd_pos}{WndPos}}\ \&,\ Path\ \&smaller,\ \mbox{\hyperlink{struct_wnd_pos}{WndPos}}\ \&wndPos,\ \textcolor{keyword}{const}\ uint\ \&minPos,\ \textcolor{keyword}{const}\ uint\ \&maxPos,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ QList<BiggerWnd>\ \&);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_a6f18b2eefc7f29e6191c38b7e0adb857}{calcClosedPtInvert}}(Path\ \&bigger,\ \mbox{\hyperlink{struct_wnd_pos}{WndPos}}\ \&,\ Path\ \&smaller,\ \mbox{\hyperlink{struct_wnd_pos}{WndPos}}\ \&wndPos,\ \textcolor{keyword}{const}\ uint\ \&minPos,\ \textcolor{keyword}{const}\ uint\ \&maxPos,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ QList<BiggerWnd>\ \&);}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_a9357412e04d51feeaebb976f1340b6eb}{calcSpiralJoinPoint}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&curIndex,\ \textcolor{keywordtype}{int}\ \&preIndex,\ uint\ \&beginPos,\ uint\ \&endPos,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \&maxCircle\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_a7d6c4befe0a0b63d948b3c7ca7b4696f}{createFermatSpiral}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_acee5b28570a7d5e48e32dafc6efb0efd}{calcNodeWndPos}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_acee5b28570a7d5e48e32dafc6efb0efd}{calcNodeWndPos}}(\mbox{\hyperlink{struct_pocket_node}{PocketNode}}\ \&,\ \mbox{\hyperlink{struct_pocket_node}{PocketNode}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \&);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_branch_abaa116424f9a166b7a784cff2f94aa0e}{calcBranchWndPos}}(\mbox{\hyperlink{struct_pocket_node}{PocketNode}}\ \&,\ \mbox{\hyperlink{struct_pocket_node}{PocketNode}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ QList<PocketBranch>\ \mbox{\hyperlink{struct_pocket_tree_a84a903d5a5d84f7adac88b50a8d836eb}{branchList}};}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_tree_a141dec2ef89149bda3e58e84ca0a2571}{appendBranch}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_branch}{PocketBranch}}\ \&branch);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_pocket_tree_a97961988bd52a7babbb2776c75b8a545}{getNodeCnt}}(\textcolor{keywordtype}{int}\ \&nodeCnt);}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_pocket_tree_ae4f7b41555194e34baaf730cd5b5c397}{updateBranchOrder}}();}
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_inner_pocket_tree}{InnerPocketTree}}\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ QMap<int,\ PocketBranch>\ \mbox{\hyperlink{struct_inner_pocket_tree_a18f7c8c0f7858a9fe27c2d7e4624481d}{branchList}};}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_inner_pocket_tree_a338d55002fcc493779c7184928430e78}{nIndex}}\ =\ 0;}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_inner_pocket_tree_a5a5421dc4e891bbf1efeb3c3af08fe37}{appendBranch}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_branch}{PocketBranch}}\ \&branch);}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_inner_pocket_tree_a463417d6c488967351c1ac547e4d2ee0}{getNodeCnt}}(\textcolor{keywordtype}{int}\ \&nodeCnt);}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_inner_pocket_tree_a59ab0f3034d5faa704bd4ce1dfc2ddea}{updateNestingList}}();}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_inner_pocket_tree_a2b558e6d3b42db46a07b10d2723bb472}{removeNestingList}}(QList<int>\ \&subBranchList);}
+\DoxyCodeLine{00103\ \};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}};}
+\DoxyCodeLine{00110\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb}{AlgorithmHatchingRing}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_algorithm_base}{AlgorithmBase}}}
+\DoxyCodeLine{00111\ \{}
+\DoxyCodeLine{00112\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb}{AlgorithmHatchingRing}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_ring_a42dfd0438410d8b49619e4d4f662aa2b}{createPocketTree}}(\textcolor{keyword}{const}\ Paths\ \&curPaths,\ \mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&outerTree,\ \mbox{\hyperlink{struct_inner_pocket_tree}{InnerPocketTree}}\ \&innerTree);}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_ring_af5a9e64e05b567a5972e098341ddb55b}{updatePocketTree}}(\textcolor{keyword}{const}\ Paths\ \&curPaths,\ \mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&outerTree,\ \mbox{\hyperlink{struct_inner_pocket_tree}{InnerPocketTree}}\ \&innerTree,}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&level);}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_ring_a97ed0421269a3d9e8eb187aacbb611bc}{sortPocketTree}}(\mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&outerTree,\ \mbox{\hyperlink{struct_inner_pocket_tree}{InnerPocketTree}}\ \&innerTree);}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_ring_a0b3bd4330183b9e45f05ac562c045adb}{createSpiral}}(\mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&outerTree,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&powDis);}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_ring_a982ab94926406552a831789041d0e848}{createFermatSpiral}}(\mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&outerTree,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&powDis);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_ring_a2e966d4053431f256f5495843e4cca45}{mergePocketTree}}(\mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&outerTree,\ \mbox{\hyperlink{struct_inner_pocket_tree}{InnerPocketTree}}\ \&innerTree);}
+\DoxyCodeLine{00125\ \};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{algorithmhatchingring_8h_ae6b3af827cde5e49f0f23b149a972500}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_branch}{PocketBranch}}\ \&branch)}
+\DoxyCodeLine{00128\ \{}
+\DoxyCodeLine{00129\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}branch\ \{\ "{}};}
+\DoxyCodeLine{00130\ \ \ \ \ debug\ <<\ (branch.\mbox{\hyperlink{struct_pocket_branch_a94c3b9034db6a337b962889a39dbb3ac}{mCircleType}}\ ?\ \textcolor{stringliteral}{"{}Outer"{}}\ :\ \textcolor{stringliteral}{"{}Inner"{}})\ <<\ \textcolor{stringliteral}{"{};\ "{}};}
+\DoxyCodeLine{00131\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}Start:\ "{}}\ <<\ branch.\mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{mNodeList}}.first().nLevel\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ branch.\mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{mNodeList}}.first().fArea\ <<\ \textcolor{stringliteral}{"{};\ "{}};}
+\DoxyCodeLine{00132\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}End:\ "{}}\ <<\ branch.\mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{mNodeList}}.last().nLevel\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ branch.\mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{mNodeList}}.last().fArea\ \ <<\ \textcolor{stringliteral}{"{};\ "{}};}
+\DoxyCodeLine{00133\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}CurWnd:\ "{}}\ <<\ branch.\mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{mNodeList}}.first().ringWndInfo.curWnd\ \ <<\ \textcolor{stringliteral}{"{};\ "{}};}
+\DoxyCodeLine{00134\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}TempWnd:\ "{}}\ <<\ branch.\mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{mNodeList}}.first().ringWndInfo.tempWnd\ \ <<\ \textcolor{stringliteral}{"{};\ "{}};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordflow}{if}(branch.\mbox{\hyperlink{struct_pocket_branch_a3097b0d85c662e40d4647454e1e0206e}{mSubBranchList}}.size())}
+\DoxyCodeLine{00137\ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nList:\ "{}}\ <<\ branch.\mbox{\hyperlink{struct_pocket_branch_a3097b0d85c662e40d4647454e1e0206e}{mSubBranchList}}.size()\ <<\ \textcolor{stringliteral}{"{}\{\(\backslash\)n"{}};}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&subBranch\ :\ branch.\mbox{\hyperlink{struct_pocket_branch_a3097b0d85c662e40d4647454e1e0206e}{mSubBranchList}})\ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ debug\ <<\ subBranch;}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}\}\ "{}};}
+\DoxyCodeLine{00143\ \ \ \ \ \}}
+\DoxyCodeLine{00144\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}};}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00146\ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{algorithmhatchingring_8h_ae6b3af827cde5e49f0f23b149a972500}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&tree)}
+\DoxyCodeLine{00149\ \{}
+\DoxyCodeLine{00150\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}Tree"{}}\ <<\ tree.\mbox{\hyperlink{struct_pocket_tree_a84a903d5a5d84f7adac88b50a8d836eb}{branchList}}.size()\ <<\ \textcolor{stringliteral}{"{}\{\ \(\backslash\)n"{}};}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&branch\ :\ tree.\mbox{\hyperlink{struct_pocket_tree_a84a903d5a5d84f7adac88b50a8d836eb}{branchList}})}
+\DoxyCodeLine{00152\ \ \ \ \ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ debug\ <<\ branch;}
+\DoxyCodeLine{00154\ \ \ \ \ \}}
+\DoxyCodeLine{00155\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}};}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00157\ \}}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALGORITHMHATCHINGRING\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,173 @@
+\doxysection{Periodic\+Line类 参考}
+\hypertarget{class_periodic_line}{}\label{class_periodic_line}\index{PeriodicLine@{PeriodicLine}}
+
+
+{\ttfamily \#include $<$splicingabstract.\+h$>$}
+
+类 Periodic\+Line 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_periodic_line}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_periodic_line_ad391b58280f6e168ff2ffe7aa8f68fc9}{Periodic\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_periodic_line_ae6f3b989a9470b0294e2a00e83e668b8}{init\+Splicing\+Ranges}} (const int \&, const int64\+\_\+t \&, const int64\+\_\+t \&, const double \&, const double \&, const int \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_periodic_line_ac4dfb3b859022f143a275acf2096c3b7}{calc\+Next\+Pos}} ()
+\item 
+const int \mbox{\hyperlink{class_periodic_line_ac602c77d6da07615056021746d04fd1a}{get\+Splicng\+Line\+Type}} () const
+\item 
+const int64\+\_\+t \mbox{\hyperlink{class_periodic_line_addb047689cb1ee18c45453ef1768d5d6}{get\+Splicing\+Pos}} () const
+\item 
+const int64\+\_\+t \mbox{\hyperlink{class_periodic_line_ad590a74d58751a867886436bb669ffea}{get\+Overlap}} () const
+\item 
+const \mbox{\hyperlink{struct_splicing_base_settings}{Splicing\+Base\+Settings}} \& \mbox{\hyperlink{class_periodic_line_acacc43302bc1e4202982983ad0786cc3}{get\+Splicing\+Settings}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_splicing_abstract}{Splicing\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_splicing_abstract_a070a03c1506883e06a250d255b523ad0}{\texorpdfstring{$\sim$}{\string~}\+Splicing\+Abstract}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_splicing_base_settings}{Splicing\+Base\+Settings}} \mbox{\hyperlink{class_periodic_line_a75f0690de3c3069e6bb85e291521d9e1}{splicing\+Base\+Settings}}
+\item 
+int \mbox{\hyperlink{class_periodic_line_ad345a221865d5e6e9a2397a371220dd0}{\+\_\+cur\+Step\+Index}} = 0
+\item 
+int \mbox{\hyperlink{class_periodic_line_aa64e42eff5482bea2a777bbce66827e6}{\+\_\+repeat\+Cnt}} = 2
+\item 
+int64\+\_\+t \mbox{\hyperlink{class_periodic_line_a27f5cb65a91d37e967091ed5c1501aff}{\+\_\+initial\+Pos}} = 0
+\item 
+int64\+\_\+t \mbox{\hyperlink{class_periodic_line_a2e61b49aefa4f7ddc1fb82ed180f4cce}{\+\_\+step\+Length}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Public 类型 继承自 \mbox{\hyperlink{class_splicing_abstract}{Splicing\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284}{Splicing\+Position\+Type}} \{ \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1}{RT\+\_\+\+Left}}
+, \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77}{RT\+\_\+\+Top}}
+, \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c}{RT\+\_\+\+Right}}
+, \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44}{RT\+\_\+\+Bottom}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8}{Splicing\+Line\+Type}} \{ \mbox{\hyperlink{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11}{SLT\+\_\+\+Hor}}
+, \mbox{\hyperlink{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6}{SLT\+\_\+\+Ver}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{class_splicing_abstract}{Splicing\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_splicing_abstract_ab09962e78c2675582a7fd490a16381f1}{Splicing\+Abstract}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_periodic_line_ad391b58280f6e168ff2ffe7aa8f68fc9}\index{PeriodicLine@{PeriodicLine}!PeriodicLine@{PeriodicLine}}
+\index{PeriodicLine@{PeriodicLine}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{PeriodicLine()}{PeriodicLine()}}
+{\footnotesize\ttfamily \label{class_periodic_line_ad391b58280f6e168ff2ffe7aa8f68fc9} 
+Periodic\+Line\+::\+Periodic\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_periodic_line_ac4dfb3b859022f143a275acf2096c3b7}\index{PeriodicLine@{PeriodicLine}!calcNextPos@{calcNextPos}}
+\index{calcNextPos@{calcNextPos}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{calcNextPos()}{calcNextPos()}}
+{\footnotesize\ttfamily \label{class_periodic_line_ac4dfb3b859022f143a275acf2096c3b7} 
+void Periodic\+Line\+::calc\+Next\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_splicing_abstract_a6e360c47db914469f31f553179735dac}{Splicing\+Abstract}}.
+
+\Hypertarget{class_periodic_line_ad590a74d58751a867886436bb669ffea}\index{PeriodicLine@{PeriodicLine}!getOverlap@{getOverlap}}
+\index{getOverlap@{getOverlap}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{getOverlap()}{getOverlap()}}
+{\footnotesize\ttfamily \label{class_periodic_line_ad590a74d58751a867886436bb669ffea} 
+const int64\+\_\+t Periodic\+Line\+::get\+Overlap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_splicing_abstract_a0e2999041e0c4c32d5e0a2e570db3655}{Splicing\+Abstract}}.
+
+\Hypertarget{class_periodic_line_addb047689cb1ee18c45453ef1768d5d6}\index{PeriodicLine@{PeriodicLine}!getSplicingPos@{getSplicingPos}}
+\index{getSplicingPos@{getSplicingPos}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{getSplicingPos()}{getSplicingPos()}}
+{\footnotesize\ttfamily \label{class_periodic_line_addb047689cb1ee18c45453ef1768d5d6} 
+const int64\+\_\+t Periodic\+Line\+::get\+Splicing\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_splicing_abstract_a04be8d08eb1ad104722858cc127b30f9}{Splicing\+Abstract}}.
+
+\Hypertarget{class_periodic_line_acacc43302bc1e4202982983ad0786cc3}\index{PeriodicLine@{PeriodicLine}!getSplicingSettings@{getSplicingSettings}}
+\index{getSplicingSettings@{getSplicingSettings}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{getSplicingSettings()}{getSplicingSettings()}}
+{\footnotesize\ttfamily \label{class_periodic_line_acacc43302bc1e4202982983ad0786cc3} 
+const \mbox{\hyperlink{struct_splicing_base_settings}{Splicing\+Base\+Settings}} \& Periodic\+Line\+::get\+Splicing\+Settings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_splicing_abstract_a056438e17c77e15015f41122fc2100cc}{Splicing\+Abstract}}.
+
+\Hypertarget{class_periodic_line_ac602c77d6da07615056021746d04fd1a}\index{PeriodicLine@{PeriodicLine}!getSplicngLineType@{getSplicngLineType}}
+\index{getSplicngLineType@{getSplicngLineType}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{getSplicngLineType()}{getSplicngLineType()}}
+{\footnotesize\ttfamily \label{class_periodic_line_ac602c77d6da07615056021746d04fd1a} 
+const int Periodic\+Line\+::get\+Splicng\+Line\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_splicing_abstract_af706235a2d016425e12c11f7b6d71e04}{Splicing\+Abstract}}.
+
+\Hypertarget{class_periodic_line_ae6f3b989a9470b0294e2a00e83e668b8}\index{PeriodicLine@{PeriodicLine}!initSplicingRanges@{initSplicingRanges}}
+\index{initSplicingRanges@{initSplicingRanges}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{initSplicingRanges()}{initSplicingRanges()}}
+{\footnotesize\ttfamily \label{class_periodic_line_ae6f3b989a9470b0294e2a00e83e668b8} 
+void Periodic\+Line\+::init\+Splicing\+Ranges (\begin{DoxyParamCaption}\item[{const int \&}]{line\+Type}{, }\item[{const int64\+\_\+t \&}]{min\+Pos}{, }\item[{const int64\+\_\+t \&}]{max\+Pos}{, }\item[{const double \&}]{overlap}{, }\item[{const double \&}]{allowed\+Range}{, }\item[{const int \&}]{repeat\+Cnt}{, }\item[{const double \&}]{initial\+Pos}{, }\item[{const double \&}]{step\+Length}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_periodic_line_ad345a221865d5e6e9a2397a371220dd0}\index{PeriodicLine@{PeriodicLine}!\_curStepIndex@{\_curStepIndex}}
+\index{\_curStepIndex@{\_curStepIndex}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{\_curStepIndex}{\_curStepIndex}}
+{\footnotesize\ttfamily \label{class_periodic_line_ad345a221865d5e6e9a2397a371220dd0} 
+int Periodic\+Line\+::\+\_\+cur\+Step\+Index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_periodic_line_a27f5cb65a91d37e967091ed5c1501aff}\index{PeriodicLine@{PeriodicLine}!\_initialPos@{\_initialPos}}
+\index{\_initialPos@{\_initialPos}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{\_initialPos}{\_initialPos}}
+{\footnotesize\ttfamily \label{class_periodic_line_a27f5cb65a91d37e967091ed5c1501aff} 
+int64\+\_\+t Periodic\+Line\+::\+\_\+initial\+Pos = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_periodic_line_aa64e42eff5482bea2a777bbce66827e6}\index{PeriodicLine@{PeriodicLine}!\_repeatCnt@{\_repeatCnt}}
+\index{\_repeatCnt@{\_repeatCnt}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{\_repeatCnt}{\_repeatCnt}}
+{\footnotesize\ttfamily \label{class_periodic_line_aa64e42eff5482bea2a777bbce66827e6} 
+int Periodic\+Line\+::\+\_\+repeat\+Cnt = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_periodic_line_a2e61b49aefa4f7ddc1fb82ed180f4cce}\index{PeriodicLine@{PeriodicLine}!\_stepLength@{\_stepLength}}
+\index{\_stepLength@{\_stepLength}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{\_stepLength}{\_stepLength}}
+{\footnotesize\ttfamily \label{class_periodic_line_a2e61b49aefa4f7ddc1fb82ed180f4cce} 
+int64\+\_\+t Periodic\+Line\+::\+\_\+step\+Length = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_periodic_line_a75f0690de3c3069e6bb85e291521d9e1}\index{PeriodicLine@{PeriodicLine}!splicingBaseSettings@{splicingBaseSettings}}
+\index{splicingBaseSettings@{splicingBaseSettings}!PeriodicLine@{PeriodicLine}}
+\doxysubsubsection{\texorpdfstring{splicingBaseSettings}{splicingBaseSettings}}
+{\footnotesize\ttfamily \label{class_periodic_line_a75f0690de3c3069e6bb85e291521d9e1} 
+\mbox{\hyperlink{struct_splicing_base_settings}{Splicing\+Base\+Settings}} Periodic\+Line\+::splicing\+Base\+Settings\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Splicing\+Module/\mbox{\hyperlink{splicingabstract_8h}{splicingabstract.\+h}}\item 
+Splicing\+Module/\mbox{\hyperlink{splicingabstract_8cpp}{splicingabstract.\+cpp}}\end{DoxyCompactItemize}

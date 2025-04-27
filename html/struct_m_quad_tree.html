@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: MQuadTree结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_m_quad_tree.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="struct_m_quad_tree-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">MQuadTree结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="quadtreedef_8h_source.html">quadtreedef.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:adfc7cfd9bc7f61af37957c298e41d6f4" id="r_adfc7cfd9bc7f61af37957c298e41d6f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfc7cfd9bc7f61af37957c298e41d6f4">MQuadTree</a> (const int &amp;depth=<a class="el" href="quadtreedef_8h.html#a38521aa912493bb69f2ea39865729462">MaxDepths</a>)</td></tr>
+<tr class="separator:adfc7cfd9bc7f61af37957c298e41d6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2fab0fa4a5b290f01da35e965d6460" id="r_a0a2fab0fa4a5b290f01da35e965d6460"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2fab0fa4a5b290f01da35e965d6460">getNodeCount</a> ()</td></tr>
+<tr class="separator:a0a2fab0fa4a5b290f01da35e965d6460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe78bdf01aac2561768b84948f79378" id="r_afbe78bdf01aac2561768b84948f79378"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbe78bdf01aac2561768b84948f79378">insertNode</a> (const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;)</td></tr>
+<tr class="memdesc:afbe78bdf01aac2561768b84948f79378"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_m_quad_tree.html">MQuadTree</a>  <br /></td></tr>
+<tr class="separator:afbe78bdf01aac2561768b84948f79378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606ad04f796b982ba5151a8e9b100e1d" id="r_a606ad04f796b982ba5151a8e9b100e1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a606ad04f796b982ba5151a8e9b100e1d">sortPaths</a> (const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;, const Paths &amp;, Paths &amp;)</td></tr>
+<tr class="memdesc:a606ad04f796b982ba5151a8e9b100e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用四叉树对路径进行排序  <br /></td></tr>
+<tr class="separator:a606ad04f796b982ba5151a8e9b100e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c78a9440f6ee4592884a58a37ff7f3" id="r_a78c78a9440f6ee4592884a58a37ff7f3"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a78c78a9440f6ee4592884a58a37ff7f3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a78c78a9440f6ee4592884a58a37ff7f3">sortPaths</a> (const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;, const QVector&lt; T &gt; &amp;, QVector&lt; T &gt; &amp;)</td></tr>
+<tr class="separator:a78c78a9440f6ee4592884a58a37ff7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a178fd616c93a8ba7d0072ad3e7b45126" id="r_a178fd616c93a8ba7d0072ad3e7b45126"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a178fd616c93a8ba7d0072ad3e7b45126">_depths</a> = <a class="el" href="quadtreedef_8h.html#a38521aa912493bb69f2ea39865729462">MaxDepths</a></td></tr>
+<tr class="separator:a178fd616c93a8ba7d0072ad3e7b45126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44de7888fec03959ffb66ab2b645dbe" id="r_af44de7888fec03959ffb66ab2b645dbe"><td class="memItemLeft" align="right" valign="top">QSharedPointer&lt; <a class="el" href="struct_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af44de7888fec03959ffb66ab2b645dbe">_root</a></td></tr>
+<tr class="separator:af44de7888fec03959ffb66ab2b645dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a7bdd2112ea7a42f4bc987b14c9c18450" id="r_a7bdd2112ea7a42f4bc987b14c9c18450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bdd2112ea7a42f4bc987b14c9c18450">seekingNeighhorhood</a> (<a class="el" href="struct_node.html">Node</a> *node, <a class="el" href="struct_search_result.html">SearchResult</a> &amp;)</td></tr>
+<tr class="memdesc:a7bdd2112ea7a42f4bc987b14c9c18450"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索邻近节点  <br /></td></tr>
+<tr class="separator:a7bdd2112ea7a42f4bc987b14c9c18450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d1e76bfdf7d7b3d488edebdaac57d4" id="r_ad3d1e76bfdf7d7b3d488edebdaac57d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3d1e76bfdf7d7b3d488edebdaac57d4">seekingNeighhorhood</a> (<a class="el" href="struct_node.html">Node</a> *node, const int &amp;, <a class="el" href="struct_search_result.html">SearchResult</a> &amp;)</td></tr>
+<tr class="memdesc:ad3d1e76bfdf7d7b3d488edebdaac57d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定方向搜索邻近节点  <br /></td></tr>
+<tr class="separator:ad3d1e76bfdf7d7b3d488edebdaac57d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9800710fc58ac04543a5242a5127cf9b" id="r_a9800710fc58ac04543a5242a5127cf9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9800710fc58ac04543a5242a5127cf9b">removePt</a> (const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;)</td></tr>
+<tr class="memdesc:a9800710fc58ac04543a5242a5127cf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">从四叉树中移除点  <br /></td></tr>
+<tr class="separator:a9800710fc58ac04543a5242a5127cf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8620d17a9fba55e04c3c29e16577d507" id="r_a8620d17a9fba55e04c3c29e16577d507"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8620d17a9fba55e04c3c29e16577d507">updatePathInfo</a> (const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;, const Paths &amp;, Paths &amp;)</td></tr>
+<tr class="memdesc:a8620d17a9fba55e04c3c29e16577d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新路径信息  <br /></td></tr>
+<tr class="separator:a8620d17a9fba55e04c3c29e16577d507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19a6a91c264d8c68bc0c071c764acf0" id="r_ad19a6a91c264d8c68bc0c071c764acf0"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:ad19a6a91c264d8c68bc0c071c764acf0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad19a6a91c264d8c68bc0c071c764acf0">updatePathInfo</a> (const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;, const QVector&lt; T &gt; &amp;, QVector&lt; T &gt; &amp;)</td></tr>
+<tr class="separator:ad19a6a91c264d8c68bc0c071c764acf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ae58c91884ef05822174092e11b47867e" id="r_ae58c91884ef05822174092e11b47867e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae58c91884ef05822174092e11b47867e">_curPtPtr</a> = nullptr</td></tr>
+<tr class="separator:ae58c91884ef05822174092e11b47867e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba63840942546055bce38ce626a5f34a" id="r_aba63840942546055bce38ce626a5f34a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba63840942546055bce38ce626a5f34a">_curBroPtr</a> = nullptr</td></tr>
+<tr class="separator:aba63840942546055bce38ce626a5f34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="adfc7cfd9bc7f61af37957c298e41d6f4" name="adfc7cfd9bc7f61af37957c298e41d6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc7cfd9bc7f61af37957c298e41d6f4">&#9670;&#160;</a></span>MQuadTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MQuadTree::MQuadTree </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>depth</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="quadtreedef_8h.html#a38521aa912493bb69f2ea39865729462">MaxDepths</a></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a0a2fab0fa4a5b290f01da35e965d6460" name="a0a2fab0fa4a5b290f01da35e965d6460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2fab0fa4a5b290f01da35e965d6460">&#9670;&#160;</a></span>getNodeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MQuadTree::getNodeCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbe78bdf01aac2561768b84948f79378" name="afbe78bdf01aac2561768b84948f79378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe78bdf01aac2561768b84948f79378">&#9670;&#160;</a></span>insertNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MQuadTree::insertNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_m_quad_tree.html">MQuadTree</a> </p>
+<p>向四叉树中插入节点</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt</td><td>要插入的点信息指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool 插入成功返回true</dd></dl>
+<p>从根节点开始插入:</p><ol type="1">
+<li>起始坐标为(0,0)</li>
+<li>区域大小为2^MaxDepths</li>
+<li>通过根节点递归插入 </li>
+</ol>
+
+</div>
+</div>
+<a id="a9800710fc58ac04543a5242a5127cf9b" name="a9800710fc58ac04543a5242a5127cf9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9800710fc58ac04543a5242a5127cf9b">&#9670;&#160;</a></span>removePt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MQuadTree::removePt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从四叉树中移除点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt</td><td>要移除的点信息指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool 移除成功返回true </dd></dl>
+
+</div>
+</div>
+<a id="ad3d1e76bfdf7d7b3d488edebdaac57d4" name="ad3d1e76bfdf7d7b3d488edebdaac57d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d1e76bfdf7d7b3d488edebdaac57d4">&#9670;&#160;</a></span>seekingNeighhorhood() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MQuadTree::seekingNeighhorhood </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>searchType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_search_result.html">SearchResult</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>searchedInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在指定方向搜索邻近节点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>当前节点指针 </td></tr>
+    <tr><td class="paramname">searchType</td><td>搜索方向类型 </td></tr>
+    <tr><td class="paramname">searchedInfo</td><td>搜索结果信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7bdd2112ea7a42f4bc987b14c9c18450" name="a7bdd2112ea7a42f4bc987b14c9c18450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bdd2112ea7a42f4bc987b14c9c18450">&#9670;&#160;</a></span>seekingNeighhorhood() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MQuadTree::seekingNeighhorhood </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_search_result.html">SearchResult</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>searchedInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>搜索邻近节点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>当前节点指针 </td></tr>
+    <tr><td class="paramname">searchedInfo</td><td>搜索结果信息</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>邻近节点搜索流程:</p><ol type="1">
+<li>计算当前节点的最近点</li>
+<li>向八个方向递归搜索:<ul>
+<li>四个对角方向(UL/UR/DL/DR)</li>
+<li>四个正交方向(LEFT/RIGHT/UP/DOWN)</li>
+</ul>
+</li>
+<li>找到最近点后终止搜索</li>
+<li>未找到时向父节点回溯 </li>
+</ol>
+
+</div>
+</div>
+<a id="a606ad04f796b982ba5151a8e9b100e1d" name="a606ad04f796b982ba5151a8e9b100e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606ad04f796b982ba5151a8e9b100e1d">&#9670;&#160;</a></span>sortPaths() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MQuadTree::sortPaths </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curPt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>srcPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>desPath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用四叉树对路径进行排序 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curPt</td><td>当前点信息指针 </td></tr>
+    <tr><td class="paramname">srcPath</td><td>源路径集合 </td></tr>
+    <tr><td class="paramname">desPath</td><td>目标路径集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool 排序成功返回true</dd></dl>
+<p>排序流程:</p><ol type="1">
+<li>更新初始路径信息</li>
+<li>检查树节点数量</li>
+<li>循环处理:<ul>
+<li>检查剩余节点</li>
+<li>搜索最近邻点</li>
+<li>更新路径信息 </li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="a78c78a9440f6ee4592884a58a37ff7f3" name="a78c78a9440f6ee4592884a58a37ff7f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c78a9440f6ee4592884a58a37ff7f3">&#9670;&#160;</a></span>sortPaths() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MQuadTree::sortPaths </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curPt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>srcVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>desVec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8620d17a9fba55e04c3c29e16577d507" name="a8620d17a9fba55e04c3c29e16577d507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8620d17a9fba55e04c3c29e16577d507">&#9670;&#160;</a></span>updatePathInfo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MQuadTree::updatePathInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ptPtr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>srcPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>desPaths</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新路径信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptPtr</td><td>点信息指针 </td></tr>
+    <tr><td class="paramname">srcPaths</td><td>源路径集合 </td></tr>
+    <tr><td class="paramname">desPaths</td><td>目标路径集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool 更新成功返回true</dd></dl>
+<p>更新流程:</p><ol type="1">
+<li>验证点信息有效性</li>
+<li>移除当前点</li>
+<li>根据起点类型决定路径方向</li>
+<li>添加路径到目标集合 </li>
+</ol>
+
+</div>
+</div>
+<a id="ad19a6a91c264d8c68bc0c071c764acf0" name="ad19a6a91c264d8c68bc0c071c764acf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19a6a91c264d8c68bc0c071c764acf0">&#9670;&#160;</a></span>updatePathInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MQuadTree::updatePathInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ptPtr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>srcVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>desVec</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aba63840942546055bce38ce626a5f34a" name="aba63840942546055bce38ce626a5f34a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba63840942546055bce38ce626a5f34a">&#9670;&#160;</a></span>_curBroPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> MQuadTree::_curBroPtr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae58c91884ef05822174092e11b47867e" name="ae58c91884ef05822174092e11b47867e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58c91884ef05822174092e11b47867e">&#9670;&#160;</a></span>_curPtPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="quadtreedef_8h.html#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a> MQuadTree::_curPtPtr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a178fd616c93a8ba7d0072ad3e7b45126" name="a178fd616c93a8ba7d0072ad3e7b45126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178fd616c93a8ba7d0072ad3e7b45126">&#9670;&#160;</a></span>_depths</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MQuadTree::_depths = <a class="el" href="quadtreedef_8h.html#a38521aa912493bb69f2ea39865729462">MaxDepths</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af44de7888fec03959ffb66ab2b645dbe" name="af44de7888fec03959ffb66ab2b645dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44de7888fec03959ffb66ab2b645dbe">&#9670;&#160;</a></span>_root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSharedPointer&lt;<a class="el" href="struct_node.html">Node</a>&gt; MQuadTree::_root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>ScanLinesSortor/<a class="el" href="quadtreedef_8h_source.html">quadtreedef.h</a></li>
+<li>ScanLinesSortor/<a class="el" href="quadtreedef_8cpp.html">quadtreedef.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_m_quad_tree.html">MQuadTree</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

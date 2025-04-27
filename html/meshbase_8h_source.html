@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: LatticeModule/meshbase.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('meshbase_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">meshbase.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="meshbase_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MESHBASE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MESHBASE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QSharedPointer&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QMatrix4x4&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QVector3D&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QVector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QPair&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QMap&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;clipper.hpp&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemeshdef.html">meshdef</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_edge.html">Edge</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_face.html">Face</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_bounding_box.html">BoundingBox</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_calc_face_result.html">CalcFaceResult</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_clip_path_result.html">ClipPathResult</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a2d55473c6fbf5769e366f445c52ef0ee">   24</a></span><span class="keyword">typedef</span> QSharedPointer&lt;Vertex&gt; <a class="code hl_typedef" href="namespacemeshdef.html#a2d55473c6fbf5769e366f445c52ef0ee">VertexPtr</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a187db0ead7484e893b40c03d9f0e9dea">   25</a></span><span class="keyword">typedef</span> QSharedPointer&lt;Edge&gt; <a class="code hl_typedef" href="namespacemeshdef.html#a187db0ead7484e893b40c03d9f0e9dea">EdgePtr</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#ad7ee4450006f080892cc73269c431ea6">   26</a></span><span class="keyword">typedef</span> QSharedPointer&lt;Face&gt; <a class="code hl_typedef" href="namespacemeshdef.html#ad7ee4450006f080892cc73269c431ea6">FacePtr</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_bounding_box.html">   28</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_bounding_box.html">BoundingBox</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_bounding_box.html#a16b064a431d245b725adef536b9bab24">   29</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structmeshdef_1_1_bounding_box.html#a16b064a431d245b725adef536b9bab24">_minX</a> = FLT_MAX;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_bounding_box.html#a9787e5ff6ae4c18c6676c252cb6b4b66">   30</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structmeshdef_1_1_bounding_box.html#a9787e5ff6ae4c18c6676c252cb6b4b66">_minY</a> = FLT_MAX;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_bounding_box.html#af6e88824875870967e30d8b0ee88546e">   31</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structmeshdef_1_1_bounding_box.html#af6e88824875870967e30d8b0ee88546e">_minZ</a> = FLT_MAX;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_bounding_box.html#aad79a454e5ab094f5b906e9c7ec8fff5">   32</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structmeshdef_1_1_bounding_box.html#aad79a454e5ab094f5b906e9c7ec8fff5">_maxX</a> = FLT_MIN;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_bounding_box.html#a4eca29e9180002fc5471178842b52c9a">   33</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structmeshdef_1_1_bounding_box.html#a4eca29e9180002fc5471178842b52c9a">_maxY</a> = FLT_MIN;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_bounding_box.html#a91098cb970b8b6c24c4c63cf616d0ffb">   34</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structmeshdef_1_1_bounding_box.html#a91098cb970b8b6c24c4c63cf616d0ffb">_maxZ</a> = FLT_MIN;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0c">   37</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0c">EdgeResult</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cad86b879f092235c085c9fc2b449f8294">   38</a></span>    <a class="code hl_enumvalue" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cad86b879f092235c085c9fc2b449f8294">ERT_NOINSECITON</a> = 0,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0ca9722ed46d38144828d9682a2127d7c21">   39</a></span>    <a class="code hl_enumvalue" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0ca9722ed46d38144828d9682a2127d7c21">ERT_ONEDGE</a>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cac71cfcc52a56859bfbe72aedd19b2f42">   40</a></span>    <a class="code hl_enumvalue" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cac71cfcc52a56859bfbe72aedd19b2f42">ERT_ONVERTEX</a>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07f">   43</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07f">FaceResult</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de">   44</a></span>    <a class="code hl_enumvalue" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de">FRT_FOUNDNONE</a> = 0,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07faeca5ee612039fbce79b2e5a60fdc7da7">   45</a></span>    <a class="code hl_enumvalue" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07faeca5ee612039fbce79b2e5a60fdc7da7">FRT_FOUNDFIRST</a>,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07faa88fcee541f2af060a0becc8545f9335">   46</a></span>    <a class="code hl_enumvalue" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07faa88fcee541f2af060a0becc8545f9335">FRT_FOUNDALL</a></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_vertex.html">   49</a></span><span class="keyword">struct </span><a class="code hl_function" href="structmeshdef_1_1_vertex.html#a65ee361a212566025a2f07e49cd3a44f">Vertex</a> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_vertex.html#a13a44f7b6419aafe20d83355c261e8ff">   50</a></span>    QVector3D <a class="code hl_variable" href="structmeshdef_1_1_vertex.html#a13a44f7b6419aafe20d83355c261e8ff">_coor</a> = QVector3D();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_vertex.html#af2beecca3b2acbeea69590f9dfce0bf5">   51</a></span>    QList&lt;Face *&gt; <a class="code hl_variable" href="structmeshdef_1_1_vertex.html#af2beecca3b2acbeea69590f9dfce0bf5">_faceList</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_vertex.html#a65ee361a212566025a2f07e49cd3a44f">   53</a></span>    <a class="code hl_function" href="structmeshdef_1_1_vertex.html#a65ee361a212566025a2f07e49cd3a44f">Vertex</a>() = <span class="keywordflow">default</span>;</div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_vertex.html#afdcae863e8e2f251bbb3e07c7fb48434">   54</a></span>    <a class="code hl_function" href="structmeshdef_1_1_vertex.html#afdcae863e8e2f251bbb3e07c7fb48434">Vertex</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;x, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;y, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;z) :</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_variable" href="structmeshdef_1_1_vertex.html#a13a44f7b6419aafe20d83355c261e8ff">_coor</a>(x, y, z) {}</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_vertex.html#a57d8aaf916895563d08a37f20ee64d9d">transform</a>(<span class="keyword">const</span> QMatrix4x4 &amp;mat);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="};">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_edge_result.html">   60</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_calc_edge_result.html">CalcEdgeResult</a> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_edge_result.html#aa48890ed4facd9ef5b70c5366c3ed43f">   61</a></span>    <a class="code hl_struct" href="structmeshdef_1_1_edge.html">Edge</a> *<a class="code hl_variable" href="structmeshdef_1_1_calc_edge_result.html#aa48890ed4facd9ef5b70c5366c3ed43f">_edge</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_edge_result.html#ad1305f839b7be18bf2cac34537e6e5c9">   62</a></span>    <a class="code hl_enumeration" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0c">EdgeResult</a> <a class="code hl_variable" href="structmeshdef_1_1_calc_edge_result.html#ad1305f839b7be18bf2cac34537e6e5c9">_result</a> = <a class="code hl_enumvalue" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cad86b879f092235c085c9fc2b449f8294">ERT_NOINSECITON</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_edge_result.html#aaf222c168412da29523bd49a9bab61ac">   63</a></span>    <a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *<a class="code hl_variable" href="structmeshdef_1_1_calc_edge_result.html#aaf222c168412da29523bd49a9bab61ac">_vertex</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_edge_result.html#ac6e7ecd7830bdfd42a47906d4d146c69">   64</a></span>    QVector3D <a class="code hl_variable" href="structmeshdef_1_1_calc_edge_result.html#ac6e7ecd7830bdfd42a47906d4d146c69">_coor</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_edge_result.html#a848a4f6af92f4bb36a5fa46f6bda8e35">   66</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_calc_edge_result.html#a848a4f6af92f4bb36a5fa46f6bda8e35">setVertex</a>(<a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *v) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_variable" href="structmeshdef_1_1_calc_edge_result.html#ad1305f839b7be18bf2cac34537e6e5c9">_result</a> = <a class="code hl_enumvalue" href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cac71cfcc52a56859bfbe72aedd19b2f42">ERT_ONVERTEX</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_variable" href="structmeshdef_1_1_calc_edge_result.html#aaf222c168412da29523bd49a9bab61ac">_vertex</a> = v;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <a class="code hl_variable" href="structmeshdef_1_1_calc_edge_result.html#ac6e7ecd7830bdfd42a47906d4d146c69">_coor</a> = v-&gt;<a class="code hl_variable" href="structmeshdef_1_1_vertex.html#a13a44f7b6419aafe20d83355c261e8ff">_coor</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="};">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_edge.html">   73</a></span><span class="keyword">struct </span><a class="code hl_function" href="structmeshdef_1_1_edge.html#a4e16df216fef19ca87937c29f4e9e957">Edge</a> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_edge.html#a294780c15f93a4a5dfca6b9280e84bfe">   74</a></span>    QVector&lt;Vertex *&gt; <a class="code hl_variable" href="structmeshdef_1_1_edge.html#a294780c15f93a4a5dfca6b9280e84bfe">_vertexs</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_edge.html#afe89cfa05d2e189f0df84f5131b977f4">   75</a></span>    <a class="code hl_struct" href="structmeshdef_1_1_face.html">Face</a> *<a class="code hl_variable" href="structmeshdef_1_1_edge.html#afe89cfa05d2e189f0df84f5131b977f4">_curFace</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_edge.html#a3428be5f50942910f15b4476b55c8bb6">   76</a></span>    <a class="code hl_struct" href="structmeshdef_1_1_face.html">Face</a> *<a class="code hl_variable" href="structmeshdef_1_1_edge.html#a3428be5f50942910f15b4476b55c8bb6">_nextFace</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_edge.html#a4e16df216fef19ca87937c29f4e9e957">   78</a></span>    <a class="code hl_function" href="structmeshdef_1_1_edge.html#a4e16df216fef19ca87937c29f4e9e957">Edge</a>() = <span class="keywordflow">default</span>;</div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_edge.html#ac4b58fed34265d56a274a09bf7b2ae92">   79</a></span>    <a class="code hl_function" href="structmeshdef_1_1_edge.html#ac4b58fed34265d56a274a09bf7b2ae92">Edge</a>(<a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *v1, <a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *v2, <a class="code hl_struct" href="structmeshdef_1_1_face.html">Face</a> *curFace) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_variable" href="structmeshdef_1_1_edge.html#a294780c15f93a4a5dfca6b9280e84bfe">_vertexs</a>.resize(2);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_variable" href="structmeshdef_1_1_edge.html#a294780c15f93a4a5dfca6b9280e84bfe">_vertexs</a>[0] = v1;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_variable" href="structmeshdef_1_1_edge.html#a294780c15f93a4a5dfca6b9280e84bfe">_vertexs</a>[1] = v2;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_variable" href="structmeshdef_1_1_edge.html#afe89cfa05d2e189f0df84f5131b977f4">_curFace</a> = curFace;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structmeshdef_1_1_edge.html#aa1caf16c312a990b8d26e9dfb83b1fb4">calcIntersection</a>(<a class="code hl_struct" href="structmeshdef_1_1_calc_edge_result.html">CalcEdgeResult</a> &amp;, <a class="code hl_struct" href="structmeshdef_1_1_clip_path_result.html">ClipPathResult</a> &amp;);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_face.html">   88</a></span><span class="keyword">struct </span><a class="code hl_function" href="structmeshdef_1_1_face.html#acae24336f370c36f3aa2fd18f2df02a1">Face</a> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_face.html#a88884525e7875b1d1c152c185e9de664">   89</a></span>    QVector3D <a class="code hl_variable" href="structmeshdef_1_1_face.html#a88884525e7875b1d1c152c185e9de664">_normal</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_face.html#acbb885880d284ca646fa72069e3c41c2">   90</a></span>    QVector&lt;Vertex *&gt; <a class="code hl_variable" href="structmeshdef_1_1_face.html#acbb885880d284ca646fa72069e3c41c2">_vertexs</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_face.html#a1340dc047791f13a5de5ef7286aae39c">   91</a></span>    QVector&lt;Edge *&gt; <a class="code hl_variable" href="structmeshdef_1_1_face.html#a1340dc047791f13a5de5ef7286aae39c">_edges</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_face.html#acae24336f370c36f3aa2fd18f2df02a1">   93</a></span>    <a class="code hl_function" href="structmeshdef_1_1_face.html#acae24336f370c36f3aa2fd18f2df02a1">Face</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_function" href="structmeshdef_1_1_face.html#acae24336f370c36f3aa2fd18f2df02a1">Face</a>(<a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *v1, <a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *v2, <a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *v3);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structmeshdef_1_1_face.html#af1b2af0d3524faf679437e2e97b94700">isFaceOnLayerHei</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_face.html#ada0ff834429f814e345de108c417909a">updateNormal</a>();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structmeshdef_1_1_face.html#a345fce995a32366a99bacc72b0c7bb55">calcIntersection</a>(<a class="code hl_struct" href="structmeshdef_1_1_clip_path_result.html">ClipPathResult</a> &amp;);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structmeshdef_1_1_face.html#a6237c43552fc30f6193b083f2e3fa88f">updateClipResult</a>(<a class="code hl_struct" href="structmeshdef_1_1_clip_path_result.html">ClipPathResult</a> &amp;, <span class="keyword">const</span> QVector&lt;CalcEdgeResult&gt; &amp;);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structmeshdef_1_1_face.html#a6237c43552fc30f6193b083f2e3fa88f">updateClipResult</a>(<a class="code hl_struct" href="structmeshdef_1_1_clip_path_result.html">ClipPathResult</a> &amp;, <span class="keyword">const</span> <a class="code hl_struct" href="structmeshdef_1_1_calc_edge_result.html">CalcEdgeResult</a> &amp;, <span class="keyword">const</span> <a class="code hl_struct" href="structmeshdef_1_1_calc_edge_result.html">CalcEdgeResult</a> &amp;);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_face_result.html">  104</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_calc_face_result.html">CalcFaceResult</a> {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_face_result.html#ae71fa65188583339d732f76cddd70b74">  105</a></span>    <a class="code hl_enumeration" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07f">FaceResult</a> <a class="code hl_variable" href="structmeshdef_1_1_calc_face_result.html#ae71fa65188583339d732f76cddd70b74">_result</a> = <a class="code hl_enumvalue" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de">FRT_FOUNDNONE</a>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_face_result.html#a51f8e0f7aa004e6330f2ef75cb9b5df0">  106</a></span>    QVector3D <a class="code hl_variable" href="structmeshdef_1_1_calc_face_result.html#a51f8e0f7aa004e6330f2ef75cb9b5df0">_startPt</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_face_result.html#afc2b46fced71556748f723e9cdf9f1e2">  107</a></span>    QVector3D <a class="code hl_variable" href="structmeshdef_1_1_calc_face_result.html#afc2b46fced71556748f723e9cdf9f1e2">_endPt</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_face_result.html#adea0b435359511e7811ade8f3f31b575">  109</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_calc_face_result.html#adea0b435359511e7811ade8f3f31b575">initResult</a>() { <a class="code hl_variable" href="structmeshdef_1_1_calc_face_result.html#ae71fa65188583339d732f76cddd70b74">_result</a> = <a class="code hl_enumvalue" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de">FRT_FOUNDNONE</a>; }</div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_calc_face_result.html#a442a0926f45a8eecd27501415bf32861">  110</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_calc_face_result.html#a442a0926f45a8eecd27501415bf32861">setFirstPt</a>(<span class="keyword">const</span> QVector3D &amp;pt)  {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <a class="code hl_variable" href="structmeshdef_1_1_calc_face_result.html#a51f8e0f7aa004e6330f2ef75cb9b5df0">_startPt</a> = std::move(pt);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_variable" href="structmeshdef_1_1_calc_face_result.html#ae71fa65188583339d732f76cddd70b74">_result</a> = <a class="code hl_enumvalue" href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07faeca5ee612039fbce79b2e5a60fdc7da7">FRT_FOUNDFIRST</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="};">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html">  116</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_clip_path_result.html">ClipPathResult</a> {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#a4cbabb208069be89bc6653349cde7606">  117</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#a4cbabb208069be89bc6653349cde7606">_layerHei</a> = 0;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#ac9ade611f8e32873e58ca8cfd0f21f83">  118</a></span>    QSet&lt;long long&gt; <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#ac9ade611f8e32873e58ca8cfd0f21f83">_usedFaceSet</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#a2410df60b7a91c3c2d7d77e53b11f796">  119</a></span>    QSet&lt;long long&gt; <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#a2410df60b7a91c3c2d7d77e53b11f796">_usedVertexSet</a>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#a1305b9e8b5d2310a339cfc8cea587932">  120</a></span>    QSet&lt;QPair&lt;long long, long long&gt;&gt; <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#a1305b9e8b5d2310a339cfc8cea587932">_usedEdgeSet</a>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#a19080466c695fc7ab4910de634eb36ac">  121</a></span>    <a class="code hl_struct" href="structmeshdef_1_1_calc_edge_result.html">CalcEdgeResult</a> <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#a19080466c695fc7ab4910de634eb36ac">_startCoor</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#abf869683835b99b1d980de5e336af890">  123</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#abf869683835b99b1d980de5e336af890">_started</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#ad1ec5d1e683fcb8e73a0451396285b30">  124</a></span>    QVector&lt;CalcEdgeResult&gt; <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#ad1ec5d1e683fcb8e73a0451396285b30">_edgeResultVec</a>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_clip_path_result.html#a3785ddc6576c03b8ab3e408a98e0ba67">  125</a></span>    ClipperLib::DoublePath <a class="code hl_variable" href="structmeshdef_1_1_clip_path_result.html#a3785ddc6576c03b8ab3e408a98e0ba67">_path</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="};">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_part.html">  128</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmeshdef_1_1_part.html">Part</a> {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_part.html#a38f812f08ddde14ffe07fe37a480c559">  129</a></span>    QList&lt;VertexPtr&gt; <a class="code hl_variable" href="structmeshdef_1_1_part.html#a38f812f08ddde14ffe07fe37a480c559">_vertexList</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_part.html#ae29b47478e34ee12e382d964965e2603">  130</a></span>    QMap&lt;QPair&lt;long long, long long&gt;, <a class="code hl_typedef" href="namespacemeshdef.html#a187db0ead7484e893b40c03d9f0e9dea">EdgePtr</a>&gt; <a class="code hl_variable" href="structmeshdef_1_1_part.html#ae29b47478e34ee12e382d964965e2603">_edgeMap</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="structmeshdef_1_1_part.html#aa347bb2aeb9710e67da2d97270c385ba">  131</a></span>    QList&lt;FacePtr&gt; <a class="code hl_variable" href="structmeshdef_1_1_part.html#aa347bb2aeb9710e67da2d97270c385ba">_faceList</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_part.html#a6133e3110c26d681031cc7bf19dbfbe2">createPartInfo</a>(<span class="keyword">const</span> QVector&lt;QVector3D&gt; &amp;vertexs,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                        <span class="keyword">const</span> QVector&lt;QVector&lt;int&gt;&gt; &amp;faces);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_part.html#a0f06b48440d8a65c2cd8722c378b9dfa">tranformPart</a>(<span class="keyword">const</span> QMatrix4x4 &amp;mat);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    ClipperLib::DoublePath <a class="code hl_function" href="structmeshdef_1_1_part.html#a90a676b02c9b40fe8bfb6a8b962f09a5">cutPartOnZ</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;layerHei);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_part.html#af01a3edf72c97676d2039304c6d6055c">findNextIntersection</a>(<a class="code hl_struct" href="structmeshdef_1_1_face.html">Face</a> *, <a class="code hl_struct" href="structmeshdef_1_1_clip_path_result.html">ClipPathResult</a> &amp;);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structmeshdef_1_1_part.html#a6f0587b58c6af225e1e5341c1cd7540e">updateFaceInfo</a>(<a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *, <a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *, <a class="code hl_struct" href="structmeshdef_1_1_vertex.html">Vertex</a> *);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>};</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#endif </span><span class="comment">// MESHBASE_H</span></div>
+<div class="ttc" id="anamespacemeshdef_html"><div class="ttname"><a href="namespacemeshdef.html">meshdef</a></div><div class="ttdef"><b>定义</b> meshbase.cpp:6</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a187db0ead7484e893b40c03d9f0e9dea"><div class="ttname"><a href="namespacemeshdef.html#a187db0ead7484e893b40c03d9f0e9dea">meshdef::EdgePtr</a></div><div class="ttdeci">QSharedPointer&lt; Edge &gt; EdgePtr</div><div class="ttdef"><b>定义</b> meshbase.h:25</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a2d55473c6fbf5769e366f445c52ef0ee"><div class="ttname"><a href="namespacemeshdef.html#a2d55473c6fbf5769e366f445c52ef0ee">meshdef::VertexPtr</a></div><div class="ttdeci">QSharedPointer&lt; Vertex &gt; VertexPtr</div><div class="ttdef"><b>定义</b> meshbase.h:24</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4ad9c34bdca61857ec56ad5894d72b0c"><div class="ttname"><a href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0c">meshdef::EdgeResult</a></div><div class="ttdeci">EdgeResult</div><div class="ttdef"><b>定义</b> meshbase.h:37</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4ad9c34bdca61857ec56ad5894d72b0ca9722ed46d38144828d9682a2127d7c21"><div class="ttname"><a href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0ca9722ed46d38144828d9682a2127d7c21">meshdef::ERT_ONEDGE</a></div><div class="ttdeci">@ ERT_ONEDGE</div><div class="ttdef"><b>定义</b> meshbase.h:39</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4ad9c34bdca61857ec56ad5894d72b0cac71cfcc52a56859bfbe72aedd19b2f42"><div class="ttname"><a href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cac71cfcc52a56859bfbe72aedd19b2f42">meshdef::ERT_ONVERTEX</a></div><div class="ttdeci">@ ERT_ONVERTEX</div><div class="ttdef"><b>定义</b> meshbase.h:40</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4ad9c34bdca61857ec56ad5894d72b0cad86b879f092235c085c9fc2b449f8294"><div class="ttname"><a href="namespacemeshdef.html#a4ad9c34bdca61857ec56ad5894d72b0cad86b879f092235c085c9fc2b449f8294">meshdef::ERT_NOINSECITON</a></div><div class="ttdeci">@ ERT_NOINSECITON</div><div class="ttdef"><b>定义</b> meshbase.h:38</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4f4e04c2d87a90f2a120b9a04482f07f"><div class="ttname"><a href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07f">meshdef::FaceResult</a></div><div class="ttdeci">FaceResult</div><div class="ttdef"><b>定义</b> meshbase.h:43</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de"><div class="ttname"><a href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de">meshdef::FRT_FOUNDNONE</a></div><div class="ttdeci">@ FRT_FOUNDNONE</div><div class="ttdef"><b>定义</b> meshbase.h:44</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4f4e04c2d87a90f2a120b9a04482f07faa88fcee541f2af060a0becc8545f9335"><div class="ttname"><a href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07faa88fcee541f2af060a0becc8545f9335">meshdef::FRT_FOUNDALL</a></div><div class="ttdeci">@ FRT_FOUNDALL</div><div class="ttdef"><b>定义</b> meshbase.h:46</div></div>
+<div class="ttc" id="anamespacemeshdef_html_a4f4e04c2d87a90f2a120b9a04482f07faeca5ee612039fbce79b2e5a60fdc7da7"><div class="ttname"><a href="namespacemeshdef.html#a4f4e04c2d87a90f2a120b9a04482f07faeca5ee612039fbce79b2e5a60fdc7da7">meshdef::FRT_FOUNDFIRST</a></div><div class="ttdeci">@ FRT_FOUNDFIRST</div><div class="ttdef"><b>定义</b> meshbase.h:45</div></div>
+<div class="ttc" id="anamespacemeshdef_html_ad7ee4450006f080892cc73269c431ea6"><div class="ttname"><a href="namespacemeshdef.html#ad7ee4450006f080892cc73269c431ea6">meshdef::FacePtr</a></div><div class="ttdeci">QSharedPointer&lt; Face &gt; FacePtr</div><div class="ttdef"><b>定义</b> meshbase.h:26</div></div>
+<div class="ttc" id="astructmeshdef_1_1_bounding_box_html"><div class="ttname"><a href="structmeshdef_1_1_bounding_box.html">meshdef::BoundingBox</a></div><div class="ttdef"><b>定义</b> meshbase.h:28</div></div>
+<div class="ttc" id="astructmeshdef_1_1_bounding_box_html_a16b064a431d245b725adef536b9bab24"><div class="ttname"><a href="structmeshdef_1_1_bounding_box.html#a16b064a431d245b725adef536b9bab24">meshdef::BoundingBox::_minX</a></div><div class="ttdeci">float _minX</div><div class="ttdef"><b>定义</b> meshbase.h:29</div></div>
+<div class="ttc" id="astructmeshdef_1_1_bounding_box_html_a4eca29e9180002fc5471178842b52c9a"><div class="ttname"><a href="structmeshdef_1_1_bounding_box.html#a4eca29e9180002fc5471178842b52c9a">meshdef::BoundingBox::_maxY</a></div><div class="ttdeci">float _maxY</div><div class="ttdef"><b>定义</b> meshbase.h:33</div></div>
+<div class="ttc" id="astructmeshdef_1_1_bounding_box_html_a91098cb970b8b6c24c4c63cf616d0ffb"><div class="ttname"><a href="structmeshdef_1_1_bounding_box.html#a91098cb970b8b6c24c4c63cf616d0ffb">meshdef::BoundingBox::_maxZ</a></div><div class="ttdeci">float _maxZ</div><div class="ttdef"><b>定义</b> meshbase.h:34</div></div>
+<div class="ttc" id="astructmeshdef_1_1_bounding_box_html_a9787e5ff6ae4c18c6676c252cb6b4b66"><div class="ttname"><a href="structmeshdef_1_1_bounding_box.html#a9787e5ff6ae4c18c6676c252cb6b4b66">meshdef::BoundingBox::_minY</a></div><div class="ttdeci">float _minY</div><div class="ttdef"><b>定义</b> meshbase.h:30</div></div>
+<div class="ttc" id="astructmeshdef_1_1_bounding_box_html_aad79a454e5ab094f5b906e9c7ec8fff5"><div class="ttname"><a href="structmeshdef_1_1_bounding_box.html#aad79a454e5ab094f5b906e9c7ec8fff5">meshdef::BoundingBox::_maxX</a></div><div class="ttdeci">float _maxX</div><div class="ttdef"><b>定义</b> meshbase.h:32</div></div>
+<div class="ttc" id="astructmeshdef_1_1_bounding_box_html_af6e88824875870967e30d8b0ee88546e"><div class="ttname"><a href="structmeshdef_1_1_bounding_box.html#af6e88824875870967e30d8b0ee88546e">meshdef::BoundingBox::_minZ</a></div><div class="ttdeci">float _minZ</div><div class="ttdef"><b>定义</b> meshbase.h:31</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_edge_result_html"><div class="ttname"><a href="structmeshdef_1_1_calc_edge_result.html">meshdef::CalcEdgeResult</a></div><div class="ttdef"><b>定义</b> meshbase.h:60</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_edge_result_html_a848a4f6af92f4bb36a5fa46f6bda8e35"><div class="ttname"><a href="structmeshdef_1_1_calc_edge_result.html#a848a4f6af92f4bb36a5fa46f6bda8e35">meshdef::CalcEdgeResult::setVertex</a></div><div class="ttdeci">void setVertex(Vertex *v)</div><div class="ttdef"><b>定义</b> meshbase.h:66</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_edge_result_html_aa48890ed4facd9ef5b70c5366c3ed43f"><div class="ttname"><a href="structmeshdef_1_1_calc_edge_result.html#aa48890ed4facd9ef5b70c5366c3ed43f">meshdef::CalcEdgeResult::_edge</a></div><div class="ttdeci">Edge * _edge</div><div class="ttdef"><b>定义</b> meshbase.h:61</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_edge_result_html_aaf222c168412da29523bd49a9bab61ac"><div class="ttname"><a href="structmeshdef_1_1_calc_edge_result.html#aaf222c168412da29523bd49a9bab61ac">meshdef::CalcEdgeResult::_vertex</a></div><div class="ttdeci">Vertex * _vertex</div><div class="ttdef"><b>定义</b> meshbase.h:63</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_edge_result_html_ac6e7ecd7830bdfd42a47906d4d146c69"><div class="ttname"><a href="structmeshdef_1_1_calc_edge_result.html#ac6e7ecd7830bdfd42a47906d4d146c69">meshdef::CalcEdgeResult::_coor</a></div><div class="ttdeci">QVector3D _coor</div><div class="ttdef"><b>定义</b> meshbase.h:64</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_edge_result_html_ad1305f839b7be18bf2cac34537e6e5c9"><div class="ttname"><a href="structmeshdef_1_1_calc_edge_result.html#ad1305f839b7be18bf2cac34537e6e5c9">meshdef::CalcEdgeResult::_result</a></div><div class="ttdeci">EdgeResult _result</div><div class="ttdef"><b>定义</b> meshbase.h:62</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_face_result_html"><div class="ttname"><a href="structmeshdef_1_1_calc_face_result.html">meshdef::CalcFaceResult</a></div><div class="ttdef"><b>定义</b> meshbase.h:104</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_face_result_html_a442a0926f45a8eecd27501415bf32861"><div class="ttname"><a href="structmeshdef_1_1_calc_face_result.html#a442a0926f45a8eecd27501415bf32861">meshdef::CalcFaceResult::setFirstPt</a></div><div class="ttdeci">void setFirstPt(const QVector3D &amp;pt)</div><div class="ttdef"><b>定义</b> meshbase.h:110</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_face_result_html_a51f8e0f7aa004e6330f2ef75cb9b5df0"><div class="ttname"><a href="structmeshdef_1_1_calc_face_result.html#a51f8e0f7aa004e6330f2ef75cb9b5df0">meshdef::CalcFaceResult::_startPt</a></div><div class="ttdeci">QVector3D _startPt</div><div class="ttdef"><b>定义</b> meshbase.h:106</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_face_result_html_adea0b435359511e7811ade8f3f31b575"><div class="ttname"><a href="structmeshdef_1_1_calc_face_result.html#adea0b435359511e7811ade8f3f31b575">meshdef::CalcFaceResult::initResult</a></div><div class="ttdeci">void initResult()</div><div class="ttdef"><b>定义</b> meshbase.h:109</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_face_result_html_ae71fa65188583339d732f76cddd70b74"><div class="ttname"><a href="structmeshdef_1_1_calc_face_result.html#ae71fa65188583339d732f76cddd70b74">meshdef::CalcFaceResult::_result</a></div><div class="ttdeci">FaceResult _result</div><div class="ttdef"><b>定义</b> meshbase.h:105</div></div>
+<div class="ttc" id="astructmeshdef_1_1_calc_face_result_html_afc2b46fced71556748f723e9cdf9f1e2"><div class="ttname"><a href="structmeshdef_1_1_calc_face_result.html#afc2b46fced71556748f723e9cdf9f1e2">meshdef::CalcFaceResult::_endPt</a></div><div class="ttdeci">QVector3D _endPt</div><div class="ttdef"><b>定义</b> meshbase.h:107</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html">meshdef::ClipPathResult</a></div><div class="ttdef"><b>定义</b> meshbase.h:116</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_a1305b9e8b5d2310a339cfc8cea587932"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#a1305b9e8b5d2310a339cfc8cea587932">meshdef::ClipPathResult::_usedEdgeSet</a></div><div class="ttdeci">QSet&lt; QPair&lt; long long, long long &gt; &gt; _usedEdgeSet</div><div class="ttdef"><b>定义</b> meshbase.h:120</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_a19080466c695fc7ab4910de634eb36ac"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#a19080466c695fc7ab4910de634eb36ac">meshdef::ClipPathResult::_startCoor</a></div><div class="ttdeci">CalcEdgeResult _startCoor</div><div class="ttdef"><b>定义</b> meshbase.h:121</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_a2410df60b7a91c3c2d7d77e53b11f796"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#a2410df60b7a91c3c2d7d77e53b11f796">meshdef::ClipPathResult::_usedVertexSet</a></div><div class="ttdeci">QSet&lt; long long &gt; _usedVertexSet</div><div class="ttdef"><b>定义</b> meshbase.h:119</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_a3785ddc6576c03b8ab3e408a98e0ba67"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#a3785ddc6576c03b8ab3e408a98e0ba67">meshdef::ClipPathResult::_path</a></div><div class="ttdeci">ClipperLib::DoublePath _path</div><div class="ttdef"><b>定义</b> meshbase.h:125</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_a4cbabb208069be89bc6653349cde7606"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#a4cbabb208069be89bc6653349cde7606">meshdef::ClipPathResult::_layerHei</a></div><div class="ttdeci">float _layerHei</div><div class="ttdef"><b>定义</b> meshbase.h:117</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_abf869683835b99b1d980de5e336af890"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#abf869683835b99b1d980de5e336af890">meshdef::ClipPathResult::_started</a></div><div class="ttdeci">bool _started</div><div class="ttdef"><b>定义</b> meshbase.h:123</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_ac9ade611f8e32873e58ca8cfd0f21f83"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#ac9ade611f8e32873e58ca8cfd0f21f83">meshdef::ClipPathResult::_usedFaceSet</a></div><div class="ttdeci">QSet&lt; long long &gt; _usedFaceSet</div><div class="ttdef"><b>定义</b> meshbase.h:118</div></div>
+<div class="ttc" id="astructmeshdef_1_1_clip_path_result_html_ad1ec5d1e683fcb8e73a0451396285b30"><div class="ttname"><a href="structmeshdef_1_1_clip_path_result.html#ad1ec5d1e683fcb8e73a0451396285b30">meshdef::ClipPathResult::_edgeResultVec</a></div><div class="ttdeci">QVector&lt; CalcEdgeResult &gt; _edgeResultVec</div><div class="ttdef"><b>定义</b> meshbase.h:124</div></div>
+<div class="ttc" id="astructmeshdef_1_1_edge_html"><div class="ttname"><a href="structmeshdef_1_1_edge.html">meshdef::Edge</a></div><div class="ttdef"><b>定义</b> meshbase.h:73</div></div>
+<div class="ttc" id="astructmeshdef_1_1_edge_html_a294780c15f93a4a5dfca6b9280e84bfe"><div class="ttname"><a href="structmeshdef_1_1_edge.html#a294780c15f93a4a5dfca6b9280e84bfe">meshdef::Edge::_vertexs</a></div><div class="ttdeci">QVector&lt; Vertex * &gt; _vertexs</div><div class="ttdef"><b>定义</b> meshbase.h:74</div></div>
+<div class="ttc" id="astructmeshdef_1_1_edge_html_a3428be5f50942910f15b4476b55c8bb6"><div class="ttname"><a href="structmeshdef_1_1_edge.html#a3428be5f50942910f15b4476b55c8bb6">meshdef::Edge::_nextFace</a></div><div class="ttdeci">Face * _nextFace</div><div class="ttdef"><b>定义</b> meshbase.h:76</div></div>
+<div class="ttc" id="astructmeshdef_1_1_edge_html_a4e16df216fef19ca87937c29f4e9e957"><div class="ttname"><a href="structmeshdef_1_1_edge.html#a4e16df216fef19ca87937c29f4e9e957">meshdef::Edge::Edge</a></div><div class="ttdeci">Edge()=default</div></div>
+<div class="ttc" id="astructmeshdef_1_1_edge_html_aa1caf16c312a990b8d26e9dfb83b1fb4"><div class="ttname"><a href="structmeshdef_1_1_edge.html#aa1caf16c312a990b8d26e9dfb83b1fb4">meshdef::Edge::calcIntersection</a></div><div class="ttdeci">bool calcIntersection(CalcEdgeResult &amp;, ClipPathResult &amp;)</div><div class="ttdoc">Edge</div><div class="ttdef"><b>定义</b> meshbase.cpp:34</div></div>
+<div class="ttc" id="astructmeshdef_1_1_edge_html_ac4b58fed34265d56a274a09bf7b2ae92"><div class="ttname"><a href="structmeshdef_1_1_edge.html#ac4b58fed34265d56a274a09bf7b2ae92">meshdef::Edge::Edge</a></div><div class="ttdeci">Edge(Vertex *v1, Vertex *v2, Face *curFace)</div><div class="ttdef"><b>定义</b> meshbase.h:79</div></div>
+<div class="ttc" id="astructmeshdef_1_1_edge_html_afe89cfa05d2e189f0df84f5131b977f4"><div class="ttname"><a href="structmeshdef_1_1_edge.html#afe89cfa05d2e189f0df84f5131b977f4">meshdef::Edge::_curFace</a></div><div class="ttdeci">Face * _curFace</div><div class="ttdef"><b>定义</b> meshbase.h:75</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html"><div class="ttname"><a href="structmeshdef_1_1_face.html">meshdef::Face</a></div><div class="ttdef"><b>定义</b> meshbase.h:88</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_a1340dc047791f13a5de5ef7286aae39c"><div class="ttname"><a href="structmeshdef_1_1_face.html#a1340dc047791f13a5de5ef7286aae39c">meshdef::Face::_edges</a></div><div class="ttdeci">QVector&lt; Edge * &gt; _edges</div><div class="ttdef"><b>定义</b> meshbase.h:91</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_a345fce995a32366a99bacc72b0c7bb55"><div class="ttname"><a href="structmeshdef_1_1_face.html#a345fce995a32366a99bacc72b0c7bb55">meshdef::Face::calcIntersection</a></div><div class="ttdeci">bool calcIntersection(ClipPathResult &amp;)</div><div class="ttdef"><b>定义</b> meshbase.cpp:129</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_a6237c43552fc30f6193b083f2e3fa88f"><div class="ttname"><a href="structmeshdef_1_1_face.html#a6237c43552fc30f6193b083f2e3fa88f">meshdef::Face::updateClipResult</a></div><div class="ttdeci">bool updateClipResult(ClipPathResult &amp;, const QVector&lt; CalcEdgeResult &gt; &amp;)</div><div class="ttdef"><b>定义</b> meshbase.cpp:168</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_a88884525e7875b1d1c152c185e9de664"><div class="ttname"><a href="structmeshdef_1_1_face.html#a88884525e7875b1d1c152c185e9de664">meshdef::Face::_normal</a></div><div class="ttdeci">QVector3D _normal</div><div class="ttdef"><b>定义</b> meshbase.h:89</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_acae24336f370c36f3aa2fd18f2df02a1"><div class="ttname"><a href="structmeshdef_1_1_face.html#acae24336f370c36f3aa2fd18f2df02a1">meshdef::Face::Face</a></div><div class="ttdeci">Face()=default</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_acbb885880d284ca646fa72069e3c41c2"><div class="ttname"><a href="structmeshdef_1_1_face.html#acbb885880d284ca646fa72069e3c41c2">meshdef::Face::_vertexs</a></div><div class="ttdeci">QVector&lt; Vertex * &gt; _vertexs</div><div class="ttdef"><b>定义</b> meshbase.h:90</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_ada0ff834429f814e345de108c417909a"><div class="ttname"><a href="structmeshdef_1_1_face.html#ada0ff834429f814e345de108c417909a">meshdef::Face::updateNormal</a></div><div class="ttdeci">void updateNormal()</div><div class="ttdef"><b>定义</b> meshbase.cpp:124</div></div>
+<div class="ttc" id="astructmeshdef_1_1_face_html_af1b2af0d3524faf679437e2e97b94700"><div class="ttname"><a href="structmeshdef_1_1_face.html#af1b2af0d3524faf679437e2e97b94700">meshdef::Face::isFaceOnLayerHei</a></div><div class="ttdeci">bool isFaceOnLayerHei(const float &amp;)</div><div class="ttdef"><b>定义</b> meshbase.cpp:115</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html"><div class="ttname"><a href="structmeshdef_1_1_part.html">meshdef::Part</a></div><div class="ttdef"><b>定义</b> meshbase.h:128</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_a0f06b48440d8a65c2cd8722c378b9dfa"><div class="ttname"><a href="structmeshdef_1_1_part.html#a0f06b48440d8a65c2cd8722c378b9dfa">meshdef::Part::tranformPart</a></div><div class="ttdeci">void tranformPart(const QMatrix4x4 &amp;mat)</div><div class="ttdef"><b>定义</b> meshbase.cpp:395</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_a38f812f08ddde14ffe07fe37a480c559"><div class="ttname"><a href="structmeshdef_1_1_part.html#a38f812f08ddde14ffe07fe37a480c559">meshdef::Part::_vertexList</a></div><div class="ttdeci">QList&lt; VertexPtr &gt; _vertexList</div><div class="ttdef"><b>定义</b> meshbase.h:129</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_a6133e3110c26d681031cc7bf19dbfbe2"><div class="ttname"><a href="structmeshdef_1_1_part.html#a6133e3110c26d681031cc7bf19dbfbe2">meshdef::Part::createPartInfo</a></div><div class="ttdeci">void createPartInfo(const QVector&lt; QVector3D &gt; &amp;vertexs, const QVector&lt; QVector&lt; int &gt; &gt; &amp;faces)</div><div class="ttdoc">Part</div><div class="ttdef"><b>定义</b> meshbase.cpp:362</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_a6f0587b58c6af225e1e5341c1cd7540e"><div class="ttname"><a href="structmeshdef_1_1_part.html#a6f0587b58c6af225e1e5341c1cd7540e">meshdef::Part::updateFaceInfo</a></div><div class="ttdeci">void updateFaceInfo(Vertex *, Vertex *, Vertex *)</div><div class="ttdoc">Private</div><div class="ttdef"><b>定义</b> meshbase.cpp:403</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_a90a676b02c9b40fe8bfb6a8b962f09a5"><div class="ttname"><a href="structmeshdef_1_1_part.html#a90a676b02c9b40fe8bfb6a8b962f09a5">meshdef::Part::cutPartOnZ</a></div><div class="ttdeci">ClipperLib::DoublePath cutPartOnZ(const float &amp;layerHei)</div><div class="ttdef"><b>定义</b> meshbase.cpp:388</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_aa347bb2aeb9710e67da2d97270c385ba"><div class="ttname"><a href="structmeshdef_1_1_part.html#aa347bb2aeb9710e67da2d97270c385ba">meshdef::Part::_faceList</a></div><div class="ttdeci">QList&lt; FacePtr &gt; _faceList</div><div class="ttdef"><b>定义</b> meshbase.h:131</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_ae29b47478e34ee12e382d964965e2603"><div class="ttname"><a href="structmeshdef_1_1_part.html#ae29b47478e34ee12e382d964965e2603">meshdef::Part::_edgeMap</a></div><div class="ttdeci">QMap&lt; QPair&lt; long long, long long &gt;, EdgePtr &gt; _edgeMap</div><div class="ttdef"><b>定义</b> meshbase.h:130</div></div>
+<div class="ttc" id="astructmeshdef_1_1_part_html_af01a3edf72c97676d2039304c6d6055c"><div class="ttname"><a href="structmeshdef_1_1_part.html#af01a3edf72c97676d2039304c6d6055c">meshdef::Part::findNextIntersection</a></div><div class="ttdeci">void findNextIntersection(Face *, ClipPathResult &amp;)</div><div class="ttdef"><b>定义</b> meshbase.cpp:426</div></div>
+<div class="ttc" id="astructmeshdef_1_1_vertex_html"><div class="ttname"><a href="structmeshdef_1_1_vertex.html">meshdef::Vertex</a></div><div class="ttdef"><b>定义</b> meshbase.h:49</div></div>
+<div class="ttc" id="astructmeshdef_1_1_vertex_html_a13a44f7b6419aafe20d83355c261e8ff"><div class="ttname"><a href="structmeshdef_1_1_vertex.html#a13a44f7b6419aafe20d83355c261e8ff">meshdef::Vertex::_coor</a></div><div class="ttdeci">QVector3D _coor</div><div class="ttdef"><b>定义</b> meshbase.h:50</div></div>
+<div class="ttc" id="astructmeshdef_1_1_vertex_html_a57d8aaf916895563d08a37f20ee64d9d"><div class="ttname"><a href="structmeshdef_1_1_vertex.html#a57d8aaf916895563d08a37f20ee64d9d">meshdef::Vertex::transform</a></div><div class="ttdeci">void transform(const QMatrix4x4 &amp;mat)</div><div class="ttdoc">Vertex</div><div class="ttdef"><b>定义</b> meshbase.cpp:28</div></div>
+<div class="ttc" id="astructmeshdef_1_1_vertex_html_a65ee361a212566025a2f07e49cd3a44f"><div class="ttname"><a href="structmeshdef_1_1_vertex.html#a65ee361a212566025a2f07e49cd3a44f">meshdef::Vertex::Vertex</a></div><div class="ttdeci">Vertex()=default</div></div>
+<div class="ttc" id="astructmeshdef_1_1_vertex_html_af2beecca3b2acbeea69590f9dfce0bf5"><div class="ttname"><a href="structmeshdef_1_1_vertex.html#af2beecca3b2acbeea69590f9dfce0bf5">meshdef::Vertex::_faceList</a></div><div class="ttdeci">QList&lt; Face * &gt; _faceList</div><div class="ttdef"><b>定义</b> meshbase.h:51</div></div>
+<div class="ttc" id="astructmeshdef_1_1_vertex_html_afdcae863e8e2f251bbb3e07c7fb48434"><div class="ttname"><a href="structmeshdef_1_1_vertex.html#afdcae863e8e2f251bbb3e07c7fb48434">meshdef::Vertex::Vertex</a></div><div class="ttdeci">Vertex(const float &amp;x, const float &amp;y, const float &amp;z)</div><div class="ttdef"><b>定义</b> meshbase.h:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2d59634db459b6f6f5769e846d2d1215.html">LatticeModule</a></li><li class="navelem"><a class="el" href="meshbase_8h.html">meshbase.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

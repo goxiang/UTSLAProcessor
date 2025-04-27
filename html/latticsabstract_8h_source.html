@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: LatticeModule/latticsabstract.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('latticsabstract_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">latticsabstract.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="latticsabstract_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LATTICSABSTRACT_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LATTICSABSTRACT_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;bpccommon.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876">    6</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876">LatticeLegType</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a460653a5173723812c09752ac359d9ca">    7</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a460653a5173723812c09752ac359d9ca">LayerLeg_0_0</a> = 0,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a9877dcc2302091ac21eec78897eb3f77">    8</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a9877dcc2302091ac21eec78897eb3f77">LayerLeg_0_1</a> = 1,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a23bc93bd982198e78d2a0036077bb257">    9</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a23bc93bd982198e78d2a0036077bb257">LayerLeg_1_0</a> = 2,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a34003cb2abe5e8f83643e9c9bfed6893">   10</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a34003cb2abe5e8f83643e9c9bfed6893">LayerLeg_1_1</a> = 3,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a92feaa11880468b019948f295b2a5498">   11</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a92feaa11880468b019948f295b2a5498">LayerLeg_2_0</a> = 4,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876ab87015277994654f0ef38575ae72a4c1">   12</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876ab87015277994654f0ef38575ae72a4c1">LayerLeg_2_1</a> = 5,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876abd2a22c65a3a1bfc03cfac1128fff0cd">   13</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876abd2a22c65a3a1bfc03cfac1128fff0cd">LayerLeg_3_0</a> = 6,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a9141ddaab28a03e3090f952782137f1a">   14</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a9141ddaab28a03e3090f952782137f1a">LayerLeg_3_1</a> = 7,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a93cf190acf53dd66835844e55e2bf983">   15</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a93cf190acf53dd66835844e55e2bf983">LayerLeg_4_0</a> = 8,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a4c76fd20fc0ad07972ad5c726007108b">   16</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a4c76fd20fc0ad07972ad5c726007108b">LayerLeg_4_1</a> = 9,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a93dac3688c4751f8ec1e167a44975748">   17</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a93dac3688c4751f8ec1e167a44975748">LayerLeg_5_0</a> = 10,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876ad21c764e7ef22f85f20a4a9f4e9964e6">   18</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876ad21c764e7ef22f85f20a4a9f4e9964e6">LayerLeg_5_1</a> = 11,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a942e6ea36f4112dc790900a22a5e6c4b">   20</a></span>    <a class="code hl_enumvalue" href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a942e6ea36f4112dc790900a22a5e6c4b">Leg_Count</a> = 12</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">class </span>QJsonParsing;</div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_lattics_abstract.html">   28</a></span><span class="keyword">class </span><a class="code hl_function" href="class_lattics_abstract.html#a2c75701f91fb7ad4f27eef711ac62841">LatticsAbstract</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_lattics_abstract.html#a2c75701f91fb7ad4f27eef711ac62841">   30</a></span>    <a class="code hl_function" href="class_lattics_abstract.html#a2c75701f91fb7ad4f27eef711ac62841">LatticsAbstract</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_lattics_abstract.html#a49fd443daa47c4ce1bcd0028983a9d89">   31</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_lattics_abstract.html#a49fd443daa47c4ce1bcd0028983a9d89">~LatticsAbstract</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_lattics_abstract.html#acd737ded37d8f09251fe712bbdb6cd5b">   33</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_lattics_abstract.html#acd737ded37d8f09251fe712bbdb6cd5b">initLatticeParas</a>(<span class="keyword">const</span> QJsonParsing *) = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_lattics_abstract.html#a9952d84b2c1bb8abf292ec4269021593">   34</a></span>    <span class="keyword">virtual</span> DoublePaths <a class="code hl_function" href="class_lattics_abstract.html#a9952d84b2c1bb8abf292ec4269021593">createLattics</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;) = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_lattics_abstract.html#a498cb6f669cb076ae6e5065b8ac0ab11">   35</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_lattics_abstract.html#a498cb6f669cb076ae6e5065b8ac0ab11">identifyLattices</a>(ClipperLib::Paths &amp;) = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_lattics_abstract.html#abfafe87a5f93034fd1183313a2bb070d">   36</a></span>    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_lattics_abstract.html#abfafe87a5f93034fd1183313a2bb070d">getSpacing</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_lattics_info.html">   39</a></span><span class="keyword">struct </span><a class="code hl_function" href="struct_lattics_info.html#a7662d3e586b5389a96f56187f0c3e796">LatticsInfo</a> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_lattics_info.html#adba17c43b65a2baf72b6d098705949e4">   40</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_lattics_info.html#adba17c43b65a2baf72b6d098705949e4">_type</a> = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_lattics_info.html#afe82a63293b0df41437d79fe703f5ecb">   41</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_lattics_info.html#afe82a63293b0df41437d79fe703f5ecb">_area</a> = 0.0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">   42</a></span>    IntPoint <a class="code hl_variable" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">_centerPt</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_lattics_info.html#a7662d3e586b5389a96f56187f0c3e796">   44</a></span>    <a class="code hl_function" href="struct_lattics_info.html#a7662d3e586b5389a96f56187f0c3e796">LatticsInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_lattics_info.html#a4c9a8fec0970fd2eba1eb2300b876e70">   45</a></span>    <a class="code hl_function" href="struct_lattics_info.html#a4c9a8fec0970fd2eba1eb2300b876e70">LatticsInfo</a>(<span class="keyword">const</span> Path &amp;path) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        BoundingBox _bBox;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_variable" href="struct_lattics_info.html#afe82a63293b0df41437d79fe703f5ecb">_area</a> = Area(path, _bBox);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">_centerPt</a>.X = qRound((_bBox.minX + _bBox.maxX) * 0.5);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_variable" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">_centerPt</a>.Y = qRound((_bBox.minY + _bBox.maxY) * 0.5);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_lattics_info.html#a232347276c4590bc08826af3d9b7fab7">   51</a></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_lattics_info.html#a232347276c4590bc08826af3d9b7fab7">operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_lattics_info.html#a7662d3e586b5389a96f56187f0c3e796">LatticsInfo</a> &amp;other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">_centerPt</a>.X == other.<a class="code hl_variable" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">_centerPt</a>.X) &amp;&amp;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>               (<a class="code hl_variable" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">_centerPt</a>.Y == other.<a class="code hl_variable" href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">_centerPt</a>.Y) &amp;&amp;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>               (fabs(<a class="code hl_variable" href="struct_lattics_info.html#afe82a63293b0df41437d79fe703f5ecb">_area</a> - other.<a class="code hl_variable" href="struct_lattics_info.html#afe82a63293b0df41437d79fe703f5ecb">_area</a>) &lt; 1E-6);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#aa19dc6178e0de75b4d7c1cd7e7b82f0e">   57</a></span><span class="keyword">typedef</span> QSharedPointer&lt;LatticsInfo&gt; <a class="code hl_typedef" href="latticsabstract_8h.html#aa19dc6178e0de75b4d7c1cd7e7b82f0e">LatticsPtr</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="};">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_bounding_box_d.html">   60</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_bounding_box_d.html">BoundingBoxD</a> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="struct_bounding_box_d.html#a968e650fc7a1243f302a35e357be5c1e">   61</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_bounding_box_d.html#a968e650fc7a1243f302a35e357be5c1e">_minX</a> = 1E+30;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_bounding_box_d.html#abfa3dea48813bf131b1823807d4b66ba">   62</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_bounding_box_d.html#abfa3dea48813bf131b1823807d4b66ba">_maxX</a> = 1E-30;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_bounding_box_d.html#aa0b2ee95baea2818e6a994cbb76c2356">   63</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_bounding_box_d.html#aa0b2ee95baea2818e6a994cbb76c2356">_minY</a> = 1E+30;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_bounding_box_d.html#a9b19f12ad7d699190b654d00a880da1c">   64</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_bounding_box_d.html#a9b19f12ad7d699190b654d00a880da1c">_maxY</a> = 1E-30;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_bounding_box_d.html#ac148d728fffccff5d6f3558e90c7ea80">   66</a></span>    QPointF <a class="code hl_function" href="struct_bounding_box_d.html#ac148d728fffccff5d6f3558e90c7ea80">getCenter</a>() {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        QPointF pt;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        pt.setX((<a class="code hl_variable" href="struct_bounding_box_d.html#a968e650fc7a1243f302a35e357be5c1e">_minX</a> + <a class="code hl_variable" href="struct_bounding_box_d.html#abfa3dea48813bf131b1823807d4b66ba">_maxX</a>) * 0.5);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        pt.setY((<a class="code hl_variable" href="struct_bounding_box_d.html#aa0b2ee95baea2818e6a994cbb76c2356">_minY</a> + <a class="code hl_variable" href="struct_bounding_box_d.html#a9b19f12ad7d699190b654d00a880da1c">_maxY</a>) * 0.5);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> pt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#a04cf0096dcac6b7c52a6be29ffa33ab5">   74</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="latticsabstract_8h.html#a04cf0096dcac6b7c52a6be29ffa33ab5">calcBBox</a>(<span class="keyword">const</span> Path &amp;path, BOUNDINGRECT &amp;bBox)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;pt : path)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">if</span> (pt.X &lt; bBox.minX) bBox.minX = pt.X;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span> (pt.X &gt; bBox.maxX) bBox.maxX = pt.X;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">if</span> (pt.Y &lt; bBox.minY) bBox.minY = pt.Y;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> (pt.Y &gt; bBox.maxY) bBox.maxY = pt.Y;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#a29f23e9eaca4f3d196cf561bb3ee452a">   85</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="latticsabstract_8h.html#a04cf0096dcac6b7c52a6be29ffa33ab5">calcBBox</a>(<span class="keyword">const</span> DoublePath &amp;path, BOUNDINGRECT &amp;bBox)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;pt : path)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">if</span> (pt.X &lt; bBox.minX) bBox.minX = pt.X;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">if</span> (pt.X &gt; bBox.maxX) bBox.maxX = pt.X;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">if</span> (pt.Y &lt; bBox.minY) bBox.minY = pt.Y;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span> (pt.Y &gt; bBox.maxY) bBox.maxY = pt.Y;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#a849ecc27153570397e9e5fbcdefd7702">   96</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="latticsabstract_8h.html#a04cf0096dcac6b7c52a6be29ffa33ab5">calcBBox</a>(<span class="keyword">const</span> DoublePath &amp;path, <a class="code hl_struct" href="struct_bounding_box_d.html">BoundingBoxD</a> &amp;bBox)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;pt : path)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">if</span> (pt.X &lt; bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#a968e650fc7a1243f302a35e357be5c1e">_minX</a>) bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#a968e650fc7a1243f302a35e357be5c1e">_minX</a> = pt.X;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">if</span> (pt.X &gt; bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#abfa3dea48813bf131b1823807d4b66ba">_maxX</a>) bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#abfa3dea48813bf131b1823807d4b66ba">_maxX</a> = pt.X;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span> (pt.Y &lt; bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#aa0b2ee95baea2818e6a994cbb76c2356">_minY</a>) bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#aa0b2ee95baea2818e6a994cbb76c2356">_minY</a> = pt.Y;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> (pt.Y &gt; bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#a9b19f12ad7d699190b654d00a880da1c">_maxY</a>) bBox.<a class="code hl_variable" href="struct_bounding_box_d.html#a9b19f12ad7d699190b654d00a880da1c">_maxY</a> = pt.Y;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#a6d0bc17bcc5aa015546a2d6e5e71caaf">  107</a></span><span class="keyword">inline</span> Path <a class="code hl_function" href="latticsabstract_8h.html#a6d0bc17bcc5aa015546a2d6e5e71caaf">transformPath</a>(<span class="keyword">const</span> DoublePath &amp;path, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;x, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;y)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>{</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    Path tempPath;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;pt : path)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        tempPath &lt;&lt; IntPoint(qRound(pt.X + x), qRound(pt.Y + y));</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> tempPath;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#a2baa84f5644f3eaf5bc45f9d55047760">  117</a></span><span class="keyword">inline</span> QDebug <a class="code hl_function" href="latticsabstract_8h.html#a2baa84f5644f3eaf5bc45f9d55047760">operator&lt;&lt;</a>(QDebug debug, <span class="keyword">const</span> BOUNDINGRECT &amp;p)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    debug.noquote() &lt;&lt; <span class="stringliteral">&quot;{&quot;</span> &lt;&lt; p.minX  &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.maxX  &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.minY  &lt;&lt; <span class="stringliteral">&quot; &quot;</span>  &lt;&lt; p.maxY &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> debug;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#ae6f53036f733e7a4e18e9aee661377a9">  123</a></span><span class="keyword">inline</span> QPointF <a class="code hl_function" href="latticsabstract_8h.html#ae6f53036f733e7a4e18e9aee661377a9">getCenter</a>(BOUNDINGRECT &amp;rc)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">return</span> QPointF((rc.minX + rc.maxX) * 0.5, (rc.minY + rc.maxY) * 0.5);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#a69378b35bbf1ed2044216e753540995e">  128</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="latticsabstract_8h.html#a69378b35bbf1ed2044216e753540995e">getDistance</a>(<span class="keyword">const</span> QPointF &amp;p1, <span class="keyword">const</span> QPointF &amp;p2)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>{</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">return</span> (pow(p1.x() - p2.x(), 2) + pow(p1.y() - p2.y(), 2));</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
+</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="latticsabstract_8h.html#a7b5b679e2f211ab60bab200b09f3c9d0">  133</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="latticsabstract_8h.html#a69378b35bbf1ed2044216e753540995e">getDistance</a>(<span class="keyword">const</span> QPointF &amp;p1, <span class="keyword">const</span> QPointF &amp;p2, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;y)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>{</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">return</span> (pow(p1.x() - p2.x() - x, 2) + pow(p1.y() - p2.y() - y, 2));</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">#endif </span><span class="comment">// LATTICSABSTRACT_H</span></div>
+<div class="ttc" id="aclass_lattics_abstract_html_a2c75701f91fb7ad4f27eef711ac62841"><div class="ttname"><a href="class_lattics_abstract.html#a2c75701f91fb7ad4f27eef711ac62841">LatticsAbstract::LatticsAbstract</a></div><div class="ttdeci">LatticsAbstract()=default</div></div>
+<div class="ttc" id="aclass_lattics_abstract_html_a498cb6f669cb076ae6e5065b8ac0ab11"><div class="ttname"><a href="class_lattics_abstract.html#a498cb6f669cb076ae6e5065b8ac0ab11">LatticsAbstract::identifyLattices</a></div><div class="ttdeci">virtual void identifyLattices(ClipperLib::Paths &amp;)=0</div></div>
+<div class="ttc" id="aclass_lattics_abstract_html_a49fd443daa47c4ce1bcd0028983a9d89"><div class="ttname"><a href="class_lattics_abstract.html#a49fd443daa47c4ce1bcd0028983a9d89">LatticsAbstract::~LatticsAbstract</a></div><div class="ttdeci">virtual ~LatticsAbstract()=default</div></div>
+<div class="ttc" id="aclass_lattics_abstract_html_a9952d84b2c1bb8abf292ec4269021593"><div class="ttname"><a href="class_lattics_abstract.html#a9952d84b2c1bb8abf292ec4269021593">LatticsAbstract::createLattics</a></div><div class="ttdeci">virtual DoublePaths createLattics(const int &amp;)=0</div></div>
+<div class="ttc" id="aclass_lattics_abstract_html_abfafe87a5f93034fd1183313a2bb070d"><div class="ttname"><a href="class_lattics_abstract.html#abfafe87a5f93034fd1183313a2bb070d">LatticsAbstract::getSpacing</a></div><div class="ttdeci">virtual const float getSpacing() const =0</div></div>
+<div class="ttc" id="aclass_lattics_abstract_html_acd737ded37d8f09251fe712bbdb6cd5b"><div class="ttname"><a href="class_lattics_abstract.html#acd737ded37d8f09251fe712bbdb6cd5b">LatticsAbstract::initLatticeParas</a></div><div class="ttdeci">virtual void initLatticeParas(const QJsonParsing *)=0</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_a04cf0096dcac6b7c52a6be29ffa33ab5"><div class="ttname"><a href="latticsabstract_8h.html#a04cf0096dcac6b7c52a6be29ffa33ab5">calcBBox</a></div><div class="ttdeci">void calcBBox(const Path &amp;path, BOUNDINGRECT &amp;bBox)</div><div class="ttdef"><b>定义</b> latticsabstract.h:74</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_a2baa84f5644f3eaf5bc45f9d55047760"><div class="ttname"><a href="latticsabstract_8h.html#a2baa84f5644f3eaf5bc45f9d55047760">operator&lt;&lt;</a></div><div class="ttdeci">QDebug operator&lt;&lt;(QDebug debug, const BOUNDINGRECT &amp;p)</div><div class="ttdef"><b>定义</b> latticsabstract.h:117</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_a69378b35bbf1ed2044216e753540995e"><div class="ttname"><a href="latticsabstract_8h.html#a69378b35bbf1ed2044216e753540995e">getDistance</a></div><div class="ttdeci">double getDistance(const QPointF &amp;p1, const QPointF &amp;p2)</div><div class="ttdef"><b>定义</b> latticsabstract.h:128</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_a6d0bc17bcc5aa015546a2d6e5e71caaf"><div class="ttname"><a href="latticsabstract_8h.html#a6d0bc17bcc5aa015546a2d6e5e71caaf">transformPath</a></div><div class="ttdeci">Path transformPath(const DoublePath &amp;path, const float &amp;x, const float &amp;y)</div><div class="ttdef"><b>定义</b> latticsabstract.h:107</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aa19dc6178e0de75b4d7c1cd7e7b82f0e"><div class="ttname"><a href="latticsabstract_8h.html#aa19dc6178e0de75b4d7c1cd7e7b82f0e">LatticsPtr</a></div><div class="ttdeci">QSharedPointer&lt; LatticsInfo &gt; LatticsPtr</div><div class="ttdef"><b>定义</b> latticsabstract.h:57</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876">LatticeLegType</a></div><div class="ttdeci">LatticeLegType</div><div class="ttdef"><b>定义</b> latticsabstract.h:6</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a23bc93bd982198e78d2a0036077bb257"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a23bc93bd982198e78d2a0036077bb257">LayerLeg_1_0</a></div><div class="ttdeci">@ LayerLeg_1_0</div><div class="ttdef"><b>定义</b> latticsabstract.h:9</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a34003cb2abe5e8f83643e9c9bfed6893"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a34003cb2abe5e8f83643e9c9bfed6893">LayerLeg_1_1</a></div><div class="ttdeci">@ LayerLeg_1_1</div><div class="ttdef"><b>定义</b> latticsabstract.h:10</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a460653a5173723812c09752ac359d9ca"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a460653a5173723812c09752ac359d9ca">LayerLeg_0_0</a></div><div class="ttdeci">@ LayerLeg_0_0</div><div class="ttdef"><b>定义</b> latticsabstract.h:7</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a4c76fd20fc0ad07972ad5c726007108b"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a4c76fd20fc0ad07972ad5c726007108b">LayerLeg_4_1</a></div><div class="ttdeci">@ LayerLeg_4_1</div><div class="ttdef"><b>定义</b> latticsabstract.h:16</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a9141ddaab28a03e3090f952782137f1a"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a9141ddaab28a03e3090f952782137f1a">LayerLeg_3_1</a></div><div class="ttdeci">@ LayerLeg_3_1</div><div class="ttdef"><b>定义</b> latticsabstract.h:14</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a92feaa11880468b019948f295b2a5498"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a92feaa11880468b019948f295b2a5498">LayerLeg_2_0</a></div><div class="ttdeci">@ LayerLeg_2_0</div><div class="ttdef"><b>定义</b> latticsabstract.h:11</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a93cf190acf53dd66835844e55e2bf983"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a93cf190acf53dd66835844e55e2bf983">LayerLeg_4_0</a></div><div class="ttdeci">@ LayerLeg_4_0</div><div class="ttdef"><b>定义</b> latticsabstract.h:15</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a93dac3688c4751f8ec1e167a44975748"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a93dac3688c4751f8ec1e167a44975748">LayerLeg_5_0</a></div><div class="ttdeci">@ LayerLeg_5_0</div><div class="ttdef"><b>定义</b> latticsabstract.h:17</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a942e6ea36f4112dc790900a22a5e6c4b"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a942e6ea36f4112dc790900a22a5e6c4b">Leg_Count</a></div><div class="ttdeci">@ Leg_Count</div><div class="ttdef"><b>定义</b> latticsabstract.h:20</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876a9877dcc2302091ac21eec78897eb3f77"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876a9877dcc2302091ac21eec78897eb3f77">LayerLeg_0_1</a></div><div class="ttdeci">@ LayerLeg_0_1</div><div class="ttdef"><b>定义</b> latticsabstract.h:8</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876ab87015277994654f0ef38575ae72a4c1"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876ab87015277994654f0ef38575ae72a4c1">LayerLeg_2_1</a></div><div class="ttdeci">@ LayerLeg_2_1</div><div class="ttdef"><b>定义</b> latticsabstract.h:12</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876abd2a22c65a3a1bfc03cfac1128fff0cd"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876abd2a22c65a3a1bfc03cfac1128fff0cd">LayerLeg_3_0</a></div><div class="ttdeci">@ LayerLeg_3_0</div><div class="ttdef"><b>定义</b> latticsabstract.h:13</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_aab14f57d511ea4fff9f2c99a83269876ad21c764e7ef22f85f20a4a9f4e9964e6"><div class="ttname"><a href="latticsabstract_8h.html#aab14f57d511ea4fff9f2c99a83269876ad21c764e7ef22f85f20a4a9f4e9964e6">LayerLeg_5_1</a></div><div class="ttdeci">@ LayerLeg_5_1</div><div class="ttdef"><b>定义</b> latticsabstract.h:18</div></div>
+<div class="ttc" id="alatticsabstract_8h_html_ae6f53036f733e7a4e18e9aee661377a9"><div class="ttname"><a href="latticsabstract_8h.html#ae6f53036f733e7a4e18e9aee661377a9">getCenter</a></div><div class="ttdeci">QPointF getCenter(BOUNDINGRECT &amp;rc)</div><div class="ttdef"><b>定义</b> latticsabstract.h:123</div></div>
+<div class="ttc" id="astruct_bounding_box_d_html"><div class="ttname"><a href="struct_bounding_box_d.html">BoundingBoxD</a></div><div class="ttdef"><b>定义</b> latticsabstract.h:60</div></div>
+<div class="ttc" id="astruct_bounding_box_d_html_a968e650fc7a1243f302a35e357be5c1e"><div class="ttname"><a href="struct_bounding_box_d.html#a968e650fc7a1243f302a35e357be5c1e">BoundingBoxD::_minX</a></div><div class="ttdeci">double _minX</div><div class="ttdef"><b>定义</b> latticsabstract.h:61</div></div>
+<div class="ttc" id="astruct_bounding_box_d_html_a9b19f12ad7d699190b654d00a880da1c"><div class="ttname"><a href="struct_bounding_box_d.html#a9b19f12ad7d699190b654d00a880da1c">BoundingBoxD::_maxY</a></div><div class="ttdeci">double _maxY</div><div class="ttdef"><b>定义</b> latticsabstract.h:64</div></div>
+<div class="ttc" id="astruct_bounding_box_d_html_aa0b2ee95baea2818e6a994cbb76c2356"><div class="ttname"><a href="struct_bounding_box_d.html#aa0b2ee95baea2818e6a994cbb76c2356">BoundingBoxD::_minY</a></div><div class="ttdeci">double _minY</div><div class="ttdef"><b>定义</b> latticsabstract.h:63</div></div>
+<div class="ttc" id="astruct_bounding_box_d_html_abfa3dea48813bf131b1823807d4b66ba"><div class="ttname"><a href="struct_bounding_box_d.html#abfa3dea48813bf131b1823807d4b66ba">BoundingBoxD::_maxX</a></div><div class="ttdeci">double _maxX</div><div class="ttdef"><b>定义</b> latticsabstract.h:62</div></div>
+<div class="ttc" id="astruct_bounding_box_d_html_ac148d728fffccff5d6f3558e90c7ea80"><div class="ttname"><a href="struct_bounding_box_d.html#ac148d728fffccff5d6f3558e90c7ea80">BoundingBoxD::getCenter</a></div><div class="ttdeci">QPointF getCenter()</div><div class="ttdef"><b>定义</b> latticsabstract.h:66</div></div>
+<div class="ttc" id="astruct_lattics_info_html_a01978b8c77daeaabe7a65b0017362c48"><div class="ttname"><a href="struct_lattics_info.html#a01978b8c77daeaabe7a65b0017362c48">LatticsInfo::_centerPt</a></div><div class="ttdeci">IntPoint _centerPt</div><div class="ttdef"><b>定义</b> latticsabstract.h:42</div></div>
+<div class="ttc" id="astruct_lattics_info_html_a232347276c4590bc08826af3d9b7fab7"><div class="ttname"><a href="struct_lattics_info.html#a232347276c4590bc08826af3d9b7fab7">LatticsInfo::operator==</a></div><div class="ttdeci">bool operator==(const LatticsInfo &amp;other) const</div><div class="ttdef"><b>定义</b> latticsabstract.h:51</div></div>
+<div class="ttc" id="astruct_lattics_info_html_a4c9a8fec0970fd2eba1eb2300b876e70"><div class="ttname"><a href="struct_lattics_info.html#a4c9a8fec0970fd2eba1eb2300b876e70">LatticsInfo::LatticsInfo</a></div><div class="ttdeci">LatticsInfo(const Path &amp;path)</div><div class="ttdef"><b>定义</b> latticsabstract.h:45</div></div>
+<div class="ttc" id="astruct_lattics_info_html_a7662d3e586b5389a96f56187f0c3e796"><div class="ttname"><a href="struct_lattics_info.html#a7662d3e586b5389a96f56187f0c3e796">LatticsInfo::LatticsInfo</a></div><div class="ttdeci">LatticsInfo()=default</div></div>
+<div class="ttc" id="astruct_lattics_info_html_adba17c43b65a2baf72b6d098705949e4"><div class="ttname"><a href="struct_lattics_info.html#adba17c43b65a2baf72b6d098705949e4">LatticsInfo::_type</a></div><div class="ttdeci">int _type</div><div class="ttdef"><b>定义</b> latticsabstract.h:40</div></div>
+<div class="ttc" id="astruct_lattics_info_html_afe82a63293b0df41437d79fe703f5ecb"><div class="ttname"><a href="struct_lattics_info.html#afe82a63293b0df41437d79fe703f5ecb">LatticsInfo::_area</a></div><div class="ttdeci">double _area</div><div class="ttdef"><b>定义</b> latticsabstract.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2d59634db459b6f6f5769e846d2d1215.html">LatticeModule</a></li><li class="navelem"><a class="el" href="latticsabstract_8h.html">latticsabstract.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

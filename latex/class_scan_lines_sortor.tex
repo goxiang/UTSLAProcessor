@@ -1,0 +1,82 @@
+\doxysection{Scan\+Lines\+Sortor类 参考}
+\hypertarget{class_scan_lines_sortor}{}\label{class_scan_lines_sortor}\index{ScanLinesSortor@{ScanLinesSortor}}
+
+
+{\ttfamily \#include $<$scanlinessortor.\+h$>$}
+
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv}{Priv}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scan_lines_sortor_aa979ddca53bfeecbc15f1cdb43c1c792}{Scan\+Lines\+Sortor}} (const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_scan_lines_sortor_a3ff4ff2475538943471e64bd9e4dbe3d}{sort\+Scan\+Lines}} (QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_scan_lines_sortor_a21e65fd420d466d0e5f7a7525843853a}{sort\+Paths}} (Paths \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T$>$ }\\static void \mbox{\hyperlink{class_scan_lines_sortor_aa62dc7dd1cf5575afbf2de4a391a25b1}{sort\+Datas}} (QVector$<$ T $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv}{Priv}} $>$ \mbox{\hyperlink{class_scan_lines_sortor_af393787ba7ecb77fcb1832100e8d1fa5}{d}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Scan\+Lines\+Sortor}
+扫描线排序器,独立类 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_scan_lines_sortor_aa979ddca53bfeecbc15f1cdb43c1c792}\index{ScanLinesSortor@{ScanLinesSortor}!ScanLinesSortor@{ScanLinesSortor}}
+\index{ScanLinesSortor@{ScanLinesSortor}!ScanLinesSortor@{ScanLinesSortor}}
+\doxysubsubsection{\texorpdfstring{ScanLinesSortor()}{ScanLinesSortor()}}
+{\footnotesize\ttfamily \label{class_scan_lines_sortor_aa979ddca53bfeecbc15f1cdb43c1c792} 
+Scan\+Lines\+Sortor\+::\+Scan\+Lines\+Sortor (\begin{DoxyParamCaption}\item[{const int \&}]{width}{, }\item[{const int \&}]{height}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_scan_lines_sortor_aa62dc7dd1cf5575afbf2de4a391a25b1}\index{ScanLinesSortor@{ScanLinesSortor}!sortDatas@{sortDatas}}
+\index{sortDatas@{sortDatas}!ScanLinesSortor@{ScanLinesSortor}}
+\doxysubsubsection{\texorpdfstring{sortDatas()}{sortDatas()}}
+{\footnotesize\ttfamily \label{class_scan_lines_sortor_aa62dc7dd1cf5575afbf2de4a391a25b1} 
+template$<$class T$>$ \\
+void Scan\+Lines\+Sortor\+::sort\+Datas (\begin{DoxyParamCaption}\item[{QVector$<$ T $>$ \&}]{datas}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_scan_lines_sortor_a21e65fd420d466d0e5f7a7525843853a}\index{ScanLinesSortor@{ScanLinesSortor}!sortPaths@{sortPaths}}
+\index{sortPaths@{sortPaths}!ScanLinesSortor@{ScanLinesSortor}}
+\doxysubsubsection{\texorpdfstring{sortPaths()}{sortPaths()}}
+{\footnotesize\ttfamily \label{class_scan_lines_sortor_a21e65fd420d466d0e5f7a7525843853a} 
+void Scan\+Lines\+Sortor\+::sort\+Paths (\begin{DoxyParamCaption}\item[{Paths \&}]{paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_scan_lines_sortor_a3ff4ff2475538943471e64bd9e4dbe3d}\index{ScanLinesSortor@{ScanLinesSortor}!sortScanLines@{sortScanLines}}
+\index{sortScanLines@{sortScanLines}!ScanLinesSortor@{ScanLinesSortor}}
+\doxysubsubsection{\texorpdfstring{sortScanLines()}{sortScanLines()}}
+{\footnotesize\ttfamily \label{class_scan_lines_sortor_a3ff4ff2475538943471e64bd9e4dbe3d} 
+void Scan\+Lines\+Sortor\+::sort\+Scan\+Lines (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{src\+Vec}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_scan_lines_sortor_af393787ba7ecb77fcb1832100e8d1fa5}\index{ScanLinesSortor@{ScanLinesSortor}!d@{d}}
+\index{d@{d}!ScanLinesSortor@{ScanLinesSortor}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \label{class_scan_lines_sortor_af393787ba7ecb77fcb1832100e8d1fa5} 
+QShared\+Pointer$<$\mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv}{Priv}}$>$ Scan\+Lines\+Sortor\+::d = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{scanlinessortor_8h}{scanlinessortor.\+h}}\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{scanlinessortor_8cpp}{scanlinessortor.\+cpp}}\end{DoxyCompactItemize}

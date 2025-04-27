@@ -1,0 +1,257 @@
+\doxysection{Algorithm\+Hatching类 参考}
+\hypertarget{class_algorithm_hatching}{}\label{class_algorithm_hatching}\index{AlgorithmHatching@{AlgorithmHatching}}
+
+
+{\ttfamily \#include $<$algorithmhatching.\+h$>$}
+
+类 Algorithm\+Hatching 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_algorithm_hatching}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_afc1564203f65535227c7ca1b48b7ecd7}{calc\+Inner\+Point}} (const Paths \&, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, int \&n\+Total\+LCnt, const double \&, const int \&, const bool \&b\+Inner=false)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a5e95c67f726ea90b4f0f5d1bdfadcb6e}{calc\+Ring\+Hatching}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a49850c4d38f6f8b370e97e45f7a2bdc5}{calc\+Spiral\+Hatching}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a03f26a50116d0523177539ee760aa96d}{calc\+Fermat\+Spiral\+Hatching}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_abc6dbd60cd3fbd922ee352148e297e89}{calc\+Ring\+Tree}} (const Paths \&, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_aa06db55dcc3bc888ba1e0d4fe24ef113}{calc\+SPLine}} (const int \&, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+TLine\+Cnt=0, const int \&n\+LSConnecter=0, const int \&n\+CLine\+Factor=0)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a52987731e8b573bd21260671a0732fa7}{draw\+Branch}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&branch, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_abafd218075c0dff96f6e8330c76cacca}{draw\+Branch\+\_\+spiral}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&branch, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a8fd4c27adca4ce002d544e040afd2083}{draw\+Branch\+\_\+fermat\+Spiral}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&branch, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a37dd3eb383ac5b2db1666d7c36dd1182}{draw\+Path\+To\+Scan\+Line}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a92e583502bb0c139159313ef4e7c6c3a}{draw\+Path\+To\+Scan\+Line}} (const Path \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&type, const Int\+Point \&offset\+Coor=Int\+Point(0, 0))
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ad243f050e5b9bbe20bd20070df4e5ad3}{draw\+Spiral\+Path\+To\+Scan\+Line}} (const Path \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_hatching_a866ea22b5f26adb87178961ae40de31d}{get\+First\+Line}} (const int \&, const int \&, int \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, bool \&b\+First\+Line)
+\item 
+bool \mbox{\hyperlink{class_algorithm_hatching_a0c78bb11456445521ac4e67f9e6d32bd}{get\+Next\+Line}} (const int \&, const int \&, int \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, const int \&n\+LConneter)
+\item 
+bool \mbox{\hyperlink{class_algorithm_hatching_a320cf2f75c3c718a81ae6875f1fda1f4}{get\+First\+Line\+\_\+\+Greed}} (const int \&, const int \&, int \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, bool \&b\+First\+Line)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_hatching_ring}{Algorithm\+Hatching\+Ring}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb}{Algorithm\+Hatching\+Ring}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_base}{Algorithm\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_algorithm_base_a6c012eecfcfb7f5153e3ae4f06b7711a}{calc\+Area\+List}} (const Paths \&, QList$<$ double $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calc\+Limit\+XY}} (const Paths \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a8998645a6bea53ae88f806b50f5e4596}{calc\+Limit\+XY}} (const QList$<$ AREAINFOPTR $>$ \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7821e946765fec4d451a2e114049ad78}{get\+All\+Paths}} (const QList$<$ AREAINFOPTR $>$ \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BOUNDINGRECT \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a879a667ab059dad3ea046a86fb8239a4}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BDRECTPTR \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d}{sort\+Pt\+On\+Line}} (int, QList$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a72bf2bb77f0b6c0871cee660a439ad83}{sort\+Pt\+On\+Line}} (int, QVector$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_abf8b04e05f684ef526e22eb2f59ce646}{reduce\+Paths\+\_\+\+Inner}} (Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2732f6394eaa7da3244d79ff85b2aa14}{add\+Paths\+\_\+\+Upper}} (Paths \&, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7bd1ccc6ab88a3ce86f17e321e8ae035}{extend\+Borders}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af68be0a18c770ff3664af0ab8c5e8592}{get\+Surface\+Paths}} (Paths \&, int \&, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}\mbox{[}$\,$\mbox{]}, const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb}{get\+Difference\+Paths}} (const Paths \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a44b731f2b864e5c489878d081b4738b4}{get\+Difference\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}{get\+Union\+Paths}} (const Path \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af0f7669ea396b902400e1b1a41df1852}{get\+Union\+Paths}} (const Path \&, const Paths \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_ae8b0da12e239e7339f26def69ebe5332}{get\+Union\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, int n\+Offset, int n\+Reserved, int n\+Small\+Wall)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aece1510dce6a07c6068ae2296042ca17}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a5ab9828cb248adf9091925402d15c718}{get\+Intersection\+Paths}} (const Paths \&, const Path \&, Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a34ec030ea3f3eac56015f423b9fe6365}{get\+Intersection\+Paths}} (const Paths \&, const Paths \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_af305c4ee4c37cd65d4c13a437632dae8}{line\+On\+Vec\+Splicing\+Line}} (int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, QVector$<$ \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aa9a6849100e590a568bb11ff6b371992}{filte\+Small\+Border}} (const Paths \&, Paths \&, Paths \&, const double \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_checker}{Algorithm\+Checker}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_checker_af554b1e17edc99f418662ec03420e05a}{create\+Checkers}} (const QJson\+Object \&, const int \&plat\+Width, const int \&plat\+Height)
+\item 
+void \mbox{\hyperlink{class_algorithm_checker_acadce095b6130ba34e54e6b8e8835e41}{change\+Layer\+Odd\+Info}} ()
+\item 
+double \mbox{\hyperlink{class_algorithm_checker_a13b0121b03c7ea049f6e6c2dad512cea}{get\+Rotate\+Angle}} ()
+\item 
+bool \mbox{\hyperlink{class_algorithm_checker_a074f1bcdd4fdf010d5a6eb8e94566480}{scan\+Checker\+Border}} ()
+\item 
+QList$<$ Paths $>$ \& \mbox{\hyperlink{class_algorithm_checker_a9cf488596540998172fcf83c48466b13}{get\+Checker\+List}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_strip}{Algorithm\+Strip}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_algorithm_strip_a67b24620a7dfda90d3276dbbd173c1b3}{Algorithm\+Strip}} ()=default
+\item 
+void \mbox{\hyperlink{class_algorithm_strip_aabe563a956cbeea8b52e6832d083a9e4}{create\+Strips}} (const QJson\+Object \&json\+Obj, const int \&plat\+Width, const int \&plat\+Height)
+\item 
+void \mbox{\hyperlink{class_algorithm_strip_a1a9d4fabac364ecc8aee871aaee17f6b}{create\+Strips}} (const int \&n\+Hei, const int \&plat\+Width, const int \&plat\+Height, const int \&overlap\+Wid)
+\item 
+Paths \mbox{\hyperlink{class_algorithm_strip_a2e61411f1bdddfc6daec0ac16484a364}{get\+Strip\+List}} (const double \&, double \&hatching\+Angle, const int \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{静态 Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_base}{Algorithm\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709}{scanner\+\_\+jump\+Pos}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a}{scanner\+\_\+out\+Line}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_aec87785742d1a00a5f45989c419069fd}{scanner\+\_\+jump\+Pos}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae0496d41045e88fcc421efd778cbfeb7}{scanner\+\_\+out\+Line}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a6355a54523d0af209e0d3d663472f401}{scanner\+\_\+plot\+Line}} (const int \&, const int \&, const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae772223adb17dffb76db2b454d807e18}{write\+Data\+To\+List}} (const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, int64\+\_\+t \&, int64\+\_\+t \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{class_algorithm_hatching_ring}{Algorithm\+Hatching\+Ring}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a42dfd0438410d8b49619e4d4f662aa2b}{create\+Pocket\+Tree}} (const Paths \&cur\+Paths, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_af5a9e64e05b567a5972e098341ddb55b}{update\+Pocket\+Tree}} (const Paths \&cur\+Paths, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree, const int \&level)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a97ed0421269a3d9e8eb187aacbb611bc}{sort\+Pocket\+Tree}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a0b3bd4330183b9e45f05ac562c045adb}{create\+Spiral}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, const double \&pow\+Dis)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a982ab94926406552a831789041d0e848}{create\+Fermat\+Spiral}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, const double \&pow\+Dis)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Algorithm\+Hatching}
+填充算法基类,继承自 1.\+Algorithm\+Hatching\+Ring 负责环形填充算法 处理圆形或环形结构的填充路径 2.\+Algorithm\+Checker 负责检查和验证算法 确保生成路径的正确性和有效性 3.\+Algorithm\+Strip 负责条带式填充算法 处理直线型填充路径 
+\end{DoxyParagraph}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_algorithm_hatching_a03f26a50116d0523177539ee760aa96d}\index{AlgorithmHatching@{AlgorithmHatching}!calcFermatSpiralHatching@{calcFermatSpiralHatching}}
+\index{calcFermatSpiralHatching@{calcFermatSpiralHatching}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{calcFermatSpiralHatching()}{calcFermatSpiralHatching()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a03f26a50116d0523177539ee760aa96d} 
+void Algorithm\+Hatching\+::calc\+Fermat\+Spiral\+Hatching (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{, }\item[{const int \&}]{n\+Spacing}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_afc1564203f65535227c7ca1b48b7ecd7}\index{AlgorithmHatching@{AlgorithmHatching}!calcInnerPoint@{calcInnerPoint}}
+\index{calcInnerPoint@{calcInnerPoint}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{calcInnerPoint()}{calcInnerPoint()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_afc1564203f65535227c7ca1b48b7ecd7} 
+void Algorithm\+Hatching\+::calc\+Inner\+Point (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{\mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&}]{total\+HLine}{, }\item[{int \&}]{n\+Total\+LCnt}{, }\item[{const double \&}]{f\+Angle\+\_\+\+Hatching}{, }\item[{const int \&}]{n\+LSpacing}{, }\item[{const bool \&}]{b\+Inner}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a5e95c67f726ea90b4f0f5d1bdfadcb6e}\index{AlgorithmHatching@{AlgorithmHatching}!calcRingHatching@{calcRingHatching}}
+\index{calcRingHatching@{calcRingHatching}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{calcRingHatching()}{calcRingHatching()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a5e95c67f726ea90b4f0f5d1bdfadcb6e} 
+void Algorithm\+Hatching\+::calc\+Ring\+Hatching (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{, }\item[{const int \&}]{n\+Spacing}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_abc6dbd60cd3fbd922ee352148e297e89}\index{AlgorithmHatching@{AlgorithmHatching}!calcRingTree@{calcRingTree}}
+\index{calcRingTree@{calcRingTree}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{calcRingTree()}{calcRingTree()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_abc6dbd60cd3fbd922ee352148e297e89} 
+void Algorithm\+Hatching\+::calc\+Ring\+Tree (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&}]{outer\+Tree}{, }\item[{const int \&}]{n\+Spacing}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a49850c4d38f6f8b370e97e45f7a2bdc5}\index{AlgorithmHatching@{AlgorithmHatching}!calcSpiralHatching@{calcSpiralHatching}}
+\index{calcSpiralHatching@{calcSpiralHatching}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{calcSpiralHatching()}{calcSpiralHatching()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a49850c4d38f6f8b370e97e45f7a2bdc5} 
+void Algorithm\+Hatching\+::calc\+Spiral\+Hatching (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{, }\item[{const int \&}]{n\+Spacing}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_aa06db55dcc3bc888ba1e0d4fe24ef113}\index{AlgorithmHatching@{AlgorithmHatching}!calcSPLine@{calcSPLine}}
+\index{calcSPLine@{calcSPLine}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{calcSPLine()}{calcSPLine()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_aa06db55dcc3bc888ba1e0d4fe24ef113} 
+void Algorithm\+Hatching\+::calc\+SPLine (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Mode}{, }\item[{\mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&}]{list\+Hatching\+Line}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{, }\item[{const int \&}]{n\+TLine\+Cnt}{ = {\ttfamily 0}, }\item[{const int \&}]{n\+LSConnecter}{ = {\ttfamily 0}, }\item[{const int \&}]{n\+CLine\+Factor}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a52987731e8b573bd21260671a0732fa7}\index{AlgorithmHatching@{AlgorithmHatching}!drawBranch@{drawBranch}}
+\index{drawBranch@{drawBranch}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{drawBranch()}{drawBranch()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a52987731e8b573bd21260671a0732fa7} 
+void Algorithm\+Hatching\+::draw\+Branch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{branch}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a8fd4c27adca4ce002d544e040afd2083}\index{AlgorithmHatching@{AlgorithmHatching}!drawBranch\_fermatSpiral@{drawBranch\_fermatSpiral}}
+\index{drawBranch\_fermatSpiral@{drawBranch\_fermatSpiral}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{drawBranch\_fermatSpiral()}{drawBranch\_fermatSpiral()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a8fd4c27adca4ce002d544e040afd2083} 
+void Algorithm\+Hatching\+::draw\+Branch\+\_\+fermat\+Spiral (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{branch}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_abafd218075c0dff96f6e8330c76cacca}\index{AlgorithmHatching@{AlgorithmHatching}!drawBranch\_spiral@{drawBranch\_spiral}}
+\index{drawBranch\_spiral@{drawBranch\_spiral}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{drawBranch\_spiral()}{drawBranch\_spiral()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_abafd218075c0dff96f6e8330c76cacca} 
+void Algorithm\+Hatching\+::draw\+Branch\+\_\+spiral (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{branch}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a92e583502bb0c139159313ef4e7c6c3a}\index{AlgorithmHatching@{AlgorithmHatching}!drawPathToScanLine@{drawPathToScanLine}}
+\index{drawPathToScanLine@{drawPathToScanLine}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{drawPathToScanLine()}{drawPathToScanLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a92e583502bb0c139159313ef4e7c6c3a} 
+void Algorithm\+Hatching\+::draw\+Path\+To\+Scan\+Line (\begin{DoxyParamCaption}\item[{const Path \&}]{path}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{, }\item[{const int \&}]{type}{, }\item[{const Int\+Point \&}]{offset\+Coor}{ = {\ttfamily IntPoint(0,~0)}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a37dd3eb383ac5b2db1666d7c36dd1182}\index{AlgorithmHatching@{AlgorithmHatching}!drawPathToScanLine@{drawPathToScanLine}}
+\index{drawPathToScanLine@{drawPathToScanLine}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{drawPathToScanLine()}{drawPathToScanLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a37dd3eb383ac5b2db1666d7c36dd1182} 
+void Algorithm\+Hatching\+::draw\+Path\+To\+Scan\+Line (\begin{DoxyParamCaption}\item[{const Paths \&}]{total\+Path}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_ad243f050e5b9bbe20bd20070df4e5ad3}\index{AlgorithmHatching@{AlgorithmHatching}!drawSpiralPathToScanLine@{drawSpiralPathToScanLine}}
+\index{drawSpiralPathToScanLine@{drawSpiralPathToScanLine}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{drawSpiralPathToScanLine()}{drawSpiralPathToScanLine()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ad243f050e5b9bbe20bd20070df4e5ad3} 
+void Algorithm\+Hatching\+::draw\+Spiral\+Path\+To\+Scan\+Line (\begin{DoxyParamCaption}\item[{const Path \&}]{path}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a866ea22b5f26adb87178961ae40de31d}\index{AlgorithmHatching@{AlgorithmHatching}!getFirstLine@{getFirstLine}}
+\index{getFirstLine@{getFirstLine}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{getFirstLine()}{getFirstLine()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a866ea22b5f26adb87178961ae40de31d} 
+bool Algorithm\+Hatching\+::get\+First\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{nX}{, }\item[{const int \&}]{nY}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Line}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Index}{, }\item[{\mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&}]{lp\+List\+HLine}{, }\item[{bool \&}]{b\+First\+Line}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a320cf2f75c3c718a81ae6875f1fda1f4}\index{AlgorithmHatching@{AlgorithmHatching}!getFirstLine\_Greed@{getFirstLine\_Greed}}
+\index{getFirstLine\_Greed@{getFirstLine\_Greed}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{getFirstLine\_Greed()}{getFirstLine\_Greed()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a320cf2f75c3c718a81ae6875f1fda1f4} 
+bool Algorithm\+Hatching\+::get\+First\+Line\+\_\+\+Greed (\begin{DoxyParamCaption}\item[{const int \&}]{nX}{, }\item[{const int \&}]{nY}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Line}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Index}{, }\item[{\mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&}]{lp\+List\+HLine}{, }\item[{bool \&}]{b\+First\+Line}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_hatching_a0c78bb11456445521ac4e67f9e6d32bd}\index{AlgorithmHatching@{AlgorithmHatching}!getNextLine@{getNextLine}}
+\index{getNextLine@{getNextLine}!AlgorithmHatching@{AlgorithmHatching}}
+\doxysubsubsection{\texorpdfstring{getNextLine()}{getNextLine()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_a0c78bb11456445521ac4e67f9e6d32bd} 
+bool Algorithm\+Hatching\+::get\+Next\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{nX}{, }\item[{const int \&}]{nY}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Line}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Index}{, }\item[{\mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&}]{lp\+List\+HLine}{, }\item[{const int \&}]{n\+LConneter}{}\end{DoxyParamCaption})}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algorithmhatching_8h}{algorithmhatching.\+h}}\item 
+\mbox{\hyperlink{algorithmhatching_8cpp}{algorithmhatching.\+cpp}}\end{DoxyCompactItemize}

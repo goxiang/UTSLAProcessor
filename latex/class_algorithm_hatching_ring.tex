@@ -1,0 +1,160 @@
+\doxysection{Algorithm\+Hatching\+Ring类 参考}
+\hypertarget{class_algorithm_hatching_ring}{}\label{class_algorithm_hatching_ring}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+
+
+{\ttfamily \#include $<$algorithmhatchingring.\+h$>$}
+
+类 Algorithm\+Hatching\+Ring 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_algorithm_hatching_ring}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb}{Algorithm\+Hatching\+Ring}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_base}{Algorithm\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_algorithm_base_a6c012eecfcfb7f5153e3ae4f06b7711a}{calc\+Area\+List}} (const Paths \&, QList$<$ double $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calc\+Limit\+XY}} (const Paths \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a8998645a6bea53ae88f806b50f5e4596}{calc\+Limit\+XY}} (const QList$<$ AREAINFOPTR $>$ \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7821e946765fec4d451a2e114049ad78}{get\+All\+Paths}} (const QList$<$ AREAINFOPTR $>$ \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BOUNDINGRECT \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a879a667ab059dad3ea046a86fb8239a4}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BDRECTPTR \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d}{sort\+Pt\+On\+Line}} (int, QList$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a72bf2bb77f0b6c0871cee660a439ad83}{sort\+Pt\+On\+Line}} (int, QVector$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_abf8b04e05f684ef526e22eb2f59ce646}{reduce\+Paths\+\_\+\+Inner}} (Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2732f6394eaa7da3244d79ff85b2aa14}{add\+Paths\+\_\+\+Upper}} (Paths \&, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7bd1ccc6ab88a3ce86f17e321e8ae035}{extend\+Borders}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af68be0a18c770ff3664af0ab8c5e8592}{get\+Surface\+Paths}} (Paths \&, int \&, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}\mbox{[}$\,$\mbox{]}, const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb}{get\+Difference\+Paths}} (const Paths \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a44b731f2b864e5c489878d081b4738b4}{get\+Difference\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}{get\+Union\+Paths}} (const Path \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af0f7669ea396b902400e1b1a41df1852}{get\+Union\+Paths}} (const Path \&, const Paths \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_ae8b0da12e239e7339f26def69ebe5332}{get\+Union\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, int n\+Offset, int n\+Reserved, int n\+Small\+Wall)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aece1510dce6a07c6068ae2296042ca17}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a5ab9828cb248adf9091925402d15c718}{get\+Intersection\+Paths}} (const Paths \&, const Path \&, Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a34ec030ea3f3eac56015f423b9fe6365}{get\+Intersection\+Paths}} (const Paths \&, const Paths \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_af305c4ee4c37cd65d4c13a437632dae8}{line\+On\+Vec\+Splicing\+Line}} (int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, QVector$<$ \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aa9a6849100e590a568bb11ff6b371992}{filte\+Small\+Border}} (const Paths \&, Paths \&, Paths \&, const double \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a42dfd0438410d8b49619e4d4f662aa2b}{create\+Pocket\+Tree}} (const Paths \&cur\+Paths, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_af5a9e64e05b567a5972e098341ddb55b}{update\+Pocket\+Tree}} (const Paths \&cur\+Paths, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree, const int \&level)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a97ed0421269a3d9e8eb187aacbb611bc}{sort\+Pocket\+Tree}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a0b3bd4330183b9e45f05ac562c045adb}{create\+Spiral}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, const double \&pow\+Dis)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a982ab94926406552a831789041d0e848}{create\+Fermat\+Spiral}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, const double \&pow\+Dis)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a2e966d4053431f256f5495843e4cca45}{merge\+Pocket\+Tree}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{静态 Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_base}{Algorithm\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709}{scanner\+\_\+jump\+Pos}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a}{scanner\+\_\+out\+Line}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_aec87785742d1a00a5f45989c419069fd}{scanner\+\_\+jump\+Pos}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae0496d41045e88fcc421efd778cbfeb7}{scanner\+\_\+out\+Line}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a6355a54523d0af209e0d3d663472f401}{scanner\+\_\+plot\+Line}} (const int \&, const int \&, const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae772223adb17dffb76db2b454d807e18}{write\+Data\+To\+List}} (const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, int64\+\_\+t \&, int64\+\_\+t \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Algorithm\+Hatching\+Ring}
+处理口袋(\+Pocket)结构的填充路径生成,继承自\+Algorithm\+Base 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\doxysubsubsection{\texorpdfstring{AlgorithmHatchingRing()}{AlgorithmHatchingRing()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb} 
+Algorithm\+Hatching\+Ring\+::\+Algorithm\+Hatching\+Ring (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_algorithm_hatching_ring_a982ab94926406552a831789041d0e848}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!createFermatSpiral@{createFermatSpiral}}
+\index{createFermatSpiral@{createFermatSpiral}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\doxysubsubsection{\texorpdfstring{createFermatSpiral()}{createFermatSpiral()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ring_a982ab94926406552a831789041d0e848} 
+void Algorithm\+Hatching\+Ring\+::create\+Fermat\+Spiral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&}]{outer\+Tree}{, }\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_algorithm_hatching_ring_a42dfd0438410d8b49619e4d4f662aa2b}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!createPocketTree@{createPocketTree}}
+\index{createPocketTree@{createPocketTree}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\doxysubsubsection{\texorpdfstring{createPocketTree()}{createPocketTree()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ring_a42dfd0438410d8b49619e4d4f662aa2b} 
+void Algorithm\+Hatching\+Ring\+::create\+Pocket\+Tree (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&}]{outer\+Tree}{, }\item[{\mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&}]{inner\+Tree}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_algorithm_hatching_ring_a0b3bd4330183b9e45f05ac562c045adb}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!createSpiral@{createSpiral}}
+\index{createSpiral@{createSpiral}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\doxysubsubsection{\texorpdfstring{createSpiral()}{createSpiral()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ring_a0b3bd4330183b9e45f05ac562c045adb} 
+void Algorithm\+Hatching\+Ring\+::create\+Spiral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&}]{outer\+Tree}{, }\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_algorithm_hatching_ring_a2e966d4053431f256f5495843e4cca45}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!mergePocketTree@{mergePocketTree}}
+\index{mergePocketTree@{mergePocketTree}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\doxysubsubsection{\texorpdfstring{mergePocketTree()}{mergePocketTree()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ring_a2e966d4053431f256f5495843e4cca45} 
+void Algorithm\+Hatching\+Ring\+::merge\+Pocket\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&}]{outer\+Tree}{, }\item[{\mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&}]{inner\+Tree}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_hatching_ring_a97ed0421269a3d9e8eb187aacbb611bc}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!sortPocketTree@{sortPocketTree}}
+\index{sortPocketTree@{sortPocketTree}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\doxysubsubsection{\texorpdfstring{sortPocketTree()}{sortPocketTree()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ring_a97ed0421269a3d9e8eb187aacbb611bc} 
+void Algorithm\+Hatching\+Ring\+::sort\+Pocket\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&}]{outer\+Tree}{, }\item[{\mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&}]{inner\+Tree}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_algorithm_hatching_ring_af5a9e64e05b567a5972e098341ddb55b}\index{AlgorithmHatchingRing@{AlgorithmHatchingRing}!updatePocketTree@{updatePocketTree}}
+\index{updatePocketTree@{updatePocketTree}!AlgorithmHatchingRing@{AlgorithmHatchingRing}}
+\doxysubsubsection{\texorpdfstring{updatePocketTree()}{updatePocketTree()}}
+{\footnotesize\ttfamily \label{class_algorithm_hatching_ring_af5a9e64e05b567a5972e098341ddb55b} 
+void Algorithm\+Hatching\+Ring\+::update\+Pocket\+Tree (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&}]{outer\+Tree}{, }\item[{\mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&}]{inner\+Tree}{, }\item[{const int \&}]{level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algorithmhatchingring_8h}{algorithmhatchingring.\+h}}\item 
+\mbox{\hyperlink{algorithmhatchingring_8cpp}{algorithmhatchingring.\+cpp}}\end{DoxyCompactItemize}

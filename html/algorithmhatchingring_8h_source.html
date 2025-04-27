@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: algorithmhatchingring.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('algorithmhatchingring_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">algorithmhatchingring.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="algorithmhatchingring_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALGORITHMHATCHINGRING_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALGORITHMHATCHINGRING_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="algorithmbase_8h.html">algorithmbase.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QList&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_wnd_info.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_wnd_info.html">WndInfo</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_wnd_info.html#ac03d1e45960715fb5102c3eb0911aad5">   10</a></span>    uint <a class="code hl_variable" href="struct_wnd_info.html#ac03d1e45960715fb5102c3eb0911aad5">nWndBegin</a>  = 0;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_wnd_info.html#aedbaa0364c3e646c0578584185bab90b">   11</a></span>    uint <a class="code hl_variable" href="struct_wnd_info.html#aedbaa0364c3e646c0578584185bab90b">nWndEnd1</a>   = 0;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_wnd_info.html#a5715fabd8d33dbf62544fad5d7789bbb">   12</a></span>    uint <a class="code hl_variable" href="struct_wnd_info.html#a5715fabd8d33dbf62544fad5d7789bbb">nWndEnd2</a>   = 0;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
+</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="algorithmhatchingring_8h.html#ae6b3af827cde5e49f0f23b149a972500">   15</a></span><span class="keyword">inline</span> QDebug <a class="code hl_function" href="algorithmhatchingring_8h.html#ae6b3af827cde5e49f0f23b149a972500">operator&lt;&lt;</a>(QDebug debug, <span class="keyword">const</span> <a class="code hl_struct" href="struct_wnd_info.html">WndInfo</a> &amp;wndInfo)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    debug &lt;&lt; <span class="stringliteral">&quot;WndInfo&quot;</span> &lt;&lt; <span class="stringliteral">&quot;{ &quot;</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    debug &lt;&lt; wndInfo.<a class="code hl_variable" href="struct_wnd_info.html#ac03d1e45960715fb5102c3eb0911aad5">nWndBegin</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; wndInfo.<a class="code hl_variable" href="struct_wnd_info.html#aedbaa0364c3e646c0578584185bab90b">nWndEnd1</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>           &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt; wndInfo.<a class="code hl_variable" href="struct_wnd_info.html#a5715fabd8d33dbf62544fad5d7789bbb">nWndEnd2</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    debug &lt;&lt; <span class="stringliteral">&quot; } &quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> debug;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_ring_wnd_info.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_ring_wnd_info.html">RingWndInfo</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_ring_wnd_info.html#aca9be5af7c12e4be6ef85de0c258c902">   25</a></span>    <a class="code hl_struct" href="struct_wnd_info.html">WndInfo</a> <a class="code hl_variable" href="struct_ring_wnd_info.html#aca9be5af7c12e4be6ef85de0c258c902">curWnd</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_ring_wnd_info.html#aabae255f506b8edfaa7563be3073f337">   26</a></span>    <a class="code hl_struct" href="struct_wnd_info.html">WndInfo</a> <a class="code hl_variable" href="struct_ring_wnd_info.html#aabae255f506b8edfaa7563be3073f337">bigWnd</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_ring_wnd_info.html#a342d75b3a49ad862fe4612eb295f9fee">   27</a></span>    <a class="code hl_struct" href="struct_wnd_info.html">WndInfo</a> <a class="code hl_variable" href="struct_ring_wnd_info.html#a342d75b3a49ad862fe4612eb295f9fee">tempWnd</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_wnd_pos.html">WndPos</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_bigger_wnd.html">BiggerWnd</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_pocket_node.html">   33</a></span><span class="keyword">struct </span><a class="code hl_function" href="struct_pocket_node.html#ade80cb9428652c61098a3a9dda8708f7">PocketNode</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#ae1569776a24c75563580e62569dda75f">   34</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_pocket_node.html#ae1569776a24c75563580e62569dda75f">nLevel</a> = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#a4bbd5362def01bd56faa216eb728b3cb">   35</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_pocket_node.html#a4bbd5362def01bd56faa216eb728b3cb">fArea</a> = 0.0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#a90232666ed780c6c7cb0957f57c1588b">   36</a></span>    BoundingBox <a class="code hl_variable" href="struct_pocket_node.html#a90232666ed780c6c7cb0957f57c1588b">bBox</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#a057cd68590f98ecd0c1f01d92e22b745">   37</a></span>    Path <a class="code hl_variable" href="struct_pocket_node.html#a057cd68590f98ecd0c1f01d92e22b745">circle</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#af7548a392c0658bb4f6883965ae2e44d">   38</a></span>    QList&lt;int&gt; <a class="code hl_variable" href="struct_pocket_node.html#af7548a392c0658bb4f6883965ae2e44d">subBranchList</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#a7039883205b654951dd0d9a9fac03c4a">   40</a></span>    <a class="code hl_struct" href="struct_wnd_info.html">WndInfo</a> <a class="code hl_variable" href="struct_pocket_node.html#a7039883205b654951dd0d9a9fac03c4a">wndInfo</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#a77bfd5b4b3b197835263c401cdc5221d">   42</a></span>    <a class="code hl_struct" href="struct_ring_wnd_info.html">RingWndInfo</a> <a class="code hl_variable" href="struct_pocket_node.html#a77bfd5b4b3b197835263c401cdc5221d">ringWndInfo</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#a31b4a9358b9cea876834b34c914294a2">   43</a></span>    QList&lt;PocketNode *&gt; <a class="code hl_variable" href="struct_pocket_node.html#a31b4a9358b9cea876834b34c914294a2">listNodeWnd</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_pocket_node.html#ade80cb9428652c61098a3a9dda8708f7">   45</a></span>    <a class="code hl_function" href="struct_pocket_node.html#ade80cb9428652c61098a3a9dda8708f7">PocketNode</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_function" href="struct_pocket_node.html#ade80cb9428652c61098a3a9dda8708f7">PocketNode</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;level, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;area,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>               <span class="keyword">const</span> BoundingBox &amp;box, <span class="keyword">const</span> Path &amp;path);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    IntPoint <a class="code hl_function" href="struct_pocket_node.html#a13a697e4ef4b1be0187a71d82df83197">firstCoor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_pocket_node.html#a046f1537a84272a45ef89c3ea996af39">containsCoor</a>(<span class="keyword">const</span> IntPoint &amp;coor) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html">   52</a></span><span class="keyword">struct </span><a class="code hl_function" href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd">   54</a></span>        <a class="code hl_enumvalue" href="struct_pocket_branch.html#a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd">Inner</a> = 0,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7">   55</a></span>        <a class="code hl_enumvalue" href="struct_pocket_branch.html#a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7">Outer</a></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#a5e9d55893f501073b683089558663033">   57</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_pocket_branch.html#a5e9d55893f501073b683089558663033">bMerged</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#a94c3b9034db6a337b962889a39dbb3ac">   58</a></span>    qint8 <a class="code hl_variable" href="struct_pocket_branch.html#a94c3b9034db6a337b962889a39dbb3ac">mCircleType</a> = <a class="code hl_enumvalue" href="struct_pocket_branch.html#a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7">Outer</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">   59</a></span>    QList&lt;PocketNode&gt; <a class="code hl_variable" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#a3097b0d85c662e40d4647454e1e0206e">   60</a></span>    QList&lt;PocketBranch&gt; <a class="code hl_variable" href="struct_pocket_branch.html#a3097b0d85c662e40d4647454e1e0206e">mSubBranchList</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#afdd64b56e2d95ebb6e3a41f09297b58c">   61</a></span>    QList&lt;int&gt; <a class="code hl_variable" href="struct_pocket_branch.html#afdd64b56e2d95ebb6e3a41f09297b58c">mNestingList</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#ada7b26a2fa671884c6b7c898e33de12d">   62</a></span>    QList&lt;int&gt; <a class="code hl_variable" href="struct_pocket_branch.html#ada7b26a2fa671884c6b7c898e33de12d">mTempIndexList</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#a53c08d2964bac69dc9479a5f4b9c07d4">   63</a></span>    Path <a class="code hl_variable" href="struct_pocket_branch.html#a53c08d2964bac69dc9479a5f4b9c07d4">spiralPath</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#a649db231646e2f47e1ddfe867710a009">   64</a></span>    Path <a class="code hl_variable" href="struct_pocket_branch.html#a649db231646e2f47e1ddfe867710a009">fermatSpiralPath</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">   66</a></span>    <a class="code hl_function" href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch</a>(<span class="keyword">const</span> qint8 &amp;circleType, <span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_node.html">PocketNode</a> &amp;node);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_pocket_branch.html#a75789da4375db35506f6fdba021e9fd9">containsNode</a>(<span class="keyword">const</span> IntPoint &amp;coor, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;index);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_pocket_branch.html#a7e5a73d16ded6b69185ed000c6e0e709">containsInNode</a>(<a class="code hl_struct" href="struct_pocket_node.html">PocketNode</a> &amp;node, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;index) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#aeb937f063c9fa5fa00c35ce3f7ef1b30">updateNestingList</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;thisIndex, <a class="code hl_function" href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch</a> &amp;branch, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;subIndex);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#a6bc7c5b62ea47c0b5450c48d28787bb7">addNode</a>(QList&lt;PocketNode&gt; &amp;tempNodeList);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_pocket_branch.html#aae31d805dd949b4a54b28656bf6ba513">addInnerBranch</a>(<a class="code hl_function" href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch</a> &amp;innerBranch);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_pocket_branch.html#acf1aba9a7a1eb71cd40fac9fcbc6d449">addInnerBranch_upgrade</a>(<a class="code hl_function" href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch</a> &amp;innerBranch);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#ad6189cb99d9b46fd9a3dd4b520de15f9">updateBranchOrder</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="struct_pocket_branch.html#aecb36257b1106a1a93d5d07aff050860">maxArea</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#a073a85d451e64b062b8cd0a9f7821079">getNodeCnt</a>(<span class="keywordtype">int</span> &amp;nodeCnt) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#ac23ca20725bb929f161d3fdccc0ddc9c">createSpiral</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#a7c254843d14f6b8b939d48f56849010e">calcNodeWndPos_Spiral</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#ad3c6a88c1969e5e34e6316e932ca27c8">calcClosedPt</a>(Path &amp;bigger, <a class="code hl_struct" href="struct_wnd_pos.html">WndPos</a> &amp;, Path &amp;smaller, <a class="code hl_struct" href="struct_wnd_pos.html">WndPos</a> &amp;wndPos, <span class="keyword">const</span> uint &amp;minPos, <span class="keyword">const</span> uint &amp;maxPos, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, QList&lt;BiggerWnd&gt; &amp;);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#a6f18b2eefc7f29e6191c38b7e0adb857">calcClosedPtInvert</a>(Path &amp;bigger, <a class="code hl_struct" href="struct_wnd_pos.html">WndPos</a> &amp;, Path &amp;smaller, <a class="code hl_struct" href="struct_wnd_pos.html">WndPos</a> &amp;wndPos, <span class="keyword">const</span> uint &amp;minPos, <span class="keyword">const</span> uint &amp;maxPos, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, QList&lt;BiggerWnd&gt; &amp;);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#a9357412e04d51feeaebb976f1340b6eb">calcSpiralJoinPoint</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;curIndex, <span class="keywordtype">int</span> &amp;preIndex, uint &amp;beginPos, uint &amp;endPos, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;maxCircle = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#a7d6c4befe0a0b63d948b3c7ca7b4696f">createFermatSpiral</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#acee5b28570a7d5e48e32dafc6efb0efd">calcNodeWndPos</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#acee5b28570a7d5e48e32dafc6efb0efd">calcNodeWndPos</a>(<a class="code hl_struct" href="struct_pocket_node.html">PocketNode</a> &amp;, <a class="code hl_struct" href="struct_pocket_node.html">PocketNode</a> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_branch.html#abaa116424f9a166b7a784cff2f94aa0e">calcBranchWndPos</a>(<a class="code hl_struct" href="struct_pocket_node.html">PocketNode</a> &amp;, <a class="code hl_struct" href="struct_pocket_node.html">PocketNode</a> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="};">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="struct_pocket_tree.html">   89</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="struct_pocket_tree.html#a84a903d5a5d84f7adac88b50a8d836eb">   90</a></span>    QList&lt;PocketBranch&gt; <a class="code hl_variable" href="struct_pocket_tree.html#a84a903d5a5d84f7adac88b50a8d836eb">branchList</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_tree.html#a141dec2ef89149bda3e58e84ca0a2571">appendBranch</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_branch.html">PocketBranch</a> &amp;branch);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="struct_pocket_tree.html#a97961988bd52a7babbb2776c75b8a545">getNodeCnt</a>(<span class="keywordtype">int</span> &amp;nodeCnt);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_pocket_tree.html#ae4f7b41555194e34baaf730cd5b5c397">updateBranchOrder</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>};</div>
+</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="};">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="struct_inner_pocket_tree.html">   96</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_inner_pocket_tree.html">InnerPocketTree</a> {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="struct_inner_pocket_tree.html#a18f7c8c0f7858a9fe27c2d7e4624481d">   97</a></span>    QMap&lt;int, PocketBranch&gt; <a class="code hl_variable" href="struct_inner_pocket_tree.html#a18f7c8c0f7858a9fe27c2d7e4624481d">branchList</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="struct_inner_pocket_tree.html#a338d55002fcc493779c7184928430e78">   98</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_inner_pocket_tree.html#a338d55002fcc493779c7184928430e78">nIndex</a> = 0;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_inner_pocket_tree.html#a5a5421dc4e891bbf1efeb3c3af08fe37">appendBranch</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_branch.html">PocketBranch</a> &amp;branch);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="struct_inner_pocket_tree.html#a463417d6c488967351c1ac547e4d2ee0">getNodeCnt</a>(<span class="keywordtype">int</span> &amp;nodeCnt);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_inner_pocket_tree.html#a59ab0f3034d5faa704bd4ce1dfc2ddea">updateNestingList</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_inner_pocket_tree.html#a2b558e6d3b42db46a07b10d2723bb472">removeNestingList</a>(QList&lt;int&gt; &amp;subBranchList);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a>;</div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="};">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_algorithm_hatching_ring.html">  110</a></span><span class="keyword">class </span><a class="code hl_function" href="class_algorithm_hatching_ring.html#a1a1e4c4f9f0ce07aa77ac8519ede94eb">AlgorithmHatchingRing</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_algorithm_base.html">AlgorithmBase</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_algorithm_hatching_ring.html#a1a1e4c4f9f0ce07aa77ac8519ede94eb">  113</a></span>    <a class="code hl_function" href="class_algorithm_hatching_ring.html#a1a1e4c4f9f0ce07aa77ac8519ede94eb">AlgorithmHatchingRing</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching_ring.html#a42dfd0438410d8b49619e4d4f662aa2b">createPocketTree</a>(<span class="keyword">const</span> Paths &amp;curPaths, <a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;outerTree, <a class="code hl_struct" href="struct_inner_pocket_tree.html">InnerPocketTree</a> &amp;innerTree);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching_ring.html#af5a9e64e05b567a5972e098341ddb55b">updatePocketTree</a>(<span class="keyword">const</span> Paths &amp;curPaths, <a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;outerTree, <a class="code hl_struct" href="struct_inner_pocket_tree.html">InnerPocketTree</a> &amp;innerTree,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                          <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;level);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching_ring.html#a97ed0421269a3d9e8eb187aacbb611bc">sortPocketTree</a>(<a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;outerTree, <a class="code hl_struct" href="struct_inner_pocket_tree.html">InnerPocketTree</a> &amp;innerTree);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching_ring.html#a0b3bd4330183b9e45f05ac562c045adb">createSpiral</a>(<a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;outerTree, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;powDis);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching_ring.html#a982ab94926406552a831789041d0e848">createFermatSpiral</a>(<a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;outerTree, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;powDis);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching_ring.html#a2e966d4053431f256f5495843e4cca45">mergePocketTree</a>(<a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;outerTree, <a class="code hl_struct" href="struct_inner_pocket_tree.html">InnerPocketTree</a> &amp;innerTree);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="algorithmhatchingring_8h.html#a89006adf34714f50f400fbc440c1e55a">  127</a></span><span class="keyword">inline</span> QDebug <a class="code hl_function" href="algorithmhatchingring_8h.html#ae6b3af827cde5e49f0f23b149a972500">operator&lt;&lt;</a>(QDebug debug, <span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_branch.html">PocketBranch</a> &amp;branch)</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    debug &lt;&lt; <span class="stringliteral">&quot;branch { &quot;</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    debug &lt;&lt; (branch.<a class="code hl_variable" href="struct_pocket_branch.html#a94c3b9034db6a337b962889a39dbb3ac">mCircleType</a> ? <span class="stringliteral">&quot;Outer&quot;</span> : <span class="stringliteral">&quot;Inner&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;; &quot;</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    debug &lt;&lt; <span class="stringliteral">&quot;Start: &quot;</span> &lt;&lt; branch.<a class="code hl_variable" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a>.first().nLevel &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; branch.<a class="code hl_variable" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a>.first().fArea &lt;&lt; <span class="stringliteral">&quot;; &quot;</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    debug &lt;&lt; <span class="stringliteral">&quot;End: &quot;</span> &lt;&lt; branch.<a class="code hl_variable" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a>.last().nLevel &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; branch.<a class="code hl_variable" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a>.last().fArea  &lt;&lt; <span class="stringliteral">&quot;; &quot;</span>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    debug &lt;&lt; <span class="stringliteral">&quot;CurWnd: &quot;</span> &lt;&lt; branch.<a class="code hl_variable" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a>.first().ringWndInfo.curWnd  &lt;&lt; <span class="stringliteral">&quot;; &quot;</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    debug &lt;&lt; <span class="stringliteral">&quot;TempWnd: &quot;</span> &lt;&lt; branch.<a class="code hl_variable" href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a>.first().ringWndInfo.tempWnd  &lt;&lt; <span class="stringliteral">&quot;; &quot;</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">if</span>(branch.<a class="code hl_variable" href="struct_pocket_branch.html#a3097b0d85c662e40d4647454e1e0206e">mSubBranchList</a>.size())</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        debug &lt;&lt; <span class="stringliteral">&quot;\nList: &quot;</span> &lt;&lt; branch.<a class="code hl_variable" href="struct_pocket_branch.html#a3097b0d85c662e40d4647454e1e0206e">mSubBranchList</a>.size() &lt;&lt; <span class="stringliteral">&quot;{\n&quot;</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> &amp;subBranch : branch.<a class="code hl_variable" href="struct_pocket_branch.html#a3097b0d85c662e40d4647454e1e0206e">mSubBranchList</a>) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            debug &lt;&lt; subBranch;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        debug &lt;&lt; <span class="stringliteral">&quot;} &quot;</span>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    debug &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordflow">return</span> debug;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="algorithmhatchingring_8h.html#a0ac2bc8edb4f5d9ac335464acad86e5a">  148</a></span><span class="keyword">inline</span> QDebug <a class="code hl_function" href="algorithmhatchingring_8h.html#ae6b3af827cde5e49f0f23b149a972500">operator&lt;&lt;</a>(QDebug debug, <span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;tree)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    debug &lt;&lt; <span class="stringliteral">&quot;Tree&quot;</span> &lt;&lt; tree.<a class="code hl_variable" href="struct_pocket_tree.html#a84a903d5a5d84f7adac88b50a8d836eb">branchList</a>.size() &lt;&lt; <span class="stringliteral">&quot;{ \n&quot;</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> &amp;branch : tree.<a class="code hl_variable" href="struct_pocket_tree.html#a84a903d5a5d84f7adac88b50a8d836eb">branchList</a>)</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        debug &lt;&lt; branch;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    debug &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordflow">return</span> debug;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
+</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">#endif </span><span class="comment">// ALGORITHMHATCHINGRING_H</span></div>
+<div class="ttc" id="aalgorithmbase_8h_html"><div class="ttname"><a href="algorithmbase_8h.html">algorithmbase.h</a></div></div>
+<div class="ttc" id="aalgorithmhatchingring_8h_html_ae6b3af827cde5e49f0f23b149a972500"><div class="ttname"><a href="algorithmhatchingring_8h.html#ae6b3af827cde5e49f0f23b149a972500">operator&lt;&lt;</a></div><div class="ttdeci">QDebug operator&lt;&lt;(QDebug debug, const WndInfo &amp;wndInfo)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:15</div></div>
+<div class="ttc" id="aclass_algorithm_base_html"><div class="ttname"><a href="class_algorithm_base.html">AlgorithmBase</a></div><div class="ttdef"><b>定义</b> algorithmbase.h:13</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_a0b3bd4330183b9e45f05ac562c045adb"><div class="ttname"><a href="class_algorithm_hatching_ring.html#a0b3bd4330183b9e45f05ac562c045adb">AlgorithmHatchingRing::createSpiral</a></div><div class="ttdeci">void createSpiral(PocketTree &amp;outerTree, const double &amp;powDis)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1438</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_a1a1e4c4f9f0ce07aa77ac8519ede94eb"><div class="ttname"><a href="class_algorithm_hatching_ring.html#a1a1e4c4f9f0ce07aa77ac8519ede94eb">AlgorithmHatchingRing::AlgorithmHatchingRing</a></div><div class="ttdeci">AlgorithmHatchingRing()=default</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_a2e966d4053431f256f5495843e4cca45"><div class="ttname"><a href="class_algorithm_hatching_ring.html#a2e966d4053431f256f5495843e4cca45">AlgorithmHatchingRing::mergePocketTree</a></div><div class="ttdeci">void mergePocketTree(PocketTree &amp;outerTree, InnerPocketTree &amp;innerTree)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1457</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_a42dfd0438410d8b49619e4d4f662aa2b"><div class="ttname"><a href="class_algorithm_hatching_ring.html#a42dfd0438410d8b49619e4d4f662aa2b">AlgorithmHatchingRing::createPocketTree</a></div><div class="ttdeci">void createPocketTree(const Paths &amp;curPaths, PocketTree &amp;outerTree, InnerPocketTree &amp;innerTree)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1337</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_a97ed0421269a3d9e8eb187aacbb611bc"><div class="ttname"><a href="class_algorithm_hatching_ring.html#a97ed0421269a3d9e8eb187aacbb611bc">AlgorithmHatchingRing::sortPocketTree</a></div><div class="ttdeci">void sortPocketTree(PocketTree &amp;outerTree, InnerPocketTree &amp;innerTree)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1432</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_a982ab94926406552a831789041d0e848"><div class="ttname"><a href="class_algorithm_hatching_ring.html#a982ab94926406552a831789041d0e848">AlgorithmHatchingRing::createFermatSpiral</a></div><div class="ttdeci">void createFermatSpiral(PocketTree &amp;outerTree, const double &amp;powDis)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1448</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_af5a9e64e05b567a5972e098341ddb55b"><div class="ttname"><a href="class_algorithm_hatching_ring.html#af5a9e64e05b567a5972e098341ddb55b">AlgorithmHatchingRing::updatePocketTree</a></div><div class="ttdeci">void updatePocketTree(const Paths &amp;curPaths, PocketTree &amp;outerTree, InnerPocketTree &amp;innerTree, const int &amp;level)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1363</div></div>
+<div class="ttc" id="astruct_bigger_wnd_html"><div class="ttname"><a href="struct_bigger_wnd.html">BiggerWnd</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:43</div></div>
+<div class="ttc" id="astruct_inner_pocket_tree_html"><div class="ttname"><a href="struct_inner_pocket_tree.html">InnerPocketTree</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:96</div></div>
+<div class="ttc" id="astruct_inner_pocket_tree_html_a18f7c8c0f7858a9fe27c2d7e4624481d"><div class="ttname"><a href="struct_inner_pocket_tree.html#a18f7c8c0f7858a9fe27c2d7e4624481d">InnerPocketTree::branchList</a></div><div class="ttdeci">QMap&lt; int, PocketBranch &gt; branchList</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:97</div></div>
+<div class="ttc" id="astruct_inner_pocket_tree_html_a2b558e6d3b42db46a07b10d2723bb472"><div class="ttname"><a href="struct_inner_pocket_tree.html#a2b558e6d3b42db46a07b10d2723bb472">InnerPocketTree::removeNestingList</a></div><div class="ttdeci">void removeNestingList(QList&lt; int &gt; &amp;subBranchList)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1325</div></div>
+<div class="ttc" id="astruct_inner_pocket_tree_html_a338d55002fcc493779c7184928430e78"><div class="ttname"><a href="struct_inner_pocket_tree.html#a338d55002fcc493779c7184928430e78">InnerPocketTree::nIndex</a></div><div class="ttdeci">int nIndex</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:98</div></div>
+<div class="ttc" id="astruct_inner_pocket_tree_html_a463417d6c488967351c1ac547e4d2ee0"><div class="ttname"><a href="struct_inner_pocket_tree.html#a463417d6c488967351c1ac547e4d2ee0">InnerPocketTree::getNodeCnt</a></div><div class="ttdeci">int getNodeCnt(int &amp;nodeCnt)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1297</div></div>
+<div class="ttc" id="astruct_inner_pocket_tree_html_a59ab0f3034d5faa704bd4ce1dfc2ddea"><div class="ttname"><a href="struct_inner_pocket_tree.html#a59ab0f3034d5faa704bd4ce1dfc2ddea">InnerPocketTree::updateNestingList</a></div><div class="ttdeci">void updateNestingList()</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1307</div></div>
+<div class="ttc" id="astruct_inner_pocket_tree_html_a5a5421dc4e891bbf1efeb3c3af08fe37"><div class="ttname"><a href="struct_inner_pocket_tree.html#a5a5421dc4e891bbf1efeb3c3af08fe37">InnerPocketTree::appendBranch</a></div><div class="ttdeci">void appendBranch(const PocketBranch &amp;branch)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1292</div></div>
+<div class="ttc" id="astruct_pocket_branch_html"><div class="ttname"><a href="struct_pocket_branch.html">PocketBranch</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:52</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a073a85d451e64b062b8cd0a9f7821079"><div class="ttname"><a href="struct_pocket_branch.html#a073a85d451e64b062b8cd0a9f7821079">PocketBranch::getNodeCnt</a></div><div class="ttdeci">void getNodeCnt(int &amp;nodeCnt) const</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:296</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd"><div class="ttname"><a href="struct_pocket_branch.html#a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd">PocketBranch::Inner</a></div><div class="ttdeci">@ Inner</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:54</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7"><div class="ttname"><a href="struct_pocket_branch.html#a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7">PocketBranch::Outer</a></div><div class="ttdeci">@ Outer</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:55</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a3097b0d85c662e40d4647454e1e0206e"><div class="ttname"><a href="struct_pocket_branch.html#a3097b0d85c662e40d4647454e1e0206e">PocketBranch::mSubBranchList</a></div><div class="ttdeci">QList&lt; PocketBranch &gt; mSubBranchList</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:60</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a53c08d2964bac69dc9479a5f4b9c07d4"><div class="ttname"><a href="struct_pocket_branch.html#a53c08d2964bac69dc9479a5f4b9c07d4">PocketBranch::spiralPath</a></div><div class="ttdeci">Path spiralPath</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:63</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a5e9d55893f501073b683089558663033"><div class="ttname"><a href="struct_pocket_branch.html#a5e9d55893f501073b683089558663033">PocketBranch::bMerged</a></div><div class="ttdeci">bool bMerged</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:57</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a649db231646e2f47e1ddfe867710a009"><div class="ttname"><a href="struct_pocket_branch.html#a649db231646e2f47e1ddfe867710a009">PocketBranch::fermatSpiralPath</a></div><div class="ttdeci">Path fermatSpiralPath</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:64</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a6bc7c5b62ea47c0b5450c48d28787bb7"><div class="ttname"><a href="struct_pocket_branch.html#a6bc7c5b62ea47c0b5450c48d28787bb7">PocketBranch::addNode</a></div><div class="ttdeci">void addNode(QList&lt; PocketNode &gt; &amp;tempNodeList)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:202</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a6f18b2eefc7f29e6191c38b7e0adb857"><div class="ttname"><a href="struct_pocket_branch.html#a6f18b2eefc7f29e6191c38b7e0adb857">PocketBranch::calcClosedPtInvert</a></div><div class="ttdeci">void calcClosedPtInvert(Path &amp;bigger, WndPos &amp;, Path &amp;smaller, WndPos &amp;wndPos, const uint &amp;minPos, const uint &amp;maxPos, const double &amp;, QList&lt; BiggerWnd &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:571</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a75789da4375db35506f6fdba021e9fd9"><div class="ttname"><a href="struct_pocket_branch.html#a75789da4375db35506f6fdba021e9fd9">PocketBranch::containsNode</a></div><div class="ttdeci">bool containsNode(const IntPoint &amp;coor, const int &amp;index)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:160</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a7c254843d14f6b8b939d48f56849010e"><div class="ttname"><a href="struct_pocket_branch.html#a7c254843d14f6b8b939d48f56849010e">PocketBranch::calcNodeWndPos_Spiral</a></div><div class="ttdeci">void calcNodeWndPos_Spiral(const double &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:967</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a7d6c4befe0a0b63d948b3c7ca7b4696f"><div class="ttname"><a href="struct_pocket_branch.html#a7d6c4befe0a0b63d948b3c7ca7b4696f">PocketBranch::createFermatSpiral</a></div><div class="ttdeci">void createFermatSpiral(const double &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:705</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a7e5a73d16ded6b69185ed000c6e0e709"><div class="ttname"><a href="struct_pocket_branch.html#a7e5a73d16ded6b69185ed000c6e0e709">PocketBranch::containsInNode</a></div><div class="ttdeci">bool containsInNode(PocketNode &amp;node, const int &amp;index) const</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:180</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a9357412e04d51feeaebb976f1340b6eb"><div class="ttname"><a href="struct_pocket_branch.html#a9357412e04d51feeaebb976f1340b6eb">PocketBranch::calcSpiralJoinPoint</a></div><div class="ttdeci">void calcSpiralJoinPoint(const int &amp;curIndex, int &amp;preIndex, uint &amp;beginPos, uint &amp;endPos, const double &amp;, const bool &amp;maxCircle=false)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:614</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_a94c3b9034db6a337b962889a39dbb3ac"><div class="ttname"><a href="struct_pocket_branch.html#a94c3b9034db6a337b962889a39dbb3ac">PocketBranch::mCircleType</a></div><div class="ttdeci">qint8 mCircleType</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:58</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_aae31d805dd949b4a54b28656bf6ba513"><div class="ttname"><a href="struct_pocket_branch.html#aae31d805dd949b4a54b28656bf6ba513">PocketBranch::addInnerBranch</a></div><div class="ttdeci">bool addInnerBranch(PocketBranch &amp;innerBranch)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:222</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_abaa116424f9a166b7a784cff2f94aa0e"><div class="ttname"><a href="struct_pocket_branch.html#abaa116424f9a166b7a784cff2f94aa0e">PocketBranch::calcBranchWndPos</a></div><div class="ttdeci">void calcBranchWndPos(PocketNode &amp;, PocketNode &amp;, const double &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1149</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_ac23ca20725bb929f161d3fdccc0ddc9c"><div class="ttname"><a href="struct_pocket_branch.html#ac23ca20725bb929f161d3fdccc0ddc9c">PocketBranch::createSpiral</a></div><div class="ttdeci">void createSpiral(const double &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:680</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_acee5b28570a7d5e48e32dafc6efb0efd"><div class="ttname"><a href="struct_pocket_branch.html#acee5b28570a7d5e48e32dafc6efb0efd">PocketBranch::calcNodeWndPos</a></div><div class="ttdeci">void calcNodeWndPos(const double &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:990</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_acf1aba9a7a1eb71cd40fac9fcbc6d449"><div class="ttname"><a href="struct_pocket_branch.html#acf1aba9a7a1eb71cd40fac9fcbc6d449">PocketBranch::addInnerBranch_upgrade</a></div><div class="ttdeci">bool addInnerBranch_upgrade(PocketBranch &amp;innerBranch)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:239</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_ad3c6a88c1969e5e34e6316e932ca27c8"><div class="ttname"><a href="struct_pocket_branch.html#ad3c6a88c1969e5e34e6316e932ca27c8">PocketBranch::calcClosedPt</a></div><div class="ttdeci">void calcClosedPt(Path &amp;bigger, WndPos &amp;, Path &amp;smaller, WndPos &amp;wndPos, const uint &amp;minPos, const uint &amp;maxPos, const double &amp;, QList&lt; BiggerWnd &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:527</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_ad6189cb99d9b46fd9a3dd4b520de15f9"><div class="ttname"><a href="struct_pocket_branch.html#ad6189cb99d9b46fd9a3dd4b520de15f9">PocketBranch::updateBranchOrder</a></div><div class="ttdeci">void updateBranchOrder()</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:282</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_ad8b6d0cc9b1f2575d94ea5a13d0aca13"><div class="ttname"><a href="struct_pocket_branch.html#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch::PocketBranch</a></div><div class="ttdeci">PocketBranch()=default</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_ad933ab577ed4511bf3d16b7b85d83a13"><div class="ttname"><a href="struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13">PocketBranch::mNodeList</a></div><div class="ttdeci">QList&lt; PocketNode &gt; mNodeList</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:59</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_ada7b26a2fa671884c6b7c898e33de12d"><div class="ttname"><a href="struct_pocket_branch.html#ada7b26a2fa671884c6b7c898e33de12d">PocketBranch::mTempIndexList</a></div><div class="ttdeci">QList&lt; int &gt; mTempIndexList</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:62</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_aeb937f063c9fa5fa00c35ce3f7ef1b30"><div class="ttname"><a href="struct_pocket_branch.html#aeb937f063c9fa5fa00c35ce3f7ef1b30">PocketBranch::updateNestingList</a></div><div class="ttdeci">void updateNestingList(const int &amp;thisIndex, PocketBranch &amp;branch, const int &amp;subIndex)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:190</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_aecb36257b1106a1a93d5d07aff050860"><div class="ttname"><a href="struct_pocket_branch.html#aecb36257b1106a1a93d5d07aff050860">PocketBranch::maxArea</a></div><div class="ttdeci">double maxArea() const</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:291</div></div>
+<div class="ttc" id="astruct_pocket_branch_html_afdd64b56e2d95ebb6e3a41f09297b58c"><div class="ttname"><a href="struct_pocket_branch.html#afdd64b56e2d95ebb6e3a41f09297b58c">PocketBranch::mNestingList</a></div><div class="ttdeci">QList&lt; int &gt; mNestingList</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:61</div></div>
+<div class="ttc" id="astruct_pocket_node_html"><div class="ttname"><a href="struct_pocket_node.html">PocketNode</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:33</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a046f1537a84272a45ef89c3ea996af39"><div class="ttname"><a href="struct_pocket_node.html#a046f1537a84272a45ef89c3ea996af39">PocketNode::containsCoor</a></div><div class="ttdeci">bool containsCoor(const IntPoint &amp;coor) const</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:148</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a057cd68590f98ecd0c1f01d92e22b745"><div class="ttname"><a href="struct_pocket_node.html#a057cd68590f98ecd0c1f01d92e22b745">PocketNode::circle</a></div><div class="ttdeci">Path circle</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:37</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a13a697e4ef4b1be0187a71d82df83197"><div class="ttname"><a href="struct_pocket_node.html#a13a697e4ef4b1be0187a71d82df83197">PocketNode::firstCoor</a></div><div class="ttdeci">IntPoint firstCoor() const</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:143</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a31b4a9358b9cea876834b34c914294a2"><div class="ttname"><a href="struct_pocket_node.html#a31b4a9358b9cea876834b34c914294a2">PocketNode::listNodeWnd</a></div><div class="ttdeci">QList&lt; PocketNode * &gt; listNodeWnd</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:43</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a4bbd5362def01bd56faa216eb728b3cb"><div class="ttname"><a href="struct_pocket_node.html#a4bbd5362def01bd56faa216eb728b3cb">PocketNode::fArea</a></div><div class="ttdeci">double fArea</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:35</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a7039883205b654951dd0d9a9fac03c4a"><div class="ttname"><a href="struct_pocket_node.html#a7039883205b654951dd0d9a9fac03c4a">PocketNode::wndInfo</a></div><div class="ttdeci">WndInfo wndInfo</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:40</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a77bfd5b4b3b197835263c401cdc5221d"><div class="ttname"><a href="struct_pocket_node.html#a77bfd5b4b3b197835263c401cdc5221d">PocketNode::ringWndInfo</a></div><div class="ttdeci">RingWndInfo ringWndInfo</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:42</div></div>
+<div class="ttc" id="astruct_pocket_node_html_a90232666ed780c6c7cb0957f57c1588b"><div class="ttname"><a href="struct_pocket_node.html#a90232666ed780c6c7cb0957f57c1588b">PocketNode::bBox</a></div><div class="ttdeci">BoundingBox bBox</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:36</div></div>
+<div class="ttc" id="astruct_pocket_node_html_ade80cb9428652c61098a3a9dda8708f7"><div class="ttname"><a href="struct_pocket_node.html#ade80cb9428652c61098a3a9dda8708f7">PocketNode::PocketNode</a></div><div class="ttdeci">PocketNode()=default</div></div>
+<div class="ttc" id="astruct_pocket_node_html_ae1569776a24c75563580e62569dda75f"><div class="ttname"><a href="struct_pocket_node.html#ae1569776a24c75563580e62569dda75f">PocketNode::nLevel</a></div><div class="ttdeci">int nLevel</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:34</div></div>
+<div class="ttc" id="astruct_pocket_node_html_af7548a392c0658bb4f6883965ae2e44d"><div class="ttname"><a href="struct_pocket_node.html#af7548a392c0658bb4f6883965ae2e44d">PocketNode::subBranchList</a></div><div class="ttdeci">QList&lt; int &gt; subBranchList</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:38</div></div>
+<div class="ttc" id="astruct_pocket_tree_html"><div class="ttname"><a href="struct_pocket_tree.html">PocketTree</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:89</div></div>
+<div class="ttc" id="astruct_pocket_tree_html_a141dec2ef89149bda3e58e84ca0a2571"><div class="ttname"><a href="struct_pocket_tree.html#a141dec2ef89149bda3e58e84ca0a2571">PocketTree::appendBranch</a></div><div class="ttdeci">void appendBranch(const PocketBranch &amp;branch)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1268</div></div>
+<div class="ttc" id="astruct_pocket_tree_html_a84a903d5a5d84f7adac88b50a8d836eb"><div class="ttname"><a href="struct_pocket_tree.html#a84a903d5a5d84f7adac88b50a8d836eb">PocketTree::branchList</a></div><div class="ttdeci">QList&lt; PocketBranch &gt; branchList</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:90</div></div>
+<div class="ttc" id="astruct_pocket_tree_html_a97961988bd52a7babbb2776c75b8a545"><div class="ttname"><a href="struct_pocket_tree.html#a97961988bd52a7babbb2776c75b8a545">PocketTree::getNodeCnt</a></div><div class="ttdeci">int getNodeCnt(int &amp;nodeCnt)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1273</div></div>
+<div class="ttc" id="astruct_pocket_tree_html_ae4f7b41555194e34baaf730cd5b5c397"><div class="ttname"><a href="struct_pocket_tree.html#ae4f7b41555194e34baaf730cd5b5c397">PocketTree::updateBranchOrder</a></div><div class="ttdeci">void updateBranchOrder()</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1284</div></div>
+<div class="ttc" id="astruct_ring_wnd_info_html"><div class="ttname"><a href="struct_ring_wnd_info.html">RingWndInfo</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:24</div></div>
+<div class="ttc" id="astruct_ring_wnd_info_html_a342d75b3a49ad862fe4612eb295f9fee"><div class="ttname"><a href="struct_ring_wnd_info.html#a342d75b3a49ad862fe4612eb295f9fee">RingWndInfo::tempWnd</a></div><div class="ttdeci">WndInfo tempWnd</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:27</div></div>
+<div class="ttc" id="astruct_ring_wnd_info_html_aabae255f506b8edfaa7563be3073f337"><div class="ttname"><a href="struct_ring_wnd_info.html#aabae255f506b8edfaa7563be3073f337">RingWndInfo::bigWnd</a></div><div class="ttdeci">WndInfo bigWnd</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:26</div></div>
+<div class="ttc" id="astruct_ring_wnd_info_html_aca9be5af7c12e4be6ef85de0c258c902"><div class="ttname"><a href="struct_ring_wnd_info.html#aca9be5af7c12e4be6ef85de0c258c902">RingWndInfo::curWnd</a></div><div class="ttdeci">WndInfo curWnd</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:25</div></div>
+<div class="ttc" id="astruct_s_c_a_n_l_i_n_e_html"><div class="ttname"><a href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a></div><div class="ttdef"><b>定义</b> uspfiledef.h:55</div></div>
+<div class="ttc" id="astruct_wnd_info_html"><div class="ttname"><a href="struct_wnd_info.html">WndInfo</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:9</div></div>
+<div class="ttc" id="astruct_wnd_info_html_a5715fabd8d33dbf62544fad5d7789bbb"><div class="ttname"><a href="struct_wnd_info.html#a5715fabd8d33dbf62544fad5d7789bbb">WndInfo::nWndEnd2</a></div><div class="ttdeci">uint nWndEnd2</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:12</div></div>
+<div class="ttc" id="astruct_wnd_info_html_ac03d1e45960715fb5102c3eb0911aad5"><div class="ttname"><a href="struct_wnd_info.html#ac03d1e45960715fb5102c3eb0911aad5">WndInfo::nWndBegin</a></div><div class="ttdeci">uint nWndBegin</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:10</div></div>
+<div class="ttc" id="astruct_wnd_info_html_aedbaa0364c3e646c0578584185bab90b"><div class="ttname"><a href="struct_wnd_info.html#aedbaa0364c3e646c0578584185bab90b">WndInfo::nWndEnd1</a></div><div class="ttdeci">uint nWndEnd1</div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:11</div></div>
+<div class="ttc" id="astruct_wnd_pos_html"><div class="ttname"><a href="struct_wnd_pos.html">WndPos</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="algorithmhatchingring_8h.html">algorithmhatchingring.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

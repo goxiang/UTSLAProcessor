@@ -1,0 +1,87 @@
+\doxysection{uspfilewriter.\+h}
+\hypertarget{uspfilewriter_8h_source}{}\label{uspfilewriter_8h_source}\mbox{\hyperlink{uspfilewriter_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ USPFILEWRITER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ USPFILEWRITER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }QFile;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_write_u_f_f}{WriteUFF}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm_application}{AlgorithmApplication}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }BOUNDINGBOX;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }BOUNDINGRECT;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }QJsonObject;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_writer_ae4dd90b95298451fc84d753b987ddc82}{FileWriter}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_file_writer_ae4dd90b95298451fc84d753b987ddc82}{FileWriter}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_file_writer_a4b2c19fe58992d3835e047f8ddeb4f8c}{\string~FileWriter}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_file_writer_ab346cbe23e8cbf1d7a2ea7bf04e9c7d3}{initFileWrite}}()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_ac383b392ce45566c4cccd3a4c8369c9d}{startBuffWriter}}()\ \{\}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_a2a23d7f3dd604772bc53ef2b64d06442}{waitBuffWriter}}()\ \{\}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_a4ff9205f199c7904d32bcee13b75eddb}{writeLayerInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ BOUNDINGRECT\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&)\ \{\}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_a9ee28aa1a3f575e995c50417304d8f77}{writeAreaInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&)\ \{\}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_a1d09cec7ab06a0357be67c687de25f56}{writeFileEnd}}()\ \{\}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_aa0439ca70cd848eb98955a360759bb76}{writeFileBegin\_SomePropertys}}()\ \{\}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_a6b8359d6bdb80c18f76cce2fd9f6f316}{createUSPFile}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ BOUNDINGBOX\ *,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QJsonObject\ \&)\ \{\}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_file_writer_a0d90a1f3b1d186cc7a77b869c44ea997}{getBufPara}}()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_algorithm_application}{AlgorithmApplication}}\ *\mbox{\hyperlink{class_file_writer_ae7410b536cccc854972c13727437e7fc}{algo}}()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_a3a8a365efee70f8d197effbb380e8897}{addVolume}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&)\ \{\}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_writer_adb8c31e0e18805a70dd52d518ebbf8f2}{setScannerIndex}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&)\ \{\}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ QSharedPointer<FileWriter>\ \mbox{\hyperlink{class_file_writer_ad543887b7aff55a82ebafb5b3a53fc4f}{cloneWriter}}()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ QByteArray\ \mbox{\hyperlink{class_file_writer_a18243f7a626ec72b89f0c4ea4f198d06}{getFileHash}}(\textcolor{keyword}{const}\ QString\ \&);}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_s_p_file_writer_a7060c11a2ed7ef16655c9cc61ee6e57b}{USPFileWriter}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_file_writer_ae4dd90b95298451fc84d753b987ddc82}{FileWriter}}}
+\DoxyCodeLine{00046\ \{}
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_u_s_p_file_writer_a7060c11a2ed7ef16655c9cc61ee6e57b}{USPFileWriter}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_u_s_p_file_writer_a6b5b710c4d5df5acb0bd4238b1e07926}{\string~USPFileWriter}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_s_p_file_writer_a146ffdbd1af20b1c61719bb6b113707a}{initFileWrite}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a737479543a45fdca6f59acfe706074d9}{startBuffWriter}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_acb7b825c16b15d8d95e8a6e4418a2128}{waitBuffWriter}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a3faf03ab74e2eb150361de2efaaac03d}{writeLayerInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ BOUNDINGRECT\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a980079153e29dad52c64c4ce8b94ccec}{writeAreaInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a07d450d21a7c5637db2ed94618b98811}{writeFileEnd}}();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a34dcd6282ebb3ba76be27ae5d344b89f}{writeFileBegin\_SomePropertys}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a049ae931cac24c35048119b6a40a352f}{createUSPFile}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ BOUNDINGBOX\ *,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QJsonObject\ \&);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_u_s_p_file_writer_a58c9649a9dd13c71fc0f1884e238a12a}{getBufPara}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_s_p_file_writer_a0b5c4a010823c9dffb406e738038a03b}{\_writeBuff}};\ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_algorithm_application}{AlgorithmApplication}}\ *\mbox{\hyperlink{class_u_s_p_file_writer_aa4606b4f6420973d5d69c41ee304aa47}{algo}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_s_p_file_writer_a8737cc7fe2c44792d202ae736d06ed7d}{algorithm}};\ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_aea7868f49aa2011078deb8c2d748347c}{addVolume}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&volume)\ \{\ \mbox{\hyperlink{class_u_s_p_file_writer_a67c86501a556a20752ce53fd1bcb36a9}{m\_fTotalVolume}}\ +=\ volume;\ \}}
+\DoxyCodeLine{00066\ \ \ \ \ QSharedPointer<FileWriter>\ \mbox{\hyperlink{class_u_s_p_file_writer_a5cd4d8ba90d72ea2ee511c7d0bf08ec2}{cloneWriter}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a4aa564a6f84940a11176e49c0fda4fb5}{writeProperty}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a4aa564a6f84940a11176e49c0fda4fb5}{writeProperty}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a894334863c0be1ffb9d114a8a0211407}{writeFlush}}();}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_af9cc5a029c6137b8fe914e5a138ca2e7}{writeXMLInfo}}(QFile\ *,\ \textcolor{keyword}{const}\ QByteArray\ \&,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&,}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ BOUNDINGBOX\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_s_p_file_writer_a6886a053c9e712162144d0f720d9a5d2}{writeJsonInfo}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ BOUNDINGBOX\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QJsonObject\ \&);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_write_u_f_f}{WriteUFF}}\ *\mbox{\hyperlink{class_u_s_p_file_writer_a68de6681e685d3da10cc0f188037caa7}{fileWriter}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_u_s_p_file_writer_a0b5c4a010823c9dffb406e738038a03b}{\_writeBuff}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_algorithm_application}{AlgorithmApplication}}\ *\mbox{\hyperlink{class_u_s_p_file_writer_a8737cc7fe2c44792d202ae736d06ed7d}{algorithm}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ QString\ \mbox{\hyperlink{class_u_s_p_file_writer_a061044bf0689af0ae036be35078ed15a}{m\_strSystemTime}};}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_s_p_file_writer_a67c86501a556a20752ce53fd1bcb36a9}{m\_fTotalVolume}}\ =\ 0.0;}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ USPFILEWRITER\_H}}
+
+\end{DoxyCode}

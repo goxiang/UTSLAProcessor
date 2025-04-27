@@ -1,0 +1,83 @@
+\doxysection{Dynamic\+Divider/dividerprocessor.cpp 文件参考}
+\hypertarget{dividerprocessor_8cpp}{}\label{dividerprocessor_8cpp}\index{DynamicDivider/dividerprocessor.cpp@{DynamicDivider/dividerprocessor.cpp}}
+{\ttfamily \#include "{}dividerprocessor.\+h"{}}\newline
+{\ttfamily \#include "{}utslaprocessorprivate.\+h"{}}\newline
+{\ttfamily \#include "{}algorithmdistribution.\+h"{}}\newline
+{\ttfamily \#include "{}bppbuildparameters.\+h"{}}\newline
+{\ttfamily \#include "{}utslaprocessor.\+h"{}}\newline
+{\ttfamily \#include "{}uspfilewriter.\+h"{}}\newline
+{\ttfamily \#include "{}publicheader.\+h"{}}\newline
+{\ttfamily \#include "{}Self\+Adaptive\+Module/selfadaptivemodule.\+h"{}}\newline
+{\ttfamily \#include "{}./\+Polygons\+Divider/polygonsdivider.\+h"{}}\newline
+{\ttfamily \#include "{}qlog.\+h"{}}\newline
+{\ttfamily \#include $<$Qt\+Concurrent$>$}\newline
+{\ttfamily \#include $<$QDebug$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_mem_guard}{Mem\+Guard}}
+\item 
+struct \mbox{\hyperlink{struct_build_part}{Build\+Part}}
+\item 
+struct \mbox{\hyperlink{struct_last_pt_status}{Last\+Pt\+Status}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dividerprocessor_8cpp_ab32dd73fa60df6ded9f9e29a6f326ed3}{Calc\+\_\+\+Support}}
+\item 
+\#define \mbox{\hyperlink{dividerprocessor_8cpp_a7268d9409137b564b39e0e728f147723}{Calc\+\_\+\+Border}}
+\item 
+\#define \mbox{\hyperlink{dividerprocessor_8cpp_a4f7cc356576f4911c9f4e9325668998c}{Calc\+\_\+\+Solid}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+QDebug \mbox{\hyperlink{dividerprocessor_8cpp_a2a002bd981bc7e645d80177fbc7ea4fd}{operator$<$$<$}} (QDebug debug, const \mbox{\hyperlink{struct_part_result}{Part\+Result}} \&part\+Res)
+\item 
+void \mbox{\hyperlink{dividerprocessor_8cpp_ad6c7e57a9a5f384f230b5842d47eb641}{calc\+Border\+Paths\+Weight}} (const Paths \&paths, double \&weight\+\_\+jump, double \&weight\+\_\+mark, \mbox{\hyperlink{struct_last_pt_status}{Last\+Pt\+Status}} \&last\+Pt\+Status)
+\item 
+void \mbox{\hyperlink{dividerprocessor_8cpp_a685f78cc646001fd86588d619b3b8cbb}{calc\+Support\+Paths\+Weight}} (const Paths \&paths, double \&weight\+\_\+jump, double \&weight\+\_\+mark, \mbox{\hyperlink{struct_last_pt_status}{Last\+Pt\+Status}} \&last\+Pt\+Status)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{dividerprocessor_8cpp_a7268d9409137b564b39e0e728f147723}\index{dividerprocessor.cpp@{dividerprocessor.cpp}!Calc\_Border@{Calc\_Border}}
+\index{Calc\_Border@{Calc\_Border}!dividerprocessor.cpp@{dividerprocessor.cpp}}
+\doxysubsubsection{\texorpdfstring{Calc\_Border}{Calc\_Border}}
+{\footnotesize\ttfamily \label{dividerprocessor_8cpp_a7268d9409137b564b39e0e728f147723} 
+\#define Calc\+\_\+\+Border}
+
+\Hypertarget{dividerprocessor_8cpp_a4f7cc356576f4911c9f4e9325668998c}\index{dividerprocessor.cpp@{dividerprocessor.cpp}!Calc\_Solid@{Calc\_Solid}}
+\index{Calc\_Solid@{Calc\_Solid}!dividerprocessor.cpp@{dividerprocessor.cpp}}
+\doxysubsubsection{\texorpdfstring{Calc\_Solid}{Calc\_Solid}}
+{\footnotesize\ttfamily \label{dividerprocessor_8cpp_a4f7cc356576f4911c9f4e9325668998c} 
+\#define Calc\+\_\+\+Solid}
+
+\Hypertarget{dividerprocessor_8cpp_ab32dd73fa60df6ded9f9e29a6f326ed3}\index{dividerprocessor.cpp@{dividerprocessor.cpp}!Calc\_Support@{Calc\_Support}}
+\index{Calc\_Support@{Calc\_Support}!dividerprocessor.cpp@{dividerprocessor.cpp}}
+\doxysubsubsection{\texorpdfstring{Calc\_Support}{Calc\_Support}}
+{\footnotesize\ttfamily \label{dividerprocessor_8cpp_ab32dd73fa60df6ded9f9e29a6f326ed3} 
+\#define Calc\+\_\+\+Support}
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{dividerprocessor_8cpp_ad6c7e57a9a5f384f230b5842d47eb641}\index{dividerprocessor.cpp@{dividerprocessor.cpp}!calcBorderPathsWeight@{calcBorderPathsWeight}}
+\index{calcBorderPathsWeight@{calcBorderPathsWeight}!dividerprocessor.cpp@{dividerprocessor.cpp}}
+\doxysubsubsection{\texorpdfstring{calcBorderPathsWeight()}{calcBorderPathsWeight()}}
+{\footnotesize\ttfamily \label{dividerprocessor_8cpp_ad6c7e57a9a5f384f230b5842d47eb641} 
+void calc\+Border\+Paths\+Weight (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{double \&}]{weight\+\_\+jump}{, }\item[{double \&}]{weight\+\_\+mark}{, }\item[{\mbox{\hyperlink{struct_last_pt_status}{Last\+Pt\+Status}} \&}]{last\+Pt\+Status}{}\end{DoxyParamCaption})}
+
+\Hypertarget{dividerprocessor_8cpp_a685f78cc646001fd86588d619b3b8cbb}\index{dividerprocessor.cpp@{dividerprocessor.cpp}!calcSupportPathsWeight@{calcSupportPathsWeight}}
+\index{calcSupportPathsWeight@{calcSupportPathsWeight}!dividerprocessor.cpp@{dividerprocessor.cpp}}
+\doxysubsubsection{\texorpdfstring{calcSupportPathsWeight()}{calcSupportPathsWeight()}}
+{\footnotesize\ttfamily \label{dividerprocessor_8cpp_a685f78cc646001fd86588d619b3b8cbb} 
+void calc\+Support\+Paths\+Weight (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{double \&}]{weight\+\_\+jump}{, }\item[{double \&}]{weight\+\_\+mark}{, }\item[{\mbox{\hyperlink{struct_last_pt_status}{Last\+Pt\+Status}} \&}]{last\+Pt\+Status}{}\end{DoxyParamCaption})}
+
+\Hypertarget{dividerprocessor_8cpp_a2a002bd981bc7e645d80177fbc7ea4fd}\index{dividerprocessor.cpp@{dividerprocessor.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!dividerprocessor.cpp@{dividerprocessor.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{dividerprocessor_8cpp_a2a002bd981bc7e645d80177fbc7ea4fd} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const \mbox{\hyperlink{struct_part_result}{Part\+Result}} \&}]{part\+Res}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

@@ -1,0 +1,46 @@
+\doxysection{algorithmhatching.\+h}
+\hypertarget{algorithmhatching_8h_source}{}\label{algorithmhatching_8h_source}\mbox{\hyperlink{algorithmhatching_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORITHMHATCHING\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORITHMHATCHING\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmstrip_8h}{algorithmstrip.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmchecker_8h}{algorithmchecker.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmhatchingring_8h}{algorithmhatchingring.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_t_s_l_a_processor__global_8h}{UTSLAProcessor\_global.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_pocket_branch}{PocketBranch}};}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm_hatching}{AlgorithmHatching}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb}{AlgorithmHatchingRing}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_algorithm_checker}{AlgorithmChecker}},}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_algorithm_strip_a67b24620a7dfda90d3276dbbd173c1b3}{AlgorithmStrip}}}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_afc1564203f65535227c7ca1b48b7ecd7}{calcInnerPoint}}(\textcolor{keyword}{const}\ Paths\ \&,\ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}}\ \&,\ \textcolor{keywordtype}{int}\ \&nTotalLCnt,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \&bInner\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_a5e95c67f726ea90b4f0f5d1bdfadcb6e}{calcRingHatching}}(\textcolor{keyword}{const}\ Paths\ \&,\ QVector<SCANLINE>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nSpacing);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_a49850c4d38f6f8b370e97e45f7a2bdc5}{calcSpiralHatching}}(\textcolor{keyword}{const}\ Paths\ \&,\ QVector<SCANLINE>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nSpacing);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_a03f26a50116d0523177539ee760aa96d}{calcFermatSpiralHatching}}(\textcolor{keyword}{const}\ Paths\ \&,\ QVector<SCANLINE>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nSpacing);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_abc6dbd60cd3fbd922ee352148e297e89}{calcRingTree}}(\textcolor{keyword}{const}\ Paths\ \&,\ \mbox{\hyperlink{struct_pocket_tree}{PocketTree}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nSpacing);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_aa06db55dcc3bc888ba1e0d4fe24ef113}{calcSPLine}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}}\ \&,\ QVector<SCANLINE>\ \&,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nTLineCnt\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nLSConnecter\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nCLineFactor\ =\ 0);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_a52987731e8b573bd21260671a0732fa7}{drawBranch}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_branch}{PocketBranch}}\ \&branch,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_abafd218075c0dff96f6e8330c76cacca}{drawBranch\_spiral}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_branch}{PocketBranch}}\ \&branch,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_a8fd4c27adca4ce002d544e040afd2083}{drawBranch\_fermatSpiral}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pocket_branch}{PocketBranch}}\ \&branch,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#ifdef\ USE\_PROCESSOR\_EXTEND}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorithmhatchingring_8cpp_a05903a59a741a7b95c92cf0e14a1ef21}{drawPathOffset}}(\textcolor{keyword}{const}\ Path\ \&,\ \textcolor{keyword}{const}\ IntPoint\ \&,\ \textcolor{keyword}{const}\ ulong\ \&ms\ =\ 0);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{algorithmhatchingring_8cpp_a05903a59a741a7b95c92cf0e14a1ef21}{drawPathOffset}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ IntPoint\ \&,\ \textcolor{keyword}{const}\ ulong\ \&ms\ =\ 0);}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_a37dd3eb383ac5b2db1666d7c36dd1182}{drawPathToScanLine}}(\textcolor{keyword}{const}\ Paths\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_a37dd3eb383ac5b2db1666d7c36dd1182}{drawPathToScanLine}}(\textcolor{keyword}{const}\ Path\ \&,\ QVector<SCANLINE>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&type,\ \textcolor{keyword}{const}\ IntPoint\ \&offsetCoor\ =\ IntPoint(0,\ 0));}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_hatching_ad243f050e5b9bbe20bd20070df4e5ad3}{drawSpiralPathToScanLine}}(\textcolor{keyword}{const}\ Path\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_hatching_a866ea22b5f26adb87178961ae40de31d}{getFirstLine}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keywordtype}{int}\ *,\ \textcolor{keywordtype}{int}\ *,\ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}}\ \&,\ \textcolor{keywordtype}{bool}\ \&bFirstLine);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_hatching_a0c78bb11456445521ac4e67f9e6d32bd}{getNextLine}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keywordtype}{int}\ *,\ \textcolor{keywordtype}{int}\ *,\ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nLConneter);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_hatching_a320cf2f75c3c718a81ae6875f1fda1f4}{getFirstLine\_Greed}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keywordtype}{int}\ *,\ \textcolor{keywordtype}{int}\ *,\ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}}\ \&,\ \textcolor{keywordtype}{bool}\ \&bFirstLine);}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALGORITHMHATCHING\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: uspfilewriter.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('uspfilewriter_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">uspfilewriter.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="uspfilewriter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef USPFILEWRITER_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define USPFILEWRITER_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span>QFile;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="class_write_u_f_f.html">WriteUFF</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="class_algorithm_application.html">AlgorithmApplication</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span>BOUNDINGBOX;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">struct </span>BOUNDINGRECT;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QSharedPointer&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>QJsonObject;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_file_writer.html">   15</a></span><span class="keyword">class </span><a class="code hl_function" href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">   17</a></span>    <a class="code hl_function" href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_file_writer.html#a4b2c19fe58992d3835e047f8ddeb4f8c">   18</a></span>    <a class="code hl_function" href="class_file_writer.html#a4b2c19fe58992d3835e047f8ddeb4f8c">~FileWriter</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_file_writer.html#ab346cbe23e8cbf1d7a2ea7bf04e9c7d3">   20</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_file_writer.html#ab346cbe23e8cbf1d7a2ea7bf04e9c7d3">initFileWrite</a>() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_file_writer.html#ac383b392ce45566c4cccd3a4c8369c9d">   22</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#ac383b392ce45566c4cccd3a4c8369c9d">startBuffWriter</a>() {}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_file_writer.html#a2a23d7f3dd604772bc53ef2b64d06442">   23</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#a2a23d7f3dd604772bc53ef2b64d06442">waitBuffWriter</a>() {}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_file_writer.html#a4ff9205f199c7904d32bcee13b75eddb">   25</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#a4ff9205f199c7904d32bcee13b75eddb">writeLayerInfo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> BOUNDINGRECT &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;) {}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_file_writer.html#a9ee28aa1a3f575e995c50417304d8f77">   26</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#a9ee28aa1a3f575e995c50417304d8f77">writeAreaInfo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;) {}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_file_writer.html#a1d09cec7ab06a0357be67c687de25f56">   27</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#a1d09cec7ab06a0357be67c687de25f56">writeFileEnd</a>() {}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_file_writer.html#aa0439ca70cd848eb98955a360759bb76">   28</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#aa0439ca70cd848eb98955a360759bb76">writeFileBegin_SomePropertys</a>() {}</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_file_writer.html#a6b8359d6bdb80c18f76cce2fd9f6f316">   29</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#a6b8359d6bdb80c18f76cce2fd9f6f316">createUSPFile</a>(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, BOUNDINGBOX *,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                       <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QJsonObject &amp;) {}</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_file_writer.html#a0d90a1f3b1d186cc7a77b869c44ea997">   31</a></span>    <span class="keyword">virtual</span> <span class="keyword">inline</span> <a class="code hl_struct" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *<a class="code hl_function" href="class_file_writer.html#a0d90a1f3b1d186cc7a77b869c44ea997">getBufPara</a>() { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_file_writer.html#ae7410b536cccc854972c13727437e7fc">   32</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_algorithm_application.html">AlgorithmApplication</a> *<a class="code hl_function" href="class_file_writer.html#ae7410b536cccc854972c13727437e7fc">algo</a>() { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_file_writer.html#a3a8a365efee70f8d197effbb380e8897">   33</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#a3a8a365efee70f8d197effbb380e8897">addVolume</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;) {}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_file_writer.html#adb8c31e0e18805a70dd52d518ebbf8f2">   34</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_writer.html#adb8c31e0e18805a70dd52d518ebbf8f2">setScannerIndex</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;) {}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_file_writer.html#ad543887b7aff55a82ebafb5b3a53fc4f">   36</a></span>    <span class="keyword">virtual</span> QSharedPointer&lt;FileWriter&gt; <a class="code hl_function" href="class_file_writer.html#ad543887b7aff55a82ebafb5b3a53fc4f">cloneWriter</a>() { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">static</span> QByteArray <a class="code hl_function" href="class_file_writer.html#a18243f7a626ec72b89f0c4ea4f198d06">getFileHash</a>(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html">   45</a></span><span class="keyword">class </span><a class="code hl_function" href="class_u_s_p_file_writer.html#a7060c11a2ed7ef16655c9cc61ee6e57b">USPFileWriter</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter</a></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="class_u_s_p_file_writer.html#a7060c11a2ed7ef16655c9cc61ee6e57b">USPFileWriter</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="class_u_s_p_file_writer.html#a6b5b710c4d5df5acb0bd4238b1e07926">~USPFileWriter</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a146ffdbd1af20b1c61719bb6b113707a">initFileWrite</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a737479543a45fdca6f59acfe706074d9">startBuffWriter</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#acb7b825c16b15d8d95e8a6e4418a2128">waitBuffWriter</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a3faf03ab74e2eb150361de2efaaac03d">writeLayerInfo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> BOUNDINGRECT &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a980079153e29dad52c64c4ce8b94ccec">writeAreaInfo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a07d450d21a7c5637db2ed94618b98811">writeFileEnd</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a34dcd6282ebb3ba76be27ae5d344b89f">writeFileBegin_SomePropertys</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a049ae931cac24c35048119b6a40a352f">createUSPFile</a>(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, BOUNDINGBOX *,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                       <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QJsonObject &amp;);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#a58c9649a9dd13c71fc0f1884e238a12a">   63</a></span>    <span class="keyword">inline</span> <a class="code hl_struct" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *<a class="code hl_function" href="class_u_s_p_file_writer.html#a58c9649a9dd13c71fc0f1884e238a12a">getBufPara</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_u_s_p_file_writer.html#a0b5c4a010823c9dffb406e738038a03b">_writeBuff</a>; }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#aa4606b4f6420973d5d69c41ee304aa47">   64</a></span>    <a class="code hl_class" href="class_algorithm_application.html">AlgorithmApplication</a> *<a class="code hl_function" href="class_u_s_p_file_writer.html#aa4606b4f6420973d5d69c41ee304aa47">algo</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_u_s_p_file_writer.html#a8737cc7fe2c44792d202ae736d06ed7d">algorithm</a>; }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#aea7868f49aa2011078deb8c2d748347c">   65</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#aea7868f49aa2011078deb8c2d748347c">addVolume</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;volume) { <a class="code hl_variable" href="class_u_s_p_file_writer.html#a67c86501a556a20752ce53fd1bcb36a9">m_fTotalVolume</a> += volume; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    QSharedPointer&lt;FileWriter&gt; <a class="code hl_function" href="class_u_s_p_file_writer.html#a5cd4d8ba90d72ea2ee511c7d0bf08ec2">cloneWriter</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a4aa564a6f84940a11176e49c0fda4fb5">writeProperty</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a4aa564a6f84940a11176e49c0fda4fb5">writeProperty</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a894334863c0be1ffb9d114a8a0211407">writeFlush</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#af9cc5a029c6137b8fe914e5a138ca2e7">writeXMLInfo</a>(QFile *, <span class="keyword">const</span> QByteArray &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                      <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, BOUNDINGBOX *, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_s_p_file_writer.html#a6886a053c9e712162144d0f720d9a5d2">writeJsonInfo</a>(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                       <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, BOUNDINGBOX *, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QJsonObject &amp;);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#a68de6681e685d3da10cc0f188037caa7">   78</a></span>    <a class="code hl_class" href="class_write_u_f_f.html">WriteUFF</a> *<a class="code hl_variable" href="class_u_s_p_file_writer.html#a68de6681e685d3da10cc0f188037caa7">fileWriter</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#a0b5c4a010823c9dffb406e738038a03b">   79</a></span>    <a class="code hl_struct" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *<a class="code hl_variable" href="class_u_s_p_file_writer.html#a0b5c4a010823c9dffb406e738038a03b">_writeBuff</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#a8737cc7fe2c44792d202ae736d06ed7d">   80</a></span>    <a class="code hl_class" href="class_algorithm_application.html">AlgorithmApplication</a> *<a class="code hl_variable" href="class_u_s_p_file_writer.html#a8737cc7fe2c44792d202ae736d06ed7d">algorithm</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#a061044bf0689af0ae036be35078ed15a">   82</a></span>    QString <a class="code hl_variable" href="class_u_s_p_file_writer.html#a061044bf0689af0ae036be35078ed15a">m_strSystemTime</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_u_s_p_file_writer.html#a67c86501a556a20752ce53fd1bcb36a9">   83</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_u_s_p_file_writer.html#a67c86501a556a20752ce53fd1bcb36a9">m_fTotalVolume</a> = 0.0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif </span><span class="comment">// USPFILEWRITER_H</span></div>
+<div class="ttc" id="aclass_algorithm_application_html"><div class="ttname"><a href="class_algorithm_application.html">AlgorithmApplication</a></div><div class="ttdef"><b>定义</b> algorithmapplication.h:37</div></div>
+<div class="ttc" id="aclass_file_writer_html_a0d90a1f3b1d186cc7a77b869c44ea997"><div class="ttname"><a href="class_file_writer.html#a0d90a1f3b1d186cc7a77b869c44ea997">FileWriter::getBufPara</a></div><div class="ttdeci">virtual PARAWRITEBUFF * getBufPara()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:31</div></div>
+<div class="ttc" id="aclass_file_writer_html_a18243f7a626ec72b89f0c4ea4f198d06"><div class="ttname"><a href="class_file_writer.html#a18243f7a626ec72b89f0c4ea4f198d06">FileWriter::getFileHash</a></div><div class="ttdeci">static QByteArray getFileHash(const QString &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:286</div></div>
+<div class="ttc" id="aclass_file_writer_html_a1d09cec7ab06a0357be67c687de25f56"><div class="ttname"><a href="class_file_writer.html#a1d09cec7ab06a0357be67c687de25f56">FileWriter::writeFileEnd</a></div><div class="ttdeci">virtual void writeFileEnd()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:27</div></div>
+<div class="ttc" id="aclass_file_writer_html_a2a23d7f3dd604772bc53ef2b64d06442"><div class="ttname"><a href="class_file_writer.html#a2a23d7f3dd604772bc53ef2b64d06442">FileWriter::waitBuffWriter</a></div><div class="ttdeci">virtual void waitBuffWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:23</div></div>
+<div class="ttc" id="aclass_file_writer_html_a3a8a365efee70f8d197effbb380e8897"><div class="ttname"><a href="class_file_writer.html#a3a8a365efee70f8d197effbb380e8897">FileWriter::addVolume</a></div><div class="ttdeci">virtual void addVolume(const double &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.h:33</div></div>
+<div class="ttc" id="aclass_file_writer_html_a4b2c19fe58992d3835e047f8ddeb4f8c"><div class="ttname"><a href="class_file_writer.html#a4b2c19fe58992d3835e047f8ddeb4f8c">FileWriter::~FileWriter</a></div><div class="ttdeci">~FileWriter()=default</div></div>
+<div class="ttc" id="aclass_file_writer_html_a4ff9205f199c7904d32bcee13b75eddb"><div class="ttname"><a href="class_file_writer.html#a4ff9205f199c7904d32bcee13b75eddb">FileWriter::writeLayerInfo</a></div><div class="ttdeci">virtual void writeLayerInfo(const int &amp;, const BOUNDINGRECT &amp;, const double &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.h:25</div></div>
+<div class="ttc" id="aclass_file_writer_html_a6b8359d6bdb80c18f76cce2fd9f6f316"><div class="ttname"><a href="class_file_writer.html#a6b8359d6bdb80c18f76cce2fd9f6f316">FileWriter::createUSPFile</a></div><div class="ttdeci">virtual void createUSPFile(const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;, QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.h:29</div></div>
+<div class="ttc" id="aclass_file_writer_html_a9ee28aa1a3f575e995c50417304d8f77"><div class="ttname"><a href="class_file_writer.html#a9ee28aa1a3f575e995c50417304d8f77">FileWriter::writeAreaInfo</a></div><div class="ttdeci">virtual void writeAreaInfo(const int &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.h:26</div></div>
+<div class="ttc" id="aclass_file_writer_html_aa0439ca70cd848eb98955a360759bb76"><div class="ttname"><a href="class_file_writer.html#aa0439ca70cd848eb98955a360759bb76">FileWriter::writeFileBegin_SomePropertys</a></div><div class="ttdeci">virtual void writeFileBegin_SomePropertys()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:28</div></div>
+<div class="ttc" id="aclass_file_writer_html_ab346cbe23e8cbf1d7a2ea7bf04e9c7d3"><div class="ttname"><a href="class_file_writer.html#ab346cbe23e8cbf1d7a2ea7bf04e9c7d3">FileWriter::initFileWrite</a></div><div class="ttdeci">virtual bool initFileWrite()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:20</div></div>
+<div class="ttc" id="aclass_file_writer_html_ac383b392ce45566c4cccd3a4c8369c9d"><div class="ttname"><a href="class_file_writer.html#ac383b392ce45566c4cccd3a4c8369c9d">FileWriter::startBuffWriter</a></div><div class="ttdeci">virtual void startBuffWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:22</div></div>
+<div class="ttc" id="aclass_file_writer_html_ad543887b7aff55a82ebafb5b3a53fc4f"><div class="ttname"><a href="class_file_writer.html#ad543887b7aff55a82ebafb5b3a53fc4f">FileWriter::cloneWriter</a></div><div class="ttdeci">virtual QSharedPointer&lt; FileWriter &gt; cloneWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:36</div></div>
+<div class="ttc" id="aclass_file_writer_html_adb8c31e0e18805a70dd52d518ebbf8f2"><div class="ttname"><a href="class_file_writer.html#adb8c31e0e18805a70dd52d518ebbf8f2">FileWriter::setScannerIndex</a></div><div class="ttdeci">virtual void setScannerIndex(const int &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.h:34</div></div>
+<div class="ttc" id="aclass_file_writer_html_ae4dd90b95298451fc84d753b987ddc82"><div class="ttname"><a href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter::FileWriter</a></div><div class="ttdeci">FileWriter()=default</div></div>
+<div class="ttc" id="aclass_file_writer_html_ae7410b536cccc854972c13727437e7fc"><div class="ttname"><a href="class_file_writer.html#ae7410b536cccc854972c13727437e7fc">FileWriter::algo</a></div><div class="ttdeci">virtual AlgorithmApplication * algo()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:32</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a049ae931cac24c35048119b6a40a352f"><div class="ttname"><a href="class_u_s_p_file_writer.html#a049ae931cac24c35048119b6a40a352f">USPFileWriter::createUSPFile</a></div><div class="ttdeci">void createUSPFile(const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;, QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:87</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a061044bf0689af0ae036be35078ed15a"><div class="ttname"><a href="class_u_s_p_file_writer.html#a061044bf0689af0ae036be35078ed15a">USPFileWriter::m_strSystemTime</a></div><div class="ttdeci">QString m_strSystemTime</div><div class="ttdef"><b>定义</b> uspfilewriter.h:82</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a07d450d21a7c5637db2ed94618b98811"><div class="ttname"><a href="class_u_s_p_file_writer.html#a07d450d21a7c5637db2ed94618b98811">USPFileWriter::writeFileEnd</a></div><div class="ttdeci">void writeFileEnd()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:74</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a0b5c4a010823c9dffb406e738038a03b"><div class="ttname"><a href="class_u_s_p_file_writer.html#a0b5c4a010823c9dffb406e738038a03b">USPFileWriter::_writeBuff</a></div><div class="ttdeci">PARAWRITEBUFF * _writeBuff</div><div class="ttdef"><b>定义</b> uspfilewriter.h:79</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a146ffdbd1af20b1c61719bb6b113707a"><div class="ttname"><a href="class_u_s_p_file_writer.html#a146ffdbd1af20b1c61719bb6b113707a">USPFileWriter::initFileWrite</a></div><div class="ttdeci">bool initFileWrite()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:39</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a34dcd6282ebb3ba76be27ae5d344b89f"><div class="ttname"><a href="class_u_s_p_file_writer.html#a34dcd6282ebb3ba76be27ae5d344b89f">USPFileWriter::writeFileBegin_SomePropertys</a></div><div class="ttdeci">void writeFileBegin_SomePropertys()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:81</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a3faf03ab74e2eb150361de2efaaac03d"><div class="ttname"><a href="class_u_s_p_file_writer.html#a3faf03ab74e2eb150361de2efaaac03d">USPFileWriter::writeLayerInfo</a></div><div class="ttdeci">void writeLayerInfo(const int &amp;, const BOUNDINGRECT &amp;, const double &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:60</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a4aa564a6f84940a11176e49c0fda4fb5"><div class="ttname"><a href="class_u_s_p_file_writer.html#a4aa564a6f84940a11176e49c0fda4fb5">USPFileWriter::writeProperty</a></div><div class="ttdeci">void writeProperty(const int &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:126</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a58c9649a9dd13c71fc0f1884e238a12a"><div class="ttname"><a href="class_u_s_p_file_writer.html#a58c9649a9dd13c71fc0f1884e238a12a">USPFileWriter::getBufPara</a></div><div class="ttdeci">PARAWRITEBUFF * getBufPara()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:63</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a5cd4d8ba90d72ea2ee511c7d0bf08ec2"><div class="ttname"><a href="class_u_s_p_file_writer.html#a5cd4d8ba90d72ea2ee511c7d0bf08ec2">USPFileWriter::cloneWriter</a></div><div class="ttdeci">QSharedPointer&lt; FileWriter &gt; cloneWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:301</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a67c86501a556a20752ce53fd1bcb36a9"><div class="ttname"><a href="class_u_s_p_file_writer.html#a67c86501a556a20752ce53fd1bcb36a9">USPFileWriter::m_fTotalVolume</a></div><div class="ttdeci">double m_fTotalVolume</div><div class="ttdef"><b>定义</b> uspfilewriter.h:83</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a6886a053c9e712162144d0f720d9a5d2"><div class="ttname"><a href="class_u_s_p_file_writer.html#a6886a053c9e712162144d0f720d9a5d2">USPFileWriter::writeJsonInfo</a></div><div class="ttdeci">void writeJsonInfo(const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;, QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:258</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a68de6681e685d3da10cc0f188037caa7"><div class="ttname"><a href="class_u_s_p_file_writer.html#a68de6681e685d3da10cc0f188037caa7">USPFileWriter::fileWriter</a></div><div class="ttdeci">WriteUFF * fileWriter</div><div class="ttdef"><b>定义</b> uspfilewriter.h:78</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a6b5b710c4d5df5acb0bd4238b1e07926"><div class="ttname"><a href="class_u_s_p_file_writer.html#a6b5b710c4d5df5acb0bd4238b1e07926">USPFileWriter::~USPFileWriter</a></div><div class="ttdeci">~USPFileWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:19</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a7060c11a2ed7ef16655c9cc61ee6e57b"><div class="ttname"><a href="class_u_s_p_file_writer.html#a7060c11a2ed7ef16655c9cc61ee6e57b">USPFileWriter::USPFileWriter</a></div><div class="ttdeci">USPFileWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:12</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a737479543a45fdca6f59acfe706074d9"><div class="ttname"><a href="class_u_s_p_file_writer.html#a737479543a45fdca6f59acfe706074d9">USPFileWriter::startBuffWriter</a></div><div class="ttdeci">void startBuffWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:47</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a8737cc7fe2c44792d202ae736d06ed7d"><div class="ttname"><a href="class_u_s_p_file_writer.html#a8737cc7fe2c44792d202ae736d06ed7d">USPFileWriter::algorithm</a></div><div class="ttdeci">AlgorithmApplication * algorithm</div><div class="ttdef"><b>定义</b> uspfilewriter.h:80</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a894334863c0be1ffb9d114a8a0211407"><div class="ttname"><a href="class_u_s_p_file_writer.html#a894334863c0be1ffb9d114a8a0211407">USPFileWriter::writeFlush</a></div><div class="ttdeci">void writeFlush()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:137</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_a980079153e29dad52c64c4ce8b94ccec"><div class="ttname"><a href="class_u_s_p_file_writer.html#a980079153e29dad52c64c4ce8b94ccec">USPFileWriter::writeAreaInfo</a></div><div class="ttdeci">void writeAreaInfo(const int &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:69</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_aa4606b4f6420973d5d69c41ee304aa47"><div class="ttname"><a href="class_u_s_p_file_writer.html#aa4606b4f6420973d5d69c41ee304aa47">USPFileWriter::algo</a></div><div class="ttdeci">AlgorithmApplication * algo()</div><div class="ttdef"><b>定义</b> uspfilewriter.h:64</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_acb7b825c16b15d8d95e8a6e4418a2128"><div class="ttname"><a href="class_u_s_p_file_writer.html#acb7b825c16b15d8d95e8a6e4418a2128">USPFileWriter::waitBuffWriter</a></div><div class="ttdeci">void waitBuffWriter()</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:53</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_aea7868f49aa2011078deb8c2d748347c"><div class="ttname"><a href="class_u_s_p_file_writer.html#aea7868f49aa2011078deb8c2d748347c">USPFileWriter::addVolume</a></div><div class="ttdeci">void addVolume(const double &amp;volume)</div><div class="ttdef"><b>定义</b> uspfilewriter.h:65</div></div>
+<div class="ttc" id="aclass_u_s_p_file_writer_html_af9cc5a029c6137b8fe914e5a138ca2e7"><div class="ttname"><a href="class_u_s_p_file_writer.html#af9cc5a029c6137b8fe914e5a138ca2e7">USPFileWriter::writeXMLInfo</a></div><div class="ttdeci">void writeXMLInfo(QFile *, const QByteArray &amp;, const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> uspfilewriter.cpp:142</div></div>
+<div class="ttc" id="aclass_write_u_f_f_html"><div class="ttname"><a href="class_write_u_f_f.html">WriteUFF</a></div><div class="ttdef"><b>定义</b> writeuff.h:8</div></div>
+<div class="ttc" id="astruct_p_a_r_a_w_r_i_t_e_b_u_f_f_html"><div class="ttname"><a href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a></div><div class="ttdef"><b>定义</b> publicheader.h:85</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="uspfilewriter_8h.html">uspfilewriter.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

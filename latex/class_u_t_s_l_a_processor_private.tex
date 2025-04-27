@@ -1,0 +1,356 @@
+\doxysection{UTSLAProcessor\+Private类 参考}
+\hypertarget{class_u_t_s_l_a_processor_private}{}\label{class_u_t_s_l_a_processor_private}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+
+
+{\ttfamily \#include $<$utslaprocessorprivate.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_t_s_l_a_processor_private_a42e3e18cc51ecfb4fe1385654fe539fe}{UTSLAProcessor\+Private}} (\mbox{\hyperlink{class_u_t_s_l_a_processor}{UTSLAProcessor}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a973592f44164f63c46dd401195e0f508}{processing}} (const int \&, const int \&, const QJson\+Object \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a84a5b7e6a21ff95215ecead0db3c968e}{stop\+Build\+Processing}} ()
+\item 
+bool \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a9a4695360a0fd9af8fe114d0df2f6f3c}{load\+Parameters}} (const QString \&, const QString \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a136767835fb2725962b6d238856bc939}{building}} (const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_acbd1ac7a5b0b847913251c1906c178a2}{build\+Processing}} ()
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a8b8ddb46eefb400f8d540167a740276e}{part\+Processing}} (const int \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ac57398b2dd4cf24b34dafee39b57e91a}{read\+Datas}} (const int \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a9adcce8c1dfff095b3e1d5d0d5ab82d5}{calc\+Layer\+Datas}} (const int \&, const int \&, const int \&, const \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&, \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}} \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3cd6ce0d5de54aa5d416bf2b0b241d19}{read\+Layer\+Datas}} (const int \&, const int \&, const \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&, \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}} \&)
+\item 
+int \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a5df5e72ef017efc546303f112715d5ff}{get\+Pre\+Layer\+Hei}} (const int \&, const int \&)
+\item 
+int \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a5fbe0429325d15d300f3708b3d0a5447}{get\+Next\+Layer\+Hei}} (const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ad7fb93c9f5dc3558aefed35fc1508e00}{update\+Layer\+Splicing\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ada1f0a79c0c09079e1329425db719147}{parsing\+Datas}} (const int \&, QList$<$ AREAINFOPTR $>$ \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a6ef2dc274d39855958998f965c0d975d}{update\+Progress}} ()
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_af098d565d1ac3b1178f6287eae8315ba}{update\+Progress}} (const double \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a9734ab13f7fe584988ecc1119465aabc}{create\+Json\+Result}} (QJson\+Object \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_afcd5ec189903193eb9f37400c32f9ff2}{create\+Json\+Result\+With\+Compress}} (QJson\+Object \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3e294c1f92f0c3652b757e19ae1a185e}{create\+Job\+File\+Result}} (QJson\+Object \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aaf145af44406c4020bd603db1040d101}{load\+Export\+Parameters}} ()
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ac998355b32ae504da47cc21e353a9b26}{calc\+SLMScale}} (QList$<$ AREAINFOPTR $>$ \&)
+\item 
+bool \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aca791cb383f324b607216908e612f48b}{create\+File\+Writer}} (const int \&, \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&)
+\item 
+bool \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a116192aae131c51591d998ab4037f8cf}{create\+File\+Writer}} (const int \&, const QString \&, \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a36f66947c693c2fc2ac80dede4994047}{initialize\+Lattice}} ()
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3e9497b1624393ae7f31233586860827}{create\+Lattice}} (Paths \&, const Paths \&, const int \&, Paths \&, \mbox{\hyperlink{struct_lattice_layer_info}{Lattice\+Layer\+Info}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_t_s_l_a_processor}{UTSLAProcessor}} \texorpdfstring{$\ast$}{*}const \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aa839e815c12558f700bf697afa585899}{q\+\_\+ptr}} = nullptr
+\item 
+QString \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3189fc5af5627964dd62c5e61cef9239}{str\+BPPName}} = "{}"{}
+\item 
+QFuture\+Watcher$<$ void $>$ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ac95b8cf666b6c5ecd45ac977bd1f5759}{future\+Watcher}}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_self_adaptive_module}{Self\+Adaptive\+Module}} $>$ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_af805f6fb804786f598ec3dfe99578d86}{\+\_\+self\+Adaptive\+Module}} = nullptr
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}} $>$ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aa32de06a2d734e0e9de048c4f14a7ffc}{\+\_\+writer\+Buffer\+Paras}} = nullptr
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_lattice_interface}{Lattice\+Interface}} $>$ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ab139396957d882816ffc0d24fea64c04}{\+\_\+lattice\+Inf\+Ptr}} = nullptr
+\item 
+int \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a836ae48837ff41939a08fc31fce45684}{\+\_\+progress\+Pos}} = -\/1
+\item 
+double \mbox{\hyperlink{class_u_t_s_l_a_processor_private_af76fea8eef93b12fe1386c83ec42bc22}{f\+Processing}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a8bfe84a944f299cb27d99c4e34eabe97}{f\+Single\+Part\+Ratio}} = 1.\+0
+\item 
+QJson\+Array \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a73e6b92cbd22028b7615f3dcdd8dd1a9}{obj\+Zip\+Desc\+File}}
+\item 
+int \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a399cd4bc7462ed99aac5eb0ebc207450}{n\+Export\+File\+Mode}} = \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c}{EXPORT\+\_\+\+NORMAL}}
+\item 
+double \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a039840ee45d05cb679d6f82e900d61f7}{f\+ScaleX}} = 1.\+0
+\item 
+double \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a57c12befd18d4e256baaa91d4b6780e9}{f\+ScaleY}} = 1.\+0
+\item 
+int \mbox{\hyperlink{class_u_t_s_l_a_processor_private_abc725cd95cac906b9a239f58a464e29f}{\+\_\+thread\+Count}} = 1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aa99af7976873dfad34d605ab8c3fb96b}{Divider\+Processor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_u_t_s_l_a_processor_private_a42e3e18cc51ecfb4fe1385654fe539fe}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{UTSLAProcessorPrivate()}{UTSLAProcessorPrivate()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a42e3e18cc51ecfb4fe1385654fe539fe} 
+UTSLAProcessor\+Private\+::\+UTSLAProcessor\+Private (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_u_t_s_l_a_processor}{UTSLAProcessor}} \texorpdfstring{$\ast$}{*}}]{q}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_u_t_s_l_a_processor_private_a136767835fb2725962b6d238856bc939}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!building@{building}}
+\index{building@{building}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{building()}{building()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a136767835fb2725962b6d238856bc939} 
+void UTSLAProcessor\+Private\+::building (\begin{DoxyParamCaption}\item[{const int \&}]{n\+SLayer}{, }\item[{const int \&}]{n\+ELayer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_acbd1ac7a5b0b847913251c1906c178a2}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!buildProcessing@{buildProcessing}}
+\index{buildProcessing@{buildProcessing}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{buildProcessing()}{buildProcessing()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_acbd1ac7a5b0b847913251c1906c178a2} 
+void UTSLAProcessor\+Private\+::build\+Processing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a9adcce8c1dfff095b3e1d5d0d5ab82d5}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!calcLayerDatas@{calcLayerDatas}}
+\index{calcLayerDatas@{calcLayerDatas}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{calcLayerDatas()}{calcLayerDatas()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a9adcce8c1dfff095b3e1d5d0d5ab82d5} 
+void UTSLAProcessor\+Private\+::calc\+Layer\+Datas (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Hei}{, }\item[{const int \&}]{index}{, }\item[{const int \&}]{layer\+Thickness}{, }\item[{const \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&}]{usp\+Writer}{, }\item[{\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}} \&}]{solid\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_ac998355b32ae504da47cc21e353a9b26}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!calcSLMScale@{calcSLMScale}}
+\index{calcSLMScale@{calcSLMScale}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{calcSLMScale()}{calcSLMScale()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_ac998355b32ae504da47cc21e353a9b26} 
+void UTSLAProcessor\+Private\+::calc\+SLMScale (\begin{DoxyParamCaption}\item[{QList$<$ AREAINFOPTR $>$ \&}]{area\+Info\+List}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a116192aae131c51591d998ab4037f8cf}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!createFileWriter@{createFileWriter}}
+\index{createFileWriter@{createFileWriter}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{createFileWriter()}{createFileWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a116192aae131c51591d998ab4037f8cf} 
+bool UTSLAProcessor\+Private\+::create\+File\+Writer (\begin{DoxyParamCaption}\item[{const int \&}]{index}{, }\item[{const QString \&}]{str\+Build\+Name}{, }\item[{\mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&}]{usp\+Writer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_aca791cb383f324b607216908e612f48b}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!createFileWriter@{createFileWriter}}
+\index{createFileWriter@{createFileWriter}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{createFileWriter()}{createFileWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_aca791cb383f324b607216908e612f48b} 
+bool UTSLAProcessor\+Private\+::create\+File\+Writer (\begin{DoxyParamCaption}\item[{const int \&}]{index}{, }\item[{\mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&}]{usp\+Writer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a3e294c1f92f0c3652b757e19ae1a185e}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!createJobFileResult@{createJobFileResult}}
+\index{createJobFileResult@{createJobFileResult}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{createJobFileResult()}{createJobFileResult()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a3e294c1f92f0c3652b757e19ae1a185e} 
+void UTSLAProcessor\+Private\+::create\+Job\+File\+Result (\begin{DoxyParamCaption}\item[{QJson\+Object \&}]{json\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a9734ab13f7fe584988ecc1119465aabc}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!createJsonResult@{createJsonResult}}
+\index{createJsonResult@{createJsonResult}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{createJsonResult()}{createJsonResult()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a9734ab13f7fe584988ecc1119465aabc} 
+void UTSLAProcessor\+Private\+::create\+Json\+Result (\begin{DoxyParamCaption}\item[{QJson\+Object \&}]{json\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_afcd5ec189903193eb9f37400c32f9ff2}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!createJsonResultWithCompress@{createJsonResultWithCompress}}
+\index{createJsonResultWithCompress@{createJsonResultWithCompress}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{createJsonResultWithCompress()}{createJsonResultWithCompress()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_afcd5ec189903193eb9f37400c32f9ff2} 
+void UTSLAProcessor\+Private\+::create\+Json\+Result\+With\+Compress (\begin{DoxyParamCaption}\item[{QJson\+Object \&}]{json\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a3e9497b1624393ae7f31233586860827}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!createLattice@{createLattice}}
+\index{createLattice@{createLattice}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{createLattice()}{createLattice()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a3e9497b1624393ae7f31233586860827} 
+void UTSLAProcessor\+Private\+::create\+Lattice (\begin{DoxyParamCaption}\item[{Paths \&}]{paths}{, }\item[{const Paths \&}]{ref\+Paths}{, }\item[{const int \&}]{layer\+Hei}{, }\item[{Paths \&}]{lattices}{, }\item[{\mbox{\hyperlink{struct_lattice_layer_info}{Lattice\+Layer\+Info}} \&}]{lattice\+Layer\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a5fbe0429325d15d300f3708b3d0a5447}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!getNextLayerHei@{getNextLayerHei}}
+\index{getNextLayerHei@{getNextLayerHei}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{getNextLayerHei()}{getNextLayerHei()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a5fbe0429325d15d300f3708b3d0a5447} 
+int UTSLAProcessor\+Private\+::get\+Next\+Layer\+Hei (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Start\+Layer}{, }\item[{const int \&}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a5df5e72ef017efc546303f112715d5ff}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!getPreLayerHei@{getPreLayerHei}}
+\index{getPreLayerHei@{getPreLayerHei}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{getPreLayerHei()}{getPreLayerHei()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a5df5e72ef017efc546303f112715d5ff} 
+int UTSLAProcessor\+Private\+::get\+Pre\+Layer\+Hei (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Start\+Layer}{, }\item[{const int \&}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a36f66947c693c2fc2ac80dede4994047}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!initializeLattice@{initializeLattice}}
+\index{initializeLattice@{initializeLattice}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{initializeLattice()}{initializeLattice()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a36f66947c693c2fc2ac80dede4994047} 
+void UTSLAProcessor\+Private\+::initialize\+Lattice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_aaf145af44406c4020bd603db1040d101}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!loadExportParameters@{loadExportParameters}}
+\index{loadExportParameters@{loadExportParameters}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{loadExportParameters()}{loadExportParameters()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_aaf145af44406c4020bd603db1040d101} 
+void UTSLAProcessor\+Private\+::load\+Export\+Parameters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a9a4695360a0fd9af8fe114d0df2f6f3c}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!loadParameters@{loadParameters}}
+\index{loadParameters@{loadParameters}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{loadParameters()}{loadParameters()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a9a4695360a0fd9af8fe114d0df2f6f3c} 
+bool UTSLAProcessor\+Private\+::load\+Parameters (\begin{DoxyParamCaption}\item[{const QString \&}]{str\+Bpp\+Path}{, }\item[{const QString \&}]{str\+Ini\+Path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_ada1f0a79c0c09079e1329425db719147}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!parsingDatas@{parsingDatas}}
+\index{parsingDatas@{parsingDatas}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{parsingDatas()}{parsingDatas()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_ada1f0a79c0c09079e1329425db719147} 
+void UTSLAProcessor\+Private\+::parsing\+Datas (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Hei}{, }\item[{QList$<$ AREAINFOPTR $>$ \&}]{list\+Area\+Ptr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a8b8ddb46eefb400f8d540167a740276e}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!partProcessing@{partProcessing}}
+\index{partProcessing@{partProcessing}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{partProcessing()}{partProcessing()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a8b8ddb46eefb400f8d540167a740276e} 
+void UTSLAProcessor\+Private\+::part\+Processing (\begin{DoxyParamCaption}\item[{const int \&}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a973592f44164f63c46dd401195e0f508}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!processing@{processing}}
+\index{processing@{processing}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{processing()}{processing()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a973592f44164f63c46dd401195e0f508} 
+void UTSLAProcessor\+Private\+::processing (\begin{DoxyParamCaption}\item[{const int \&}]{n\+SLayer}{, }\item[{const int \&}]{n\+ELayer}{, }\item[{const QJson\+Object \&}]{json\+Obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_ac57398b2dd4cf24b34dafee39b57e91a}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!readDatas@{readDatas}}
+\index{readDatas@{readDatas}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{readDatas()}{readDatas()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_ac57398b2dd4cf24b34dafee39b57e91a} 
+void UTSLAProcessor\+Private\+::read\+Datas (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Hei}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a3cd6ce0d5de54aa5d416bf2b0b241d19}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!readLayerDatas@{readLayerDatas}}
+\index{readLayerDatas@{readLayerDatas}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{readLayerDatas()}{readLayerDatas()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a3cd6ce0d5de54aa5d416bf2b0b241d19} 
+void UTSLAProcessor\+Private\+::read\+Layer\+Datas (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Hei}{, }\item[{const int \&}]{index}{, }\item[{const \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFile\+Writer\+Ptr}} \&}]{usp\+Writer}{, }\item[{\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}} \&}]{solid\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a84a5b7e6a21ff95215ecead0db3c968e}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!stopBuildProcessing@{stopBuildProcessing}}
+\index{stopBuildProcessing@{stopBuildProcessing}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{stopBuildProcessing()}{stopBuildProcessing()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a84a5b7e6a21ff95215ecead0db3c968e} 
+void UTSLAProcessor\+Private\+::stop\+Build\+Processing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_ad7fb93c9f5dc3558aefed35fc1508e00}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!updateLayerSplicingInfo@{updateLayerSplicingInfo}}
+\index{updateLayerSplicingInfo@{updateLayerSplicingInfo}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{updateLayerSplicingInfo()}{updateLayerSplicingInfo()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_ad7fb93c9f5dc3558aefed35fc1508e00} 
+void UTSLAProcessor\+Private\+::update\+Layer\+Splicing\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a6ef2dc274d39855958998f965c0d975d}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!updateProgress@{updateProgress}}
+\index{updateProgress@{updateProgress}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{updateProgress()}{updateProgress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a6ef2dc274d39855958998f965c0d975d} 
+void UTSLAProcessor\+Private\+::update\+Progress (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_af098d565d1ac3b1178f6287eae8315ba}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!updateProgress@{updateProgress}}
+\index{updateProgress@{updateProgress}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{updateProgress()}{updateProgress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_af098d565d1ac3b1178f6287eae8315ba} 
+void UTSLAProcessor\+Private\+::update\+Progress (\begin{DoxyParamCaption}\item[{const double \&}]{temp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{友元及相关符号说明}
+\Hypertarget{class_u_t_s_l_a_processor_private_aa99af7976873dfad34d605ab8c3fb96b}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!DividerProcessor@{DividerProcessor}}
+\index{DividerProcessor@{DividerProcessor}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{DividerProcessor}{DividerProcessor}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_aa99af7976873dfad34d605ab8c3fb96b} 
+friend class \mbox{\hyperlink{class_divider_processor}{Divider\+Processor}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_u_t_s_l_a_processor_private_ab139396957d882816ffc0d24fea64c04}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!\_latticeInfPtr@{\_latticeInfPtr}}
+\index{\_latticeInfPtr@{\_latticeInfPtr}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{\_latticeInfPtr}{\_latticeInfPtr}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_ab139396957d882816ffc0d24fea64c04} 
+QShared\+Pointer$<$\mbox{\hyperlink{class_lattice_interface}{Lattice\+Interface}}$>$ UTSLAProcessor\+Private\+::\+\_\+lattice\+Inf\+Ptr = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a836ae48837ff41939a08fc31fce45684}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!\_progressPos@{\_progressPos}}
+\index{\_progressPos@{\_progressPos}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{\_progressPos}{\_progressPos}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a836ae48837ff41939a08fc31fce45684} 
+int UTSLAProcessor\+Private\+::\+\_\+progress\+Pos = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_af805f6fb804786f598ec3dfe99578d86}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!\_selfAdaptiveModule@{\_selfAdaptiveModule}}
+\index{\_selfAdaptiveModule@{\_selfAdaptiveModule}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{\_selfAdaptiveModule}{\_selfAdaptiveModule}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_af805f6fb804786f598ec3dfe99578d86} 
+QShared\+Pointer$<$\mbox{\hyperlink{class_self_adaptive_module}{Self\+Adaptive\+Module}}$>$ UTSLAProcessor\+Private\+::\+\_\+self\+Adaptive\+Module = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_abc725cd95cac906b9a239f58a464e29f}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!\_threadCount@{\_threadCount}}
+\index{\_threadCount@{\_threadCount}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{\_threadCount}{\_threadCount}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_abc725cd95cac906b9a239f58a464e29f} 
+int UTSLAProcessor\+Private\+::\+\_\+thread\+Count = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_aa32de06a2d734e0e9de048c4f14a7ffc}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!\_writerBufferParas@{\_writerBufferParas}}
+\index{\_writerBufferParas@{\_writerBufferParas}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{\_writerBufferParas}{\_writerBufferParas}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_aa32de06a2d734e0e9de048c4f14a7ffc} 
+QShared\+Pointer$<$\mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}}$>$ UTSLAProcessor\+Private\+::\+\_\+writer\+Buffer\+Paras = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_af76fea8eef93b12fe1386c83ec42bc22}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!fProcessing@{fProcessing}}
+\index{fProcessing@{fProcessing}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{fProcessing}{fProcessing}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_af76fea8eef93b12fe1386c83ec42bc22} 
+double UTSLAProcessor\+Private\+::f\+Processing = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a039840ee45d05cb679d6f82e900d61f7}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!fScaleX@{fScaleX}}
+\index{fScaleX@{fScaleX}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{fScaleX}{fScaleX}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a039840ee45d05cb679d6f82e900d61f7} 
+double UTSLAProcessor\+Private\+::f\+ScaleX = 1.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a57c12befd18d4e256baaa91d4b6780e9}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!fScaleY@{fScaleY}}
+\index{fScaleY@{fScaleY}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{fScaleY}{fScaleY}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a57c12befd18d4e256baaa91d4b6780e9} 
+double UTSLAProcessor\+Private\+::f\+ScaleY = 1.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a8bfe84a944f299cb27d99c4e34eabe97}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!fSinglePartRatio@{fSinglePartRatio}}
+\index{fSinglePartRatio@{fSinglePartRatio}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{fSinglePartRatio}{fSinglePartRatio}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a8bfe84a944f299cb27d99c4e34eabe97} 
+double UTSLAProcessor\+Private\+::f\+Single\+Part\+Ratio = 1.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_ac95b8cf666b6c5ecd45ac977bd1f5759}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!futureWatcher@{futureWatcher}}
+\index{futureWatcher@{futureWatcher}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{futureWatcher}{futureWatcher}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_ac95b8cf666b6c5ecd45ac977bd1f5759} 
+QFuture\+Watcher$<$void$>$ UTSLAProcessor\+Private\+::future\+Watcher\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a399cd4bc7462ed99aac5eb0ebc207450}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!nExportFileMode@{nExportFileMode}}
+\index{nExportFileMode@{nExportFileMode}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{nExportFileMode}{nExportFileMode}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a399cd4bc7462ed99aac5eb0ebc207450} 
+int UTSLAProcessor\+Private\+::n\+Export\+File\+Mode = \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c}{EXPORT\+\_\+\+NORMAL}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a73e6b92cbd22028b7615f3dcdd8dd1a9}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!objZipDescFile@{objZipDescFile}}
+\index{objZipDescFile@{objZipDescFile}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{objZipDescFile}{objZipDescFile}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a73e6b92cbd22028b7615f3dcdd8dd1a9} 
+QJson\+Array UTSLAProcessor\+Private\+::obj\+Zip\+Desc\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_aa839e815c12558f700bf697afa585899}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!q\_ptr@{q\_ptr}}
+\index{q\_ptr@{q\_ptr}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{q\_ptr}{q\_ptr}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_aa839e815c12558f700bf697afa585899} 
+\mbox{\hyperlink{class_u_t_s_l_a_processor}{UTSLAProcessor}}\texorpdfstring{$\ast$}{*} const UTSLAProcessor\+Private\+::q\+\_\+ptr = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_private_a3189fc5af5627964dd62c5e61cef9239}\index{UTSLAProcessorPrivate@{UTSLAProcessorPrivate}!strBPPName@{strBPPName}}
+\index{strBPPName@{strBPPName}!UTSLAProcessorPrivate@{UTSLAProcessorPrivate}}
+\doxysubsubsection{\texorpdfstring{strBPPName}{strBPPName}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_private_a3189fc5af5627964dd62c5e61cef9239} 
+QString UTSLAProcessor\+Private\+::str\+BPPName = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{utslaprocessorprivate_8h}{utslaprocessorprivate.\+h}}\item 
+\mbox{\hyperlink{utslaprocessorprivate_8cpp}{utslaprocessorprivate.\+cpp}}\end{DoxyCompactItemize}

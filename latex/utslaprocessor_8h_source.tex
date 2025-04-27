@@ -1,0 +1,51 @@
+\doxysection{utslaprocessor.\+h}
+\hypertarget{utslaprocessor_8h_source}{}\label{utslaprocessor_8h_source}\mbox{\hyperlink{utslaprocessor_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UTSLAPROCESSOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UTSLAPROCESSOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#if\ defined(UTSLAPROCESSOR\_LIBRARY)}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#\ \ define\ UTSLAPROCESSOR\_EXPORT\ Q\_DECL\_EXPORT}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#\ \ define\ UTSLAPROCESSOR\_EXPORT\ Q\_DECL\_IMPORT}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_t_s_l_a_processor__global_8h}{UTSLAProcessor\_global.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}utbpprocessbase.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifdef\ USE\_PROCESSOR\_EXTEND}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{slaprocessorextend_8h}{slaprocessorextend.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessorPrivate}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{utslaprocessor_8h_a12832bfae8208ac9d6843679c4cb7338}{UTSLAPROCESSOR\_EXPORT}}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_ae26eea20ae22f529b93264fbe3199712}{UTSLAProcessor}}\ :\ \textcolor{keyword}{public}\ UTBPProcessBase}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#ifdef\ USE\_PROCESSOR\_EXTEND}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ ,\textcolor{keyword}{public}\ \mbox{\hyperlink{class_s_l_a_processor_extend}{SLAProcessorExtend}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_ae26eea20ae22f529b93264fbe3199712}{UTSLAProcessor}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_u_t_s_l_a_processor_ae26eea20ae22f529b93264fbe3199712}{\string~UTSLAProcessor}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#ifdef\ USE\_PROCESSOR\_EXTEND}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setDisplayFun(funDrawLine,\ funDrawColorLine,\ funClearCanvas);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ testProcessing(\textcolor{keyword}{const}\ QJsonObject\ \&);}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_a6cf3ad901d00abcf7253e65aad082e75}{processing}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keyword}{const}\ QJsonObject\ \&);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_abef75b6b5088def784472baac61081af}{stopBuildProcessing}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_a296ff544c3b9babf5de72a5ce4fb6771}{loadParameters}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_a39643f4aa017f6342815e88d4869e50f}{replacePrameters}}(\textcolor{keyword}{const}\ QJsonObject\ \&);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ Q\_DECLARE\_PRIVATE(\mbox{\hyperlink{class_u_t_s_l_a_processor_ae26eea20ae22f529b93264fbe3199712}{UTSLAProcessor}})}
+\DoxyCodeLine{00046\ \ \ \ \ QSharedPointer<\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessorPrivate}}>\ \mbox{\hyperlink{class_u_t_s_l_a_processor_ae291dbbcd13035b849246084e382992a}{d\_ptr}}\ =\ \textcolor{keywordtype}{nullptr};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ friend\ class\ \mbox{\hyperlink{class_u_t_s_l_a_processor_aa99af7976873dfad34d605ab8c3fb96b}{DividerProcessor}};}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UTSLAPROCESSOR\_H}}
+
+\end{DoxyCode}

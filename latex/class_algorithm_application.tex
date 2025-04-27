@@ -1,0 +1,771 @@
+\doxysection{Algorithm\+Application类 参考}
+\hypertarget{class_algorithm_application}{}\label{class_algorithm_application}\index{AlgorithmApplication@{AlgorithmApplication}}
+
+
+{\ttfamily \#include $<$algorithmapplication.\+h$>$}
+
+类 Algorithm\+Application 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_algorithm_application}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a2c4bf492c05b8049f49466b002ba9d33}{set\+Buff\+Paras}} (\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*}, const int \&cur\+Scanner=0)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ae70195b27e9041aa2cd214ea748fa7ad}{set\+Cur\+Layer\+Hei}} (const int \&layer\+Hei)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a069159ce64d12083a0a8df45350a5f39}{set\+Export\+File\+Mode}} (const int \&mode)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a126a1b65ba7b85149af0f0d427eaf317}{calc\+Splicing\+Vec}} ()
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a5eb5ff1d6d31f17e20c6e41e263c93a7}{create\+Enhance\+Border\+Paras}} ()
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ab7ba08944728607fff44e986d65a2a32}{write\+Hatching\+Data}} (\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}} \&, Paths \&, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a943ed249c41a7bfe8476821eb1022689}{write\+Hatching\+Data}} (Paths \&, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a36a8ee3edd304385075744fdcc3c37be}{write\+Hatching\+Data}} (\mbox{\hyperlink{struct_lattice_layer_info}{Lattice\+Layer\+Info}} \&, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a329979818cb494c78cdf599e4f80fb13}{set\+Hatching\+Angle}} (double)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a9ff76b50c7fbca94e97fe2f11c6f5715}{add\+Hatching\+Angle}} ()
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a76224efea7804190814aae9d41e1ab09}{add\+Solid\+Support\+Hatching\+Angle}} ()
+\item 
+void \mbox{\hyperlink{class_algorithm_application_aeb42216ae7bad9524bc4102bf384e01d}{write\+Support\+To\+SList}} (QList$<$ AREAINFOPTR $>$ \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ad995fe080a7a5a85cd16c1f845a59db9}{write\+Border\+Data}} (const Paths \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a293a48bf9c0aedf404ab6b617099214d}{write\+Externed\+Border}} (Paths \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ad2463542e03e835c9dfe2236f0cb2fa8}{keep\+Holes\+And\+Gaps}} (Paths \texorpdfstring{$\ast$}{*}, Paths \&, Paths \&, Paths \&)
+\item 
+QMap$<$ int, Paths $>$ \mbox{\hyperlink{class_algorithm_application_af963f9263144721788d22efed66d3e9b}{split\+Paths\+By\+Filed}} (const Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a00a385b4409e7f0bbb40a3b4803ad94d}{write\+Solid\+Support\+Data}} (Paths \&, const double \&border\+Speed\+Factor, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ad6ef3ab8008d1ce76ef7bc6fc356029b}{write\+Hole\+And\+Gap\+Data}} (Paths \&, Paths \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ac4c6f91aed1eff35d99acc2db549158e}{write\+Hole\+And\+Gap\+Data}} (Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_aab758ac5f5c73ac4d94fd6c2b6d8f3de}{write\+Hole\+And\+Gap\+Data}} (Paths \&, const int \&, const int \&, const int \&n\+Scanner)
+\item 
+bool \mbox{\hyperlink{class_algorithm_application_ac78b6d35c640146359fc5c4110e7460f}{create\+Distribution\+Area}} (const Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a9cd26ccd45bf0c4cbc927c68abd51e3b}{write\+Support\+Area\+To\+Paths}} (QList$<$ AREAINFOPTR $>$ \&, Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a2cef465af97c2aae04af7b16e70df735}{write\+Support\+To\+SList}} (const Paths \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a0c600b327b1124b1aeea2277cbfe659e}{set\+Border\+Distribution\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a019f43e9cee8d131b5ef4b077ecb4c1e}{set\+Support\+Distribution\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ac111aecb133b4fe9128bb7eb8de29f30}{set\+Solid\+Distribution\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_hatching}{Algorithm\+Hatching}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_afc1564203f65535227c7ca1b48b7ecd7}{calc\+Inner\+Point}} (const Paths \&, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, int \&n\+Total\+LCnt, const double \&, const int \&, const bool \&b\+Inner=false)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a5e95c67f726ea90b4f0f5d1bdfadcb6e}{calc\+Ring\+Hatching}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a49850c4d38f6f8b370e97e45f7a2bdc5}{calc\+Spiral\+Hatching}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a03f26a50116d0523177539ee760aa96d}{calc\+Fermat\+Spiral\+Hatching}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_abc6dbd60cd3fbd922ee352148e297e89}{calc\+Ring\+Tree}} (const Paths \&, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&, const int \&n\+Spacing)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_aa06db55dcc3bc888ba1e0d4fe24ef113}{calc\+SPLine}} (const int \&, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&n\+TLine\+Cnt=0, const int \&n\+LSConnecter=0, const int \&n\+CLine\+Factor=0)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a52987731e8b573bd21260671a0732fa7}{draw\+Branch}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&branch, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_abafd218075c0dff96f6e8330c76cacca}{draw\+Branch\+\_\+spiral}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&branch, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a8fd4c27adca4ce002d544e040afd2083}{draw\+Branch\+\_\+fermat\+Spiral}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&branch, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a37dd3eb383ac5b2db1666d7c36dd1182}{draw\+Path\+To\+Scan\+Line}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_a92e583502bb0c139159313ef4e7c6c3a}{draw\+Path\+To\+Scan\+Line}} (const Path \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const int \&type, const Int\+Point \&offset\+Coor=Int\+Point(0, 0))
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ad243f050e5b9bbe20bd20070df4e5ad3}{draw\+Spiral\+Path\+To\+Scan\+Line}} (const Path \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_hatching_a866ea22b5f26adb87178961ae40de31d}{get\+First\+Line}} (const int \&, const int \&, int \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, bool \&b\+First\+Line)
+\item 
+bool \mbox{\hyperlink{class_algorithm_hatching_a0c78bb11456445521ac4e67f9e6d32bd}{get\+Next\+Line}} (const int \&, const int \&, int \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, const int \&n\+LConneter)
+\item 
+bool \mbox{\hyperlink{class_algorithm_hatching_a320cf2f75c3c718a81ae6875f1fda1f4}{get\+First\+Line\+\_\+\+Greed}} (const int \&, const int \&, int \texorpdfstring{$\ast$}{*}, int \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}} \&, bool \&b\+First\+Line)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_hatching_ring}{Algorithm\+Hatching\+Ring}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_algorithm_hatching_ring_a1a1e4c4f9f0ce07aa77ac8519ede94eb}{Algorithm\+Hatching\+Ring}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_base}{Algorithm\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_algorithm_base_a6c012eecfcfb7f5153e3ae4f06b7711a}{calc\+Area\+List}} (const Paths \&, QList$<$ double $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calc\+Limit\+XY}} (const Paths \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a8998645a6bea53ae88f806b50f5e4596}{calc\+Limit\+XY}} (const QList$<$ AREAINFOPTR $>$ \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7821e946765fec4d451a2e114049ad78}{get\+All\+Paths}} (const QList$<$ AREAINFOPTR $>$ \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BOUNDINGRECT \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a879a667ab059dad3ea046a86fb8239a4}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BDRECTPTR \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d}{sort\+Pt\+On\+Line}} (int, QList$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a72bf2bb77f0b6c0871cee660a439ad83}{sort\+Pt\+On\+Line}} (int, QVector$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_abf8b04e05f684ef526e22eb2f59ce646}{reduce\+Paths\+\_\+\+Inner}} (Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2732f6394eaa7da3244d79ff85b2aa14}{add\+Paths\+\_\+\+Upper}} (Paths \&, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7bd1ccc6ab88a3ce86f17e321e8ae035}{extend\+Borders}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af68be0a18c770ff3664af0ab8c5e8592}{get\+Surface\+Paths}} (Paths \&, int \&, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}\mbox{[}$\,$\mbox{]}, const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb}{get\+Difference\+Paths}} (const Paths \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a44b731f2b864e5c489878d081b4738b4}{get\+Difference\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}{get\+Union\+Paths}} (const Path \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af0f7669ea396b902400e1b1a41df1852}{get\+Union\+Paths}} (const Path \&, const Paths \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_ae8b0da12e239e7339f26def69ebe5332}{get\+Union\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, int n\+Offset, int n\+Reserved, int n\+Small\+Wall)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aece1510dce6a07c6068ae2296042ca17}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a5ab9828cb248adf9091925402d15c718}{get\+Intersection\+Paths}} (const Paths \&, const Path \&, Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a34ec030ea3f3eac56015f423b9fe6365}{get\+Intersection\+Paths}} (const Paths \&, const Paths \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_af305c4ee4c37cd65d4c13a437632dae8}{line\+On\+Vec\+Splicing\+Line}} (int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, QVector$<$ \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aa9a6849100e590a568bb11ff6b371992}{filte\+Small\+Border}} (const Paths \&, Paths \&, Paths \&, const double \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_checker}{Algorithm\+Checker}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_checker_af554b1e17edc99f418662ec03420e05a}{create\+Checkers}} (const QJson\+Object \&, const int \&plat\+Width, const int \&plat\+Height)
+\item 
+void \mbox{\hyperlink{class_algorithm_checker_acadce095b6130ba34e54e6b8e8835e41}{change\+Layer\+Odd\+Info}} ()
+\item 
+double \mbox{\hyperlink{class_algorithm_checker_a13b0121b03c7ea049f6e6c2dad512cea}{get\+Rotate\+Angle}} ()
+\item 
+bool \mbox{\hyperlink{class_algorithm_checker_a074f1bcdd4fdf010d5a6eb8e94566480}{scan\+Checker\+Border}} ()
+\item 
+QList$<$ Paths $>$ \& \mbox{\hyperlink{class_algorithm_checker_a9cf488596540998172fcf83c48466b13}{get\+Checker\+List}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_strip}{Algorithm\+Strip}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_algorithm_strip_a67b24620a7dfda90d3276dbbd173c1b3}{Algorithm\+Strip}} ()=default
+\item 
+void \mbox{\hyperlink{class_algorithm_strip_aabe563a956cbeea8b52e6832d083a9e4}{create\+Strips}} (const QJson\+Object \&json\+Obj, const int \&plat\+Width, const int \&plat\+Height)
+\item 
+void \mbox{\hyperlink{class_algorithm_strip_a1a9d4fabac364ecc8aee871aaee17f6b}{create\+Strips}} (const int \&n\+Hei, const int \&plat\+Width, const int \&plat\+Height, const int \&overlap\+Wid)
+\item 
+Paths \mbox{\hyperlink{class_algorithm_strip_a2e61411f1bdddfc6daec0ac16484a364}{get\+Strip\+List}} (const double \&, double \&hatching\+Angle, const int \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a262981a27791eab5c7ca24319e5c3b45}{get\+Up\+Down\+Surface}} (Paths \&, Paths \&, int \&, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}\mbox{[}$\,$\mbox{]}, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_af8a7387562063d8c941c7c91afdbe208}{write\+All\+Hatching}} (const Paths \&src, const int \&beam\+Index, const double \&f\+Speed\+Ratio, const double \&, \mbox{\hyperlink{algorithmapplication_8h_a887d68e2df011000c76697a0c8b20a98}{Fun\+Write\+Hatching}} \&\&, const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&func=\mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}}())
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a6c3ba09f13e15e61b400ffae0ba902a7}{get\+Beam\+Struct}} (Paths \&, Paths \&, const int \&Beam\+Index)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ac7345cbd1ed535575a6c589434cc3352}{recalc\+Beam\+Struct}} (const Paths \&, const Paths \&, Paths \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_aa93d9e718d1891ff4b12a70bb08d2ee2}{write\+Hatching}} (const Paths \&, const double \&, const double \&, const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&cb\+Func=\mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}}())
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a6d51b802b124292d5d8dce051d35164b}{write\+Down\+File\+Data}} (Paths \&, const int \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ade9eafdad1a1a5e909dd08238022c612}{write\+Up\+File\+Data}} (Paths \&, const int \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_aa26b8c81acaaf9b71b54f72544e18c36}{write\+Small\+Struct}} (Paths \&, const double \&, const double \&, const int \&Beam\+Index, const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a8d3c2868896c7f1694e0f21e335b8b25}{write\+Border\+Data}} (Paths \&, const int \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a7728e5d5c90accdeb24e59339f1ff024}{write\+Border\+Data\+\_\+splicing}} (Paths \&, const int \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_af3f0a49c3bdf03cf1c2405edbf5e75d9}{write\+Externed\+Border\+\_\+p}} (Paths \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a7e8efe2f9b41cedc444abd72f54f8aa0}{write\+Solid\+Support\+Border\+Data}} (const Paths \&, const int \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a8a84239cb220b94a2989d97cf572ef77}{write\+Hatching\+\_\+p}} (const Paths \&, const double \&, const double \&, const int \&n\+Scanner, const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a63adca689f538fec4220e183940231a9}{write\+Down\+File\+Data\+\_\+p}} (const Paths \&, const int \&, const double \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ab308c3f2c2e8d11ff24f5585c5f9aaa8}{write\+Up\+File\+Data\+\_\+p}} (const Paths \&, const int \&, const double \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a6ec16fa944cb749677297327aef98eea}{write\+Small\+Struct\+\_\+p}} (Paths \&, const double \&, const double \&, const int \&n\+Scanner, const int \&Beam\+Index, const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a47fb0809d126cfe7ddaa952c294ea01d}{write\+Support\+To\+SList\+\_\+p}} (QList$<$ AREAINFOPTR $>$ \texorpdfstring{$\ast$}{*}, const double \&, const \mbox{\hyperlink{algorithmapplication_8h_a1d533402408d574b4741df9285a99836}{Func\+Split\+Scan\+Data}} \&\&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ae983d248d2efbc7c7c835e07c9045f1e}{write\+Solid\+Support\+Hatching\+\_\+p}} (const Paths \&, const double \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_aeaf740375bebe9f198bb28ba04c54164}{write\+Support\+To\+SList}} (\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}} \&, const double \&, const int \&n\+Scanner)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_acbae04d40d1f1f2d3acbe9dd175b57aa}{write\+UPDown\+Data}} (const Paths \&, const int \&, const double \&, const int \&, UPSURFACEPARAMETERS \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}} \&)
+\item 
+int \mbox{\hyperlink{class_algorithm_application_a741c08154898ec45b99622ec3c905bcb}{get\+Up\+Down\+Min\+Wall}} (DOWNSURFACEPARAMETERS \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a6717ab42dab44fd7b9516d30c8274d12}{split\+Line\+By\+Ver\+Line}} (const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, QVector$<$ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a1ec3c7b97b3f27915ada5a95509b7622}{write\+Area\+To\+Paths}} (QList$<$ AREAINFOPTR $>$ \&, Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_abfc432470b26d71233671aaea5b2135f}{parsing\+Datas}} (QList$<$ AREAINFOPTR $>$ \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a95ecce5a2003030f7e8d039499d6af66}{get\+New\+Begin}} (Paths \texorpdfstring{$\ast$}{*}lp\+Paths)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_acb04ccb0e2a6441ebdba4ea320af5d44}{calc\+Line\+On\+Splicing}} (Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a7bc7c32e2944fe4bb219e6aea0c6af2b}{calc\+Line\+On\+Splicing}} (Paths \&, \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_ad8e44edfcb8d4af56bfe2f2fbc9cbef6}{recalc\+Support\+List}} (QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a42c648da3cc802b90309342e907a8736}{recalc\+Support\+List}} (QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&, QList$<$ int $>$ \&)
+\item 
+int \mbox{\hyperlink{class_algorithm_application_a785f1b9ad6bb5e3105733176f523378d}{calc\+Min\+Dis\+Pos}} (const QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&, const QList$<$ int $>$ \&, const int \&, const int \&, int \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_application_aebfe7e288cd748611a4b3c39452b5529}{is\+Big\+Beam}} (const int \&Beam\+Cnt, const int \&Beam\+Index)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a7a437907c11b0a817b35b904658157ff}{write\+Paths\+To\+Scan\+Lines}} (const Path \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const bool \&closed\+Path=false)
+\item 
+void \mbox{\hyperlink{class_algorithm_application_a7b1193d66fed8023a1f30721d4c44ff4}{write\+Paths\+To\+Scan\+Lines}} (const Paths \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&, const bool \&closed\+Path=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_algorithm_application_a832fc907919c482fd2c842b3eb9a8473}{\+\_\+layer\+Hei}} = 0
+\item 
+bool \mbox{\hyperlink{class_algorithm_application_a2c2b5408d59cbe73654e60143811d686}{m\+\_\+b\+Plat\+Plus}} = false
+\item 
+double \mbox{\hyperlink{class_algorithm_application_a834ec8c98737ee2923816f8759b465ab}{f\+Hatching\+Angle}} = 0
+\item 
+double \mbox{\hyperlink{class_algorithm_application_ab2a32cd01c91d84c0c22e052c05f185a}{f\+Solid\+Support\+Hatching\+Angle}} = 0
+\item 
+int \mbox{\hyperlink{class_algorithm_application_af9a2de49c130cee2b6ccffa97c56695c}{cur\+Scanner\+Index}} = 0
+\item 
+int \mbox{\hyperlink{class_algorithm_application_a748e1ec3461b1f593a9cf3d373ecd083}{n\+Export\+File\+Mode}} = 0
+\item 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_algorithm_application_aa0c5e9ad46a79aca2bf89879a51de9c2}{\+\_\+write\+Buff}} = nullptr
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a}{Utek\+::\+STARTCHANGERPARA}} $>$ \mbox{\hyperlink{class_algorithm_application_a41f31aeb2e6aa2bb902b9deb527d1103}{lp\+BEnhanced\+Paras}} = nullptr
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_scan_lines_sortor}{Scan\+Lines\+Sortor}} $>$ \mbox{\hyperlink{class_algorithm_application_a8156209982818476e90df3543e3b42dd}{scan\+Lines\+Sortor}} = nullptr
+\item 
+QVector$<$ \mbox{\hyperlink{struct_splicing_area}{Splicing\+Area}} $>$ \mbox{\hyperlink{class_algorithm_application_a53ecf4dd53cf59167924eebaeeecb0e8}{vec\+Splicing\+Area}}
+\item 
+QVector$<$ \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} $>$ \mbox{\hyperlink{class_algorithm_application_af102aa0b384daed38422995ca9703ca2}{vec\+Splicing\+Line}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \mbox{\hyperlink{class_algorithm_application_a89c4fac4d0e1d688bb8a375974a9af1f}{\+\_\+border\+Dis\+Info\+Vec}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \mbox{\hyperlink{class_algorithm_application_afbde76d7a1f46e43506f877dd4f07ecf}{\+\_\+support\+Dis\+Info\+Vec}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \mbox{\hyperlink{class_algorithm_application_aa0bcbb5f14971cfac9c846464a4adbed}{\+\_\+solid\+Dis\+Info\+Vec}}
+\item 
+std\+::vector$<$ Path $>$ \mbox{\hyperlink{class_algorithm_application_aadf0f78e61df55e76847892fcd43654f}{\+\_\+distribution\+Path\+Vec}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{静态 Public 成员函数 继承自 \mbox{\hyperlink{class_algorithm_base}{Algorithm\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709}{scanner\+\_\+jump\+Pos}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a}{scanner\+\_\+out\+Line}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_aec87785742d1a00a5f45989c419069fd}{scanner\+\_\+jump\+Pos}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae0496d41045e88fcc421efd778cbfeb7}{scanner\+\_\+out\+Line}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a6355a54523d0af209e0d3d663472f401}{scanner\+\_\+plot\+Line}} (const int \&, const int \&, const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae772223adb17dffb76db2b454d807e18}{write\+Data\+To\+List}} (const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, int64\+\_\+t \&, int64\+\_\+t \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{class_algorithm_hatching_ring}{Algorithm\+Hatching\+Ring}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a42dfd0438410d8b49619e4d4f662aa2b}{create\+Pocket\+Tree}} (const Paths \&cur\+Paths, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_af5a9e64e05b567a5972e098341ddb55b}{update\+Pocket\+Tree}} (const Paths \&cur\+Paths, \mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree, const int \&level)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a97ed0421269a3d9e8eb187aacbb611bc}{sort\+Pocket\+Tree}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, \mbox{\hyperlink{struct_inner_pocket_tree}{Inner\+Pocket\+Tree}} \&inner\+Tree)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a0b3bd4330183b9e45f05ac562c045adb}{create\+Spiral}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, const double \&pow\+Dis)
+\item 
+void \mbox{\hyperlink{class_algorithm_hatching_ring_a982ab94926406552a831789041d0e848}{create\+Fermat\+Spiral}} (\mbox{\hyperlink{struct_pocket_tree}{Pocket\+Tree}} \&outer\+Tree, const double \&pow\+Dis)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Algorithm\+Application}
+执行类算法，继承自 \doxylink{class_algorithm_hatching}{Algorithm\+Hatching} 
+\end{DoxyParagraph}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_algorithm_application_a9ff76b50c7fbca94e97fe2f11c6f5715}\index{AlgorithmApplication@{AlgorithmApplication}!addHatchingAngle@{addHatchingAngle}}
+\index{addHatchingAngle@{addHatchingAngle}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{addHatchingAngle()}{addHatchingAngle()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a9ff76b50c7fbca94e97fe2f11c6f5715} 
+void Algorithm\+Application\+::add\+Hatching\+Angle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a76224efea7804190814aae9d41e1ab09}\index{AlgorithmApplication@{AlgorithmApplication}!addSolidSupportHatchingAngle@{addSolidSupportHatchingAngle}}
+\index{addSolidSupportHatchingAngle@{addSolidSupportHatchingAngle}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{addSolidSupportHatchingAngle()}{addSolidSupportHatchingAngle()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a76224efea7804190814aae9d41e1ab09} 
+void Algorithm\+Application\+::add\+Solid\+Support\+Hatching\+Angle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_acb04ccb0e2a6441ebdba4ea320af5d44}\index{AlgorithmApplication@{AlgorithmApplication}!calcLineOnSplicing@{calcLineOnSplicing}}
+\index{calcLineOnSplicing@{calcLineOnSplicing}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{calcLineOnSplicing()}{calcLineOnSplicing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_acb04ccb0e2a6441ebdba4ea320af5d44} 
+void Algorithm\+Application\+::calc\+Line\+On\+Splicing (\begin{DoxyParamCaption}\item[{Paths \&}]{temp\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a7bc7c32e2944fe4bb219e6aea0c6af2b}\index{AlgorithmApplication@{AlgorithmApplication}!calcLineOnSplicing@{calcLineOnSplicing}}
+\index{calcLineOnSplicing@{calcLineOnSplicing}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{calcLineOnSplicing()}{calcLineOnSplicing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a7bc7c32e2944fe4bb219e6aea0c6af2b} 
+void Algorithm\+Application\+::calc\+Line\+On\+Splicing (\begin{DoxyParamCaption}\item[{Paths \&}]{temp\+Path}{, }\item[{\mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} \&}]{splicing\+Line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a785f1b9ad6bb5e3105733176f523378d}\index{AlgorithmApplication@{AlgorithmApplication}!calcMinDisPos@{calcMinDisPos}}
+\index{calcMinDisPos@{calcMinDisPos}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{calcMinDisPos()}{calcMinDisPos()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a785f1b9ad6bb5e3105733176f523378d} 
+int Algorithm\+Application\+::calc\+Min\+Dis\+Pos (\begin{DoxyParamCaption}\item[{const QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&}]{}{, }\item[{const QList$<$ int $>$ \&}]{}{, }\item[{const int \&}]{}{, }\item[{const int \&}]{}{, }\item[{int \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a126a1b65ba7b85149af0f0d427eaf317}\index{AlgorithmApplication@{AlgorithmApplication}!calcSplicingVec@{calcSplicingVec}}
+\index{calcSplicingVec@{calcSplicingVec}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{calcSplicingVec()}{calcSplicingVec()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a126a1b65ba7b85149af0f0d427eaf317} 
+void Algorithm\+Application\+::calc\+Splicing\+Vec (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_ac78b6d35c640146359fc5c4110e7460f}\index{AlgorithmApplication@{AlgorithmApplication}!createDistributionArea@{createDistributionArea}}
+\index{createDistributionArea@{createDistributionArea}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{createDistributionArea()}{createDistributionArea()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ac78b6d35c640146359fc5c4110e7460f} 
+bool Algorithm\+Application\+::create\+Distribution\+Area (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a5eb5ff1d6d31f17e20c6e41e263c93a7}\index{AlgorithmApplication@{AlgorithmApplication}!createEnhanceBorderParas@{createEnhanceBorderParas}}
+\index{createEnhanceBorderParas@{createEnhanceBorderParas}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{createEnhanceBorderParas()}{createEnhanceBorderParas()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a5eb5ff1d6d31f17e20c6e41e263c93a7} 
+void Algorithm\+Application\+::create\+Enhance\+Border\+Paras (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a6c3ba09f13e15e61b400ffae0ba902a7}\index{AlgorithmApplication@{AlgorithmApplication}!getBeamStruct@{getBeamStruct}}
+\index{getBeamStruct@{getBeamStruct}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{getBeamStruct()}{getBeamStruct()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a6c3ba09f13e15e61b400ffae0ba902a7} 
+void Algorithm\+Application\+::get\+Beam\+Struct (\begin{DoxyParamCaption}\item[{Paths \&}]{src}{, }\item[{Paths \&}]{paths\+\_\+\+Small}{, }\item[{const int \&}]{Beam\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a95ecce5a2003030f7e8d039499d6af66}\index{AlgorithmApplication@{AlgorithmApplication}!getNewBegin@{getNewBegin}}
+\index{getNewBegin@{getNewBegin}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{getNewBegin()}{getNewBegin()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a95ecce5a2003030f7e8d039499d6af66} 
+void Algorithm\+Application\+::get\+New\+Begin (\begin{DoxyParamCaption}\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a741c08154898ec45b99622ec3c905bcb}\index{AlgorithmApplication@{AlgorithmApplication}!getUpDownMinWall@{getUpDownMinWall}}
+\index{getUpDownMinWall@{getUpDownMinWall}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{getUpDownMinWall()}{getUpDownMinWall()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a741c08154898ec45b99622ec3c905bcb} 
+int Algorithm\+Application\+::get\+Up\+Down\+Min\+Wall (\begin{DoxyParamCaption}\item[{DOWNSURFACEPARAMETERS \texorpdfstring{$\ast$}{*}}]{lp\+Paras}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a262981a27791eab5c7ca24319e5c3b45}\index{AlgorithmApplication@{AlgorithmApplication}!getUpDownSurface@{getUpDownSurface}}
+\index{getUpDownSurface@{getUpDownSurface}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{getUpDownSurface()}{getUpDownSurface()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a262981a27791eab5c7ca24319e5c3b45} 
+void Algorithm\+Application\+::get\+Up\+Down\+Surface (\begin{DoxyParamCaption}\item[{Paths \&}]{target\+Path}{, }\item[{Paths \&}]{extend\+Paths}{, }\item[{int \&}]{n\+Index}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Cur\+Path}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Paths}{\mbox{[}$\,$\mbox{]}, }\item[{const int \&}]{number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_aebfe7e288cd748611a4b3c39452b5529}\index{AlgorithmApplication@{AlgorithmApplication}!isBigBeam@{isBigBeam}}
+\index{isBigBeam@{isBigBeam}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{isBigBeam()}{isBigBeam()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aebfe7e288cd748611a4b3c39452b5529} 
+bool Algorithm\+Application\+::is\+Big\+Beam (\begin{DoxyParamCaption}\item[{const int \&}]{Beam\+Cnt}{, }\item[{const int \&}]{Beam\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_ad2463542e03e835c9dfe2236f0cb2fa8}\index{AlgorithmApplication@{AlgorithmApplication}!keepHolesAndGaps@{keepHolesAndGaps}}
+\index{keepHolesAndGaps@{keepHolesAndGaps}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{keepHolesAndGaps()}{keepHolesAndGaps()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ad2463542e03e835c9dfe2236f0cb2fa8} 
+void Algorithm\+Application\+::keep\+Holes\+And\+Gaps (\begin{DoxyParamCaption}\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Paths}{, }\item[{Paths \&}]{path\+Holes}{, }\item[{Paths \&}]{path\+Gaps}{, }\item[{Paths \&}]{path\+Except}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_abfc432470b26d71233671aaea5b2135f}\index{AlgorithmApplication@{AlgorithmApplication}!parsingDatas@{parsingDatas}}
+\index{parsingDatas@{parsingDatas}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{parsingDatas()}{parsingDatas()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_abfc432470b26d71233671aaea5b2135f} 
+void Algorithm\+Application\+::parsing\+Datas (\begin{DoxyParamCaption}\item[{QList$<$ AREAINFOPTR $>$ \&}]{list\+Area}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_ac7345cbd1ed535575a6c589434cc3352}\index{AlgorithmApplication@{AlgorithmApplication}!recalcBeamStruct@{recalcBeamStruct}}
+\index{recalcBeamStruct@{recalcBeamStruct}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{recalcBeamStruct()}{recalcBeamStruct()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ac7345cbd1ed535575a6c589434cc3352} 
+void Algorithm\+Application\+::recalc\+Beam\+Struct (\begin{DoxyParamCaption}\item[{const Paths \&}]{src}{, }\item[{const Paths \&}]{paths\+\_\+\+Last}{, }\item[{Paths \&}]{paths\+\_\+\+Small}{, }\item[{const double \&}]{f\+Offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_ad8e44edfcb8d4af56bfe2f2fbc9cbef6}\index{AlgorithmApplication@{AlgorithmApplication}!recalcSupportList@{recalcSupportList}}
+\index{recalcSupportList@{recalcSupportList}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{recalcSupportList()}{recalcSupportList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ad8e44edfcb8d4af56bfe2f2fbc9cbef6} 
+void Algorithm\+Application\+::recalc\+Support\+List (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a42c648da3cc802b90309342e907a8736}\index{AlgorithmApplication@{AlgorithmApplication}!recalcSupportList@{recalcSupportList}}
+\index{recalcSupportList@{recalcSupportList}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{recalcSupportList()}{recalcSupportList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a42c648da3cc802b90309342e907a8736} 
+void Algorithm\+Application\+::recalc\+Support\+List (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&}]{}{, }\item[{QList$<$ int $>$ \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a0c600b327b1124b1aeea2277cbfe659e}\index{AlgorithmApplication@{AlgorithmApplication}!setBorderDistributionInfo@{setBorderDistributionInfo}}
+\index{setBorderDistributionInfo@{setBorderDistributionInfo}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{setBorderDistributionInfo()}{setBorderDistributionInfo()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a0c600b327b1124b1aeea2277cbfe659e} 
+void Algorithm\+Application\+::set\+Border\+Distribution\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \&}]{dis\+Info\+Vec}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a2c4bf492c05b8049f49466b002ba9d33}\index{AlgorithmApplication@{AlgorithmApplication}!setBuffParas@{setBuffParas}}
+\index{setBuffParas@{setBuffParas}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{setBuffParas()}{setBuffParas()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a2c4bf492c05b8049f49466b002ba9d33} 
+void Algorithm\+Application\+::set\+Buff\+Paras (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*}}]{paras}{, }\item[{const int \&}]{cur\+Scanner}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_ae70195b27e9041aa2cd214ea748fa7ad}\index{AlgorithmApplication@{AlgorithmApplication}!setCurLayerHei@{setCurLayerHei}}
+\index{setCurLayerHei@{setCurLayerHei}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{setCurLayerHei()}{setCurLayerHei()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ae70195b27e9041aa2cd214ea748fa7ad} 
+void Algorithm\+Application\+::set\+Cur\+Layer\+Hei (\begin{DoxyParamCaption}\item[{const int \&}]{layer\+Hei}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_algorithm_application_a069159ce64d12083a0a8df45350a5f39}\index{AlgorithmApplication@{AlgorithmApplication}!setExportFileMode@{setExportFileMode}}
+\index{setExportFileMode@{setExportFileMode}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{setExportFileMode()}{setExportFileMode()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a069159ce64d12083a0a8df45350a5f39} 
+void Algorithm\+Application\+::set\+Export\+File\+Mode (\begin{DoxyParamCaption}\item[{const int \&}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_algorithm_application_a329979818cb494c78cdf599e4f80fb13}\index{AlgorithmApplication@{AlgorithmApplication}!setHatchingAngle@{setHatchingAngle}}
+\index{setHatchingAngle@{setHatchingAngle}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{setHatchingAngle()}{setHatchingAngle()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a329979818cb494c78cdf599e4f80fb13} 
+void Algorithm\+Application\+::set\+Hatching\+Angle (\begin{DoxyParamCaption}\item[{double}]{f\+Angle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_ac111aecb133b4fe9128bb7eb8de29f30}\index{AlgorithmApplication@{AlgorithmApplication}!setSolidDistributionInfo@{setSolidDistributionInfo}}
+\index{setSolidDistributionInfo@{setSolidDistributionInfo}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{setSolidDistributionInfo()}{setSolidDistributionInfo()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ac111aecb133b4fe9128bb7eb8de29f30} 
+void Algorithm\+Application\+::set\+Solid\+Distribution\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \&}]{dis\+Info\+Vec}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a019f43e9cee8d131b5ef4b077ecb4c1e}\index{AlgorithmApplication@{AlgorithmApplication}!setSupportDistributionInfo@{setSupportDistributionInfo}}
+\index{setSupportDistributionInfo@{setSupportDistributionInfo}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{setSupportDistributionInfo()}{setSupportDistributionInfo()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a019f43e9cee8d131b5ef4b077ecb4c1e} 
+void Algorithm\+Application\+::set\+Support\+Distribution\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_part_result}{Part\+Result}} $>$ \&}]{dis\+Info\+Vec}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a6717ab42dab44fd7b9516d30c8274d12}\index{AlgorithmApplication@{AlgorithmApplication}!splitLineByVerLine@{splitLineByVerLine}}
+\index{splitLineByVerLine@{splitLineByVerLine}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{splitLineByVerLine()}{splitLineByVerLine()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a6717ab42dab44fd7b9516d30c8274d12} 
+void Algorithm\+Application\+::split\+Line\+By\+Ver\+Line (\begin{DoxyParamCaption}\item[{const int64\+\_\+t \&}]{x1}{, }\item[{const int64\+\_\+t \&}]{y1}{, }\item[{const int64\+\_\+t \&}]{x2}{, }\item[{const int64\+\_\+t \&}]{y2}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}} $>$ \&}]{vec\+UFFdata}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_af963f9263144721788d22efed66d3e9b}\index{AlgorithmApplication@{AlgorithmApplication}!splitPathsByFiled@{splitPathsByFiled}}
+\index{splitPathsByFiled@{splitPathsByFiled}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{splitPathsByFiled()}{splitPathsByFiled()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_af963f9263144721788d22efed66d3e9b} 
+QMap$<$ int, Paths $>$ Algorithm\+Application\+::split\+Paths\+By\+Filed (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_af8a7387562063d8c941c7c91afdbe208}\index{AlgorithmApplication@{AlgorithmApplication}!writeAllHatching@{writeAllHatching}}
+\index{writeAllHatching@{writeAllHatching}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeAllHatching()}{writeAllHatching()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_af8a7387562063d8c941c7c91afdbe208} 
+void Algorithm\+Application\+::write\+All\+Hatching (\begin{DoxyParamCaption}\item[{const Paths \&}]{src}{, }\item[{const int \&}]{beam\+Index}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{\mbox{\hyperlink{algorithmapplication_8h_a887d68e2df011000c76697a0c8b20a98}{Fun\+Write\+Hatching}} \&\&}]{fun\+Hatching}{, }\item[{const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&}]{func}{ = {\ttfamily \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}}()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a1ec3c7b97b3f27915ada5a95509b7622}\index{AlgorithmApplication@{AlgorithmApplication}!writeAreaToPaths@{writeAreaToPaths}}
+\index{writeAreaToPaths@{writeAreaToPaths}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeAreaToPaths()}{writeAreaToPaths()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a1ec3c7b97b3f27915ada5a95509b7622} 
+void Algorithm\+Application\+::write\+Area\+To\+Paths (\begin{DoxyParamCaption}\item[{QList$<$ AREAINFOPTR $>$ \&}]{list\+Area}{, }\item[{Paths \&}]{paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_ad995fe080a7a5a85cd16c1f845a59db9}\index{AlgorithmApplication@{AlgorithmApplication}!writeBorderData@{writeBorderData}}
+\index{writeBorderData@{writeBorderData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeBorderData()}{writeBorderData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ad995fe080a7a5a85cd16c1f845a59db9} 
+void Algorithm\+Application\+::write\+Border\+Data (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths\+\_\+except\+Holes\+And\+Gaps}{, }\item[{const double \&}]{f\+Speed\+Ratio}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a8d3c2868896c7f1694e0f21e335b8b25}\index{AlgorithmApplication@{AlgorithmApplication}!writeBorderData@{writeBorderData}}
+\index{writeBorderData@{writeBorderData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeBorderData()}{writeBorderData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a8d3c2868896c7f1694e0f21e335b8b25} 
+void Algorithm\+Application\+::write\+Border\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{temp\+PS}{, }\item[{const int \&}]{n\+Contour\+Times}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a7728e5d5c90accdeb24e59339f1ff024}\index{AlgorithmApplication@{AlgorithmApplication}!writeBorderData\_splicing@{writeBorderData\_splicing}}
+\index{writeBorderData\_splicing@{writeBorderData\_splicing}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeBorderData\_splicing()}{writeBorderData\_splicing()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a7728e5d5c90accdeb24e59339f1ff024} 
+void Algorithm\+Application\+::write\+Border\+Data\+\_\+splicing (\begin{DoxyParamCaption}\item[{Paths \&}]{temp\+PS}{, }\item[{const int \&}]{n\+Contour\+Times}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a6d51b802b124292d5d8dce051d35164b}\index{AlgorithmApplication@{AlgorithmApplication}!writeDownFileData@{writeDownFileData}}
+\index{writeDownFileData@{writeDownFileData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeDownFileData()}{writeDownFileData()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a6d51b802b124292d5d8dce051d35164b} 
+void Algorithm\+Application\+::write\+Down\+File\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{paths\+\_\+\+Down}{, }\item[{const int \&}]{n\+Surface\+Index}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a63adca689f538fec4220e183940231a9}\index{AlgorithmApplication@{AlgorithmApplication}!writeDownFileData\_p@{writeDownFileData\_p}}
+\index{writeDownFileData\_p@{writeDownFileData\_p}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeDownFileData\_p()}{writeDownFileData\_p()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a63adca689f538fec4220e183940231a9} 
+void Algorithm\+Application\+::write\+Down\+File\+Data\+\_\+p (\begin{DoxyParamCaption}\item[{const Paths \&}]{path\+Target}{, }\item[{const int \&}]{n\+Surface\+Index}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a293a48bf9c0aedf404ab6b617099214d}\index{AlgorithmApplication@{AlgorithmApplication}!writeExternedBorder@{writeExternedBorder}}
+\index{writeExternedBorder@{writeExternedBorder}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeExternedBorder()}{writeExternedBorder()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a293a48bf9c0aedf404ab6b617099214d} 
+void Algorithm\+Application\+::write\+Externed\+Border (\begin{DoxyParamCaption}\item[{Paths \&}]{paths}{, }\item[{const double \&}]{f\+Speed\+Ratio}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_af3f0a49c3bdf03cf1c2405edbf5e75d9}\index{AlgorithmApplication@{AlgorithmApplication}!writeExternedBorder\_p@{writeExternedBorder\_p}}
+\index{writeExternedBorder\_p@{writeExternedBorder\_p}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeExternedBorder\_p()}{writeExternedBorder\_p()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_af3f0a49c3bdf03cf1c2405edbf5e75d9} 
+void Algorithm\+Application\+::write\+Externed\+Border\+\_\+p (\begin{DoxyParamCaption}\item[{Paths \&}]{temp\+PS}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_aa93d9e718d1891ff4b12a70bb08d2ee2}\index{AlgorithmApplication@{AlgorithmApplication}!writeHatching@{writeHatching}}
+\index{writeHatching@{writeHatching}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHatching()}{writeHatching()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aa93d9e718d1891ff4b12a70bb08d2ee2} 
+void Algorithm\+Application\+::write\+Hatching (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&}]{cb\+Func}{ = {\ttfamily \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}}()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a8a84239cb220b94a2989d97cf572ef77}\index{AlgorithmApplication@{AlgorithmApplication}!writeHatching\_p@{writeHatching\_p}}
+\index{writeHatching\_p@{writeHatching\_p}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHatching\_p()}{writeHatching\_p()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a8a84239cb220b94a2989d97cf572ef77} 
+void Algorithm\+Application\+::write\+Hatching\+\_\+p (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{, }\item[{const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&}]{cb\+Func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a36a8ee3edd304385075744fdcc3c37be}\index{AlgorithmApplication@{AlgorithmApplication}!writeHatchingData@{writeHatchingData}}
+\index{writeHatchingData@{writeHatchingData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHatchingData()}{writeHatchingData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a36a8ee3edd304385075744fdcc3c37be} 
+void Algorithm\+Application\+::write\+Hatching\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lattice_layer_info}{Lattice\+Layer\+Info}} \&}]{layer\+Info}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+LLine\+Space}{, }\item[{const double \&}]{f\+SLine\+Space}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a943ed249c41a7bfe8476821eb1022689}\index{AlgorithmApplication@{AlgorithmApplication}!writeHatchingData@{writeHatchingData}}
+\index{writeHatchingData@{writeHatchingData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHatchingData()}{writeHatchingData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a943ed249c41a7bfe8476821eb1022689} 
+void Algorithm\+Application\+::write\+Hatching\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{lattices}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+LLine\+Space}{, }\item[{const double \&}]{f\+SLine\+Space}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_ab7ba08944728607fff44e986d65a2a32}\index{AlgorithmApplication@{AlgorithmApplication}!writeHatchingData@{writeHatchingData}}
+\index{writeHatchingData@{writeHatchingData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHatchingData()}{writeHatchingData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ab7ba08944728607fff44e986d65a2a32} 
+void Algorithm\+Application\+::write\+Hatching\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}} \&}]{solid\+Path}{, }\item[{Paths \&}]{extend\+Paths}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+LLine\+Space}{, }\item[{const double \&}]{f\+SLine\+Space}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_ac4c6f91aed1eff35d99acc2db549158e}\index{AlgorithmApplication@{AlgorithmApplication}!writeHoleAndGapData@{writeHoleAndGapData}}
+\index{writeHoleAndGapData@{writeHoleAndGapData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHoleAndGapData()}{writeHoleAndGapData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ac4c6f91aed1eff35d99acc2db549158e} 
+void Algorithm\+Application\+::write\+Hole\+And\+Gap\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{lp\+Paths}{, }\item[{const int \&}]{n\+Speed}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_aab758ac5f5c73ac4d94fd6c2b6d8f3de}\index{AlgorithmApplication@{AlgorithmApplication}!writeHoleAndGapData@{writeHoleAndGapData}}
+\index{writeHoleAndGapData@{writeHoleAndGapData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHoleAndGapData()}{writeHoleAndGapData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aab758ac5f5c73ac4d94fd6c2b6d8f3de} 
+void Algorithm\+Application\+::write\+Hole\+And\+Gap\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{temp\+PS}{, }\item[{const int \&}]{n\+Speed}{, }\item[{const int \&}]{n\+Contour\+Times}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_ad6ef3ab8008d1ce76ef7bc6fc356029b}\index{AlgorithmApplication@{AlgorithmApplication}!writeHoleAndGapData@{writeHoleAndGapData}}
+\index{writeHoleAndGapData@{writeHoleAndGapData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeHoleAndGapData()}{writeHoleAndGapData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ad6ef3ab8008d1ce76ef7bc6fc356029b} 
+void Algorithm\+Application\+::write\+Hole\+And\+Gap\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{holes}{, }\item[{Paths \&}]{gaps}{, }\item[{const double \&}]{f\+Speed\+Ratio}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a7a437907c11b0a817b35b904658157ff}\index{AlgorithmApplication@{AlgorithmApplication}!writePathsToScanLines@{writePathsToScanLines}}
+\index{writePathsToScanLines@{writePathsToScanLines}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writePathsToScanLines()}{writePathsToScanLines()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a7a437907c11b0a817b35b904658157ff} 
+void Algorithm\+Application\+::write\+Paths\+To\+Scan\+Lines (\begin{DoxyParamCaption}\item[{const Path \&}]{path}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{scan\+Lines}{, }\item[{const bool \&}]{closed\+Path}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a7b1193d66fed8023a1f30721d4c44ff4}\index{AlgorithmApplication@{AlgorithmApplication}!writePathsToScanLines@{writePathsToScanLines}}
+\index{writePathsToScanLines@{writePathsToScanLines}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writePathsToScanLines()}{writePathsToScanLines()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a7b1193d66fed8023a1f30721d4c44ff4} 
+void Algorithm\+Application\+::write\+Paths\+To\+Scan\+Lines (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{scan\+Lines}{, }\item[{const bool \&}]{closed\+Path}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_aa26b8c81acaaf9b71b54f72544e18c36}\index{AlgorithmApplication@{AlgorithmApplication}!writeSmallStruct@{writeSmallStruct}}
+\index{writeSmallStruct@{writeSmallStruct}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSmallStruct()}{writeSmallStruct()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aa26b8c81acaaf9b71b54f72544e18c36} 
+void Algorithm\+Application\+::write\+Small\+Struct (\begin{DoxyParamCaption}\item[{Paths \&}]{paths\+\_\+\+Small}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const int \&}]{Beam\+Index}{, }\item[{const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&}]{func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a6ec16fa944cb749677297327aef98eea}\index{AlgorithmApplication@{AlgorithmApplication}!writeSmallStruct\_p@{writeSmallStruct\_p}}
+\index{writeSmallStruct\_p@{writeSmallStruct\_p}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSmallStruct\_p()}{writeSmallStruct\_p()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a6ec16fa944cb749677297327aef98eea} 
+void Algorithm\+Application\+::write\+Small\+Struct\+\_\+p (\begin{DoxyParamCaption}\item[{Paths \&}]{path\+Target}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{, }\item[{const int \&}]{Beam\+Index}{, }\item[{const \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\+\_\+\+WRITEDATA}} \&}]{func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a7e8efe2f9b41cedc444abd72f54f8aa0}\index{AlgorithmApplication@{AlgorithmApplication}!writeSolidSupportBorderData@{writeSolidSupportBorderData}}
+\index{writeSolidSupportBorderData@{writeSolidSupportBorderData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSolidSupportBorderData()}{writeSolidSupportBorderData()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a7e8efe2f9b41cedc444abd72f54f8aa0} 
+void Algorithm\+Application\+::write\+Solid\+Support\+Border\+Data (\begin{DoxyParamCaption}\item[{const Paths \&}]{temp\+PS}{, }\item[{const int \&}]{n\+Contour\+Times}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a00a385b4409e7f0bbb40a3b4803ad94d}\index{AlgorithmApplication@{AlgorithmApplication}!writeSolidSupportData@{writeSolidSupportData}}
+\index{writeSolidSupportData@{writeSolidSupportData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSolidSupportData()}{writeSolidSupportData()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a00a385b4409e7f0bbb40a3b4803ad94d} 
+void Algorithm\+Application\+::write\+Solid\+Support\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{solid\+Support}{, }\item[{const double \&}]{border\+Speed\+Factor}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+LLine\+Space}{, }\item[{const double \&}]{f\+SLine\+Space}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_ae983d248d2efbc7c7c835e07c9045f1e}\index{AlgorithmApplication@{AlgorithmApplication}!writeSolidSupportHatching\_p@{writeSolidSupportHatching\_p}}
+\index{writeSolidSupportHatching\_p@{writeSolidSupportHatching\_p}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSolidSupportHatching\_p()}{writeSolidSupportHatching\_p()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ae983d248d2efbc7c7c835e07c9045f1e} 
+void Algorithm\+Application\+::write\+Solid\+Support\+Hatching\+\_\+p (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a9cd26ccd45bf0c4cbc927c68abd51e3b}\index{AlgorithmApplication@{AlgorithmApplication}!writeSupportAreaToPaths@{writeSupportAreaToPaths}}
+\index{writeSupportAreaToPaths@{writeSupportAreaToPaths}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSupportAreaToPaths()}{writeSupportAreaToPaths()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a9cd26ccd45bf0c4cbc927c68abd51e3b} 
+void Algorithm\+Application\+::write\+Support\+Area\+To\+Paths (\begin{DoxyParamCaption}\item[{QList$<$ AREAINFOPTR $>$ \&}]{list\+Area}{, }\item[{Paths \&}]{support\+Paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_a2cef465af97c2aae04af7b16e70df735}\index{AlgorithmApplication@{AlgorithmApplication}!writeSupportToSList@{writeSupportToSList}}
+\index{writeSupportToSList@{writeSupportToSList}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSupportToSList()}{writeSupportToSList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a2cef465af97c2aae04af7b16e70df735} 
+void Algorithm\+Application\+::write\+Support\+To\+SList (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{const double \&}]{f\+Speed\+Ratio}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_aeb42216ae7bad9524bc4102bf384e01d}\index{AlgorithmApplication@{AlgorithmApplication}!writeSupportToSList@{writeSupportToSList}}
+\index{writeSupportToSList@{writeSupportToSList}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSupportToSList()}{writeSupportToSList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aeb42216ae7bad9524bc4102bf384e01d} 
+void Algorithm\+Application\+::write\+Support\+To\+SList (\begin{DoxyParamCaption}\item[{QList$<$ AREAINFOPTR $>$ \&}]{list\+Area}{, }\item[{const double \&}]{f\+Speed\+Ratio}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_application_aeaf740375bebe9f198bb28ba04c54164}\index{AlgorithmApplication@{AlgorithmApplication}!writeSupportToSList@{writeSupportToSList}}
+\index{writeSupportToSList@{writeSupportToSList}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSupportToSList()}{writeSupportToSList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aeaf740375bebe9f198bb28ba04c54164} 
+void Algorithm\+Application\+::write\+Support\+To\+SList (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}} \&}]{m\+UFile\+Data}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a47fb0809d126cfe7ddaa952c294ea01d}\index{AlgorithmApplication@{AlgorithmApplication}!writeSupportToSList\_p@{writeSupportToSList\_p}}
+\index{writeSupportToSList\_p@{writeSupportToSList\_p}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeSupportToSList\_p()}{writeSupportToSList\_p()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a47fb0809d126cfe7ddaa952c294ea01d} 
+void Algorithm\+Application\+::write\+Support\+To\+SList\+\_\+p (\begin{DoxyParamCaption}\item[{QList$<$ AREAINFOPTR $>$ \texorpdfstring{$\ast$}{*}}]{list\+Area}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const \mbox{\hyperlink{algorithmapplication_8h_a1d533402408d574b4741df9285a99836}{Func\+Split\+Scan\+Data}} \&\&}]{split\+Func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_acbae04d40d1f1f2d3acbe9dd175b57aa}\index{AlgorithmApplication@{AlgorithmApplication}!writeUPDownData@{writeUPDownData}}
+\index{writeUPDownData@{writeUPDownData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeUPDownData()}{writeUPDownData()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_acbae04d40d1f1f2d3acbe9dd175b57aa} 
+void Algorithm\+Application\+::write\+UPDown\+Data (\begin{DoxyParamCaption}\item[{const Paths \&}]{path\+Target}{, }\item[{const int \&}]{n\+Index}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{, }\item[{UPSURFACEPARAMETERS \texorpdfstring{$\ast$}{*}}]{lp\+Surface\+Paras}{, }\item[{\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}} \&}]{m\+UFile\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_ade9eafdad1a1a5e909dd08238022c612}\index{AlgorithmApplication@{AlgorithmApplication}!writeUpFileData@{writeUpFileData}}
+\index{writeUpFileData@{writeUpFileData}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeUpFileData()}{writeUpFileData()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ade9eafdad1a1a5e909dd08238022c612} 
+void Algorithm\+Application\+::write\+Up\+File\+Data (\begin{DoxyParamCaption}\item[{Paths \&}]{paths\+\_\+\+Up}{, }\item[{const int \&}]{n\+Surface\+Index}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_ab308c3f2c2e8d11ff24f5585c5f9aaa8}\index{AlgorithmApplication@{AlgorithmApplication}!writeUpFileData\_p@{writeUpFileData\_p}}
+\index{writeUpFileData\_p@{writeUpFileData\_p}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{writeUpFileData\_p()}{writeUpFileData\_p()}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ab308c3f2c2e8d11ff24f5585c5f9aaa8} 
+void Algorithm\+Application\+::write\+Up\+File\+Data\+\_\+p (\begin{DoxyParamCaption}\item[{const Paths \&}]{path\+Target}{, }\item[{const int \&}]{n\+Surface\+Index}{, }\item[{const double \&}]{f\+Speed\+Ratio}{, }\item[{const double \&}]{f\+Spacing\+Ratio}{, }\item[{const int \&}]{n\+Scanner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_algorithm_application_a89c4fac4d0e1d688bb8a375974a9af1f}\index{AlgorithmApplication@{AlgorithmApplication}!\_borderDisInfoVec@{\_borderDisInfoVec}}
+\index{\_borderDisInfoVec@{\_borderDisInfoVec}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{\_borderDisInfoVec}{\_borderDisInfoVec}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a89c4fac4d0e1d688bb8a375974a9af1f} 
+std\+::vector$<$\mbox{\hyperlink{struct_part_result}{Part\+Result}}$>$ Algorithm\+Application\+::\+\_\+border\+Dis\+Info\+Vec\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_aadf0f78e61df55e76847892fcd43654f}\index{AlgorithmApplication@{AlgorithmApplication}!\_distributionPathVec@{\_distributionPathVec}}
+\index{\_distributionPathVec@{\_distributionPathVec}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{\_distributionPathVec}{\_distributionPathVec}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aadf0f78e61df55e76847892fcd43654f} 
+std\+::vector$<$Path$>$ Algorithm\+Application\+::\+\_\+distribution\+Path\+Vec\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a832fc907919c482fd2c842b3eb9a8473}\index{AlgorithmApplication@{AlgorithmApplication}!\_layerHei@{\_layerHei}}
+\index{\_layerHei@{\_layerHei}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{\_layerHei}{\_layerHei}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a832fc907919c482fd2c842b3eb9a8473} 
+int Algorithm\+Application\+::\+\_\+layer\+Hei = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_aa0bcbb5f14971cfac9c846464a4adbed}\index{AlgorithmApplication@{AlgorithmApplication}!\_solidDisInfoVec@{\_solidDisInfoVec}}
+\index{\_solidDisInfoVec@{\_solidDisInfoVec}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{\_solidDisInfoVec}{\_solidDisInfoVec}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aa0bcbb5f14971cfac9c846464a4adbed} 
+std\+::vector$<$\mbox{\hyperlink{struct_part_result}{Part\+Result}}$>$ Algorithm\+Application\+::\+\_\+solid\+Dis\+Info\+Vec\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_afbde76d7a1f46e43506f877dd4f07ecf}\index{AlgorithmApplication@{AlgorithmApplication}!\_supportDisInfoVec@{\_supportDisInfoVec}}
+\index{\_supportDisInfoVec@{\_supportDisInfoVec}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{\_supportDisInfoVec}{\_supportDisInfoVec}}
+{\footnotesize\ttfamily \label{class_algorithm_application_afbde76d7a1f46e43506f877dd4f07ecf} 
+std\+::vector$<$\mbox{\hyperlink{struct_part_result}{Part\+Result}}$>$ Algorithm\+Application\+::\+\_\+support\+Dis\+Info\+Vec\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_aa0c5e9ad46a79aca2bf89879a51de9c2}\index{AlgorithmApplication@{AlgorithmApplication}!\_writeBuff@{\_writeBuff}}
+\index{\_writeBuff@{\_writeBuff}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{\_writeBuff}{\_writeBuff}}
+{\footnotesize\ttfamily \label{class_algorithm_application_aa0c5e9ad46a79aca2bf89879a51de9c2} 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\texorpdfstring{$\ast$}{*} Algorithm\+Application\+::\+\_\+write\+Buff = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_af9a2de49c130cee2b6ccffa97c56695c}\index{AlgorithmApplication@{AlgorithmApplication}!curScannerIndex@{curScannerIndex}}
+\index{curScannerIndex@{curScannerIndex}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{curScannerIndex}{curScannerIndex}}
+{\footnotesize\ttfamily \label{class_algorithm_application_af9a2de49c130cee2b6ccffa97c56695c} 
+int Algorithm\+Application\+::cur\+Scanner\+Index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a834ec8c98737ee2923816f8759b465ab}\index{AlgorithmApplication@{AlgorithmApplication}!fHatchingAngle@{fHatchingAngle}}
+\index{fHatchingAngle@{fHatchingAngle}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{fHatchingAngle}{fHatchingAngle}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a834ec8c98737ee2923816f8759b465ab} 
+double Algorithm\+Application\+::f\+Hatching\+Angle = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_ab2a32cd01c91d84c0c22e052c05f185a}\index{AlgorithmApplication@{AlgorithmApplication}!fSolidSupportHatchingAngle@{fSolidSupportHatchingAngle}}
+\index{fSolidSupportHatchingAngle@{fSolidSupportHatchingAngle}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{fSolidSupportHatchingAngle}{fSolidSupportHatchingAngle}}
+{\footnotesize\ttfamily \label{class_algorithm_application_ab2a32cd01c91d84c0c22e052c05f185a} 
+double Algorithm\+Application\+::f\+Solid\+Support\+Hatching\+Angle = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a41f31aeb2e6aa2bb902b9deb527d1103}\index{AlgorithmApplication@{AlgorithmApplication}!lpBEnhancedParas@{lpBEnhancedParas}}
+\index{lpBEnhancedParas@{lpBEnhancedParas}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{lpBEnhancedParas}{lpBEnhancedParas}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a41f31aeb2e6aa2bb902b9deb527d1103} 
+QShared\+Pointer$<$\mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a}{Utek\+::\+STARTCHANGERPARA}}$>$ Algorithm\+Application\+::lp\+BEnhanced\+Paras = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a2c2b5408d59cbe73654e60143811d686}\index{AlgorithmApplication@{AlgorithmApplication}!m\_bPlatPlus@{m\_bPlatPlus}}
+\index{m\_bPlatPlus@{m\_bPlatPlus}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{m\_bPlatPlus}{m\_bPlatPlus}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a2c2b5408d59cbe73654e60143811d686} 
+bool Algorithm\+Application\+::m\+\_\+b\+Plat\+Plus = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a748e1ec3461b1f593a9cf3d373ecd083}\index{AlgorithmApplication@{AlgorithmApplication}!nExportFileMode@{nExportFileMode}}
+\index{nExportFileMode@{nExportFileMode}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{nExportFileMode}{nExportFileMode}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a748e1ec3461b1f593a9cf3d373ecd083} 
+int Algorithm\+Application\+::n\+Export\+File\+Mode = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a8156209982818476e90df3543e3b42dd}\index{AlgorithmApplication@{AlgorithmApplication}!scanLinesSortor@{scanLinesSortor}}
+\index{scanLinesSortor@{scanLinesSortor}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{scanLinesSortor}{scanLinesSortor}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a8156209982818476e90df3543e3b42dd} 
+QShared\+Pointer$<$\mbox{\hyperlink{class_scan_lines_sortor}{Scan\+Lines\+Sortor}}$>$ Algorithm\+Application\+::scan\+Lines\+Sortor = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_a53ecf4dd53cf59167924eebaeeecb0e8}\index{AlgorithmApplication@{AlgorithmApplication}!vecSplicingArea@{vecSplicingArea}}
+\index{vecSplicingArea@{vecSplicingArea}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{vecSplicingArea}{vecSplicingArea}}
+{\footnotesize\ttfamily \label{class_algorithm_application_a53ecf4dd53cf59167924eebaeeecb0e8} 
+QVector$<$\mbox{\hyperlink{struct_splicing_area}{Splicing\+Area}}$>$ Algorithm\+Application\+::vec\+Splicing\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_application_af102aa0b384daed38422995ca9703ca2}\index{AlgorithmApplication@{AlgorithmApplication}!vecSplicingLine@{vecSplicingLine}}
+\index{vecSplicingLine@{vecSplicingLine}!AlgorithmApplication@{AlgorithmApplication}}
+\doxysubsubsection{\texorpdfstring{vecSplicingLine}{vecSplicingLine}}
+{\footnotesize\ttfamily \label{class_algorithm_application_af102aa0b384daed38422995ca9703ca2} 
+QVector$<$\mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}}$>$ Algorithm\+Application\+::vec\+Splicing\+Line\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algorithmapplication_8h}{algorithmapplication.\+h}}\item 
+\mbox{\hyperlink{algorithmapplication_8cpp}{algorithmapplication.\+cpp}}\end{DoxyCompactItemize}

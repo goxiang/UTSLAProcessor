@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: uspfiledef.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('uspfiledef_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">uspfiledef.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;QtGlobal&gt;</code><br />
+<code>#include &lt;QVector&gt;</code><br />
+<code>#include &lt;QMutex&gt;</code><br />
+<code>#include &lt;QFile&gt;</code><br />
+<code>#include &lt;QSharedPointer&gt;</code><br />
+<code>#include &lt;QDebug&gt;</code><br />
+</div>
+<p><a href="uspfiledef_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_f_f_w_r_i_t_e_d_a_t_a.html">UFFWRITEDATA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_f_i_l_e_d_a_t_a.html">UFILEDATA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:abbc0bb2d96622a76f20c00c549b81389" id="r_abbc0bb2d96622a76f20c00c549b81389"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72">__FILE_SECTIONID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbc0bb2d96622a76f20c00c549b81389">FILE_SECTIONID</a></td></tr>
+<tr class="separator:abbc0bb2d96622a76f20c00c549b81389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91daa2136671e89e1287d6857a990ae8" id="r_a91daa2136671e89e1287d6857a990ae8"><td class="memItemLeft" align="right" valign="top">typedef QSharedPointer&lt; <a class="el" href="struct_u_f_f_w_r_i_t_e_d_a_t_a.html">UFFWRITEDATA</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91daa2136671e89e1287d6857a990ae8">UFFWDATAPTR</a></td></tr>
+<tr class="separator:a91daa2136671e89e1287d6857a990ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a33472975c4e219d671961ac701c74182" id="r_a33472975c4e219d671961ac701c74182"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="#a33472975c4e219d671961ac701c74182a5c1b3ea062541039d95de6c5a6fefadb">UFFWRITE_BEGIN</a> = 0
+, <a class="el" href="#a33472975c4e219d671961ac701c74182a87b6ad567a7d0c58e1a1e9b4bf28c848">UFFWRITE_END</a>
+ }</td></tr>
+<tr class="separator:a33472975c4e219d671961ac701c74182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506156d9309c69ccab6f8c9c66973b72" id="r_a506156d9309c69ccab6f8c9c66973b72"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a506156d9309c69ccab6f8c9c66973b72">__FILE_SECTIONID</a> { <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72aca4a81835c0e98b41081925446c4d679">SECTION_LAYER</a> = 0xB
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72adb64779740a7357af57b5ce20dc57541">SECTION_PARTINDEX</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a5022b3baac1c509960d29da899d50759">SECTION_MINX</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a2740f8df0b8b7f5d4a8bab1d4a35c003">SECTION_MAXX</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a0bacb9d1d57ebc4213343f3fb07f5ec2">SECTION_MINY</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a195eda6a6a43a68afe3f5a18ef58f56c">SECTION_MAXY</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a54d293cebe1fa85c5dad25966010f7ae">SECTION_LASERPOWER</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a672ace573c1cc09e3b84737e056d4068">SECTION_MARKSPEED</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a13043892bf5e1cd12c4e7261b1fe7892">SECTION_FOCUSSHIFT</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72aff2b72bebd69fa1e27a8bd6d9fb2f704">SECTION_CURRENTBEAMINDEX</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a77220cf1a92d14a954774548b62ccab8">SECTION_LAYERAREAS</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72aa1e63b35a5b6a7aa3d9993a9a359d537">SECTION_CURRENTSCANNERINDEX</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a5f67d86d36470307473000c625950cf8">SECTION_POLYGON</a> = 0x30
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a0bb50446b9a4f1ac5e4ec91355d44084">SECTION_POLYGONCOOR</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a041febfaf7a50e2c9d15d5c4d2db7a34">SECTION_HATCH</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72ab3f1f6a157d669cd26fd11307c903d22">SECTION_HATCHCOOR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a17453789a06cec3fec136807be644013">SECTION_SUPPORT</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a0693c3a327a9f77351297c01dd4866ff">SECTION_SUPPORTCOOR</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a93d6068a4bd22a4dacdcabf5ce9207b1">SECTION_HATCH_DOWNFILL</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72ad2b41c6be6f18d312814fb379c1fe371">SECTION_HATCHDOWNFILLCOOR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72aeafe781d644db76dfa9ec3c990678ed2">SECTION_HATCH_UPFILL</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a2e1b7a556e127c861110a65d37a64ef7">SECTION_HATCHUPFILLCOOR</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a5513522970b77fc4edc220c104fa2c89">SECTION_HATCH_SMALL</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a86143ba9f629cd245217431e76245557">SECTION_HATCHSMALL_COOR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a19af26280a2f410f3995ea35c36c1b73">SECTION_LAYEREND</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a40d838b0939d7897ef0b37d3bc0d1151">SECTION_FILEEND</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a590b9f26a46c5b42e9c945241476b926">SECTION_SSHATCH</a> = 0x50
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72af545445f5fc1956a66a53f5c537140ee">SECTION_SSHATCHCOOR</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a45bb897f23cb952cc4c5b6cb0f43ce9d">SECTION_SSPOLYGON</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a3dea7d03e6fe97504dfa3bcb9ca258b8">SECTION_SSPOLYGONCOOR</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a6cf7918eb867be2861a87484714b2489">SECTION_SCANTYPE_JUMP</a> = 0x60
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a9242b7e6173871e8377ef97e593e2f9b">SECTION_SCANTYPE_MARK</a>
+, <br />
+&#160;&#160;<a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a8409fd1ff81ec5d3f87bbf0ede42fed2">SECTION_SCANTYPE_MARKLOOP</a>
+, <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72a657fbead48b5fe6f883cfdea43b48031">SECTION_SCANTYPE_FINISHED</a>
+<br />
+ }</td></tr>
+<tr class="separator:a506156d9309c69ccab6f8c9c66973b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9c8c392c2e62ad12e1fc787aafe416a7" id="r_a9c8c392c2e62ad12e1fc787aafe416a7"><td class="memItemLeft" align="right" valign="top">QDebug&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c8c392c2e62ad12e1fc787aafe416a7">operator&lt;&lt;</a> (QDebug debug, const <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &amp;line)</td></tr>
+<tr class="separator:a9c8c392c2e62ad12e1fc787aafe416a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="abbc0bb2d96622a76f20c00c549b81389" name="abbc0bb2d96622a76f20c00c549b81389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc0bb2d96622a76f20c00c549b81389">&#9670;&#160;</a></span>FILE_SECTIONID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72">__FILE_SECTIONID</a> <a class="el" href="#abbc0bb2d96622a76f20c00c549b81389">FILE_SECTIONID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91daa2136671e89e1287d6857a990ae8" name="a91daa2136671e89e1287d6857a990ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91daa2136671e89e1287d6857a990ae8">&#9670;&#160;</a></span>UFFWDATAPTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef QSharedPointer&lt;<a class="el" href="struct_u_f_f_w_r_i_t_e_d_a_t_a.html">UFFWRITEDATA</a>&gt; <a class="el" href="#a91daa2136671e89e1287d6857a990ae8">UFFWDATAPTR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a33472975c4e219d671961ac701c74182" name="a33472975c4e219d671961ac701c74182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33472975c4e219d671961ac701c74182">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a33472975c4e219d671961ac701c74182a5c1b3ea062541039d95de6c5a6fefadb" name="a33472975c4e219d671961ac701c74182a5c1b3ea062541039d95de6c5a6fefadb"></a>UFFWRITE_BEGIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33472975c4e219d671961ac701c74182a87b6ad567a7d0c58e1a1e9b4bf28c848" name="a33472975c4e219d671961ac701c74182a87b6ad567a7d0c58e1a1e9b4bf28c848"></a>UFFWRITE_END&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a506156d9309c69ccab6f8c9c66973b72" name="a506156d9309c69ccab6f8c9c66973b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506156d9309c69ccab6f8c9c66973b72">&#9670;&#160;</a></span>__FILE_SECTIONID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a506156d9309c69ccab6f8c9c66973b72">__FILE_SECTIONID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72aca4a81835c0e98b41081925446c4d679" name="a506156d9309c69ccab6f8c9c66973b72aca4a81835c0e98b41081925446c4d679"></a>SECTION_LAYER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72adb64779740a7357af57b5ce20dc57541" name="a506156d9309c69ccab6f8c9c66973b72adb64779740a7357af57b5ce20dc57541"></a>SECTION_PARTINDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a5022b3baac1c509960d29da899d50759" name="a506156d9309c69ccab6f8c9c66973b72a5022b3baac1c509960d29da899d50759"></a>SECTION_MINX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a2740f8df0b8b7f5d4a8bab1d4a35c003" name="a506156d9309c69ccab6f8c9c66973b72a2740f8df0b8b7f5d4a8bab1d4a35c003"></a>SECTION_MAXX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a0bacb9d1d57ebc4213343f3fb07f5ec2" name="a506156d9309c69ccab6f8c9c66973b72a0bacb9d1d57ebc4213343f3fb07f5ec2"></a>SECTION_MINY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a195eda6a6a43a68afe3f5a18ef58f56c" name="a506156d9309c69ccab6f8c9c66973b72a195eda6a6a43a68afe3f5a18ef58f56c"></a>SECTION_MAXY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a54d293cebe1fa85c5dad25966010f7ae" name="a506156d9309c69ccab6f8c9c66973b72a54d293cebe1fa85c5dad25966010f7ae"></a>SECTION_LASERPOWER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a672ace573c1cc09e3b84737e056d4068" name="a506156d9309c69ccab6f8c9c66973b72a672ace573c1cc09e3b84737e056d4068"></a>SECTION_MARKSPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a13043892bf5e1cd12c4e7261b1fe7892" name="a506156d9309c69ccab6f8c9c66973b72a13043892bf5e1cd12c4e7261b1fe7892"></a>SECTION_FOCUSSHIFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72aff2b72bebd69fa1e27a8bd6d9fb2f704" name="a506156d9309c69ccab6f8c9c66973b72aff2b72bebd69fa1e27a8bd6d9fb2f704"></a>SECTION_CURRENTBEAMINDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a77220cf1a92d14a954774548b62ccab8" name="a506156d9309c69ccab6f8c9c66973b72a77220cf1a92d14a954774548b62ccab8"></a>SECTION_LAYERAREAS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72aa1e63b35a5b6a7aa3d9993a9a359d537" name="a506156d9309c69ccab6f8c9c66973b72aa1e63b35a5b6a7aa3d9993a9a359d537"></a>SECTION_CURRENTSCANNERINDEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a5f67d86d36470307473000c625950cf8" name="a506156d9309c69ccab6f8c9c66973b72a5f67d86d36470307473000c625950cf8"></a>SECTION_POLYGON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a0bb50446b9a4f1ac5e4ec91355d44084" name="a506156d9309c69ccab6f8c9c66973b72a0bb50446b9a4f1ac5e4ec91355d44084"></a>SECTION_POLYGONCOOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a041febfaf7a50e2c9d15d5c4d2db7a34" name="a506156d9309c69ccab6f8c9c66973b72a041febfaf7a50e2c9d15d5c4d2db7a34"></a>SECTION_HATCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72ab3f1f6a157d669cd26fd11307c903d22" name="a506156d9309c69ccab6f8c9c66973b72ab3f1f6a157d669cd26fd11307c903d22"></a>SECTION_HATCHCOOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a17453789a06cec3fec136807be644013" name="a506156d9309c69ccab6f8c9c66973b72a17453789a06cec3fec136807be644013"></a>SECTION_SUPPORT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a0693c3a327a9f77351297c01dd4866ff" name="a506156d9309c69ccab6f8c9c66973b72a0693c3a327a9f77351297c01dd4866ff"></a>SECTION_SUPPORTCOOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a93d6068a4bd22a4dacdcabf5ce9207b1" name="a506156d9309c69ccab6f8c9c66973b72a93d6068a4bd22a4dacdcabf5ce9207b1"></a>SECTION_HATCH_DOWNFILL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72ad2b41c6be6f18d312814fb379c1fe371" name="a506156d9309c69ccab6f8c9c66973b72ad2b41c6be6f18d312814fb379c1fe371"></a>SECTION_HATCHDOWNFILLCOOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72aeafe781d644db76dfa9ec3c990678ed2" name="a506156d9309c69ccab6f8c9c66973b72aeafe781d644db76dfa9ec3c990678ed2"></a>SECTION_HATCH_UPFILL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a2e1b7a556e127c861110a65d37a64ef7" name="a506156d9309c69ccab6f8c9c66973b72a2e1b7a556e127c861110a65d37a64ef7"></a>SECTION_HATCHUPFILLCOOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a5513522970b77fc4edc220c104fa2c89" name="a506156d9309c69ccab6f8c9c66973b72a5513522970b77fc4edc220c104fa2c89"></a>SECTION_HATCH_SMALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a86143ba9f629cd245217431e76245557" name="a506156d9309c69ccab6f8c9c66973b72a86143ba9f629cd245217431e76245557"></a>SECTION_HATCHSMALL_COOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a19af26280a2f410f3995ea35c36c1b73" name="a506156d9309c69ccab6f8c9c66973b72a19af26280a2f410f3995ea35c36c1b73"></a>SECTION_LAYEREND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a40d838b0939d7897ef0b37d3bc0d1151" name="a506156d9309c69ccab6f8c9c66973b72a40d838b0939d7897ef0b37d3bc0d1151"></a>SECTION_FILEEND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a590b9f26a46c5b42e9c945241476b926" name="a506156d9309c69ccab6f8c9c66973b72a590b9f26a46c5b42e9c945241476b926"></a>SECTION_SSHATCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72af545445f5fc1956a66a53f5c537140ee" name="a506156d9309c69ccab6f8c9c66973b72af545445f5fc1956a66a53f5c537140ee"></a>SECTION_SSHATCHCOOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a45bb897f23cb952cc4c5b6cb0f43ce9d" name="a506156d9309c69ccab6f8c9c66973b72a45bb897f23cb952cc4c5b6cb0f43ce9d"></a>SECTION_SSPOLYGON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a3dea7d03e6fe97504dfa3bcb9ca258b8" name="a506156d9309c69ccab6f8c9c66973b72a3dea7d03e6fe97504dfa3bcb9ca258b8"></a>SECTION_SSPOLYGONCOOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a6cf7918eb867be2861a87484714b2489" name="a506156d9309c69ccab6f8c9c66973b72a6cf7918eb867be2861a87484714b2489"></a>SECTION_SCANTYPE_JUMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a9242b7e6173871e8377ef97e593e2f9b" name="a506156d9309c69ccab6f8c9c66973b72a9242b7e6173871e8377ef97e593e2f9b"></a>SECTION_SCANTYPE_MARK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a8409fd1ff81ec5d3f87bbf0ede42fed2" name="a506156d9309c69ccab6f8c9c66973b72a8409fd1ff81ec5d3f87bbf0ede42fed2"></a>SECTION_SCANTYPE_MARKLOOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a506156d9309c69ccab6f8c9c66973b72a657fbead48b5fe6f883cfdea43b48031" name="a506156d9309c69ccab6f8c9c66973b72a657fbead48b5fe6f883cfdea43b48031"></a>SECTION_SCANTYPE_FINISHED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a9c8c392c2e62ad12e1fc787aafe416a7" name="a9c8c392c2e62ad12e1fc787aafe416a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8c392c2e62ad12e1fc787aafe416a7">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDebug operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDebug</td>          <td class="paramname"><span class="paramname"><em>debug</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="uspfiledef_8h.html">uspfiledef.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+\doxysection{sljobfilewriter.\+cpp 文件参考}
+\hypertarget{sljobfilewriter_8cpp}{}\label{sljobfilewriter_8cpp}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+{\ttfamily \#include "{}sljobfilewriter.\+h"{}}\newline
+{\ttfamily \#include "{}algorithmapplication.\+h"{}}\newline
+{\ttfamily \#include "{}defnum2qstring.\+h"{}}\newline
+{\ttfamily \#include "{}sljfilewriter.\+h"{}}\newline
+{\ttfamily \#include "{}publicheader.\+h"{}}\newline
+{\ttfamily \#include "{}writeuff.\+h"{}}\newline
+{\ttfamily \#include $<$QSettings$>$}\newline
+{\ttfamily \#include $<$QFile\+Info$>$}\newline
+{\ttfamily \#include $<$QDate\+Time$>$}\newline
+{\ttfamily \#include $<$QJson\+Array$>$}\newline
+{\ttfamily \#include $<$QJson\+Object$>$}\newline
+{\ttfamily \#include $<$QJson\+Document$>$}\newline
+{\ttfamily \#include $<$QXml\+Stream\+Writer$>$}\newline
+{\ttfamily \#include $<$QCore\+Application$>$}\newline
+{\ttfamily \#include $<$QCryptographic\+Hash$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_scan_sort_types}{Scan\+Sort\+Types}}
+\item 
+struct \mbox{\hyperlink{struct_meta_x_m_l_part}{Meta\+XMLPart}}
+\item 
+struct \mbox{\hyperlink{struct_parameter}{Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_block_info}{Block\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sljobfilewriter_8cpp_a03b106e8e11e2a554dfde11d91effe77}{PARAMAPSIZE}}~9
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+QDebug \mbox{\hyperlink{sljobfilewriter_8cpp_ab8be5bf4401beb0d735bd30d0f8e4b1f}{operator$<$$<$}} (QDebug debug, const \mbox{\hyperlink{struct_parameter}{Parameter}} \&p)
+\item 
+QJson\+Object \mbox{\hyperlink{sljobfilewriter_8cpp_a0da5cdccc8f7b150430ca13e9f290b4a}{get\+Object}} (const QByte\+Array \&data, bool \texorpdfstring{$\ast$}{*}successful=nullptr)
+\item 
+QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ \mbox{\hyperlink{sljobfilewriter_8cpp_a64b59acd1a32abb9842e59eef62bb651}{sort\+Block}} (const \mbox{\hyperlink{struct_scan_sort_types}{Scan\+Sort\+Types}} \&, const int \&, const QString\+List \&, const QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&)
+\item 
+void \mbox{\hyperlink{sljobfilewriter_8cpp_a8c9c990f472cda8d0c2a655aa0470e37}{recalc\+Layerout}} (QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ \&file\+Block\+List, const int \&wind\+Direction)
+\item 
+QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ \mbox{\hyperlink{sljobfilewriter_8cpp_aa50a3a3d8025c7b241aeb88b99c7d8c3}{sort\+Block\+\_\+total\+File}} (const \mbox{\hyperlink{struct_scan_sort_types}{Scan\+Sort\+Types}} \&sort\+Paras, const int \&layer\+Hei, const QString\+List \&list\+Part\+Name, const QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&bin\+File\+List)
+\item 
+double \mbox{\hyperlink{sljobfilewriter_8cpp_a8c99974425b562995a7fce96c206f085}{get\+Layer\+Pos\+Factor}} (const int \&layer\+Hei, const \mbox{\hyperlink{struct_bin_file}{Bin\+File}} \&bin\+File, const int \&wind\+Direction)
+\item 
+QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ \mbox{\hyperlink{sljobfilewriter_8cpp_a56f6881ec2940081d30cf6fa319153b3}{sort\+Block\+\_\+single\+File}} (const \mbox{\hyperlink{struct_scan_sort_types}{Scan\+Sort\+Types}} \&sort\+Paras, const int \&layer\+Hei, const QString\+List \&list\+Part\+Name, const QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&bin\+File\+List)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{sljobfilewriter_8cpp_a03b106e8e11e2a554dfde11d91effe77}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!PARAMAPSIZE@{PARAMAPSIZE}}
+\index{PARAMAPSIZE@{PARAMAPSIZE}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{PARAMAPSIZE}{PARAMAPSIZE}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_a03b106e8e11e2a554dfde11d91effe77} 
+\#define PARAMAPSIZE~9}
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{sljobfilewriter_8cpp_a8c99974425b562995a7fce96c206f085}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!getLayerPosFactor@{getLayerPosFactor}}
+\index{getLayerPosFactor@{getLayerPosFactor}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{getLayerPosFactor()}{getLayerPosFactor()}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_a8c99974425b562995a7fce96c206f085} 
+double get\+Layer\+Pos\+Factor (\begin{DoxyParamCaption}\item[{const int \&}]{layer\+Hei}{, }\item[{const \mbox{\hyperlink{struct_bin_file}{Bin\+File}} \&}]{bin\+File}{, }\item[{const int \&}]{wind\+Direction}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sljobfilewriter_8cpp_a0da5cdccc8f7b150430ca13e9f290b4a}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!getObject@{getObject}}
+\index{getObject@{getObject}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{getObject()}{getObject()}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_a0da5cdccc8f7b150430ca13e9f290b4a} 
+QJson\+Object get\+Object (\begin{DoxyParamCaption}\item[{const QByte\+Array \&}]{data}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{successful}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+\Hypertarget{sljobfilewriter_8cpp_ab8be5bf4401beb0d735bd30d0f8e4b1f}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_ab8be5bf4401beb0d735bd30d0f8e4b1f} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const \mbox{\hyperlink{struct_parameter}{Parameter}} \&}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{sljobfilewriter_8cpp_a8c9c990f472cda8d0c2a655aa0470e37}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!recalcLayerout@{recalcLayerout}}
+\index{recalcLayerout@{recalcLayerout}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{recalcLayerout()}{recalcLayerout()}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_a8c9c990f472cda8d0c2a655aa0470e37} 
+void recalc\+Layerout (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ \&}]{file\+Block\+List}{, }\item[{const int \&}]{wind\+Direction}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sljobfilewriter_8cpp_a64b59acd1a32abb9842e59eef62bb651}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!sortBlock@{sortBlock}}
+\index{sortBlock@{sortBlock}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{sortBlock()}{sortBlock()}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_a64b59acd1a32abb9842e59eef62bb651} 
+QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ sort\+Block (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_scan_sort_types}{Scan\+Sort\+Types}} \&}]{sort\+Paras}{, }\item[{const int \&}]{layer\+Hei}{, }\item[{const QString\+List \&}]{list\+Part\+Name}{, }\item[{const QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&}]{bin\+File\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sljobfilewriter_8cpp_a56f6881ec2940081d30cf6fa319153b3}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!sortBlock\_singleFile@{sortBlock\_singleFile}}
+\index{sortBlock\_singleFile@{sortBlock\_singleFile}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{sortBlock\_singleFile()}{sortBlock\_singleFile()}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_a56f6881ec2940081d30cf6fa319153b3} 
+QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ sort\+Block\+\_\+single\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_scan_sort_types}{Scan\+Sort\+Types}} \&}]{sort\+Paras}{, }\item[{const int \&}]{layer\+Hei}{, }\item[{const QString\+List \&}]{list\+Part\+Name}{, }\item[{const QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&}]{bin\+File\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{sljobfilewriter_8cpp_aa50a3a3d8025c7b241aeb88b99c7d8c3}\index{sljobfilewriter.cpp@{sljobfilewriter.cpp}!sortBlock\_totalFile@{sortBlock\_totalFile}}
+\index{sortBlock\_totalFile@{sortBlock\_totalFile}!sljobfilewriter.cpp@{sljobfilewriter.cpp}}
+\doxysubsubsection{\texorpdfstring{sortBlock\_totalFile()}{sortBlock\_totalFile()}}
+{\footnotesize\ttfamily \label{sljobfilewriter_8cpp_aa50a3a3d8025c7b241aeb88b99c7d8c3} 
+QList$<$ \mbox{\hyperlink{struct_file_block_map}{File\+Block\+Map}} $>$ sort\+Block\+\_\+total\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_scan_sort_types}{Scan\+Sort\+Types}} \&}]{sort\+Paras}{, }\item[{const int \&}]{layer\+Hei}{, }\item[{const QString\+List \&}]{list\+Part\+Name}{, }\item[{const QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&}]{bin\+File\+List}{}\end{DoxyParamCaption})}
+

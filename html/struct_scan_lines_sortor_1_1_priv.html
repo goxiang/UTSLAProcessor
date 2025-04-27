@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: ScanLinesSortor::Priv结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_scan_lines_sortor_1_1_priv.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_scan_lines_sortor_1_1_priv-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">ScanLinesSortor::Priv结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac8b0d99082630c7803fa29922aa90cbf" id="r_ac8b0d99082630c7803fa29922aa90cbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8b0d99082630c7803fa29922aa90cbf">calcSortLineVec</a> (const QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;srcVec, QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;sortLineVec)</td></tr>
+<tr class="memdesc:ac8b0d99082630c7803fa29922aa90cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">从原始扫描线数据中提取有效的扫描线段信息  <br /></td></tr>
+<tr class="separator:ac8b0d99082630c7803fa29922aa90cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae283f96ef968b3f2c819c2f1c154b87" id="r_aae283f96ef968b3f2c819c2f1c154b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae283f96ef968b3f2c819c2f1c154b87">calcSortLineVec</a> (const Paths &amp;paths, QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;sortLineVec)</td></tr>
+<tr class="memdesc:aae283f96ef968b3f2c819c2f1c154b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">从路径集合中提取扫描线段信息  <br /></td></tr>
+<tr class="separator:aae283f96ef968b3f2c819c2f1c154b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0dc656f08a0f31aac1637fbc0717592" id="r_ae0dc656f08a0f31aac1637fbc0717592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0dc656f08a0f31aac1637fbc0717592">recalcScanLine</a> (QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;srcVec, QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; sortLineVec, const QVector&lt; int &gt; &amp;indexVec)</td></tr>
+<tr class="memdesc:ae0dc656f08a0f31aac1637fbc0717592"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据优化后的顺序重新计算扫描线序列  <br /></td></tr>
+<tr class="separator:ae0dc656f08a0f31aac1637fbc0717592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989d2ad7673c5b541268ba1bdfa9ff68" id="r_a989d2ad7673c5b541268ba1bdfa9ff68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a989d2ad7673c5b541268ba1bdfa9ff68">recalcScanLine</a> (Paths &amp;srcVec, QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; sortLineVec, const QVector&lt; int &gt; &amp;indexVec)</td></tr>
+<tr class="memdesc:a989d2ad7673c5b541268ba1bdfa9ff68"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据优化后的顺序重新计算路径序列  <br /></td></tr>
+<tr class="separator:a989d2ad7673c5b541268ba1bdfa9ff68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b7a0f26235ccd1af88e4afc4e21f60" id="r_a60b7a0f26235ccd1af88e4afc4e21f60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60b7a0f26235ccd1af88e4afc4e21f60">calcJumpAndMarkLenth</a> (const QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;lineList, qint64 &amp;jump, qint64 &amp;mark, qint64 &amp;jumpCount, qint64 &amp;markCount)</td></tr>
+<tr class="memdesc:a60b7a0f26235ccd1af88e4afc4e21f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算扫描线序列的跳转和标记长度  <br /></td></tr>
+<tr class="separator:a60b7a0f26235ccd1af88e4afc4e21f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b52971c8da4d4bde7ebe6812cfbdd5" id="r_ac8b52971c8da4d4bde7ebe6812cfbdd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8b52971c8da4d4bde7ebe6812cfbdd5">calcJumpAndMarkLenth</a> (const Paths &amp;paths, qint64 &amp;jump, qint64 &amp;mark, qint64 &amp;jumpCount, qint64 &amp;markCount)</td></tr>
+<tr class="memdesc:ac8b52971c8da4d4bde7ebe6812cfbdd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算路径集合的跳转和标记长度  <br /></td></tr>
+<tr class="separator:ac8b52971c8da4d4bde7ebe6812cfbdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a35758bec02204a1d9be47a26c0837a25" id="r_a35758bec02204a1d9be47a26c0837a25"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35758bec02204a1d9be47a26c0837a25">calcIndexVec</a> (QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;srcVec, QVector&lt; int &gt; &amp;indexVec)</td></tr>
+<tr class="memdesc:a35758bec02204a1d9be47a26c0837a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算扫描线的最优连接顺序  <br /></td></tr>
+<tr class="separator:a35758bec02204a1d9be47a26c0837a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdc02fe3b25b36707f01ebcb1184567" id="r_adbdc02fe3b25b36707f01ebcb1184567"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbdc02fe3b25b36707f01ebcb1184567">calcMinDisPos</a> (const QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;srcVec, const QVector&lt; int &gt; &amp;indexVec, const QVector&lt; int &gt; &amp;listIndex, const bool &amp;reversed, <a class="el" href="struct_matched_line_info.html">MatchedLineInfo</a> &amp;matchedInfo)</td></tr>
+<tr class="memdesc:adbdc02fe3b25b36707f01ebcb1184567"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算给定网格中距离最近的扫描线位置  <br /></td></tr>
+<tr class="separator:adbdc02fe3b25b36707f01ebcb1184567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a94766712aee1eebaee497bd1ecc35845" id="r_a94766712aee1eebaee497bd1ecc35845"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94766712aee1eebaee497bd1ecc35845">platformWidth</a> = 300</td></tr>
+<tr class="separator:a94766712aee1eebaee497bd1ecc35845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352dfdbdcc09ef5b53f9b66a8bd7b819" id="r_a352dfdbdcc09ef5b53f9b66a8bd7b819"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a352dfdbdcc09ef5b53f9b66a8bd7b819">platformHeight</a> = 300</td></tr>
+<tr class="separator:a352dfdbdcc09ef5b53f9b66a8bd7b819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a35758bec02204a1d9be47a26c0837a25" name="a35758bec02204a1d9be47a26c0837a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35758bec02204a1d9be47a26c0837a25">&#9670;&#160;</a></span>calcIndexVec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ScanLinesSortor::Priv::calcIndexVec </td>
+          <td>(</td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>srcVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>indexVec</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算扫描线的最优连接顺序 </p>
+<p>该函数通过网格划分和最近邻搜索算法,计算扫描线的最优连接顺序。 主要步骤:</p><ol type="1">
+<li>计算所有扫描线的边界框</li>
+<li>根据边界框创建网格划分</li>
+<li>将扫描线端点映射到网格</li>
+<li>通过网格搜索计算最优连接顺序</li>
+<li>支持双向搜索以获得全局最优解</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcVec</td><td>输入参数,原始扫描线信息向量,包含每条扫描线的起点终点坐标等信息 </td></tr>
+    <tr><td class="paramname">indexVec</td><td>输出参数,计算得到的最优连接顺序索引向量</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>函数使用网格划分来优化搜索效率,通过BIDIRECTIONAL宏控制是否启用双向搜索 </dd></dl>
+
+</div>
+</div>
+<a id="ac8b52971c8da4d4bde7ebe6812cfbdd5" name="ac8b52971c8da4d4bde7ebe6812cfbdd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b52971c8da4d4bde7ebe6812cfbdd5">&#9670;&#160;</a></span>calcJumpAndMarkLenth() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScanLinesSortor::Priv::calcJumpAndMarkLenth </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>paths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>jump</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>mark</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>jumpCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>markCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算路径集合的跳转和标记长度 </p>
+<p>该函数计算路径集合中的跳转和标记总长度及次数。 每条路径的第一个点到上一条路径终点的距离计为跳转长度, 路径内部点之间的距离计为标记长度。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paths</td><td>输入参数,路径集合 </td></tr>
+    <tr><td class="paramname">jump</td><td>输出参数,跳转总长度 </td></tr>
+    <tr><td class="paramname">mark</td><td>输出参数,标记总长度 </td></tr>
+    <tr><td class="paramname">jumpCount</td><td>输出参数,跳转次数 </td></tr>
+    <tr><td class="paramname">markCount</td><td>输出参数,标记次数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a60b7a0f26235ccd1af88e4afc4e21f60" name="a60b7a0f26235ccd1af88e4afc4e21f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b7a0f26235ccd1af88e4afc4e21f60">&#9670;&#160;</a></span>calcJumpAndMarkLenth() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScanLinesSortor::Priv::calcJumpAndMarkLenth </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lineList</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>jump</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>mark</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>jumpCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>markCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算扫描线序列的跳转和标记长度 </p>
+<p>该函数计算扫描线序列中跳转(JUMP)和标记(MARK)的总长度及次数。 长度通过欧氏距离计算,并乘以0.001的比例系数转换单位。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lineList</td><td>输入参数,扫描线序列 </td></tr>
+    <tr><td class="paramname">jump</td><td>输出参数,跳转总长度 </td></tr>
+    <tr><td class="paramname">mark</td><td>输出参数,标记总长度 </td></tr>
+    <tr><td class="paramname">jumpCount</td><td>输出参数,跳转次数 </td></tr>
+    <tr><td class="paramname">markCount</td><td>输出参数,标记次数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adbdc02fe3b25b36707f01ebcb1184567" name="adbdc02fe3b25b36707f01ebcb1184567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdc02fe3b25b36707f01ebcb1184567">&#9670;&#160;</a></span>calcMinDisPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ScanLinesSortor::Priv::calcMinDisPos </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>srcVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>indexVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;</td>          <td class="paramname"><span class="paramname"><em>reversed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_matched_line_info.html">MatchedLineInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>matchedInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算给定网格中距离最近的扫描线位置 </p>
+<p>该函数计算当前端点到网格中所有未使用扫描线端点的距离, 找出距离最短的扫描线及其方向信息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcVec</td><td>输入参数,所有扫描线信息向量 </td></tr>
+    <tr><td class="paramname">indexVec</td><td>输入参数,已使用的扫描线索引向量 </td></tr>
+    <tr><td class="paramname">listIndex</td><td>输入参数,当前网格中的扫描线索引列表 </td></tr>
+    <tr><td class="paramname">reversed</td><td>输入参数,是否检查反向连接 </td></tr>
+    <tr><td class="paramname">matchedInfo</td><td>输出参数,存储找到的最近扫描线信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae283f96ef968b3f2c819c2f1c154b87" name="aae283f96ef968b3f2c819c2f1c154b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae283f96ef968b3f2c819c2f1c154b87">&#9670;&#160;</a></span>calcSortLineVec() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScanLinesSortor::Priv::calcSortLineVec </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>paths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sortLineVec</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从路径集合中提取扫描线段信息 </p>
+<p>该函数遍历路径集合,将每条有效路径(至少包含2个点)的起点和终点信息 提取为扫描线段。每条路径生成一个扫描线段,包含起点终点坐标和在路径 集合中的索引位置。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paths</td><td>输入参数,原始路径集合 </td></tr>
+    <tr><td class="paramname">sortLineVec</td><td>输出参数,提取的扫描线段信息向量 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8b0d99082630c7803fa29922aa90cbf" name="ac8b0d99082630c7803fa29922aa90cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b0d99082630c7803fa29922aa90cbf">&#9670;&#160;</a></span>calcSortLineVec() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScanLinesSortor::Priv::calcSortLineVec </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>srcVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sortLineVec</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从原始扫描线数据中提取有效的扫描线段信息 </p>
+<p>该函数遍历原始扫描线数据,识别跳转点(JUMP类型)来确定每条有效扫描线的起点和终点, 并将提取的扫描线段信息保存到结果向量中。</p>
+<p>工作流程:</p><ol type="1">
+<li>遇到JUMP类型点时:<ul>
+<li>如果是新扫描线开始,记录起点信息</li>
+<li>如果是已开始扫描线的结束,记录终点信息并保存该线段</li>
+</ul>
+</li>
+<li>处理最后一条未完成的扫描线(如果存在)</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcVec</td><td>输入参数,原始扫描线数据向量 </td></tr>
+    <tr><td class="paramname">sortLineVec</td><td>输出参数,提取的有效扫描线段信息向量 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a989d2ad7673c5b541268ba1bdfa9ff68" name="a989d2ad7673c5b541268ba1bdfa9ff68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a989d2ad7673c5b541268ba1bdfa9ff68">&#9670;&#160;</a></span>recalcScanLine() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScanLinesSortor::Priv::recalcScanLine </td>
+          <td>(</td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>srcVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>sortLineVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>indexVec</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据优化后的顺序重新计算路径序列 </p>
+<p>该函数根据优化后的索引顺序重新组织路径序列,支持路径的正向和反向处理。 对于需要反向的路径,会调用ReversePath进行反转。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcVec</td><td>输入输出参数,原始路径向量,最终会被优化后的序列替换 </td></tr>
+    <tr><td class="paramname">sortLineVec</td><td>输入参数,扫描线段信息向量 </td></tr>
+    <tr><td class="paramname">indexVec</td><td>输入参数,优化后的路径索引顺序 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae0dc656f08a0f31aac1637fbc0717592" name="ae0dc656f08a0f31aac1637fbc0717592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0dc656f08a0f31aac1637fbc0717592">&#9670;&#160;</a></span>recalcScanLine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScanLinesSortor::Priv::recalcScanLine </td>
+          <td>(</td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>srcVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_sort_line_info.html">SortLineInfo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>sortLineVec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>indexVec</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根据优化后的顺序重新计算扫描线序列 </p>
+<p>该函数根据优化后的索引顺序重新组织扫描线序列,支持扫描线的正向和反向处理。 对于需要反向的扫描线,会交换其起点和终点的扫描类型。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcVec</td><td>输入输出参数,原始扫描线向量,最终会被优化后的序列替换 </td></tr>
+    <tr><td class="paramname">sortLineVec</td><td>输入参数,扫描线段信息向量 </td></tr>
+    <tr><td class="paramname">indexVec</td><td>输入参数,优化后的扫描线索引顺序 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a352dfdbdcc09ef5b53f9b66a8bd7b819" name="a352dfdbdcc09ef5b53f9b66a8bd7b819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352dfdbdcc09ef5b53f9b66a8bd7b819">&#9670;&#160;</a></span>platformHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ScanLinesSortor::Priv::platformHeight = 300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94766712aee1eebaee497bd1ecc35845" name="a94766712aee1eebaee497bd1ecc35845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94766712aee1eebaee497bd1ecc35845">&#9670;&#160;</a></span>platformWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ScanLinesSortor::Priv::platformWidth = 300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>ScanLinesSortor/<a class="el" href="scanlinessortor_8cpp.html">scanlinessortor.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_scan_lines_sortor.html">ScanLinesSortor</a></li><li class="navelem"><a class="el" href="struct_scan_lines_sortor_1_1_priv.html">Priv</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

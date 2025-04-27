@@ -1,0 +1,140 @@
+\doxysection{latticsabstract.\+h}
+\hypertarget{latticsabstract_8h_source}{}\label{latticsabstract_8h_source}\index{LatticeModule/latticsabstract.h@{LatticeModule/latticsabstract.h}}
+\mbox{\hyperlink{latticsabstract_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LATTICSABSTRACT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LATTICSABSTRACT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}bpccommon.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876}{LatticeLegType}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a460653a5173723812c09752ac359d9ca}{LayerLeg\_0\_0}}\ =\ 0,}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a9877dcc2302091ac21eec78897eb3f77}{LayerLeg\_0\_1}}\ =\ 1,}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a23bc93bd982198e78d2a0036077bb257}{LayerLeg\_1\_0}}\ =\ 2,}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a34003cb2abe5e8f83643e9c9bfed6893}{LayerLeg\_1\_1}}\ =\ 3,}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a92feaa11880468b019948f295b2a5498}{LayerLeg\_2\_0}}\ =\ 4,}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876ab87015277994654f0ef38575ae72a4c1}{LayerLeg\_2\_1}}\ =\ 5,}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876abd2a22c65a3a1bfc03cfac1128fff0cd}{LayerLeg\_3\_0}}\ =\ 6,}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a9141ddaab28a03e3090f952782137f1a}{LayerLeg\_3\_1}}\ =\ 7,}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a93cf190acf53dd66835844e55e2bf983}{LayerLeg\_4\_0}}\ =\ 8,}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a4c76fd20fc0ad07972ad5c726007108b}{LayerLeg\_4\_1}}\ =\ 9,}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a93dac3688c4751f8ec1e167a44975748}{LayerLeg\_5\_0}}\ =\ 10,}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876ad21c764e7ef22f85f20a4a9f4e9964e6}{LayerLeg\_5\_1}}\ =\ 11,}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{latticsabstract_8h_aab14f57d511ea4fff9f2c99a83269876a942e6ea36f4112dc790900a22a5e6c4b}{Leg\_Count}}\ =\ 12}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }QJsonParsing;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lattics_abstract_a2c75701f91fb7ad4f27eef711ac62841}{LatticsAbstract}}\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_lattics_abstract_a2c75701f91fb7ad4f27eef711ac62841}{LatticsAbstract}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_lattics_abstract_a49fd443daa47c4ce1bcd0028983a9d89}{\string~LatticsAbstract}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lattics_abstract_acd737ded37d8f09251fe712bbdb6cd5b}{initLatticeParas}}(\textcolor{keyword}{const}\ QJsonParsing\ *)\ =\ 0;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ DoublePaths\ \mbox{\hyperlink{class_lattics_abstract_a9952d84b2c1bb8abf292ec4269021593}{createLattics}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&)\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lattics_abstract_a498cb6f669cb076ae6e5065b8ac0ab11}{identifyLattices}}(ClipperLib::Paths\ \&)\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_lattics_abstract_abfafe87a5f93034fd1183313a2bb070d}{getSpacing}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattics_info_a7662d3e586b5389a96f56187f0c3e796}{LatticsInfo}}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lattics_info_adba17c43b65a2baf72b6d098705949e4}{\_type}}\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_lattics_info_afe82a63293b0df41437d79fe703f5ecb}{\_area}}\ =\ 0.0;}
+\DoxyCodeLine{00042\ \ \ \ \ IntPoint\ \mbox{\hyperlink{struct_lattics_info_a01978b8c77daeaabe7a65b0017362c48}{\_centerPt}};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{struct_lattics_info_a7662d3e586b5389a96f56187f0c3e796}{LatticsInfo}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{struct_lattics_info_a4c9a8fec0970fd2eba1eb2300b876e70}{LatticsInfo}}(\textcolor{keyword}{const}\ Path\ \&path)\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ BoundingBox\ \_bBox;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattics_info_afe82a63293b0df41437d79fe703f5ecb}{\_area}}\ =\ Area(path,\ \_bBox);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattics_info_a01978b8c77daeaabe7a65b0017362c48}{\_centerPt}}.X\ =\ qRound((\_bBox.minX\ +\ \_bBox.maxX)\ *\ 0.5);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattics_info_a01978b8c77daeaabe7a65b0017362c48}{\_centerPt}}.Y\ =\ qRound((\_bBox.minY\ +\ \_bBox.maxY)\ *\ 0.5);}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_lattics_info_a232347276c4590bc08826af3d9b7fab7}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_lattics_info_a7662d3e586b5389a96f56187f0c3e796}{LatticsInfo}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{struct_lattics_info_a01978b8c77daeaabe7a65b0017362c48}{\_centerPt}}.X\ ==\ other.\mbox{\hyperlink{struct_lattics_info_a01978b8c77daeaabe7a65b0017362c48}{\_centerPt}}.X)\ \&\&}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{struct_lattics_info_a01978b8c77daeaabe7a65b0017362c48}{\_centerPt}}.Y\ ==\ other.\mbox{\hyperlink{struct_lattics_info_a01978b8c77daeaabe7a65b0017362c48}{\_centerPt}}.Y)\ \&\&}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (fabs(\mbox{\hyperlink{struct_lattics_info_afe82a63293b0df41437d79fe703f5ecb}{\_area}}\ -\/\ other.\mbox{\hyperlink{struct_lattics_info_afe82a63293b0df41437d79fe703f5ecb}{\_area}})\ <\ 1E-\/6);}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ \textcolor{keyword}{typedef}\ QSharedPointer<LatticsInfo>\ \mbox{\hyperlink{latticsabstract_8h_aa19dc6178e0de75b4d7c1cd7e7b82f0e}{LatticsPtr}};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_bounding_box_d}{BoundingBoxD}}\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_bounding_box_d_a968e650fc7a1243f302a35e357be5c1e}{\_minX}}\ =\ 1E+30;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_bounding_box_d_abfa3dea48813bf131b1823807d4b66ba}{\_maxX}}\ =\ 1E-\/30;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_bounding_box_d_aa0b2ee95baea2818e6a994cbb76c2356}{\_minY}}\ =\ 1E+30;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_bounding_box_d_a9b19f12ad7d699190b654d00a880da1c}{\_maxY}}\ =\ 1E-\/30;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ QPointF\ \mbox{\hyperlink{struct_bounding_box_d_ac148d728fffccff5d6f3558e90c7ea80}{getCenter}}()\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ QPointF\ pt;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ pt.setX((\mbox{\hyperlink{struct_bounding_box_d_a968e650fc7a1243f302a35e357be5c1e}{\_minX}}\ +\ \mbox{\hyperlink{struct_bounding_box_d_abfa3dea48813bf131b1823807d4b66ba}{\_maxX}})\ *\ 0.5);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ pt.setY((\mbox{\hyperlink{struct_bounding_box_d_aa0b2ee95baea2818e6a994cbb76c2356}{\_minY}}\ +\ \mbox{\hyperlink{struct_bounding_box_d_a9b19f12ad7d699190b654d00a880da1c}{\_maxY}})\ *\ 0.5);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pt;}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{latticsabstract_8h_a04cf0096dcac6b7c52a6be29ffa33ab5}{calcBBox}}(\textcolor{keyword}{const}\ Path\ \&path,\ BOUNDINGRECT\ \&bBox)}
+\DoxyCodeLine{00075\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&pt\ :\ path)}
+\DoxyCodeLine{00077\ \ \ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ <\ bBox.minX)\ bBox.minX\ =\ pt.X;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ >\ bBox.maxX)\ bBox.maxX\ =\ pt.X;}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ <\ bBox.minY)\ bBox.minY\ =\ pt.Y;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ >\ bBox.maxY)\ bBox.maxY\ =\ pt.Y;}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{latticsabstract_8h_a04cf0096dcac6b7c52a6be29ffa33ab5}{calcBBox}}(\textcolor{keyword}{const}\ DoublePath\ \&path,\ BOUNDINGRECT\ \&bBox)}
+\DoxyCodeLine{00086\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&pt\ :\ path)}
+\DoxyCodeLine{00088\ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ <\ bBox.minX)\ bBox.minX\ =\ pt.X;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ >\ bBox.maxX)\ bBox.maxX\ =\ pt.X;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ <\ bBox.minY)\ bBox.minY\ =\ pt.Y;}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ >\ bBox.maxY)\ bBox.maxY\ =\ pt.Y;}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00094\ \}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{latticsabstract_8h_a04cf0096dcac6b7c52a6be29ffa33ab5}{calcBBox}}(\textcolor{keyword}{const}\ DoublePath\ \&path,\ \mbox{\hyperlink{struct_bounding_box_d}{BoundingBoxD}}\ \&bBox)}
+\DoxyCodeLine{00097\ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&pt\ :\ path)}
+\DoxyCodeLine{00099\ \ \ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ <\ bBox.\mbox{\hyperlink{struct_bounding_box_d_a968e650fc7a1243f302a35e357be5c1e}{\_minX}})\ bBox.\mbox{\hyperlink{struct_bounding_box_d_a968e650fc7a1243f302a35e357be5c1e}{\_minX}}\ =\ pt.X;}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ >\ bBox.\mbox{\hyperlink{struct_bounding_box_d_abfa3dea48813bf131b1823807d4b66ba}{\_maxX}})\ bBox.\mbox{\hyperlink{struct_bounding_box_d_abfa3dea48813bf131b1823807d4b66ba}{\_maxX}}\ =\ pt.X;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ <\ bBox.\mbox{\hyperlink{struct_bounding_box_d_aa0b2ee95baea2818e6a994cbb76c2356}{\_minY}})\ bBox.\mbox{\hyperlink{struct_bounding_box_d_aa0b2ee95baea2818e6a994cbb76c2356}{\_minY}}\ =\ pt.Y;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ >\ bBox.\mbox{\hyperlink{struct_bounding_box_d_a9b19f12ad7d699190b654d00a880da1c}{\_maxY}})\ bBox.\mbox{\hyperlink{struct_bounding_box_d_a9b19f12ad7d699190b654d00a880da1c}{\_maxY}}\ =\ pt.Y;}
+\DoxyCodeLine{00104\ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{inline}\ Path\ \mbox{\hyperlink{latticsabstract_8h_a6d0bc17bcc5aa015546a2d6e5e71caaf}{transformPath}}(\textcolor{keyword}{const}\ DoublePath\ \&path,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&x,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&y)}
+\DoxyCodeLine{00108\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ Path\ tempPath;}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&pt\ :\ path)}
+\DoxyCodeLine{00111\ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ tempPath\ <<\ IntPoint(qRound(pt.X\ +\ x),\ qRound(pt.Y\ +\ y));}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordflow}{return}\ tempPath;}
+\DoxyCodeLine{00115\ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{latticsabstract_8h_a2baa84f5644f3eaf5bc45f9d55047760}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ BOUNDINGRECT\ \&p)}
+\DoxyCodeLine{00118\ \{}
+\DoxyCodeLine{00119\ \ \ \ \ debug.noquote()\ <<\ \textcolor{stringliteral}{"{}\{"{}}\ <<\ p.minX\ \ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ p.maxX\ \ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ p.minY\ \ <<\ \textcolor{stringliteral}{"{}\ "{}}\ \ <<\ p.maxY\ <<\ \textcolor{stringliteral}{"{}\}"{}};}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00121\ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{keyword}{inline}\ QPointF\ \mbox{\hyperlink{latticsabstract_8h_ae6f53036f733e7a4e18e9aee661377a9}{getCenter}}(BOUNDINGRECT\ \&rc)}
+\DoxyCodeLine{00124\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordflow}{return}\ QPointF((rc.minX\ +\ rc.maxX)\ *\ 0.5,\ (rc.minY\ +\ rc.maxY)\ *\ 0.5);}
+\DoxyCodeLine{00126\ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{latticsabstract_8h_a69378b35bbf1ed2044216e753540995e}{getDistance}}(\textcolor{keyword}{const}\ QPointF\ \&p1,\ \textcolor{keyword}{const}\ QPointF\ \&p2)}
+\DoxyCodeLine{00129\ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordflow}{return}\ (pow(p1.x()\ -\/\ p2.x(),\ 2)\ +\ pow(p1.y()\ -\/\ p2.y(),\ 2));}
+\DoxyCodeLine{00131\ \}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{latticsabstract_8h_a69378b35bbf1ed2044216e753540995e}{getDistance}}(\textcolor{keyword}{const}\ QPointF\ \&p1,\ \textcolor{keyword}{const}\ QPointF\ \&p2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&x,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&y)}
+\DoxyCodeLine{00134\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordflow}{return}\ (pow(p1.x()\ -\/\ p2.x()\ -\/\ x,\ 2)\ +\ pow(p1.y()\ -\/\ p2.y()\ -\/\ y,\ 2));}
+\DoxyCodeLine{00136\ \}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LATTICSABSTRACT\_H}}
+
+\end{DoxyCode}

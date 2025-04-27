@@ -1,0 +1,36 @@
+\doxysection{Lattice\+Module/meshbase.cpp 文件参考}
+\hypertarget{meshbase_8cpp}{}\label{meshbase_8cpp}\index{LatticeModule/meshbase.cpp@{LatticeModule/meshbase.cpp}}
+{\ttfamily \#include "{}meshbase.\+h"{}}\newline
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacemeshdef}{meshdef}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{meshbase_8cpp_a556e26b5b0db1c725c688d58bf9fc025}{\+\_\+\+LL\+\_\+\+ADDRESS}}(lp)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+QPair$<$ long long, long long $>$ \mbox{\hyperlink{namespacemeshdef_a3432e88b45306e30f30d835799be932b}{meshdef\+::get\+Edge\+Hash}} (\mbox{\hyperlink{structmeshdef_1_1_edge}{Edge}} \texorpdfstring{$\ast$}{*}edge)
+\item 
+QPair$<$ long long, long long $>$ \mbox{\hyperlink{namespacemeshdef_ab6770cb1df24df6d3f6fdddf3d3e2673}{meshdef\+::get\+Half\+Edge\+Hash}} (\mbox{\hyperlink{structmeshdef_1_1_edge}{Edge}} \texorpdfstring{$\ast$}{*}edge)
+\item 
+QPair$<$ long long, long long $>$ \mbox{\hyperlink{namespacemeshdef_ada87b30a4b6f5366a9ce06df0a47d0cd}{meshdef\+::get\+Unique\+Edge\+Hash}} (\mbox{\hyperlink{structmeshdef_1_1_edge}{Edge}} \texorpdfstring{$\ast$}{*}edge)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{meshbase_8cpp_a556e26b5b0db1c725c688d58bf9fc025}\index{meshbase.cpp@{meshbase.cpp}!\_LL\_ADDRESS@{\_LL\_ADDRESS}}
+\index{\_LL\_ADDRESS@{\_LL\_ADDRESS}!meshbase.cpp@{meshbase.cpp}}
+\doxysubsubsection{\texorpdfstring{\_LL\_ADDRESS}{\_LL\_ADDRESS}}
+{\footnotesize\ttfamily \label{meshbase_8cpp_a556e26b5b0db1c725c688d58bf9fc025} 
+\#define \+\_\+\+LL\+\_\+\+ADDRESS(\begin{DoxyParamCaption}\item[{}]{lp}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\textcolor{keyword}{>}(lp)}
+
+\end{DoxyCode}

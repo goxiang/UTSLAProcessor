@@ -1,0 +1,43 @@
+\doxysection{algorithmchecker.\+h}
+\hypertarget{algorithmchecker_8h_source}{}\label{algorithmchecker_8h_source}\mbox{\hyperlink{algorithmchecker_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORITHMCHECKER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORITHMCHECKER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}bpccommon.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm_checker}{AlgorithmChecker}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_checker_af554b1e17edc99f418662ec03420e05a}{createCheckers}}(\textcolor{keyword}{const}\ QJsonObject\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&platWidth,\ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&platHeight);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_checker_acadce095b6130ba34e54e6b8e8835e41}{changeLayerOddInfo}}()\ \{\ \mbox{\hyperlink{class_algorithm_checker_a53f7f3b4fafecafbef3f841ad674c0be}{bOddLayer}}\ =\ !\mbox{\hyperlink{class_algorithm_checker_a53f7f3b4fafecafbef3f841ad674c0be}{bOddLayer}};\ \}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_algorithm_checker_a13b0121b03c7ea049f6e6c2dad512cea}{getRotateAngle}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_algorithm_checker_a6559e2476b897a86e8dbe1196db2fb7a}{fRotateAngle}};\ \}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_checker_a074f1bcdd4fdf010d5a6eb8e94566480}{scanCheckerBorder}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_algorithm_checker_ab68cd986adf414b98ee6a0b4b2188581}{nScanCheckerBorder}};\ \}}
+\DoxyCodeLine{00020\ \ \ \ \ QList<Paths>\ \ \&\mbox{\hyperlink{class_algorithm_checker_a9cf488596540998172fcf83c48466b13}{getCheckerList}}()\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_algorithm_checker_aa4b728b189ee6a7139c5e4f353f95004}{nOffsetChecker}})\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_algorithm_checker_a53f7f3b4fafecafbef3f841ad674c0be}{bOddLayer}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_algorithm_checker_a86cc0437fb76ad394b7c15129fc4f3fb}{checkerListOffset}};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_algorithm_checker_a0688205de9c8fb624d0111e222042dd6}{checkerList}};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_algorithm_checker_a0688205de9c8fb624d0111e222042dd6}{checkerList}};}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_checker_a82e20fdec61147dfdcd8be8dcd9b3b74}{createOverlapCheckers}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&platWidth,\ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&platHeight,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&overlapWid,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&offsetChecker);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_checker_a53f7f3b4fafecafbef3f841ad674c0be}{bOddLayer}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_algorithm_checker_aa4b728b189ee6a7139c5e4f353f95004}{nOffsetChecker}}\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_algorithm_checker_ab68cd986adf414b98ee6a0b4b2188581}{nScanCheckerBorder}}\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_algorithm_checker_a6559e2476b897a86e8dbe1196db2fb7a}{fRotateAngle}}\ =\ 0.0;}
+\DoxyCodeLine{00038\ \ \ \ \ QList<Paths>\ \mbox{\hyperlink{class_algorithm_checker_a0688205de9c8fb624d0111e222042dd6}{checkerList}};}
+\DoxyCodeLine{00039\ \ \ \ \ QList<Paths>\ \mbox{\hyperlink{class_algorithm_checker_a86cc0437fb76ad394b7c15129fc4f3fb}{checkerListOffset}};}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALGORITHMCHECKER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,1161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: AlgorithmBase类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_algorithm_base.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="class_algorithm_base-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">AlgorithmBase类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="algorithmbase_8h_source.html">algorithmbase.h</a>&gt;</code></p>
+<div class="dynheader">
+类 AlgorithmBase 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_algorithm_base.png" usemap="#AlgorithmBase_map" alt=""/>
+  <map id="AlgorithmBase_map" name="AlgorithmBase_map">
+<area href="class_algorithm_hatching_ring.html" alt="AlgorithmHatchingRing" shape="rect" coords="0,56,140,80"/>
+<area href="class_algorithm_hatching.html" alt="AlgorithmHatching" shape="rect" coords="0,112,140,136"/>
+<area href="class_algorithm_application.html" alt="AlgorithmApplication" shape="rect" coords="0,168,140,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6c012eecfcfb7f5153e3ae4f06b7711a" id="r_a6c012eecfcfb7f5153e3ae4f06b7711a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c012eecfcfb7f5153e3ae4f06b7711a">calcAreaList</a> (const Paths &amp;, QList&lt; double &gt; &amp;)</td></tr>
+<tr class="separator:a6c012eecfcfb7f5153e3ae4f06b7711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89740e31755f5675070b7acb295ec42b" id="r_a89740e31755f5675070b7acb295ec42b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89740e31755f5675070b7acb295ec42b">calcLimitXY</a> (const Paths &amp;, BOUNDINGRECT &amp;, QList&lt; BDRECTPTR &gt; *listRc=nullptr)</td></tr>
+<tr class="separator:a89740e31755f5675070b7acb295ec42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8998645a6bea53ae88f806b50f5e4596" id="r_a8998645a6bea53ae88f806b50f5e4596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8998645a6bea53ae88f806b50f5e4596">calcLimitXY</a> (const QList&lt; AREAINFOPTR &gt; &amp;, BOUNDINGRECT &amp;, QList&lt; BDRECTPTR &gt; *listRc=nullptr)</td></tr>
+<tr class="separator:a8998645a6bea53ae88f806b50f5e4596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7821e946765fec4d451a2e114049ad78" id="r_a7821e946765fec4d451a2e114049ad78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7821e946765fec4d451a2e114049ad78">getAllPaths</a> (const QList&lt; AREAINFOPTR &gt; &amp;, Paths &amp;)</td></tr>
+<tr class="separator:a7821e946765fec4d451a2e114049ad78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7ebe56803630dd7d84f71f643d1419" id="r_a7d7ebe56803630dd7d84f71f643d1419"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d7ebe56803630dd7d84f71f643d1419">lineCrossRC</a> (const double &amp;, const double &amp;, const double &amp;, const double &amp;, const BOUNDINGRECT &amp;)</td></tr>
+<tr class="separator:a7d7ebe56803630dd7d84f71f643d1419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879a667ab059dad3ea046a86fb8239a4" id="r_a879a667ab059dad3ea046a86fb8239a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a879a667ab059dad3ea046a86fb8239a4">lineCrossRC</a> (const double &amp;, const double &amp;, const double &amp;, const double &amp;, const BDRECTPTR &amp;)</td></tr>
+<tr class="separator:a879a667ab059dad3ea046a86fb8239a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2debbcf38bf9910f82574ea0869db55d" id="r_a2debbcf38bf9910f82574ea0869db55d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2debbcf38bf9910f82574ea0869db55d">sortPtOnLine</a> (int, QList&lt; <a class="el" href="struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o.html">EXPECTPOINTINFO</a> &gt; &amp;)</td></tr>
+<tr class="separator:a2debbcf38bf9910f82574ea0869db55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bf2bb77f0b6c0871cee660a439ad83" id="r_a72bf2bb77f0b6c0871cee660a439ad83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72bf2bb77f0b6c0871cee660a439ad83">sortPtOnLine</a> (int, QVector&lt; <a class="el" href="struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o.html">EXPECTPOINTINFO</a> &gt; &amp;)</td></tr>
+<tr class="separator:a72bf2bb77f0b6c0871cee660a439ad83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8b04e05f684ef526e22eb2f59ce646" id="r_abf8b04e05f684ef526e22eb2f59ce646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf8b04e05f684ef526e22eb2f59ce646">reducePaths_Inner</a> (Paths &amp;)</td></tr>
+<tr class="separator:abf8b04e05f684ef526e22eb2f59ce646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2732f6394eaa7da3244d79ff85b2aa14" id="r_a2732f6394eaa7da3244d79ff85b2aa14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2732f6394eaa7da3244d79ff85b2aa14">addPaths_Upper</a> (Paths &amp;, Paths *)</td></tr>
+<tr class="separator:a2732f6394eaa7da3244d79ff85b2aa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd1ccc6ab88a3ce86f17e321e8ae035" id="r_a7bd1ccc6ab88a3ce86f17e321e8ae035"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bd1ccc6ab88a3ce86f17e321e8ae035">extendBorders</a> (Paths *, Paths *, Paths *)</td></tr>
+<tr class="separator:a7bd1ccc6ab88a3ce86f17e321e8ae035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68be0a18c770ff3664af0ab8c5e8592" id="r_af68be0a18c770ff3664af0ab8c5e8592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af68be0a18c770ff3664af0ab8c5e8592">getSurfacePaths</a> (Paths &amp;, int &amp;, Paths *, Paths *[], const int &amp;, const int &amp;)</td></tr>
+<tr class="separator:af68be0a18c770ff3664af0ab8c5e8592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745b5c5b51ab367b3728eb63947889cb" id="r_a745b5c5b51ab367b3728eb63947889cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a745b5c5b51ab367b3728eb63947889cb">getDifferencePaths</a> (const Paths &amp;, const Path &amp;, Paths &amp;, const int &amp;)</td></tr>
+<tr class="separator:a745b5c5b51ab367b3728eb63947889cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b731f2b864e5c489878d081b4738b4" id="r_a44b731f2b864e5c489878d081b4738b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b731f2b864e5c489878d081b4738b4">getDifferencePaths</a> (const Paths *, const Paths *, Paths &amp;, const int &amp;)</td></tr>
+<tr class="separator:a44b731f2b864e5c489878d081b4738b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbc48894224831334c91991c9b4160d" id="r_a0cbc48894224831334c91991c9b4160d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cbc48894224831334c91991c9b4160d">getUnionPaths</a> (const Path &amp;, const Path &amp;, Paths &amp;, const int &amp;)</td></tr>
+<tr class="separator:a0cbc48894224831334c91991c9b4160d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f7669ea396b902400e1b1a41df1852" id="r_af0f7669ea396b902400e1b1a41df1852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0f7669ea396b902400e1b1a41df1852">getUnionPaths</a> (const Path &amp;, const Paths &amp;, Paths &amp;, const int &amp;)</td></tr>
+<tr class="separator:af0f7669ea396b902400e1b1a41df1852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b0da12e239e7339f26def69ebe5332" id="r_ae8b0da12e239e7339f26def69ebe5332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8b0da12e239e7339f26def69ebe5332">getUnionPaths</a> (const Paths *, const Paths *, Paths &amp;, const int &amp;)</td></tr>
+<tr class="separator:ae8b0da12e239e7339f26def69ebe5332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f116f8ed86837c879fdfa3187078e7" id="r_a53f116f8ed86837c879fdfa3187078e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53f116f8ed86837c879fdfa3187078e7">getOffsetPaths</a> (Paths *, int nOffset, int nReserved, int nSmallWall)</td></tr>
+<tr class="separator:a53f116f8ed86837c879fdfa3187078e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece1510dce6a07c6068ae2296042ca17" id="r_aece1510dce6a07c6068ae2296042ca17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aece1510dce6a07c6068ae2296042ca17">getOffsetPaths</a> (Paths *, Paths *, const double &amp;, const double &amp;, const double &amp;)</td></tr>
+<tr class="separator:aece1510dce6a07c6068ae2296042ca17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab9828cb248adf9091925402d15c718" id="r_a5ab9828cb248adf9091925402d15c718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab9828cb248adf9091925402d15c718">getIntersectionPaths</a> (const Paths &amp;, const Path &amp;, Paths &amp;)</td></tr>
+<tr class="separator:a5ab9828cb248adf9091925402d15c718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ec030ea3f3eac56015f423b9fe6365" id="r_a34ec030ea3f3eac56015f423b9fe6365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34ec030ea3f3eac56015f423b9fe6365">getIntersectionPaths</a> (const Paths &amp;, const Paths &amp;, Paths &amp;)</td></tr>
+<tr class="separator:a34ec030ea3f3eac56015f423b9fe6365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af305c4ee4c37cd65d4c13a437632dae8" id="r_af305c4ee4c37cd65d4c13a437632dae8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af305c4ee4c37cd65d4c13a437632dae8">lineOnVecSplicingLine</a> (int64_t, int64_t, int64_t, int64_t, QVector&lt; <a class="el" href="struct_splicing_line.html">SplicingLine</a> &gt; &amp;)</td></tr>
+<tr class="separator:af305c4ee4c37cd65d4c13a437632dae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a6849100e590a568bb11ff6b371992" id="r_aa9a6849100e590a568bb11ff6b371992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9a6849100e590a568bb11ff6b371992">filteSmallBorder</a> (const Paths &amp;, Paths &amp;, Paths &amp;, const double &amp;)</td></tr>
+<tr class="separator:aa9a6849100e590a568bb11ff6b371992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a4c4b85dc98285f9ee8a0ed234a26c709" id="r_a4c4b85dc98285f9ee8a0ed234a26c709"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c4b85dc98285f9ee8a0ed234a26c709">scanner_jumpPos</a> (const int &amp;, const int &amp;, QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4c4b85dc98285f9ee8a0ed234a26c709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a401988cbe90e81ca7f710e3cc152a" id="r_a10a401988cbe90e81ca7f710e3cc152a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10a401988cbe90e81ca7f710e3cc152a">scanner_outLine</a> (const int &amp;, const int &amp;, QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;)</td></tr>
+<tr class="separator:a10a401988cbe90e81ca7f710e3cc152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec87785742d1a00a5f45989c419069fd" id="r_aec87785742d1a00a5f45989c419069fd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec87785742d1a00a5f45989c419069fd">scanner_jumpPos</a> (const qint64 &amp;, const qint64 &amp;, QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;)</td></tr>
+<tr class="separator:aec87785742d1a00a5f45989c419069fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0496d41045e88fcc421efd778cbfeb7" id="r_ae0496d41045e88fcc421efd778cbfeb7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0496d41045e88fcc421efd778cbfeb7">scanner_outLine</a> (const qint64 &amp;, const qint64 &amp;, QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;)</td></tr>
+<tr class="separator:ae0496d41045e88fcc421efd778cbfeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6355a54523d0af209e0d3d663472f401" id="r_a6355a54523d0af209e0d3d663472f401"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6355a54523d0af209e0d3d663472f401">scanner_plotLine</a> (const int &amp;, const int &amp;, const int &amp;, const int &amp;, QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;)</td></tr>
+<tr class="separator:a6355a54523d0af209e0d3d663472f401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae772223adb17dffb76db2b454d807e18" id="r_ae772223adb17dffb76db2b454d807e18"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae772223adb17dffb76db2b454d807e18">writeDataToList</a> (const int64_t &amp;, const int64_t &amp;, const int64_t &amp;, const int64_t &amp;, int64_t &amp;, int64_t &amp;, QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;)</td></tr>
+<tr class="separator:ae772223adb17dffb76db2b454d807e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ad95b97224398063c6a569ae15b1aa871" id="r_ad95b97224398063c6a569ae15b1aa871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad95b97224398063c6a569ae15b1aa871">calcLimitXY</a> (const Path &amp;, BDRECTPTR &amp;)</td></tr>
+<tr class="separator:ad95b97224398063c6a569ae15b1aa871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c38d74d2d342cf694ec6ed01f14c922" id="r_a4c38d74d2d342cf694ec6ed01f14c922"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c38d74d2d342cf694ec6ed01f14c922">calcLimitXY</a> (const AREAINFOPTR &amp;, BDRECTPTR &amp;)</td></tr>
+<tr class="separator:a4c38d74d2d342cf694ec6ed01f14c922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>! </p><dl class="section user"><dt>Core Class: AlgorithmBase</dt><dd>提供基础的算法支持，包括几何计算、路径处理、扫描线生成等，独立类 </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a2732f6394eaa7da3244d79ff85b2aa14" name="a2732f6394eaa7da3244d79ff85b2aa14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2732f6394eaa7da3244d79ff85b2aa14">&#9670;&#160;</a></span>addPaths_Upper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::addPaths_Upper </td>
+          <td>(</td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>path_target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>path_refer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c012eecfcfb7f5153e3ae4f06b7711a" name="a6c012eecfcfb7f5153e3ae4f06b7711a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c012eecfcfb7f5153e3ae4f06b7711a">&#9670;&#160;</a></span>calcAreaList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double AlgorithmBase::calcAreaList </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>paths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lpAreaList</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c38d74d2d342cf694ec6ed01f14c922" name="a4c38d74d2d342cf694ec6ed01f14c922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c38d74d2d342cf694ec6ed01f14c922">&#9670;&#160;</a></span>calcLimitXY() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::calcLimitXY </td>
+          <td>(</td>
+          <td class="paramtype">const AREAINFOPTR &amp;</td>          <td class="paramname"><span class="paramname"><em>area</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BDRECTPTR &amp;</td>          <td class="paramname"><span class="paramname"><em>rc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad95b97224398063c6a569ae15b1aa871" name="ad95b97224398063c6a569ae15b1aa871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95b97224398063c6a569ae15b1aa871">&#9670;&#160;</a></span>calcLimitXY() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::calcLimitXY </td>
+          <td>(</td>
+          <td class="paramtype">const Path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BDRECTPTR &amp;</td>          <td class="paramname"><span class="paramname"><em>rc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89740e31755f5675070b7acb295ec42b" name="a89740e31755f5675070b7acb295ec42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89740e31755f5675070b7acb295ec42b">&#9670;&#160;</a></span>calcLimitXY() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::calcLimitXY </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>paths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOUNDINGRECT &amp;</td>          <td class="paramname"><span class="paramname"><em>bdRC</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; BDRECTPTR &gt; *</td>          <td class="paramname"><span class="paramname"><em>listRc</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8998645a6bea53ae88f806b50f5e4596" name="a8998645a6bea53ae88f806b50f5e4596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8998645a6bea53ae88f806b50f5e4596">&#9670;&#160;</a></span>calcLimitXY() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::calcLimitXY </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; AREAINFOPTR &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listArea</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOUNDINGRECT &amp;</td>          <td class="paramname"><span class="paramname"><em>bdRC</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; BDRECTPTR &gt; *</td>          <td class="paramname"><span class="paramname"><em>listRc</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bd1ccc6ab88a3ce86f17e321e8ae035" name="a7bd1ccc6ab88a3ce86f17e321e8ae035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd1ccc6ab88a3ce86f17e321e8ae035">&#9670;&#160;</a></span>extendBorders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::extendBorders </td>
+          <td>(</td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>path_refer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>path_Src</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>extendBorders</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9a6849100e590a568bb11ff6b371992" name="aa9a6849100e590a568bb11ff6b371992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a6849100e590a568bb11ff6b371992">&#9670;&#160;</a></span>filteSmallBorder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::filteSmallBorder </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>remained</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>filteOut</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>areaLimit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7821e946765fec4d451a2e114049ad78" name="a7821e946765fec4d451a2e114049ad78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7821e946765fec4d451a2e114049ad78">&#9670;&#160;</a></span>getAllPaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getAllPaths </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; AREAINFOPTR &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listArea</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>paths</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a745b5c5b51ab367b3728eb63947889cb" name="a745b5c5b51ab367b3728eb63947889cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a745b5c5b51ab367b3728eb63947889cb">&#9670;&#160;</a></span>getDifferencePaths() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getDifferencePaths </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>curPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Path &amp;</td>          <td class="paramname"><span class="paramname"><em>subPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44b731f2b864e5c489878d081b4738b4" name="a44b731f2b864e5c489878d081b4738b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b731f2b864e5c489878d081b4738b4">&#9670;&#160;</a></span>getDifferencePaths() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getDifferencePaths </td>
+          <td>(</td>
+          <td class="paramtype">const Paths *</td>          <td class="paramname"><span class="paramname"><em>curPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Paths *</td>          <td class="paramname"><span class="paramname"><em>subPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ab9828cb248adf9091925402d15c718" name="a5ab9828cb248adf9091925402d15c718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab9828cb248adf9091925402d15c718">&#9670;&#160;</a></span>getIntersectionPaths() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getIntersectionPaths </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>curPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Path &amp;</td>          <td class="paramname"><span class="paramname"><em>subPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34ec030ea3f3eac56015f423b9fe6365" name="a34ec030ea3f3eac56015f423b9fe6365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ec030ea3f3eac56015f423b9fe6365">&#9670;&#160;</a></span>getIntersectionPaths() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getIntersectionPaths </td>
+          <td>(</td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>curPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>subPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53f116f8ed86837c879fdfa3187078e7" name="a53f116f8ed86837c879fdfa3187078e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f116f8ed86837c879fdfa3187078e7">&#9670;&#160;</a></span>getOffsetPaths() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getOffsetPaths </td>
+          <td>(</td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>lpSrc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nOffset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nReserved</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aece1510dce6a07c6068ae2296042ca17" name="aece1510dce6a07c6068ae2296042ca17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece1510dce6a07c6068ae2296042ca17">&#9670;&#160;</a></span>getOffsetPaths() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getOffsetPaths </td>
+          <td>(</td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>lpSrc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>lpTar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>nOffset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>nReserved</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af68be0a18c770ff3664af0ab8c5e8592" name="af68be0a18c770ff3664af0ab8c5e8592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68be0a18c770ff3664af0ab8c5e8592">&#9670;&#160;</a></span>getSurfacePaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getSurfacePaths </td>
+          <td>(</td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSurfaceIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>curPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths *</td>          <td class="paramname"><span class="paramname"><em>lpPaths</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSurfaceCnt</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cbc48894224831334c91991c9b4160d" name="a0cbc48894224831334c91991c9b4160d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbc48894224831334c91991c9b4160d">&#9670;&#160;</a></span>getUnionPaths() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getUnionPaths </td>
+          <td>(</td>
+          <td class="paramtype">const Path &amp;</td>          <td class="paramname"><span class="paramname"><em>curPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Path &amp;</td>          <td class="paramname"><span class="paramname"><em>subPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0f7669ea396b902400e1b1a41df1852" name="af0f7669ea396b902400e1b1a41df1852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f7669ea396b902400e1b1a41df1852">&#9670;&#160;</a></span>getUnionPaths() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getUnionPaths </td>
+          <td>(</td>
+          <td class="paramtype">const Path &amp;</td>          <td class="paramname"><span class="paramname"><em>curPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>subPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8b0da12e239e7339f26def69ebe5332" name="ae8b0da12e239e7339f26def69ebe5332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b0da12e239e7339f26def69ebe5332">&#9670;&#160;</a></span>getUnionPaths() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::getUnionPaths </td>
+          <td>(</td>
+          <td class="paramtype">const Paths *</td>          <td class="paramname"><span class="paramname"><em>curPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Paths *</td>          <td class="paramname"><span class="paramname"><em>subPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPaths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nSmallWall</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a879a667ab059dad3ea046a86fb8239a4" name="a879a667ab059dad3ea046a86fb8239a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879a667ab059dad3ea046a86fb8239a4">&#9670;&#160;</a></span>lineCrossRC() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AlgorithmBase::lineCrossRC </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>X1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>Y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>X2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>Y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BDRECTPTR &amp;</td>          <td class="paramname"><span class="paramname"><em>rcPtr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d7ebe56803630dd7d84f71f643d1419" name="a7d7ebe56803630dd7d84f71f643d1419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7ebe56803630dd7d84f71f643d1419">&#9670;&#160;</a></span>lineCrossRC() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AlgorithmBase::lineCrossRC </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BOUNDINGRECT &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af305c4ee4c37cd65d4c13a437632dae8" name="af305c4ee4c37cd65d4c13a437632dae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af305c4ee4c37cd65d4c13a437632dae8">&#9670;&#160;</a></span>lineOnVecSplicingLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AlgorithmBase::lineOnVecSplicingLine </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_splicing_line.html">SplicingLine</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vecSplicingLine</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf8b04e05f684ef526e22eb2f59ce646" name="abf8b04e05f684ef526e22eb2f59ce646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8b04e05f684ef526e22eb2f59ce646">&#9670;&#160;</a></span>reducePaths_Inner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::reducePaths_Inner </td>
+          <td>(</td>
+          <td class="paramtype">Paths &amp;</td>          <td class="paramname"><span class="paramname"><em>paths_target</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c4b85dc98285f9ee8a0ed234a26c709" name="a4c4b85dc98285f9ee8a0ed234a26c709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c4b85dc98285f9ee8a0ed234a26c709">&#9670;&#160;</a></span>scanner_jumpPos() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::scanner_jumpPos </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listSLines</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec87785742d1a00a5f45989c419069fd" name="aec87785742d1a00a5f45989c419069fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec87785742d1a00a5f45989c419069fd">&#9670;&#160;</a></span>scanner_jumpPos() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::scanner_jumpPos </td>
+          <td>(</td>
+          <td class="paramtype">const qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listSLines</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10a401988cbe90e81ca7f710e3cc152a" name="a10a401988cbe90e81ca7f710e3cc152a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a401988cbe90e81ca7f710e3cc152a">&#9670;&#160;</a></span>scanner_outLine() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::scanner_outLine </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listSLines</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0496d41045e88fcc421efd778cbfeb7" name="ae0496d41045e88fcc421efd778cbfeb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0496d41045e88fcc421efd778cbfeb7">&#9670;&#160;</a></span>scanner_outLine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::scanner_outLine </td>
+          <td>(</td>
+          <td class="paramtype">const qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listSLines</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6355a54523d0af209e0d3d663472f401" name="a6355a54523d0af209e0d3d663472f401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6355a54523d0af209e0d3d663472f401">&#9670;&#160;</a></span>scanner_plotLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::scanner_plotLine </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>X1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>Y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>X2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>Y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listSLines</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2debbcf38bf9910f82574ea0869db55d" name="a2debbcf38bf9910f82574ea0869db55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2debbcf38bf9910f82574ea0869db55d">&#9670;&#160;</a></span>sortPtOnLine() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::sortPtOnLine </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nSortType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; <a class="el" href="struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o.html">EXPECTPOINTINFO</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listExpectPt</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72bf2bb77f0b6c0871cee660a439ad83" name="a72bf2bb77f0b6c0871cee660a439ad83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bf2bb77f0b6c0871cee660a439ad83">&#9670;&#160;</a></span>sortPtOnLine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::sortPtOnLine </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nSortType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o.html">EXPECTPOINTINFO</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listExpectPt</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae772223adb17dffb76db2b454d807e18" name="ae772223adb17dffb76db2b454d807e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae772223adb17dffb76db2b454d807e18">&#9670;&#160;</a></span>writeDataToList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlgorithmBase::writeDataToList </td>
+          <td>(</td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>nLastX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>nLastY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>nCurX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>nCurY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>nList_LastX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;</td>          <td class="paramname"><span class="paramname"><em>nList_LastY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listSLine</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="algorithmbase_8h_source.html">algorithmbase.h</a></li>
+<li><a class="el" href="algorithmbase_8cpp.html">algorithmbase.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_algorithm_base.html">AlgorithmBase</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

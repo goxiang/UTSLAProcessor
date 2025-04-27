@@ -1,0 +1,150 @@
+\doxysection{meshbase.\+h}
+\hypertarget{meshbase_8h_source}{}\label{meshbase_8h_source}\index{LatticeModule/meshbase.h@{LatticeModule/meshbase.h}}
+\mbox{\hyperlink{meshbase_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MESHBASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MESHBASE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMatrix4x4>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QVector3D>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QPair>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}clipper.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemeshdef}{meshdef}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_edge}{Edge}};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_face}{Face}};}
+\DoxyCodeLine{00020\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_bounding_box}{BoundingBox}};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_calc_face_result}{CalcFaceResult}};}
+\DoxyCodeLine{00022\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{ClipPathResult}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ QSharedPointer<Vertex>\ \mbox{\hyperlink{namespacemeshdef_a2d55473c6fbf5769e366f445c52ef0ee}{VertexPtr}};}
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ QSharedPointer<Edge>\ \mbox{\hyperlink{namespacemeshdef_a187db0ead7484e893b40c03d9f0e9dea}{EdgePtr}};}
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ QSharedPointer<Face>\ \mbox{\hyperlink{namespacemeshdef_ad7ee4450006f080892cc73269c431ea6}{FacePtr}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_bounding_box}{BoundingBox}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structmeshdef_1_1_bounding_box_a16b064a431d245b725adef536b9bab24}{\_minX}}\ =\ FLT\_MAX;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structmeshdef_1_1_bounding_box_a9787e5ff6ae4c18c6676c252cb6b4b66}{\_minY}}\ =\ FLT\_MAX;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structmeshdef_1_1_bounding_box_af6e88824875870967e30d8b0ee88546e}{\_minZ}}\ =\ FLT\_MAX;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structmeshdef_1_1_bounding_box_aad79a454e5ab094f5b906e9c7ec8fff5}{\_maxX}}\ =\ FLT\_MIN;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structmeshdef_1_1_bounding_box_a4eca29e9180002fc5471178842b52c9a}{\_maxY}}\ =\ FLT\_MIN;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structmeshdef_1_1_bounding_box_a91098cb970b8b6c24c4c63cf616d0ffb}{\_maxZ}}\ =\ FLT\_MIN;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacemeshdef_a4ad9c34bdca61857ec56ad5894d72b0c}{EdgeResult}}\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4ad9c34bdca61857ec56ad5894d72b0cad86b879f092235c085c9fc2b449f8294}{ERT\_NOINSECITON}}\ =\ 0,}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4ad9c34bdca61857ec56ad5894d72b0ca9722ed46d38144828d9682a2127d7c21}{ERT\_ONEDGE}},}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4ad9c34bdca61857ec56ad5894d72b0cac71cfcc52a56859bfbe72aedd19b2f42}{ERT\_ONVERTEX}},}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07f}{FaceResult}}\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de}{FRT\_FOUNDNONE}}\ =\ 0,}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07faeca5ee612039fbce79b2e5a60fdc7da7}{FRT\_FOUNDFIRST}},}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07faa88fcee541f2af060a0becc8545f9335}{FRT\_FOUNDALL}}}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_vertex_a65ee361a212566025a2f07e49cd3a44f}{Vertex}}\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ QVector3D\ \mbox{\hyperlink{structmeshdef_1_1_vertex_a13a44f7b6419aafe20d83355c261e8ff}{\_coor}}\ =\ QVector3D();}
+\DoxyCodeLine{00051\ \ \ \ \ QList<Face\ *>\ \mbox{\hyperlink{structmeshdef_1_1_vertex_af2beecca3b2acbeea69590f9dfce0bf5}{\_faceList}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_vertex_a65ee361a212566025a2f07e49cd3a44f}{Vertex}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_vertex_afdcae863e8e2f251bbb3e07c7fb48434}{Vertex}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&x,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&y,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&z)\ :}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_vertex_a13a44f7b6419aafe20d83355c261e8ff}{\_coor}}(x,\ y,\ z)\ \{\}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_vertex_a57d8aaf916895563d08a37f20ee64d9d}{transform}}(\textcolor{keyword}{const}\ QMatrix4x4\ \&mat);}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_calc_edge_result}{CalcEdgeResult}}\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_edge}{Edge}}\ *\mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_aa48890ed4facd9ef5b70c5366c3ed43f}{\_edge}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4ad9c34bdca61857ec56ad5894d72b0c}{EdgeResult}}\ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_ad1305f839b7be18bf2cac34537e6e5c9}{\_result}}\ =\ \mbox{\hyperlink{namespacemeshdef_a4ad9c34bdca61857ec56ad5894d72b0cad86b879f092235c085c9fc2b449f8294}{ERT\_NOINSECITON}};}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *\mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_aaf222c168412da29523bd49a9bab61ac}{\_vertex}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00064\ \ \ \ \ QVector3D\ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_ac6e7ecd7830bdfd42a47906d4d146c69}{\_coor}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_a848a4f6af92f4bb36a5fa46f6bda8e35}{setVertex}}(\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *v)\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_ad1305f839b7be18bf2cac34537e6e5c9}{\_result}}\ =\ \mbox{\hyperlink{namespacemeshdef_a4ad9c34bdca61857ec56ad5894d72b0cac71cfcc52a56859bfbe72aedd19b2f42}{ERT\_ONVERTEX}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_aaf222c168412da29523bd49a9bab61ac}{\_vertex}}\ =\ v;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result_ac6e7ecd7830bdfd42a47906d4d146c69}{\_coor}}\ =\ v-\/>\mbox{\hyperlink{structmeshdef_1_1_vertex_a13a44f7b6419aafe20d83355c261e8ff}{\_coor}};}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_edge_a4e16df216fef19ca87937c29f4e9e957}{Edge}}\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ QVector<Vertex\ *>\ \mbox{\hyperlink{structmeshdef_1_1_edge_a294780c15f93a4a5dfca6b9280e84bfe}{\_vertexs}};}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_face}{Face}}\ *\mbox{\hyperlink{structmeshdef_1_1_edge_afe89cfa05d2e189f0df84f5131b977f4}{\_curFace}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_face}{Face}}\ *\mbox{\hyperlink{structmeshdef_1_1_edge_a3428be5f50942910f15b4476b55c8bb6}{\_nextFace}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_edge_a4e16df216fef19ca87937c29f4e9e957}{Edge}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_edge_ac4b58fed34265d56a274a09bf7b2ae92}{Edge}}(\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *v1,\ \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *v2,\ \mbox{\hyperlink{structmeshdef_1_1_face}{Face}}\ *curFace)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_edge_a294780c15f93a4a5dfca6b9280e84bfe}{\_vertexs}}.resize(2);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_edge_a294780c15f93a4a5dfca6b9280e84bfe}{\_vertexs}}[0]\ =\ v1;}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_edge_a294780c15f93a4a5dfca6b9280e84bfe}{\_vertexs}}[1]\ =\ v2;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_edge_afe89cfa05d2e189f0df84f5131b977f4}{\_curFace}}\ =\ curFace;}
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structmeshdef_1_1_edge_aa1caf16c312a990b8d26e9dfb83b1fb4}{calcIntersection}}(\mbox{\hyperlink{structmeshdef_1_1_calc_edge_result}{CalcEdgeResult}}\ \&,\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{ClipPathResult}}\ \&);}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_face_acae24336f370c36f3aa2fd18f2df02a1}{Face}}\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ QVector3D\ \mbox{\hyperlink{structmeshdef_1_1_face_a88884525e7875b1d1c152c185e9de664}{\_normal}};}
+\DoxyCodeLine{00090\ \ \ \ \ QVector<Vertex\ *>\ \mbox{\hyperlink{structmeshdef_1_1_face_acbb885880d284ca646fa72069e3c41c2}{\_vertexs}};}
+\DoxyCodeLine{00091\ \ \ \ \ QVector<Edge\ *>\ \mbox{\hyperlink{structmeshdef_1_1_face_a1340dc047791f13a5de5ef7286aae39c}{\_edges}};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_face_acae24336f370c36f3aa2fd18f2df02a1}{Face}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_face_acae24336f370c36f3aa2fd18f2df02a1}{Face}}(\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *v1,\ \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *v2,\ \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *v3);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structmeshdef_1_1_face_af1b2af0d3524faf679437e2e97b94700}{isFaceOnLayerHei}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&);}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_face_ada0ff834429f814e345de108c417909a}{updateNormal}}();}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structmeshdef_1_1_face_a345fce995a32366a99bacc72b0c7bb55}{calcIntersection}}(\mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{ClipPathResult}}\ \&);}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structmeshdef_1_1_face_a6237c43552fc30f6193b083f2e3fa88f}{updateClipResult}}(\mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{ClipPathResult}}\ \&,\ \textcolor{keyword}{const}\ QVector<CalcEdgeResult>\ \&);}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structmeshdef_1_1_face_a6237c43552fc30f6193b083f2e3fa88f}{updateClipResult}}(\mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{ClipPathResult}}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result}{CalcEdgeResult}}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result}{CalcEdgeResult}}\ \&);}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_calc_face_result}{CalcFaceResult}}\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07f}{FaceResult}}\ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_ae71fa65188583339d732f76cddd70b74}{\_result}}\ =\ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de}{FRT\_FOUNDNONE}};}
+\DoxyCodeLine{00106\ \ \ \ \ QVector3D\ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_a51f8e0f7aa004e6330f2ef75cb9b5df0}{\_startPt}};}
+\DoxyCodeLine{00107\ \ \ \ \ QVector3D\ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_afc2b46fced71556748f723e9cdf9f1e2}{\_endPt}};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_adea0b435359511e7811ade8f3f31b575}{initResult}}()\ \{\ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_ae71fa65188583339d732f76cddd70b74}{\_result}}\ =\ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07fa81163897b7be06c65c2b5acd677143de}{FRT\_FOUNDNONE}};\ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_a442a0926f45a8eecd27501415bf32861}{setFirstPt}}(\textcolor{keyword}{const}\ QVector3D\ \&pt)\ \ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_a51f8e0f7aa004e6330f2ef75cb9b5df0}{\_startPt}}\ =\ std::move(pt);}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_calc_face_result_ae71fa65188583339d732f76cddd70b74}{\_result}}\ =\ \mbox{\hyperlink{namespacemeshdef_a4f4e04c2d87a90f2a120b9a04482f07faeca5ee612039fbce79b2e5a60fdc7da7}{FRT\_FOUNDFIRST}};}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{ClipPathResult}}\ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_a4cbabb208069be89bc6653349cde7606}{\_layerHei}}\ =\ 0;}
+\DoxyCodeLine{00118\ \ \ \ \ QSet<long\ long>\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_ac9ade611f8e32873e58ca8cfd0f21f83}{\_usedFaceSet}};}
+\DoxyCodeLine{00119\ \ \ \ \ QSet<long\ long>\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_a2410df60b7a91c3c2d7d77e53b11f796}{\_usedVertexSet}};}
+\DoxyCodeLine{00120\ \ \ \ \ QSet<QPair<long\ long,\ long\ long>>\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_a1305b9e8b5d2310a339cfc8cea587932}{\_usedEdgeSet}};}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{structmeshdef_1_1_calc_edge_result}{CalcEdgeResult}}\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_a19080466c695fc7ab4910de634eb36ac}{\_startCoor}};}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_abf869683835b99b1d980de5e336af890}{\_started}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00124\ \ \ \ \ QVector<CalcEdgeResult>\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_ad1ec5d1e683fcb8e73a0451396285b30}{\_edgeResultVec}};}
+\DoxyCodeLine{00125\ \ \ \ \ ClipperLib::DoublePath\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result_a3785ddc6576c03b8ab3e408a98e0ba67}{\_path}};}
+\DoxyCodeLine{00126\ \};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmeshdef_1_1_part}{Part}}\ \{}
+\DoxyCodeLine{00129\ \ \ \ \ QList<VertexPtr>\ \mbox{\hyperlink{structmeshdef_1_1_part_a38f812f08ddde14ffe07fe37a480c559}{\_vertexList}};}
+\DoxyCodeLine{00130\ \ \ \ \ QMap<QPair<long\ long,\ long\ long>,\ \mbox{\hyperlink{namespacemeshdef_a187db0ead7484e893b40c03d9f0e9dea}{EdgePtr}}>\ \mbox{\hyperlink{structmeshdef_1_1_part_ae29b47478e34ee12e382d964965e2603}{\_edgeMap}};}
+\DoxyCodeLine{00131\ \ \ \ \ QList<FacePtr>\ \mbox{\hyperlink{structmeshdef_1_1_part_aa347bb2aeb9710e67da2d97270c385ba}{\_faceList}};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_part_a6133e3110c26d681031cc7bf19dbfbe2}{createPartInfo}}(\textcolor{keyword}{const}\ QVector<QVector3D>\ \&vertexs,}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QVector<QVector<int>>\ \&faces);}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_part_a0f06b48440d8a65c2cd8722c378b9dfa}{tranformPart}}(\textcolor{keyword}{const}\ QMatrix4x4\ \&mat);}
+\DoxyCodeLine{00136\ \ \ \ \ ClipperLib::DoublePath\ \mbox{\hyperlink{structmeshdef_1_1_part_a90a676b02c9b40fe8bfb6a8b962f09a5}{cutPartOnZ}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&layerHei);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_part_af01a3edf72c97676d2039304c6d6055c}{findNextIntersection}}(\mbox{\hyperlink{structmeshdef_1_1_face}{Face}}\ *,\ \mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{ClipPathResult}}\ \&);}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structmeshdef_1_1_part_a6f0587b58c6af225e1e5341c1cd7540e}{updateFaceInfo}}(\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *,\ \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *,\ \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}}\ *);}
+\DoxyCodeLine{00141\ \};}
+\DoxyCodeLine{00142\ \}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MESHBASE\_H}}
+
+\end{DoxyCode}

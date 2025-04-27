@@ -1,0 +1,101 @@
+\doxysection{dividerheader.\+h}
+\hypertarget{dividerheader_8h_source}{}\label{dividerheader_8h_source}\index{DynamicDivider/PolygonsDivider/dividerheader.h@{DynamicDivider/PolygonsDivider/dividerheader.h}}
+\mbox{\hyperlink{dividerheader_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DIVIDERHEADER\_HHH\_HH\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DIVIDERHEADER\_HHH\_HH\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Clipper/clipper.hpp"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }ClipperLib;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_min_err_result}{MinErrResult}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_min_err_result_ac619713231cc45c83e36c517cda83c12}{\_error}}\ =\ std::numeric\_limits<double>::max();}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_min_err_result_a1b7423e65c5426a574bdaa3cd3dbd077}{\_pos}}\ =\ 0;;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_min_err_result_a6900cb9eabb87e6caeb58e3856d1f23a}{updateResult}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&pos,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&error)\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ tempError\ =\ fabs(error);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tempError\ <\ \mbox{\hyperlink{struct_min_err_result_ac619713231cc45c83e36c517cda83c12}{\_error}})\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_min_err_result_a1b7423e65c5426a574bdaa3cd3dbd077}{\_pos}}\ =\ pos;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_min_err_result_ac619713231cc45c83e36c517cda83c12}{\_error}}\ =\ tempError;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_earing_triangle_a04ccdc0e7c0a2cf89478f10b0d379a5a}{EaringTriangle}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}}\ =\ std::numeric\_limits<long\ long>::max();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}}\ =\ std::numeric\_limits<long\ long>::max();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}}\ =\ std::numeric\_limits<long\ long>::min();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}}\ =\ std::numeric\_limits<long\ long>::min();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_earing_triangle_a71b0b868a41b7806b53bd53560636980}{\_area}}\ =\ 0.0;}
+\DoxyCodeLine{00030\ \ \ \ \ Path\ \mbox{\hyperlink{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361}{\_path}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a04ccdc0e7c0a2cf89478f10b0d379a5a}{EaringTriangle}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a910fdcc89d284a0e4393122182e39021}{EaringTriangle}}(\textcolor{keyword}{const}\ IntPoint\ \&p1,\ \textcolor{keyword}{const}\ IntPoint\ \&p2,\ \textcolor{keyword}{const}\ IntPoint\ \&p3,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&area)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_abc38843fb98eef01997e283c22e79a1b}{initTriangle}}(p1,\ p2,\ p3,\ area);}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{struct_earing_triangle_a937be1d9c66a684bfee1a92960cfc1dc}{\string~EaringTriangle}}()\ \{\}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_earing_triangle_abc38843fb98eef01997e283c22e79a1b}{initTriangle}}(\textcolor{keyword}{const}\ IntPoint\ \&p1,\ \textcolor{keyword}{const}\ IntPoint\ \&p2,\ \textcolor{keyword}{const}\ IntPoint\ \&p3,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&area)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361}{\_path}}.push\_back(p1);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361}{\_path}}.push\_back(p2);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361}{\_path}}.push\_back(p3);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}}\ =\ std::min(\mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}},\ p1.X);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}}\ =\ std::min(\mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}},\ p2.X);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}}\ =\ std::min(\mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}},\ p3.X);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}}\ =\ std::max(\mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}},\ p1.X);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}}\ =\ std::max(\mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}},\ p2.X);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}}\ =\ std::max(\mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}},\ p3.X);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}}\ =\ std::min(\mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}},\ p1.Y);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}}\ =\ std::min(\mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}},\ p2.Y);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}}\ =\ std::min(\mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}},\ p3.Y);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}}\ =\ std::max(\mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}},\ p1.Y);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}}\ =\ std::max(\mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}},\ p2.Y);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}}\ =\ std::max(\mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}},\ p3.Y);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_earing_triangle_a71b0b868a41b7806b53bd53560636980}{\_area}}\ =\ area;}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_earing_triangle_acf7d6a28cd7fd0e4c22abdda7216acb3}{ptOutTheTriangle}}(\textcolor{keyword}{const}\ IntPoint\ \&pt)\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ <\ \mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\_minX}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.X\ >\ \mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\_maxX}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ <\ \mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pt.Y\ >\ \mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (0\ ==\ PointInPolygon(pt,\ \mbox{\hyperlink{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361}{\_path}}));}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{dividerheader_8h_abddc8e60ea10b3a1517b1aac23256da9}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_earing_triangle}{EaringTriangle}}\ \&earingTri)}
+\DoxyCodeLine{00071\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ QDebugStateSaver\ saver(debug);}
+\DoxyCodeLine{00073\ \ \ \ \ debug.nospace()\ <<\ \textcolor{stringliteral}{"{}\{\ "{}}\ <<\ earingTri.\mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\_minY}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ earingTri.\mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\_maxY}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ earingTri.\mbox{\hyperlink{struct_earing_triangle_a71b0b868a41b7806b53bd53560636980}{\_area}}\ <<\ \textcolor{stringliteral}{"{}\}"{}};}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00077\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{dividerheader_8h_abddc8e60ea10b3a1517b1aac23256da9}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ IntPoint\ \&pt)}
+\DoxyCodeLine{00080\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ QDebugStateSaver\ saver(debug);}
+\DoxyCodeLine{00082\ \ \ \ \ debug.nospace()\ <<\ \textcolor{stringliteral}{"{}(\ "{}}\ <<\ pt.X\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ pt.Y\ <<\ \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00085\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{dividerheader_8h_abddc8e60ea10b3a1517b1aac23256da9}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ DoublePoint\ \&pt)}
+\DoxyCodeLine{00088\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ QDebugStateSaver\ saver(debug);}
+\DoxyCodeLine{00090\ \ \ \ \ debug.nospace()\ <<\ \textcolor{stringliteral}{"{}(\ "{}}\ <<\ pt.X\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ pt.Y\ <<\ \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00093\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

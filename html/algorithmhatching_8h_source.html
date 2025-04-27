@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: algorithmhatching.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('algorithmhatching_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">algorithmhatching.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="algorithmhatching_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALGORITHMHATCHING_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALGORITHMHATCHING_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="algorithmstrip_8h.html">algorithmstrip.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="algorithmchecker_8h.html">algorithmchecker.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="algorithmhatchingring_8h.html">algorithmhatchingring.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_u_t_s_l_a_processor__global_8h.html">UTSLAProcessor_global.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_pocket_branch.html">PocketBranch</a>;</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_algorithm_hatching.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="class_algorithm_hatching.html">AlgorithmHatching</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_algorithm_hatching_ring.html#a1a1e4c4f9f0ce07aa77ac8519ede94eb">AlgorithmHatchingRing</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_algorithm_checker.html">AlgorithmChecker</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">public</span> <a class="code hl_function" href="class_algorithm_strip.html#a67b24620a7dfda90d3276dbbd173c1b3">AlgorithmStrip</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#afc1564203f65535227c7ca1b48b7ecd7">calcInnerPoint</a>(<span class="keyword">const</span> Paths &amp;, <a class="code hl_typedef" href="slascaninfodef_8h.html#a87cd46bd0dde23b6ad973000f1463438">TOTALHATCHINGLINE</a> &amp;, <span class="keywordtype">int</span> &amp;nTotalLCnt, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;bInner = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#a5e95c67f726ea90b4f0f5d1bdfadcb6e">calcRingHatching</a>(<span class="keyword">const</span> Paths &amp;, QVector&lt;SCANLINE&gt; &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nSpacing);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#a49850c4d38f6f8b370e97e45f7a2bdc5">calcSpiralHatching</a>(<span class="keyword">const</span> Paths &amp;, QVector&lt;SCANLINE&gt; &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nSpacing);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#a03f26a50116d0523177539ee760aa96d">calcFermatSpiralHatching</a>(<span class="keyword">const</span> Paths &amp;, QVector&lt;SCANLINE&gt; &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nSpacing);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#abc6dbd60cd3fbd922ee352148e297e89">calcRingTree</a>(<span class="keyword">const</span> Paths &amp;, <a class="code hl_struct" href="struct_pocket_tree.html">PocketTree</a> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nSpacing);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#aa06db55dcc3bc888ba1e0d4fe24ef113">calcSPLine</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <a class="code hl_typedef" href="slascaninfodef_8h.html#a87cd46bd0dde23b6ad973000f1463438">TOTALHATCHINGLINE</a> &amp;, QVector&lt;SCANLINE&gt; &amp;,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nTLineCnt = 0, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nLSConnecter = 0, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nCLineFactor = 0);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#a52987731e8b573bd21260671a0732fa7">drawBranch</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_branch.html">PocketBranch</a> &amp;branch, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#abafd218075c0dff96f6e8330c76cacca">drawBranch_spiral</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_branch.html">PocketBranch</a> &amp;branch, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#a8fd4c27adca4ce002d544e040afd2083">drawBranch_fermatSpiral</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_pocket_branch.html">PocketBranch</a> &amp;branch, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#ifdef USE_PROCESSOR_EXTEND</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="algorithmhatchingring_8cpp.html#a05903a59a741a7b95c92cf0e14a1ef21">drawPathOffset</a>(<span class="keyword">const</span> Path &amp;, <span class="keyword">const</span> IntPoint &amp;, <span class="keyword">const</span> ulong &amp;ms = 0);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="algorithmhatchingring_8cpp.html#a05903a59a741a7b95c92cf0e14a1ef21">drawPathOffset</a>(<span class="keyword">const</span> Paths &amp;, <span class="keyword">const</span> IntPoint &amp;, <span class="keyword">const</span> ulong &amp;ms = 0);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#a37dd3eb383ac5b2db1666d7c36dd1182">drawPathToScanLine</a>(<span class="keyword">const</span> Paths &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#a37dd3eb383ac5b2db1666d7c36dd1182">drawPathToScanLine</a>(<span class="keyword">const</span> Path &amp;, QVector&lt;SCANLINE&gt; &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;type, <span class="keyword">const</span> IntPoint &amp;offsetCoor = IntPoint(0, 0));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_hatching.html#ad243f050e5b9bbe20bd20070df4e5ad3">drawSpiralPathToScanLine</a>(<span class="keyword">const</span> Path &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_algorithm_hatching.html#a866ea22b5f26adb87178961ae40de31d">getFirstLine</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keywordtype">int</span> *, <span class="keywordtype">int</span> *, <a class="code hl_typedef" href="slascaninfodef_8h.html#a87cd46bd0dde23b6ad973000f1463438">TOTALHATCHINGLINE</a> &amp;, <span class="keywordtype">bool</span> &amp;bFirstLine);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_algorithm_hatching.html#a0c78bb11456445521ac4e67f9e6d32bd">getNextLine</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keywordtype">int</span> *, <span class="keywordtype">int</span> *, <a class="code hl_typedef" href="slascaninfodef_8h.html#a87cd46bd0dde23b6ad973000f1463438">TOTALHATCHINGLINE</a> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;nLConneter);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_algorithm_hatching.html#a320cf2f75c3c718a81ae6875f1fda1f4">getFirstLine_Greed</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keywordtype">int</span> *, <span class="keywordtype">int</span> *, <a class="code hl_typedef" href="slascaninfodef_8h.html#a87cd46bd0dde23b6ad973000f1463438">TOTALHATCHINGLINE</a> &amp;, <span class="keywordtype">bool</span> &amp;bFirstLine);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif </span><span class="comment">// ALGORITHMHATCHING_H</span></div>
+<div class="ttc" id="a_u_t_s_l_a_processor__global_8h_html"><div class="ttname"><a href="_u_t_s_l_a_processor__global_8h.html">UTSLAProcessor_global.h</a></div></div>
+<div class="ttc" id="aalgorithmchecker_8h_html"><div class="ttname"><a href="algorithmchecker_8h.html">algorithmchecker.h</a></div></div>
+<div class="ttc" id="aalgorithmhatchingring_8cpp_html_a05903a59a741a7b95c92cf0e14a1ef21"><div class="ttname"><a href="algorithmhatchingring_8cpp.html#a05903a59a741a7b95c92cf0e14a1ef21">drawPathOffset</a></div><div class="ttdeci">void drawPathOffset(const Path &amp;path, const IntPoint &amp;offsetCoor, const ulong &amp;ms)</div><div class="ttdef"><b>定义</b> algorithmhatchingring.cpp:1491</div></div>
+<div class="ttc" id="aalgorithmhatchingring_8h_html"><div class="ttname"><a href="algorithmhatchingring_8h.html">algorithmhatchingring.h</a></div></div>
+<div class="ttc" id="aalgorithmstrip_8h_html"><div class="ttname"><a href="algorithmstrip_8h.html">algorithmstrip.h</a></div></div>
+<div class="ttc" id="aclass_algorithm_checker_html"><div class="ttname"><a href="class_algorithm_checker.html">AlgorithmChecker</a></div><div class="ttdef"><b>定义</b> algorithmchecker.h:13</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html"><div class="ttname"><a href="class_algorithm_hatching.html">AlgorithmHatching</a></div><div class="ttdef"><b>定义</b> algorithmhatching.h:25</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a03f26a50116d0523177539ee760aa96d"><div class="ttname"><a href="class_algorithm_hatching.html#a03f26a50116d0523177539ee760aa96d">AlgorithmHatching::calcFermatSpiralHatching</a></div><div class="ttdeci">void calcFermatSpiralHatching(const Paths &amp;, QVector&lt; SCANLINE &gt; &amp;, const int &amp;nSpacing)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:499</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a0c78bb11456445521ac4e67f9e6d32bd"><div class="ttname"><a href="class_algorithm_hatching.html#a0c78bb11456445521ac4e67f9e6d32bd">AlgorithmHatching::getNextLine</a></div><div class="ttdeci">bool getNextLine(const int &amp;, const int &amp;, int *, int *, TOTALHATCHINGLINE &amp;, const int &amp;nLConneter)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:1071</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a320cf2f75c3c718a81ae6875f1fda1f4"><div class="ttname"><a href="class_algorithm_hatching.html#a320cf2f75c3c718a81ae6875f1fda1f4">AlgorithmHatching::getFirstLine_Greed</a></div><div class="ttdeci">bool getFirstLine_Greed(const int &amp;, const int &amp;, int *, int *, TOTALHATCHINGLINE &amp;, bool &amp;bFirstLine)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:1140</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a37dd3eb383ac5b2db1666d7c36dd1182"><div class="ttname"><a href="class_algorithm_hatching.html#a37dd3eb383ac5b2db1666d7c36dd1182">AlgorithmHatching::drawPathToScanLine</a></div><div class="ttdeci">void drawPathToScanLine(const Paths &amp;, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:875</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a49850c4d38f6f8b370e97e45f7a2bdc5"><div class="ttname"><a href="class_algorithm_hatching.html#a49850c4d38f6f8b370e97e45f7a2bdc5">AlgorithmHatching::calcSpiralHatching</a></div><div class="ttdeci">void calcSpiralHatching(const Paths &amp;, QVector&lt; SCANLINE &gt; &amp;, const int &amp;nSpacing)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:487</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a52987731e8b573bd21260671a0732fa7"><div class="ttname"><a href="class_algorithm_hatching.html#a52987731e8b573bd21260671a0732fa7">AlgorithmHatching::drawBranch</a></div><div class="ttdeci">void drawBranch(const PocketBranch &amp;branch, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:438</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a5e95c67f726ea90b4f0f5d1bdfadcb6e"><div class="ttname"><a href="class_algorithm_hatching.html#a5e95c67f726ea90b4f0f5d1bdfadcb6e">AlgorithmHatching::calcRingHatching</a></div><div class="ttdeci">void calcRingHatching(const Paths &amp;, QVector&lt; SCANLINE &gt; &amp;, const int &amp;nSpacing)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:476</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a866ea22b5f26adb87178961ae40de31d"><div class="ttname"><a href="class_algorithm_hatching.html#a866ea22b5f26adb87178961ae40de31d">AlgorithmHatching::getFirstLine</a></div><div class="ttdeci">bool getFirstLine(const int &amp;, const int &amp;, int *, int *, TOTALHATCHINGLINE &amp;, bool &amp;bFirstLine)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:948</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_a8fd4c27adca4ce002d544e040afd2083"><div class="ttname"><a href="class_algorithm_hatching.html#a8fd4c27adca4ce002d544e040afd2083">AlgorithmHatching::drawBranch_fermatSpiral</a></div><div class="ttdeci">void drawBranch_fermatSpiral(const PocketBranch &amp;branch, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:462</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_aa06db55dcc3bc888ba1e0d4fe24ef113"><div class="ttname"><a href="class_algorithm_hatching.html#aa06db55dcc3bc888ba1e0d4fe24ef113">AlgorithmHatching::calcSPLine</a></div><div class="ttdeci">void calcSPLine(const int &amp;, TOTALHATCHINGLINE &amp;, QVector&lt; SCANLINE &gt; &amp;, const int &amp;nTLineCnt=0, const int &amp;nLSConnecter=0, const int &amp;nCLineFactor=0)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:535</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_abafd218075c0dff96f6e8330c76cacca"><div class="ttname"><a href="class_algorithm_hatching.html#abafd218075c0dff96f6e8330c76cacca">AlgorithmHatching::drawBranch_spiral</a></div><div class="ttdeci">void drawBranch_spiral(const PocketBranch &amp;branch, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:450</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_abc6dbd60cd3fbd922ee352148e297e89"><div class="ttname"><a href="class_algorithm_hatching.html#abc6dbd60cd3fbd922ee352148e297e89">AlgorithmHatching::calcRingTree</a></div><div class="ttdeci">void calcRingTree(const Paths &amp;, PocketTree &amp;, const int &amp;nSpacing)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:511</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_ad243f050e5b9bbe20bd20070df4e5ad3"><div class="ttname"><a href="class_algorithm_hatching.html#ad243f050e5b9bbe20bd20070df4e5ad3">AlgorithmHatching::drawSpiralPathToScanLine</a></div><div class="ttdeci">void drawSpiralPathToScanLine(const Path &amp;, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:934</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_html_afc1564203f65535227c7ca1b48b7ecd7"><div class="ttname"><a href="class_algorithm_hatching.html#afc1564203f65535227c7ca1b48b7ecd7">AlgorithmHatching::calcInnerPoint</a></div><div class="ttdeci">void calcInnerPoint(const Paths &amp;, TOTALHATCHINGLINE &amp;, int &amp;nTotalLCnt, const double &amp;, const int &amp;, const bool &amp;bInner=false)</div><div class="ttdef"><b>定义</b> algorithmhatching.cpp:23</div></div>
+<div class="ttc" id="aclass_algorithm_hatching_ring_html_a1a1e4c4f9f0ce07aa77ac8519ede94eb"><div class="ttname"><a href="class_algorithm_hatching_ring.html#a1a1e4c4f9f0ce07aa77ac8519ede94eb">AlgorithmHatchingRing::AlgorithmHatchingRing</a></div><div class="ttdeci">AlgorithmHatchingRing()=default</div></div>
+<div class="ttc" id="aclass_algorithm_strip_html_a67b24620a7dfda90d3276dbbd173c1b3"><div class="ttname"><a href="class_algorithm_strip.html#a67b24620a7dfda90d3276dbbd173c1b3">AlgorithmStrip::AlgorithmStrip</a></div><div class="ttdeci">AlgorithmStrip()=default</div></div>
+<div class="ttc" id="aslascaninfodef_8h_html_a87cd46bd0dde23b6ad973000f1463438"><div class="ttname"><a href="slascaninfodef_8h.html#a87cd46bd0dde23b6ad973000f1463438">TOTALHATCHINGLINE</a></div><div class="ttdeci">QVector&lt; HATCHINGLINE &gt; TOTALHATCHINGLINE</div><div class="ttdef"><b>定义</b> slascaninfodef.h:53</div></div>
+<div class="ttc" id="astruct_pocket_branch_html"><div class="ttname"><a href="struct_pocket_branch.html">PocketBranch</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:52</div></div>
+<div class="ttc" id="astruct_pocket_tree_html"><div class="ttname"><a href="struct_pocket_tree.html">PocketTree</a></div><div class="ttdef"><b>定义</b> algorithmhatchingring.h:89</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="algorithmhatching_8h.html">algorithmhatching.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

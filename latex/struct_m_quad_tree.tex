@@ -1,0 +1,260 @@
+\doxysection{MQuad\+Tree结构体 参考}
+\hypertarget{struct_m_quad_tree}{}\label{struct_m_quad_tree}\index{MQuadTree@{MQuadTree}}
+
+
+{\ttfamily \#include $<$quadtreedef.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_m_quad_tree_adfc7cfd9bc7f61af37957c298e41d6f4}{MQuad\+Tree}} (const int \&depth=\mbox{\hyperlink{quadtreedef_8h_a38521aa912493bb69f2ea39865729462}{Max\+Depths}})
+\item 
+int \mbox{\hyperlink{struct_m_quad_tree_a0a2fab0fa4a5b290f01da35e965d6460}{get\+Node\+Count}} ()
+\item 
+bool \mbox{\hyperlink{struct_m_quad_tree_afbe78bdf01aac2561768b84948f79378}{insert\+Node}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&)
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_m_quad_tree}{MQuad\+Tree} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_m_quad_tree_a606ad04f796b982ba5151a8e9b100e1d}{sort\+Paths}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&, const Paths \&, Paths \&)
+\begin{DoxyCompactList}\small\item\em 使用四叉树对路径进行排序 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\bool \mbox{\hyperlink{struct_m_quad_tree_a78c78a9440f6ee4592884a58a37ff7f3}{sort\+Paths}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&, const QVector$<$ T $>$ \&, QVector$<$ T $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_m_quad_tree_a178fd616c93a8ba7d0072ad3e7b45126}{\+\_\+depths}} = \mbox{\hyperlink{quadtreedef_8h_a38521aa912493bb69f2ea39865729462}{Max\+Depths}}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_node}{Node}} $>$ \mbox{\hyperlink{struct_m_quad_tree_af44de7888fec03959ffb66ab2b645dbe}{\+\_\+root}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_m_quad_tree_a7bdd2112ea7a42f4bc987b14c9c18450}{seeking\+Neighhorhood}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}node, \mbox{\hyperlink{struct_search_result}{Search\+Result}} \&)
+\begin{DoxyCompactList}\small\item\em 搜索邻近节点 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_m_quad_tree_ad3d1e76bfdf7d7b3d488edebdaac57d4}{seeking\+Neighhorhood}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}node, const int \&, \mbox{\hyperlink{struct_search_result}{Search\+Result}} \&)
+\begin{DoxyCompactList}\small\item\em 在指定方向搜索邻近节点 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_m_quad_tree_a9800710fc58ac04543a5242a5127cf9b}{remove\+Pt}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&)
+\begin{DoxyCompactList}\small\item\em 从四叉树中移除点 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_m_quad_tree_a8620d17a9fba55e04c3c29e16577d507}{update\+Path\+Info}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&, const Paths \&, Paths \&)
+\begin{DoxyCompactList}\small\item\em 更新路径信息 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\bool \mbox{\hyperlink{struct_m_quad_tree_ad19a6a91c264d8c68bc0c071c764acf0}{update\+Path\+Info}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&, const QVector$<$ T $>$ \&, QVector$<$ T $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \mbox{\hyperlink{struct_m_quad_tree_ae58c91884ef05822174092e11b47867e}{\+\_\+cur\+Pt\+Ptr}} = nullptr
+\item 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \mbox{\hyperlink{struct_m_quad_tree_aba63840942546055bce38ce626a5f34a}{\+\_\+cur\+Bro\+Ptr}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_m_quad_tree_adfc7cfd9bc7f61af37957c298e41d6f4}\index{MQuadTree@{MQuadTree}!MQuadTree@{MQuadTree}}
+\index{MQuadTree@{MQuadTree}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{MQuadTree()}{MQuadTree()}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_adfc7cfd9bc7f61af37957c298e41d6f4} 
+MQuad\+Tree\+::\+MQuad\+Tree (\begin{DoxyParamCaption}\item[{const int \&}]{depth}{ = {\ttfamily \mbox{\hyperlink{quadtreedef_8h_a38521aa912493bb69f2ea39865729462}{Max\+Depths}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_m_quad_tree_a0a2fab0fa4a5b290f01da35e965d6460}\index{MQuadTree@{MQuadTree}!getNodeCount@{getNodeCount}}
+\index{getNodeCount@{getNodeCount}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{getNodeCount()}{getNodeCount()}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_a0a2fab0fa4a5b290f01da35e965d6460} 
+int MQuad\+Tree\+::get\+Node\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_m_quad_tree_afbe78bdf01aac2561768b84948f79378}\index{MQuadTree@{MQuadTree}!insertNode@{insertNode}}
+\index{insertNode@{insertNode}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{insertNode()}{insertNode()}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_afbe78bdf01aac2561768b84948f79378} 
+bool MQuad\+Tree\+::insert\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{pt}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{struct_m_quad_tree}{MQuad\+Tree} 
+
+向四叉树中插入节点
+
+
+\begin{DoxyParams}{参数}
+{\em pt} & 要插入的点信息指针 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 插入成功返回true
+\end{DoxyReturn}
+从根节点开始插入\+:
+\begin{DoxyEnumerate}
+\item 起始坐标为(0,0)
+\item 区域大小为2\texorpdfstring{$^\wedge$}{\string^}\+Max\+Depths
+\item 通过根节点递归插入 
+\end{DoxyEnumerate}\Hypertarget{struct_m_quad_tree_a9800710fc58ac04543a5242a5127cf9b}\index{MQuadTree@{MQuadTree}!removePt@{removePt}}
+\index{removePt@{removePt}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{removePt()}{removePt()}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_a9800710fc58ac04543a5242a5127cf9b} 
+bool MQuad\+Tree\+::remove\+Pt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{pt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+从四叉树中移除点 
+
+
+\begin{DoxyParams}{参数}
+{\em pt} & 要移除的点信息指针 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 移除成功返回true 
+\end{DoxyReturn}
+\Hypertarget{struct_m_quad_tree_ad3d1e76bfdf7d7b3d488edebdaac57d4}\index{MQuadTree@{MQuadTree}!seekingNeighhorhood@{seekingNeighhorhood}}
+\index{seekingNeighhorhood@{seekingNeighhorhood}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{seekingNeighhorhood()}{seekingNeighhorhood()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_ad3d1e76bfdf7d7b3d488edebdaac57d4} 
+void MQuad\+Tree\+::seeking\+Neighhorhood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{const int \&}]{search\+Type}{, }\item[{\mbox{\hyperlink{struct_search_result}{Search\+Result}} \&}]{searched\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在指定方向搜索邻近节点 
+
+
+\begin{DoxyParams}{参数}
+{\em node} & 当前节点指针 \\
+\hline
+{\em search\+Type} & 搜索方向类型 \\
+\hline
+{\em searched\+Info} & 搜索结果信息 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_m_quad_tree_a7bdd2112ea7a42f4bc987b14c9c18450}\index{MQuadTree@{MQuadTree}!seekingNeighhorhood@{seekingNeighhorhood}}
+\index{seekingNeighhorhood@{seekingNeighhorhood}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{seekingNeighhorhood()}{seekingNeighhorhood()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_a7bdd2112ea7a42f4bc987b14c9c18450} 
+void MQuad\+Tree\+::seeking\+Neighhorhood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{\mbox{\hyperlink{struct_search_result}{Search\+Result}} \&}]{searched\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+搜索邻近节点 
+
+
+\begin{DoxyParams}{参数}
+{\em node} & 当前节点指针 \\
+\hline
+{\em searched\+Info} & 搜索结果信息\\
+\hline
+\end{DoxyParams}
+邻近节点搜索流程\+:
+\begin{DoxyEnumerate}
+\item 计算当前节点的最近点
+\item 向八个方向递归搜索\+:
+\begin{DoxyItemize}
+\item 四个对角方向(UL/\+UR/\+DL/\+DR)
+\item 四个正交方向(LEFT/\+RIGHT/\+UP/\+DOWN)
+\end{DoxyItemize}
+\item 找到最近点后终止搜索
+\item 未找到时向父节点回溯 
+\end{DoxyEnumerate}\Hypertarget{struct_m_quad_tree_a606ad04f796b982ba5151a8e9b100e1d}\index{MQuadTree@{MQuadTree}!sortPaths@{sortPaths}}
+\index{sortPaths@{sortPaths}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{sortPaths()}{sortPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_a606ad04f796b982ba5151a8e9b100e1d} 
+bool MQuad\+Tree\+::sort\+Paths (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{cur\+Pt}{, }\item[{const Paths \&}]{src\+Path}{, }\item[{Paths \&}]{des\+Path}{}\end{DoxyParamCaption})}
+
+
+
+使用四叉树对路径进行排序 
+
+
+\begin{DoxyParams}{参数}
+{\em cur\+Pt} & 当前点信息指针 \\
+\hline
+{\em src\+Path} & 源路径集合 \\
+\hline
+{\em des\+Path} & 目标路径集合 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 排序成功返回true
+\end{DoxyReturn}
+排序流程\+:
+\begin{DoxyEnumerate}
+\item 更新初始路径信息
+\item 检查树节点数量
+\item 循环处理\+:
+\begin{DoxyItemize}
+\item 检查剩余节点
+\item 搜索最近邻点
+\item 更新路径信息 
+\end{DoxyItemize}
+\end{DoxyEnumerate}\Hypertarget{struct_m_quad_tree_a78c78a9440f6ee4592884a58a37ff7f3}\index{MQuadTree@{MQuadTree}!sortPaths@{sortPaths}}
+\index{sortPaths@{sortPaths}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{sortPaths()}{sortPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_a78c78a9440f6ee4592884a58a37ff7f3} 
+template$<$class T$>$ \\
+bool MQuad\+Tree\+::sort\+Paths (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{cur\+Pt}{, }\item[{const QVector$<$ T $>$ \&}]{src\+Vec}{, }\item[{QVector$<$ T $>$ \&}]{des\+Vec}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_m_quad_tree_a8620d17a9fba55e04c3c29e16577d507}\index{MQuadTree@{MQuadTree}!updatePathInfo@{updatePathInfo}}
+\index{updatePathInfo@{updatePathInfo}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{updatePathInfo()}{updatePathInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_a8620d17a9fba55e04c3c29e16577d507} 
+bool MQuad\+Tree\+::update\+Path\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{pt\+Ptr}{, }\item[{const Paths \&}]{src\+Paths}{, }\item[{Paths \&}]{des\+Paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+更新路径信息 
+
+
+\begin{DoxyParams}{参数}
+{\em pt\+Ptr} & 点信息指针 \\
+\hline
+{\em src\+Paths} & 源路径集合 \\
+\hline
+{\em des\+Paths} & 目标路径集合 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 更新成功返回true
+\end{DoxyReturn}
+更新流程\+:
+\begin{DoxyEnumerate}
+\item 验证点信息有效性
+\item 移除当前点
+\item 根据起点类型决定路径方向
+\item 添加路径到目标集合 
+\end{DoxyEnumerate}\Hypertarget{struct_m_quad_tree_ad19a6a91c264d8c68bc0c071c764acf0}\index{MQuadTree@{MQuadTree}!updatePathInfo@{updatePathInfo}}
+\index{updatePathInfo@{updatePathInfo}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{updatePathInfo()}{updatePathInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_ad19a6a91c264d8c68bc0c071c764acf0} 
+template$<$class T$>$ \\
+bool MQuad\+Tree\+::update\+Path\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{pt\+Ptr}{, }\item[{const QVector$<$ T $>$ \&}]{src\+Vec}{, }\item[{QVector$<$ T $>$ \&}]{des\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_m_quad_tree_aba63840942546055bce38ce626a5f34a}\index{MQuadTree@{MQuadTree}!\_curBroPtr@{\_curBroPtr}}
+\index{\_curBroPtr@{\_curBroPtr}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{\_curBroPtr}{\_curBroPtr}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_aba63840942546055bce38ce626a5f34a} 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} MQuad\+Tree\+::\+\_\+cur\+Bro\+Ptr = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{struct_m_quad_tree_ae58c91884ef05822174092e11b47867e}\index{MQuadTree@{MQuadTree}!\_curPtPtr@{\_curPtPtr}}
+\index{\_curPtPtr@{\_curPtPtr}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{\_curPtPtr}{\_curPtPtr}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_ae58c91884ef05822174092e11b47867e} 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} MQuad\+Tree\+::\+\_\+cur\+Pt\+Ptr = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{struct_m_quad_tree_a178fd616c93a8ba7d0072ad3e7b45126}\index{MQuadTree@{MQuadTree}!\_depths@{\_depths}}
+\index{\_depths@{\_depths}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{\_depths}{\_depths}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_a178fd616c93a8ba7d0072ad3e7b45126} 
+int MQuad\+Tree\+::\+\_\+depths = \mbox{\hyperlink{quadtreedef_8h_a38521aa912493bb69f2ea39865729462}{Max\+Depths}}}
+
+\Hypertarget{struct_m_quad_tree_af44de7888fec03959ffb66ab2b645dbe}\index{MQuadTree@{MQuadTree}!\_root@{\_root}}
+\index{\_root@{\_root}!MQuadTree@{MQuadTree}}
+\doxysubsubsection{\texorpdfstring{\_root}{\_root}}
+{\footnotesize\ttfamily \label{struct_m_quad_tree_af44de7888fec03959ffb66ab2b645dbe} 
+QShared\+Pointer$<$\mbox{\hyperlink{struct_node}{Node}}$>$ MQuad\+Tree\+::\+\_\+root}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8h}{quadtreedef.\+h}}\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8cpp}{quadtreedef.\+cpp}}\end{DoxyCompactItemize}

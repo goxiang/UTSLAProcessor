@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: SplicingModule/splicingabstract.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('splicingabstract_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">splicingabstract.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="splicingabstract_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SPLICINGABSTRACT_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SPLICINGABSTRACT_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QtGlobal&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_splicing_base_settings.html">SplicingBaseSettings</a>;</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html">    7</a></span><span class="keyword">class </span><a class="code hl_function" href="class_splicing_abstract.html#ab09962e78c2675582a7fd490a16381f1">SplicingAbstract</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284">   10</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284">SplicingPositionType</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1">   11</a></span>        <a class="code hl_enumvalue" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1">RT_Left</a>,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77">   12</a></span>        <a class="code hl_enumvalue" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77">RT_Top</a>,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c">   13</a></span>        <a class="code hl_enumvalue" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c">RT_Right</a>,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44">   14</a></span>        <a class="code hl_enumvalue" href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44">RT_Bottom</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    };</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8">   17</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8">SplicingLineType</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11">   18</a></span>        <a class="code hl_enumvalue" href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11">SLT_Hor</a>,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6">   19</a></span>        <a class="code hl_enumvalue" href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6">SLT_Ver</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a070a03c1506883e06a250d255b523ad0">   23</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_splicing_abstract.html#a070a03c1506883e06a250d255b523ad0">~SplicingAbstract</a>() {}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a6e360c47db914469f31f553179735dac">   26</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_splicing_abstract.html#a6e360c47db914469f31f553179735dac">calcNextPos</a>() = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#af706235a2d016425e12c11f7b6d71e04">   27</a></span>    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_splicing_abstract.html#af706235a2d016425e12c11f7b6d71e04">getSplicngLineType</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a04be8d08eb1ad104722858cc127b30f9">   28</a></span>    <span class="keyword">virtual</span> <span class="keyword">const</span> int64_t <a class="code hl_function" href="class_splicing_abstract.html#a04be8d08eb1ad104722858cc127b30f9">getSplicingPos</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a0e2999041e0c4c32d5e0a2e570db3655">   29</a></span>    <span class="keyword">virtual</span> <span class="keyword">const</span> int64_t <a class="code hl_function" href="class_splicing_abstract.html#a0e2999041e0c4c32d5e0a2e570db3655">getOverlap</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#a056438e17c77e15015f41122fc2100cc">   30</a></span>    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> &amp;<a class="code hl_function" href="class_splicing_abstract.html#a056438e17c77e15015f41122fc2100cc">getSplicingSettings</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_splicing_abstract.html#ab09962e78c2675582a7fd490a16381f1">   33</a></span>    <a class="code hl_function" href="class_splicing_abstract.html#ab09962e78c2675582a7fd490a16381f1">SplicingAbstract</a>() {}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html">   36</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#a2230b461ef4b0e1b9a6ec10c238fa0a5">   37</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_splicing_base_settings.html#a2230b461ef4b0e1b9a6ec10c238fa0a5">splicingLineType</a> = <a class="code hl_enumvalue" href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11">SplicingAbstract::SLT_Hor</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#a1f39bfb332c85f9c44e725555009b341">   38</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#a1f39bfb332c85f9c44e725555009b341">overlap</a> = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#ab83500d2fe0a78b4dd9c7975af9ea823">   39</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#ab83500d2fe0a78b4dd9c7975af9ea823">overlap_border</a> = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#a054948a12beb90f50755aba8f8d53e04">   40</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#a054948a12beb90f50755aba8f8d53e04">overlap_support</a> = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#a9876bde77ef419277a20e4c8d233f3ac">   42</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#a9876bde77ef419277a20e4c8d233f3ac">curSplicingPos</a> = -1E10;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#abaefa4e2f1c02ca3174f37024852eaaf">   43</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#abaefa4e2f1c02ca3174f37024852eaaf">minSplicingPos</a> = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#a3fd106e0b3402825662c88eb2c4e40ad">   44</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#a3fd106e0b3402825662c88eb2c4e40ad">maxSplicingPos</a> = 0;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#a8d6636a9b93f53b3c19fa4b3c3f2b76c">   46</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#a8d6636a9b93f53b3c19fa4b3c3f2b76c">minRangePos</a> = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_splicing_base_settings.html#a23c0ea3d4cc9e9efa8cf9154873fe725">   47</a></span>    int64_t <a class="code hl_variable" href="struct_splicing_base_settings.html#a23c0ea3d4cc9e9efa8cf9154873fe725">maxRangePos</a> = 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html">   50</a></span><span class="keyword">class </span><a class="code hl_function" href="class_random_line_splicing.html#a8cadb327ca974839e799802f97074094">RandomLineSplicing</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_splicing_abstract.html#ab09962e78c2675582a7fd490a16381f1">SplicingAbstract</a></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html#a8cadb327ca974839e799802f97074094">   53</a></span>    <a class="code hl_function" href="class_random_line_splicing.html#a8cadb327ca974839e799802f97074094">RandomLineSplicing</a>() {}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_random_line_splicing.html#afee643fdc3e80198eedd6ebb04522b38">initSplicingRanges</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> int64_t &amp;, <span class="keyword">const</span> int64_t &amp;,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                            <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_random_line_splicing.html#a2bfa31db15631eded3526d7cfea385e8">calcNextPos</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html#aa2c695b38a69f2a238c2e5d157ab890f">   59</a></span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_random_line_splicing.html#aa2c695b38a69f2a238c2e5d157ab890f">getSplicngLineType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_random_line_splicing.html#ae70016baf7f8b8059f4b47e2d64ebef2">splicingBaseSettings</a>.splicingLineType; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html#a7af2e632364b9b6cc3b1a2cd4c029740">   60</a></span>    <span class="keyword">const</span> int64_t <a class="code hl_function" href="class_random_line_splicing.html#a7af2e632364b9b6cc3b1a2cd4c029740">getSplicingPos</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_random_line_splicing.html#ae70016baf7f8b8059f4b47e2d64ebef2">splicingBaseSettings</a>.curSplicingPos; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html#a245f7e0b0cf81b65d35471e834f75c9a">   61</a></span>    <span class="keyword">const</span> int64_t <a class="code hl_function" href="class_random_line_splicing.html#a245f7e0b0cf81b65d35471e834f75c9a">getOverlap</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_random_line_splicing.html#ae70016baf7f8b8059f4b47e2d64ebef2">splicingBaseSettings</a>.overlap; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html#a669030782b9dadf5aa55a2b1a5877d9b">   62</a></span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> &amp;<a class="code hl_function" href="class_random_line_splicing.html#a669030782b9dadf5aa55a2b1a5877d9b">getSplicingSettings</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_random_line_splicing.html#ae70016baf7f8b8059f4b47e2d64ebef2">splicingBaseSettings</a>; }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html#ae70016baf7f8b8059f4b47e2d64ebef2">   65</a></span>    <a class="code hl_struct" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> <a class="code hl_variable" href="class_random_line_splicing.html#ae70016baf7f8b8059f4b47e2d64ebef2">splicingBaseSettings</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_random_line_splicing.html#aba2bafd84e0da40e4396f207a403b872">   66</a></span>    int64_t <a class="code hl_variable" href="class_random_line_splicing.html#aba2bafd84e0da40e4396f207a403b872">minSplicingLineOffset</a> = 10;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_periodic_line.html">   69</a></span><span class="keyword">class </span><a class="code hl_function" href="class_periodic_line.html#ad391b58280f6e168ff2ffe7aa8f68fc9">PeriodicLine</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_splicing_abstract.html#ab09962e78c2675582a7fd490a16381f1">SplicingAbstract</a></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_periodic_line.html#ad391b58280f6e168ff2ffe7aa8f68fc9">   72</a></span>    <a class="code hl_function" href="class_periodic_line.html#ad391b58280f6e168ff2ffe7aa8f68fc9">PeriodicLine</a>() {}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_periodic_line.html#ae6f3b989a9470b0294e2a00e83e668b8">initSplicingRanges</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> int64_t &amp;, <span class="keyword">const</span> int64_t &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                            <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_periodic_line.html#ac4dfb3b859022f143a275acf2096c3b7">calcNextPos</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_periodic_line.html#ac602c77d6da07615056021746d04fd1a">   79</a></span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_periodic_line.html#ac602c77d6da07615056021746d04fd1a">getSplicngLineType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_periodic_line.html#a75f0690de3c3069e6bb85e291521d9e1">splicingBaseSettings</a>.splicingLineType; }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_periodic_line.html#addb047689cb1ee18c45453ef1768d5d6">   80</a></span>    <span class="keyword">const</span> int64_t <a class="code hl_function" href="class_periodic_line.html#addb047689cb1ee18c45453ef1768d5d6">getSplicingPos</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_periodic_line.html#a75f0690de3c3069e6bb85e291521d9e1">splicingBaseSettings</a>.curSplicingPos; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_periodic_line.html#ad590a74d58751a867886436bb669ffea">   81</a></span>    <span class="keyword">const</span> int64_t <a class="code hl_function" href="class_periodic_line.html#ad590a74d58751a867886436bb669ffea">getOverlap</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_periodic_line.html#a75f0690de3c3069e6bb85e291521d9e1">splicingBaseSettings</a>.overlap; }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_periodic_line.html#acacc43302bc1e4202982983ad0786cc3">   82</a></span>    <span class="keyword">const</span> <a class="code hl_struct" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> &amp;<a class="code hl_function" href="class_periodic_line.html#acacc43302bc1e4202982983ad0786cc3">getSplicingSettings</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_periodic_line.html#a75f0690de3c3069e6bb85e291521d9e1">splicingBaseSettings</a>; }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_periodic_line.html#a75f0690de3c3069e6bb85e291521d9e1">   85</a></span>    <a class="code hl_struct" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> <a class="code hl_variable" href="class_periodic_line.html#a75f0690de3c3069e6bb85e291521d9e1">splicingBaseSettings</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_periodic_line.html#ad345a221865d5e6e9a2397a371220dd0">   87</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_periodic_line.html#ad345a221865d5e6e9a2397a371220dd0">_curStepIndex</a> = 0;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_periodic_line.html#aa64e42eff5482bea2a777bbce66827e6">   88</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_periodic_line.html#aa64e42eff5482bea2a777bbce66827e6">_repeatCnt</a> = 2;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_periodic_line.html#a27f5cb65a91d37e967091ed5c1501aff">   89</a></span>    int64_t <a class="code hl_variable" href="class_periodic_line.html#a27f5cb65a91d37e967091ed5c1501aff">_initialPos</a> = 0;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_periodic_line.html#a2e61b49aefa4f7ddc1fb82ed180f4cce">   90</a></span>    int64_t <a class="code hl_variable" href="class_periodic_line.html#a2e61b49aefa4f7ddc1fb82ed180f4cce">_stepLength</a> = 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif </span><span class="comment">// SPLICINGABSTRACT_H</span></div>
+<div class="ttc" id="aclass_periodic_line_html_a27f5cb65a91d37e967091ed5c1501aff"><div class="ttname"><a href="class_periodic_line.html#a27f5cb65a91d37e967091ed5c1501aff">PeriodicLine::_initialPos</a></div><div class="ttdeci">int64_t _initialPos</div><div class="ttdef"><b>定义</b> splicingabstract.h:89</div></div>
+<div class="ttc" id="aclass_periodic_line_html_a2e61b49aefa4f7ddc1fb82ed180f4cce"><div class="ttname"><a href="class_periodic_line.html#a2e61b49aefa4f7ddc1fb82ed180f4cce">PeriodicLine::_stepLength</a></div><div class="ttdeci">int64_t _stepLength</div><div class="ttdef"><b>定义</b> splicingabstract.h:90</div></div>
+<div class="ttc" id="aclass_periodic_line_html_a75f0690de3c3069e6bb85e291521d9e1"><div class="ttname"><a href="class_periodic_line.html#a75f0690de3c3069e6bb85e291521d9e1">PeriodicLine::splicingBaseSettings</a></div><div class="ttdeci">SplicingBaseSettings splicingBaseSettings</div><div class="ttdef"><b>定义</b> splicingabstract.h:85</div></div>
+<div class="ttc" id="aclass_periodic_line_html_aa64e42eff5482bea2a777bbce66827e6"><div class="ttname"><a href="class_periodic_line.html#aa64e42eff5482bea2a777bbce66827e6">PeriodicLine::_repeatCnt</a></div><div class="ttdeci">int _repeatCnt</div><div class="ttdef"><b>定义</b> splicingabstract.h:88</div></div>
+<div class="ttc" id="aclass_periodic_line_html_ac4dfb3b859022f143a275acf2096c3b7"><div class="ttname"><a href="class_periodic_line.html#ac4dfb3b859022f143a275acf2096c3b7">PeriodicLine::calcNextPos</a></div><div class="ttdeci">void calcNextPos()</div><div class="ttdef"><b>定义</b> splicingabstract.cpp:130</div></div>
+<div class="ttc" id="aclass_periodic_line_html_ac602c77d6da07615056021746d04fd1a"><div class="ttname"><a href="class_periodic_line.html#ac602c77d6da07615056021746d04fd1a">PeriodicLine::getSplicngLineType</a></div><div class="ttdeci">const int getSplicngLineType() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:79</div></div>
+<div class="ttc" id="aclass_periodic_line_html_acacc43302bc1e4202982983ad0786cc3"><div class="ttname"><a href="class_periodic_line.html#acacc43302bc1e4202982983ad0786cc3">PeriodicLine::getSplicingSettings</a></div><div class="ttdeci">const SplicingBaseSettings &amp; getSplicingSettings() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:82</div></div>
+<div class="ttc" id="aclass_periodic_line_html_ad345a221865d5e6e9a2397a371220dd0"><div class="ttname"><a href="class_periodic_line.html#ad345a221865d5e6e9a2397a371220dd0">PeriodicLine::_curStepIndex</a></div><div class="ttdeci">int _curStepIndex</div><div class="ttdef"><b>定义</b> splicingabstract.h:87</div></div>
+<div class="ttc" id="aclass_periodic_line_html_ad391b58280f6e168ff2ffe7aa8f68fc9"><div class="ttname"><a href="class_periodic_line.html#ad391b58280f6e168ff2ffe7aa8f68fc9">PeriodicLine::PeriodicLine</a></div><div class="ttdeci">PeriodicLine()</div><div class="ttdef"><b>定义</b> splicingabstract.h:72</div></div>
+<div class="ttc" id="aclass_periodic_line_html_ad590a74d58751a867886436bb669ffea"><div class="ttname"><a href="class_periodic_line.html#ad590a74d58751a867886436bb669ffea">PeriodicLine::getOverlap</a></div><div class="ttdeci">const int64_t getOverlap() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:81</div></div>
+<div class="ttc" id="aclass_periodic_line_html_addb047689cb1ee18c45453ef1768d5d6"><div class="ttname"><a href="class_periodic_line.html#addb047689cb1ee18c45453ef1768d5d6">PeriodicLine::getSplicingPos</a></div><div class="ttdeci">const int64_t getSplicingPos() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:80</div></div>
+<div class="ttc" id="aclass_periodic_line_html_ae6f3b989a9470b0294e2a00e83e668b8"><div class="ttname"><a href="class_periodic_line.html#ae6f3b989a9470b0294e2a00e83e668b8">PeriodicLine::initSplicingRanges</a></div><div class="ttdeci">void initSplicingRanges(const int &amp;, const int64_t &amp;, const int64_t &amp;, const double &amp;, const double &amp;, const int &amp;, const double &amp;, const double &amp;)</div><div class="ttdef"><b>定义</b> splicingabstract.cpp:96</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_a245f7e0b0cf81b65d35471e834f75c9a"><div class="ttname"><a href="class_random_line_splicing.html#a245f7e0b0cf81b65d35471e834f75c9a">RandomLineSplicing::getOverlap</a></div><div class="ttdeci">const int64_t getOverlap() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:61</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_a2bfa31db15631eded3526d7cfea385e8"><div class="ttname"><a href="class_random_line_splicing.html#a2bfa31db15631eded3526d7cfea385e8">RandomLineSplicing::calcNextPos</a></div><div class="ttdeci">void calcNextPos()</div><div class="ttdef"><b>定义</b> splicingabstract.cpp:30</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_a669030782b9dadf5aa55a2b1a5877d9b"><div class="ttname"><a href="class_random_line_splicing.html#a669030782b9dadf5aa55a2b1a5877d9b">RandomLineSplicing::getSplicingSettings</a></div><div class="ttdeci">const SplicingBaseSettings &amp; getSplicingSettings() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:62</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_a7af2e632364b9b6cc3b1a2cd4c029740"><div class="ttname"><a href="class_random_line_splicing.html#a7af2e632364b9b6cc3b1a2cd4c029740">RandomLineSplicing::getSplicingPos</a></div><div class="ttdeci">const int64_t getSplicingPos() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:60</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_a8cadb327ca974839e799802f97074094"><div class="ttname"><a href="class_random_line_splicing.html#a8cadb327ca974839e799802f97074094">RandomLineSplicing::RandomLineSplicing</a></div><div class="ttdeci">RandomLineSplicing()</div><div class="ttdef"><b>定义</b> splicingabstract.h:53</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_aa2c695b38a69f2a238c2e5d157ab890f"><div class="ttname"><a href="class_random_line_splicing.html#aa2c695b38a69f2a238c2e5d157ab890f">RandomLineSplicing::getSplicngLineType</a></div><div class="ttdeci">const int getSplicngLineType() const</div><div class="ttdef"><b>定义</b> splicingabstract.h:59</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_aba2bafd84e0da40e4396f207a403b872"><div class="ttname"><a href="class_random_line_splicing.html#aba2bafd84e0da40e4396f207a403b872">RandomLineSplicing::minSplicingLineOffset</a></div><div class="ttdeci">int64_t minSplicingLineOffset</div><div class="ttdef"><b>定义</b> splicingabstract.h:66</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_ae70016baf7f8b8059f4b47e2d64ebef2"><div class="ttname"><a href="class_random_line_splicing.html#ae70016baf7f8b8059f4b47e2d64ebef2">RandomLineSplicing::splicingBaseSettings</a></div><div class="ttdeci">SplicingBaseSettings splicingBaseSettings</div><div class="ttdef"><b>定义</b> splicingabstract.h:65</div></div>
+<div class="ttc" id="aclass_random_line_splicing_html_afee643fdc3e80198eedd6ebb04522b38"><div class="ttname"><a href="class_random_line_splicing.html#afee643fdc3e80198eedd6ebb04522b38">RandomLineSplicing::initSplicingRanges</a></div><div class="ttdeci">void initSplicingRanges(const int &amp;, const int64_t &amp;, const int64_t &amp;, const double &amp;, const double &amp;, const double &amp;)</div><div class="ttdef"><b>定义</b> splicingabstract.cpp:4</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a04be8d08eb1ad104722858cc127b30f9"><div class="ttname"><a href="class_splicing_abstract.html#a04be8d08eb1ad104722858cc127b30f9">SplicingAbstract::getSplicingPos</a></div><div class="ttdeci">virtual const int64_t getSplicingPos() const =0</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a056438e17c77e15015f41122fc2100cc"><div class="ttname"><a href="class_splicing_abstract.html#a056438e17c77e15015f41122fc2100cc">SplicingAbstract::getSplicingSettings</a></div><div class="ttdeci">virtual const SplicingBaseSettings &amp; getSplicingSettings() const =0</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a070a03c1506883e06a250d255b523ad0"><div class="ttname"><a href="class_splicing_abstract.html#a070a03c1506883e06a250d255b523ad0">SplicingAbstract::~SplicingAbstract</a></div><div class="ttdeci">virtual ~SplicingAbstract()</div><div class="ttdef"><b>定义</b> splicingabstract.h:23</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a0e2999041e0c4c32d5e0a2e570db3655"><div class="ttname"><a href="class_splicing_abstract.html#a0e2999041e0c4c32d5e0a2e570db3655">SplicingAbstract::getOverlap</a></div><div class="ttdeci">virtual const int64_t getOverlap() const =0</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a6e360c47db914469f31f553179735dac"><div class="ttname"><a href="class_splicing_abstract.html#a6e360c47db914469f31f553179735dac">SplicingAbstract::calcNextPos</a></div><div class="ttdeci">virtual void calcNextPos()=0</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a932c6fce2a65b3d3cb950a629ef60284"><div class="ttname"><a href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284">SplicingAbstract::SplicingPositionType</a></div><div class="ttdeci">SplicingPositionType</div><div class="ttdef"><b>定义</b> splicingabstract.h:10</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c"><div class="ttname"><a href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c">SplicingAbstract::RT_Right</a></div><div class="ttdeci">@ RT_Right</div><div class="ttdef"><b>定义</b> splicingabstract.h:13</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77"><div class="ttname"><a href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77">SplicingAbstract::RT_Top</a></div><div class="ttdeci">@ RT_Top</div><div class="ttdef"><b>定义</b> splicingabstract.h:12</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1"><div class="ttname"><a href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1">SplicingAbstract::RT_Left</a></div><div class="ttdeci">@ RT_Left</div><div class="ttdef"><b>定义</b> splicingabstract.h:11</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44"><div class="ttname"><a href="class_splicing_abstract.html#a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44">SplicingAbstract::RT_Bottom</a></div><div class="ttdeci">@ RT_Bottom</div><div class="ttdef"><b>定义</b> splicingabstract.h:14</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_ab09962e78c2675582a7fd490a16381f1"><div class="ttname"><a href="class_splicing_abstract.html#ab09962e78c2675582a7fd490a16381f1">SplicingAbstract::SplicingAbstract</a></div><div class="ttdeci">SplicingAbstract()</div><div class="ttdef"><b>定义</b> splicingabstract.h:33</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_af623757cf7a2cd8346cada970f7731d8"><div class="ttname"><a href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8">SplicingAbstract::SplicingLineType</a></div><div class="ttdeci">SplicingLineType</div><div class="ttdef"><b>定义</b> splicingabstract.h:17</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6"><div class="ttname"><a href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6">SplicingAbstract::SLT_Ver</a></div><div class="ttdeci">@ SLT_Ver</div><div class="ttdef"><b>定义</b> splicingabstract.h:19</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11"><div class="ttname"><a href="class_splicing_abstract.html#af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11">SplicingAbstract::SLT_Hor</a></div><div class="ttdeci">@ SLT_Hor</div><div class="ttdef"><b>定义</b> splicingabstract.h:18</div></div>
+<div class="ttc" id="aclass_splicing_abstract_html_af706235a2d016425e12c11f7b6d71e04"><div class="ttname"><a href="class_splicing_abstract.html#af706235a2d016425e12c11f7b6d71e04">SplicingAbstract::getSplicngLineType</a></div><div class="ttdeci">virtual const int getSplicngLineType() const =0</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html"><div class="ttname"><a href="struct_splicing_base_settings.html">SplicingBaseSettings</a></div><div class="ttdef"><b>定义</b> splicingabstract.h:36</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_a054948a12beb90f50755aba8f8d53e04"><div class="ttname"><a href="struct_splicing_base_settings.html#a054948a12beb90f50755aba8f8d53e04">SplicingBaseSettings::overlap_support</a></div><div class="ttdeci">int64_t overlap_support</div><div class="ttdef"><b>定义</b> splicingabstract.h:40</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_a1f39bfb332c85f9c44e725555009b341"><div class="ttname"><a href="struct_splicing_base_settings.html#a1f39bfb332c85f9c44e725555009b341">SplicingBaseSettings::overlap</a></div><div class="ttdeci">int64_t overlap</div><div class="ttdef"><b>定义</b> splicingabstract.h:38</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_a2230b461ef4b0e1b9a6ec10c238fa0a5"><div class="ttname"><a href="struct_splicing_base_settings.html#a2230b461ef4b0e1b9a6ec10c238fa0a5">SplicingBaseSettings::splicingLineType</a></div><div class="ttdeci">int splicingLineType</div><div class="ttdef"><b>定义</b> splicingabstract.h:37</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_a23c0ea3d4cc9e9efa8cf9154873fe725"><div class="ttname"><a href="struct_splicing_base_settings.html#a23c0ea3d4cc9e9efa8cf9154873fe725">SplicingBaseSettings::maxRangePos</a></div><div class="ttdeci">int64_t maxRangePos</div><div class="ttdef"><b>定义</b> splicingabstract.h:47</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_a3fd106e0b3402825662c88eb2c4e40ad"><div class="ttname"><a href="struct_splicing_base_settings.html#a3fd106e0b3402825662c88eb2c4e40ad">SplicingBaseSettings::maxSplicingPos</a></div><div class="ttdeci">int64_t maxSplicingPos</div><div class="ttdef"><b>定义</b> splicingabstract.h:44</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_a8d6636a9b93f53b3c19fa4b3c3f2b76c"><div class="ttname"><a href="struct_splicing_base_settings.html#a8d6636a9b93f53b3c19fa4b3c3f2b76c">SplicingBaseSettings::minRangePos</a></div><div class="ttdeci">int64_t minRangePos</div><div class="ttdef"><b>定义</b> splicingabstract.h:46</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_a9876bde77ef419277a20e4c8d233f3ac"><div class="ttname"><a href="struct_splicing_base_settings.html#a9876bde77ef419277a20e4c8d233f3ac">SplicingBaseSettings::curSplicingPos</a></div><div class="ttdeci">int64_t curSplicingPos</div><div class="ttdef"><b>定义</b> splicingabstract.h:42</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_ab83500d2fe0a78b4dd9c7975af9ea823"><div class="ttname"><a href="struct_splicing_base_settings.html#ab83500d2fe0a78b4dd9c7975af9ea823">SplicingBaseSettings::overlap_border</a></div><div class="ttdeci">int64_t overlap_border</div><div class="ttdef"><b>定义</b> splicingabstract.h:39</div></div>
+<div class="ttc" id="astruct_splicing_base_settings_html_abaefa4e2f1c02ca3174f37024852eaaf"><div class="ttname"><a href="struct_splicing_base_settings.html#abaefa4e2f1c02ca3174f37024852eaaf">SplicingBaseSettings::minSplicingPos</a></div><div class="ttdeci">int64_t minSplicingPos</div><div class="ttdef"><b>定义</b> splicingabstract.h:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_964bc10f3154efc8cc1d6ea5d4f805c5.html">SplicingModule</a></li><li class="navelem"><a class="el" href="splicingabstract_8h.html">splicingabstract.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

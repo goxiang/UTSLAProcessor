@@ -1,0 +1,872 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: USPFileWriter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_u_s_p_file_writer.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="class_u_s_p_file_writer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">USPFileWriter类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="uspfilewriter_8h_source.html">uspfilewriter.h</a>&gt;</code></p>
+<div class="dynheader">
+类 USPFileWriter 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_u_s_p_file_writer.png" usemap="#USPFileWriter_map" alt=""/>
+  <map id="USPFileWriter_map" name="USPFileWriter_map">
+<area href="class_file_writer.html" alt="FileWriter" shape="rect" coords="0,0,91,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7060c11a2ed7ef16655c9cc61ee6e57b" id="r_a7060c11a2ed7ef16655c9cc61ee6e57b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7060c11a2ed7ef16655c9cc61ee6e57b">USPFileWriter</a> ()</td></tr>
+<tr class="separator:a7060c11a2ed7ef16655c9cc61ee6e57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5b710c4d5df5acb0bd4238b1e07926" id="r_a6b5b710c4d5df5acb0bd4238b1e07926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b5b710c4d5df5acb0bd4238b1e07926">~USPFileWriter</a> ()</td></tr>
+<tr class="separator:a6b5b710c4d5df5acb0bd4238b1e07926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146ffdbd1af20b1c61719bb6b113707a" id="r_a146ffdbd1af20b1c61719bb6b113707a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a146ffdbd1af20b1c61719bb6b113707a">initFileWrite</a> ()</td></tr>
+<tr class="separator:a146ffdbd1af20b1c61719bb6b113707a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737479543a45fdca6f59acfe706074d9" id="r_a737479543a45fdca6f59acfe706074d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a737479543a45fdca6f59acfe706074d9">startBuffWriter</a> ()</td></tr>
+<tr class="separator:a737479543a45fdca6f59acfe706074d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7b825c16b15d8d95e8a6e4418a2128" id="r_acb7b825c16b15d8d95e8a6e4418a2128"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb7b825c16b15d8d95e8a6e4418a2128">waitBuffWriter</a> ()</td></tr>
+<tr class="separator:acb7b825c16b15d8d95e8a6e4418a2128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faf03ab74e2eb150361de2efaaac03d" id="r_a3faf03ab74e2eb150361de2efaaac03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3faf03ab74e2eb150361de2efaaac03d">writeLayerInfo</a> (const int &amp;, const BOUNDINGRECT &amp;, const double &amp;)</td></tr>
+<tr class="separator:a3faf03ab74e2eb150361de2efaaac03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980079153e29dad52c64c4ce8b94ccec" id="r_a980079153e29dad52c64c4ce8b94ccec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a980079153e29dad52c64c4ce8b94ccec">writeAreaInfo</a> (const int &amp;)</td></tr>
+<tr class="separator:a980079153e29dad52c64c4ce8b94ccec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d450d21a7c5637db2ed94618b98811" id="r_a07d450d21a7c5637db2ed94618b98811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d450d21a7c5637db2ed94618b98811">writeFileEnd</a> ()</td></tr>
+<tr class="separator:a07d450d21a7c5637db2ed94618b98811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34dcd6282ebb3ba76be27ae5d344b89f" id="r_a34dcd6282ebb3ba76be27ae5d344b89f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34dcd6282ebb3ba76be27ae5d344b89f">writeFileBegin_SomePropertys</a> ()</td></tr>
+<tr class="separator:a34dcd6282ebb3ba76be27ae5d344b89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049ae931cac24c35048119b6a40a352f" id="r_a049ae931cac24c35048119b6a40a352f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a049ae931cac24c35048119b6a40a352f">createUSPFile</a> (const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;, QJsonObject &amp;)</td></tr>
+<tr class="separator:a049ae931cac24c35048119b6a40a352f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c9649a9dd13c71fc0f1884e238a12a" id="r_a58c9649a9dd13c71fc0f1884e238a12a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58c9649a9dd13c71fc0f1884e238a12a">getBufPara</a> ()</td></tr>
+<tr class="separator:a58c9649a9dd13c71fc0f1884e238a12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4606b4f6420973d5d69c41ee304aa47" id="r_aa4606b4f6420973d5d69c41ee304aa47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4606b4f6420973d5d69c41ee304aa47">algo</a> ()</td></tr>
+<tr class="separator:aa4606b4f6420973d5d69c41ee304aa47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7868f49aa2011078deb8c2d748347c" id="r_aea7868f49aa2011078deb8c2d748347c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea7868f49aa2011078deb8c2d748347c">addVolume</a> (const double &amp;volume)</td></tr>
+<tr class="separator:aea7868f49aa2011078deb8c2d748347c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd4d8ba90d72ea2ee511c7d0bf08ec2" id="r_a5cd4d8ba90d72ea2ee511c7d0bf08ec2"><td class="memItemLeft" align="right" valign="top">QSharedPointer&lt; <a class="el" href="class_file_writer.html">FileWriter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cd4d8ba90d72ea2ee511c7d0bf08ec2">cloneWriter</a> ()</td></tr>
+<tr class="separator:a5cd4d8ba90d72ea2ee511c7d0bf08ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_file_writer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_file_writer')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_file_writer.html">FileWriter</a></td></tr>
+<tr class="memitem:ae4dd90b95298451fc84d753b987ddc82 inherit pub_methods_class_file_writer" id="r_ae4dd90b95298451fc84d753b987ddc82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter</a> ()=default</td></tr>
+<tr class="separator:ae4dd90b95298451fc84d753b987ddc82 inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2c19fe58992d3835e047f8ddeb4f8c inherit pub_methods_class_file_writer" id="r_a4b2c19fe58992d3835e047f8ddeb4f8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#a4b2c19fe58992d3835e047f8ddeb4f8c">~FileWriter</a> ()=default</td></tr>
+<tr class="separator:a4b2c19fe58992d3835e047f8ddeb4f8c inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8c31e0e18805a70dd52d518ebbf8f2 inherit pub_methods_class_file_writer" id="r_adb8c31e0e18805a70dd52d518ebbf8f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#adb8c31e0e18805a70dd52d518ebbf8f2">setScannerIndex</a> (const int &amp;)</td></tr>
+<tr class="separator:adb8c31e0e18805a70dd52d518ebbf8f2 inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a68de6681e685d3da10cc0f188037caa7" id="r_a68de6681e685d3da10cc0f188037caa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_write_u_f_f.html">WriteUFF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68de6681e685d3da10cc0f188037caa7">fileWriter</a> = nullptr</td></tr>
+<tr class="separator:a68de6681e685d3da10cc0f188037caa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5c4a010823c9dffb406e738038a03b" id="r_a0b5c4a010823c9dffb406e738038a03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b5c4a010823c9dffb406e738038a03b">_writeBuff</a> = nullptr</td></tr>
+<tr class="separator:a0b5c4a010823c9dffb406e738038a03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8737cc7fe2c44792d202ae736d06ed7d" id="r_a8737cc7fe2c44792d202ae736d06ed7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8737cc7fe2c44792d202ae736d06ed7d">algorithm</a> = nullptr</td></tr>
+<tr class="separator:a8737cc7fe2c44792d202ae736d06ed7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061044bf0689af0ae036be35078ed15a" id="r_a061044bf0689af0ae036be35078ed15a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a061044bf0689af0ae036be35078ed15a">m_strSystemTime</a></td></tr>
+<tr class="separator:a061044bf0689af0ae036be35078ed15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c86501a556a20752ce53fd1bcb36a9" id="r_a67c86501a556a20752ce53fd1bcb36a9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67c86501a556a20752ce53fd1bcb36a9">m_fTotalVolume</a> = 0.0</td></tr>
+<tr class="separator:a67c86501a556a20752ce53fd1bcb36a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a4aa564a6f84940a11176e49c0fda4fb5" id="r_a4aa564a6f84940a11176e49c0fda4fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aa564a6f84940a11176e49c0fda4fb5">writeProperty</a> (const int &amp;)</td></tr>
+<tr class="separator:a4aa564a6f84940a11176e49c0fda4fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa736e1236953a195090f8e74a95c9151" id="r_aa736e1236953a195090f8e74a95c9151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa736e1236953a195090f8e74a95c9151">writeProperty</a> (const int &amp;, const int &amp;)</td></tr>
+<tr class="separator:aa736e1236953a195090f8e74a95c9151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894334863c0be1ffb9d114a8a0211407" id="r_a894334863c0be1ffb9d114a8a0211407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a894334863c0be1ffb9d114a8a0211407">writeFlush</a> ()</td></tr>
+<tr class="separator:a894334863c0be1ffb9d114a8a0211407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cc5a029c6137b8fe914e5a138ca2e7" id="r_af9cc5a029c6137b8fe914e5a138ca2e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9cc5a029c6137b8fe914e5a138ca2e7">writeXMLInfo</a> (QFile *, const QByteArray &amp;, const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;)</td></tr>
+<tr class="separator:af9cc5a029c6137b8fe914e5a138ca2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6886a053c9e712162144d0f720d9a5d2" id="r_a6886a053c9e712162144d0f720d9a5d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6886a053c9e712162144d0f720d9a5d2">writeJsonInfo</a> (const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;, QJsonObject &amp;)</td></tr>
+<tr class="separator:a6886a053c9e712162144d0f720d9a5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_file_writer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_file_writer')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_file_writer.html">FileWriter</a></td></tr>
+<tr class="memitem:a18243f7a626ec72b89f0c4ea4f198d06 inherit pub_static_methods_class_file_writer" id="r_a18243f7a626ec72b89f0c4ea4f198d06"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#a18243f7a626ec72b89f0c4ea4f198d06">getFileHash</a> (const QString &amp;)</td></tr>
+<tr class="separator:a18243f7a626ec72b89f0c4ea4f198d06 inherit pub_static_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>! </p><dl class="section user"><dt>Core Class: USPFileWriter</dt><dd>文件写入器实现类,继承自FileWriter类 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a7060c11a2ed7ef16655c9cc61ee6e57b" name="a7060c11a2ed7ef16655c9cc61ee6e57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7060c11a2ed7ef16655c9cc61ee6e57b">&#9670;&#160;</a></span>USPFileWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USPFileWriter::USPFileWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b5b710c4d5df5acb0bd4238b1e07926" name="a6b5b710c4d5df5acb0bd4238b1e07926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5b710c4d5df5acb0bd4238b1e07926">&#9670;&#160;</a></span>~USPFileWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USPFileWriter::~USPFileWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aea7868f49aa2011078deb8c2d748347c" name="aea7868f49aa2011078deb8c2d748347c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7868f49aa2011078deb8c2d748347c">&#9670;&#160;</a></span>addVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::addVolume </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a3a8a365efee70f8d197effbb380e8897">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="aa4606b4f6420973d5d69c41ee304aa47" name="aa4606b4f6420973d5d69c41ee304aa47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4606b4f6420973d5d69c41ee304aa47">&#9670;&#160;</a></span>algo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a> * USPFileWriter::algo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#ae7410b536cccc854972c13727437e7fc">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a5cd4d8ba90d72ea2ee511c7d0bf08ec2" name="a5cd4d8ba90d72ea2ee511c7d0bf08ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd4d8ba90d72ea2ee511c7d0bf08ec2">&#9670;&#160;</a></span>cloneWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSharedPointer&lt; <a class="el" href="class_file_writer.html">FileWriter</a> &gt; USPFileWriter::cloneWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#ad543887b7aff55a82ebafb5b3a53fc4f">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a049ae931cac24c35048119b6a40a352f" name="a049ae931cac24c35048119b6a40a352f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049ae931cac24c35048119b6a40a352f">&#9670;&#160;</a></span>createUSPFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::createUSPFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>bppName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>fThickness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOUNDINGBOX *</td>          <td class="paramname"><span class="paramname"><em>boundingBox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>minHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>maxHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonObj</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a6b8359d6bdb80c18f76cce2fd9f6f316">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a58c9649a9dd13c71fc0f1884e238a12a" name="a58c9649a9dd13c71fc0f1884e238a12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c9649a9dd13c71fc0f1884e238a12a">&#9670;&#160;</a></span>getBufPara()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> * USPFileWriter::getBufPara </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a0d90a1f3b1d186cc7a77b869c44ea997">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a146ffdbd1af20b1c61719bb6b113707a" name="a146ffdbd1af20b1c61719bb6b113707a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146ffdbd1af20b1c61719bb6b113707a">&#9670;&#160;</a></span>initFileWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool USPFileWriter::initFileWrite </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#ab346cbe23e8cbf1d7a2ea7bf04e9c7d3">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a737479543a45fdca6f59acfe706074d9" name="a737479543a45fdca6f59acfe706074d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737479543a45fdca6f59acfe706074d9">&#9670;&#160;</a></span>startBuffWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::startBuffWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#ac383b392ce45566c4cccd3a4c8369c9d">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="acb7b825c16b15d8d95e8a6e4418a2128" name="acb7b825c16b15d8d95e8a6e4418a2128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7b825c16b15d8d95e8a6e4418a2128">&#9670;&#160;</a></span>waitBuffWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::waitBuffWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a2a23d7f3dd604772bc53ef2b64d06442">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a980079153e29dad52c64c4ce8b94ccec" name="a980079153e29dad52c64c4ce8b94ccec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980079153e29dad52c64c4ce8b94ccec">&#9670;&#160;</a></span>writeAreaInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeAreaInfo </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>area</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a9ee28aa1a3f575e995c50417304d8f77">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a34dcd6282ebb3ba76be27ae5d344b89f" name="a34dcd6282ebb3ba76be27ae5d344b89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34dcd6282ebb3ba76be27ae5d344b89f">&#9670;&#160;</a></span>writeFileBegin_SomePropertys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeFileBegin_SomePropertys </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#aa0439ca70cd848eb98955a360759bb76">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a07d450d21a7c5637db2ed94618b98811" name="a07d450d21a7c5637db2ed94618b98811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d450d21a7c5637db2ed94618b98811">&#9670;&#160;</a></span>writeFileEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeFileEnd </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a1d09cec7ab06a0357be67c687de25f56">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a894334863c0be1ffb9d114a8a0211407" name="a894334863c0be1ffb9d114a8a0211407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a894334863c0be1ffb9d114a8a0211407">&#9670;&#160;</a></span>writeFlush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeFlush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6886a053c9e712162144d0f720d9a5d2" name="a6886a053c9e712162144d0f720d9a5d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6886a053c9e712162144d0f720d9a5d2">&#9670;&#160;</a></span>writeJsonInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeJsonInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>bppName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>fThickness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOUNDINGBOX *</td>          <td class="paramname"><span class="paramname"><em>bBox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>minHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>maxHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3faf03ab74e2eb150361de2efaaac03d" name="a3faf03ab74e2eb150361de2efaaac03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3faf03ab74e2eb150361de2efaaac03d">&#9670;&#160;</a></span>writeLayerInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeLayerInfo </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BOUNDINGRECT &amp;</td>          <td class="paramname"><span class="paramname"><em>totalRc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a4ff9205f199c7904d32bcee13b75eddb">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a4aa564a6f84940a11176e49c0fda4fb5" name="a4aa564a6f84940a11176e49c0fda4fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa564a6f84940a11176e49c0fda4fb5">&#9670;&#160;</a></span>writeProperty() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeProperty </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa736e1236953a195090f8e74a95c9151" name="aa736e1236953a195090f8e74a95c9151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa736e1236953a195090f8e74a95c9151">&#9670;&#160;</a></span>writeProperty() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeProperty </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9cc5a029c6137b8fe914e5a138ca2e7" name="af9cc5a029c6137b8fe914e5a138ca2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cc5a029c6137b8fe914e5a138ca2e7">&#9670;&#160;</a></span>writeXMLInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USPFileWriter::writeXMLInfo </td>
+          <td>(</td>
+          <td class="paramtype">QFile *</td>          <td class="paramname"><span class="paramname"><em>mFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;</td>          <td class="paramname"><span class="paramname"><em>fileHash</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>bppName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>fThickness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOUNDINGBOX *</td>          <td class="paramname"><span class="paramname"><em>bBox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>minHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>maxHei</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a0b5c4a010823c9dffb406e738038a03b" name="a0b5c4a010823c9dffb406e738038a03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5c4a010823c9dffb406e738038a03b">&#9670;&#160;</a></span>_writeBuff</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a>* USPFileWriter::_writeBuff = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8737cc7fe2c44792d202ae736d06ed7d" name="a8737cc7fe2c44792d202ae736d06ed7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8737cc7fe2c44792d202ae736d06ed7d">&#9670;&#160;</a></span>algorithm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a>* USPFileWriter::algorithm = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68de6681e685d3da10cc0f188037caa7" name="a68de6681e685d3da10cc0f188037caa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68de6681e685d3da10cc0f188037caa7">&#9670;&#160;</a></span>fileWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_write_u_f_f.html">WriteUFF</a>* USPFileWriter::fileWriter = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67c86501a556a20752ce53fd1bcb36a9" name="a67c86501a556a20752ce53fd1bcb36a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c86501a556a20752ce53fd1bcb36a9">&#9670;&#160;</a></span>m_fTotalVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double USPFileWriter::m_fTotalVolume = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a061044bf0689af0ae036be35078ed15a" name="a061044bf0689af0ae036be35078ed15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061044bf0689af0ae036be35078ed15a">&#9670;&#160;</a></span>m_strSystemTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString USPFileWriter::m_strSystemTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="uspfilewriter_8h_source.html">uspfilewriter.h</a></li>
+<li><a class="el" href="uspfilewriter_8cpp.html">uspfilewriter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_u_s_p_file_writer.html">USPFileWriter</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+\doxysection{Writer\+Buffer\+Paras结构体 参考}
+\hypertarget{struct_writer_buffer_paras}{}\label{struct_writer_buffer_paras}\index{WriterBufferParas@{WriterBufferParas}}
+
+
+{\ttfamily \#include $<$publicheader.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_writer_buffer_paras_a45a6675e3012512459b4e9dfa9eb7353}{Writer\+Buffer\+Paras}} ()
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \mbox{\hyperlink{struct_writer_buffer_paras_a0590c5b6f130d358de77d575522a31b6}{get\+Extended\+Value}} (const QString \&name, const T \&def\+Val=T()) const
+\item 
+bool \mbox{\hyperlink{struct_writer_buffer_paras_a8593a3662347143caf3813175d3a418d}{extended\+Contains}} (const QString \&key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ BPPBUILDPARAMETERS $>$ \mbox{\hyperlink{struct_writer_buffer_paras_a764760d4b6677c94b9e818ac9f2966b0}{\+\_\+bpp\+Para\+Ptr}} = nullptr
+\item 
+QShared\+Pointer$<$ BPCUSTOMERPARAS $>$ \mbox{\hyperlink{struct_writer_buffer_paras_a1b5b1346e898cdc9f4b03c9b36418954}{\+\_\+bpc\+Para\+Ptr}} = nullptr
+\item 
+QShared\+Pointer$<$ QJson\+Parsing $>$ \mbox{\hyperlink{struct_writer_buffer_paras_a9e2af41a74787f3ae51cc4454a849882}{\+\_\+extended\+Para\+Ptr}} = nullptr
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_s_l_m_splicing_module}{SLMSplicing\+Module}} $>$ \mbox{\hyperlink{struct_writer_buffer_paras_a70e7ec3496b5bbb91500db26e307bcd9}{\+\_\+splicing\+Ptr}} = nullptr
+\item 
+QJson\+Object \mbox{\hyperlink{struct_writer_buffer_paras_a00a120a73c26821df683aa4ae242a4be}{\+\_\+extend\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_writer_buffer_paras_a45a6675e3012512459b4e9dfa9eb7353}\index{WriterBufferParas@{WriterBufferParas}!WriterBufferParas@{WriterBufferParas}}
+\index{WriterBufferParas@{WriterBufferParas}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{WriterBufferParas()}{WriterBufferParas()}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a45a6675e3012512459b4e9dfa9eb7353} 
+Writer\+Buffer\+Paras\+::\+Writer\+Buffer\+Paras (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_writer_buffer_paras_a8593a3662347143caf3813175d3a418d}\index{WriterBufferParas@{WriterBufferParas}!extendedContains@{extendedContains}}
+\index{extendedContains@{extendedContains}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{extendedContains()}{extendedContains()}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a8593a3662347143caf3813175d3a418d} 
+bool Writer\+Buffer\+Paras\+::extended\+Contains (\begin{DoxyParamCaption}\item[{const QString \&}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_writer_buffer_paras_a0590c5b6f130d358de77d575522a31b6}\index{WriterBufferParas@{WriterBufferParas}!getExtendedValue@{getExtendedValue}}
+\index{getExtendedValue@{getExtendedValue}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{getExtendedValue()}{getExtendedValue()}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a0590c5b6f130d358de77d575522a31b6} 
+template$<$typename T$>$ \\
+T Writer\+Buffer\+Paras\+::get\+Extended\+Value (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const T \&}]{def\+Val}{ = {\ttfamily T()}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_writer_buffer_paras_a1b5b1346e898cdc9f4b03c9b36418954}\index{WriterBufferParas@{WriterBufferParas}!\_bpcParaPtr@{\_bpcParaPtr}}
+\index{\_bpcParaPtr@{\_bpcParaPtr}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{\_bpcParaPtr}{\_bpcParaPtr}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a1b5b1346e898cdc9f4b03c9b36418954} 
+QShared\+Pointer$<$BPCUSTOMERPARAS$>$ Writer\+Buffer\+Paras\+::\+\_\+bpc\+Para\+Ptr = nullptr}
+
+\Hypertarget{struct_writer_buffer_paras_a764760d4b6677c94b9e818ac9f2966b0}\index{WriterBufferParas@{WriterBufferParas}!\_bppParaPtr@{\_bppParaPtr}}
+\index{\_bppParaPtr@{\_bppParaPtr}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{\_bppParaPtr}{\_bppParaPtr}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a764760d4b6677c94b9e818ac9f2966b0} 
+QShared\+Pointer$<$BPPBUILDPARAMETERS$>$ Writer\+Buffer\+Paras\+::\+\_\+bpp\+Para\+Ptr = nullptr}
+
+\Hypertarget{struct_writer_buffer_paras_a9e2af41a74787f3ae51cc4454a849882}\index{WriterBufferParas@{WriterBufferParas}!\_extendedParaPtr@{\_extendedParaPtr}}
+\index{\_extendedParaPtr@{\_extendedParaPtr}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{\_extendedParaPtr}{\_extendedParaPtr}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a9e2af41a74787f3ae51cc4454a849882} 
+QShared\+Pointer$<$QJson\+Parsing$>$ Writer\+Buffer\+Paras\+::\+\_\+extended\+Para\+Ptr = nullptr}
+
+\Hypertarget{struct_writer_buffer_paras_a00a120a73c26821df683aa4ae242a4be}\index{WriterBufferParas@{WriterBufferParas}!\_extendObj@{\_extendObj}}
+\index{\_extendObj@{\_extendObj}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{\_extendObj}{\_extendObj}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a00a120a73c26821df683aa4ae242a4be} 
+QJson\+Object Writer\+Buffer\+Paras\+::\+\_\+extend\+Obj}
+
+\Hypertarget{struct_writer_buffer_paras_a70e7ec3496b5bbb91500db26e307bcd9}\index{WriterBufferParas@{WriterBufferParas}!\_splicingPtr@{\_splicingPtr}}
+\index{\_splicingPtr@{\_splicingPtr}!WriterBufferParas@{WriterBufferParas}}
+\doxysubsubsection{\texorpdfstring{\_splicingPtr}{\_splicingPtr}}
+{\footnotesize\ttfamily \label{struct_writer_buffer_paras_a70e7ec3496b5bbb91500db26e307bcd9} 
+QShared\+Pointer$<$\mbox{\hyperlink{class_s_l_m_splicing_module}{SLMSplicing\+Module}}$>$ Writer\+Buffer\+Paras\+::\+\_\+splicing\+Ptr = nullptr}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{publicheader_8h}{publicheader.\+h}}\end{DoxyCompactItemize}

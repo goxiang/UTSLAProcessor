@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: SplicingAbstract类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_splicing_abstract.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_splicing_abstract-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">SplicingAbstract类 参考<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="splicingabstract_8h_source.html">splicingabstract.h</a>&gt;</code></p>
+<div class="dynheader">
+类 SplicingAbstract 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_splicing_abstract.png" usemap="#SplicingAbstract_map" alt=""/>
+  <map id="SplicingAbstract_map" name="SplicingAbstract_map">
+<area href="class_periodic_line.html" alt="PeriodicLine" shape="rect" coords="0,56,126,80"/>
+<area href="class_random_line_splicing.html" alt="RandomLineSplicing" shape="rect" coords="136,56,262,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a932c6fce2a65b3d3cb950a629ef60284" id="r_a932c6fce2a65b3d3cb950a629ef60284"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a932c6fce2a65b3d3cb950a629ef60284">SplicingPositionType</a> { <a class="el" href="#a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1">RT_Left</a>
+, <a class="el" href="#a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77">RT_Top</a>
+, <a class="el" href="#a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c">RT_Right</a>
+, <a class="el" href="#a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44">RT_Bottom</a>
+ }</td></tr>
+<tr class="separator:a932c6fce2a65b3d3cb950a629ef60284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af623757cf7a2cd8346cada970f7731d8" id="r_af623757cf7a2cd8346cada970f7731d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af623757cf7a2cd8346cada970f7731d8">SplicingLineType</a> { <a class="el" href="#af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11">SLT_Hor</a>
+, <a class="el" href="#af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6">SLT_Ver</a>
+ }</td></tr>
+<tr class="separator:af623757cf7a2cd8346cada970f7731d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a070a03c1506883e06a250d255b523ad0" id="r_a070a03c1506883e06a250d255b523ad0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a070a03c1506883e06a250d255b523ad0">~SplicingAbstract</a> ()</td></tr>
+<tr class="separator:a070a03c1506883e06a250d255b523ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e360c47db914469f31f553179735dac" id="r_a6e360c47db914469f31f553179735dac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e360c47db914469f31f553179735dac">calcNextPos</a> ()=0</td></tr>
+<tr class="separator:a6e360c47db914469f31f553179735dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af706235a2d016425e12c11f7b6d71e04" id="r_af706235a2d016425e12c11f7b6d71e04"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af706235a2d016425e12c11f7b6d71e04">getSplicngLineType</a> () const =0</td></tr>
+<tr class="separator:af706235a2d016425e12c11f7b6d71e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04be8d08eb1ad104722858cc127b30f9" id="r_a04be8d08eb1ad104722858cc127b30f9"><td class="memItemLeft" align="right" valign="top">virtual const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04be8d08eb1ad104722858cc127b30f9">getSplicingPos</a> () const =0</td></tr>
+<tr class="separator:a04be8d08eb1ad104722858cc127b30f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2999041e0c4c32d5e0a2e570db3655" id="r_a0e2999041e0c4c32d5e0a2e570db3655"><td class="memItemLeft" align="right" valign="top">virtual const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e2999041e0c4c32d5e0a2e570db3655">getOverlap</a> () const =0</td></tr>
+<tr class="separator:a0e2999041e0c4c32d5e0a2e570db3655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056438e17c77e15015f41122fc2100cc" id="r_a056438e17c77e15015f41122fc2100cc"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a056438e17c77e15015f41122fc2100cc">getSplicingSettings</a> () const =0</td></tr>
+<tr class="separator:a056438e17c77e15015f41122fc2100cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ab09962e78c2675582a7fd490a16381f1" id="r_ab09962e78c2675582a7fd490a16381f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab09962e78c2675582a7fd490a16381f1">SplicingAbstract</a> ()</td></tr>
+<tr class="separator:ab09962e78c2675582a7fd490a16381f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员枚举类型说明</h2>
+<a id="af623757cf7a2cd8346cada970f7731d8" name="af623757cf7a2cd8346cada970f7731d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af623757cf7a2cd8346cada970f7731d8">&#9670;&#160;</a></span>SplicingLineType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#af623757cf7a2cd8346cada970f7731d8">SplicingAbstract::SplicingLineType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11" name="af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11"></a>SLT_Hor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6" name="af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6"></a>SLT_Ver&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a932c6fce2a65b3d3cb950a629ef60284" name="a932c6fce2a65b3d3cb950a629ef60284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932c6fce2a65b3d3cb950a629ef60284">&#9670;&#160;</a></span>SplicingPositionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a932c6fce2a65b3d3cb950a629ef60284">SplicingAbstract::SplicingPositionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1" name="a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1"></a>RT_Left&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77" name="a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77"></a>RT_Top&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c" name="a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c"></a>RT_Right&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44" name="a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44"></a>RT_Bottom&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a070a03c1506883e06a250d255b523ad0" name="a070a03c1506883e06a250d255b523ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070a03c1506883e06a250d255b523ad0">&#9670;&#160;</a></span>~SplicingAbstract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SplicingAbstract::~SplicingAbstract </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab09962e78c2675582a7fd490a16381f1" name="ab09962e78c2675582a7fd490a16381f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09962e78c2675582a7fd490a16381f1">&#9670;&#160;</a></span>SplicingAbstract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SplicingAbstract::SplicingAbstract </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a6e360c47db914469f31f553179735dac" name="a6e360c47db914469f31f553179735dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e360c47db914469f31f553179735dac">&#9670;&#160;</a></span>calcNextPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SplicingAbstract::calcNextPos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_periodic_line.html#ac4dfb3b859022f143a275acf2096c3b7">PeriodicLine</a> , 以及 <a class="el" href="class_random_line_splicing.html#a2bfa31db15631eded3526d7cfea385e8">RandomLineSplicing</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a0e2999041e0c4c32d5e0a2e570db3655" name="a0e2999041e0c4c32d5e0a2e570db3655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2999041e0c4c32d5e0a2e570db3655">&#9670;&#160;</a></span>getOverlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const int64_t SplicingAbstract::getOverlap </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_periodic_line.html#ad590a74d58751a867886436bb669ffea">PeriodicLine</a> , 以及 <a class="el" href="class_random_line_splicing.html#a245f7e0b0cf81b65d35471e834f75c9a">RandomLineSplicing</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a04be8d08eb1ad104722858cc127b30f9" name="a04be8d08eb1ad104722858cc127b30f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04be8d08eb1ad104722858cc127b30f9">&#9670;&#160;</a></span>getSplicingPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const int64_t SplicingAbstract::getSplicingPos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_periodic_line.html#addb047689cb1ee18c45453ef1768d5d6">PeriodicLine</a> , 以及 <a class="el" href="class_random_line_splicing.html#a7af2e632364b9b6cc3b1a2cd4c029740">RandomLineSplicing</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a056438e17c77e15015f41122fc2100cc" name="a056438e17c77e15015f41122fc2100cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056438e17c77e15015f41122fc2100cc">&#9670;&#160;</a></span>getSplicingSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="struct_splicing_base_settings.html">SplicingBaseSettings</a> &amp; SplicingAbstract::getSplicingSettings </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_periodic_line.html#acacc43302bc1e4202982983ad0786cc3">PeriodicLine</a> , 以及 <a class="el" href="class_random_line_splicing.html#a669030782b9dadf5aa55a2b1a5877d9b">RandomLineSplicing</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="af706235a2d016425e12c11f7b6d71e04" name="af706235a2d016425e12c11f7b6d71e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af706235a2d016425e12c11f7b6d71e04">&#9670;&#160;</a></span>getSplicngLineType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const int SplicingAbstract::getSplicngLineType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_periodic_line.html#ac602c77d6da07615056021746d04fd1a">PeriodicLine</a> , 以及 <a class="el" href="class_random_line_splicing.html#aa2c695b38a69f2a238c2e5d157ab890f">RandomLineSplicing</a> 内被实现.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>SplicingModule/<a class="el" href="splicingabstract_8h_source.html">splicingabstract.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_splicing_abstract.html">SplicingAbstract</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+\doxysection{Write\+UFF类 参考}
+\hypertarget{class_write_u_f_f}{}\label{class_write_u_f_f}\index{WriteUFF@{WriteUFF}}
+
+
+{\ttfamily \#include $<$writeuff.\+h$>$}
+
+类 Write\+UFF 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_write_u_f_f}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_write_u_f_f_ae8a136faf2fdd94b83522e62f12bcf75}{Write\+UFF}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_write_u_f_f_a2f261d9bd6196363f54968c59b2a8bce}{set\+UFFStatus}} (int)
+\item 
+void \mbox{\hyperlink{class_write_u_f_f_a374f5abef969870d13042455e01da516}{set\+Para\+Write\+Buff}} (\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_write_u_f_f_a3914c14eca0fb759bfedce40503c011c}{stop\+Thread}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_write_u_f_f_adb1b058f5a93255923dc32a7415c4e39}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_write_u_f_f_ab68d5149050a5e072bad890aba22e107}{m\+\_\+n\+UFData\+Status}}
+\item 
+bool \mbox{\hyperlink{class_write_u_f_f_ad2c98515058fe405816b42542fb3ad28}{m\+\_\+b\+Running}} = true
+\item 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_write_u_f_f_a735a87e8922edc729d3c76ef3c8c1b6d}{\+\_\+write\+Buff}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_write_u_f_f_ae8a136faf2fdd94b83522e62f12bcf75}\index{WriteUFF@{WriteUFF}!WriteUFF@{WriteUFF}}
+\index{WriteUFF@{WriteUFF}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{WriteUFF()}{WriteUFF()}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_ae8a136faf2fdd94b83522e62f12bcf75} 
+Write\+UFF\+::\+Write\+UFF (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_write_u_f_f_adb1b058f5a93255923dc32a7415c4e39}\index{WriteUFF@{WriteUFF}!run@{run}}
+\index{run@{run}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_adb1b058f5a93255923dc32a7415c4e39} 
+void Write\+UFF\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_u_f_f_a374f5abef969870d13042455e01da516}\index{WriteUFF@{WriteUFF}!setParaWriteBuff@{setParaWriteBuff}}
+\index{setParaWriteBuff@{setParaWriteBuff}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{setParaWriteBuff()}{setParaWriteBuff()}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_a374f5abef969870d13042455e01da516} 
+void Write\+UFF\+::set\+Para\+Write\+Buff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*}}]{lp\+Para\+Write\+Buff}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_write_u_f_f_a2f261d9bd6196363f54968c59b2a8bce}\index{WriteUFF@{WriteUFF}!setUFFStatus@{setUFFStatus}}
+\index{setUFFStatus@{setUFFStatus}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{setUFFStatus()}{setUFFStatus()}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_a2f261d9bd6196363f54968c59b2a8bce} 
+void Write\+UFF\+::set\+UFFStatus (\begin{DoxyParamCaption}\item[{int}]{n\+Status}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_write_u_f_f_a3914c14eca0fb759bfedce40503c011c}\index{WriteUFF@{WriteUFF}!stopThread@{stopThread}}
+\index{stopThread@{stopThread}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{stopThread()}{stopThread()}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_a3914c14eca0fb759bfedce40503c011c} 
+void Write\+UFF\+::stop\+Thread (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_write_u_f_f_a735a87e8922edc729d3c76ef3c8c1b6d}\index{WriteUFF@{WriteUFF}!\_writeBuff@{\_writeBuff}}
+\index{\_writeBuff@{\_writeBuff}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{\_writeBuff}{\_writeBuff}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_a735a87e8922edc729d3c76ef3c8c1b6d} 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\texorpdfstring{$\ast$}{*} Write\+UFF\+::\+\_\+write\+Buff = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_u_f_f_ad2c98515058fe405816b42542fb3ad28}\index{WriteUFF@{WriteUFF}!m\_bRunning@{m\_bRunning}}
+\index{m\_bRunning@{m\_bRunning}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{m\_bRunning}{m\_bRunning}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_ad2c98515058fe405816b42542fb3ad28} 
+bool Write\+UFF\+::m\+\_\+b\+Running = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_u_f_f_ab68d5149050a5e072bad890aba22e107}\index{WriteUFF@{WriteUFF}!m\_nUFDataStatus@{m\_nUFDataStatus}}
+\index{m\_nUFDataStatus@{m\_nUFDataStatus}!WriteUFF@{WriteUFF}}
+\doxysubsubsection{\texorpdfstring{m\_nUFDataStatus}{m\_nUFDataStatus}}
+{\footnotesize\ttfamily \label{class_write_u_f_f_ab68d5149050a5e072bad890aba22e107} 
+int Write\+UFF\+::m\+\_\+n\+UFData\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{writeuff_8h}{writeuff.\+h}}\item 
+\mbox{\hyperlink{writeuff_8cpp}{writeuff.\+cpp}}\end{DoxyCompactItemize}

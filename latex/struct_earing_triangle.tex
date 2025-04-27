@@ -1,0 +1,114 @@
+\doxysection{Earing\+Triangle结构体 参考}
+\hypertarget{struct_earing_triangle}{}\label{struct_earing_triangle}\index{EaringTriangle@{EaringTriangle}}
+
+
+{\ttfamily \#include $<$dividerheader.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_earing_triangle_a04ccdc0e7c0a2cf89478f10b0d379a5a}{Earing\+Triangle}} ()=default
+\item 
+\mbox{\hyperlink{struct_earing_triangle_a910fdcc89d284a0e4393122182e39021}{Earing\+Triangle}} (const Int\+Point \&p1, const Int\+Point \&p2, const Int\+Point \&p3, const double \&area)
+\item 
+virtual \mbox{\hyperlink{struct_earing_triangle_a937be1d9c66a684bfee1a92960cfc1dc}{\texorpdfstring{$\sim$}{\string~}\+Earing\+Triangle}} ()
+\item 
+void \mbox{\hyperlink{struct_earing_triangle_abc38843fb98eef01997e283c22e79a1b}{init\+Triangle}} (const Int\+Point \&p1, const Int\+Point \&p2, const Int\+Point \&p3, const double \&area)
+\item 
+bool \mbox{\hyperlink{struct_earing_triangle_acf7d6a28cd7fd0e4c22abdda7216acb3}{pt\+Out\+The\+Triangle}} (const Int\+Point \&pt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+long long \mbox{\hyperlink{struct_earing_triangle_abd8d7209205d70461638870593e6316d}{\+\_\+minX}} = std\+::numeric\+\_\+limits$<$long long$>$\+::max()
+\item 
+long long \mbox{\hyperlink{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}{\+\_\+minY}} = std\+::numeric\+\_\+limits$<$long long$>$\+::max()
+\item 
+long long \mbox{\hyperlink{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}{\+\_\+maxX}} = std\+::numeric\+\_\+limits$<$long long$>$\+::min()
+\item 
+long long \mbox{\hyperlink{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}{\+\_\+maxY}} = std\+::numeric\+\_\+limits$<$long long$>$\+::min()
+\item 
+double \mbox{\hyperlink{struct_earing_triangle_a71b0b868a41b7806b53bd53560636980}{\+\_\+area}} = 0.\+0
+\item 
+Path \mbox{\hyperlink{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361}{\+\_\+path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_earing_triangle_a04ccdc0e7c0a2cf89478f10b0d379a5a}\index{EaringTriangle@{EaringTriangle}!EaringTriangle@{EaringTriangle}}
+\index{EaringTriangle@{EaringTriangle}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{EaringTriangle()}{EaringTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_a04ccdc0e7c0a2cf89478f10b0d379a5a} 
+Earing\+Triangle\+::\+Earing\+Triangle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_earing_triangle_a910fdcc89d284a0e4393122182e39021}\index{EaringTriangle@{EaringTriangle}!EaringTriangle@{EaringTriangle}}
+\index{EaringTriangle@{EaringTriangle}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{EaringTriangle()}{EaringTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_a910fdcc89d284a0e4393122182e39021} 
+Earing\+Triangle\+::\+Earing\+Triangle (\begin{DoxyParamCaption}\item[{const Int\+Point \&}]{p1}{, }\item[{const Int\+Point \&}]{p2}{, }\item[{const Int\+Point \&}]{p3}{, }\item[{const double \&}]{area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_earing_triangle_a937be1d9c66a684bfee1a92960cfc1dc}\index{EaringTriangle@{EaringTriangle}!````~EaringTriangle@{\texorpdfstring{$\sim$}{\string~}EaringTriangle}}
+\index{````~EaringTriangle@{\texorpdfstring{$\sim$}{\string~}EaringTriangle}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}EaringTriangle()}{\string~EaringTriangle()}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_a937be1d9c66a684bfee1a92960cfc1dc} 
+virtual Earing\+Triangle\+::\texorpdfstring{$\sim$}{\string~}\+Earing\+Triangle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_earing_triangle_abc38843fb98eef01997e283c22e79a1b}\index{EaringTriangle@{EaringTriangle}!initTriangle@{initTriangle}}
+\index{initTriangle@{initTriangle}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{initTriangle()}{initTriangle()}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_abc38843fb98eef01997e283c22e79a1b} 
+void Earing\+Triangle\+::init\+Triangle (\begin{DoxyParamCaption}\item[{const Int\+Point \&}]{p1}{, }\item[{const Int\+Point \&}]{p2}{, }\item[{const Int\+Point \&}]{p3}{, }\item[{const double \&}]{area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_earing_triangle_acf7d6a28cd7fd0e4c22abdda7216acb3}\index{EaringTriangle@{EaringTriangle}!ptOutTheTriangle@{ptOutTheTriangle}}
+\index{ptOutTheTriangle@{ptOutTheTriangle}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{ptOutTheTriangle()}{ptOutTheTriangle()}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_acf7d6a28cd7fd0e4c22abdda7216acb3} 
+bool Earing\+Triangle\+::pt\+Out\+The\+Triangle (\begin{DoxyParamCaption}\item[{const Int\+Point \&}]{pt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_earing_triangle_a71b0b868a41b7806b53bd53560636980}\index{EaringTriangle@{EaringTriangle}!\_area@{\_area}}
+\index{\_area@{\_area}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{\_area}{\_area}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_a71b0b868a41b7806b53bd53560636980} 
+double Earing\+Triangle\+::\+\_\+area = 0.\+0}
+
+\Hypertarget{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d}\index{EaringTriangle@{EaringTriangle}!\_maxX@{\_maxX}}
+\index{\_maxX@{\_maxX}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{\_maxX}{\_maxX}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_a8a2313ce98b1f5434b981b71379df46d} 
+long long Earing\+Triangle\+::\+\_\+maxX = std\+::numeric\+\_\+limits$<$long long$>$\+::min()}
+
+\Hypertarget{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201}\index{EaringTriangle@{EaringTriangle}!\_maxY@{\_maxY}}
+\index{\_maxY@{\_maxY}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{\_maxY}{\_maxY}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_a27f3b80aa3cfa73698b126d3c077c201} 
+long long Earing\+Triangle\+::\+\_\+maxY = std\+::numeric\+\_\+limits$<$long long$>$\+::min()}
+
+\Hypertarget{struct_earing_triangle_abd8d7209205d70461638870593e6316d}\index{EaringTriangle@{EaringTriangle}!\_minX@{\_minX}}
+\index{\_minX@{\_minX}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{\_minX}{\_minX}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_abd8d7209205d70461638870593e6316d} 
+long long Earing\+Triangle\+::\+\_\+minX = std\+::numeric\+\_\+limits$<$long long$>$\+::max()}
+
+\Hypertarget{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912}\index{EaringTriangle@{EaringTriangle}!\_minY@{\_minY}}
+\index{\_minY@{\_minY}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{\_minY}{\_minY}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_ada71202b601c7a7eedcb2fa92d78f912} 
+long long Earing\+Triangle\+::\+\_\+minY = std\+::numeric\+\_\+limits$<$long long$>$\+::max()}
+
+\Hypertarget{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361}\index{EaringTriangle@{EaringTriangle}!\_path@{\_path}}
+\index{\_path@{\_path}!EaringTriangle@{EaringTriangle}}
+\doxysubsubsection{\texorpdfstring{\_path}{\_path}}
+{\footnotesize\ttfamily \label{struct_earing_triangle_a7fe92a1eab492bc87e8102607f1f6361} 
+Path Earing\+Triangle\+::\+\_\+path}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Dynamic\+Divider/\+Polygons\+Divider/\mbox{\hyperlink{dividerheader_8h}{dividerheader.\+h}}\end{DoxyCompactItemize}

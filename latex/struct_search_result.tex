@@ -1,0 +1,121 @@
+\doxysection{Search\+Result结构体 参考}
+\hypertarget{struct_search_result}{}\label{struct_search_result}\index{SearchResult@{SearchResult}}
+
+
+{\ttfamily \#include $<$quadtreedef.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_search_result_a59966f261f9e525d3fc809ef3e366017}{Search\+Result}} ()=default
+\item 
+\mbox{\hyperlink{struct_search_result_a900aafcf1487038af8209f1d7b2e9a3d}{Search\+Result}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&)
+\item 
+void \mbox{\hyperlink{struct_search_result_aad1e68339eecc0e1414196c48c5d2362}{calc\+Nearest\+Pt}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em 计算最近点 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_search_result_a566ad804a06c417aebcd405b6501fc7e}{\+\_\+left\+\_\+max\+\_\+x}} = std\+::numeric\+\_\+limits$<$int$>$\+::max()
+\item 
+int \mbox{\hyperlink{struct_search_result_a77cb779c4a212287f6162bd8effcc7ed}{\+\_\+right\+\_\+max\+\_\+x}} = std\+::numeric\+\_\+limits$<$int$>$\+::max()
+\item 
+int \mbox{\hyperlink{struct_search_result_a7390fdca552953860e7f51bc76ed971b}{\+\_\+left\+\_\+max\+\_\+y}} = std\+::numeric\+\_\+limits$<$int$>$\+::max()
+\item 
+int \mbox{\hyperlink{struct_search_result_a575277da4fa5fb6d3973ded704f6eecc}{\+\_\+right\+\_\+max\+\_\+y}} = std\+::numeric\+\_\+limits$<$int$>$\+::max()
+\item 
+double \mbox{\hyperlink{struct_search_result_a86c572bb862bffa3f902b5746414d265}{\+\_\+min\+Dis}} = std\+::numeric\+\_\+limits$<$double$>$\+::max()
+\item 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \mbox{\hyperlink{struct_search_result_ab7b7e1f47ee5867417af5750870e457a}{\+\_\+refer\+Pt}} = nullptr
+\item 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \mbox{\hyperlink{struct_search_result_ae19f6ec69d22bd81c42f85375545ee1a}{\+\_\+start\+Pt}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_search_result_a59966f261f9e525d3fc809ef3e366017}\index{SearchResult@{SearchResult}!SearchResult@{SearchResult}}
+\index{SearchResult@{SearchResult}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{SearchResult()}{SearchResult()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_search_result_a59966f261f9e525d3fc809ef3e366017} 
+Search\+Result\+::\+Search\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_search_result_a900aafcf1487038af8209f1d7b2e9a3d}\index{SearchResult@{SearchResult}!SearchResult@{SearchResult}}
+\index{SearchResult@{SearchResult}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{SearchResult()}{SearchResult()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_search_result_a900aafcf1487038af8209f1d7b2e9a3d} 
+Search\+Result\+::\+Search\+Result (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{pt\+Info\+Ptr}{}\end{DoxyParamCaption})}
+
+\doxylink{struct_search_result}{Search\+Result} 
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_search_result_aad1e68339eecc0e1414196c48c5d2362}\index{SearchResult@{SearchResult}!calcNearestPt@{calcNearestPt}}
+\index{calcNearestPt@{calcNearestPt}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{calcNearestPt()}{calcNearestPt()}}
+{\footnotesize\ttfamily \label{struct_search_result_aad1e68339eecc0e1414196c48c5d2362} 
+void Search\+Result\+::calc\+Nearest\+Pt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})}
+
+
+
+计算最近点 
+
+
+\begin{DoxyParams}{参数}
+{\em node} & 当前搜索的节点指针\\
+\hline
+\end{DoxyParams}
+递归搜索四叉树找到距离参考点最近的点\+:
+\begin{DoxyEnumerate}
+\item 参数有效性检查
+\item 叶子节点处理\+:计算点集中各点到参考点的距离
+\item 内部节点处理\+:递归搜索子节点 
+\end{DoxyEnumerate}
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_search_result_a566ad804a06c417aebcd405b6501fc7e}\index{SearchResult@{SearchResult}!\_left\_max\_x@{\_left\_max\_x}}
+\index{\_left\_max\_x@{\_left\_max\_x}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{\_left\_max\_x}{\_left\_max\_x}}
+{\footnotesize\ttfamily \label{struct_search_result_a566ad804a06c417aebcd405b6501fc7e} 
+int Search\+Result\+::\+\_\+left\+\_\+max\+\_\+x = std\+::numeric\+\_\+limits$<$int$>$\+::max()}
+
+\Hypertarget{struct_search_result_a7390fdca552953860e7f51bc76ed971b}\index{SearchResult@{SearchResult}!\_left\_max\_y@{\_left\_max\_y}}
+\index{\_left\_max\_y@{\_left\_max\_y}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{\_left\_max\_y}{\_left\_max\_y}}
+{\footnotesize\ttfamily \label{struct_search_result_a7390fdca552953860e7f51bc76ed971b} 
+int Search\+Result\+::\+\_\+left\+\_\+max\+\_\+y = std\+::numeric\+\_\+limits$<$int$>$\+::max()}
+
+\Hypertarget{struct_search_result_a86c572bb862bffa3f902b5746414d265}\index{SearchResult@{SearchResult}!\_minDis@{\_minDis}}
+\index{\_minDis@{\_minDis}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{\_minDis}{\_minDis}}
+{\footnotesize\ttfamily \label{struct_search_result_a86c572bb862bffa3f902b5746414d265} 
+double Search\+Result\+::\+\_\+min\+Dis = std\+::numeric\+\_\+limits$<$double$>$\+::max()}
+
+\Hypertarget{struct_search_result_ab7b7e1f47ee5867417af5750870e457a}\index{SearchResult@{SearchResult}!\_referPt@{\_referPt}}
+\index{\_referPt@{\_referPt}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{\_referPt}{\_referPt}}
+{\footnotesize\ttfamily \label{struct_search_result_ab7b7e1f47ee5867417af5750870e457a} 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} Search\+Result\+::\+\_\+refer\+Pt = nullptr}
+
+\Hypertarget{struct_search_result_a77cb779c4a212287f6162bd8effcc7ed}\index{SearchResult@{SearchResult}!\_right\_max\_x@{\_right\_max\_x}}
+\index{\_right\_max\_x@{\_right\_max\_x}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{\_right\_max\_x}{\_right\_max\_x}}
+{\footnotesize\ttfamily \label{struct_search_result_a77cb779c4a212287f6162bd8effcc7ed} 
+int Search\+Result\+::\+\_\+right\+\_\+max\+\_\+x = std\+::numeric\+\_\+limits$<$int$>$\+::max()}
+
+\Hypertarget{struct_search_result_a575277da4fa5fb6d3973ded704f6eecc}\index{SearchResult@{SearchResult}!\_right\_max\_y@{\_right\_max\_y}}
+\index{\_right\_max\_y@{\_right\_max\_y}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{\_right\_max\_y}{\_right\_max\_y}}
+{\footnotesize\ttfamily \label{struct_search_result_a575277da4fa5fb6d3973ded704f6eecc} 
+int Search\+Result\+::\+\_\+right\+\_\+max\+\_\+y = std\+::numeric\+\_\+limits$<$int$>$\+::max()}
+
+\Hypertarget{struct_search_result_ae19f6ec69d22bd81c42f85375545ee1a}\index{SearchResult@{SearchResult}!\_startPt@{\_startPt}}
+\index{\_startPt@{\_startPt}!SearchResult@{SearchResult}}
+\doxysubsubsection{\texorpdfstring{\_startPt}{\_startPt}}
+{\footnotesize\ttfamily \label{struct_search_result_ae19f6ec69d22bd81c42f85375545ee1a} 
+\mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} Search\+Result\+::\+\_\+start\+Pt = nullptr}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8h}{quadtreedef.\+h}}\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8cpp}{quadtreedef.\+cpp}}\end{DoxyCompactItemize}

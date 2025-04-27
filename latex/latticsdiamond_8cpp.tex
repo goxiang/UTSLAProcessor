@@ -1,0 +1,42 @@
+\doxysection{Lattice\+Module/latticsdiamond.cpp 文件参考}
+\hypertarget{latticsdiamond_8cpp}{}\label{latticsdiamond_8cpp}\index{LatticeModule/latticsdiamond.cpp@{LatticeModule/latticsdiamond.cpp}}
+{\ttfamily \#include "{}latticsdiamond.\+h"{}}\newline
+{\ttfamily \#include "{}publicheader.\+h"{}}\newline
+{\ttfamily \#include "{}meshbase.\+h"{}}\newline
+{\ttfamily \#include "{}clipper2/clipper.\+h"{}}\newline
+{\ttfamily \#include $<$QVector3D$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_lattics_diamond_1_1_priv}{Lattics\+Diamond\+::\+Priv}}
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_lattics_diamond_1_1_priv}{Lattics\+Diamond\+::\+Priv} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+QVector3D \mbox{\hyperlink{latticsdiamond_8cpp_ab04d2ddeeba9d020a493ee27a536a5a1}{get\+Vertex}} (const float \&r, const float \&z, const float \&angle)
+\item 
+void \mbox{\hyperlink{latticsdiamond_8cpp_a9c8a24fef2049c7d531c2961464a1b36}{transform\+Double\+Path}} (const Double\+Path \&path, Double\+Path \&out\+Path, const float \&x=0.\+0f, const float \&y=0.\+0f)
+\item 
+Double\+Path \mbox{\hyperlink{latticsdiamond_8cpp_a243ea7d7da4322be96771e9a009e3f14}{rotate\+Path}} (const Double\+Path \&path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{latticsdiamond_8cpp_ab04d2ddeeba9d020a493ee27a536a5a1}\index{latticsdiamond.cpp@{latticsdiamond.cpp}!getVertex@{getVertex}}
+\index{getVertex@{getVertex}!latticsdiamond.cpp@{latticsdiamond.cpp}}
+\doxysubsubsection{\texorpdfstring{getVertex()}{getVertex()}}
+{\footnotesize\ttfamily \label{latticsdiamond_8cpp_ab04d2ddeeba9d020a493ee27a536a5a1} 
+QVector3D get\+Vertex (\begin{DoxyParamCaption}\item[{const float \&}]{r}{, }\item[{const float \&}]{z}{, }\item[{const float \&}]{angle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{latticsdiamond_8cpp_a243ea7d7da4322be96771e9a009e3f14}\index{latticsdiamond.cpp@{latticsdiamond.cpp}!rotatePath@{rotatePath}}
+\index{rotatePath@{rotatePath}!latticsdiamond.cpp@{latticsdiamond.cpp}}
+\doxysubsubsection{\texorpdfstring{rotatePath()}{rotatePath()}}
+{\footnotesize\ttfamily \label{latticsdiamond_8cpp_a243ea7d7da4322be96771e9a009e3f14} 
+Double\+Path rotate\+Path (\begin{DoxyParamCaption}\item[{const Double\+Path \&}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{latticsdiamond_8cpp_a9c8a24fef2049c7d531c2961464a1b36}\index{latticsdiamond.cpp@{latticsdiamond.cpp}!transformDoublePath@{transformDoublePath}}
+\index{transformDoublePath@{transformDoublePath}!latticsdiamond.cpp@{latticsdiamond.cpp}}
+\doxysubsubsection{\texorpdfstring{transformDoublePath()}{transformDoublePath()}}
+{\footnotesize\ttfamily \label{latticsdiamond_8cpp_a9c8a24fef2049c7d531c2961464a1b36} 
+void transform\+Double\+Path (\begin{DoxyParamCaption}\item[{const Double\+Path \&}]{path}{, }\item[{Double\+Path \&}]{out\+Path}{, }\item[{const float \&}]{x}{ = {\ttfamily 0.0f}, }\item[{const float \&}]{y}{ = {\ttfamily 0.0f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

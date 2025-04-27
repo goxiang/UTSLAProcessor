@@ -1,0 +1,103 @@
+\doxysection{latticeinterface.\+h}
+\hypertarget{latticeinterface_8h_source}{}\label{latticeinterface_8h_source}\index{LatticeModule/latticeinterface.h@{LatticeModule/latticeinterface.h}}
+\mbox{\hyperlink{latticeinterface_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LATTICEINTERFACE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LATTICEINTERFACE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}qjsonparsing.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}clipper.hpp"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattice_layer_info}{LatticeLayerInfo}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lattice_interface_af3663583994d3c85e3be727432a49cad}{LatticeInterface}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_lattice_interface_af3663583994d3c85e3be727432a49cad}{LatticeInterface}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lattice_interface_a4ffc5dc673f2a07163c341f97b3e8adb}{initLatticeParas}}(\textcolor{keyword}{const}\ QJsonParsing\ *);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_lattice_interface_a4beab198144e1b3856453e461b59442b}{calcLayerLattic}}(ClipperLib::Paths\ \&,\ \textcolor{keyword}{const}\ ClipperLib::Paths\ \&,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ ClipperLib::Paths\ \&,\ \mbox{\hyperlink{struct_lattice_layer_info}{LatticeLayerInfo}}\ \&);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattice_interface_1_1_priv}{Priv}};}
+\DoxyCodeLine{00023\ \ \ \ \ QSharedPointer<Priv>\ \mbox{\hyperlink{class_lattice_interface_a6e44c7b2d61625b4716adf3460ab44fe}{d}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattice_info_a38768c481c1684d05e00bc3bcfbbb553}{LatticeInfo}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lattice_info_a73d98df81131d568489075671aa6f560}{\_type}}\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_lattice_info_ae09ede72223b0841ba1cba142db3e75c}{\_area}}\ =\ 0.0;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lattice_info_aa64f6c003a73f2e39a08f7316643e474}{\_centerX}}\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lattice_info_a5f8e5327f05f035783b4a92a0362c4b0}{\_centerY}}\ =\ 0;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{struct_lattice_info_a38768c481c1684d05e00bc3bcfbbb553}{LatticeInfo}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct_lattice_info_a3d418adfebf99e34071b731d04983022}{LatticeInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&type,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&area,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&cx,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&cy)\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattice_info_a73d98df81131d568489075671aa6f560}{\_type}}\ =\ type;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattice_info_ae09ede72223b0841ba1cba142db3e75c}{\_area}}\ =\ area;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattice_info_aa64f6c003a73f2e39a08f7316643e474}{\_centerX}}\ =\ cx;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattice_info_a5f8e5327f05f035783b4a92a0362c4b0}{\_centerY}}\ =\ cy;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattice_path_info}{LatticePathInfo}}\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lattice_path_info_a52f7c5420574c311c6ecb00cd319751f}{\_type}}\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \ \ ClipperLib::Path\ \mbox{\hyperlink{struct_lattice_path_info_a0463bc64c867c8dad1d90a94adaa741b}{\_path}};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lattice_path_info_ade31377567c0e9ba1ec713c5ba1dc31b}{\_centerX}}\ =\ 0;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lattice_path_info_a7a9ad17396199e84f33dd5ea84070c29}{\_centerY}}\ =\ 0;}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattice_layer_info}{LatticeLayerInfo}}\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ QVector<LatticeInfo>\ \mbox{\hyperlink{struct_lattice_layer_info_a8b0f7b0bc378548649d02e3b8789e86b}{\_latticeInfo}};}
+\DoxyCodeLine{00050\ \ \ \ \ QMap<int,\ LatticePathInfo>\ \mbox{\hyperlink{struct_lattice_layer_info_ac569e1924b7567fadb4211d72647f472}{\_latticePathInfo}};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_lattice_layer_info_a0edb81a1f8ea8826c90663bbe785d5d2}{initialize}}()\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattice_layer_info_a8b0f7b0bc378548649d02e3b8789e86b}{\_latticeInfo}}.clear();}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_lattice_layer_info_ac569e1924b7567fadb4211d72647f472}{\_latticePathInfo}}.clear();}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{latticeinterface_8h_a4d2e9f87d0a981661cad80a103dbc9af}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_lattice_info}{LatticeInfo}}\ \&lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_lattice_info}{LatticeInfo}}\ \&rhs)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordflow}{return}\ fabs(lhs.\mbox{\hyperlink{struct_lattice_info_ae09ede72223b0841ba1cba142db3e75c}{\_area}}\ -\/\ rhs.\mbox{\hyperlink{struct_lattice_info_ae09ede72223b0841ba1cba142db3e75c}{\_area}})\ <\ 100000\ \&\&}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ fabs(lhs.\mbox{\hyperlink{struct_lattice_info_aa64f6c003a73f2e39a08f7316643e474}{\_centerX}}\ -\/\ rhs.\mbox{\hyperlink{struct_lattice_info_aa64f6c003a73f2e39a08f7316643e474}{\_centerX}})\ <\ 2\ \&\&}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ fabs(lhs.\mbox{\hyperlink{struct_lattice_info_a5f8e5327f05f035783b4a92a0362c4b0}{\_centerY}}\ -\/\ rhs.\mbox{\hyperlink{struct_lattice_info_a5f8e5327f05f035783b4a92a0362c4b0}{\_centerY}})\ <\ 2;}
+\DoxyCodeLine{00061\ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{inline}\ uint\ \mbox{\hyperlink{latticeinterface_8h_ab74b27d693a609c0f188c96b641c6eda}{qHash}}(\mbox{\hyperlink{struct_lattice_info}{LatticeInfo}}\ key,\ uint\ seed\ =\ 0)}
+\DoxyCodeLine{00064\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{latticeinterface_8h_ab74b27d693a609c0f188c96b641c6eda}{qHash}}(key.\mbox{\hyperlink{struct_lattice_info_aa64f6c003a73f2e39a08f7316643e474}{\_centerX}},\ seed)\ \string^}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{latticeinterface_8h_ab74b27d693a609c0f188c96b641c6eda}{qHash}}(key.\mbox{\hyperlink{struct_lattice_info_a5f8e5327f05f035783b4a92a0362c4b0}{\_centerY}}\ <<\ 15,\ seed);}
+\DoxyCodeLine{00067\ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#include\ <QThread>}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#include\ <QSemaphore>}}
+\DoxyCodeLine{00071\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_thread_runner_a7cad30135a056b05f8070ff1c2d3808c}{ThreadRunner}}\ :\ \textcolor{keyword}{public}\ QThread}
+\DoxyCodeLine{00072\ \{}
+\DoxyCodeLine{00073\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_thread_runner_a7cad30135a056b05f8070ff1c2d3808c}{ThreadRunner}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr})\ :\ QThread(parent)\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_thread_runner_ab9ebc3181502a951b73af794755f279b}{\_semaphore}}.release();}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ this-\/>setPriority(QThread::HighestPriority);}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_thread_runner_a6cfc76a789f53e161407af9756743905}{\string~ThreadRunner}}()\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ this-\/>quit();}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ this-\/>wait();}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_thread_runner_a515b0d6a8c59504a97d0db2deba4d6dd}{runTask}}(\textcolor{keyword}{const}\ std::function<\textcolor{keywordtype}{void}()>\ \&func)\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_thread_runner_ab966d16ea9afd2b38cbf5fb5a6d1068f}{\_func}}\ =\ std::move(func);}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_thread_runner_ab9ebc3181502a951b73af794755f279b}{\_semaphore}}.acquire();}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ start();}
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_thread_runner_a05e6c7bd48917f5364953055acb095f5}{waitForFinished}}()\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_thread_runner_ab9ebc3181502a951b73af794755f279b}{\_semaphore}}.acquire();}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_thread_runner_ab9ebc3181502a951b73af794755f279b}{\_semaphore}}.release();}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_thread_runner_ae7aaf0daacf178ad7eebb098d58aa569}{run}}()\textcolor{keyword}{\ override\ }\{\ \mbox{\hyperlink{class_thread_runner_ab966d16ea9afd2b38cbf5fb5a6d1068f}{\_func}}();\ \mbox{\hyperlink{class_thread_runner_ab9ebc3181502a951b73af794755f279b}{\_semaphore}}.release();\ \}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00097\ \ \ \ \ QSemaphore\ \mbox{\hyperlink{class_thread_runner_ab9ebc3181502a951b73af794755f279b}{\_semaphore}};}
+\DoxyCodeLine{00098\ \ \ \ \ std::function<void()>\ \mbox{\hyperlink{class_thread_runner_ab966d16ea9afd2b38cbf5fb5a6d1068f}{\_func}}\ =\ []()\{\};}
+\DoxyCodeLine{00099\ \};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LATTICEINTERFACE\_H}}
+
+\end{DoxyCode}

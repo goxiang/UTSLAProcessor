@@ -1,0 +1,177 @@
+\doxysection{Polygons\+Divider类 参考}
+\hypertarget{class_polygons_divider}{}\label{class_polygons_divider}\index{PolygonsDivider@{PolygonsDivider}}
+
+
+{\ttfamily \#include $<$polygonsdivider.\+h$>$}
+
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_polygons_divider_1_1_priv}{Priv}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_polygons_divider_a387390e254f31a01c7e6c02866e9e2e5}{Polygons\+Divider}} ()
+\item 
+long long \mbox{\hyperlink{class_polygons_divider_a719d1d72fb19cdc21d347b0697c948d6}{calc\+Weight\+Pos}} (const Clipper\+Lib\+::\+Paths \&, const double \&, int \&split\+Horizon)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_ac4c408f4f7f142c59eb65553535ccb50}{set\+Max\+Error}} (const double \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_polygons_divider_af5e3cdfc7ecd8d08e8fa040d5baac165}{create\+Earing}} (const Clipper\+Lib\+::\+Paths \&)
+\item 
+long long \mbox{\hyperlink{class_polygons_divider_a8bff5e9263be7f7d4f5dd17d6162d95d}{get\+Weight\+Pos}} (const double \&, int \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_acbf25686d387ecb53f1c248e226e4c4d}{paths\+To\+List}} (const Clipper\+Lib\+::\+Path \&, std\+::list$<$ Clipper\+Lib\+::\+Int\+Point $>$ \&pt\+List)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a852a7756cd92dc88137711a55378e725}{create\+Earing\+\_\+outter}} (std\+::list$<$ Clipper\+Lib\+::\+Int\+Point $>$ \&pt\+List)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a88c4c2b576d3e10a0cc9e9251349c707}{create\+Earing\+\_\+inner}} (std\+::list$<$ Clipper\+Lib\+::\+Int\+Point $>$ \&pt\+List)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a50c519b5d0dee2062e8019704796f673}{append\+Earing\+Triangle}} (const Clipper\+Lib\+::\+Int\+Point \&, const Clipper\+Lib\+::\+Int\+Point \&, const Clipper\+Lib\+::\+Int\+Point \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a09aeb6aed83bca6bbe0ff3a81d2e4e77}{append\+Earing\+Triangle}} (const \mbox{\hyperlink{struct_earing_triangle}{Earing\+Triangle}} \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_aedec4f834f92704a12f051fd4918c514}{get\+Weight\+Pos}} (const double \&, const long long \&, const long long \&, \mbox{\hyperlink{struct_min_err_result}{Min\+Err\+Result}} \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a218dee6d076831f1ec34aafc5767cec9}{calc\+Insert\+Pt}} (const Clipper\+Lib\+::\+Int\+Point \&, const Clipper\+Lib\+::\+Int\+Point \&, const long long \&, Clipper\+Lib\+::\+Double\+Point \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a15cd25a2a91f1ca9e63fa0fd6546a9c7}{divide\+Triangle}} (const Clipper\+Lib\+::\+Path \&, const double \&, const long long \&, double \&, double \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a3d4f2a630050b589099e2f4cf92331f6}{get\+Weight\+Pos\+\_\+ver}} (const double \&, const long long \&, const long long \&, \mbox{\hyperlink{struct_min_err_result}{Min\+Err\+Result}} \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_a1783d1d28c7178821a3f518c1ece0dc6}{calc\+Insert\+Pt\+\_\+ver}} (const Clipper\+Lib\+::\+Int\+Point \&, const Clipper\+Lib\+::\+Int\+Point \&, const long long \&, Clipper\+Lib\+::\+Double\+Point \&)
+\item 
+void \mbox{\hyperlink{class_polygons_divider_aa061992918d29228d934f20e13f6fc91}{divide\+Triangle\+\_\+ver}} (const Clipper\+Lib\+::\+Path \&, const double \&, const long long \&, double \&, double \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_polygons_divider_1_1_priv}{Priv}} $>$ \mbox{\hyperlink{class_polygons_divider_a19e6251e754e231a4ee435748939f72a}{\+\_\+d}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Polygons\+Divider}
+用于处理多边形的分割计算 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_polygons_divider_a387390e254f31a01c7e6c02866e9e2e5}\index{PolygonsDivider@{PolygonsDivider}!PolygonsDivider@{PolygonsDivider}}
+\index{PolygonsDivider@{PolygonsDivider}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{PolygonsDivider()}{PolygonsDivider()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a387390e254f31a01c7e6c02866e9e2e5} 
+Polygons\+Divider\+::\+Polygons\+Divider (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_polygons_divider_a50c519b5d0dee2062e8019704796f673}\index{PolygonsDivider@{PolygonsDivider}!appendEaringTriangle@{appendEaringTriangle}}
+\index{appendEaringTriangle@{appendEaringTriangle}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{appendEaringTriangle()}{appendEaringTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a50c519b5d0dee2062e8019704796f673} 
+void Polygons\+Divider\+::append\+Earing\+Triangle (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{}{, }\item[{const double \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a09aeb6aed83bca6bbe0ff3a81d2e4e77}\index{PolygonsDivider@{PolygonsDivider}!appendEaringTriangle@{appendEaringTriangle}}
+\index{appendEaringTriangle@{appendEaringTriangle}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{appendEaringTriangle()}{appendEaringTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a09aeb6aed83bca6bbe0ff3a81d2e4e77} 
+void Polygons\+Divider\+::append\+Earing\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_earing_triangle}{Earing\+Triangle}} \&}]{triangle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a218dee6d076831f1ec34aafc5767cec9}\index{PolygonsDivider@{PolygonsDivider}!calcInsertPt@{calcInsertPt}}
+\index{calcInsertPt@{calcInsertPt}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{calcInsertPt()}{calcInsertPt()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a218dee6d076831f1ec34aafc5767cec9} 
+void Polygons\+Divider\+::calc\+Insert\+Pt (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{}{, }\item[{const long long \&}]{}{, }\item[{Clipper\+Lib\+::\+Double\+Point \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a1783d1d28c7178821a3f518c1ece0dc6}\index{PolygonsDivider@{PolygonsDivider}!calcInsertPt\_ver@{calcInsertPt\_ver}}
+\index{calcInsertPt\_ver@{calcInsertPt\_ver}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{calcInsertPt\_ver()}{calcInsertPt\_ver()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a1783d1d28c7178821a3f518c1ece0dc6} 
+void Polygons\+Divider\+::calc\+Insert\+Pt\+\_\+ver (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{}{, }\item[{const long long \&}]{}{, }\item[{Clipper\+Lib\+::\+Double\+Point \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a719d1d72fb19cdc21d347b0697c948d6}\index{PolygonsDivider@{PolygonsDivider}!calcWeightPos@{calcWeightPos}}
+\index{calcWeightPos@{calcWeightPos}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{calcWeightPos()}{calcWeightPos()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a719d1d72fb19cdc21d347b0697c948d6} 
+long long Polygons\+Divider\+::calc\+Weight\+Pos (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Paths \&}]{in\+\_\+polygons}{, }\item[{const double \&}]{ratio}{, }\item[{int \&}]{split\+Horizon}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_polygons_divider_af5e3cdfc7ecd8d08e8fa040d5baac165}\index{PolygonsDivider@{PolygonsDivider}!createEaring@{createEaring}}
+\index{createEaring@{createEaring}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{createEaring()}{createEaring()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_af5e3cdfc7ecd8d08e8fa040d5baac165} 
+void Polygons\+Divider\+::create\+Earing (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Paths \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a88c4c2b576d3e10a0cc9e9251349c707}\index{PolygonsDivider@{PolygonsDivider}!createEaring\_inner@{createEaring\_inner}}
+\index{createEaring\_inner@{createEaring\_inner}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{createEaring\_inner()}{createEaring\_inner()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a88c4c2b576d3e10a0cc9e9251349c707} 
+void Polygons\+Divider\+::create\+Earing\+\_\+inner (\begin{DoxyParamCaption}\item[{std\+::list$<$ Clipper\+Lib\+::\+Int\+Point $>$ \&}]{pt\+List}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a852a7756cd92dc88137711a55378e725}\index{PolygonsDivider@{PolygonsDivider}!createEaring\_outter@{createEaring\_outter}}
+\index{createEaring\_outter@{createEaring\_outter}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{createEaring\_outter()}{createEaring\_outter()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a852a7756cd92dc88137711a55378e725} 
+void Polygons\+Divider\+::create\+Earing\+\_\+outter (\begin{DoxyParamCaption}\item[{std\+::list$<$ Clipper\+Lib\+::\+Int\+Point $>$ \&}]{pt\+List}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a15cd25a2a91f1ca9e63fa0fd6546a9c7}\index{PolygonsDivider@{PolygonsDivider}!divideTriangle@{divideTriangle}}
+\index{divideTriangle@{divideTriangle}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{divideTriangle()}{divideTriangle()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a15cd25a2a91f1ca9e63fa0fd6546a9c7} 
+void Polygons\+Divider\+::divide\+Triangle (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{}{, }\item[{const double \&}]{}{, }\item[{const long long \&}]{}{, }\item[{double \&}]{}{, }\item[{double \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_aa061992918d29228d934f20e13f6fc91}\index{PolygonsDivider@{PolygonsDivider}!divideTriangle\_ver@{divideTriangle\_ver}}
+\index{divideTriangle\_ver@{divideTriangle\_ver}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{divideTriangle\_ver()}{divideTriangle\_ver()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_aa061992918d29228d934f20e13f6fc91} 
+void Polygons\+Divider\+::divide\+Triangle\+\_\+ver (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{}{, }\item[{const double \&}]{}{, }\item[{const long long \&}]{}{, }\item[{double \&}]{}{, }\item[{double \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_aedec4f834f92704a12f051fd4918c514}\index{PolygonsDivider@{PolygonsDivider}!getWeightPos@{getWeightPos}}
+\index{getWeightPos@{getWeightPos}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{getWeightPos()}{getWeightPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_polygons_divider_aedec4f834f92704a12f051fd4918c514} 
+void Polygons\+Divider\+::get\+Weight\+Pos (\begin{DoxyParamCaption}\item[{const double \&}]{ratio}{, }\item[{const long long \&}]{pos1}{, }\item[{const long long \&}]{pos2}{, }\item[{\mbox{\hyperlink{struct_min_err_result}{Min\+Err\+Result}} \&}]{result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a8bff5e9263be7f7d4f5dd17d6162d95d}\index{PolygonsDivider@{PolygonsDivider}!getWeightPos@{getWeightPos}}
+\index{getWeightPos@{getWeightPos}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{getWeightPos()}{getWeightPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a8bff5e9263be7f7d4f5dd17d6162d95d} 
+long long Polygons\+Divider\+::get\+Weight\+Pos (\begin{DoxyParamCaption}\item[{const double \&}]{ratio}{, }\item[{int \&}]{split\+Horizon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_a3d4f2a630050b589099e2f4cf92331f6}\index{PolygonsDivider@{PolygonsDivider}!getWeightPos\_ver@{getWeightPos\_ver}}
+\index{getWeightPos\_ver@{getWeightPos\_ver}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{getWeightPos\_ver()}{getWeightPos\_ver()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a3d4f2a630050b589099e2f4cf92331f6} 
+void Polygons\+Divider\+::get\+Weight\+Pos\+\_\+ver (\begin{DoxyParamCaption}\item[{const double \&}]{ratio}{, }\item[{const long long \&}]{pos1}{, }\item[{const long long \&}]{pos2}{, }\item[{\mbox{\hyperlink{struct_min_err_result}{Min\+Err\+Result}} \&}]{result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_acbf25686d387ecb53f1c248e226e4c4d}\index{PolygonsDivider@{PolygonsDivider}!pathsToList@{pathsToList}}
+\index{pathsToList@{pathsToList}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{pathsToList()}{pathsToList()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_acbf25686d387ecb53f1c248e226e4c4d} 
+void Polygons\+Divider\+::paths\+To\+List (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{}{, }\item[{std\+::list$<$ Clipper\+Lib\+::\+Int\+Point $>$ \&}]{pt\+List}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_polygons_divider_ac4c408f4f7f142c59eb65553535ccb50}\index{PolygonsDivider@{PolygonsDivider}!setMaxError@{setMaxError}}
+\index{setMaxError@{setMaxError}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{setMaxError()}{setMaxError()}}
+{\footnotesize\ttfamily \label{class_polygons_divider_ac4c408f4f7f142c59eb65553535ccb50} 
+void Polygons\+Divider\+::set\+Max\+Error (\begin{DoxyParamCaption}\item[{const double \&}]{max\+Error}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_polygons_divider_a19e6251e754e231a4ee435748939f72a}\index{PolygonsDivider@{PolygonsDivider}!\_d@{\_d}}
+\index{\_d@{\_d}!PolygonsDivider@{PolygonsDivider}}
+\doxysubsubsection{\texorpdfstring{\_d}{\_d}}
+{\footnotesize\ttfamily \label{class_polygons_divider_a19e6251e754e231a4ee435748939f72a} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{struct_polygons_divider_1_1_priv}{Priv}}$>$ Polygons\+Divider\+::\+\_\+d = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Dynamic\+Divider/\+Polygons\+Divider/\mbox{\hyperlink{polygonsdivider_8h}{polygonsdivider.\+h}}\item 
+Dynamic\+Divider/\+Polygons\+Divider/\mbox{\hyperlink{polygonsdivider_8cpp}{polygonsdivider.\+cpp}}\end{DoxyCompactItemize}

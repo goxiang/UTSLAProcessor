@@ -1,0 +1,297 @@
+\doxysection{USPFile\+Writer类 参考}
+\hypertarget{class_u_s_p_file_writer}{}\label{class_u_s_p_file_writer}\index{USPFileWriter@{USPFileWriter}}
+
+
+{\ttfamily \#include $<$uspfilewriter.\+h$>$}
+
+类 USPFile\+Writer 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_s_p_file_writer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_s_p_file_writer_a7060c11a2ed7ef16655c9cc61ee6e57b}{USPFile\+Writer}} ()
+\item 
+\mbox{\hyperlink{class_u_s_p_file_writer_a6b5b710c4d5df5acb0bd4238b1e07926}{\texorpdfstring{$\sim$}{\string~}\+USPFile\+Writer}} ()
+\item 
+bool \mbox{\hyperlink{class_u_s_p_file_writer_a146ffdbd1af20b1c61719bb6b113707a}{init\+File\+Write}} ()
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a737479543a45fdca6f59acfe706074d9}{start\+Buff\+Writer}} ()
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_acb7b825c16b15d8d95e8a6e4418a2128}{wait\+Buff\+Writer}} ()
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a3faf03ab74e2eb150361de2efaaac03d}{write\+Layer\+Info}} (const int \&, const BOUNDINGRECT \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a980079153e29dad52c64c4ce8b94ccec}{write\+Area\+Info}} (const int \&)
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a07d450d21a7c5637db2ed94618b98811}{write\+File\+End}} ()
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a34dcd6282ebb3ba76be27ae5d344b89f}{write\+File\+Begin\+\_\+\+Some\+Propertys}} ()
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a049ae931cac24c35048119b6a40a352f}{create\+USPFile}} (const QString \&, const QString \&, const float \&, BOUNDINGBOX \texorpdfstring{$\ast$}{*}, const int \&, const int \&, QJson\+Object \&)
+\item 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_s_p_file_writer_a58c9649a9dd13c71fc0f1884e238a12a}{get\+Buf\+Para}} ()
+\item 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_s_p_file_writer_aa4606b4f6420973d5d69c41ee304aa47}{algo}} ()
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_aea7868f49aa2011078deb8c2d748347c}{add\+Volume}} (const double \&volume)
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_file_writer}{File\+Writer}} $>$ \mbox{\hyperlink{class_u_s_p_file_writer_a5cd4d8ba90d72ea2ee511c7d0bf08ec2}{clone\+Writer}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_file_writer}{File\+Writer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file_writer_ae4dd90b95298451fc84d753b987ddc82}{File\+Writer}} ()=default
+\item 
+\mbox{\hyperlink{class_file_writer_a4b2c19fe58992d3835e047f8ddeb4f8c}{\texorpdfstring{$\sim$}{\string~}\+File\+Writer}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_file_writer_adb8c31e0e18805a70dd52d518ebbf8f2}{set\+Scanner\+Index}} (const int \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_write_u_f_f}{Write\+UFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_s_p_file_writer_a68de6681e685d3da10cc0f188037caa7}{file\+Writer}} = nullptr
+\item 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_s_p_file_writer_a0b5c4a010823c9dffb406e738038a03b}{\+\_\+write\+Buff}} = nullptr
+\item 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_s_p_file_writer_a8737cc7fe2c44792d202ae736d06ed7d}{algorithm}} = nullptr
+\item 
+QString \mbox{\hyperlink{class_u_s_p_file_writer_a061044bf0689af0ae036be35078ed15a}{m\+\_\+str\+System\+Time}}
+\item 
+double \mbox{\hyperlink{class_u_s_p_file_writer_a67c86501a556a20752ce53fd1bcb36a9}{m\+\_\+f\+Total\+Volume}} = 0.\+0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a4aa564a6f84940a11176e49c0fda4fb5}{write\+Property}} (const int \&)
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_aa736e1236953a195090f8e74a95c9151}{write\+Property}} (const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a894334863c0be1ffb9d114a8a0211407}{write\+Flush}} ()
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_af9cc5a029c6137b8fe914e5a138ca2e7}{write\+XMLInfo}} (QFile \texorpdfstring{$\ast$}{*}, const QByte\+Array \&, const QString \&, const QString \&, const float \&, BOUNDINGBOX \texorpdfstring{$\ast$}{*}, const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_u_s_p_file_writer_a6886a053c9e712162144d0f720d9a5d2}{write\+Json\+Info}} (const QString \&, const QString \&, const float \&, BOUNDINGBOX \texorpdfstring{$\ast$}{*}, const int \&, const int \&, QJson\+Object \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{静态 Public 成员函数 继承自 \mbox{\hyperlink{class_file_writer}{File\+Writer}}}
+\begin{DoxyCompactItemize}
+\item 
+static QByte\+Array \mbox{\hyperlink{class_file_writer_a18243f7a626ec72b89f0c4ea4f198d06}{get\+File\+Hash}} (const QString \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: USPFile\+Writer}
+文件写入器实现类,继承自\+File\+Writer类 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_u_s_p_file_writer_a7060c11a2ed7ef16655c9cc61ee6e57b}\index{USPFileWriter@{USPFileWriter}!USPFileWriter@{USPFileWriter}}
+\index{USPFileWriter@{USPFileWriter}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{USPFileWriter()}{USPFileWriter()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a7060c11a2ed7ef16655c9cc61ee6e57b} 
+USPFile\+Writer\+::\+USPFile\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_u_s_p_file_writer_a6b5b710c4d5df5acb0bd4238b1e07926}\index{USPFileWriter@{USPFileWriter}!````~USPFileWriter@{\texorpdfstring{$\sim$}{\string~}USPFileWriter}}
+\index{````~USPFileWriter@{\texorpdfstring{$\sim$}{\string~}USPFileWriter}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}USPFileWriter()}{\string~USPFileWriter()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a6b5b710c4d5df5acb0bd4238b1e07926} 
+USPFile\+Writer\+::\texorpdfstring{$\sim$}{\string~}\+USPFile\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_u_s_p_file_writer_aea7868f49aa2011078deb8c2d748347c}\index{USPFileWriter@{USPFileWriter}!addVolume@{addVolume}}
+\index{addVolume@{addVolume}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{addVolume()}{addVolume()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_aea7868f49aa2011078deb8c2d748347c} 
+void USPFile\+Writer\+::add\+Volume (\begin{DoxyParamCaption}\item[{const double \&}]{volume}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a3a8a365efee70f8d197effbb380e8897}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_aa4606b4f6420973d5d69c41ee304aa47}\index{USPFileWriter@{USPFileWriter}!algo@{algo}}
+\index{algo@{algo}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{algo()}{algo()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_aa4606b4f6420973d5d69c41ee304aa47} 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}} \texorpdfstring{$\ast$}{*} USPFile\+Writer\+::algo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_ae7410b536cccc854972c13727437e7fc}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a5cd4d8ba90d72ea2ee511c7d0bf08ec2}\index{USPFileWriter@{USPFileWriter}!cloneWriter@{cloneWriter}}
+\index{cloneWriter@{cloneWriter}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{cloneWriter()}{cloneWriter()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a5cd4d8ba90d72ea2ee511c7d0bf08ec2} 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_file_writer}{File\+Writer}} $>$ USPFile\+Writer\+::clone\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_ad543887b7aff55a82ebafb5b3a53fc4f}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a049ae931cac24c35048119b6a40a352f}\index{USPFileWriter@{USPFileWriter}!createUSPFile@{createUSPFile}}
+\index{createUSPFile@{createUSPFile}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{createUSPFile()}{createUSPFile()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a049ae931cac24c35048119b6a40a352f} 
+void USPFile\+Writer\+::create\+USPFile (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Name}{, }\item[{const QString \&}]{bpp\+Name}{, }\item[{const float \&}]{f\+Thickness}{, }\item[{BOUNDINGBOX \texorpdfstring{$\ast$}{*}}]{bounding\+Box}{, }\item[{const int \&}]{min\+Hei}{, }\item[{const int \&}]{max\+Hei}{, }\item[{QJson\+Object \&}]{json\+Obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a6b8359d6bdb80c18f76cce2fd9f6f316}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a58c9649a9dd13c71fc0f1884e238a12a}\index{USPFileWriter@{USPFileWriter}!getBufPara@{getBufPara}}
+\index{getBufPara@{getBufPara}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{getBufPara()}{getBufPara()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a58c9649a9dd13c71fc0f1884e238a12a} 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} USPFile\+Writer\+::get\+Buf\+Para (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a0d90a1f3b1d186cc7a77b869c44ea997}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a146ffdbd1af20b1c61719bb6b113707a}\index{USPFileWriter@{USPFileWriter}!initFileWrite@{initFileWrite}}
+\index{initFileWrite@{initFileWrite}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{initFileWrite()}{initFileWrite()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a146ffdbd1af20b1c61719bb6b113707a} 
+bool USPFile\+Writer\+::init\+File\+Write (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_ab346cbe23e8cbf1d7a2ea7bf04e9c7d3}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a737479543a45fdca6f59acfe706074d9}\index{USPFileWriter@{USPFileWriter}!startBuffWriter@{startBuffWriter}}
+\index{startBuffWriter@{startBuffWriter}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{startBuffWriter()}{startBuffWriter()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a737479543a45fdca6f59acfe706074d9} 
+void USPFile\+Writer\+::start\+Buff\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_ac383b392ce45566c4cccd3a4c8369c9d}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_acb7b825c16b15d8d95e8a6e4418a2128}\index{USPFileWriter@{USPFileWriter}!waitBuffWriter@{waitBuffWriter}}
+\index{waitBuffWriter@{waitBuffWriter}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{waitBuffWriter()}{waitBuffWriter()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_acb7b825c16b15d8d95e8a6e4418a2128} 
+void USPFile\+Writer\+::wait\+Buff\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a2a23d7f3dd604772bc53ef2b64d06442}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a980079153e29dad52c64c4ce8b94ccec}\index{USPFileWriter@{USPFileWriter}!writeAreaInfo@{writeAreaInfo}}
+\index{writeAreaInfo@{writeAreaInfo}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeAreaInfo()}{writeAreaInfo()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a980079153e29dad52c64c4ce8b94ccec} 
+void USPFile\+Writer\+::write\+Area\+Info (\begin{DoxyParamCaption}\item[{const int \&}]{area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a9ee28aa1a3f575e995c50417304d8f77}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a34dcd6282ebb3ba76be27ae5d344b89f}\index{USPFileWriter@{USPFileWriter}!writeFileBegin\_SomePropertys@{writeFileBegin\_SomePropertys}}
+\index{writeFileBegin\_SomePropertys@{writeFileBegin\_SomePropertys}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeFileBegin\_SomePropertys()}{writeFileBegin\_SomePropertys()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a34dcd6282ebb3ba76be27ae5d344b89f} 
+void USPFile\+Writer\+::write\+File\+Begin\+\_\+\+Some\+Propertys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_aa0439ca70cd848eb98955a360759bb76}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a07d450d21a7c5637db2ed94618b98811}\index{USPFileWriter@{USPFileWriter}!writeFileEnd@{writeFileEnd}}
+\index{writeFileEnd@{writeFileEnd}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeFileEnd()}{writeFileEnd()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a07d450d21a7c5637db2ed94618b98811} 
+void USPFile\+Writer\+::write\+File\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a1d09cec7ab06a0357be67c687de25f56}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a894334863c0be1ffb9d114a8a0211407}\index{USPFileWriter@{USPFileWriter}!writeFlush@{writeFlush}}
+\index{writeFlush@{writeFlush}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeFlush()}{writeFlush()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a894334863c0be1ffb9d114a8a0211407} 
+void USPFile\+Writer\+::write\+Flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_s_p_file_writer_a6886a053c9e712162144d0f720d9a5d2}\index{USPFileWriter@{USPFileWriter}!writeJsonInfo@{writeJsonInfo}}
+\index{writeJsonInfo@{writeJsonInfo}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeJsonInfo()}{writeJsonInfo()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a6886a053c9e712162144d0f720d9a5d2} 
+void USPFile\+Writer\+::write\+Json\+Info (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Name}{, }\item[{const QString \&}]{bpp\+Name}{, }\item[{const float \&}]{f\+Thickness}{, }\item[{BOUNDINGBOX \texorpdfstring{$\ast$}{*}}]{b\+Box}{, }\item[{const int \&}]{min\+Hei}{, }\item[{const int \&}]{max\+Hei}{, }\item[{QJson\+Object \&}]{json\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_s_p_file_writer_a3faf03ab74e2eb150361de2efaaac03d}\index{USPFileWriter@{USPFileWriter}!writeLayerInfo@{writeLayerInfo}}
+\index{writeLayerInfo@{writeLayerInfo}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeLayerInfo()}{writeLayerInfo()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a3faf03ab74e2eb150361de2efaaac03d} 
+void USPFile\+Writer\+::write\+Layer\+Info (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Hei}{, }\item[{const BOUNDINGRECT \&}]{total\+Rc}{, }\item[{const double \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a4ff9205f199c7904d32bcee13b75eddb}{File\+Writer}} .
+
+\Hypertarget{class_u_s_p_file_writer_a4aa564a6f84940a11176e49c0fda4fb5}\index{USPFileWriter@{USPFileWriter}!writeProperty@{writeProperty}}
+\index{writeProperty@{writeProperty}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeProperty()}{writeProperty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a4aa564a6f84940a11176e49c0fda4fb5} 
+void USPFile\+Writer\+::write\+Property (\begin{DoxyParamCaption}\item[{const int \&}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_s_p_file_writer_aa736e1236953a195090f8e74a95c9151}\index{USPFileWriter@{USPFileWriter}!writeProperty@{writeProperty}}
+\index{writeProperty@{writeProperty}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeProperty()}{writeProperty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_aa736e1236953a195090f8e74a95c9151} 
+void USPFile\+Writer\+::write\+Property (\begin{DoxyParamCaption}\item[{const int \&}]{key}{, }\item[{const int \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_u_s_p_file_writer_af9cc5a029c6137b8fe914e5a138ca2e7}\index{USPFileWriter@{USPFileWriter}!writeXMLInfo@{writeXMLInfo}}
+\index{writeXMLInfo@{writeXMLInfo}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeXMLInfo()}{writeXMLInfo()}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_af9cc5a029c6137b8fe914e5a138ca2e7} 
+void USPFile\+Writer\+::write\+XMLInfo (\begin{DoxyParamCaption}\item[{QFile \texorpdfstring{$\ast$}{*}}]{m\+File}{, }\item[{const QByte\+Array \&}]{file\+Hash}{, }\item[{const QString \&}]{file\+Name}{, }\item[{const QString \&}]{bpp\+Name}{, }\item[{const float \&}]{f\+Thickness}{, }\item[{BOUNDINGBOX \texorpdfstring{$\ast$}{*}}]{b\+Box}{, }\item[{const int \&}]{min\+Hei}{, }\item[{const int \&}]{max\+Hei}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_u_s_p_file_writer_a0b5c4a010823c9dffb406e738038a03b}\index{USPFileWriter@{USPFileWriter}!\_writeBuff@{\_writeBuff}}
+\index{\_writeBuff@{\_writeBuff}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{\_writeBuff}{\_writeBuff}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a0b5c4a010823c9dffb406e738038a03b} 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\texorpdfstring{$\ast$}{*} USPFile\+Writer\+::\+\_\+write\+Buff = nullptr}
+
+\Hypertarget{class_u_s_p_file_writer_a8737cc7fe2c44792d202ae736d06ed7d}\index{USPFileWriter@{USPFileWriter}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{algorithm}{algorithm}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a8737cc7fe2c44792d202ae736d06ed7d} 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}}\texorpdfstring{$\ast$}{*} USPFile\+Writer\+::algorithm = nullptr}
+
+\Hypertarget{class_u_s_p_file_writer_a68de6681e685d3da10cc0f188037caa7}\index{USPFileWriter@{USPFileWriter}!fileWriter@{fileWriter}}
+\index{fileWriter@{fileWriter}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{fileWriter}{fileWriter}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a68de6681e685d3da10cc0f188037caa7} 
+\mbox{\hyperlink{class_write_u_f_f}{Write\+UFF}}\texorpdfstring{$\ast$}{*} USPFile\+Writer\+::file\+Writer = nullptr}
+
+\Hypertarget{class_u_s_p_file_writer_a67c86501a556a20752ce53fd1bcb36a9}\index{USPFileWriter@{USPFileWriter}!m\_fTotalVolume@{m\_fTotalVolume}}
+\index{m\_fTotalVolume@{m\_fTotalVolume}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{m\_fTotalVolume}{m\_fTotalVolume}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a67c86501a556a20752ce53fd1bcb36a9} 
+double USPFile\+Writer\+::m\+\_\+f\+Total\+Volume = 0.\+0}
+
+\Hypertarget{class_u_s_p_file_writer_a061044bf0689af0ae036be35078ed15a}\index{USPFileWriter@{USPFileWriter}!m\_strSystemTime@{m\_strSystemTime}}
+\index{m\_strSystemTime@{m\_strSystemTime}!USPFileWriter@{USPFileWriter}}
+\doxysubsubsection{\texorpdfstring{m\_strSystemTime}{m\_strSystemTime}}
+{\footnotesize\ttfamily \label{class_u_s_p_file_writer_a061044bf0689af0ae036be35078ed15a} 
+QString USPFile\+Writer\+::m\+\_\+str\+System\+Time}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{uspfilewriter_8h}{uspfilewriter.\+h}}\item 
+\mbox{\hyperlink{uspfilewriter_8cpp}{uspfilewriter.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\doxysection{utslaprocessorprivate.\+h}
+\hypertarget{utslaprocessorprivate_8h_source}{}\label{utslaprocessorprivate_8h_source}\mbox{\hyperlink{utslaprocessorprivate_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UTSLAPROCESSORPRIVATE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UTSLAPROCESSORPRIVATE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utslaprocessor_8h}{utslaprocessor.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QFutureWatcher>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QSemaphore>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QJsonArray>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmapplication_8h}{algorithmapplication.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattice_layer_info}{LatticeLayerInfo}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_writer_buffer_paras}{WriterBufferParas}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_self_adaptive_module}{SelfAdaptiveModule}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lattice_interface}{LatticeInterface}};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }QJsonParsing;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_writer}{FileWriter}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ QSharedPointer<FileWriter>\ \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFileWriterPtr}};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ QSharedPointer<AlgorithmApplication>\ \mbox{\hyperlink{utslaprocessorprivate_8h_a89b1e6ca2f61de8325fc3a4b8e517d05}{AlgrithmPtr}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_t_s_l_a_processor_private_a42e3e18cc51ecfb4fe1385654fe539fe}{UTSLAProcessorPrivate}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a42e3e18cc51ecfb4fe1385654fe539fe}{UTSLAProcessorPrivate}}(\mbox{\hyperlink{class_u_t_s_l_a_processor}{UTSLAProcessor}}\ *);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a973592f44164f63c46dd401195e0f508}{processing}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ QJsonObject\ \&);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a84a5b7e6a21ff95215ecead0db3c968e}{stopBuildProcessing}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a9a4695360a0fd9af8fe114d0df2f6f3c}{loadParameters}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a136767835fb2725962b6d238856bc939}{building}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_acbd1ac7a5b0b847913251c1906c178a2}{buildProcessing}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a8b8ddb46eefb400f8d540167a740276e}{partProcessing}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ac57398b2dd4cf24b34dafee39b57e91a}{readDatas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a9adcce8c1dfff095b3e1d5d0d5ab82d5}{calcLayerDatas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFileWriterPtr}}\ \&,\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}}\ \&);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3cd6ce0d5de54aa5d416bf2b0b241d19}{readLayerDatas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFileWriterPtr}}\ \&,\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}}\ \&);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a5df5e72ef017efc546303f112715d5ff}{getPreLayerHei}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a5fbe0429325d15d300f3708b3d0a5447}{getNextLayerHei}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ad7fb93c9f5dc3558aefed35fc1508e00}{updateLayerSplicingInfo}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ada1f0a79c0c09079e1329425db719147}{parsingDatas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QList<AREAINFOPTR>\ \&);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a6ef2dc274d39855958998f965c0d975d}{updateProgress}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a6ef2dc274d39855958998f965c0d975d}{updateProgress}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a9734ab13f7fe584988ecc1119465aabc}{createJsonResult}}(QJsonObject\ \&);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_afcd5ec189903193eb9f37400c32f9ff2}{createJsonResultWithCompress}}(QJsonObject\ \&);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3e294c1f92f0c3652b757e19ae1a185e}{createJobFileResult}}(QJsonObject\ \&);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aaf145af44406c4020bd603db1040d101}{loadExportParameters}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ac998355b32ae504da47cc21e353a9b26}{calcSLMScale}}(QList<AREAINFOPTR>\ \&);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aca791cb383f324b607216908e612f48b}{createFileWriter}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFileWriterPtr}}\ \&);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aca791cb383f324b607216908e612f48b}{createFileWriter}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ QString\ \&,\ \mbox{\hyperlink{utslaprocessorprivate_8h_a85b812d9cc6fd373702254d2f774bc11}{USPFileWriterPtr}}\ \&);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a36f66947c693c2fc2ac80dede4994047}{initializeLattice}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3e9497b1624393ae7f31233586860827}{createLattice}}(Paths\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ Paths\ \&,\ \mbox{\hyperlink{struct_lattice_layer_info}{LatticeLayerInfo}}\ \&);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_t_s_l_a_processor_private_aa99af7976873dfad34d605ab8c3fb96b}{DividerProcessor}};}
+\DoxyCodeLine{00064\ \ \ \ \ Q\_DECLARE\_PUBLIC(\mbox{\hyperlink{class_u_t_s_l_a_processor}{UTSLAProcessor}})}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_u_t_s_l_a_processor}{UTSLAProcessor}}\ *\ const\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aa839e815c12558f700bf697afa585899}{q\_ptr}}\ =\ \textcolor{keywordtype}{nullptr};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ QString\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a3189fc5af5627964dd62c5e61cef9239}{strBPPName}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00068\ \ \ \ \ QFutureWatcher<\textcolor{keywordtype}{void}>\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ac95b8cf666b6c5ecd45ac977bd1f5759}{futureWatcher}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ QSharedPointer<\mbox{\hyperlink{class_self_adaptive_module}{SelfAdaptiveModule}}>\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_af805f6fb804786f598ec3dfe99578d86}{\_selfAdaptiveModule}}\ =\ \textcolor{keywordtype}{nullptr};}
+\DoxyCodeLine{00071\ \ \ \ \ QSharedPointer<\mbox{\hyperlink{struct_writer_buffer_paras}{WriterBufferParas}}>\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_aa32de06a2d734e0e9de048c4f14a7ffc}{\_writerBufferParas}}\ =\ \textcolor{keywordtype}{nullptr};}
+\DoxyCodeLine{00072\ \ \ \ \ QSharedPointer<\mbox{\hyperlink{class_lattice_interface}{LatticeInterface}}>\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_ab139396957d882816ffc0d24fea64c04}{\_latticeInfPtr}}\ =\ \textcolor{keywordtype}{nullptr};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a836ae48837ff41939a08fc31fce45684}{\_progressPos}}\ =\ -\/1;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_af76fea8eef93b12fe1386c83ec42bc22}{fProcessing}}\ =\ 0.0;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a8bfe84a944f299cb27d99c4e34eabe97}{fSinglePartRatio}}\ =\ 1.0;}
+\DoxyCodeLine{00077\ \ \ \ \ QJsonArray\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a73e6b92cbd22028b7615f3dcdd8dd1a9}{objZipDescFile}};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a399cd4bc7462ed99aac5eb0ebc207450}{nExportFileMode}}\ =\ \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c}{EXPORT\_NORMAL}};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a039840ee45d05cb679d6f82e900d61f7}{fScaleX}}\ =\ 1.0;}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_a57c12befd18d4e256baaa91d4b6780e9}{fScaleY}}\ =\ 1.0;}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_t_s_l_a_processor_private_abc725cd95cac906b9a239f58a464e29f}{\_threadCount}}\ =\ 1;}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UTSLAPROCESSORPRIVATE\_H}}
+
+\end{DoxyCode}

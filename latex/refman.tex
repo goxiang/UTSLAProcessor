@@ -1,0 +1,484 @@
+  % Handle batch mode
+  % to overcome problems with too many open files
+  \let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}
+  \RequirePackage{iftex}
+  \ifLuaTeX
+    \directlua{pdf.setminorversion(7)}
+  \fi
+  \ifXeTeX
+    \special{pdf:minorversion 7}
+  \fi
+  \ifPDFTeX
+    \pdfminorversion=7
+  \fi
+  % Set document class depending on configuration
+  \documentclass[twoside]{book}
+  %% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
+  \usepackage{ifthen}
+  \ifx\requestedLaTeXdate\undefined
+    \usepackage{array}
+  \else
+    \usepackage{array}[=2016-10-06]
+  \fi
+  %%
+  % Packages required by doxygen
+  \makeatletter
+  \providecommand\IfFormatAtLeastTF{\@ifl@t@r\fmtversion}
+  % suppress package identification of infwarerr as it contains the word "warning"
+  \let\@@protected@wlog\protected@wlog
+  \def\protected@wlog#1{\wlog{package info suppressed}}
+  \RequirePackage{infwarerr}
+  \let\protected@wlog\@@protected@wlog
+  \makeatother
+  \IfFormatAtLeastTF{2016/01/01}{}{\usepackage{fixltx2e}} % for \textsubscript
+  \ifPDFTeX
+    \IfFormatAtLeastTF{2015/01/01}{\pdfsuppresswarningpagegroup=1}{}
+  \fi
+  \usepackage{doxygen}
+  \usepackage{graphicx}
+  \iftutex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Ligatures={TeX}}
+    \usepackage{unicode-math}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+  \usepackage{makeidx}
+  \PassOptionsToPackage{warn}{textcomp}
+  \usepackage{textcomp}
+  \usepackage[nointegrals]{wasysym}
+  \usepackage{ifxetex}
+  % NLS support packages
+  \usepackage{CJKutf8}
+  % Define default fonts
+  % Font selection
+  % set main and monospaced font
+  \usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+  \doxyallsectionsfont{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \renewcommand{\DoxyLabelFont}{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+   % Arguments of doxygenemoji:
+   % 1) ':<text>:' form of the emoji, already LaTeX-escaped
+   % 2) file with the name of the emoji without the .png extension
+   % in case image exist use this otherwise use the ':<text>:' form
+   \newcommand{\doxygenemoji}[2]{%
+     \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+   }
+  % Page & text layout
+  \usepackage{geometry}
+  \geometry{%
+    a4paper,%
+    top=2.5cm,%
+    bottom=2.5cm,%
+    left=2.5cm,%
+    right=2.5cm%
+  }
+  \usepackage{changepage}
+  % Allow a bit of overflow to go unnoticed by other means
+  \tolerance=750
+  \hfuzz=15pt
+  \hbadness=750
+  \setlength{\emergencystretch}{15pt}
+  \setlength{\parindent}{0cm}
+  \newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+  \newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+  \doxynormalparskip
+  % Redefine paragraph/subparagraph environments, using sectsty fonts
+  \makeatletter
+  \renewcommand{\paragraph}{%
+    \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@parafont%
+    }%
+  }
+  \renewcommand{\subparagraph}{%
+    \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@subparafont%
+    }%
+  }
+  \makeatother
+  \makeatletter
+  \newcommand\hrulefilll{\leavevmode\leaders\hrule\hskip 0pt plus 1filll\kern\z@}
+  \makeatother
+  % Headers & footers
+  \usepackage{fancyhdr}
+  \pagestyle{fancyplain}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancypagestyle{fancyplain}{
+    \fancyhf{}
+    \fancyhead[LE, RO]{\bfseries\thepage}
+    \fancyhead[LO]{\bfseries\rightmark}
+    \fancyhead[RE]{\bfseries\leftmark}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+  }
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+    \renewcommand{\headrulewidth}{0pt}
+  }
+  \pagestyle{fancyplain}
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{#1}{}%
+  }
+  \renewcommand{\sectionmark}[1]{%
+    \markright{\thesection\ #1}%
+  }
+  % ToC, LoF, LoT, bibliography, and index
+  % Indices & bibliography
+  \usepackage[numbers]{natbib}
+  \usepackage[titles]{tocloft}
+  \setcounter{tocdepth}{3}
+  \setcounter{secnumdepth}{5}
+  % creating indexes
+  \makeindex
+  \ifPDFTeX
+\usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+\fi
+  % Hyperlinks
+    % Hyperlinks (required, but should be loaded last)
+    \ifPDFTeX
+      \usepackage[pdftex,pagebackref=true]{hyperref}
+    \else
+      \ifXeTeX
+        \usepackage[xetex,pagebackref=true]{hyperref}
+      \else
+        \ifLuaTeX
+          \usepackage[luatex,pagebackref=true]{hyperref}
+        \else
+          \usepackage[ps2pdf,pagebackref=true]{hyperref}
+        \fi
+      \fi
+    \fi
+    \hypersetup{%
+      colorlinks=true,%
+      linkcolor=blue,%
+      citecolor=blue,%
+      unicode,%
+      pdftitle={UTSLAProcessor},%
+      pdfsubject={}%
+    }
+  % Custom commands used by the header
+  % Custom commands
+  \newcommand{\clearemptydoublepage}{%
+    \newpage{\pagestyle{empty}\cleardoublepage}%
+  }
+  % caption style definition
+  \usepackage{caption}
+  \captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+  % in page table of contents
+  \IfFormatAtLeastTF{2023/05/01}{\usepackage[deeplevels]{etoc}}{\usepackage[deeplevels]{etoc_doxygen}}
+  \etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+  \etocsetlevel{subsubsubsection}{4}
+  \etocsetlevel{subsubsubsubsection}{5}
+  \etocsetlevel{subsubsubsubsubsection}{6}
+  \etocsetlevel{subsubsubsubsubsubsection}{7}
+  \etocsetlevel{paragraph}{8}
+  \etocsetlevel{subparagraph}{9}
+  % prevent numbers overlap the titles in toc
+  \renewcommand{\numberline}[1]{#1~}
+% End of preamble, now comes the document contents
+%===== C O N T E N T S =====
+\begin{document}
+  \raggedbottom
+  \begin{CJK}{UTF8}{gbsn}
+  % Titlepage & ToC
+    % To avoid duplicate page anchors due to reuse of same numbers for
+    % the index (be it as roman numbers)
+    \hypersetup{pageanchor=false,
+                bookmarksnumbered=true,
+                pdfencoding=unicode
+               }
+  \pagenumbering{alph}
+  \begin{titlepage}
+  \vspace*{7cm}
+  \begin{center}%
+  {\Large UTSLAProcessor}\\
+  \vspace*{1cm}
+  {\large 制作者 Doxygen 1.13.2}\\
+  \end{center}
+  \end{titlepage}
+  \clearemptydoublepage
+  \pagenumbering{roman}
+  \tableofcontents
+  \clearemptydoublepage
+  \pagenumbering{arabic}
+  % re-enable anchors again
+  \hypersetup{pageanchor=true}
+%--- Begin generated contents ---
+\chapter{命名空间索引}
+\input{namespaces}
+\chapter{继承关系索引}
+\input{hierarchy}
+\chapter{类索引}
+\input{annotated}
+\chapter{文件索引}
+\input{files}
+\chapter{命名空间文档}
+\input{namespace_j_file_def}
+\input{namespacemeshdef}
+\input{namespace_utek}
+\chapter{类说明}
+\input{struct_____h_a_t_c_h_i_n_g_l_i_n_e}
+\input{struct_____n_o_r_m_a_l_l_i_n_e}
+\input{struct___l_i_n_e_c_o_o_r}
+\input{class_algorithm_application}
+\input{class_algorithm_base}
+\input{class_algorithm_checker}
+\input{class_algorithm_distribution}
+\input{class_algorithm_hatching}
+\input{class_algorithm_hatching_ring}
+\input{class_algorithm_strip}
+\input{struct_bigger_wnd}
+\input{struct_bin_file}
+\input{struct_block_info}
+\input{structmeshdef_1_1_bounding_box}
+\input{struct_bounding_box_d}
+\input{struct_build_part}
+\input{structmeshdef_1_1_calc_edge_result}
+\input{structmeshdef_1_1_calc_face_result}
+\input{struct_c_b___w_r_i_t_e_d_a_t_a}
+\input{structmeshdef_1_1_clip_path_result}
+\input{struct_coincide_filed_info}
+\input{struct_distribution_info}
+\input{struct_distribution_result}
+\input{struct_divider_priv}
+\input{class_divider_processor}
+\input{struct_earing_triangle}
+\input{structmeshdef_1_1_edge}
+\input{struct_end_node}
+\input{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}
+\input{structmeshdef_1_1_face}
+\input{struct_file_block_map}
+\input{class_file_writer}
+\input{struct_inner_pocket_tree}
+\input{struct_last_pt_status}
+\input{struct_lattice_info}
+\input{class_lattice_interface}
+\input{struct_lattice_layer_info}
+\input{struct_lattice_path_info}
+\input{class_lattics_abstract}
+\input{class_lattics_diamond}
+\input{struct_lattics_info}
+\input{struct_layer}
+\input{struct_layer_splicing_area}
+\input{struct_matched_line_info}
+\input{class_mem_guard}
+\input{class_mesh_info}
+\input{struct_meta_x_m_l_part}
+\input{struct_min_err_result}
+\input{struct_m_point}
+\input{struct_m_pt_info}
+\input{struct_m_quad_tree}
+\input{struct_node}
+\input{struct_node_searcher}
+\input{struct_offset_coor}
+\input{struct_o_u_l_t_l_i_n_e_p_a_r_a_m_e_t_e_r_s}
+\input{struct_parameter}
+\input{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}
+\input{structmeshdef_1_1_part}
+\input{struct_part_info}
+\input{struct_part_result}
+\input{class_p_a_t_h_p_a_r_a_m_e_t_e_r_s}
+\input{struct_path_rang}
+\input{class_paths_info}
+\input{class_periodic_line}
+\input{struct_pocket_branch}
+\input{struct_pocket_node}
+\input{struct_pocket_tree}
+\input{class_polygons_divider}
+\input{class_utek_1_1_polygon_start_changer}
+\input{struct_lattice_interface_1_1_priv}
+\input{struct_lattics_diamond_1_1_priv}
+\input{struct_polygons_divider_1_1_priv}
+\input{struct_quadtree_sortor_1_1_priv}
+\input{struct_scan_lines_sortor_1_1_priv}
+\input{class_q_tree_sortor}
+\input{class_quadtree_sortor}
+\input{class_random_line_splicing}
+\input{struct_r_e_f_l_i_n_e_i_n_f_o}
+\input{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k}
+\input{struct_ring_wnd_info}
+\input{class_run_elapsed_timer}
+\input{struct_scan_field_info}
+\input{struct_s_c_a_n_l_i_n_e}
+\input{struct_scan_line_info}
+\input{class_scan_lines_divider}
+\input{class_scan_lines_sortor}
+\input{struct_scanner_splicing_area}
+\input{struct_scan_sort_types}
+\input{struct_search_result}
+\input{struct_segements_info}
+\input{class_self_adaptive_module}
+\input{class_s_l_a_processor_extend}
+\input{class_s_l_job_file_writer}
+\input{class_s_l_m_splicing_module}
+\input{class_s_l_m_splicing_module_priv}
+\input{struct_s_o_l_i_d_p_a_t_h}
+\input{struct_sort_line_info}
+\input{class_splicing_abstract}
+\input{struct_splicing_area}
+\input{struct_splicing_area_info}
+\input{struct_splicing_base_settings}
+\input{struct_splicing_info}
+\input{struct_splicing_line}
+\input{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a}
+\input{class_thread_runner}
+\input{struct_u_f_f_w_r_i_t_e_d_a_t_a}
+\input{struct_u_f_i_l_e_d_a_t_a}
+\input{class_u_s_p_file_writer}
+\input{class_u_t_s_l_a_processor}
+\input{class_u_t_s_l_a_processor_private}
+\input{struct_utek_1_1_vector2d}
+\input{structmeshdef_1_1_vertex}
+\input{class_water_distribution_priv}
+\input{struct_wnd_info}
+\input{struct_wnd_pos}
+\input{class_write_j_file}
+\input{struct_writer_buffer_paras}
+\input{class_write_u_f_f}
+\chapter{文件说明}
+\input{algorithmapplication_8cpp}
+\input{algorithmapplication_8h}
+\input{algorithmapplication_8h_source}
+\input{algorithmbase_8cpp}
+\input{algorithmbase_8h}
+\input{algorithmbase_8h_source}
+\input{algorithmchecker_8cpp}
+\input{algorithmchecker_8h}
+\input{algorithmchecker_8h_source}
+\input{algorithmhatching_8cpp}
+\input{algorithmhatching_8h}
+\input{algorithmhatching_8h_source}
+\input{algorithmhatchingring_8cpp}
+\input{algorithmhatchingring_8h}
+\input{algorithmhatchingring_8h_source}
+\input{algorithmstrip_8cpp}
+\input{algorithmstrip_8h}
+\input{algorithmstrip_8h_source}
+\input{algorithmdistribution_8cpp}
+\input{algorithmdistribution_8h}
+\input{algorithmdistribution_8h_source}
+\input{dividerprocessor_8cpp}
+\input{dividerprocessor_8h}
+\input{dividerprocessor_8h_source}
+\input{dividerheader_8h}
+\input{dividerheader_8h_source}
+\input{polygonsdivider_8cpp}
+\input{polygonsdivider_8h}
+\input{polygonsdivider_8h_source}
+\input{_dynamic_divider_2publicheader_8h}
+\input{_dynamic_divider_2publicheader_8h_source}
+\input{publicheader_8h}
+\input{publicheader_8h_source}
+\input{scanlinesdivider_8cpp}
+\input{scanlinesdivider_8h}
+\input{scanlinesdivider_8h_source}
+\input{waterdistributionpriv_8cpp}
+\input{waterdistributionpriv_8h}
+\input{waterdistributionpriv_8h_source}
+\input{latticeinterface_8cpp}
+\input{latticeinterface_8h}
+\input{latticeinterface_8h_source}
+\input{latticsabstract_8h}
+\input{latticsabstract_8h_source}
+\input{latticsdiamond_8cpp}
+\input{latticsdiamond_8h}
+\input{latticsdiamond_8h_source}
+\input{meshbase_8cpp}
+\input{meshbase_8h}
+\input{meshbase_8h_source}
+\input{meshinfo_8cpp}
+\input{meshinfo_8h}
+\input{meshinfo_8h_source}
+\input{pathparameters_8h}
+\input{pathparameters_8h_source}
+\input{polygonstartchanger_8cpp}
+\input{polygonstartchanger_8h}
+\input{polygonstartchanger_8h_source}
+\input{publicheader_8cpp}
+\input{quadtreedef_8cpp}
+\input{quadtreedef_8h}
+\input{quadtreedef_8h_source}
+\input{quadtreesortor_8cpp}
+\input{quadtreesortor_8h}
+\input{quadtreesortor_8h_source}
+\input{scanlinessortor_8cpp}
+\input{scanlinessortor_8h}
+\input{scanlinessortor_8h_source}
+\input{selfadaptivemodule_8cpp}
+\input{selfadaptivemodule_8h}
+\input{selfadaptivemodule_8h_source}
+\input{slaprocessorextend_8cpp}
+\input{slaprocessorextend_8h}
+\input{slaprocessorextend_8h_source}
+\input{slascaninfodef_8h}
+\input{slascaninfodef_8h_source}
+\input{sljobfilewriter_8cpp}
+\input{sljobfilewriter_8h}
+\input{sljobfilewriter_8h_source}
+\input{slmsplicingmodule_8cpp}
+\input{slmsplicingmodule_8h}
+\input{slmsplicingmodule_8h_source}
+\input{splicingabstract_8cpp}
+\input{splicingabstract_8h}
+\input{splicingabstract_8h_source}
+\input{splicingheader_8h}
+\input{splicingheader_8h_source}
+\input{splicingmodulepriv_8cpp}
+\input{splicingmodulepriv_8h}
+\input{splicingmodulepriv_8h_source}
+\input{uspfiledef_8h}
+\input{uspfiledef_8h_source}
+\input{uspfilewriter_8cpp}
+\input{uspfilewriter_8h}
+\input{uspfilewriter_8h_source}
+\input{utslaprocessor_8cpp}
+\input{utslaprocessor_8h}
+\input{utslaprocessor_8h_source}
+\input{_u_t_s_l_a_processor__global_8h}
+\input{_u_t_s_l_a_processor__global_8h_source}
+\input{utslaprocessorprivate_8cpp}
+\input{utslaprocessorprivate_8h}
+\input{utslaprocessorprivate_8h_source}
+\input{writejfile_8cpp}
+\input{writejfile_8h}
+\input{writejfile_8h_source}
+\input{writeuff_8cpp}
+\input{writeuff_8h}
+\input{writeuff_8h_source}
+%--- End generated contents ---
+% Index
+  \backmatter
+  \newpage
+  \phantomsection
+  \clearemptydoublepage
+  \addcontentsline{toc}{chapter}{\indexname}
+  \printindex
+% Required for some languages (in combination with latexdocumentpre from the header)
+\end{CJK}
+\end{document}

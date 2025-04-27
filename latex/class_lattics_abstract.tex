@@ -1,0 +1,92 @@
+\doxysection{Lattics\+Abstract类 参考}
+\hypertarget{class_lattics_abstract}{}\label{class_lattics_abstract}\index{LatticsAbstract@{LatticsAbstract}}
+
+
+{\ttfamily \#include $<$latticsabstract.\+h$>$}
+
+类 Lattics\+Abstract 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lattics_abstract}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lattics_abstract_a2c75701f91fb7ad4f27eef711ac62841}{Lattics\+Abstract}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_lattics_abstract_a49fd443daa47c4ce1bcd0028983a9d89}{\texorpdfstring{$\sim$}{\string~}\+Lattics\+Abstract}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_lattics_abstract_acd737ded37d8f09251fe712bbdb6cd5b}{init\+Lattice\+Paras}} (const QJson\+Parsing \texorpdfstring{$\ast$}{*})=0
+\item 
+virtual Double\+Paths \mbox{\hyperlink{class_lattics_abstract_a9952d84b2c1bb8abf292ec4269021593}{create\+Lattics}} (const int \&)=0
+\item 
+virtual void \mbox{\hyperlink{class_lattics_abstract_a498cb6f669cb076ae6e5065b8ac0ab11}{identify\+Lattices}} (Clipper\+Lib\+::\+Paths \&)=0
+\item 
+virtual const float \mbox{\hyperlink{class_lattics_abstract_abfafe87a5f93034fd1183313a2bb070d}{get\+Spacing}} () const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Lattics\+Abstract}
+整个晶格处理系统的基础框架，确保不同类型晶格实现的一致性 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_lattics_abstract_a2c75701f91fb7ad4f27eef711ac62841}\index{LatticsAbstract@{LatticsAbstract}!LatticsAbstract@{LatticsAbstract}}
+\index{LatticsAbstract@{LatticsAbstract}!LatticsAbstract@{LatticsAbstract}}
+\doxysubsubsection{\texorpdfstring{LatticsAbstract()}{LatticsAbstract()}}
+{\footnotesize\ttfamily \label{class_lattics_abstract_a2c75701f91fb7ad4f27eef711ac62841} 
+Lattics\+Abstract\+::\+Lattics\+Abstract (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_lattics_abstract_a49fd443daa47c4ce1bcd0028983a9d89}\index{LatticsAbstract@{LatticsAbstract}!````~LatticsAbstract@{\texorpdfstring{$\sim$}{\string~}LatticsAbstract}}
+\index{````~LatticsAbstract@{\texorpdfstring{$\sim$}{\string~}LatticsAbstract}!LatticsAbstract@{LatticsAbstract}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LatticsAbstract()}{\string~LatticsAbstract()}}
+{\footnotesize\ttfamily \label{class_lattics_abstract_a49fd443daa47c4ce1bcd0028983a9d89} 
+virtual Lattics\+Abstract\+::\texorpdfstring{$\sim$}{\string~}\+Lattics\+Abstract (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_lattics_abstract_a9952d84b2c1bb8abf292ec4269021593}\index{LatticsAbstract@{LatticsAbstract}!createLattics@{createLattics}}
+\index{createLattics@{createLattics}!LatticsAbstract@{LatticsAbstract}}
+\doxysubsubsection{\texorpdfstring{createLattics()}{createLattics()}}
+{\footnotesize\ttfamily \label{class_lattics_abstract_a9952d84b2c1bb8abf292ec4269021593} 
+virtual Double\+Paths Lattics\+Abstract\+::create\+Lattics (\begin{DoxyParamCaption}\item[{const int \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_lattics_diamond_a06076b797aebcc235441152975c0cc86}{Lattics\+Diamond}} 内被实现.
+
+\Hypertarget{class_lattics_abstract_abfafe87a5f93034fd1183313a2bb070d}\index{LatticsAbstract@{LatticsAbstract}!getSpacing@{getSpacing}}
+\index{getSpacing@{getSpacing}!LatticsAbstract@{LatticsAbstract}}
+\doxysubsubsection{\texorpdfstring{getSpacing()}{getSpacing()}}
+{\footnotesize\ttfamily \label{class_lattics_abstract_abfafe87a5f93034fd1183313a2bb070d} 
+virtual const float Lattics\+Abstract\+::get\+Spacing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_lattics_diamond_a2b5910534cb61770a818221a2a4d2e5c}{Lattics\+Diamond}} 内被实现.
+
+\Hypertarget{class_lattics_abstract_a498cb6f669cb076ae6e5065b8ac0ab11}\index{LatticsAbstract@{LatticsAbstract}!identifyLattices@{identifyLattices}}
+\index{identifyLattices@{identifyLattices}!LatticsAbstract@{LatticsAbstract}}
+\doxysubsubsection{\texorpdfstring{identifyLattices()}{identifyLattices()}}
+{\footnotesize\ttfamily \label{class_lattics_abstract_a498cb6f669cb076ae6e5065b8ac0ab11} 
+virtual void Lattics\+Abstract\+::identify\+Lattices (\begin{DoxyParamCaption}\item[{Clipper\+Lib\+::\+Paths \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{class_lattics_abstract_acd737ded37d8f09251fe712bbdb6cd5b}\index{LatticsAbstract@{LatticsAbstract}!initLatticeParas@{initLatticeParas}}
+\index{initLatticeParas@{initLatticeParas}!LatticsAbstract@{LatticsAbstract}}
+\doxysubsubsection{\texorpdfstring{initLatticeParas()}{initLatticeParas()}}
+{\footnotesize\ttfamily \label{class_lattics_abstract_acd737ded37d8f09251fe712bbdb6cd5b} 
+virtual void Lattics\+Abstract\+::init\+Lattice\+Paras (\begin{DoxyParamCaption}\item[{const QJson\+Parsing \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_lattics_diamond_a7c6c857f222c970c808f36a07d19da2d}{Lattics\+Diamond}} 内被实现.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Lattice\+Module/\mbox{\hyperlink{latticsabstract_8h}{latticsabstract.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,161 @@
+\doxysection{Splicing\+Abstract类 参考}
+\hypertarget{class_splicing_abstract}{}\label{class_splicing_abstract}\index{SplicingAbstract@{SplicingAbstract}}
+
+
+{\ttfamily \#include $<$splicingabstract.\+h$>$}
+
+类 Splicing\+Abstract 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_splicing_abstract}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284}{Splicing\+Position\+Type}} \{ \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1}{RT\+\_\+\+Left}}
+, \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77}{RT\+\_\+\+Top}}
+, \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c}{RT\+\_\+\+Right}}
+, \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44}{RT\+\_\+\+Bottom}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8}{Splicing\+Line\+Type}} \{ \mbox{\hyperlink{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11}{SLT\+\_\+\+Hor}}
+, \mbox{\hyperlink{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6}{SLT\+\_\+\+Ver}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_splicing_abstract_a070a03c1506883e06a250d255b523ad0}{\texorpdfstring{$\sim$}{\string~}\+Splicing\+Abstract}} ()
+\item 
+virtual void \mbox{\hyperlink{class_splicing_abstract_a6e360c47db914469f31f553179735dac}{calc\+Next\+Pos}} ()=0
+\item 
+virtual const int \mbox{\hyperlink{class_splicing_abstract_af706235a2d016425e12c11f7b6d71e04}{get\+Splicng\+Line\+Type}} () const =0
+\item 
+virtual const int64\+\_\+t \mbox{\hyperlink{class_splicing_abstract_a04be8d08eb1ad104722858cc127b30f9}{get\+Splicing\+Pos}} () const =0
+\item 
+virtual const int64\+\_\+t \mbox{\hyperlink{class_splicing_abstract_a0e2999041e0c4c32d5e0a2e570db3655}{get\+Overlap}} () const =0
+\item 
+virtual const \mbox{\hyperlink{struct_splicing_base_settings}{Splicing\+Base\+Settings}} \& \mbox{\hyperlink{class_splicing_abstract_a056438e17c77e15015f41122fc2100cc}{get\+Splicing\+Settings}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_splicing_abstract_ab09962e78c2675582a7fd490a16381f1}{Splicing\+Abstract}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{成员枚举类型说明}
+\Hypertarget{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8}\index{SplicingAbstract@{SplicingAbstract}!SplicingLineType@{SplicingLineType}}
+\index{SplicingLineType@{SplicingLineType}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{SplicingLineType}{SplicingLineType}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8} 
+enum \mbox{\hyperlink{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8}{Splicing\+Abstract\+::\+Splicing\+Line\+Type}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLT\_Hor@{SLT\_Hor}!SplicingAbstract@{SplicingAbstract}}\index{SplicingAbstract@{SplicingAbstract}!SLT\_Hor@{SLT\_Hor}}}\Hypertarget{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11}\label{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8ab8a46399b27a241ec9d66e5ecb9aef11} 
+SLT\+\_\+\+Hor&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLT\_Ver@{SLT\_Ver}!SplicingAbstract@{SplicingAbstract}}\index{SplicingAbstract@{SplicingAbstract}!SLT\_Ver@{SLT\_Ver}}}\Hypertarget{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6}\label{class_splicing_abstract_af623757cf7a2cd8346cada970f7731d8a762f070bed7333cf3cddd374a67f25b6} 
+SLT\+\_\+\+Ver&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284}\index{SplicingAbstract@{SplicingAbstract}!SplicingPositionType@{SplicingPositionType}}
+\index{SplicingPositionType@{SplicingPositionType}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{SplicingPositionType}{SplicingPositionType}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284} 
+enum \mbox{\hyperlink{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284}{Splicing\+Abstract\+::\+Splicing\+Position\+Type}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RT\_Left@{RT\_Left}!SplicingAbstract@{SplicingAbstract}}\index{SplicingAbstract@{SplicingAbstract}!RT\_Left@{RT\_Left}}}\Hypertarget{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1}\label{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a9ea22052dd5eacc3356f9d73289aa0f1} 
+RT\+\_\+\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RT\_Top@{RT\_Top}!SplicingAbstract@{SplicingAbstract}}\index{SplicingAbstract@{SplicingAbstract}!RT\_Top@{RT\_Top}}}\Hypertarget{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77}\label{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a8dab6f94f0fc779e7dc3f1e96e7faa77} 
+RT\+\_\+\+Top&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RT\_Right@{RT\_Right}!SplicingAbstract@{SplicingAbstract}}\index{SplicingAbstract@{SplicingAbstract}!RT\_Right@{RT\_Right}}}\Hypertarget{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c}\label{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284a27951acfcd3f192272c4c22384bed79c} 
+RT\+\_\+\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RT\_Bottom@{RT\_Bottom}!SplicingAbstract@{SplicingAbstract}}\index{SplicingAbstract@{SplicingAbstract}!RT\_Bottom@{RT\_Bottom}}}\Hypertarget{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44}\label{class_splicing_abstract_a932c6fce2a65b3d3cb950a629ef60284ae56a83ee91d4d5af0b26097b2de6be44} 
+RT\+\_\+\+Bottom&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_splicing_abstract_a070a03c1506883e06a250d255b523ad0}\index{SplicingAbstract@{SplicingAbstract}!````~SplicingAbstract@{\texorpdfstring{$\sim$}{\string~}SplicingAbstract}}
+\index{````~SplicingAbstract@{\texorpdfstring{$\sim$}{\string~}SplicingAbstract}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SplicingAbstract()}{\string~SplicingAbstract()}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_a070a03c1506883e06a250d255b523ad0} 
+virtual Splicing\+Abstract\+::\texorpdfstring{$\sim$}{\string~}\+Splicing\+Abstract (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_splicing_abstract_ab09962e78c2675582a7fd490a16381f1}\index{SplicingAbstract@{SplicingAbstract}!SplicingAbstract@{SplicingAbstract}}
+\index{SplicingAbstract@{SplicingAbstract}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{SplicingAbstract()}{SplicingAbstract()}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_ab09962e78c2675582a7fd490a16381f1} 
+Splicing\+Abstract\+::\+Splicing\+Abstract (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_splicing_abstract_a6e360c47db914469f31f553179735dac}\index{SplicingAbstract@{SplicingAbstract}!calcNextPos@{calcNextPos}}
+\index{calcNextPos@{calcNextPos}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{calcNextPos()}{calcNextPos()}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_a6e360c47db914469f31f553179735dac} 
+virtual void Splicing\+Abstract\+::calc\+Next\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_periodic_line_ac4dfb3b859022f143a275acf2096c3b7}{Periodic\+Line}} , 以及 \mbox{\hyperlink{class_random_line_splicing_a2bfa31db15631eded3526d7cfea385e8}{Random\+Line\+Splicing}} 内被实现.
+
+\Hypertarget{class_splicing_abstract_a0e2999041e0c4c32d5e0a2e570db3655}\index{SplicingAbstract@{SplicingAbstract}!getOverlap@{getOverlap}}
+\index{getOverlap@{getOverlap}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{getOverlap()}{getOverlap()}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_a0e2999041e0c4c32d5e0a2e570db3655} 
+virtual const int64\+\_\+t Splicing\+Abstract\+::get\+Overlap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_periodic_line_ad590a74d58751a867886436bb669ffea}{Periodic\+Line}} , 以及 \mbox{\hyperlink{class_random_line_splicing_a245f7e0b0cf81b65d35471e834f75c9a}{Random\+Line\+Splicing}} 内被实现.
+
+\Hypertarget{class_splicing_abstract_a04be8d08eb1ad104722858cc127b30f9}\index{SplicingAbstract@{SplicingAbstract}!getSplicingPos@{getSplicingPos}}
+\index{getSplicingPos@{getSplicingPos}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{getSplicingPos()}{getSplicingPos()}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_a04be8d08eb1ad104722858cc127b30f9} 
+virtual const int64\+\_\+t Splicing\+Abstract\+::get\+Splicing\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_periodic_line_addb047689cb1ee18c45453ef1768d5d6}{Periodic\+Line}} , 以及 \mbox{\hyperlink{class_random_line_splicing_a7af2e632364b9b6cc3b1a2cd4c029740}{Random\+Line\+Splicing}} 内被实现.
+
+\Hypertarget{class_splicing_abstract_a056438e17c77e15015f41122fc2100cc}\index{SplicingAbstract@{SplicingAbstract}!getSplicingSettings@{getSplicingSettings}}
+\index{getSplicingSettings@{getSplicingSettings}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{getSplicingSettings()}{getSplicingSettings()}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_a056438e17c77e15015f41122fc2100cc} 
+virtual const \mbox{\hyperlink{struct_splicing_base_settings}{Splicing\+Base\+Settings}} \& Splicing\+Abstract\+::get\+Splicing\+Settings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_periodic_line_acacc43302bc1e4202982983ad0786cc3}{Periodic\+Line}} , 以及 \mbox{\hyperlink{class_random_line_splicing_a669030782b9dadf5aa55a2b1a5877d9b}{Random\+Line\+Splicing}} 内被实现.
+
+\Hypertarget{class_splicing_abstract_af706235a2d016425e12c11f7b6d71e04}\index{SplicingAbstract@{SplicingAbstract}!getSplicngLineType@{getSplicngLineType}}
+\index{getSplicngLineType@{getSplicngLineType}!SplicingAbstract@{SplicingAbstract}}
+\doxysubsubsection{\texorpdfstring{getSplicngLineType()}{getSplicngLineType()}}
+{\footnotesize\ttfamily \label{class_splicing_abstract_af706235a2d016425e12c11f7b6d71e04} 
+virtual const int Splicing\+Abstract\+::get\+Splicng\+Line\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{class_periodic_line_ac602c77d6da07615056021746d04fd1a}{Periodic\+Line}} , 以及 \mbox{\hyperlink{class_random_line_splicing_aa2c695b38a69f2a238c2e5d157ab890f}{Random\+Line\+Splicing}} 内被实现.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Splicing\+Module/\mbox{\hyperlink{splicingabstract_8h}{splicingabstract.\+h}}\end{DoxyCompactItemize}

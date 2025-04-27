@@ -1,0 +1,266 @@
+\doxysection{uspfiledef.\+h 文件参考}
+\hypertarget{uspfiledef_8h}{}\label{uspfiledef_8h}\index{uspfiledef.h@{uspfiledef.h}}
+{\ttfamily \#include $<$Qt\+Global$>$}\newline
+{\ttfamily \#include $<$QVector$>$}\newline
+{\ttfamily \#include $<$QMutex$>$}\newline
+{\ttfamily \#include $<$QFile$>$}\newline
+{\ttfamily \#include $<$QShared\+Pointer$>$}\newline
+{\ttfamily \#include $<$QDebug$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}}
+\item 
+struct \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}}
+\item 
+struct \mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a}{UFILEDATA}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72}{\+\_\+\+\_\+\+FILE\+\_\+\+SECTIONID}} \mbox{\hyperlink{uspfiledef_8h_abbc0bb2d96622a76f20c00c549b81389}{FILE\+\_\+\+SECTIONID}}
+\item 
+typedef QShared\+Pointer$<$ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}} $>$ \mbox{\hyperlink{uspfiledef_8h_a91daa2136671e89e1287d6857a990ae8}{UFFWDATAPTR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{uspfiledef_8h_a33472975c4e219d671961ac701c74182a5c1b3ea062541039d95de6c5a6fefadb}{UFFWRITE\+\_\+\+BEGIN}} = 0
+, \mbox{\hyperlink{uspfiledef_8h_a33472975c4e219d671961ac701c74182a87b6ad567a7d0c58e1a1e9b4bf28c848}{UFFWRITE\+\_\+\+END}}
+ \}
+\item 
+enum \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72}{\+\_\+\+\_\+\+FILE\+\_\+\+SECTIONID}} \{ \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aca4a81835c0e98b41081925446c4d679}{SECTION\+\_\+\+LAYER}} = 0xB
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72adb64779740a7357af57b5ce20dc57541}{SECTION\+\_\+\+PARTINDEX}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5022b3baac1c509960d29da899d50759}{SECTION\+\_\+\+MINX}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2740f8df0b8b7f5d4a8bab1d4a35c003}{SECTION\+\_\+\+MAXX}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bacb9d1d57ebc4213343f3fb07f5ec2}{SECTION\+\_\+\+MINY}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a195eda6a6a43a68afe3f5a18ef58f56c}{SECTION\+\_\+\+MAXY}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a54d293cebe1fa85c5dad25966010f7ae}{SECTION\+\_\+\+LASERPOWER}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a672ace573c1cc09e3b84737e056d4068}{SECTION\+\_\+\+MARKSPEED}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a13043892bf5e1cd12c4e7261b1fe7892}{SECTION\+\_\+\+FOCUSSHIFT}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aff2b72bebd69fa1e27a8bd6d9fb2f704}{SECTION\+\_\+\+CURRENTBEAMINDEX}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a77220cf1a92d14a954774548b62ccab8}{SECTION\+\_\+\+LAYERAREAS}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aa1e63b35a5b6a7aa3d9993a9a359d537}{SECTION\+\_\+\+CURRENTSCANNERINDEX}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5f67d86d36470307473000c625950cf8}{SECTION\+\_\+\+POLYGON}} = 0x30
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bb50446b9a4f1ac5e4ec91355d44084}{SECTION\+\_\+\+POLYGONCOOR}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a041febfaf7a50e2c9d15d5c4d2db7a34}{SECTION\+\_\+\+HATCH}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ab3f1f6a157d669cd26fd11307c903d22}{SECTION\+\_\+\+HATCHCOOR}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a17453789a06cec3fec136807be644013}{SECTION\+\_\+\+SUPPORT}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0693c3a327a9f77351297c01dd4866ff}{SECTION\+\_\+\+SUPPORTCOOR}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a93d6068a4bd22a4dacdcabf5ce9207b1}{SECTION\+\_\+\+HATCH\+\_\+\+DOWNFILL}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ad2b41c6be6f18d312814fb379c1fe371}{SECTION\+\_\+\+HATCHDOWNFILLCOOR}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aeafe781d644db76dfa9ec3c990678ed2}{SECTION\+\_\+\+HATCH\+\_\+\+UPFILL}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2e1b7a556e127c861110a65d37a64ef7}{SECTION\+\_\+\+HATCHUPFILLCOOR}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5513522970b77fc4edc220c104fa2c89}{SECTION\+\_\+\+HATCH\+\_\+\+SMALL}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a86143ba9f629cd245217431e76245557}{SECTION\+\_\+\+HATCHSMALL\+\_\+\+COOR}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a19af26280a2f410f3995ea35c36c1b73}{SECTION\+\_\+\+LAYEREND}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a40d838b0939d7897ef0b37d3bc0d1151}{SECTION\+\_\+\+FILEEND}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a590b9f26a46c5b42e9c945241476b926}{SECTION\+\_\+\+SSHATCH}} = 0x50
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72af545445f5fc1956a66a53f5c537140ee}{SECTION\+\_\+\+SSHATCHCOOR}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a45bb897f23cb952cc4c5b6cb0f43ce9d}{SECTION\+\_\+\+SSPOLYGON}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a3dea7d03e6fe97504dfa3bcb9ca258b8}{SECTION\+\_\+\+SSPOLYGONCOOR}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a6cf7918eb867be2861a87484714b2489}{SECTION\+\_\+\+SCANTYPE\+\_\+\+JUMP}} = 0x60
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a9242b7e6173871e8377ef97e593e2f9b}{SECTION\+\_\+\+SCANTYPE\+\_\+\+MARK}}
+, \newline
+\mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a8409fd1ff81ec5d3f87bbf0ede42fed2}{SECTION\+\_\+\+SCANTYPE\+\_\+\+MARKLOOP}}
+, \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a657fbead48b5fe6f883cfdea43b48031}{SECTION\+\_\+\+SCANTYPE\+\_\+\+FINISHED}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+QDebug \mbox{\hyperlink{uspfiledef_8h_a9c8c392c2e62ad12e1fc787aafe416a7}{operator$<$$<$}} (QDebug debug, const \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} \&line)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{uspfiledef_8h_abbc0bb2d96622a76f20c00c549b81389}\index{uspfiledef.h@{uspfiledef.h}!FILE\_SECTIONID@{FILE\_SECTIONID}}
+\index{FILE\_SECTIONID@{FILE\_SECTIONID}!uspfiledef.h@{uspfiledef.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_SECTIONID}{FILE\_SECTIONID}}
+{\footnotesize\ttfamily \label{uspfiledef_8h_abbc0bb2d96622a76f20c00c549b81389} 
+typedef enum \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72}{\+\_\+\+\_\+\+FILE\+\_\+\+SECTIONID}} \mbox{\hyperlink{uspfiledef_8h_abbc0bb2d96622a76f20c00c549b81389}{FILE\+\_\+\+SECTIONID}}}
+
+\Hypertarget{uspfiledef_8h_a91daa2136671e89e1287d6857a990ae8}\index{uspfiledef.h@{uspfiledef.h}!UFFWDATAPTR@{UFFWDATAPTR}}
+\index{UFFWDATAPTR@{UFFWDATAPTR}!uspfiledef.h@{uspfiledef.h}}
+\doxysubsubsection{\texorpdfstring{UFFWDATAPTR}{UFFWDATAPTR}}
+{\footnotesize\ttfamily \label{uspfiledef_8h_a91daa2136671e89e1287d6857a990ae8} 
+typedef QShared\+Pointer$<$\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}}$>$ \mbox{\hyperlink{uspfiledef_8h_a91daa2136671e89e1287d6857a990ae8}{UFFWDATAPTR}}}
+
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{uspfiledef_8h_a33472975c4e219d671961ac701c74182}\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily \label{uspfiledef_8h_a33472975c4e219d671961ac701c74182} 
+anonymous enum}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UFFWRITE\_BEGIN@{UFFWRITE\_BEGIN}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!UFFWRITE\_BEGIN@{UFFWRITE\_BEGIN}}}\Hypertarget{uspfiledef_8h_a33472975c4e219d671961ac701c74182a5c1b3ea062541039d95de6c5a6fefadb}\label{uspfiledef_8h_a33472975c4e219d671961ac701c74182a5c1b3ea062541039d95de6c5a6fefadb} 
+UFFWRITE\+\_\+\+BEGIN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UFFWRITE\_END@{UFFWRITE\_END}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!UFFWRITE\_END@{UFFWRITE\_END}}}\Hypertarget{uspfiledef_8h_a33472975c4e219d671961ac701c74182a87b6ad567a7d0c58e1a1e9b4bf28c848}\label{uspfiledef_8h_a33472975c4e219d671961ac701c74182a87b6ad567a7d0c58e1a1e9b4bf28c848} 
+UFFWRITE\+\_\+\+END&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72}\index{uspfiledef.h@{uspfiledef.h}!\_\_FILE\_SECTIONID@{\_\_FILE\_SECTIONID}}
+\index{\_\_FILE\_SECTIONID@{\_\_FILE\_SECTIONID}!uspfiledef.h@{uspfiledef.h}}
+\doxysubsubsection{\texorpdfstring{\_\_FILE\_SECTIONID}{\_\_FILE\_SECTIONID}}
+{\footnotesize\ttfamily \label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72} 
+enum \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72}{\+\_\+\+\_\+\+FILE\+\_\+\+SECTIONID}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_LAYER@{SECTION\_LAYER}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_LAYER@{SECTION\_LAYER}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aca4a81835c0e98b41081925446c4d679}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aca4a81835c0e98b41081925446c4d679} 
+SECTION\+\_\+\+LAYER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_PARTINDEX@{SECTION\_PARTINDEX}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_PARTINDEX@{SECTION\_PARTINDEX}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72adb64779740a7357af57b5ce20dc57541}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72adb64779740a7357af57b5ce20dc57541} 
+SECTION\+\_\+\+PARTINDEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_MINX@{SECTION\_MINX}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_MINX@{SECTION\_MINX}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5022b3baac1c509960d29da899d50759}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5022b3baac1c509960d29da899d50759} 
+SECTION\+\_\+\+MINX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_MAXX@{SECTION\_MAXX}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_MAXX@{SECTION\_MAXX}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2740f8df0b8b7f5d4a8bab1d4a35c003}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2740f8df0b8b7f5d4a8bab1d4a35c003} 
+SECTION\+\_\+\+MAXX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_MINY@{SECTION\_MINY}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_MINY@{SECTION\_MINY}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bacb9d1d57ebc4213343f3fb07f5ec2}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bacb9d1d57ebc4213343f3fb07f5ec2} 
+SECTION\+\_\+\+MINY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_MAXY@{SECTION\_MAXY}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_MAXY@{SECTION\_MAXY}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a195eda6a6a43a68afe3f5a18ef58f56c}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a195eda6a6a43a68afe3f5a18ef58f56c} 
+SECTION\+\_\+\+MAXY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_LASERPOWER@{SECTION\_LASERPOWER}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_LASERPOWER@{SECTION\_LASERPOWER}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a54d293cebe1fa85c5dad25966010f7ae}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a54d293cebe1fa85c5dad25966010f7ae} 
+SECTION\+\_\+\+LASERPOWER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_MARKSPEED@{SECTION\_MARKSPEED}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_MARKSPEED@{SECTION\_MARKSPEED}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a672ace573c1cc09e3b84737e056d4068}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a672ace573c1cc09e3b84737e056d4068} 
+SECTION\+\_\+\+MARKSPEED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_FOCUSSHIFT@{SECTION\_FOCUSSHIFT}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_FOCUSSHIFT@{SECTION\_FOCUSSHIFT}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a13043892bf5e1cd12c4e7261b1fe7892}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a13043892bf5e1cd12c4e7261b1fe7892} 
+SECTION\+\_\+\+FOCUSSHIFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_CURRENTBEAMINDEX@{SECTION\_CURRENTBEAMINDEX}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_CURRENTBEAMINDEX@{SECTION\_CURRENTBEAMINDEX}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aff2b72bebd69fa1e27a8bd6d9fb2f704}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aff2b72bebd69fa1e27a8bd6d9fb2f704} 
+SECTION\+\_\+\+CURRENTBEAMINDEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_LAYERAREAS@{SECTION\_LAYERAREAS}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_LAYERAREAS@{SECTION\_LAYERAREAS}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a77220cf1a92d14a954774548b62ccab8}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a77220cf1a92d14a954774548b62ccab8} 
+SECTION\+\_\+\+LAYERAREAS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_CURRENTSCANNERINDEX@{SECTION\_CURRENTSCANNERINDEX}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_CURRENTSCANNERINDEX@{SECTION\_CURRENTSCANNERINDEX}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aa1e63b35a5b6a7aa3d9993a9a359d537}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aa1e63b35a5b6a7aa3d9993a9a359d537} 
+SECTION\+\_\+\+CURRENTSCANNERINDEX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_POLYGON@{SECTION\_POLYGON}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_POLYGON@{SECTION\_POLYGON}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5f67d86d36470307473000c625950cf8}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5f67d86d36470307473000c625950cf8} 
+SECTION\+\_\+\+POLYGON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_POLYGONCOOR@{SECTION\_POLYGONCOOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_POLYGONCOOR@{SECTION\_POLYGONCOOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bb50446b9a4f1ac5e4ec91355d44084}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bb50446b9a4f1ac5e4ec91355d44084} 
+SECTION\+\_\+\+POLYGONCOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCH@{SECTION\_HATCH}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCH@{SECTION\_HATCH}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a041febfaf7a50e2c9d15d5c4d2db7a34}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a041febfaf7a50e2c9d15d5c4d2db7a34} 
+SECTION\+\_\+\+HATCH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCHCOOR@{SECTION\_HATCHCOOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCHCOOR@{SECTION\_HATCHCOOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ab3f1f6a157d669cd26fd11307c903d22}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ab3f1f6a157d669cd26fd11307c903d22} 
+SECTION\+\_\+\+HATCHCOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SUPPORT@{SECTION\_SUPPORT}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SUPPORT@{SECTION\_SUPPORT}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a17453789a06cec3fec136807be644013}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a17453789a06cec3fec136807be644013} 
+SECTION\+\_\+\+SUPPORT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SUPPORTCOOR@{SECTION\_SUPPORTCOOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SUPPORTCOOR@{SECTION\_SUPPORTCOOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0693c3a327a9f77351297c01dd4866ff}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0693c3a327a9f77351297c01dd4866ff} 
+SECTION\+\_\+\+SUPPORTCOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCH\_DOWNFILL@{SECTION\_HATCH\_DOWNFILL}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCH\_DOWNFILL@{SECTION\_HATCH\_DOWNFILL}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a93d6068a4bd22a4dacdcabf5ce9207b1}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a93d6068a4bd22a4dacdcabf5ce9207b1} 
+SECTION\+\_\+\+HATCH\+\_\+\+DOWNFILL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCHDOWNFILLCOOR@{SECTION\_HATCHDOWNFILLCOOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCHDOWNFILLCOOR@{SECTION\_HATCHDOWNFILLCOOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ad2b41c6be6f18d312814fb379c1fe371}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ad2b41c6be6f18d312814fb379c1fe371} 
+SECTION\+\_\+\+HATCHDOWNFILLCOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCH\_UPFILL@{SECTION\_HATCH\_UPFILL}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCH\_UPFILL@{SECTION\_HATCH\_UPFILL}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aeafe781d644db76dfa9ec3c990678ed2}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aeafe781d644db76dfa9ec3c990678ed2} 
+SECTION\+\_\+\+HATCH\+\_\+\+UPFILL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCHUPFILLCOOR@{SECTION\_HATCHUPFILLCOOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCHUPFILLCOOR@{SECTION\_HATCHUPFILLCOOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2e1b7a556e127c861110a65d37a64ef7}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2e1b7a556e127c861110a65d37a64ef7} 
+SECTION\+\_\+\+HATCHUPFILLCOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCH\_SMALL@{SECTION\_HATCH\_SMALL}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCH\_SMALL@{SECTION\_HATCH\_SMALL}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5513522970b77fc4edc220c104fa2c89}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5513522970b77fc4edc220c104fa2c89} 
+SECTION\+\_\+\+HATCH\+\_\+\+SMALL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_HATCHSMALL\_COOR@{SECTION\_HATCHSMALL\_COOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_HATCHSMALL\_COOR@{SECTION\_HATCHSMALL\_COOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a86143ba9f629cd245217431e76245557}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a86143ba9f629cd245217431e76245557} 
+SECTION\+\_\+\+HATCHSMALL\+\_\+\+COOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_LAYEREND@{SECTION\_LAYEREND}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_LAYEREND@{SECTION\_LAYEREND}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a19af26280a2f410f3995ea35c36c1b73}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a19af26280a2f410f3995ea35c36c1b73} 
+SECTION\+\_\+\+LAYEREND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_FILEEND@{SECTION\_FILEEND}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_FILEEND@{SECTION\_FILEEND}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a40d838b0939d7897ef0b37d3bc0d1151}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a40d838b0939d7897ef0b37d3bc0d1151} 
+SECTION\+\_\+\+FILEEND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SSHATCH@{SECTION\_SSHATCH}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SSHATCH@{SECTION\_SSHATCH}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a590b9f26a46c5b42e9c945241476b926}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a590b9f26a46c5b42e9c945241476b926} 
+SECTION\+\_\+\+SSHATCH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SSHATCHCOOR@{SECTION\_SSHATCHCOOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SSHATCHCOOR@{SECTION\_SSHATCHCOOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72af545445f5fc1956a66a53f5c537140ee}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72af545445f5fc1956a66a53f5c537140ee} 
+SECTION\+\_\+\+SSHATCHCOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SSPOLYGON@{SECTION\_SSPOLYGON}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SSPOLYGON@{SECTION\_SSPOLYGON}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a45bb897f23cb952cc4c5b6cb0f43ce9d}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a45bb897f23cb952cc4c5b6cb0f43ce9d} 
+SECTION\+\_\+\+SSPOLYGON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SSPOLYGONCOOR@{SECTION\_SSPOLYGONCOOR}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SSPOLYGONCOOR@{SECTION\_SSPOLYGONCOOR}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a3dea7d03e6fe97504dfa3bcb9ca258b8}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a3dea7d03e6fe97504dfa3bcb9ca258b8} 
+SECTION\+\_\+\+SSPOLYGONCOOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SCANTYPE\_JUMP@{SECTION\_SCANTYPE\_JUMP}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SCANTYPE\_JUMP@{SECTION\_SCANTYPE\_JUMP}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a6cf7918eb867be2861a87484714b2489}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a6cf7918eb867be2861a87484714b2489} 
+SECTION\+\_\+\+SCANTYPE\+\_\+\+JUMP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SCANTYPE\_MARK@{SECTION\_SCANTYPE\_MARK}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SCANTYPE\_MARK@{SECTION\_SCANTYPE\_MARK}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a9242b7e6173871e8377ef97e593e2f9b}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a9242b7e6173871e8377ef97e593e2f9b} 
+SECTION\+\_\+\+SCANTYPE\+\_\+\+MARK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SCANTYPE\_MARKLOOP@{SECTION\_SCANTYPE\_MARKLOOP}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SCANTYPE\_MARKLOOP@{SECTION\_SCANTYPE\_MARKLOOP}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a8409fd1ff81ec5d3f87bbf0ede42fed2}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a8409fd1ff81ec5d3f87bbf0ede42fed2} 
+SECTION\+\_\+\+SCANTYPE\+\_\+\+MARKLOOP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SECTION\_SCANTYPE\_FINISHED@{SECTION\_SCANTYPE\_FINISHED}!uspfiledef.h@{uspfiledef.h}}\index{uspfiledef.h@{uspfiledef.h}!SECTION\_SCANTYPE\_FINISHED@{SECTION\_SCANTYPE\_FINISHED}}}\Hypertarget{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a657fbead48b5fe6f883cfdea43b48031}\label{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a657fbead48b5fe6f883cfdea43b48031} 
+SECTION\+\_\+\+SCANTYPE\+\_\+\+FINISHED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{uspfiledef_8h_a9c8c392c2e62ad12e1fc787aafe416a7}\index{uspfiledef.h@{uspfiledef.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!uspfiledef.h@{uspfiledef.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{uspfiledef_8h_a9c8c392c2e62ad12e1fc787aafe416a7} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} \&}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

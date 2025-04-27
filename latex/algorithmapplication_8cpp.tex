@@ -1,0 +1,122 @@
+\doxysection{algorithmapplication.\+cpp 文件参考}
+\hypertarget{algorithmapplication_8cpp}{}\label{algorithmapplication_8cpp}\index{algorithmapplication.cpp@{algorithmapplication.cpp}}
+{\ttfamily \#include "{}algorithmapplication.\+h"{}}\newline
+{\ttfamily \#include "{}polygonstartchanger.\+h"{}}\newline
+{\ttfamily \#include "{}Scan\+Lines\+Divider/scanlinesdivider.\+h"{}}\newline
+{\ttfamily \#include "{}Polygons\+Divider/polygonsdivider.\+h"{}}\newline
+{\ttfamily \#include "{}Scan\+Lines\+Sortor/scanlinessortor.\+h"{}}\newline
+{\ttfamily \#include "{}Lattice\+Module/latticeinterface.\+h"{}}\newline
+{\ttfamily \#include "{}slmsplicingmodule.\+h"{}}\newline
+{\ttfamily \#include "{}clipper2/clipper.\+h"{}}\newline
+{\ttfamily \#include $<$QCore\+Application$>$}\newline
+{\ttfamily \#include $<$QJson\+Object$>$}\newline
+{\ttfamily \#include $<$QJson\+Array$>$}\newline
+{\ttfamily \#include $<$QSettings$>$}\newline
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{algorithmapplication_8cpp_ad155456708261e38a57b6e916ffa5d37}{CALC\+\_\+\+HATCHING}}
+\item 
+\#define \mbox{\hyperlink{algorithmapplication_8cpp_a50c48104c99cae8bd071cd9226b93e88}{CALC\+\_\+\+SMALLSTRUCT}}
+\item 
+\#define \mbox{\hyperlink{algorithmapplication_8cpp_a971f7c713e7a94f8b4d436cf6557e2b2}{CALC\+\_\+\+SUPPORT}}
+\item 
+\#define \mbox{\hyperlink{algorithmapplication_8cpp_a3d1e81ea7ba6239e050daba5c4e23694}{CALC\+\_\+\+BORDER}}
+\item 
+\#define \mbox{\hyperlink{algorithmapplication_8cpp_a77d3af4745b96284e8149da8263a7bbb}{CALC\+\_\+\+SMALLGAP\+\_\+\+SMALLHOLE}}
+\item 
+\#define \mbox{\hyperlink{algorithmapplication_8cpp_a4489493abad0a87632c332a69bd15d1c}{CALC\+\_\+\+EXTERNEDBORDER}}
+\item 
+\#define \mbox{\hyperlink{algorithmapplication_8cpp_ae52387c6449fe4711afe6384c7497181}{USE\+\_\+\+CHECKER\+\_\+\+BOARD\+\_\+\+TEST}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a8fffc5fdda86468300b4688db29a3ae5}{HATCHTYPE\+\_\+\+LINES}} = 0
+, \mbox{\hyperlink{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a27ae699bafc09c2d36e3558d06cefaa4}{HATCHTYPE\+\_\+\+RING}} = 1
+, \mbox{\hyperlink{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2aa342a8374f90dbd2adb50c5ce379d0fe}{HATCHTYPE\+\_\+\+SPIRAL}} = 2
+, \mbox{\hyperlink{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a03e44c7f0a98a31f4e006b71909fb85a}{HATCHTYPE\+\_\+\+FERMATSPIRAL}} = 3
+, \newline
+\mbox{\hyperlink{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a492f3939554e9d8e50a983477362049a}{HATCHTYPE\+\_\+\+CHECKER}} = 4
+, \mbox{\hyperlink{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2ad4bc2fe50eb7168c93c1c7d25dd4779c}{HATCHTYPE\+\_\+\+STRIP}} = 5
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{algorithmapplication_8cpp_a3d1e81ea7ba6239e050daba5c4e23694}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!CALC\_BORDER@{CALC\_BORDER}}
+\index{CALC\_BORDER@{CALC\_BORDER}!algorithmapplication.cpp@{algorithmapplication.cpp}}
+\doxysubsubsection{\texorpdfstring{CALC\_BORDER}{CALC\_BORDER}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_a3d1e81ea7ba6239e050daba5c4e23694} 
+\#define CALC\+\_\+\+BORDER}
+
+\Hypertarget{algorithmapplication_8cpp_a4489493abad0a87632c332a69bd15d1c}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!CALC\_EXTERNEDBORDER@{CALC\_EXTERNEDBORDER}}
+\index{CALC\_EXTERNEDBORDER@{CALC\_EXTERNEDBORDER}!algorithmapplication.cpp@{algorithmapplication.cpp}}
+\doxysubsubsection{\texorpdfstring{CALC\_EXTERNEDBORDER}{CALC\_EXTERNEDBORDER}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_a4489493abad0a87632c332a69bd15d1c} 
+\#define CALC\+\_\+\+EXTERNEDBORDER}
+
+\Hypertarget{algorithmapplication_8cpp_ad155456708261e38a57b6e916ffa5d37}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!CALC\_HATCHING@{CALC\_HATCHING}}
+\index{CALC\_HATCHING@{CALC\_HATCHING}!algorithmapplication.cpp@{algorithmapplication.cpp}}
+\doxysubsubsection{\texorpdfstring{CALC\_HATCHING}{CALC\_HATCHING}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_ad155456708261e38a57b6e916ffa5d37} 
+\#define CALC\+\_\+\+HATCHING}
+
+\Hypertarget{algorithmapplication_8cpp_a77d3af4745b96284e8149da8263a7bbb}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!CALC\_SMALLGAP\_SMALLHOLE@{CALC\_SMALLGAP\_SMALLHOLE}}
+\index{CALC\_SMALLGAP\_SMALLHOLE@{CALC\_SMALLGAP\_SMALLHOLE}!algorithmapplication.cpp@{algorithmapplication.cpp}}
+\doxysubsubsection{\texorpdfstring{CALC\_SMALLGAP\_SMALLHOLE}{CALC\_SMALLGAP\_SMALLHOLE}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_a77d3af4745b96284e8149da8263a7bbb} 
+\#define CALC\+\_\+\+SMALLGAP\+\_\+\+SMALLHOLE}
+
+\Hypertarget{algorithmapplication_8cpp_a50c48104c99cae8bd071cd9226b93e88}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!CALC\_SMALLSTRUCT@{CALC\_SMALLSTRUCT}}
+\index{CALC\_SMALLSTRUCT@{CALC\_SMALLSTRUCT}!algorithmapplication.cpp@{algorithmapplication.cpp}}
+\doxysubsubsection{\texorpdfstring{CALC\_SMALLSTRUCT}{CALC\_SMALLSTRUCT}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_a50c48104c99cae8bd071cd9226b93e88} 
+\#define CALC\+\_\+\+SMALLSTRUCT}
+
+\Hypertarget{algorithmapplication_8cpp_a971f7c713e7a94f8b4d436cf6557e2b2}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!CALC\_SUPPORT@{CALC\_SUPPORT}}
+\index{CALC\_SUPPORT@{CALC\_SUPPORT}!algorithmapplication.cpp@{algorithmapplication.cpp}}
+\doxysubsubsection{\texorpdfstring{CALC\_SUPPORT}{CALC\_SUPPORT}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_a971f7c713e7a94f8b4d436cf6557e2b2} 
+\#define CALC\+\_\+\+SUPPORT}
+
+\Hypertarget{algorithmapplication_8cpp_ae52387c6449fe4711afe6384c7497181}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!USE\_CHECKER\_BOARD\_TEST@{USE\_CHECKER\_BOARD\_TEST}}
+\index{USE\_CHECKER\_BOARD\_TEST@{USE\_CHECKER\_BOARD\_TEST}!algorithmapplication.cpp@{algorithmapplication.cpp}}
+\doxysubsubsection{\texorpdfstring{USE\_CHECKER\_BOARD\_TEST}{USE\_CHECKER\_BOARD\_TEST}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_ae52387c6449fe4711afe6384c7497181} 
+\#define USE\+\_\+\+CHECKER\+\_\+\+BOARD\+\_\+\+TEST}
+
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2}\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily \label{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2} 
+anonymous enum}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHTYPE\_LINES@{HATCHTYPE\_LINES}!algorithmapplication.cpp@{algorithmapplication.cpp}}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!HATCHTYPE\_LINES@{HATCHTYPE\_LINES}}}\Hypertarget{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a8fffc5fdda86468300b4688db29a3ae5}\label{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a8fffc5fdda86468300b4688db29a3ae5} 
+HATCHTYPE\+\_\+\+LINES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHTYPE\_RING@{HATCHTYPE\_RING}!algorithmapplication.cpp@{algorithmapplication.cpp}}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!HATCHTYPE\_RING@{HATCHTYPE\_RING}}}\Hypertarget{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a27ae699bafc09c2d36e3558d06cefaa4}\label{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a27ae699bafc09c2d36e3558d06cefaa4} 
+HATCHTYPE\+\_\+\+RING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHTYPE\_SPIRAL@{HATCHTYPE\_SPIRAL}!algorithmapplication.cpp@{algorithmapplication.cpp}}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!HATCHTYPE\_SPIRAL@{HATCHTYPE\_SPIRAL}}}\Hypertarget{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2aa342a8374f90dbd2adb50c5ce379d0fe}\label{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2aa342a8374f90dbd2adb50c5ce379d0fe} 
+HATCHTYPE\+\_\+\+SPIRAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHTYPE\_FERMATSPIRAL@{HATCHTYPE\_FERMATSPIRAL}!algorithmapplication.cpp@{algorithmapplication.cpp}}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!HATCHTYPE\_FERMATSPIRAL@{HATCHTYPE\_FERMATSPIRAL}}}\Hypertarget{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a03e44c7f0a98a31f4e006b71909fb85a}\label{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a03e44c7f0a98a31f4e006b71909fb85a} 
+HATCHTYPE\+\_\+\+FERMATSPIRAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHTYPE\_CHECKER@{HATCHTYPE\_CHECKER}!algorithmapplication.cpp@{algorithmapplication.cpp}}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!HATCHTYPE\_CHECKER@{HATCHTYPE\_CHECKER}}}\Hypertarget{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a492f3939554e9d8e50a983477362049a}\label{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2a492f3939554e9d8e50a983477362049a} 
+HATCHTYPE\+\_\+\+CHECKER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHTYPE\_STRIP@{HATCHTYPE\_STRIP}!algorithmapplication.cpp@{algorithmapplication.cpp}}\index{algorithmapplication.cpp@{algorithmapplication.cpp}!HATCHTYPE\_STRIP@{HATCHTYPE\_STRIP}}}\Hypertarget{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2ad4bc2fe50eb7168c93c1c7d25dd4779c}\label{algorithmapplication_8cpp_a4680e5916c0873c0175711c9da922fa2ad4bc2fe50eb7168c93c1c7d25dd4779c} 
+HATCHTYPE\+\_\+\+STRIP&\\
+\hline
+
+\end{DoxyEnumFields}

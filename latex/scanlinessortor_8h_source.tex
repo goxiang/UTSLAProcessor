@@ -1,0 +1,42 @@
+\doxysection{scanlinessortor.\+h}
+\hypertarget{scanlinessortor_8h_source}{}\label{scanlinessortor_8h_source}\index{ScanLinesSortor/scanlinessortor.h@{ScanLinesSortor/scanlinessortor.h}}
+\mbox{\hyperlink{scanlinessortor_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SCANLINESSORTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SCANLINESSORTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}bpccommon.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{quadtreesortor_8h}{quadtreesortor.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_scan_lines_sortor_aa979ddca53bfeecbc15f1cdb43c1c792}{ScanLinesSortor}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_scan_lines_sortor_aa979ddca53bfeecbc15f1cdb43c1c792}{ScanLinesSortor}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scan_lines_sortor_a3ff4ff2475538943471e64bd9e4dbe3d}{sortScanLines}}(QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scan_lines_sortor_a21e65fd420d466d0e5f7a7525843853a}{sortPaths}}(Paths\ \&);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scan_lines_sortor_aa62dc7dd1cf5575afbf2de4a391a25b1}{sortDatas}}(QVector<T>\ \&);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv}{Priv}};}
+\DoxyCodeLine{00029\ \ \ \ \ QSharedPointer<Priv>\ \mbox{\hyperlink{class_scan_lines_sortor_af393787ba7ecb77fcb1832100e8d1fa5}{d}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scan_lines_sortor_aa62dc7dd1cf5575afbf2de4a391a25b1}{ScanLinesSortor::sortDatas}}(QVector<T>\ \&datas)}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_q_tree_sortor}{QTreeSortor}}\ sortor;}
+\DoxyCodeLine{00036\ \ \ \ \ sortor.\mbox{\hyperlink{class_q_tree_sortor_a1f9b13518d3c7394ec29a69897445fbf}{sortDatas}}<T>(datas);}
+\DoxyCodeLine{00037\ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SCANLINESSORTOR\_H}}
+
+\end{DoxyCode}

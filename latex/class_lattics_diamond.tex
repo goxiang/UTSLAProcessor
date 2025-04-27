@@ -1,0 +1,140 @@
+\doxysection{Lattics\+Diamond类 参考}
+\hypertarget{class_lattics_diamond}{}\label{class_lattics_diamond}\index{LatticsDiamond@{LatticsDiamond}}
+
+
+{\ttfamily \#include $<$latticsdiamond.\+h$>$}
+
+类 Lattics\+Diamond 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lattics_diamond}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_lattics_diamond_1_1_priv}{Priv}}
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_lattics_diamond_1_1_priv}{Lattics\+Diamond\+::\+Priv} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lattics_diamond_af819f7a66ffee6886337386422c8d0cb}{Lattics\+Diamond}} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_lattics_diamond}{Lattics\+Diamond} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lattics_diamond_a9cc027715d7c141e4887addb6be1cee0}{\texorpdfstring{$\sim$}{\string~}\+Lattics\+Diamond}} () override
+\item 
+void \mbox{\hyperlink{class_lattics_diamond_a7c6c857f222c970c808f36a07d19da2d}{init\+Lattice\+Paras}} (const QJson\+Parsing \texorpdfstring{$\ast$}{*}) override
+\item 
+Double\+Paths \mbox{\hyperlink{class_lattics_diamond_a06076b797aebcc235441152975c0cc86}{create\+Lattics}} (const int \&) override
+\item 
+void \mbox{\hyperlink{class_lattics_diamond_a6e368e8f7f6e73cc4a106aee9fc15556}{identify\+Lattices}} (Paths \&) override
+\item 
+const float \mbox{\hyperlink{class_lattics_diamond_a2b5910534cb61770a818221a2a4d2e5c}{get\+Spacing}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_lattics_abstract}{Lattics\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lattics_abstract_a2c75701f91fb7ad4f27eef711ac62841}{Lattics\+Abstract}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_lattics_abstract_a49fd443daa47c4ce1bcd0028983a9d89}{\texorpdfstring{$\sim$}{\string~}\+Lattics\+Abstract}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_lattics_abstract_a498cb6f669cb076ae6e5065b8ac0ab11}{identify\+Lattices}} (Clipper\+Lib\+::\+Paths \&)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lattics_diamond_a0bd536c41f6acc949e64e3305385a45e}{move\+Double\+Path}} (Double\+Paths \&)
+\begin{DoxyCompactList}\small\item\em Private \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_lattics_diamond_1_1_priv}{Priv}} $>$ \mbox{\hyperlink{class_lattics_diamond_a3b9ca90964f85ab9b34862549a54f4d4}{d}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Lattics\+Diamond}
+处理特殊晶格结构的专门组件,继承自\+Lattics\+Abstract 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_lattics_diamond_af819f7a66ffee6886337386422c8d0cb}\index{LatticsDiamond@{LatticsDiamond}!LatticsDiamond@{LatticsDiamond}}
+\index{LatticsDiamond@{LatticsDiamond}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{LatticsDiamond()}{LatticsDiamond()}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_af819f7a66ffee6886337386422c8d0cb} 
+Lattics\+Diamond\+::\+Lattics\+Diamond (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_lattics_diamond}{Lattics\+Diamond} 
+
+\Hypertarget{class_lattics_diamond_a9cc027715d7c141e4887addb6be1cee0}\index{LatticsDiamond@{LatticsDiamond}!````~LatticsDiamond@{\texorpdfstring{$\sim$}{\string~}LatticsDiamond}}
+\index{````~LatticsDiamond@{\texorpdfstring{$\sim$}{\string~}LatticsDiamond}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LatticsDiamond()}{\string~LatticsDiamond()}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_a9cc027715d7c141e4887addb6be1cee0} 
+Lattics\+Diamond\+::\texorpdfstring{$\sim$}{\string~}\+Lattics\+Diamond (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_lattics_diamond_a06076b797aebcc235441152975c0cc86}\index{LatticsDiamond@{LatticsDiamond}!createLattics@{createLattics}}
+\index{createLattics@{createLattics}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{createLattics()}{createLattics()}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_a06076b797aebcc235441152975c0cc86} 
+Double\+Paths Lattics\+Diamond\+::create\+Lattics (\begin{DoxyParamCaption}\item[{const int \&}]{layer\+Hei}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_lattics_abstract_a9952d84b2c1bb8abf292ec4269021593}{Lattics\+Abstract}}.
+
+\Hypertarget{class_lattics_diamond_a2b5910534cb61770a818221a2a4d2e5c}\index{LatticsDiamond@{LatticsDiamond}!getSpacing@{getSpacing}}
+\index{getSpacing@{getSpacing}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{getSpacing()}{getSpacing()}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_a2b5910534cb61770a818221a2a4d2e5c} 
+const float Lattics\+Diamond\+::get\+Spacing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_lattics_abstract_abfafe87a5f93034fd1183313a2bb070d}{Lattics\+Abstract}}.
+
+\Hypertarget{class_lattics_diamond_a6e368e8f7f6e73cc4a106aee9fc15556}\index{LatticsDiamond@{LatticsDiamond}!identifyLattices@{identifyLattices}}
+\index{identifyLattices@{identifyLattices}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{identifyLattices()}{identifyLattices()}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_a6e368e8f7f6e73cc4a106aee9fc15556} 
+void Lattics\+Diamond\+::identify\+Lattices (\begin{DoxyParamCaption}\item[{Paths \&}]{paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_lattics_diamond_a7c6c857f222c970c808f36a07d19da2d}\index{LatticsDiamond@{LatticsDiamond}!initLatticeParas@{initLatticeParas}}
+\index{initLatticeParas@{initLatticeParas}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{initLatticeParas()}{initLatticeParas()}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_a7c6c857f222c970c808f36a07d19da2d} 
+void Lattics\+Diamond\+::init\+Lattice\+Paras (\begin{DoxyParamCaption}\item[{const QJson\+Parsing \texorpdfstring{$\ast$}{*}}]{json\+Parsing}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{class_lattics_abstract_acd737ded37d8f09251fe712bbdb6cd5b}{Lattics\+Abstract}}.
+
+\Hypertarget{class_lattics_diamond_a0bd536c41f6acc949e64e3305385a45e}\index{LatticsDiamond@{LatticsDiamond}!moveDoublePath@{moveDoublePath}}
+\index{moveDoublePath@{moveDoublePath}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{moveDoublePath()}{moveDoublePath()}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_a0bd536c41f6acc949e64e3305385a45e} 
+void Lattics\+Diamond\+::move\+Double\+Path (\begin{DoxyParamCaption}\item[{Double\+Paths \&}]{paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private 
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_lattics_diamond_a3b9ca90964f85ab9b34862549a54f4d4}\index{LatticsDiamond@{LatticsDiamond}!d@{d}}
+\index{d@{d}!LatticsDiamond@{LatticsDiamond}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \label{class_lattics_diamond_a3b9ca90964f85ab9b34862549a54f4d4} 
+QShared\+Pointer$<$\mbox{\hyperlink{struct_lattics_diamond_1_1_priv}{Priv}}$>$ Lattics\+Diamond\+::d = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Lattice\+Module/\mbox{\hyperlink{latticsdiamond_8h}{latticsdiamond.\+h}}\item 
+Lattice\+Module/\mbox{\hyperlink{latticsdiamond_8cpp}{latticsdiamond.\+cpp}}\end{DoxyCompactItemize}

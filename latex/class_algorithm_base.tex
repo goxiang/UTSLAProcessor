@@ -1,0 +1,284 @@
+\doxysection{Algorithm\+Base类 参考}
+\hypertarget{class_algorithm_base}{}\label{class_algorithm_base}\index{AlgorithmBase@{AlgorithmBase}}
+
+
+{\ttfamily \#include $<$algorithmbase.\+h$>$}
+
+类 Algorithm\+Base 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_algorithm_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_algorithm_base_a6c012eecfcfb7f5153e3ae4f06b7711a}{calc\+Area\+List}} (const Paths \&, QList$<$ double $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calc\+Limit\+XY}} (const Paths \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a8998645a6bea53ae88f806b50f5e4596}{calc\+Limit\+XY}} (const QList$<$ AREAINFOPTR $>$ \&, BOUNDINGRECT \&, QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}list\+Rc=nullptr)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7821e946765fec4d451a2e114049ad78}{get\+All\+Paths}} (const QList$<$ AREAINFOPTR $>$ \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BOUNDINGRECT \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_a879a667ab059dad3ea046a86fb8239a4}{line\+Cross\+RC}} (const double \&, const double \&, const double \&, const double \&, const BDRECTPTR \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d}{sort\+Pt\+On\+Line}} (int, QList$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a72bf2bb77f0b6c0871cee660a439ad83}{sort\+Pt\+On\+Line}} (int, QVector$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_abf8b04e05f684ef526e22eb2f59ce646}{reduce\+Paths\+\_\+\+Inner}} (Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a2732f6394eaa7da3244d79ff85b2aa14}{add\+Paths\+\_\+\+Upper}} (Paths \&, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a7bd1ccc6ab88a3ce86f17e321e8ae035}{extend\+Borders}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af68be0a18c770ff3664af0ab8c5e8592}{get\+Surface\+Paths}} (Paths \&, int \&, Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}\mbox{[}$\,$\mbox{]}, const int \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb}{get\+Difference\+Paths}} (const Paths \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a44b731f2b864e5c489878d081b4738b4}{get\+Difference\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}{get\+Union\+Paths}} (const Path \&, const Path \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_af0f7669ea396b902400e1b1a41df1852}{get\+Union\+Paths}} (const Path \&, const Paths \&, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_ae8b0da12e239e7339f26def69ebe5332}{get\+Union\+Paths}} (const Paths \texorpdfstring{$\ast$}{*}, const Paths \texorpdfstring{$\ast$}{*}, Paths \&, const int \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, int n\+Offset, int n\+Reserved, int n\+Small\+Wall)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aece1510dce6a07c6068ae2296042ca17}{get\+Offset\+Paths}} (Paths \texorpdfstring{$\ast$}{*}, Paths \texorpdfstring{$\ast$}{*}, const double \&, const double \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a5ab9828cb248adf9091925402d15c718}{get\+Intersection\+Paths}} (const Paths \&, const Path \&, Paths \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a34ec030ea3f3eac56015f423b9fe6365}{get\+Intersection\+Paths}} (const Paths \&, const Paths \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_algorithm_base_af305c4ee4c37cd65d4c13a437632dae8}{line\+On\+Vec\+Splicing\+Line}} (int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, int64\+\_\+t, QVector$<$ \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_aa9a6849100e590a568bb11ff6b371992}{filte\+Small\+Border}} (const Paths \&, Paths \&, Paths \&, const double \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709}{scanner\+\_\+jump\+Pos}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a}{scanner\+\_\+out\+Line}} (const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_aec87785742d1a00a5f45989c419069fd}{scanner\+\_\+jump\+Pos}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae0496d41045e88fcc421efd778cbfeb7}{scanner\+\_\+out\+Line}} (const qint64 \&, const qint64 \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_a6355a54523d0af209e0d3d663472f401}{scanner\+\_\+plot\+Line}} (const int \&, const int \&, const int \&, const int \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_algorithm_base_ae772223adb17dffb76db2b454d807e18}{write\+Data\+To\+List}} (const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, const int64\+\_\+t \&, int64\+\_\+t \&, int64\+\_\+t \&, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_algorithm_base_ad95b97224398063c6a569ae15b1aa871}{calc\+Limit\+XY}} (const Path \&, BDRECTPTR \&)
+\item 
+void \mbox{\hyperlink{class_algorithm_base_a4c38d74d2d342cf694ec6ed01f14c922}{calc\+Limit\+XY}} (const AREAINFOPTR \&, BDRECTPTR \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Algorithm\+Base}
+提供基础的算法支持，包括几何计算、路径处理、扫描线生成等，独立类 
+\end{DoxyParagraph}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_algorithm_base_a2732f6394eaa7da3244d79ff85b2aa14}\index{AlgorithmBase@{AlgorithmBase}!addPaths\_Upper@{addPaths\_Upper}}
+\index{addPaths\_Upper@{addPaths\_Upper}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{addPaths\_Upper()}{addPaths\_Upper()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a2732f6394eaa7da3244d79ff85b2aa14} 
+void Algorithm\+Base\+::add\+Paths\+\_\+\+Upper (\begin{DoxyParamCaption}\item[{Paths \&}]{path\+\_\+target}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{path\+\_\+refer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a6c012eecfcfb7f5153e3ae4f06b7711a}\index{AlgorithmBase@{AlgorithmBase}!calcAreaList@{calcAreaList}}
+\index{calcAreaList@{calcAreaList}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{calcAreaList()}{calcAreaList()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a6c012eecfcfb7f5153e3ae4f06b7711a} 
+double Algorithm\+Base\+::calc\+Area\+List (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{QList$<$ double $>$ \&}]{lp\+Area\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a4c38d74d2d342cf694ec6ed01f14c922}\index{AlgorithmBase@{AlgorithmBase}!calcLimitXY@{calcLimitXY}}
+\index{calcLimitXY@{calcLimitXY}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{calcLimitXY()}{calcLimitXY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a4c38d74d2d342cf694ec6ed01f14c922} 
+void Algorithm\+Base\+::calc\+Limit\+XY (\begin{DoxyParamCaption}\item[{const AREAINFOPTR \&}]{area}{, }\item[{BDRECTPTR \&}]{rc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_base_ad95b97224398063c6a569ae15b1aa871}\index{AlgorithmBase@{AlgorithmBase}!calcLimitXY@{calcLimitXY}}
+\index{calcLimitXY@{calcLimitXY}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{calcLimitXY()}{calcLimitXY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_ad95b97224398063c6a569ae15b1aa871} 
+void Algorithm\+Base\+::calc\+Limit\+XY (\begin{DoxyParamCaption}\item[{const Path \&}]{path}{, }\item[{BDRECTPTR \&}]{rc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}\index{AlgorithmBase@{AlgorithmBase}!calcLimitXY@{calcLimitXY}}
+\index{calcLimitXY@{calcLimitXY}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{calcLimitXY()}{calcLimitXY()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a89740e31755f5675070b7acb295ec42b} 
+void Algorithm\+Base\+::calc\+Limit\+XY (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{BOUNDINGRECT \&}]{bd\+RC}{, }\item[{QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}}]{list\+Rc}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a8998645a6bea53ae88f806b50f5e4596}\index{AlgorithmBase@{AlgorithmBase}!calcLimitXY@{calcLimitXY}}
+\index{calcLimitXY@{calcLimitXY}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{calcLimitXY()}{calcLimitXY()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a8998645a6bea53ae88f806b50f5e4596} 
+void Algorithm\+Base\+::calc\+Limit\+XY (\begin{DoxyParamCaption}\item[{const QList$<$ AREAINFOPTR $>$ \&}]{list\+Area}{, }\item[{BOUNDINGRECT \&}]{bd\+RC}{, }\item[{QList$<$ BDRECTPTR $>$ \texorpdfstring{$\ast$}{*}}]{list\+Rc}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a7bd1ccc6ab88a3ce86f17e321e8ae035}\index{AlgorithmBase@{AlgorithmBase}!extendBorders@{extendBorders}}
+\index{extendBorders@{extendBorders}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{extendBorders()}{extendBorders()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a7bd1ccc6ab88a3ce86f17e321e8ae035} 
+void Algorithm\+Base\+::extend\+Borders (\begin{DoxyParamCaption}\item[{Paths \texorpdfstring{$\ast$}{*}}]{path\+\_\+refer}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{path\+\_\+\+Src}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{extend\+Borders}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_aa9a6849100e590a568bb11ff6b371992}\index{AlgorithmBase@{AlgorithmBase}!filteSmallBorder@{filteSmallBorder}}
+\index{filteSmallBorder@{filteSmallBorder}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{filteSmallBorder()}{filteSmallBorder()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_aa9a6849100e590a568bb11ff6b371992} 
+void Algorithm\+Base\+::filte\+Small\+Border (\begin{DoxyParamCaption}\item[{const Paths \&}]{src}{, }\item[{Paths \&}]{remained}{, }\item[{Paths \&}]{filte\+Out}{, }\item[{const double \&}]{area\+Limit}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a7821e946765fec4d451a2e114049ad78}\index{AlgorithmBase@{AlgorithmBase}!getAllPaths@{getAllPaths}}
+\index{getAllPaths@{getAllPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getAllPaths()}{getAllPaths()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a7821e946765fec4d451a2e114049ad78} 
+void Algorithm\+Base\+::get\+All\+Paths (\begin{DoxyParamCaption}\item[{const QList$<$ AREAINFOPTR $>$ \&}]{list\+Area}{, }\item[{Paths \&}]{paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb}\index{AlgorithmBase@{AlgorithmBase}!getDifferencePaths@{getDifferencePaths}}
+\index{getDifferencePaths@{getDifferencePaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getDifferencePaths()}{getDifferencePaths()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb} 
+void Algorithm\+Base\+::get\+Difference\+Paths (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{const Path \&}]{sub\+Path}{, }\item[{Paths \&}]{target\+Paths}{, }\item[{const int \&}]{n\+Small\+Wall}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a44b731f2b864e5c489878d081b4738b4}\index{AlgorithmBase@{AlgorithmBase}!getDifferencePaths@{getDifferencePaths}}
+\index{getDifferencePaths@{getDifferencePaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getDifferencePaths()}{getDifferencePaths()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a44b731f2b864e5c489878d081b4738b4} 
+void Algorithm\+Base\+::get\+Difference\+Paths (\begin{DoxyParamCaption}\item[{const Paths \texorpdfstring{$\ast$}{*}}]{cur\+Paths}{, }\item[{const Paths \texorpdfstring{$\ast$}{*}}]{sub\+Paths}{, }\item[{Paths \&}]{target\+Paths}{, }\item[{const int \&}]{n\+Small\+Wall}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a5ab9828cb248adf9091925402d15c718}\index{AlgorithmBase@{AlgorithmBase}!getIntersectionPaths@{getIntersectionPaths}}
+\index{getIntersectionPaths@{getIntersectionPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getIntersectionPaths()}{getIntersectionPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a5ab9828cb248adf9091925402d15c718} 
+void Algorithm\+Base\+::get\+Intersection\+Paths (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{const Path \&}]{sub\+Paths}{, }\item[{Paths \&}]{target\+Paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a34ec030ea3f3eac56015f423b9fe6365}\index{AlgorithmBase@{AlgorithmBase}!getIntersectionPaths@{getIntersectionPaths}}
+\index{getIntersectionPaths@{getIntersectionPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getIntersectionPaths()}{getIntersectionPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a34ec030ea3f3eac56015f423b9fe6365} 
+void Algorithm\+Base\+::get\+Intersection\+Paths (\begin{DoxyParamCaption}\item[{const Paths \&}]{cur\+Paths}{, }\item[{const Paths \&}]{sub\+Paths}{, }\item[{Paths \&}]{target\+Paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7}\index{AlgorithmBase@{AlgorithmBase}!getOffsetPaths@{getOffsetPaths}}
+\index{getOffsetPaths@{getOffsetPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getOffsetPaths()}{getOffsetPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7} 
+void Algorithm\+Base\+::get\+Offset\+Paths (\begin{DoxyParamCaption}\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Src}{, }\item[{int}]{n\+Offset}{, }\item[{int}]{n\+Reserved}{, }\item[{int}]{n\+Small\+Wall}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_aece1510dce6a07c6068ae2296042ca17}\index{AlgorithmBase@{AlgorithmBase}!getOffsetPaths@{getOffsetPaths}}
+\index{getOffsetPaths@{getOffsetPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getOffsetPaths()}{getOffsetPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_aece1510dce6a07c6068ae2296042ca17} 
+void Algorithm\+Base\+::get\+Offset\+Paths (\begin{DoxyParamCaption}\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Src}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Tar}{, }\item[{const double \&}]{n\+Offset}{, }\item[{const double \&}]{n\+Reserved}{, }\item[{const double \&}]{n\+Small\+Wall}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_af68be0a18c770ff3664af0ab8c5e8592}\index{AlgorithmBase@{AlgorithmBase}!getSurfacePaths@{getSurfacePaths}}
+\index{getSurfacePaths@{getSurfacePaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getSurfacePaths()}{getSurfacePaths()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_af68be0a18c770ff3664af0ab8c5e8592} 
+void Algorithm\+Base\+::get\+Surface\+Paths (\begin{DoxyParamCaption}\item[{Paths \&}]{target\+Paths}{, }\item[{int \&}]{n\+Surface\+Index}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{cur\+Paths}{, }\item[{Paths \texorpdfstring{$\ast$}{*}}]{lp\+Paths}{\mbox{[}$\,$\mbox{]}, }\item[{const int \&}]{n\+Small\+Wall}{, }\item[{const int \&}]{n\+Surface\+Cnt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}\index{AlgorithmBase@{AlgorithmBase}!getUnionPaths@{getUnionPaths}}
+\index{getUnionPaths@{getUnionPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getUnionPaths()}{getUnionPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a0cbc48894224831334c91991c9b4160d} 
+void Algorithm\+Base\+::get\+Union\+Paths (\begin{DoxyParamCaption}\item[{const Path \&}]{cur\+Path}{, }\item[{const Path \&}]{sub\+Path}{, }\item[{Paths \&}]{target\+Paths}{, }\item[{const int \&}]{n\+Small\+Wall}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_af0f7669ea396b902400e1b1a41df1852}\index{AlgorithmBase@{AlgorithmBase}!getUnionPaths@{getUnionPaths}}
+\index{getUnionPaths@{getUnionPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getUnionPaths()}{getUnionPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_af0f7669ea396b902400e1b1a41df1852} 
+void Algorithm\+Base\+::get\+Union\+Paths (\begin{DoxyParamCaption}\item[{const Path \&}]{cur\+Path}{, }\item[{const Paths \&}]{sub\+Paths}{, }\item[{Paths \&}]{target\+Paths}{, }\item[{const int \&}]{n\+Small\+Wall}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_ae8b0da12e239e7339f26def69ebe5332}\index{AlgorithmBase@{AlgorithmBase}!getUnionPaths@{getUnionPaths}}
+\index{getUnionPaths@{getUnionPaths}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{getUnionPaths()}{getUnionPaths()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_ae8b0da12e239e7339f26def69ebe5332} 
+void Algorithm\+Base\+::get\+Union\+Paths (\begin{DoxyParamCaption}\item[{const Paths \texorpdfstring{$\ast$}{*}}]{cur\+Paths}{, }\item[{const Paths \texorpdfstring{$\ast$}{*}}]{sub\+Paths}{, }\item[{Paths \&}]{target\+Paths}{, }\item[{const int \&}]{n\+Small\+Wall}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a879a667ab059dad3ea046a86fb8239a4}\index{AlgorithmBase@{AlgorithmBase}!lineCrossRC@{lineCrossRC}}
+\index{lineCrossRC@{lineCrossRC}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{lineCrossRC()}{lineCrossRC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a879a667ab059dad3ea046a86fb8239a4} 
+bool Algorithm\+Base\+::line\+Cross\+RC (\begin{DoxyParamCaption}\item[{const double \&}]{X1}{, }\item[{const double \&}]{Y1}{, }\item[{const double \&}]{X2}{, }\item[{const double \&}]{Y2}{, }\item[{const BDRECTPTR \&}]{rc\+Ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419}\index{AlgorithmBase@{AlgorithmBase}!lineCrossRC@{lineCrossRC}}
+\index{lineCrossRC@{lineCrossRC}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{lineCrossRC()}{lineCrossRC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419} 
+bool Algorithm\+Base\+::line\+Cross\+RC (\begin{DoxyParamCaption}\item[{const double \&}]{}{, }\item[{const double \&}]{}{, }\item[{const double \&}]{}{, }\item[{const double \&}]{}{, }\item[{const BOUNDINGRECT \&}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_af305c4ee4c37cd65d4c13a437632dae8}\index{AlgorithmBase@{AlgorithmBase}!lineOnVecSplicingLine@{lineOnVecSplicingLine}}
+\index{lineOnVecSplicingLine@{lineOnVecSplicingLine}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{lineOnVecSplicingLine()}{lineOnVecSplicingLine()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_af305c4ee4c37cd65d4c13a437632dae8} 
+bool Algorithm\+Base\+::line\+On\+Vec\+Splicing\+Line (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{x1}{, }\item[{int64\+\_\+t}]{y1}{, }\item[{int64\+\_\+t}]{x2}{, }\item[{int64\+\_\+t}]{y2}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}} $>$ \&}]{vec\+Splicing\+Line}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_abf8b04e05f684ef526e22eb2f59ce646}\index{AlgorithmBase@{AlgorithmBase}!reducePaths\_Inner@{reducePaths\_Inner}}
+\index{reducePaths\_Inner@{reducePaths\_Inner}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{reducePaths\_Inner()}{reducePaths\_Inner()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_abf8b04e05f684ef526e22eb2f59ce646} 
+void Algorithm\+Base\+::reduce\+Paths\+\_\+\+Inner (\begin{DoxyParamCaption}\item[{Paths \&}]{paths\+\_\+target}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709}\index{AlgorithmBase@{AlgorithmBase}!scanner\_jumpPos@{scanner\_jumpPos}}
+\index{scanner\_jumpPos@{scanner\_jumpPos}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{scanner\_jumpPos()}{scanner\_jumpPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709} 
+void Algorithm\+Base\+::scanner\+\_\+jump\+Pos (\begin{DoxyParamCaption}\item[{const int \&}]{X}{, }\item[{const int \&}]{Y}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_algorithm_base_aec87785742d1a00a5f45989c419069fd}\index{AlgorithmBase@{AlgorithmBase}!scanner\_jumpPos@{scanner\_jumpPos}}
+\index{scanner\_jumpPos@{scanner\_jumpPos}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{scanner\_jumpPos()}{scanner\_jumpPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_aec87785742d1a00a5f45989c419069fd} 
+void Algorithm\+Base\+::scanner\+\_\+jump\+Pos (\begin{DoxyParamCaption}\item[{const qint64 \&}]{X}{, }\item[{const qint64 \&}]{Y}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a}\index{AlgorithmBase@{AlgorithmBase}!scanner\_outLine@{scanner\_outLine}}
+\index{scanner\_outLine@{scanner\_outLine}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{scanner\_outLine()}{scanner\_outLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a} 
+void Algorithm\+Base\+::scanner\+\_\+out\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{X}{, }\item[{const int \&}]{Y}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_algorithm_base_ae0496d41045e88fcc421efd778cbfeb7}\index{AlgorithmBase@{AlgorithmBase}!scanner\_outLine@{scanner\_outLine}}
+\index{scanner\_outLine@{scanner\_outLine}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{scanner\_outLine()}{scanner\_outLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_ae0496d41045e88fcc421efd778cbfeb7} 
+void Algorithm\+Base\+::scanner\+\_\+out\+Line (\begin{DoxyParamCaption}\item[{const qint64 \&}]{X}{, }\item[{const qint64 \&}]{Y}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_algorithm_base_a6355a54523d0af209e0d3d663472f401}\index{AlgorithmBase@{AlgorithmBase}!scanner\_plotLine@{scanner\_plotLine}}
+\index{scanner\_plotLine@{scanner\_plotLine}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{scanner\_plotLine()}{scanner\_plotLine()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a6355a54523d0af209e0d3d663472f401} 
+void Algorithm\+Base\+::scanner\+\_\+plot\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{X1}{, }\item[{const int \&}]{Y1}{, }\item[{const int \&}]{X2}{, }\item[{const int \&}]{Y2}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d}\index{AlgorithmBase@{AlgorithmBase}!sortPtOnLine@{sortPtOnLine}}
+\index{sortPtOnLine@{sortPtOnLine}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{sortPtOnLine()}{sortPtOnLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d} 
+void Algorithm\+Base\+::sort\+Pt\+On\+Line (\begin{DoxyParamCaption}\item[{int}]{n\+Sort\+Type}{, }\item[{QList$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&}]{list\+Expect\+Pt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_a72bf2bb77f0b6c0871cee660a439ad83}\index{AlgorithmBase@{AlgorithmBase}!sortPtOnLine@{sortPtOnLine}}
+\index{sortPtOnLine@{sortPtOnLine}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{sortPtOnLine()}{sortPtOnLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_algorithm_base_a72bf2bb77f0b6c0871cee660a439ad83} 
+void Algorithm\+Base\+::sort\+Pt\+On\+Line (\begin{DoxyParamCaption}\item[{int}]{n\+Sort\+Type}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \&}]{list\+Expect\+Pt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_algorithm_base_ae772223adb17dffb76db2b454d807e18}\index{AlgorithmBase@{AlgorithmBase}!writeDataToList@{writeDataToList}}
+\index{writeDataToList@{writeDataToList}!AlgorithmBase@{AlgorithmBase}}
+\doxysubsubsection{\texorpdfstring{writeDataToList()}{writeDataToList()}}
+{\footnotesize\ttfamily \label{class_algorithm_base_ae772223adb17dffb76db2b454d807e18} 
+void Algorithm\+Base\+::write\+Data\+To\+List (\begin{DoxyParamCaption}\item[{const int64\+\_\+t \&}]{n\+LastX}{, }\item[{const int64\+\_\+t \&}]{n\+LastY}{, }\item[{const int64\+\_\+t \&}]{n\+CurX}{, }\item[{const int64\+\_\+t \&}]{n\+CurY}{, }\item[{int64\+\_\+t \&}]{n\+List\+\_\+\+LastX}{, }\item[{int64\+\_\+t \&}]{n\+List\+\_\+\+LastY}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLine}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algorithmbase_8h}{algorithmbase.\+h}}\item 
+\mbox{\hyperlink{algorithmbase_8cpp}{algorithmbase.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\doxysection{UTSLAProcessor类 参考}
+\hypertarget{class_u_t_s_l_a_processor}{}\label{class_u_t_s_l_a_processor}\index{UTSLAProcessor@{UTSLAProcessor}}
+
+
+{\ttfamily \#include $<$utslaprocessor.\+h$>$}
+
+类 UTSLAProcessor 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_t_s_l_a_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_t_s_l_a_processor_ae26eea20ae22f529b93264fbe3199712}{UTSLAProcessor}} ()
+\item 
+\mbox{\hyperlink{class_u_t_s_l_a_processor_a89ca820af51a47cdc1294d2ef16d7481}{\texorpdfstring{$\sim$}{\string~}\+UTSLAProcessor}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_a6cf3ad901d00abcf7253e65aad082e75}{processing}} (int, int, const QJson\+Object \&)
+\item 
+void \mbox{\hyperlink{class_u_t_s_l_a_processor_abef75b6b5088def784472baac61081af}{stop\+Build\+Processing}} ()
+\item 
+bool \mbox{\hyperlink{class_u_t_s_l_a_processor_a296ff544c3b9babf5de72a5ce4fb6771}{load\+Parameters}} (const QString \&, const QString \&)
+\item 
+bool \mbox{\hyperlink{class_u_t_s_l_a_processor_a39643f4aa017f6342815e88d4869e50f}{replace\+Prameters}} (const QJson\+Object \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessor\+Private}} $>$ \mbox{\hyperlink{class_u_t_s_l_a_processor_ae291dbbcd13035b849246084e382992a}{d\+\_\+ptr}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_u_t_s_l_a_processor_aa99af7976873dfad34d605ab8c3fb96b}{Divider\+Processor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: UTSLAProcessor}
+核心处理类，继承自\+UTBPProcess\+Base 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_u_t_s_l_a_processor_ae26eea20ae22f529b93264fbe3199712}\index{UTSLAProcessor@{UTSLAProcessor}!UTSLAProcessor@{UTSLAProcessor}}
+\index{UTSLAProcessor@{UTSLAProcessor}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{UTSLAProcessor()}{UTSLAProcessor()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_ae26eea20ae22f529b93264fbe3199712} 
+UTSLAProcessor\+::\+UTSLAProcessor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_a89ca820af51a47cdc1294d2ef16d7481}\index{UTSLAProcessor@{UTSLAProcessor}!````~UTSLAProcessor@{\texorpdfstring{$\sim$}{\string~}UTSLAProcessor}}
+\index{````~UTSLAProcessor@{\texorpdfstring{$\sim$}{\string~}UTSLAProcessor}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}UTSLAProcessor()}{\string~UTSLAProcessor()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_a89ca820af51a47cdc1294d2ef16d7481} 
+UTSLAProcessor\+::\texorpdfstring{$\sim$}{\string~}\+UTSLAProcessor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_u_t_s_l_a_processor_a296ff544c3b9babf5de72a5ce4fb6771}\index{UTSLAProcessor@{UTSLAProcessor}!loadParameters@{loadParameters}}
+\index{loadParameters@{loadParameters}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{loadParameters()}{loadParameters()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_a296ff544c3b9babf5de72a5ce4fb6771} 
+bool UTSLAProcessor\+::load\+Parameters (\begin{DoxyParamCaption}\item[{const QString \&}]{str\+Bpp\+Path}{, }\item[{const QString \&}]{str\+Ini\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_a6cf3ad901d00abcf7253e65aad082e75}\index{UTSLAProcessor@{UTSLAProcessor}!processing@{processing}}
+\index{processing@{processing}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{processing()}{processing()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_a6cf3ad901d00abcf7253e65aad082e75} 
+void UTSLAProcessor\+::processing (\begin{DoxyParamCaption}\item[{int}]{n\+SLayer}{, }\item[{int}]{n\+ELayer}{, }\item[{const QJson\+Object \&}]{json\+Obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_a39643f4aa017f6342815e88d4869e50f}\index{UTSLAProcessor@{UTSLAProcessor}!replacePrameters@{replacePrameters}}
+\index{replacePrameters@{replacePrameters}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{replacePrameters()}{replacePrameters()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_a39643f4aa017f6342815e88d4869e50f} 
+bool UTSLAProcessor\+::replace\+Prameters (\begin{DoxyParamCaption}\item[{const QJson\+Object \&}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_u_t_s_l_a_processor_abef75b6b5088def784472baac61081af}\index{UTSLAProcessor@{UTSLAProcessor}!stopBuildProcessing@{stopBuildProcessing}}
+\index{stopBuildProcessing@{stopBuildProcessing}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{stopBuildProcessing()}{stopBuildProcessing()}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_abef75b6b5088def784472baac61081af} 
+void UTSLAProcessor\+::stop\+Build\+Processing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{友元及相关符号说明}
+\Hypertarget{class_u_t_s_l_a_processor_aa99af7976873dfad34d605ab8c3fb96b}\index{UTSLAProcessor@{UTSLAProcessor}!DividerProcessor@{DividerProcessor}}
+\index{DividerProcessor@{DividerProcessor}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{DividerProcessor}{DividerProcessor}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_aa99af7976873dfad34d605ab8c3fb96b} 
+friend class \mbox{\hyperlink{class_divider_processor}{Divider\+Processor}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_u_t_s_l_a_processor_ae291dbbcd13035b849246084e382992a}\index{UTSLAProcessor@{UTSLAProcessor}!d\_ptr@{d\_ptr}}
+\index{d\_ptr@{d\_ptr}!UTSLAProcessor@{UTSLAProcessor}}
+\doxysubsubsection{\texorpdfstring{d\_ptr}{d\_ptr}}
+{\footnotesize\ttfamily \label{class_u_t_s_l_a_processor_ae291dbbcd13035b849246084e382992a} 
+QShared\+Pointer$<$\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessor\+Private}}$>$ UTSLAProcessor\+::d\+\_\+ptr = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{utslaprocessor_8h}{utslaprocessor.\+h}}\item 
+\mbox{\hyperlink{utslaprocessor_8cpp}{utslaprocessor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+\doxysection{Lattice\+Module/latticeinterface.h 文件参考}
+\hypertarget{latticeinterface_8h}{}\label{latticeinterface_8h}\index{LatticeModule/latticeinterface.h@{LatticeModule/latticeinterface.h}}
+{\ttfamily \#include "{}qjsonparsing.\+h"{}}\newline
+{\ttfamily \#include "{}clipper.\+hpp"{}}\newline
+{\ttfamily \#include $<$QThread$>$}\newline
+{\ttfamily \#include $<$QSemaphore$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_lattice_interface}{Lattice\+Interface}}
+\item 
+struct \mbox{\hyperlink{struct_lattice_info}{Lattice\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_lattice_path_info}{Lattice\+Path\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_lattice_layer_info}{Lattice\+Layer\+Info}}
+\item 
+class \mbox{\hyperlink{class_thread_runner}{Thread\+Runner}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{latticeinterface_8h_a4d2e9f87d0a981661cad80a103dbc9af}{operator==}} (const \mbox{\hyperlink{struct_lattice_info}{Lattice\+Info}} \&lhs, const \mbox{\hyperlink{struct_lattice_info}{Lattice\+Info}} \&rhs)
+\item 
+uint \mbox{\hyperlink{latticeinterface_8h_ab74b27d693a609c0f188c96b641c6eda}{q\+Hash}} (\mbox{\hyperlink{struct_lattice_info}{Lattice\+Info}} key, uint seed=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{latticeinterface_8h_a4d2e9f87d0a981661cad80a103dbc9af}\index{latticeinterface.h@{latticeinterface.h}!operator==@{operator==}}
+\index{operator==@{operator==}!latticeinterface.h@{latticeinterface.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{latticeinterface_8h_a4d2e9f87d0a981661cad80a103dbc9af} 
+bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_lattice_info}{Lattice\+Info}} \&}]{lhs}{, }\item[{const \mbox{\hyperlink{struct_lattice_info}{Lattice\+Info}} \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{latticeinterface_8h_ab74b27d693a609c0f188c96b641c6eda}\index{latticeinterface.h@{latticeinterface.h}!qHash@{qHash}}
+\index{qHash@{qHash}!latticeinterface.h@{latticeinterface.h}}
+\doxysubsubsection{\texorpdfstring{qHash()}{qHash()}}
+{\footnotesize\ttfamily \label{latticeinterface_8h_ab74b27d693a609c0f188c96b641c6eda} 
+uint q\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lattice_info}{Lattice\+Info}}}]{key}{, }\item[{uint}]{seed}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

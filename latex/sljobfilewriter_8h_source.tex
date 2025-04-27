@@ -1,0 +1,82 @@
+\doxysection{sljobfilewriter.\+h}
+\hypertarget{sljobfilewriter_8h_source}{}\label{sljobfilewriter_8h_source}\mbox{\hyperlink{sljobfilewriter_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SLJOBFILEWRITER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SLJOBFILEWRITER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{uspfilewriter_8h}{uspfilewriter.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}qjsonparsing.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{writejfile_8h}{writejfile.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_j_file_def}{JFileDef}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }JFileLayerInfo;}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }QXmlStreamWriter;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_block_info}{BlockInfo}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ QSharedPointer<BlockInfo>\ \mbox{\hyperlink{sljobfilewriter_8h_adc35c25bf958260eba3d0e69d2f2a76a}{BlockInfoPtr}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_layer}{Layer}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_layer_a71453e22c90d67d831a83a8f07160ea2}{Z}}\ =\ 0;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_layer_a9278da2ee42a1e528807a47a57f45d29}{\_totalArea}}\ =\ 0.0f;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_layer_a89eca810c18e60753d4fa6d70a224a67}{fMinX}}\ =\ FLT\_MAX;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_layer_a79abb712b79013018ea24da1fb79c2c0}{fMinY}}\ =\ FLT\_MAX;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_layer_a6d929c92e92b29a1eb32fd0d1301772d}{fMaxX}}\ =\ FLT\_MIN;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_layer_ab67b77473c9ff8c20b5ee93fbf221855}{fMaxY}}\ =\ FLT\_MIN;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_layer_ac18d95b8e4456ad0d83f036ed7239033}{fCenterX}}\ =\ 0.0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_layer_a410366bac8a78a143191dc1f687dec3d}{fCenterY}}\ =\ 0.0;}
+\DoxyCodeLine{00025\ \ \ \ \ QList<BlockInfoPtr>\ \mbox{\hyperlink{struct_layer_a2b86e4b0c16fc9ec6cd6431edee0c02f}{blockList}};}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_bin_file}{BinFile}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ QString\ \mbox{\hyperlink{struct_bin_file_a266da769850bef79aea80ee9257c6d24}{strFileName}};}
+\DoxyCodeLine{00030\ \ \ \ \ QMap<int,\ Layer>\ \mbox{\hyperlink{struct_bin_file_ad73604c29471e79d7f8dc44f3d72c1f3}{layerMap}};}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_job_file_writer_a03562a6bc8febf0f6b93df05fe117235}{SLJobFileWriter}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_file_writer_ae4dd90b95298451fc84d753b987ddc82}{FileWriter}}}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_s_l_job_file_writer_a03562a6bc8febf0f6b93df05fe117235}{SLJobFileWriter}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_s_l_job_file_writer_a3d77507c520df878ff17554d0cb2de6d}{\string~SLJobFileWriter}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_l_job_file_writer_a48bf2526889dc4e580148560f4314168}{initFileWrite}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_ade9eeecf8c1ae45a964b48bbffaaf4d6}{startBuffWriter}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_aaf246cddd4e012beccb3a7822ecef4ce}{waitBuffWriter}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_adc8c2feb57ef6bd715003f3ef2a7d60d}{writeLayerInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ BOUNDINGRECT\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_ab4c537a6e834ff636cecde0374dccd17}{createUSPFile}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ BOUNDINGBOX\ *,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QJsonObject\ \&);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_s_l_job_file_writer_adc1cd6cdd6e1b2163b6b4ca358cd6776}{getBufPara}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_s_l_job_file_writer_a30f7b9ba8457aee013616241650cea77}{buffPara}};\ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_algorithm_application}{AlgorithmApplication}}\ *\mbox{\hyperlink{class_s_l_job_file_writer_a3e46e82fab743f53107b10e4f8618a34}{algo}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_s_l_job_file_writer_a05ab6eba1d2536fccfe65620aea4c9c0}{algorithm}};\ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_a1ed835e00c399109941cf100c521b021}{setScannerIndex}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_a20b23acedf6cb225e6299b91badebf85}{createJFileContentXml}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QStringList\ \&,\ \textcolor{keyword}{const}\ QString\ \&,}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QSharedPointer<WriterBufferParas>\ \&);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_a64616fa5021248cb5d7b6e4a208c2b53}{createJFileMetaDataXML}}(\textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QStringList\ \&,\ \textcolor{keyword}{const}\ QString\ \&,}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QSharedPointer<WriterBufferParas>\ \&);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_aee574b5bc31d85a0984bfc0ac57200d5}{addBinFileToContentXML}}(QXmlStreamWriter\ *,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ QString\ \&);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_af9ed5fc286b770962ad302f93356af7e}{addParemeterToMetaDataXML}}(QXmlStreamWriter\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_a56d5d26a5696d07c7b4dfdec2aa23f3c}{addBinFileToMetaDataXML}}(QXmlStreamWriter\ *,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ qint64\ \&);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_a7fbdc7731ae31e464efc96aad278fa08}{addPartToMetaDataXML}}(QXmlStreamWriter\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \&);}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_a5ede2ccf281ad9b9bff39503cc4f71b2}{addBlockToMetaDataXML}}(QXmlStreamWriter\ *,\ \textcolor{keyword}{const}\ QString\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{sljobfilewriter_8h_adc35c25bf958260eba3d0e69d2f2a76a}{BlockInfoPtr}}\ \&);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_job_file_writer_a4a6c90a16f9bf4b95856961b1257f745}{loadJsonFiles}}(\textcolor{keyword}{const}\ QString\ \&path,\ \textcolor{keyword}{const}\ QStringList\ \&,\ QList<BinFile>\ \&,\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_s_l_job_file_writer_ac7da9cb334549b7d54bf955d6bcc4d24}{getVectorType}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_write_j_file}{WriteJFile}}\ *\mbox{\hyperlink{class_s_l_job_file_writer_a4da660fdb084fd6edb33539d2486d745}{fileWriter}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_s_l_job_file_writer_a30f7b9ba8457aee013616241650cea77}{buffPara}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_algorithm_application}{AlgorithmApplication}}\ *\mbox{\hyperlink{class_s_l_job_file_writer_a05ab6eba1d2536fccfe65620aea4c9c0}{algorithm}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ JFileDef::JFileLayerInfo\ *\mbox{\hyperlink{class_s_l_job_file_writer_ab80ac82541eaabb49ea0b26fce836adb}{curLayerInfo}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00078\ \ \ \ \ QMap<int,\ QSharedPointer<JFileDef::JFileLayerInfo>>\ \mbox{\hyperlink{class_s_l_job_file_writer_ab7c3324cd9a51c4f5a0ae532355a33f1}{layerInfoPtrMap}};}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SLJOBFILEWRITER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: LatticeModule/latticsdiamond.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('latticsdiamond_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">latticsdiamond.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="latticsdiamond_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LATTICSDIAMOND_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LATTICSDIAMOND_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="latticsabstract_8h.html">latticsabstract.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_lattics_diamond.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="class_lattics_diamond.html#af819f7a66ffee6886337386422c8d0cb">LatticsDiamond</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_lattics_abstract.html#a2c75701f91fb7ad4f27eef711ac62841">LatticsAbstract</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="class_lattics_diamond.html#af819f7a66ffee6886337386422c8d0cb">LatticsDiamond</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_lattics_diamond.html#a9cc027715d7c141e4887addb6be1cee0">~LatticsDiamond</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lattics_diamond.html#a7c6c857f222c970c808f36a07d19da2d">initLatticeParas</a>(<span class="keyword">const</span> QJsonParsing *) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    DoublePaths <a class="code hl_function" href="class_lattics_diamond.html#a06076b797aebcc235441152975c0cc86">createLattics</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lattics_diamond.html#a6e368e8f7f6e73cc4a106aee9fc15556">identifyLattices</a>(Paths &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_lattics_diamond.html#a2b5910534cb61770a818221a2a4d2e5c">getSpacing</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lattics_diamond.html#a0bd536c41f6acc949e64e3305385a45e">moveDoublePath</a>(DoublePaths &amp;);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_lattics_diamond_1_1_priv.html">Priv</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_lattics_diamond.html#a3b9ca90964f85ab9b34862549a54f4d4">   26</a></span>    QSharedPointer&lt;Priv&gt; <a class="code hl_variable" href="class_lattics_diamond.html#a3b9ca90964f85ab9b34862549a54f4d4">d</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">// LATTICSDIAMOND_H</span></div>
+<div class="ttc" id="aclass_lattics_abstract_html_a2c75701f91fb7ad4f27eef711ac62841"><div class="ttname"><a href="class_lattics_abstract.html#a2c75701f91fb7ad4f27eef711ac62841">LatticsAbstract::LatticsAbstract</a></div><div class="ttdeci">LatticsAbstract()=default</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_a06076b797aebcc235441152975c0cc86"><div class="ttname"><a href="class_lattics_diamond.html#a06076b797aebcc235441152975c0cc86">LatticsDiamond::createLattics</a></div><div class="ttdeci">DoublePaths createLattics(const int &amp;) override</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:266</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_a0bd536c41f6acc949e64e3305385a45e"><div class="ttname"><a href="class_lattics_diamond.html#a0bd536c41f6acc949e64e3305385a45e">LatticsDiamond::moveDoublePath</a></div><div class="ttdeci">void moveDoublePath(DoublePaths &amp;)</div><div class="ttdoc">Private</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:304</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_a2b5910534cb61770a818221a2a4d2e5c"><div class="ttname"><a href="class_lattics_diamond.html#a2b5910534cb61770a818221a2a4d2e5c">LatticsDiamond::getSpacing</a></div><div class="ttdeci">const float getSpacing() const override</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:298</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_a3b9ca90964f85ab9b34862549a54f4d4"><div class="ttname"><a href="class_lattics_diamond.html#a3b9ca90964f85ab9b34862549a54f4d4">LatticsDiamond::d</a></div><div class="ttdeci">QSharedPointer&lt; Priv &gt; d</div><div class="ttdef"><b>定义</b> latticsdiamond.h:26</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_a6e368e8f7f6e73cc4a106aee9fc15556"><div class="ttname"><a href="class_lattics_diamond.html#a6e368e8f7f6e73cc4a106aee9fc15556">LatticsDiamond::identifyLattices</a></div><div class="ttdeci">void identifyLattices(Paths &amp;) override</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:282</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_a7c6c857f222c970c808f36a07d19da2d"><div class="ttname"><a href="class_lattics_diamond.html#a7c6c857f222c970c808f36a07d19da2d">LatticsDiamond::initLatticeParas</a></div><div class="ttdeci">void initLatticeParas(const QJsonParsing *) override</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:60</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_a9cc027715d7c141e4887addb6be1cee0"><div class="ttname"><a href="class_lattics_diamond.html#a9cc027715d7c141e4887addb6be1cee0">LatticsDiamond::~LatticsDiamond</a></div><div class="ttdeci">~LatticsDiamond() override</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:38</div></div>
+<div class="ttc" id="aclass_lattics_diamond_html_af819f7a66ffee6886337386422c8d0cb"><div class="ttname"><a href="class_lattics_diamond.html#af819f7a66ffee6886337386422c8d0cb">LatticsDiamond::LatticsDiamond</a></div><div class="ttdeci">LatticsDiamond()</div><div class="ttdoc">LatticsDiamond</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:36</div></div>
+<div class="ttc" id="alatticsabstract_8h_html"><div class="ttname"><a href="latticsabstract_8h.html">latticsabstract.h</a></div></div>
+<div class="ttc" id="astruct_lattics_diamond_1_1_priv_html"><div class="ttname"><a href="struct_lattics_diamond_1_1_priv.html">LatticsDiamond::Priv</a></div><div class="ttdoc">LatticsDiamond::Priv</div><div class="ttdef"><b>定义</b> latticsdiamond.cpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2d59634db459b6f6f5769e846d2d1215.html">LatticeModule</a></li><li class="navelem"><a class="el" href="latticsdiamond_8h.html">latticsdiamond.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+\doxysection{SLMSplicing\+Module类 参考}
+\hypertarget{class_s_l_m_splicing_module}{}\label{class_s_l_m_splicing_module}\index{SLMSplicingModule@{SLMSplicingModule}}
+
+
+{\ttfamily \#include $<$slmsplicingmodule.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_l_m_splicing_module_ac994c3d953eedd18ffdbad664cd75a61}{SLMSplicing\+Module}} ()
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_ab3e2f23121b3fb9da0da2b8bcb565428}{initialize\+Paras}} (const \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_acdb43a757101d92b5a2985b1479b8ac1}{calc\+Scanner\+Area}} ()
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_a29b4d4e09bb229f3d72f31d44a42163d}{recalc\+Splicing\+Area}} (Paths \&, QList$<$ AREAINFOPTR $>$ \&, const QList$<$ AREAINFOPTR $>$ \&solid\+Paths=QList$<$ AREAINFOPTR $>$())
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_af864143bf8d91ed76eabe69888be52fd}{add\+Layer\+Splicing\+Area}} (const int \&)
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_ad803bf06e44992c8caf75c6c2b5f083a}{split\+Support\+Data}} (const \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} \&, const Paths \&, \mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{Func\+Split}} \&\&) const
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_a33ea44ac525bf23a24f672775d445a30}{split\+Border\+Data}} (const \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} \&, const Paths \&, \mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{Func\+Split}} \&\&, const bool \&, const std\+::function$<$ void(Paths \&)$>$ \&\&) const
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_a313d74e7231dd93c8abf579ca4d07ced}{split\+Solid\+Data}} (const \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} \&, const Paths \&, \mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{Func\+Split}} \&\&) const
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_scanner_splicing_area}{Scanner\+Splicing\+Area}} $>$ \mbox{\hyperlink{class_s_l_m_splicing_module_a8527bdca5d969b36d304aa9b374433d3}{get\+Splicing\+Area}} () const
+\item 
+\mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} \mbox{\hyperlink{class_s_l_m_splicing_module_a6df6bbb109037af08ffe2796782ed809}{get\+Layer\+Splicing}} (const int \&) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_s_l_m_splicing_module_priv}{SLMSplicing\+Module\+Priv}} $>$ \mbox{\hyperlink{class_s_l_m_splicing_module_ab8323a17c05e0b8c67bfcfcc87c7a06c}{d}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: SLMSplicing\+Module}
+实现多区域协同打印的关键类 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_s_l_m_splicing_module_ac994c3d953eedd18ffdbad664cd75a61}\index{SLMSplicingModule@{SLMSplicingModule}!SLMSplicingModule@{SLMSplicingModule}}
+\index{SLMSplicingModule@{SLMSplicingModule}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{SLMSplicingModule()}{SLMSplicingModule()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_ac994c3d953eedd18ffdbad664cd75a61} 
+SLMSplicing\+Module\+::\+SLMSplicing\+Module (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_s_l_m_splicing_module_af864143bf8d91ed76eabe69888be52fd}\index{SLMSplicingModule@{SLMSplicingModule}!addLayerSplicingArea@{addLayerSplicingArea}}
+\index{addLayerSplicingArea@{addLayerSplicingArea}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{addLayerSplicingArea()}{addLayerSplicingArea()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_af864143bf8d91ed76eabe69888be52fd} 
+void SLMSplicing\+Module\+::add\+Layer\+Splicing\+Area (\begin{DoxyParamCaption}\item[{const int \&}]{layer\+Hei}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_s_l_m_splicing_module_acdb43a757101d92b5a2985b1479b8ac1}\index{SLMSplicingModule@{SLMSplicingModule}!calcScannerArea@{calcScannerArea}}
+\index{calcScannerArea@{calcScannerArea}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{calcScannerArea()}{calcScannerArea()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_acdb43a757101d92b5a2985b1479b8ac1} 
+void SLMSplicing\+Module\+::calc\+Scanner\+Area (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_s_l_m_splicing_module_a6df6bbb109037af08ffe2796782ed809}\index{SLMSplicingModule@{SLMSplicingModule}!getLayerSplicing@{getLayerSplicing}}
+\index{getLayerSplicing@{getLayerSplicing}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{getLayerSplicing()}{getLayerSplicing()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_a6df6bbb109037af08ffe2796782ed809} 
+\mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} SLMSplicing\+Module\+::get\+Layer\+Splicing (\begin{DoxyParamCaption}\item[{const int \&}]{layer\+Hei}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_s_l_m_splicing_module_a8527bdca5d969b36d304aa9b374433d3}\index{SLMSplicingModule@{SLMSplicingModule}!getSplicingArea@{getSplicingArea}}
+\index{getSplicingArea@{getSplicingArea}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{getSplicingArea()}{getSplicingArea()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_a8527bdca5d969b36d304aa9b374433d3} 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_scanner_splicing_area}{Scanner\+Splicing\+Area}} $>$ SLMSplicing\+Module\+::get\+Splicing\+Area (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_s_l_m_splicing_module_ab3e2f23121b3fb9da0da2b8bcb565428}\index{SLMSplicingModule@{SLMSplicingModule}!initializeParas@{initializeParas}}
+\index{initializeParas@{initializeParas}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{initializeParas()}{initializeParas()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_ab3e2f23121b3fb9da0da2b8bcb565428} 
+void SLMSplicing\+Module\+::initialize\+Paras (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}} \texorpdfstring{$\ast$}{*}}]{write\+Buff}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_s_l_m_splicing_module_a29b4d4e09bb229f3d72f31d44a42163d}\index{SLMSplicingModule@{SLMSplicingModule}!recalcSplicingArea@{recalcSplicingArea}}
+\index{recalcSplicingArea@{recalcSplicingArea}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{recalcSplicingArea()}{recalcSplicingArea()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_a29b4d4e09bb229f3d72f31d44a42163d} 
+void SLMSplicing\+Module\+::recalc\+Splicing\+Area (\begin{DoxyParamCaption}\item[{Paths \&}]{solid\+Paths}{, }\item[{QList$<$ AREAINFOPTR $>$ \&}]{support\+Paths}{, }\item[{const QList$<$ AREAINFOPTR $>$ \&}]{solid\+Paths}{ = {\ttfamily QList$<$AREAINFOPTR$>$()}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_s_l_m_splicing_module_a33ea44ac525bf23a24f672775d445a30}\index{SLMSplicingModule@{SLMSplicingModule}!splitBorderData@{splitBorderData}}
+\index{splitBorderData@{splitBorderData}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{splitBorderData()}{splitBorderData()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_a33ea44ac525bf23a24f672775d445a30} 
+void SLMSplicing\+Module\+::split\+Border\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} \&}]{layer\+Splicing}{, }\item[{const Paths \&}]{paths}{, }\item[{\mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{Func\+Split}} \&\&}]{func\+Split}{, }\item[{const bool \&}]{close\+Border}{, }\item[{const std\+::function$<$ void(Paths \&)$>$ \&\&}]{new\+Begin}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_s_l_m_splicing_module_a313d74e7231dd93c8abf579ca4d07ced}\index{SLMSplicingModule@{SLMSplicingModule}!splitSolidData@{splitSolidData}}
+\index{splitSolidData@{splitSolidData}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{splitSolidData()}{splitSolidData()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_a313d74e7231dd93c8abf579ca4d07ced} 
+void SLMSplicing\+Module\+::split\+Solid\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} \&}]{layer\+Splicing}{, }\item[{const Paths \&}]{paths}{, }\item[{\mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{Func\+Split}} \&\&}]{func\+Split}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_s_l_m_splicing_module_ad803bf06e44992c8caf75c6c2b5f083a}\index{SLMSplicingModule@{SLMSplicingModule}!splitSupportData@{splitSupportData}}
+\index{splitSupportData@{splitSupportData}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{splitSupportData()}{splitSupportData()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_ad803bf06e44992c8caf75c6c2b5f083a} 
+void SLMSplicing\+Module\+::split\+Support\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} \&}]{layer\+Splicing}{, }\item[{const Paths \&}]{support\+Pahts}{, }\item[{\mbox{\hyperlink{slmsplicingmodule_8h_a052c172e189217a363ea3ac6eadc72ff}{Func\+Split}} \&\&}]{func\+Split}{}\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_s_l_m_splicing_module_ab8323a17c05e0b8c67bfcfcc87c7a06c}\index{SLMSplicingModule@{SLMSplicingModule}!d@{d}}
+\index{d@{d}!SLMSplicingModule@{SLMSplicingModule}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_ab8323a17c05e0b8c67bfcfcc87c7a06c} 
+QShared\+Pointer$<$\mbox{\hyperlink{class_s_l_m_splicing_module_priv}{SLMSplicing\+Module\+Priv}}$>$ SLMSplicing\+Module\+::d = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Splicing\+Module/\mbox{\hyperlink{slmsplicingmodule_8h}{slmsplicingmodule.\+h}}\item 
+Splicing\+Module/\mbox{\hyperlink{slmsplicingmodule_8cpp}{slmsplicingmodule.\+cpp}}\end{DoxyCompactItemize}

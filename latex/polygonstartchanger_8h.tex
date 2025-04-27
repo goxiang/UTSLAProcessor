@@ -1,0 +1,135 @@
+\doxysection{polygonstartchanger.\+h 文件参考}
+\hypertarget{polygonstartchanger_8h}{}\label{polygonstartchanger_8h}\index{polygonstartchanger.h@{polygonstartchanger.h}}
+{\ttfamily \#include "{}bpccommon.\+h"{}}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a}{Utek\+::\+STARTCHANGERPARA}}
+\item 
+struct \mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k}{Utek\+::\+RETURNPATHPACK}}
+\item 
+struct \mbox{\hyperlink{struct_utek_1_1_vector2d}{Utek\+::\+Vector2d}}
+\item 
+class \mbox{\hyperlink{class_utek_1_1_polygon_start_changer}{Utek\+::\+Polygon\+Start\+Changer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_utek}{Utek}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_aabe2380716a38b189e9d94818a26ca4a}{ZERO\+\_\+F}}~1.\+0E-\/5
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_a0a69594b2ea1ac8262ab37a48fe774ff}{IS\+\_\+\+ZERO}}(x)
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_ab75f9459f8b4b4c42c79b21a878c9547}{IS\+\_\+\+SAME}}(x,  y)
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_a37a25c9d7ae45bdcc4b97ca017b0bdb6}{INT\+\_\+\+INF}}~10\+E8
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_a9cd9cb3861ff3b4d4204e457070d0029}{IS\+\_\+\+INF}}(x)
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_ad4d83c95ab76a2cf3697958ca03cf729}{CONTOUR\+\_\+\+OUTLINE}}~1
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_a3bee2ba39423def779bd650bc76e971c}{CONTOUR\+\_\+\+INHOLE}}~0
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_a2c7a90475d4d18f276b9d1f6774543f9}{POINT\+\_\+\+IN\+\_\+\+CONTOUR}}~1
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_a96845fb2404bfdd0b6fa5eff3e9b8b8d}{POINT\+\_\+\+OUT\+\_\+\+OF\+\_\+\+CONTOUR}}~0
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_a774905546845da7ea516451ecedb0aef}{POINT\+\_\+\+ON\+\_\+\+CONTOUR}}~-\/1
+\item 
+\#define \mbox{\hyperlink{polygonstartchanger_8h_ad1a91e8c0845bf87193eef495805458c}{step\+Try\+Max}}~1E4
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a}{Utek\+::\+STARTCHANGERPARA}} \mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{Utek\+::\+Start\+Changer\+Para}}
+\item 
+typedef struct \mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k}{Utek\+::\+RETURNPATHPACK}} \mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{Utek\+::\+Return\+Path\+Pack}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{polygonstartchanger_8h_a3bee2ba39423def779bd650bc76e971c}\index{polygonstartchanger.h@{polygonstartchanger.h}!CONTOUR\_INHOLE@{CONTOUR\_INHOLE}}
+\index{CONTOUR\_INHOLE@{CONTOUR\_INHOLE}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{CONTOUR\_INHOLE}{CONTOUR\_INHOLE}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_a3bee2ba39423def779bd650bc76e971c} 
+\#define CONTOUR\+\_\+\+INHOLE~0}
+
+\Hypertarget{polygonstartchanger_8h_ad4d83c95ab76a2cf3697958ca03cf729}\index{polygonstartchanger.h@{polygonstartchanger.h}!CONTOUR\_OUTLINE@{CONTOUR\_OUTLINE}}
+\index{CONTOUR\_OUTLINE@{CONTOUR\_OUTLINE}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{CONTOUR\_OUTLINE}{CONTOUR\_OUTLINE}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_ad4d83c95ab76a2cf3697958ca03cf729} 
+\#define CONTOUR\+\_\+\+OUTLINE~1}
+
+\Hypertarget{polygonstartchanger_8h_a37a25c9d7ae45bdcc4b97ca017b0bdb6}\index{polygonstartchanger.h@{polygonstartchanger.h}!INT\_INF@{INT\_INF}}
+\index{INT\_INF@{INT\_INF}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{INT\_INF}{INT\_INF}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_a37a25c9d7ae45bdcc4b97ca017b0bdb6} 
+\#define INT\+\_\+\+INF~10\+E8}
+
+\Hypertarget{polygonstartchanger_8h_a9cd9cb3861ff3b4d4204e457070d0029}\index{polygonstartchanger.h@{polygonstartchanger.h}!IS\_INF@{IS\_INF}}
+\index{IS\_INF@{IS\_INF}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{IS\_INF}{IS\_INF}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_a9cd9cb3861ff3b4d4204e457070d0029} 
+\#define IS\+\_\+\+INF(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(qAbs(x)\ >=\ \mbox{\hyperlink{polygonstartchanger_8h_a37a25c9d7ae45bdcc4b97ca017b0bdb6}{INT\_INF}})}
+
+\end{DoxyCode}
+\Hypertarget{polygonstartchanger_8h_ab75f9459f8b4b4c42c79b21a878c9547}\index{polygonstartchanger.h@{polygonstartchanger.h}!IS\_SAME@{IS\_SAME}}
+\index{IS\_SAME@{IS\_SAME}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{IS\_SAME}{IS\_SAME}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_ab75f9459f8b4b4c42c79b21a878c9547} 
+\#define IS\+\_\+\+SAME(\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{polygonstartchanger_8h_a0a69594b2ea1ac8262ab37a48fe774ff}{IS\_ZERO}}(x-\/y)}
+
+\end{DoxyCode}
+\Hypertarget{polygonstartchanger_8h_a0a69594b2ea1ac8262ab37a48fe774ff}\index{polygonstartchanger.h@{polygonstartchanger.h}!IS\_ZERO@{IS\_ZERO}}
+\index{IS\_ZERO@{IS\_ZERO}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{IS\_ZERO}{IS\_ZERO}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_a0a69594b2ea1ac8262ab37a48fe774ff} 
+\#define IS\+\_\+\+ZERO(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(qAbs(x)\ <=\ \mbox{\hyperlink{polygonstartchanger_8h_aabe2380716a38b189e9d94818a26ca4a}{ZERO\_F}})}
+
+\end{DoxyCode}
+\Hypertarget{polygonstartchanger_8h_a2c7a90475d4d18f276b9d1f6774543f9}\index{polygonstartchanger.h@{polygonstartchanger.h}!POINT\_IN\_CONTOUR@{POINT\_IN\_CONTOUR}}
+\index{POINT\_IN\_CONTOUR@{POINT\_IN\_CONTOUR}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{POINT\_IN\_CONTOUR}{POINT\_IN\_CONTOUR}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_a2c7a90475d4d18f276b9d1f6774543f9} 
+\#define POINT\+\_\+\+IN\+\_\+\+CONTOUR~1}
+
+\Hypertarget{polygonstartchanger_8h_a774905546845da7ea516451ecedb0aef}\index{polygonstartchanger.h@{polygonstartchanger.h}!POINT\_ON\_CONTOUR@{POINT\_ON\_CONTOUR}}
+\index{POINT\_ON\_CONTOUR@{POINT\_ON\_CONTOUR}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{POINT\_ON\_CONTOUR}{POINT\_ON\_CONTOUR}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_a774905546845da7ea516451ecedb0aef} 
+\#define POINT\+\_\+\+ON\+\_\+\+CONTOUR~-\/1}
+
+\Hypertarget{polygonstartchanger_8h_a96845fb2404bfdd0b6fa5eff3e9b8b8d}\index{polygonstartchanger.h@{polygonstartchanger.h}!POINT\_OUT\_OF\_CONTOUR@{POINT\_OUT\_OF\_CONTOUR}}
+\index{POINT\_OUT\_OF\_CONTOUR@{POINT\_OUT\_OF\_CONTOUR}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{POINT\_OUT\_OF\_CONTOUR}{POINT\_OUT\_OF\_CONTOUR}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_a96845fb2404bfdd0b6fa5eff3e9b8b8d} 
+\#define POINT\+\_\+\+OUT\+\_\+\+OF\+\_\+\+CONTOUR~0}
+
+\Hypertarget{polygonstartchanger_8h_ad1a91e8c0845bf87193eef495805458c}\index{polygonstartchanger.h@{polygonstartchanger.h}!stepTryMax@{stepTryMax}}
+\index{stepTryMax@{stepTryMax}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{stepTryMax}{stepTryMax}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_ad1a91e8c0845bf87193eef495805458c} 
+\#define step\+Try\+Max~1E4}
+
+\Hypertarget{polygonstartchanger_8h_aabe2380716a38b189e9d94818a26ca4a}\index{polygonstartchanger.h@{polygonstartchanger.h}!ZERO\_F@{ZERO\_F}}
+\index{ZERO\_F@{ZERO\_F}!polygonstartchanger.h@{polygonstartchanger.h}}
+\doxysubsubsection{\texorpdfstring{ZERO\_F}{ZERO\_F}}
+{\footnotesize\ttfamily \label{polygonstartchanger_8h_aabe2380716a38b189e9d94818a26ca4a} 
+\#define ZERO\+\_\+F~1.\+0E-\/5}
+

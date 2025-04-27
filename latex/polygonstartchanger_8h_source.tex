@@ -1,0 +1,95 @@
+\doxysection{polygonstartchanger.\+h}
+\hypertarget{polygonstartchanger_8h_source}{}\label{polygonstartchanger_8h_source}\mbox{\hyperlink{polygonstartchanger_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POLYGONSTARTCHANGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POLYGONSTARTCHANGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}bpccommon.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ZERO\_F\ 1.0E-\/5}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ IS\_ZERO(x)\ (qAbs(x)\ <=\ ZERO\_F)}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ IS\_SAME(x,\ y)\ IS\_ZERO(x-\/y)}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INT\_INF\ 10E8}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ IS\_INF(x)\ (qAbs(x)\ >=\ INT\_INF)}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ CONTOUR\_OUTLINE\ 1\ \ }\textcolor{comment}{//外轮廓}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ CONTOUR\_INHOLE\ \ 0\ \ }\textcolor{comment}{//内孔}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ POINT\_IN\_CONTOUR\ \ \ \ \ 1\ \ }\textcolor{comment}{//点在多边形内}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ POINT\_OUT\_OF\_CONTOUR\ 0\ \ }\textcolor{comment}{//点在多边形外}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ POINT\_ON\_CONTOUR\ \ \ \ -\/1\ \ }\textcolor{comment}{//点在多边形的边上}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ stepTryMax\ 1E4}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_utek}{Utek}}\ \{}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//const\ int\ stepTryMax\ =\ int(1E4);\ \ //推进寻找有效点次数上限，超过该次数不再寻找}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//输入参数包}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a}{STARTCHANGERPARA}}\{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a_a007978c31682998c738bbb4e5a1f6d91}{changerType}};\ \ \ \ \ \ \ \ \textcolor{comment}{//0不改变，1为添加开始扫描，2为添加关闭扫描}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a_a574dc902f76729a43002e945e9137ef1}{insertAngle}};\ \ \ \ \ \ \textcolor{comment}{//切入角tan值,范围大于0}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a_ab8826d164a9f91d025ab73a3b6c63dd4}{insertLength}};\ \ \ \ \ \textcolor{comment}{//切入长度（应当已随IntPoint缩放倍率进行缩放）}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a_a371c91104c8216030ff3734b4b3c7498}{smallPolyArea}};\ \ \ \ \textcolor{comment}{//忽略小轮廓的面积（应当已随IntPoint缩放倍率进行平方缩放）}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a_a2c2e2bf58c9ee0a053a73cee39ed03aa}{smallPolyLength}};\ \ \textcolor{comment}{//忽略小轮廓的周长（应当已随IntPoint缩放倍率进行缩放）}}
+\DoxyCodeLine{00032\ \}\mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{StartChangerPara}};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{comment}{//输出包}}
+\DoxyCodeLine{00035\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k}{RETURNPATHPACK}}\{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k_adfa65517e681ff6bad3b8015c3759b57}{successFirst}}\ \ \ =\ \textcolor{keyword}{false};\ \ \ \textcolor{comment}{//首点找到}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k_a19416b34f0610c130c4cc8db0cfeda3f}{successLast}}\ \ \ \ =\ \textcolor{keyword}{false};\ \ \ \textcolor{comment}{//末点找到}}
+\DoxyCodeLine{00038\ \ \ \ \ ClipperLib::IntPoint\ \mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k_acab57d97f89b8b7033a212163c00577c}{firstPt}};\ \ \textcolor{comment}{//找到的首点坐标}}
+\DoxyCodeLine{00039\ \ \ \ \ ClipperLib::IntPoint\ \mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k_ad9c68c02d3489c6c083004a3c86b84e9}{lastPt}};\ \ \ \textcolor{comment}{//找到的末点坐标}}
+\DoxyCodeLine{00040\ \ \ \ \ ClipperLib::Path\ \mbox{\hyperlink{struct_utek_1_1_r_e_t_u_r_n_p_a_t_h_p_a_c_k_afb3f9448e2c92096a3fe1bdcaf671abb}{result}};\ \ \ \ \ \ \ \textcolor{comment}{//结果路径(可能已经因推进寻找而次序改变)}}
+\DoxyCodeLine{00041\ \}\mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{ReturnPathPack}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_utek_1_1_vector2d_ad950f49797fa7785906114704760648b}{Vector2d}}\{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_utek_1_1_vector2d_ab7e54c9d4c2298f779491102518c0d5e}{x}};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_utek_1_1_vector2d_a2af03e57603a76547e3e4017c9146070}{y}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{struct_utek_1_1_vector2d_ad950f49797fa7785906114704760648b}{Vector2d}}\ (\textcolor{keywordtype}{float}\ tx\ =\ 0.0f,\ \textcolor{keywordtype}{float}\ ty\ =\ 0.0f)}
+\DoxyCodeLine{00048\ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_utek_1_1_vector2d_ab7e54c9d4c2298f779491102518c0d5e}{x}}\ =\ tx;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_utek_1_1_vector2d_a2af03e57603a76547e3e4017c9146070}{y}}\ =\ ty;}
+\DoxyCodeLine{00051\ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a537060f58a86f01d3a90260827d89c32}{PolygonStartChanger}}}
+\DoxyCodeLine{00055\ \{}
+\DoxyCodeLine{00056\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a537060f58a86f01d3a90260827d89c32}{PolygonStartChanger}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{ReturnPathPack}}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a0accae1530c0ad440193b5ca94f6b6c9}{getStartChanger}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&path,}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{StartChangerPara}}\ \&paras)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{ReturnPathPack}}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_aaa88da97d08b77dfa0975b7af7828f6d}{getStartChangerPrivate}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&path,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{StartChangerPara}}\ \&paras)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a8c35f42b3a22bda268cd01eb66d8b82e}{getLength}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a35ed804bec3d7b2c26c5c4159d678902}{dis}}(\textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&p1,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&p2)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a9ea2ad1930ac10530bf35e541e324a3e}{area}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ ClipperLib::IntPoint\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_ab804f92e8092366daaf563075c757476}{getPossibleStartPt}}(\textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&firstPt,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&beforePt,}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ startK,\ \textcolor{keywordtype}{float}\ startDis)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ ClipperLib::IntPoint\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a6c91af49f4e6ebf3c685e97d8fc75c6e}{getPossibleStartPtRev}}(\textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&firstPt,}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&beforePt,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ startK,\ \textcolor{keywordtype}{float}\ startDis)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a20f08cccb91ed780567896398a081bd1}{normalVector}}(\textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&pt1,}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&pt2)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a20f08cccb91ed780567896398a081bd1}{normalVector}}(\textcolor{keywordtype}{float}\ x1,\ \textcolor{keywordtype}{float}\ y1,\ \textcolor{keywordtype}{float}\ x2,\ \textcolor{keywordtype}{float}\ y2)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a20f08cccb91ed780567896398a081bd1}{normalVector}}(\textcolor{keywordtype}{float}\ k)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_aa592a6744de4bdae7cd95a92b5c31d40}{unitVector}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_aff6a468fd4641b0a1754ca31fbde0b50}{crossProduct}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}}\&\ vec1,}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}}\&\ vec2)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a7f1fdd75d2e98edb6d15f41e83679bf8}{push}}(ClipperLib::Path\ \&path,\ \textcolor{keywordtype}{int}\ moveStep)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_ab1534468627d15629ec8a4f9ae8d54a3}{intersecting}}(\textcolor{keyword}{const}\ ClipperLib::Path\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ ClipperLib::IntPoint\ \&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POLYGONSTARTCHANGER\_H}}
+
+\end{DoxyCode}

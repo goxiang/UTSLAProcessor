@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: algorithmapplication.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('algorithmapplication_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle"><div class="title">algorithmapplication.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="algorithmapplication_8h_source.html">algorithmapplication.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="polygonstartchanger_8h_source.html">polygonstartchanger.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="scanlinesdivider_8h_source.html">ScanLinesDivider/scanlinesdivider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="polygonsdivider_8h_source.html">PolygonsDivider/polygonsdivider.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="scanlinessortor_8h_source.html">ScanLinesSortor/scanlinessortor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="latticeinterface_8h_source.html">LatticeModule/latticeinterface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="slmsplicingmodule_8h_source.html">slmsplicingmodule.h</a>&quot;</code><br />
+<code>#include &quot;clipper2/clipper.h&quot;</code><br />
+<code>#include &lt;QCoreApplication&gt;</code><br />
+<code>#include &lt;QJsonObject&gt;</code><br />
+<code>#include &lt;QJsonArray&gt;</code><br />
+<code>#include &lt;QSettings&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad155456708261e38a57b6e916ffa5d37" id="r_ad155456708261e38a57b6e916ffa5d37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad155456708261e38a57b6e916ffa5d37">CALC_HATCHING</a></td></tr>
+<tr class="separator:ad155456708261e38a57b6e916ffa5d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c48104c99cae8bd071cd9226b93e88" id="r_a50c48104c99cae8bd071cd9226b93e88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50c48104c99cae8bd071cd9226b93e88">CALC_SMALLSTRUCT</a></td></tr>
+<tr class="separator:a50c48104c99cae8bd071cd9226b93e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971f7c713e7a94f8b4d436cf6557e2b2" id="r_a971f7c713e7a94f8b4d436cf6557e2b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a971f7c713e7a94f8b4d436cf6557e2b2">CALC_SUPPORT</a></td></tr>
+<tr class="separator:a971f7c713e7a94f8b4d436cf6557e2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1e81ea7ba6239e050daba5c4e23694" id="r_a3d1e81ea7ba6239e050daba5c4e23694"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d1e81ea7ba6239e050daba5c4e23694">CALC_BORDER</a></td></tr>
+<tr class="separator:a3d1e81ea7ba6239e050daba5c4e23694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d3af4745b96284e8149da8263a7bbb" id="r_a77d3af4745b96284e8149da8263a7bbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77d3af4745b96284e8149da8263a7bbb">CALC_SMALLGAP_SMALLHOLE</a></td></tr>
+<tr class="separator:a77d3af4745b96284e8149da8263a7bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4489493abad0a87632c332a69bd15d1c" id="r_a4489493abad0a87632c332a69bd15d1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4489493abad0a87632c332a69bd15d1c">CALC_EXTERNEDBORDER</a></td></tr>
+<tr class="separator:a4489493abad0a87632c332a69bd15d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52387c6449fe4711afe6384c7497181" id="r_ae52387c6449fe4711afe6384c7497181"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae52387c6449fe4711afe6384c7497181">USE_CHECKER_BOARD_TEST</a></td></tr>
+<tr class="separator:ae52387c6449fe4711afe6384c7497181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a4680e5916c0873c0175711c9da922fa2" id="r_a4680e5916c0873c0175711c9da922fa2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="#a4680e5916c0873c0175711c9da922fa2a8fffc5fdda86468300b4688db29a3ae5">HATCHTYPE_LINES</a> = 0
+, <a class="el" href="#a4680e5916c0873c0175711c9da922fa2a27ae699bafc09c2d36e3558d06cefaa4">HATCHTYPE_RING</a> = 1
+, <a class="el" href="#a4680e5916c0873c0175711c9da922fa2aa342a8374f90dbd2adb50c5ce379d0fe">HATCHTYPE_SPIRAL</a> = 2
+, <a class="el" href="#a4680e5916c0873c0175711c9da922fa2a03e44c7f0a98a31f4e006b71909fb85a">HATCHTYPE_FERMATSPIRAL</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a4680e5916c0873c0175711c9da922fa2a492f3939554e9d8e50a983477362049a">HATCHTYPE_CHECKER</a> = 4
+, <a class="el" href="#a4680e5916c0873c0175711c9da922fa2ad4bc2fe50eb7168c93c1c7d25dd4779c">HATCHTYPE_STRIP</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a4680e5916c0873c0175711c9da922fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a3d1e81ea7ba6239e050daba5c4e23694" name="a3d1e81ea7ba6239e050daba5c4e23694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1e81ea7ba6239e050daba5c4e23694">&#9670;&#160;</a></span>CALC_BORDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALC_BORDER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4489493abad0a87632c332a69bd15d1c" name="a4489493abad0a87632c332a69bd15d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4489493abad0a87632c332a69bd15d1c">&#9670;&#160;</a></span>CALC_EXTERNEDBORDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALC_EXTERNEDBORDER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad155456708261e38a57b6e916ffa5d37" name="ad155456708261e38a57b6e916ffa5d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad155456708261e38a57b6e916ffa5d37">&#9670;&#160;</a></span>CALC_HATCHING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALC_HATCHING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77d3af4745b96284e8149da8263a7bbb" name="a77d3af4745b96284e8149da8263a7bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d3af4745b96284e8149da8263a7bbb">&#9670;&#160;</a></span>CALC_SMALLGAP_SMALLHOLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALC_SMALLGAP_SMALLHOLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50c48104c99cae8bd071cd9226b93e88" name="a50c48104c99cae8bd071cd9226b93e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c48104c99cae8bd071cd9226b93e88">&#9670;&#160;</a></span>CALC_SMALLSTRUCT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALC_SMALLSTRUCT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a971f7c713e7a94f8b4d436cf6557e2b2" name="a971f7c713e7a94f8b4d436cf6557e2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a971f7c713e7a94f8b4d436cf6557e2b2">&#9670;&#160;</a></span>CALC_SUPPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALC_SUPPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae52387c6449fe4711afe6384c7497181" name="ae52387c6449fe4711afe6384c7497181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52387c6449fe4711afe6384c7497181">&#9670;&#160;</a></span>USE_CHECKER_BOARD_TEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_CHECKER_BOARD_TEST</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a4680e5916c0873c0175711c9da922fa2" name="a4680e5916c0873c0175711c9da922fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4680e5916c0873c0175711c9da922fa2">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a4680e5916c0873c0175711c9da922fa2a8fffc5fdda86468300b4688db29a3ae5" name="a4680e5916c0873c0175711c9da922fa2a8fffc5fdda86468300b4688db29a3ae5"></a>HATCHTYPE_LINES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4680e5916c0873c0175711c9da922fa2a27ae699bafc09c2d36e3558d06cefaa4" name="a4680e5916c0873c0175711c9da922fa2a27ae699bafc09c2d36e3558d06cefaa4"></a>HATCHTYPE_RING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4680e5916c0873c0175711c9da922fa2aa342a8374f90dbd2adb50c5ce379d0fe" name="a4680e5916c0873c0175711c9da922fa2aa342a8374f90dbd2adb50c5ce379d0fe"></a>HATCHTYPE_SPIRAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4680e5916c0873c0175711c9da922fa2a03e44c7f0a98a31f4e006b71909fb85a" name="a4680e5916c0873c0175711c9da922fa2a03e44c7f0a98a31f4e006b71909fb85a"></a>HATCHTYPE_FERMATSPIRAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4680e5916c0873c0175711c9da922fa2a492f3939554e9d8e50a983477362049a" name="a4680e5916c0873c0175711c9da922fa2a492f3939554e9d8e50a983477362049a"></a>HATCHTYPE_CHECKER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4680e5916c0873c0175711c9da922fa2ad4bc2fe50eb7168c93c1c7d25dd4779c" name="a4680e5916c0873c0175711c9da922fa2ad4bc2fe50eb7168c93c1c7d25dd4779c"></a>HATCHTYPE_STRIP&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="algorithmapplication_8cpp.html">algorithmapplication.cpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

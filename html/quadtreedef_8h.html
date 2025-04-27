@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: ScanLinesSortor/quadtreedef.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('quadtreedef_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle"><div class="title">quadtreedef.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;QSet&gt;</code><br />
+<code>#include &lt;QMap&gt;</code><br />
+<code>#include &lt;QVector&gt;</code><br />
+<code>#include &lt;QtGlobal&gt;</code><br />
+<code>#include &lt;QSharedPointer&gt;</code><br />
+<code>#include &quot;bpccommon.h&quot;</code><br />
+</div>
+<p><a href="quadtreedef_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_pt_info.html">MPtInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node.html">Node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_end_node.html">EndNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_search_result.html">SearchResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node_searcher.html">NodeSearcher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_quad_tree.html">MQuadTree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:abd248dfeac0c8ce81036f413b893110d" id="r_abd248dfeac0c8ce81036f413b893110d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd248dfeac0c8ce81036f413b893110d">POPO</a>&#160;&#160;&#160;0.01</td></tr>
+<tr class="separator:abd248dfeac0c8ce81036f413b893110d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38521aa912493bb69f2ea39865729462" id="r_a38521aa912493bb69f2ea39865729462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38521aa912493bb69f2ea39865729462">MaxDepths</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a38521aa912493bb69f2ea39865729462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a3c27b131437429d162a1e9e738a4b897" id="r_a3c27b131437429d162a1e9e738a4b897"><td class="memItemLeft" align="right" valign="top">typedef QSharedPointer&lt; <a class="el" href="struct_m_pt_info.html">MPtInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a></td></tr>
+<tr class="separator:a3c27b131437429d162a1e9e738a4b897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:acac9cbaeea226ed297804c012dc12b16" id="r_acac9cbaeea226ed297804c012dc12b16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acac9cbaeea226ed297804c012dc12b16">NodeType</a> { <br />
+&#160;&#160;<a class="el" href="#acac9cbaeea226ed297804c012dc12b16adb45120aafd37a973140edee24708065">LEFT</a> = 0x0001
+, <a class="el" href="#acac9cbaeea226ed297804c012dc12b16aec8379af7490bb9eaaf579cf17876f38">RIGHT</a> = 0x0010
+, <a class="el" href="#acac9cbaeea226ed297804c012dc12b16aba595d8bca8bc5e67c37c0a9d89becfa">UP</a> = 0x0100
+, <a class="el" href="#acac9cbaeea226ed297804c012dc12b16a9b0b4a95b99523966e0e34ffdadac9da">DOWN</a> = 0x1000
+, <br />
+&#160;&#160;<a class="el" href="#acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd">UL</a> = UP | LEFT
+, <a class="el" href="#acac9cbaeea226ed297804c012dc12b16a48f352c6b2ee876ca2d402ba78b3646b">UR</a> = UP | RIGHT
+, <a class="el" href="#acac9cbaeea226ed297804c012dc12b16a4e833cccfa9ee34732424662a9b3513e">DL</a> = DOWN | LEFT
+, <a class="el" href="#acac9cbaeea226ed297804c012dc12b16a5dbd956e60d5dc6c0ad15606e75b5459">DR</a> = DOWN | RIGHT
+<br />
+ }</td></tr>
+<tr class="separator:acac9cbaeea226ed297804c012dc12b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="a38521aa912493bb69f2ea39865729462" name="a38521aa912493bb69f2ea39865729462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38521aa912493bb69f2ea39865729462">&#9670;&#160;</a></span>MaxDepths</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaxDepths&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd248dfeac0c8ce81036f413b893110d" name="abd248dfeac0c8ce81036f413b893110d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd248dfeac0c8ce81036f413b893110d">&#9670;&#160;</a></span>POPO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POPO&#160;&#160;&#160;0.01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a3c27b131437429d162a1e9e738a4b897" name="a3c27b131437429d162a1e9e738a4b897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c27b131437429d162a1e9e738a4b897">&#9670;&#160;</a></span>MPtInfoPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef QSharedPointer&lt;<a class="el" href="struct_m_pt_info.html">MPtInfo</a>&gt; <a class="el" href="#a3c27b131437429d162a1e9e738a4b897">MPtInfoPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="acac9cbaeea226ed297804c012dc12b16" name="acac9cbaeea226ed297804c012dc12b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac9cbaeea226ed297804c012dc12b16">&#9670;&#160;</a></span>NodeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#acac9cbaeea226ed297804c012dc12b16">NodeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16adb45120aafd37a973140edee24708065" name="acac9cbaeea226ed297804c012dc12b16adb45120aafd37a973140edee24708065"></a>LEFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16aec8379af7490bb9eaaf579cf17876f38" name="acac9cbaeea226ed297804c012dc12b16aec8379af7490bb9eaaf579cf17876f38"></a>RIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16aba595d8bca8bc5e67c37c0a9d89becfa" name="acac9cbaeea226ed297804c012dc12b16aba595d8bca8bc5e67c37c0a9d89becfa"></a>UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16a9b0b4a95b99523966e0e34ffdadac9da" name="acac9cbaeea226ed297804c012dc12b16a9b0b4a95b99523966e0e34ffdadac9da"></a>DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd" name="acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd"></a>UL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16a48f352c6b2ee876ca2d402ba78b3646b" name="acac9cbaeea226ed297804c012dc12b16a48f352c6b2ee876ca2d402ba78b3646b"></a>UR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16a4e833cccfa9ee34732424662a9b3513e" name="acac9cbaeea226ed297804c012dc12b16a4e833cccfa9ee34732424662a9b3513e"></a>DL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acac9cbaeea226ed297804c012dc12b16a5dbd956e60d5dc6c0ad15606e75b5459" name="acac9cbaeea226ed297804c012dc12b16a5dbd956e60d5dc6c0ad15606e75b5459"></a>DR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fb268a57f99aeb33e411fc8aec0d479.html">ScanLinesSortor</a></li><li class="navelem"><a class="el" href="quadtreedef_8h.html">quadtreedef.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

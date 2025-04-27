@@ -1,0 +1,33 @@
+\doxysection{splicingmodulepriv.\+h}
+\hypertarget{splicingmodulepriv_8h_source}{}\label{splicingmodulepriv_8h_source}\index{SplicingModule/splicingmodulepriv.h@{SplicingModule/splicingmodulepriv.h}}
+\mbox{\hyperlink{splicingmodulepriv_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPLICING\_MODULE\_PRIV\_HHH\_HH\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPLICING\_MODULE\_PRIV\_HHH\_HH\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{splicingheader_8h}{splicingheader.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_m_splicing_module_priv_ac5a814360eb6ecb615f55ede4c3621d9}{SLMSplicingModulePriv}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_ac5a814360eb6ecb615f55ede4c3621d9}{SLMSplicingModulePriv}}();}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a2338f94606989a54bbfb6b6f8f79d6fc}{calcLinesOnRect}}(\textcolor{keyword}{const}\ IntRect\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_aa54909a14e799e80cb503f951cb3f958}{removeLineOnRect}}(\textcolor{keyword}{const}\ IntRect\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a2338f94606989a54bbfb6b6f8f79d6fc}{calcLinesOnRect}}(\textcolor{keyword}{const}\ IntRect\ \&,\ \textcolor{keyword}{const}\ Path\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_aa54909a14e799e80cb503f951cb3f958}{removeLineOnRect}}(\textcolor{keyword}{const}\ IntRect\ \&,\ \textcolor{keyword}{const}\ Path\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_af400cbe73fab2424294f7ebc40ca2057}{clipSectionOnVerticalLine}}(\textcolor{keyword}{const}\ int64\_t\ \&x,\ \textcolor{keyword}{const}\ int64\_t\ \&minY,\ \textcolor{keyword}{const}\ int64\_t\ \&maxY,\ IntPoint\ \&pt1,\ IntPoint\ \&pt2);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a2ba3e71bc4392b3e02834bc3ae3c5230}{clipSectionOnHorizontalLine}}(\textcolor{keyword}{const}\ int64\_t\ \&y,\ \textcolor{keyword}{const}\ int64\_t\ \&minX,\ \textcolor{keyword}{const}\ int64\_t\ \&maxX,\ IntPoint\ \&pt1,\ IntPoint\ \&pt2);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_m_splicing_module_priv_a68bff0a4cdd14e9b79a7dfabca54b87a}{SLMSplicingModule}};}
+\DoxyCodeLine{00027\ \ \ \ \ QSharedPointer<ScannerSplicingArea>\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a5c0a09e5fe0c01e2b34d29ed6ec4ef23}{\_scannerSplicing}};}
+\DoxyCodeLine{00028\ \ \ \ \ QMap<int,\ LayerSplicingArea>\ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a23ac2880170d2a7ac2d9483749ab1f24}{\_layerSplicingMap}};}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//SPLICING\_MODULE\_PRIV\_HHH\_HH\_H}}
+
+\end{DoxyCode}

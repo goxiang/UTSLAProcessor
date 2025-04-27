@@ -1,0 +1,51 @@
+\doxysection{dividerprocessor.\+h}
+\hypertarget{dividerprocessor_8h_source}{}\label{dividerprocessor_8h_source}\index{DynamicDivider/dividerprocessor.h@{DynamicDivider/dividerprocessor.h}}
+\mbox{\hyperlink{dividerprocessor_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DIVIDERPROCESSER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DIVIDERPROCESSER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSemaphore>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utslaprocessorprivate_8h}{utslaprocessorprivate.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessorPrivate}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_build_part}{BuildPart}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_divider_processor_aec57ed4d4d1872c42d526b2122eef750}{DividerProcessor}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_divider_processor_aec57ed4d4d1872c42d526b2122eef750}{DividerProcessor}}(\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessorPrivate}}\ *);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_a7d2fa3a2453c54dd255f2863d1195844}{startProcessing}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_a787a862397544a6c21f414e21dbd14d5}{createPartWriter}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_a3a9948e65272f632744bd6ee89998b07}{processingAllParts}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_ab15a1a874cb2df9b62a33b5a4c45ed95}{writeFileEnd}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_a19d9981cc4e24f1693a20589cc684ace}{updatePartLayerInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QSharedPointer<BuildPart>\ \&);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_aad61ca733d678b6129d0d0f4b6298e76}{calcBorderWeight}}(\textcolor{keyword}{const}\ QList<int>\ \&,\ std::map<int,\ double>\ \&);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_divider_processor_aad61ca733d678b6129d0d0f4b6298e76}{calcBorderWeight}}(\textcolor{keyword}{const}\ QList<int>\ \&);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_divider_processor_a6b336f99a26dde3b8cddc67010102f59}{calcSupportWeight}}(\textcolor{keyword}{const}\ Paths\ \&);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_a90b6f48844926eacb90c104ad183ec7b}{runTaskInConcurrent}}(\textcolor{keyword}{const}\ QSet<int>\ \&,\ \textcolor{keyword}{const}\ QList<int>\ \&,\ \textcolor{keyword}{const}\ QList<int>\ \&,\ \textcolor{keyword}{const}\ QMap<int,\ Paths>\ \&);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_divider_processor_a69c50891e7071ca2cdc497fba42e2f64}{taskRunner}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ QList<int>\ \&,\ \textcolor{keyword}{const}\ QList<int>\ \&,\ \textcolor{keyword}{const}\ QMap<int,\ Paths>\ \&);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessorPrivate}}\ *\mbox{\hyperlink{class_divider_processor_adbf8519ac05ea07b08b8a6411311c3ae}{\_slaPriv}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_divider_processor_a33c746bd469af81c3924a6afc8f8a8c9}{\_partCnt}}\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_divider_processor_acd71bd98ee3f2a09a9138b679959acd3}{\_minLayer}}\ =\ -\/1;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_divider_processor_aa9b08a50fd0aee32faa2050737390dbf}{\_maxLayer}}\ =\ -\/1;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_divider_processor_a2de2b2253c3c97410563ee6083660b73}{\_scannerCnt}}\ =\ 1;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_divider_processor_affba3585f83bfb6de0dc445939b3ff28}{\_borderScannerCnt}}\ =\ 1;}
+\DoxyCodeLine{00045\ \ \ \ \ QMap<int,\ QSharedPointer<BuildPart>>\ \mbox{\hyperlink{class_divider_processor_add6fe2c50fc07e444b86997fc66dd104}{\_buildPartMap}};}
+\DoxyCodeLine{00046\ \ \ \ \ QSemaphore\ \mbox{\hyperlink{class_divider_processor_a11b5c7c67585c410c8e1b5e203777b86}{\_runningSemaphore}};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DIVIDERPROCESSER\_H}}
+
+\end{DoxyCode}

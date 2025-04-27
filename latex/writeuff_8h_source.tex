@@ -1,0 +1,35 @@
+\doxysection{writeuff.\+h}
+\hypertarget{writeuff_8h_source}{}\label{writeuff_8h_source}\mbox{\hyperlink{writeuff_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WRITEUFF\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WRITEUFF\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QThread>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{publicheader_8h}{publicheader.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_write_u_f_f_ae8a136faf2fdd94b83522e62f12bcf75}{WriteUFF}}\ :\ \textcolor{keyword}{public}\ QThread}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_write_u_f_f_ae8a136faf2fdd94b83522e62f12bcf75}{WriteUFF}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_u_f_f_a2f261d9bd6196363f54968c59b2a8bce}{setUFFStatus}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_u_f_f_a374f5abef969870d13042455e01da516}{setParaWriteBuff}}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_u_f_f_a3914c14eca0fb759bfedce40503c011c}{stopThread}}()\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_write_u_f_f_ad2c98515058fe405816b42542fb3ad28}{m\_bRunning}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_u_f_f_adb1b058f5a93255923dc32a7415c4e39}{run}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_write_u_f_f_ab68d5149050a5e072bad890aba22e107}{m\_nUFDataStatus}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_write_u_f_f_ad2c98515058fe405816b42542fb3ad28}{m\_bRunning}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_write_u_f_f_a735a87e8922edc729d3c76ef3c8c1b6d}{\_writeBuff}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WRITEUFF\_H}}
+
+\end{DoxyCode}

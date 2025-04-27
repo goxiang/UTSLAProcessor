@@ -1,0 +1,785 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: publicheader.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('publicheader_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">publicheader.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="uspfiledef_8h_source.html">uspfiledef.h</a>&quot;</code><br />
+<code>#include &quot;bppbuildparameters.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="slmsplicingmodule_8h_source.html">slmsplicingmodule.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="slascaninfodef_8h_source.html">slascaninfodef.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pathparameters_8h_source.html">pathparameters.h</a>&quot;</code><br />
+<code>#include &quot;qjsonparsing.h&quot;</code><br />
+<code>#include &lt;QJsonObject&gt;</code><br />
+<code>#include &lt;QMutex&gt;</code><br />
+<code>#include &lt;QFile&gt;</code><br />
+<code>#include &lt;QRect&gt;</code><br />
+<code>#include &lt;QElapsedTimer&gt;</code><br />
+</div>
+<p><a href="publicheader_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_splicing_info.html">SplicingInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_writer_buffer_paras.html">WriterBufferParas</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_____n_o_r_m_a_l_l_i_n_e.html">__NORMALLINE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_splicing_area.html">SplicingArea</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_splicing_line.html">SplicingLine</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_run_elapsed_timer.html">RunElapsedTimer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_paths_info.html">PathsInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a369919ed0ca41eaae484b1c5c935b561" id="r_a369919ed0ca41eaae484b1c5c935b561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a369919ed0ca41eaae484b1c5c935b561">DEF_PI</a>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="separator:a369919ed0ca41eaae484b1c5c935b561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917505bd35de4a7656f21ab476f410c5" id="r_a917505bd35de4a7656f21ab476f410c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a>&#160;&#160;&#160;UNITSPRECISION</td></tr>
+<tr class="separator:a917505bd35de4a7656f21ab476f410c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23be66065739568aeb5b4fe7c40486f" id="r_ad23be66065739568aeb5b4fe7c40486f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad23be66065739568aeb5b4fe7c40486f">COMMONUNIT</a>&#160;&#160;&#160;<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a></td></tr>
+<tr class="separator:ad23be66065739568aeb5b4fe7c40486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cdb1fab21c66e1b408b2345ea0c6c59" id="r_a8cdb1fab21c66e1b408b2345ea0c6c59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cdb1fab21c66e1b408b2345ea0c6c59">LAYERHEIFACTOR</a>&#160;&#160;&#160;(1.0 / <a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a>)</td></tr>
+<tr class="separator:a8cdb1fab21c66e1b408b2345ea0c6c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3992d4f85d2cd1ac25ab7bd6851ea2" id="r_add3992d4f85d2cd1ac25ab7bd6851ea2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add3992d4f85d2cd1ac25ab7bd6851ea2">AREAFACTOR</a>&#160;&#160;&#160;(1.0 / <a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> / <a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a>)</td></tr>
+<tr class="separator:add3992d4f85d2cd1ac25ab7bd6851ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c9210c51a1f755128d349d055c693d" id="r_a14c9210c51a1f755128d349d055c693d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14c9210c51a1f755128d349d055c693d">FILEDATAUNIT_0_2</a>&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.2)</td></tr>
+<tr class="separator:a14c9210c51a1f755128d349d055c693d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcbe2ea3f58809f999630875ed5b4d7" id="r_acbcbe2ea3f58809f999630875ed5b4d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbcbe2ea3f58809f999630875ed5b4d7">FILEDATAUNIT_0_4</a>&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.4)</td></tr>
+<tr class="separator:acbcbe2ea3f58809f999630875ed5b4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19937a917081a85df33a6cf8c26b686f" id="r_a19937a917081a85df33a6cf8c26b686f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19937a917081a85df33a6cf8c26b686f">FILEDATAUNIT_0_5</a>&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.5)</td></tr>
+<tr class="separator:a19937a917081a85df33a6cf8c26b686f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69b40cceebc10ed9f1fd54b5106c9e5" id="r_af69b40cceebc10ed9f1fd54b5106c9e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af69b40cceebc10ed9f1fd54b5106c9e5">FILEDATAUNIT_0_05</a>&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.05)</td></tr>
+<tr class="separator:af69b40cceebc10ed9f1fd54b5106c9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3374629816084bbc16d8c8944465efc" id="r_ae3374629816084bbc16d8c8944465efc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3374629816084bbc16d8c8944465efc">MINFILTERAREA</a>&#160;&#160;&#160;((<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.1) * (<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.1))</td></tr>
+<tr class="separator:ae3374629816084bbc16d8c8944465efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28e70c7c801508ab7f362b3df72bc50" id="r_aa28e70c7c801508ab7f362b3df72bc50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa28e70c7c801508ab7f362b3df72bc50">SPLICING_ERROR_HOR</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:aa28e70c7c801508ab7f362b3df72bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3e656a3edc243d6c4365ebaac064da" id="r_afb3e656a3edc243d6c4365ebaac064da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb3e656a3edc243d6c4365ebaac064da">SPLICING_ERROR_HORx2</a>&#160;&#160;&#160;((<a class="el" href="#aa28e70c7c801508ab7f362b3df72bc50">SPLICING_ERROR_HOR</a> - 1) &lt;&lt; 1)</td></tr>
+<tr class="separator:afb3e656a3edc243d6c4365ebaac064da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc20057f4c52f1155b2dd3d64916c27" id="r_a8cc20057f4c52f1155b2dd3d64916c27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cc20057f4c52f1155b2dd3d64916c27">BppParas</a>&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_bppParaPtr</td></tr>
+<tr class="separator:a8cc20057f4c52f1155b2dd3d64916c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54162cb8ae7d0105877b476ab18dbb4e" id="r_a54162cb8ae7d0105877b476ab18dbb4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54162cb8ae7d0105877b476ab18dbb4e">BpcParas</a>&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_bpcParaPtr</td></tr>
+<tr class="separator:a54162cb8ae7d0105877b476ab18dbb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8f720a796a38c7152cb0d336b72a2c" id="r_a2d8f720a796a38c7152cb0d336b72a2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d8f720a796a38c7152cb0d336b72a2c">SplicingPtr</a>&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_splicingPtr</td></tr>
+<tr class="separator:a2d8f720a796a38c7152cb0d336b72a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda0baced38df6887a5e18298613002a" id="r_acda0baced38df6887a5e18298613002a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acda0baced38df6887a5e18298613002a">ExtendedObj</a>&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_extendObj</td></tr>
+<tr class="separator:acda0baced38df6887a5e18298613002a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ece72ff68dfe132ead9c10c51c1659d" id="r_a3ece72ff68dfe132ead9c10c51c1659d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ece72ff68dfe132ead9c10c51c1659d">ExtendedParas</a>&#160;&#160;&#160;_writeBuff-&gt;getExtendedValue</td></tr>
+<tr class="separator:a3ece72ff68dfe132ead9c10c51c1659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255b458f8cfa59bd32b71db09cf2ecd2" id="r_a255b458f8cfa59bd32b71db09cf2ecd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a255b458f8cfa59bd32b71db09cf2ecd2">RunTimerReset</a>()</td></tr>
+<tr class="separator:a255b458f8cfa59bd32b71db09cf2ecd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aad4b7dacd137088a227f01b1f806e9" id="r_a8aad4b7dacd137088a227f01b1f806e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8aad4b7dacd137088a227f01b1f806e9">RunTimerRecord</a>(msg)</td></tr>
+<tr class="separator:a8aad4b7dacd137088a227f01b1f806e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a48efa2b7e2ff14833a057a22f4c16b6a" id="r_a48efa2b7e2ff14833a057a22f4c16b6a"><td class="memItemLeft" align="right" valign="top">typedef QSharedPointer&lt; <a class="el" href="struct_u_f_i_l_e_d_a_t_a.html">UFILEDATA</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48efa2b7e2ff14833a057a22f4c16b6a">UFILEDATAPTR</a></td></tr>
+<tr class="separator:a48efa2b7e2ff14833a057a22f4c16b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711d632d3f4373babf317c9f783039e5" id="r_a711d632d3f4373babf317c9f783039e5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_____n_o_r_m_a_l_l_i_n_e.html">__NORMALLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a711d632d3f4373babf317c9f783039e5">LINENORMAL</a></td></tr>
+<tr class="separator:a711d632d3f4373babf317c9f783039e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a6154167c92de0db2d2cb4ed2e0fe6263" id="r_a6154167c92de0db2d2cb4ed2e0fe6263"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6154167c92de0db2d2cb4ed2e0fe6263">EXPORT_FILE_MODE</a> { <a class="el" href="#a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c">EXPORT_NORMAL</a> = 0
+, <a class="el" href="#a6154167c92de0db2d2cb4ed2e0fe6263aa35a940035a8ab0a79a1fb9c6b70eae8">EXPORT_SLM_BUILDFILE</a>
+ }</td></tr>
+<tr class="separator:a6154167c92de0db2d2cb4ed2e0fe6263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0060ae4c0a60a13dbe117a2550faa1b" id="r_ab0060ae4c0a60a13dbe117a2550faa1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0060ae4c0a60a13dbe117a2550faa1b">HATCHINGBEAM</a> { <a class="el" href="#ab0060ae4c0a60a13dbe117a2550faa1ba7c705eba700361b1da2471465ec5aeca">HATCHINGBEAM_NORMAL</a> = 0
+, <a class="el" href="#ab0060ae4c0a60a13dbe117a2550faa1ba19d5e893555da1a8e7c38a612baf0dbb">HATCHINGBEAM_SMALL</a> = 1
+, <a class="el" href="#ab0060ae4c0a60a13dbe117a2550faa1bad9e7699086957a7796d48113fe8986fb">HATCHINGBEAM_REMAINING</a> = 2
+ }</td></tr>
+<tr class="separator:ab0060ae4c0a60a13dbe117a2550faa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a488e3a61f533f34ab3faf2f4a03ec7d0" id="r_a488e3a61f533f34ab3faf2f4a03ec7d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a488e3a61f533f34ab3faf2f4a03ec7d0">writeData8</a> (QFile *, qint8)</td></tr>
+<tr class="separator:a488e3a61f533f34ab3faf2f4a03ec7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacec619a40ee953a896588a561b4b92b" id="r_aacec619a40ee953a896588a561b4b92b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacec619a40ee953a896588a561b4b92b">writeData32</a> (QFile *, qint32)</td></tr>
+<tr class="separator:aacec619a40ee953a896588a561b4b92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66eae2bd7027ef42943c12562a8b8929" id="r_a66eae2bd7027ef42943c12562a8b8929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66eae2bd7027ef42943c12562a8b8929">writeScanLines</a> (QFile *, QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;)</td></tr>
+<tr class="separator:a66eae2bd7027ef42943c12562a8b8929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbcda474db05b190f4321234f056b946" id="r_adbcda474db05b190f4321234f056b946"><td class="memItemLeft" align="right" valign="top">QDebug&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbcda474db05b190f4321234f056b946">operator&lt;&lt;</a> (QDebug debug, const IntPoint &amp;p)</td></tr>
+<tr class="separator:adbcda474db05b190f4321234f056b946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548e1af68039ced0cd2a2bd1597c4809" id="r_a548e1af68039ced0cd2a2bd1597c4809"><td class="memItemLeft" align="right" valign="top">QDebug&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a548e1af68039ced0cd2a2bd1597c4809">operator&lt;&lt;</a> (QDebug debug, const IntRect &amp;p)</td></tr>
+<tr class="separator:a548e1af68039ced0cd2a2bd1597c4809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4877eaea720a377e5005b3a894e3ed2f" id="r_a4877eaea720a377e5005b3a894e3ed2f"><td class="memItemLeft" align="right" valign="top">QDebug&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4877eaea720a377e5005b3a894e3ed2f">operator&lt;&lt;</a> (QDebug debug, const Path &amp;path)</td></tr>
+<tr class="separator:a4877eaea720a377e5005b3a894e3ed2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2a7e6b1043ac9932dc25b18dbfdb69" id="r_ade2a7e6b1043ac9932dc25b18dbfdb69"><td class="memItemLeft" align="right" valign="top">QDebug&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade2a7e6b1043ac9932dc25b18dbfdb69">operator&lt;&lt;</a> (QDebug debug, const DoublePoint &amp;p)</td></tr>
+<tr class="separator:ade2a7e6b1043ac9932dc25b18dbfdb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="add3992d4f85d2cd1ac25ab7bd6851ea2" name="add3992d4f85d2cd1ac25ab7bd6851ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3992d4f85d2cd1ac25ab7bd6851ea2">&#9670;&#160;</a></span>AREAFACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AREAFACTOR&#160;&#160;&#160;(1.0 / <a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> / <a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54162cb8ae7d0105877b476ab18dbb4e" name="a54162cb8ae7d0105877b476ab18dbb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54162cb8ae7d0105877b476ab18dbb4e">&#9670;&#160;</a></span>BpcParas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BpcParas&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_bpcParaPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cc20057f4c52f1155b2dd3d64916c27" name="a8cc20057f4c52f1155b2dd3d64916c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc20057f4c52f1155b2dd3d64916c27">&#9670;&#160;</a></span>BppParas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BppParas&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_bppParaPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad23be66065739568aeb5b4fe7c40486f" name="ad23be66065739568aeb5b4fe7c40486f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23be66065739568aeb5b4fe7c40486f">&#9670;&#160;</a></span>COMMONUNIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMMONUNIT&#160;&#160;&#160;<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a369919ed0ca41eaae484b1c5c935b561" name="a369919ed0ca41eaae484b1c5c935b561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369919ed0ca41eaae484b1c5c935b561">&#9670;&#160;</a></span>DEF_PI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEF_PI&#160;&#160;&#160;3.14159265358979323846</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acda0baced38df6887a5e18298613002a" name="acda0baced38df6887a5e18298613002a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda0baced38df6887a5e18298613002a">&#9670;&#160;</a></span>ExtendedObj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ExtendedObj&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_extendObj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ece72ff68dfe132ead9c10c51c1659d" name="a3ece72ff68dfe132ead9c10c51c1659d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ece72ff68dfe132ead9c10c51c1659d">&#9670;&#160;</a></span>ExtendedParas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ExtendedParas&#160;&#160;&#160;_writeBuff-&gt;getExtendedValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a917505bd35de4a7656f21ab476f410c5" name="a917505bd35de4a7656f21ab476f410c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917505bd35de4a7656f21ab476f410c5">&#9670;&#160;</a></span>FILEDATAUNIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILEDATAUNIT&#160;&#160;&#160;UNITSPRECISION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af69b40cceebc10ed9f1fd54b5106c9e5" name="af69b40cceebc10ed9f1fd54b5106c9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af69b40cceebc10ed9f1fd54b5106c9e5">&#9670;&#160;</a></span>FILEDATAUNIT_0_05</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILEDATAUNIT_0_05&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.05)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14c9210c51a1f755128d349d055c693d" name="a14c9210c51a1f755128d349d055c693d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c9210c51a1f755128d349d055c693d">&#9670;&#160;</a></span>FILEDATAUNIT_0_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILEDATAUNIT_0_2&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbcbe2ea3f58809f999630875ed5b4d7" name="acbcbe2ea3f58809f999630875ed5b4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcbe2ea3f58809f999630875ed5b4d7">&#9670;&#160;</a></span>FILEDATAUNIT_0_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILEDATAUNIT_0_4&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19937a917081a85df33a6cf8c26b686f" name="a19937a917081a85df33a6cf8c26b686f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19937a917081a85df33a6cf8c26b686f">&#9670;&#160;</a></span>FILEDATAUNIT_0_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILEDATAUNIT_0_5&#160;&#160;&#160;(<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cdb1fab21c66e1b408b2345ea0c6c59" name="a8cdb1fab21c66e1b408b2345ea0c6c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cdb1fab21c66e1b408b2345ea0c6c59">&#9670;&#160;</a></span>LAYERHEIFACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAYERHEIFACTOR&#160;&#160;&#160;(1.0 / <a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3374629816084bbc16d8c8944465efc" name="ae3374629816084bbc16d8c8944465efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3374629816084bbc16d8c8944465efc">&#9670;&#160;</a></span>MINFILTERAREA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MINFILTERAREA&#160;&#160;&#160;((<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.1) * (<a class="el" href="#a917505bd35de4a7656f21ab476f410c5">FILEDATAUNIT</a> * 0.1))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aad4b7dacd137088a227f01b1f806e9" name="a8aad4b7dacd137088a227f01b1f806e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aad4b7dacd137088a227f01b1f806e9">&#9670;&#160;</a></span>RunTimerRecord</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RunTimerRecord</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code hl_function" href="class_run_elapsed_timer.html#a29599b6a8ddceb0c08fc58c38dd8193d">RunElapsedTimer::getInterface</a>()-&gt;<a class="code hl_function" href="class_run_elapsed_timer.html#acebc164cf5b352c879f6c5f0cf6c39ef">runRecord</a>(msg)</div>
+<div class="ttc" id="aclass_run_elapsed_timer_html_a29599b6a8ddceb0c08fc58c38dd8193d"><div class="ttname"><a href="class_run_elapsed_timer.html#a29599b6a8ddceb0c08fc58c38dd8193d">RunElapsedTimer::getInterface</a></div><div class="ttdeci">static RunElapsedTimer * getInterface()</div><div class="ttdef"><b>定义</b> publicheader.h:262</div></div>
+<div class="ttc" id="aclass_run_elapsed_timer_html_acebc164cf5b352c879f6c5f0cf6c39ef"><div class="ttname"><a href="class_run_elapsed_timer.html#acebc164cf5b352c879f6c5f0cf6c39ef">RunElapsedTimer::runRecord</a></div><div class="ttdeci">void runRecord(const QString &amp;msg)</div><div class="ttdef"><b>定义</b> publicheader.h:270</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a255b458f8cfa59bd32b71db09cf2ecd2" name="a255b458f8cfa59bd32b71db09cf2ecd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255b458f8cfa59bd32b71db09cf2ecd2">&#9670;&#160;</a></span>RunTimerReset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RunTimerReset</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code hl_function" href="class_run_elapsed_timer.html#a29599b6a8ddceb0c08fc58c38dd8193d">RunElapsedTimer::getInterface</a>()-&gt;<a class="code hl_function" href="class_run_elapsed_timer.html#a1801dc3d6df4987e0d5a902d707a49c1">resetTimer</a>()</div>
+<div class="ttc" id="aclass_run_elapsed_timer_html_a1801dc3d6df4987e0d5a902d707a49c1"><div class="ttname"><a href="class_run_elapsed_timer.html#a1801dc3d6df4987e0d5a902d707a49c1">RunElapsedTimer::resetTimer</a></div><div class="ttdeci">void resetTimer()</div><div class="ttdef"><b>定义</b> publicheader.h:266</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa28e70c7c801508ab7f362b3df72bc50" name="aa28e70c7c801508ab7f362b3df72bc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa28e70c7c801508ab7f362b3df72bc50">&#9670;&#160;</a></span>SPLICING_ERROR_HOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPLICING_ERROR_HOR&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb3e656a3edc243d6c4365ebaac064da" name="afb3e656a3edc243d6c4365ebaac064da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3e656a3edc243d6c4365ebaac064da">&#9670;&#160;</a></span>SPLICING_ERROR_HORx2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPLICING_ERROR_HORx2&#160;&#160;&#160;((<a class="el" href="#aa28e70c7c801508ab7f362b3df72bc50">SPLICING_ERROR_HOR</a> - 1) &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d8f720a796a38c7152cb0d336b72a2c" name="a2d8f720a796a38c7152cb0d336b72a2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8f720a796a38c7152cb0d336b72a2c">&#9670;&#160;</a></span>SplicingPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SplicingPtr&#160;&#160;&#160;_writeBuff-&gt;_writerBufferParas-&gt;_splicingPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a711d632d3f4373babf317c9f783039e5" name="a711d632d3f4373babf317c9f783039e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711d632d3f4373babf317c9f783039e5">&#9670;&#160;</a></span>LINENORMAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_____n_o_r_m_a_l_l_i_n_e.html">__NORMALLINE</a> <a class="el" href="#a711d632d3f4373babf317c9f783039e5">LINENORMAL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48efa2b7e2ff14833a057a22f4c16b6a" name="a48efa2b7e2ff14833a057a22f4c16b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48efa2b7e2ff14833a057a22f4c16b6a">&#9670;&#160;</a></span>UFILEDATAPTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef QSharedPointer&lt;<a class="el" href="struct_u_f_i_l_e_d_a_t_a.html">UFILEDATA</a>&gt; <a class="el" href="#a48efa2b7e2ff14833a057a22f4c16b6a">UFILEDATAPTR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a6154167c92de0db2d2cb4ed2e0fe6263" name="a6154167c92de0db2d2cb4ed2e0fe6263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6154167c92de0db2d2cb4ed2e0fe6263">&#9670;&#160;</a></span>EXPORT_FILE_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6154167c92de0db2d2cb4ed2e0fe6263">EXPORT_FILE_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c" name="a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c"></a>EXPORT_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6154167c92de0db2d2cb4ed2e0fe6263aa35a940035a8ab0a79a1fb9c6b70eae8" name="a6154167c92de0db2d2cb4ed2e0fe6263aa35a940035a8ab0a79a1fb9c6b70eae8"></a>EXPORT_SLM_BUILDFILE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab0060ae4c0a60a13dbe117a2550faa1b" name="ab0060ae4c0a60a13dbe117a2550faa1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0060ae4c0a60a13dbe117a2550faa1b">&#9670;&#160;</a></span>HATCHINGBEAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ab0060ae4c0a60a13dbe117a2550faa1b">HATCHINGBEAM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab0060ae4c0a60a13dbe117a2550faa1ba7c705eba700361b1da2471465ec5aeca" name="ab0060ae4c0a60a13dbe117a2550faa1ba7c705eba700361b1da2471465ec5aeca"></a>HATCHINGBEAM_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0060ae4c0a60a13dbe117a2550faa1ba19d5e893555da1a8e7c38a612baf0dbb" name="ab0060ae4c0a60a13dbe117a2550faa1ba19d5e893555da1a8e7c38a612baf0dbb"></a>HATCHINGBEAM_SMALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0060ae4c0a60a13dbe117a2550faa1bad9e7699086957a7796d48113fe8986fb" name="ab0060ae4c0a60a13dbe117a2550faa1bad9e7699086957a7796d48113fe8986fb"></a>HATCHINGBEAM_REMAINING&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ade2a7e6b1043ac9932dc25b18dbfdb69" name="ade2a7e6b1043ac9932dc25b18dbfdb69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2a7e6b1043ac9932dc25b18dbfdb69">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDebug operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDebug</td>          <td class="paramname"><span class="paramname"><em>debug</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DoublePoint &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbcda474db05b190f4321234f056b946" name="adbcda474db05b190f4321234f056b946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbcda474db05b190f4321234f056b946">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDebug operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDebug</td>          <td class="paramname"><span class="paramname"><em>debug</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntPoint &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a548e1af68039ced0cd2a2bd1597c4809" name="a548e1af68039ced0cd2a2bd1597c4809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548e1af68039ced0cd2a2bd1597c4809">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDebug operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDebug</td>          <td class="paramname"><span class="paramname"><em>debug</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntRect &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4877eaea720a377e5005b3a894e3ed2f" name="a4877eaea720a377e5005b3a894e3ed2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4877eaea720a377e5005b3a894e3ed2f">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDebug operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDebug</td>          <td class="paramname"><span class="paramname"><em>debug</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacec619a40ee953a896588a561b4b92b" name="aacec619a40ee953a896588a561b4b92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacec619a40ee953a896588a561b4b92b">&#9670;&#160;</a></span>writeData32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeData32 </td>
+          <td>(</td>
+          <td class="paramtype">QFile *</td>          <td class="paramname"><span class="paramname"><em>lpFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint32</td>          <td class="paramname"><span class="paramname"><em>nData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a488e3a61f533f34ab3faf2f4a03ec7d0" name="a488e3a61f533f34ab3faf2f4a03ec7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488e3a61f533f34ab3faf2f4a03ec7d0">&#9670;&#160;</a></span>writeData8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeData8 </td>
+          <td>(</td>
+          <td class="paramtype">QFile *</td>          <td class="paramname"><span class="paramname"><em>lpFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint8</td>          <td class="paramname"><span class="paramname"><em>nData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66eae2bd7027ef42943c12562a8b8929" name="a66eae2bd7027ef42943c12562a8b8929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66eae2bd7027ef42943c12562a8b8929">&#9670;&#160;</a></span>writeScanLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeScanLines </td>
+          <td>(</td>
+          <td class="paramtype">QFile *</td>          <td class="paramname"><span class="paramname"><em>lpFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="struct_s_c_a_n_l_i_n_e.html">SCANLINE</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listSLines</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="publicheader_8h.html">publicheader.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

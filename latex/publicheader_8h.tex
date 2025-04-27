@@ -1,0 +1,337 @@
+\doxysection{publicheader.\+h 文件参考}
+\hypertarget{publicheader_8h}{}\label{publicheader_8h}\index{publicheader.h@{publicheader.h}}
+{\ttfamily \#include "{}uspfiledef.\+h"{}}\newline
+{\ttfamily \#include "{}bppbuildparameters.\+h"{}}\newline
+{\ttfamily \#include "{}slmsplicingmodule.\+h"{}}\newline
+{\ttfamily \#include "{}slascaninfodef.\+h"{}}\newline
+{\ttfamily \#include "{}pathparameters.\+h"{}}\newline
+{\ttfamily \#include "{}qjsonparsing.\+h"{}}\newline
+{\ttfamily \#include $<$QJson\+Object$>$}\newline
+{\ttfamily \#include $<$QMutex$>$}\newline
+{\ttfamily \#include $<$QFile$>$}\newline
+{\ttfamily \#include $<$QRect$>$}\newline
+{\ttfamily \#include $<$QElapsed\+Timer$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_splicing_info}{Splicing\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}}
+\item 
+struct \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}
+\item 
+struct \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e}{\+\_\+\+\_\+\+NORMALLINE}}
+\item 
+struct \mbox{\hyperlink{struct_splicing_area}{Splicing\+Area}}
+\item 
+struct \mbox{\hyperlink{struct_splicing_line}{Splicing\+Line}}
+\item 
+struct \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}}
+\item 
+class \mbox{\hyperlink{class_run_elapsed_timer}{Run\+Elapsed\+Timer}}
+\item 
+class \mbox{\hyperlink{class_paths_info}{Paths\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a369919ed0ca41eaae484b1c5c935b561}{DEF\+\_\+\+PI}}~3.\+14159265358979323846
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}}~UNITSPRECISION
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_ad23be66065739568aeb5b4fe7c40486f}{COMMONUNIT}}~\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}}
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a8cdb1fab21c66e1b408b2345ea0c6c59}{LAYERHEIFACTOR}}~(1.\+0 / \mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}})
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_add3992d4f85d2cd1ac25ab7bd6851ea2}{AREAFACTOR}}~(1.\+0 / \mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} / \mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}})
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a14c9210c51a1f755128d349d055c693d}{FILEDATAUNIT\+\_\+0\+\_\+2}}~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+2)
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_acbcbe2ea3f58809f999630875ed5b4d7}{FILEDATAUNIT\+\_\+0\+\_\+4}}~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+4)
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a19937a917081a85df33a6cf8c26b686f}{FILEDATAUNIT\+\_\+0\+\_\+5}}~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+5)
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_af69b40cceebc10ed9f1fd54b5106c9e5}{FILEDATAUNIT\+\_\+0\+\_\+05}}~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+05)
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_ae3374629816084bbc16d8c8944465efc}{MINFILTERAREA}}~((\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+1) \texorpdfstring{$\ast$}{*} (\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+1))
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_aa28e70c7c801508ab7f362b3df72bc50}{SPLICING\+\_\+\+ERROR\+\_\+\+HOR}}~3
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_afb3e656a3edc243d6c4365ebaac064da}{SPLICING\+\_\+\+ERROR\+\_\+\+HORx2}}~((\mbox{\hyperlink{publicheader_8h_aa28e70c7c801508ab7f362b3df72bc50}{SPLICING\+\_\+\+ERROR\+\_\+\+HOR}} -\/ 1) $<$$<$ 1)
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{Bpp\+Paras}}~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+bpp\+Para\+Ptr
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{Bpc\+Paras}}~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+bpc\+Para\+Ptr
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a2d8f720a796a38c7152cb0d336b72a2c}{Splicing\+Ptr}}~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+splicing\+Ptr
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_acda0baced38df6887a5e18298613002a}{Extended\+Obj}}~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+extend\+Obj
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a3ece72ff68dfe132ead9c10c51c1659d}{Extended\+Paras}}~\+\_\+write\+Buff-\/$>$get\+Extended\+Value
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a255b458f8cfa59bd32b71db09cf2ecd2}{Run\+Timer\+Reset}}()
+\item 
+\#define \mbox{\hyperlink{publicheader_8h_a8aad4b7dacd137088a227f01b1f806e9}{Run\+Timer\+Record}}(msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef QShared\+Pointer$<$ \mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a}{UFILEDATA}} $>$ \mbox{\hyperlink{publicheader_8h_a48efa2b7e2ff14833a057a22f4c16b6a}{UFILEDATAPTR}}
+\item 
+typedef struct \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e}{\+\_\+\+\_\+\+NORMALLINE}} \mbox{\hyperlink{publicheader_8h_a711d632d3f4373babf317c9f783039e5}{LINENORMAL}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263}{EXPORT\+\_\+\+FILE\+\_\+\+MODE}} \{ \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c}{EXPORT\+\_\+\+NORMAL}} = 0
+, \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263aa35a940035a8ab0a79a1fb9c6b70eae8}{EXPORT\+\_\+\+SLM\+\_\+\+BUILDFILE}}
+ \}
+\item 
+enum \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1b}{HATCHINGBEAM}} \{ \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba7c705eba700361b1da2471465ec5aeca}{HATCHINGBEAM\+\_\+\+NORMAL}} = 0
+, \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba19d5e893555da1a8e7c38a612baf0dbb}{HATCHINGBEAM\+\_\+\+SMALL}} = 1
+, \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1bad9e7699086957a7796d48113fe8986fb}{HATCHINGBEAM\+\_\+\+REMAINING}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{publicheader_8h_a488e3a61f533f34ab3faf2f4a03ec7d0}{write\+Data8}} (QFile \texorpdfstring{$\ast$}{*}, qint8)
+\item 
+void \mbox{\hyperlink{publicheader_8h_aacec619a40ee953a896588a561b4b92b}{write\+Data32}} (QFile \texorpdfstring{$\ast$}{*}, qint32)
+\item 
+void \mbox{\hyperlink{publicheader_8h_a66eae2bd7027ef42943c12562a8b8929}{write\+Scan\+Lines}} (QFile \texorpdfstring{$\ast$}{*}, QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&)
+\item 
+QDebug \mbox{\hyperlink{publicheader_8h_adbcda474db05b190f4321234f056b946}{operator$<$$<$}} (QDebug debug, const Int\+Point \&p)
+\item 
+QDebug \mbox{\hyperlink{publicheader_8h_a548e1af68039ced0cd2a2bd1597c4809}{operator$<$$<$}} (QDebug debug, const Int\+Rect \&p)
+\item 
+QDebug \mbox{\hyperlink{publicheader_8h_a4877eaea720a377e5005b3a894e3ed2f}{operator$<$$<$}} (QDebug debug, const Path \&path)
+\item 
+QDebug \mbox{\hyperlink{publicheader_8h_ade2a7e6b1043ac9932dc25b18dbfdb69}{operator$<$$<$}} (QDebug debug, const Double\+Point \&p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{publicheader_8h_add3992d4f85d2cd1ac25ab7bd6851ea2}\index{publicheader.h@{publicheader.h}!AREAFACTOR@{AREAFACTOR}}
+\index{AREAFACTOR@{AREAFACTOR}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{AREAFACTOR}{AREAFACTOR}}
+{\footnotesize\ttfamily \label{publicheader_8h_add3992d4f85d2cd1ac25ab7bd6851ea2} 
+\#define AREAFACTOR~(1.\+0 / \mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} / \mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}})}
+
+\Hypertarget{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}\index{publicheader.h@{publicheader.h}!BpcParas@{BpcParas}}
+\index{BpcParas@{BpcParas}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{BpcParas}{BpcParas}}
+{\footnotesize\ttfamily \label{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e} 
+\#define Bpc\+Paras~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+bpc\+Para\+Ptr}
+
+\Hypertarget{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}\index{publicheader.h@{publicheader.h}!BppParas@{BppParas}}
+\index{BppParas@{BppParas}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{BppParas}{BppParas}}
+{\footnotesize\ttfamily \label{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27} 
+\#define Bpp\+Paras~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+bpp\+Para\+Ptr}
+
+\Hypertarget{publicheader_8h_ad23be66065739568aeb5b4fe7c40486f}\index{publicheader.h@{publicheader.h}!COMMONUNIT@{COMMONUNIT}}
+\index{COMMONUNIT@{COMMONUNIT}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{COMMONUNIT}{COMMONUNIT}}
+{\footnotesize\ttfamily \label{publicheader_8h_ad23be66065739568aeb5b4fe7c40486f} 
+\#define COMMONUNIT~\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}}}
+
+\Hypertarget{publicheader_8h_a369919ed0ca41eaae484b1c5c935b561}\index{publicheader.h@{publicheader.h}!DEF\_PI@{DEF\_PI}}
+\index{DEF\_PI@{DEF\_PI}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{DEF\_PI}{DEF\_PI}}
+{\footnotesize\ttfamily \label{publicheader_8h_a369919ed0ca41eaae484b1c5c935b561} 
+\#define DEF\+\_\+\+PI~3.\+14159265358979323846}
+
+\Hypertarget{publicheader_8h_acda0baced38df6887a5e18298613002a}\index{publicheader.h@{publicheader.h}!ExtendedObj@{ExtendedObj}}
+\index{ExtendedObj@{ExtendedObj}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{ExtendedObj}{ExtendedObj}}
+{\footnotesize\ttfamily \label{publicheader_8h_acda0baced38df6887a5e18298613002a} 
+\#define Extended\+Obj~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+extend\+Obj}
+
+\Hypertarget{publicheader_8h_a3ece72ff68dfe132ead9c10c51c1659d}\index{publicheader.h@{publicheader.h}!ExtendedParas@{ExtendedParas}}
+\index{ExtendedParas@{ExtendedParas}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{ExtendedParas}{ExtendedParas}}
+{\footnotesize\ttfamily \label{publicheader_8h_a3ece72ff68dfe132ead9c10c51c1659d} 
+\#define Extended\+Paras~\+\_\+write\+Buff-\/$>$get\+Extended\+Value}
+
+\Hypertarget{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}\index{publicheader.h@{publicheader.h}!FILEDATAUNIT@{FILEDATAUNIT}}
+\index{FILEDATAUNIT@{FILEDATAUNIT}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{FILEDATAUNIT}{FILEDATAUNIT}}
+{\footnotesize\ttfamily \label{publicheader_8h_a917505bd35de4a7656f21ab476f410c5} 
+\#define FILEDATAUNIT~UNITSPRECISION}
+
+\Hypertarget{publicheader_8h_af69b40cceebc10ed9f1fd54b5106c9e5}\index{publicheader.h@{publicheader.h}!FILEDATAUNIT\_0\_05@{FILEDATAUNIT\_0\_05}}
+\index{FILEDATAUNIT\_0\_05@{FILEDATAUNIT\_0\_05}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{FILEDATAUNIT\_0\_05}{FILEDATAUNIT\_0\_05}}
+{\footnotesize\ttfamily \label{publicheader_8h_af69b40cceebc10ed9f1fd54b5106c9e5} 
+\#define FILEDATAUNIT\+\_\+0\+\_\+05~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+05)}
+
+\Hypertarget{publicheader_8h_a14c9210c51a1f755128d349d055c693d}\index{publicheader.h@{publicheader.h}!FILEDATAUNIT\_0\_2@{FILEDATAUNIT\_0\_2}}
+\index{FILEDATAUNIT\_0\_2@{FILEDATAUNIT\_0\_2}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{FILEDATAUNIT\_0\_2}{FILEDATAUNIT\_0\_2}}
+{\footnotesize\ttfamily \label{publicheader_8h_a14c9210c51a1f755128d349d055c693d} 
+\#define FILEDATAUNIT\+\_\+0\+\_\+2~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+2)}
+
+\Hypertarget{publicheader_8h_acbcbe2ea3f58809f999630875ed5b4d7}\index{publicheader.h@{publicheader.h}!FILEDATAUNIT\_0\_4@{FILEDATAUNIT\_0\_4}}
+\index{FILEDATAUNIT\_0\_4@{FILEDATAUNIT\_0\_4}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{FILEDATAUNIT\_0\_4}{FILEDATAUNIT\_0\_4}}
+{\footnotesize\ttfamily \label{publicheader_8h_acbcbe2ea3f58809f999630875ed5b4d7} 
+\#define FILEDATAUNIT\+\_\+0\+\_\+4~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+4)}
+
+\Hypertarget{publicheader_8h_a19937a917081a85df33a6cf8c26b686f}\index{publicheader.h@{publicheader.h}!FILEDATAUNIT\_0\_5@{FILEDATAUNIT\_0\_5}}
+\index{FILEDATAUNIT\_0\_5@{FILEDATAUNIT\_0\_5}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{FILEDATAUNIT\_0\_5}{FILEDATAUNIT\_0\_5}}
+{\footnotesize\ttfamily \label{publicheader_8h_a19937a917081a85df33a6cf8c26b686f} 
+\#define FILEDATAUNIT\+\_\+0\+\_\+5~(\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+5)}
+
+\Hypertarget{publicheader_8h_a8cdb1fab21c66e1b408b2345ea0c6c59}\index{publicheader.h@{publicheader.h}!LAYERHEIFACTOR@{LAYERHEIFACTOR}}
+\index{LAYERHEIFACTOR@{LAYERHEIFACTOR}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{LAYERHEIFACTOR}{LAYERHEIFACTOR}}
+{\footnotesize\ttfamily \label{publicheader_8h_a8cdb1fab21c66e1b408b2345ea0c6c59} 
+\#define LAYERHEIFACTOR~(1.\+0 / \mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}})}
+
+\Hypertarget{publicheader_8h_ae3374629816084bbc16d8c8944465efc}\index{publicheader.h@{publicheader.h}!MINFILTERAREA@{MINFILTERAREA}}
+\index{MINFILTERAREA@{MINFILTERAREA}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{MINFILTERAREA}{MINFILTERAREA}}
+{\footnotesize\ttfamily \label{publicheader_8h_ae3374629816084bbc16d8c8944465efc} 
+\#define MINFILTERAREA~((\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+1) \texorpdfstring{$\ast$}{*} (\mbox{\hyperlink{publicheader_8h_a917505bd35de4a7656f21ab476f410c5}{FILEDATAUNIT}} \texorpdfstring{$\ast$}{*} 0.\+1))}
+
+\Hypertarget{publicheader_8h_a8aad4b7dacd137088a227f01b1f806e9}\index{publicheader.h@{publicheader.h}!RunTimerRecord@{RunTimerRecord}}
+\index{RunTimerRecord@{RunTimerRecord}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{RunTimerRecord}{RunTimerRecord}}
+{\footnotesize\ttfamily \label{publicheader_8h_a8aad4b7dacd137088a227f01b1f806e9} 
+\#define Run\+Timer\+Record(\begin{DoxyParamCaption}\item[{}]{msg}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_run_elapsed_timer_a29599b6a8ddceb0c08fc58c38dd8193d}{RunElapsedTimer::getInterface}}()-\/>\mbox{\hyperlink{class_run_elapsed_timer_acebc164cf5b352c879f6c5f0cf6c39ef}{runRecord}}(msg)}
+
+\end{DoxyCode}
+\Hypertarget{publicheader_8h_a255b458f8cfa59bd32b71db09cf2ecd2}\index{publicheader.h@{publicheader.h}!RunTimerReset@{RunTimerReset}}
+\index{RunTimerReset@{RunTimerReset}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{RunTimerReset}{RunTimerReset}}
+{\footnotesize\ttfamily \label{publicheader_8h_a255b458f8cfa59bd32b71db09cf2ecd2} 
+\#define Run\+Timer\+Reset(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_run_elapsed_timer_a29599b6a8ddceb0c08fc58c38dd8193d}{RunElapsedTimer::getInterface}}()-\/>\mbox{\hyperlink{class_run_elapsed_timer_a1801dc3d6df4987e0d5a902d707a49c1}{resetTimer}}()}
+
+\end{DoxyCode}
+\Hypertarget{publicheader_8h_aa28e70c7c801508ab7f362b3df72bc50}\index{publicheader.h@{publicheader.h}!SPLICING\_ERROR\_HOR@{SPLICING\_ERROR\_HOR}}
+\index{SPLICING\_ERROR\_HOR@{SPLICING\_ERROR\_HOR}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{SPLICING\_ERROR\_HOR}{SPLICING\_ERROR\_HOR}}
+{\footnotesize\ttfamily \label{publicheader_8h_aa28e70c7c801508ab7f362b3df72bc50} 
+\#define SPLICING\+\_\+\+ERROR\+\_\+\+HOR~3}
+
+\Hypertarget{publicheader_8h_afb3e656a3edc243d6c4365ebaac064da}\index{publicheader.h@{publicheader.h}!SPLICING\_ERROR\_HORx2@{SPLICING\_ERROR\_HORx2}}
+\index{SPLICING\_ERROR\_HORx2@{SPLICING\_ERROR\_HORx2}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{SPLICING\_ERROR\_HORx2}{SPLICING\_ERROR\_HORx2}}
+{\footnotesize\ttfamily \label{publicheader_8h_afb3e656a3edc243d6c4365ebaac064da} 
+\#define SPLICING\+\_\+\+ERROR\+\_\+\+HORx2~((\mbox{\hyperlink{publicheader_8h_aa28e70c7c801508ab7f362b3df72bc50}{SPLICING\+\_\+\+ERROR\+\_\+\+HOR}} -\/ 1) $<$$<$ 1)}
+
+\Hypertarget{publicheader_8h_a2d8f720a796a38c7152cb0d336b72a2c}\index{publicheader.h@{publicheader.h}!SplicingPtr@{SplicingPtr}}
+\index{SplicingPtr@{SplicingPtr}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{SplicingPtr}{SplicingPtr}}
+{\footnotesize\ttfamily \label{publicheader_8h_a2d8f720a796a38c7152cb0d336b72a2c} 
+\#define Splicing\+Ptr~\+\_\+write\+Buff-\/$>$\+\_\+writer\+Buffer\+Paras-\/$>$\+\_\+splicing\+Ptr}
+
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{publicheader_8h_a711d632d3f4373babf317c9f783039e5}\index{publicheader.h@{publicheader.h}!LINENORMAL@{LINENORMAL}}
+\index{LINENORMAL@{LINENORMAL}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{LINENORMAL}{LINENORMAL}}
+{\footnotesize\ttfamily \label{publicheader_8h_a711d632d3f4373babf317c9f783039e5} 
+typedef struct \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e}{\+\_\+\+\_\+\+NORMALLINE}} \mbox{\hyperlink{publicheader_8h_a711d632d3f4373babf317c9f783039e5}{LINENORMAL}}}
+
+\Hypertarget{publicheader_8h_a48efa2b7e2ff14833a057a22f4c16b6a}\index{publicheader.h@{publicheader.h}!UFILEDATAPTR@{UFILEDATAPTR}}
+\index{UFILEDATAPTR@{UFILEDATAPTR}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{UFILEDATAPTR}{UFILEDATAPTR}}
+{\footnotesize\ttfamily \label{publicheader_8h_a48efa2b7e2ff14833a057a22f4c16b6a} 
+typedef QShared\+Pointer$<$\mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a}{UFILEDATA}}$>$ \mbox{\hyperlink{publicheader_8h_a48efa2b7e2ff14833a057a22f4c16b6a}{UFILEDATAPTR}}}
+
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263}\index{publicheader.h@{publicheader.h}!EXPORT\_FILE\_MODE@{EXPORT\_FILE\_MODE}}
+\index{EXPORT\_FILE\_MODE@{EXPORT\_FILE\_MODE}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{EXPORT\_FILE\_MODE}{EXPORT\_FILE\_MODE}}
+{\footnotesize\ttfamily \label{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263} 
+enum \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263}{EXPORT\+\_\+\+FILE\+\_\+\+MODE}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXPORT\_NORMAL@{EXPORT\_NORMAL}!publicheader.h@{publicheader.h}}\index{publicheader.h@{publicheader.h}!EXPORT\_NORMAL@{EXPORT\_NORMAL}}}\Hypertarget{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c}\label{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c} 
+EXPORT\+\_\+\+NORMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXPORT\_SLM\_BUILDFILE@{EXPORT\_SLM\_BUILDFILE}!publicheader.h@{publicheader.h}}\index{publicheader.h@{publicheader.h}!EXPORT\_SLM\_BUILDFILE@{EXPORT\_SLM\_BUILDFILE}}}\Hypertarget{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263aa35a940035a8ab0a79a1fb9c6b70eae8}\label{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263aa35a940035a8ab0a79a1fb9c6b70eae8} 
+EXPORT\+\_\+\+SLM\+\_\+\+BUILDFILE&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1b}\index{publicheader.h@{publicheader.h}!HATCHINGBEAM@{HATCHINGBEAM}}
+\index{HATCHINGBEAM@{HATCHINGBEAM}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{HATCHINGBEAM}{HATCHINGBEAM}}
+{\footnotesize\ttfamily \label{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1b} 
+enum \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1b}{HATCHINGBEAM}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHINGBEAM\_NORMAL@{HATCHINGBEAM\_NORMAL}!publicheader.h@{publicheader.h}}\index{publicheader.h@{publicheader.h}!HATCHINGBEAM\_NORMAL@{HATCHINGBEAM\_NORMAL}}}\Hypertarget{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba7c705eba700361b1da2471465ec5aeca}\label{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba7c705eba700361b1da2471465ec5aeca} 
+HATCHINGBEAM\+\_\+\+NORMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHINGBEAM\_SMALL@{HATCHINGBEAM\_SMALL}!publicheader.h@{publicheader.h}}\index{publicheader.h@{publicheader.h}!HATCHINGBEAM\_SMALL@{HATCHINGBEAM\_SMALL}}}\Hypertarget{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba19d5e893555da1a8e7c38a612baf0dbb}\label{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba19d5e893555da1a8e7c38a612baf0dbb} 
+HATCHINGBEAM\+\_\+\+SMALL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HATCHINGBEAM\_REMAINING@{HATCHINGBEAM\_REMAINING}!publicheader.h@{publicheader.h}}\index{publicheader.h@{publicheader.h}!HATCHINGBEAM\_REMAINING@{HATCHINGBEAM\_REMAINING}}}\Hypertarget{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1bad9e7699086957a7796d48113fe8986fb}\label{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1bad9e7699086957a7796d48113fe8986fb} 
+HATCHINGBEAM\+\_\+\+REMAINING&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{publicheader_8h_ade2a7e6b1043ac9932dc25b18dbfdb69}\index{publicheader.h@{publicheader.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{publicheader_8h_ade2a7e6b1043ac9932dc25b18dbfdb69} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const Double\+Point \&}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{publicheader_8h_adbcda474db05b190f4321234f056b946}\index{publicheader.h@{publicheader.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{publicheader_8h_adbcda474db05b190f4321234f056b946} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const Int\+Point \&}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{publicheader_8h_a548e1af68039ced0cd2a2bd1597c4809}\index{publicheader.h@{publicheader.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{publicheader_8h_a548e1af68039ced0cd2a2bd1597c4809} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const Int\+Rect \&}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{publicheader_8h_a4877eaea720a377e5005b3a894e3ed2f}\index{publicheader.h@{publicheader.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{publicheader_8h_a4877eaea720a377e5005b3a894e3ed2f} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const Path \&}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{publicheader_8h_aacec619a40ee953a896588a561b4b92b}\index{publicheader.h@{publicheader.h}!writeData32@{writeData32}}
+\index{writeData32@{writeData32}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{writeData32()}{writeData32()}}
+{\footnotesize\ttfamily \label{publicheader_8h_aacec619a40ee953a896588a561b4b92b} 
+void write\+Data32 (\begin{DoxyParamCaption}\item[{QFile \texorpdfstring{$\ast$}{*}}]{lp\+File}{, }\item[{qint32}]{n\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{publicheader_8h_a488e3a61f533f34ab3faf2f4a03ec7d0}\index{publicheader.h@{publicheader.h}!writeData8@{writeData8}}
+\index{writeData8@{writeData8}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{writeData8()}{writeData8()}}
+{\footnotesize\ttfamily \label{publicheader_8h_a488e3a61f533f34ab3faf2f4a03ec7d0} 
+void write\+Data8 (\begin{DoxyParamCaption}\item[{QFile \texorpdfstring{$\ast$}{*}}]{lp\+File}{, }\item[{qint8}]{n\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{publicheader_8h_a66eae2bd7027ef42943c12562a8b8929}\index{publicheader.h@{publicheader.h}!writeScanLines@{writeScanLines}}
+\index{writeScanLines@{writeScanLines}!publicheader.h@{publicheader.h}}
+\doxysubsubsection{\texorpdfstring{writeScanLines()}{writeScanLines()}}
+{\footnotesize\ttfamily \label{publicheader_8h_a66eae2bd7027ef42943c12562a8b8929} 
+void write\+Scan\+Lines (\begin{DoxyParamCaption}\item[{QFile \texorpdfstring{$\ast$}{*}}]{lp\+File}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{list\+SLines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+

@@ -1,0 +1,79 @@
+\doxysection{Distribution\+Info结构体 参考}
+\hypertarget{struct_distribution_info}{}\label{struct_distribution_info}\index{DistributionInfo@{DistributionInfo}}
+
+
+{\ttfamily \#include $<$publicheader.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_distribution_info_a0f05fa6446713811ac2823dab1ada659}{init\+Value}} (const int \&container\+Cnt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{struct_distribution_info_a749d974e10571889097a175108aecafc}{\+\_\+waiting\+Distribution}}
+\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{struct_distribution_info_a754ebc1977c18f3579694e8a216dec1d}{\+\_\+waiting\+Segmented}}
+\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{struct_distribution_info_ae823c8999312d092aec43391d1882010}{\+\_\+dynamic\+Segmented}}
+\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{struct_distribution_info_ac8718dd1d56026538e2c91824e5c6788}{\+\_\+distributing}}
+\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{struct_distribution_info_ac9f1b0819855dd547794782faa15bbea}{\+\_\+distributed}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_distribution_result}{Distribution\+Result}} $>$ \mbox{\hyperlink{struct_distribution_info_a81001ab650cdf0e1fbffda3caa8b1813}{\+\_\+distri\+Result}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_distribution_info_a0f05fa6446713811ac2823dab1ada659}\index{DistributionInfo@{DistributionInfo}!initValue@{initValue}}
+\index{initValue@{initValue}!DistributionInfo@{DistributionInfo}}
+\doxysubsubsection{\texorpdfstring{initValue()}{initValue()}}
+{\footnotesize\ttfamily \label{struct_distribution_info_a0f05fa6446713811ac2823dab1ada659} 
+void Distribution\+Info\+::init\+Value (\begin{DoxyParamCaption}\item[{const int \&}]{container\+Cnt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_distribution_info_ac9f1b0819855dd547794782faa15bbea}\index{DistributionInfo@{DistributionInfo}!\_distributed@{\_distributed}}
+\index{\_distributed@{\_distributed}!DistributionInfo@{DistributionInfo}}
+\doxysubsubsection{\texorpdfstring{\_distributed}{\_distributed}}
+{\footnotesize\ttfamily \label{struct_distribution_info_ac9f1b0819855dd547794782faa15bbea} 
+std\+::set$<$int$>$ Distribution\+Info\+::\+\_\+distributed}
+
+\Hypertarget{struct_distribution_info_ac8718dd1d56026538e2c91824e5c6788}\index{DistributionInfo@{DistributionInfo}!\_distributing@{\_distributing}}
+\index{\_distributing@{\_distributing}!DistributionInfo@{DistributionInfo}}
+\doxysubsubsection{\texorpdfstring{\_distributing}{\_distributing}}
+{\footnotesize\ttfamily \label{struct_distribution_info_ac8718dd1d56026538e2c91824e5c6788} 
+std\+::set$<$int$>$ Distribution\+Info\+::\+\_\+distributing}
+
+\Hypertarget{struct_distribution_info_a81001ab650cdf0e1fbffda3caa8b1813}\index{DistributionInfo@{DistributionInfo}!\_distriResult@{\_distriResult}}
+\index{\_distriResult@{\_distriResult}!DistributionInfo@{DistributionInfo}}
+\doxysubsubsection{\texorpdfstring{\_distriResult}{\_distriResult}}
+{\footnotesize\ttfamily \label{struct_distribution_info_a81001ab650cdf0e1fbffda3caa8b1813} 
+std\+::vector$<$\mbox{\hyperlink{struct_distribution_result}{Distribution\+Result}}$>$ Distribution\+Info\+::\+\_\+distri\+Result}
+
+\Hypertarget{struct_distribution_info_ae823c8999312d092aec43391d1882010}\index{DistributionInfo@{DistributionInfo}!\_dynamicSegmented@{\_dynamicSegmented}}
+\index{\_dynamicSegmented@{\_dynamicSegmented}!DistributionInfo@{DistributionInfo}}
+\doxysubsubsection{\texorpdfstring{\_dynamicSegmented}{\_dynamicSegmented}}
+{\footnotesize\ttfamily \label{struct_distribution_info_ae823c8999312d092aec43391d1882010} 
+std\+::set$<$int$>$ Distribution\+Info\+::\+\_\+dynamic\+Segmented}
+
+\Hypertarget{struct_distribution_info_a749d974e10571889097a175108aecafc}\index{DistributionInfo@{DistributionInfo}!\_waitingDistribution@{\_waitingDistribution}}
+\index{\_waitingDistribution@{\_waitingDistribution}!DistributionInfo@{DistributionInfo}}
+\doxysubsubsection{\texorpdfstring{\_waitingDistribution}{\_waitingDistribution}}
+{\footnotesize\ttfamily \label{struct_distribution_info_a749d974e10571889097a175108aecafc} 
+std\+::vector$<$int$>$ Distribution\+Info\+::\+\_\+waiting\+Distribution}
+
+\Hypertarget{struct_distribution_info_a754ebc1977c18f3579694e8a216dec1d}\index{DistributionInfo@{DistributionInfo}!\_waitingSegmented@{\_waitingSegmented}}
+\index{\_waitingSegmented@{\_waitingSegmented}!DistributionInfo@{DistributionInfo}}
+\doxysubsubsection{\texorpdfstring{\_waitingSegmented}{\_waitingSegmented}}
+{\footnotesize\ttfamily \label{struct_distribution_info_a754ebc1977c18f3579694e8a216dec1d} 
+std\+::set$<$int$>$ Distribution\+Info\+::\+\_\+waiting\+Segmented}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Dynamic\+Divider/\mbox{\hyperlink{_dynamic_divider_2publicheader_8h}{publicheader.\+h}}\end{DoxyCompactItemize}

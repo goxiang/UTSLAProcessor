@@ -1,0 +1,954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: SLJobFileWriter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_s_l_job_file_writer.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_s_l_job_file_writer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">SLJobFileWriter类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="sljobfilewriter_8h_source.html">sljobfilewriter.h</a>&gt;</code></p>
+<div class="dynheader">
+类 SLJobFileWriter 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_s_l_job_file_writer.png" usemap="#SLJobFileWriter_map" alt=""/>
+  <map id="SLJobFileWriter_map" name="SLJobFileWriter_map">
+<area href="class_file_writer.html" alt="FileWriter" shape="rect" coords="0,0,103,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a03562a6bc8febf0f6b93df05fe117235" id="r_a03562a6bc8febf0f6b93df05fe117235"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03562a6bc8febf0f6b93df05fe117235">SLJobFileWriter</a> ()</td></tr>
+<tr class="separator:a03562a6bc8febf0f6b93df05fe117235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d77507c520df878ff17554d0cb2de6d" id="r_a3d77507c520df878ff17554d0cb2de6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d77507c520df878ff17554d0cb2de6d">~SLJobFileWriter</a> ()</td></tr>
+<tr class="separator:a3d77507c520df878ff17554d0cb2de6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bf2526889dc4e580148560f4314168" id="r_a48bf2526889dc4e580148560f4314168"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48bf2526889dc4e580148560f4314168">initFileWrite</a> ()</td></tr>
+<tr class="separator:a48bf2526889dc4e580148560f4314168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9eeecf8c1ae45a964b48bbffaaf4d6" id="r_ade9eeecf8c1ae45a964b48bbffaaf4d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade9eeecf8c1ae45a964b48bbffaaf4d6">startBuffWriter</a> ()</td></tr>
+<tr class="separator:ade9eeecf8c1ae45a964b48bbffaaf4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf246cddd4e012beccb3a7822ecef4ce" id="r_aaf246cddd4e012beccb3a7822ecef4ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf246cddd4e012beccb3a7822ecef4ce">waitBuffWriter</a> ()</td></tr>
+<tr class="separator:aaf246cddd4e012beccb3a7822ecef4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8c2feb57ef6bd715003f3ef2a7d60d" id="r_adc8c2feb57ef6bd715003f3ef2a7d60d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc8c2feb57ef6bd715003f3ef2a7d60d">writeLayerInfo</a> (const int &amp;, const BOUNDINGRECT &amp;, const double &amp;)</td></tr>
+<tr class="separator:adc8c2feb57ef6bd715003f3ef2a7d60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c537a6e834ff636cecde0374dccd17" id="r_ab4c537a6e834ff636cecde0374dccd17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4c537a6e834ff636cecde0374dccd17">createUSPFile</a> (const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;, QJsonObject &amp;)</td></tr>
+<tr class="separator:ab4c537a6e834ff636cecde0374dccd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1cd6cdd6e1b2163b6b4ca358cd6776" id="r_adc1cd6cdd6e1b2163b6b4ca358cd6776"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc1cd6cdd6e1b2163b6b4ca358cd6776">getBufPara</a> ()</td></tr>
+<tr class="separator:adc1cd6cdd6e1b2163b6b4ca358cd6776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e46e82fab743f53107b10e4f8618a34" id="r_a3e46e82fab743f53107b10e4f8618a34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e46e82fab743f53107b10e4f8618a34">algo</a> ()</td></tr>
+<tr class="separator:a3e46e82fab743f53107b10e4f8618a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed835e00c399109941cf100c521b021" id="r_a1ed835e00c399109941cf100c521b021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ed835e00c399109941cf100c521b021">setScannerIndex</a> (const int &amp;)</td></tr>
+<tr class="separator:a1ed835e00c399109941cf100c521b021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_file_writer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_file_writer')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_file_writer.html">FileWriter</a></td></tr>
+<tr class="memitem:ae4dd90b95298451fc84d753b987ddc82 inherit pub_methods_class_file_writer" id="r_ae4dd90b95298451fc84d753b987ddc82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter</a> ()=default</td></tr>
+<tr class="separator:ae4dd90b95298451fc84d753b987ddc82 inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2c19fe58992d3835e047f8ddeb4f8c inherit pub_methods_class_file_writer" id="r_a4b2c19fe58992d3835e047f8ddeb4f8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#a4b2c19fe58992d3835e047f8ddeb4f8c">~FileWriter</a> ()=default</td></tr>
+<tr class="separator:a4b2c19fe58992d3835e047f8ddeb4f8c inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee28aa1a3f575e995c50417304d8f77 inherit pub_methods_class_file_writer" id="r_a9ee28aa1a3f575e995c50417304d8f77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#a9ee28aa1a3f575e995c50417304d8f77">writeAreaInfo</a> (const int &amp;)</td></tr>
+<tr class="separator:a9ee28aa1a3f575e995c50417304d8f77 inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d09cec7ab06a0357be67c687de25f56 inherit pub_methods_class_file_writer" id="r_a1d09cec7ab06a0357be67c687de25f56"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#a1d09cec7ab06a0357be67c687de25f56">writeFileEnd</a> ()</td></tr>
+<tr class="separator:a1d09cec7ab06a0357be67c687de25f56 inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0439ca70cd848eb98955a360759bb76 inherit pub_methods_class_file_writer" id="r_aa0439ca70cd848eb98955a360759bb76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#aa0439ca70cd848eb98955a360759bb76">writeFileBegin_SomePropertys</a> ()</td></tr>
+<tr class="separator:aa0439ca70cd848eb98955a360759bb76 inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8a365efee70f8d197effbb380e8897 inherit pub_methods_class_file_writer" id="r_a3a8a365efee70f8d197effbb380e8897"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#a3a8a365efee70f8d197effbb380e8897">addVolume</a> (const double &amp;)</td></tr>
+<tr class="separator:a3a8a365efee70f8d197effbb380e8897 inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad543887b7aff55a82ebafb5b3a53fc4f inherit pub_methods_class_file_writer" id="r_ad543887b7aff55a82ebafb5b3a53fc4f"><td class="memItemLeft" align="right" valign="top">virtual QSharedPointer&lt; <a class="el" href="class_file_writer.html">FileWriter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#ad543887b7aff55a82ebafb5b3a53fc4f">cloneWriter</a> ()</td></tr>
+<tr class="separator:ad543887b7aff55a82ebafb5b3a53fc4f inherit pub_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a20b23acedf6cb225e6299b91badebf85" id="r_a20b23acedf6cb225e6299b91badebf85"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20b23acedf6cb225e6299b91badebf85">createJFileContentXml</a> (const QString &amp;, const QStringList &amp;, const QString &amp;, const QSharedPointer&lt; <a class="el" href="struct_writer_buffer_paras.html">WriterBufferParas</a> &gt; &amp;)</td></tr>
+<tr class="separator:a20b23acedf6cb225e6299b91badebf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64616fa5021248cb5d7b6e4a208c2b53" id="r_a64616fa5021248cb5d7b6e4a208c2b53"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64616fa5021248cb5d7b6e4a208c2b53">createJFileMetaDataXML</a> (const QString &amp;, const QStringList &amp;, const QString &amp;, const QSharedPointer&lt; <a class="el" href="struct_writer_buffer_paras.html">WriterBufferParas</a> &gt; &amp;)</td></tr>
+<tr class="separator:a64616fa5021248cb5d7b6e4a208c2b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee574b5bc31d85a0984bfc0ac57200d5" id="r_aee574b5bc31d85a0984bfc0ac57200d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee574b5bc31d85a0984bfc0ac57200d5">addBinFileToContentXML</a> (QXmlStreamWriter *, const QString &amp;, const QString &amp;)</td></tr>
+<tr class="separator:aee574b5bc31d85a0984bfc0ac57200d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ed5fc286b770962ad302f93356af7e" id="r_af9ed5fc286b770962ad302f93356af7e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9ed5fc286b770962ad302f93356af7e">addParemeterToMetaDataXML</a> (QXmlStreamWriter *, const int &amp;, const int &amp;, const float &amp;, const float &amp;, const float &amp;)</td></tr>
+<tr class="separator:af9ed5fc286b770962ad302f93356af7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d5d26a5696d07c7b4dfdec2aa23f3c" id="r_a56d5d26a5696d07c7b4dfdec2aa23f3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56d5d26a5696d07c7b4dfdec2aa23f3c">addBinFileToMetaDataXML</a> (QXmlStreamWriter *, const QString &amp;, const int &amp;, const QString &amp;, const qint64 &amp;)</td></tr>
+<tr class="separator:a56d5d26a5696d07c7b4dfdec2aa23f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbdc7731ae31e464efc96aad278fa08" id="r_a7fbdc7731ae31e464efc96aad278fa08"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fbdc7731ae31e464efc96aad278fa08">addPartToMetaDataXML</a> (QXmlStreamWriter *, const int &amp;, const QString &amp;, const float &amp;, const float &amp;, const float &amp;, const float &amp;, const float &amp;, const float &amp;)</td></tr>
+<tr class="separator:a7fbdc7731ae31e464efc96aad278fa08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ede2ccf281ad9b9bff39503cc4f71b2" id="r_a5ede2ccf281ad9b9bff39503cc4f71b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ede2ccf281ad9b9bff39503cc4f71b2">addBlockToMetaDataXML</a> (QXmlStreamWriter *, const QString &amp;, const <a class="el" href="sljobfilewriter_8h.html#adc35c25bf958260eba3d0e69d2f2a76a">BlockInfoPtr</a> &amp;)</td></tr>
+<tr class="separator:a5ede2ccf281ad9b9bff39503cc4f71b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6c90a16f9bf4b95856961b1257f745" id="r_a4a6c90a16f9bf4b95856961b1257f745"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6c90a16f9bf4b95856961b1257f745">loadJsonFiles</a> (const QString &amp;path, const QStringList &amp;, QList&lt; <a class="el" href="struct_bin_file.html">BinFile</a> &gt; &amp;, int &amp;, int &amp;, double &amp;)</td></tr>
+<tr class="separator:a4a6c90a16f9bf4b95856961b1257f745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7da9cb334549b7d54bf955d6bcc4d24" id="r_ac7da9cb334549b7d54bf955d6bcc4d24"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7da9cb334549b7d54bf955d6bcc4d24">getVectorType</a> (const int &amp;)</td></tr>
+<tr class="separator:ac7da9cb334549b7d54bf955d6bcc4d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_file_writer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_file_writer')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_file_writer.html">FileWriter</a></td></tr>
+<tr class="memitem:a18243f7a626ec72b89f0c4ea4f198d06 inherit pub_static_methods_class_file_writer" id="r_a18243f7a626ec72b89f0c4ea4f198d06"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_writer.html#a18243f7a626ec72b89f0c4ea4f198d06">getFileHash</a> (const QString &amp;)</td></tr>
+<tr class="separator:a18243f7a626ec72b89f0c4ea4f198d06 inherit pub_static_methods_class_file_writer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4da660fdb084fd6edb33539d2486d745" id="r_a4da660fdb084fd6edb33539d2486d745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_write_j_file.html">WriteJFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4da660fdb084fd6edb33539d2486d745">fileWriter</a> = nullptr</td></tr>
+<tr class="separator:a4da660fdb084fd6edb33539d2486d745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f7b9ba8457aee013616241650cea77" id="r_a30f7b9ba8457aee013616241650cea77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30f7b9ba8457aee013616241650cea77">buffPara</a> = nullptr</td></tr>
+<tr class="separator:a30f7b9ba8457aee013616241650cea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ab6eba1d2536fccfe65620aea4c9c0" id="r_a05ab6eba1d2536fccfe65620aea4c9c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05ab6eba1d2536fccfe65620aea4c9c0">algorithm</a> = nullptr</td></tr>
+<tr class="separator:a05ab6eba1d2536fccfe65620aea4c9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80ac82541eaabb49ea0b26fce836adb" id="r_ab80ac82541eaabb49ea0b26fce836adb"><td class="memItemLeft" align="right" valign="top">JFileDef::JFileLayerInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab80ac82541eaabb49ea0b26fce836adb">curLayerInfo</a> = nullptr</td></tr>
+<tr class="separator:ab80ac82541eaabb49ea0b26fce836adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c3324cd9a51c4f5a0ae532355a33f1" id="r_ab7c3324cd9a51c4f5a0ae532355a33f1"><td class="memItemLeft" align="right" valign="top">QMap&lt; int, QSharedPointer&lt; JFileDef::JFileLayerInfo &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7c3324cd9a51c4f5a0ae532355a33f1">layerInfoPtrMap</a></td></tr>
+<tr class="separator:ab7c3324cd9a51c4f5a0ae532355a33f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>! </p><dl class="section user"><dt>Core Class: SLJobFileWriter</dt><dd>负责将打印数据写入特定格式的作业文件,继承自FileWriter类 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a03562a6bc8febf0f6b93df05fe117235" name="a03562a6bc8febf0f6b93df05fe117235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03562a6bc8febf0f6b93df05fe117235">&#9670;&#160;</a></span>SLJobFileWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SLJobFileWriter::SLJobFileWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d77507c520df878ff17554d0cb2de6d" name="a3d77507c520df878ff17554d0cb2de6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d77507c520df878ff17554d0cb2de6d">&#9670;&#160;</a></span>~SLJobFileWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SLJobFileWriter::~SLJobFileWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aee574b5bc31d85a0984bfc0ac57200d5" name="aee574b5bc31d85a0984bfc0ac57200d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee574b5bc31d85a0984bfc0ac57200d5">&#9670;&#160;</a></span>addBinFileToContentXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::addBinFileToContentXML </td>
+          <td>(</td>
+          <td class="paramtype">QXmlStreamWriter *</td>          <td class="paramname"><span class="paramname"><em>writer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>fileFolder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56d5d26a5696d07c7b4dfdec2aa23f3c" name="a56d5d26a5696d07c7b4dfdec2aa23f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d5d26a5696d07c7b4dfdec2aa23f3c">&#9670;&#160;</a></span>addBinFileToMetaDataXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::addBinFileToMetaDataXML </td>
+          <td>(</td>
+          <td class="paramtype">QXmlStreamWriter *</td>          <td class="paramname"><span class="paramname"><em>writer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const qint64 &amp;</td>          <td class="paramname"><span class="paramname"><em>sz</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ede2ccf281ad9b9bff39503cc4f71b2" name="a5ede2ccf281ad9b9bff39503cc4f71b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ede2ccf281ad9b9bff39503cc4f71b2">&#9670;&#160;</a></span>addBlockToMetaDataXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::addBlockToMetaDataXML </td>
+          <td>(</td>
+          <td class="paramtype">QXmlStreamWriter *</td>          <td class="paramname"><span class="paramname"><em>writer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="sljobfilewriter_8h.html#adc35c25bf958260eba3d0e69d2f2a76a">BlockInfoPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>block</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9ed5fc286b770962ad302f93356af7e" name="af9ed5fc286b770962ad302f93356af7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ed5fc286b770962ad302f93356af7e">&#9670;&#160;</a></span>addParemeterToMetaDataXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::addParemeterToMetaDataXML </td>
+          <td>(</td>
+          <td class="paramtype">QXmlStreamWriter *</td>          <td class="paramname"><span class="paramname"><em>writer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>scannerIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>speed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>diameter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>power</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fbdc7731ae31e464efc96aad278fa08" name="a7fbdc7731ae31e464efc96aad278fa08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbdc7731ae31e464efc96aad278fa08">&#9670;&#160;</a></span>addPartToMetaDataXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::addPartToMetaDataXML </td>
+          <td>(</td>
+          <td class="paramtype">QXmlStreamWriter *</td>          <td class="paramname"><span class="paramname"><em>writer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>partName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>xmin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>ymin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>zmin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>xmax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>ymax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>zmax</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e46e82fab743f53107b10e4f8618a34" name="a3e46e82fab743f53107b10e4f8618a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e46e82fab743f53107b10e4f8618a34">&#9670;&#160;</a></span>algo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a> * SLJobFileWriter::algo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#ae7410b536cccc854972c13727437e7fc">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a20b23acedf6cb225e6299b91badebf85" name="a20b23acedf6cb225e6299b91badebf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b23acedf6cb225e6299b91badebf85">&#9670;&#160;</a></span>createJFileContentXml()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::createJFileContentXml </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>listPartName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>saveName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSharedPointer&lt; <a class="el" href="struct_writer_buffer_paras.html">WriterBufferParas</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>writerBuffer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64616fa5021248cb5d7b6e4a208c2b53" name="a64616fa5021248cb5d7b6e4a208c2b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64616fa5021248cb5d7b6e4a208c2b53">&#9670;&#160;</a></span>createJFileMetaDataXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::createJFileMetaDataXML </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>listPartName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>saveName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSharedPointer&lt; <a class="el" href="struct_writer_buffer_paras.html">WriterBufferParas</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>writerBuffer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4c537a6e834ff636cecde0374dccd17" name="ab4c537a6e834ff636cecde0374dccd17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c537a6e834ff636cecde0374dccd17">&#9670;&#160;</a></span>createUSPFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::createUSPFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>thickness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOUNDINGBOX *</td>          <td class="paramname"><span class="paramname"><em>boundingBox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>minHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>maxHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a6b8359d6bdb80c18f76cce2fd9f6f316">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="adc1cd6cdd6e1b2163b6b4ca358cd6776" name="adc1cd6cdd6e1b2163b6b4ca358cd6776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1cd6cdd6e1b2163b6b4ca358cd6776">&#9670;&#160;</a></span>getBufPara()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> * SLJobFileWriter::getBufPara </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a0d90a1f3b1d186cc7a77b869c44ea997">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="ac7da9cb334549b7d54bf955d6bcc4d24" name="ac7da9cb334549b7d54bf955d6bcc4d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7da9cb334549b7d54bf955d6bcc4d24">&#9670;&#160;</a></span>getVectorType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SLJobFileWriter::getVectorType </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48bf2526889dc4e580148560f4314168" name="a48bf2526889dc4e580148560f4314168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bf2526889dc4e580148560f4314168">&#9670;&#160;</a></span>initFileWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SLJobFileWriter::initFileWrite </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#ab346cbe23e8cbf1d7a2ea7bf04e9c7d3">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="a4a6c90a16f9bf4b95856961b1257f745" name="a4a6c90a16f9bf4b95856961b1257f745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6c90a16f9bf4b95856961b1257f745">&#9670;&#160;</a></span>loadJsonFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::loadJsonFiles </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>listPartName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; <a class="el" href="struct_bin_file.html">BinFile</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>binFileList</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>nMinLayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>nMaxLayer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;</td>          <td class="paramname"><span class="paramname"><em>thickness</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ed835e00c399109941cf100c521b021" name="a1ed835e00c399109941cf100c521b021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed835e00c399109941cf100c521b021">&#9670;&#160;</a></span>setScannerIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::setScannerIndex </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#adb8c31e0e18805a70dd52d518ebbf8f2">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="ade9eeecf8c1ae45a964b48bbffaaf4d6" name="ade9eeecf8c1ae45a964b48bbffaaf4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9eeecf8c1ae45a964b48bbffaaf4d6">&#9670;&#160;</a></span>startBuffWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::startBuffWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#ac383b392ce45566c4cccd3a4c8369c9d">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="aaf246cddd4e012beccb3a7822ecef4ce" name="aaf246cddd4e012beccb3a7822ecef4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf246cddd4e012beccb3a7822ecef4ce">&#9670;&#160;</a></span>waitBuffWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::waitBuffWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a2a23d7f3dd604772bc53ef2b64d06442">FileWriter</a> .</p>
+
+</div>
+</div>
+<a id="adc8c2feb57ef6bd715003f3ef2a7d60d" name="adc8c2feb57ef6bd715003f3ef2a7d60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8c2feb57ef6bd715003f3ef2a7d60d">&#9670;&#160;</a></span>writeLayerInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLJobFileWriter::writeLayerInfo </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>nHei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BOUNDINGRECT &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>totalArea</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_file_writer.html#a4ff9205f199c7904d32bcee13b75eddb">FileWriter</a> .</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a05ab6eba1d2536fccfe65620aea4c9c0" name="a05ab6eba1d2536fccfe65620aea4c9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ab6eba1d2536fccfe65620aea4c9c0">&#9670;&#160;</a></span>algorithm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_algorithm_application.html">AlgorithmApplication</a>* SLJobFileWriter::algorithm = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30f7b9ba8457aee013616241650cea77" name="a30f7b9ba8457aee013616241650cea77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f7b9ba8457aee013616241650cea77">&#9670;&#160;</a></span>buffPara</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a>* SLJobFileWriter::buffPara = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab80ac82541eaabb49ea0b26fce836adb" name="ab80ac82541eaabb49ea0b26fce836adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80ac82541eaabb49ea0b26fce836adb">&#9670;&#160;</a></span>curLayerInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JFileDef::JFileLayerInfo* SLJobFileWriter::curLayerInfo = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4da660fdb084fd6edb33539d2486d745" name="a4da660fdb084fd6edb33539d2486d745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da660fdb084fd6edb33539d2486d745">&#9670;&#160;</a></span>fileWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_write_j_file.html">WriteJFile</a>* SLJobFileWriter::fileWriter = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7c3324cd9a51c4f5a0ae532355a33f1" name="ab7c3324cd9a51c4f5a0ae532355a33f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c3324cd9a51c4f5a0ae532355a33f1">&#9670;&#160;</a></span>layerInfoPtrMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMap&lt;int, QSharedPointer&lt;JFileDef::JFileLayerInfo&gt; &gt; SLJobFileWriter::layerInfoPtrMap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="sljobfilewriter_8h_source.html">sljobfilewriter.h</a></li>
+<li><a class="el" href="sljobfilewriter_8cpp.html">sljobfilewriter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_s_l_job_file_writer.html">SLJobFileWriter</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

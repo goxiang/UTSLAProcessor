@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: LatticeModule/latticeinterface.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('latticeinterface_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">latticeinterface.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="latticeinterface_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LATTICEINTERFACE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LATTICEINTERFACE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;qjsonparsing.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;clipper.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_lattice_layer_info.html">LatticeLayerInfo</a>;</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_lattice_interface.html">   12</a></span><span class="keyword">class </span><a class="code hl_function" href="class_lattice_interface.html#af3663583994d3c85e3be727432a49cad">LatticeInterface</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="class_lattice_interface.html#af3663583994d3c85e3be727432a49cad">LatticeInterface</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lattice_interface.html#a4ffc5dc673f2a07163c341f97b3e8adb">initLatticeParas</a>(<span class="keyword">const</span> QJsonParsing *);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_lattice_interface.html#a4beab198144e1b3856453e461b59442b">calcLayerLattic</a>(ClipperLib::Paths &amp;, <span class="keyword">const</span> ClipperLib::Paths &amp;,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                         <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, ClipperLib::Paths &amp;, <a class="code hl_struct" href="struct_lattice_layer_info.html">LatticeLayerInfo</a> &amp;);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_lattice_interface_1_1_priv.html">Priv</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_lattice_interface.html#a6e44c7b2d61625b4716adf3460ab44fe">   23</a></span>    QSharedPointer&lt;Priv&gt; <a class="code hl_variable" href="class_lattice_interface.html#a6e44c7b2d61625b4716adf3460ab44fe">d</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_lattice_info.html">   26</a></span><span class="keyword">struct </span><a class="code hl_function" href="struct_lattice_info.html#a38768c481c1684d05e00bc3bcfbbb553">LatticeInfo</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_lattice_info.html#a73d98df81131d568489075671aa6f560">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_lattice_info.html#a73d98df81131d568489075671aa6f560">_type</a> = 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_lattice_info.html#ae09ede72223b0841ba1cba142db3e75c">   28</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_lattice_info.html#ae09ede72223b0841ba1cba142db3e75c">_area</a> = 0.0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_lattice_info.html#aa64f6c003a73f2e39a08f7316643e474">   29</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_lattice_info.html#aa64f6c003a73f2e39a08f7316643e474">_centerX</a> = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_lattice_info.html#a5f8e5327f05f035783b4a92a0362c4b0">   30</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_lattice_info.html#a5f8e5327f05f035783b4a92a0362c4b0">_centerY</a> = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_lattice_info.html#a38768c481c1684d05e00bc3bcfbbb553">   32</a></span>    <a class="code hl_function" href="struct_lattice_info.html#a38768c481c1684d05e00bc3bcfbbb553">LatticeInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_lattice_info.html#a3d418adfebf99e34071b731d04983022">   33</a></span>    <a class="code hl_function" href="struct_lattice_info.html#a3d418adfebf99e34071b731d04983022">LatticeInfo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;type, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;area, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;cx, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;cy) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_variable" href="struct_lattice_info.html#a73d98df81131d568489075671aa6f560">_type</a> = type;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_variable" href="struct_lattice_info.html#ae09ede72223b0841ba1cba142db3e75c">_area</a> = area;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="struct_lattice_info.html#aa64f6c003a73f2e39a08f7316643e474">_centerX</a> = cx;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_variable" href="struct_lattice_info.html#a5f8e5327f05f035783b4a92a0362c4b0">_centerY</a> = cy;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_lattice_path_info.html">   41</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_lattice_path_info.html">LatticePathInfo</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_lattice_path_info.html#a52f7c5420574c311c6ecb00cd319751f">   42</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_lattice_path_info.html#a52f7c5420574c311c6ecb00cd319751f">_type</a> = 0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_lattice_path_info.html#a0463bc64c867c8dad1d90a94adaa741b">   43</a></span>    ClipperLib::Path <a class="code hl_variable" href="struct_lattice_path_info.html#a0463bc64c867c8dad1d90a94adaa741b">_path</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_lattice_path_info.html#ade31377567c0e9ba1ec713c5ba1dc31b">   44</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_lattice_path_info.html#ade31377567c0e9ba1ec713c5ba1dc31b">_centerX</a> = 0;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_lattice_path_info.html#a7a9ad17396199e84f33dd5ea84070c29">   45</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_lattice_path_info.html#a7a9ad17396199e84f33dd5ea84070c29">_centerY</a> = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="struct_lattice_layer_info.html">   48</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_lattice_layer_info.html">LatticeLayerInfo</a> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_lattice_layer_info.html#a8b0f7b0bc378548649d02e3b8789e86b">   49</a></span>    QVector&lt;LatticeInfo&gt; <a class="code hl_variable" href="struct_lattice_layer_info.html#a8b0f7b0bc378548649d02e3b8789e86b">_latticeInfo</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_lattice_layer_info.html#ac569e1924b7567fadb4211d72647f472">   50</a></span>    QMap&lt;int, LatticePathInfo&gt; <a class="code hl_variable" href="struct_lattice_layer_info.html#ac569e1924b7567fadb4211d72647f472">_latticePathInfo</a>;</div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_lattice_layer_info.html#a0edb81a1f8ea8826c90663bbe785d5d2">   51</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="struct_lattice_layer_info.html#a0edb81a1f8ea8826c90663bbe785d5d2">initialize</a>() {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_variable" href="struct_lattice_layer_info.html#a8b0f7b0bc378548649d02e3b8789e86b">_latticeInfo</a>.clear();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_variable" href="struct_lattice_layer_info.html#ac569e1924b7567fadb4211d72647f472">_latticePathInfo</a>.clear();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="latticeinterface_8h.html#a4d2e9f87d0a981661cad80a103dbc9af">   57</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="latticeinterface_8h.html#a4d2e9f87d0a981661cad80a103dbc9af">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_lattice_info.html">LatticeInfo</a> &amp;lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_lattice_info.html">LatticeInfo</a> &amp;rhs) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> fabs(lhs.<a class="code hl_variable" href="struct_lattice_info.html#ae09ede72223b0841ba1cba142db3e75c">_area</a> - rhs.<a class="code hl_variable" href="struct_lattice_info.html#ae09ede72223b0841ba1cba142db3e75c">_area</a>) &lt; 100000 &amp;&amp;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>           fabs(lhs.<a class="code hl_variable" href="struct_lattice_info.html#aa64f6c003a73f2e39a08f7316643e474">_centerX</a> - rhs.<a class="code hl_variable" href="struct_lattice_info.html#aa64f6c003a73f2e39a08f7316643e474">_centerX</a>) &lt; 2 &amp;&amp;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>           fabs(lhs.<a class="code hl_variable" href="struct_lattice_info.html#a5f8e5327f05f035783b4a92a0362c4b0">_centerY</a> - rhs.<a class="code hl_variable" href="struct_lattice_info.html#a5f8e5327f05f035783b4a92a0362c4b0">_centerY</a>) &lt; 2;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="latticeinterface_8h.html#ab74b27d693a609c0f188c96b641c6eda">   63</a></span><span class="keyword">inline</span> uint <a class="code hl_function" href="latticeinterface_8h.html#ab74b27d693a609c0f188c96b641c6eda">qHash</a>(<a class="code hl_struct" href="struct_lattice_info.html">LatticeInfo</a> key, uint seed = 0)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="latticeinterface_8h.html#ab74b27d693a609c0f188c96b641c6eda">qHash</a>(key.<a class="code hl_variable" href="struct_lattice_info.html#aa64f6c003a73f2e39a08f7316643e474">_centerX</a>, seed) ^</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>           <a class="code hl_function" href="latticeinterface_8h.html#ab74b27d693a609c0f188c96b641c6eda">qHash</a>(key.<a class="code hl_variable" href="struct_lattice_info.html#a5f8e5327f05f035783b4a92a0362c4b0">_centerY</a> &lt;&lt; 15, seed);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#include &lt;QThread&gt;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#include &lt;QSemaphore&gt;</span></div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_thread_runner.html">   71</a></span><span class="keyword">class </span><a class="code hl_function" href="class_thread_runner.html#a7cad30135a056b05f8070ff1c2d3808c">ThreadRunner</a> : <span class="keyword">public</span> QThread</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_thread_runner.html#a7cad30135a056b05f8070ff1c2d3808c">   74</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_thread_runner.html#a7cad30135a056b05f8070ff1c2d3808c">ThreadRunner</a>(QObject *parent = <span class="keyword">nullptr</span>) : QThread(parent) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <a class="code hl_variable" href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">_semaphore</a>.release();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        this-&gt;setPriority(QThread::HighestPriority);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_thread_runner.html#a6cfc76a789f53e161407af9756743905">   78</a></span>    <a class="code hl_function" href="class_thread_runner.html#a6cfc76a789f53e161407af9756743905">~ThreadRunner</a>() {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        this-&gt;quit();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        this-&gt;wait();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_thread_runner.html#a515b0d6a8c59504a97d0db2deba4d6dd">   83</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_thread_runner.html#a515b0d6a8c59504a97d0db2deba4d6dd">runTask</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>()&gt; &amp;func) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_variable" href="class_thread_runner.html#ab966d16ea9afd2b38cbf5fb5a6d1068f">_func</a> = std::move(func);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_variable" href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">_semaphore</a>.acquire();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        start();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_thread_runner.html#a05e6c7bd48917f5364953055acb095f5">   88</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_thread_runner.html#a05e6c7bd48917f5364953055acb095f5">waitForFinished</a>() {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <a class="code hl_variable" href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">_semaphore</a>.acquire();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_variable" href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">_semaphore</a>.release();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_thread_runner.html#ae7aaf0daacf178ad7eebb098d58aa569">   94</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_thread_runner.html#ae7aaf0daacf178ad7eebb098d58aa569">run</a>()<span class="keyword"> override </span>{ <a class="code hl_variable" href="class_thread_runner.html#ab966d16ea9afd2b38cbf5fb5a6d1068f">_func</a>(); <a class="code hl_variable" href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">_semaphore</a>.release(); }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">   97</a></span>    QSemaphore <a class="code hl_variable" href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">_semaphore</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_thread_runner.html#ab966d16ea9afd2b38cbf5fb5a6d1068f">   98</a></span>    std::function&lt;void()&gt; <a class="code hl_variable" href="class_thread_runner.html#ab966d16ea9afd2b38cbf5fb5a6d1068f">_func</a> = [](){};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">// LATTICEINTERFACE_H</span></div>
+<div class="ttc" id="aclass_lattice_interface_html_a4beab198144e1b3856453e461b59442b"><div class="ttname"><a href="class_lattice_interface.html#a4beab198144e1b3856453e461b59442b">LatticeInterface::calcLayerLattic</a></div><div class="ttdeci">bool calcLayerLattic(ClipperLib::Paths &amp;, const ClipperLib::Paths &amp;, const int &amp;, ClipperLib::Paths &amp;, LatticeLayerInfo &amp;)</div><div class="ttdef"><b>定义</b> latticeinterface.cpp:166</div></div>
+<div class="ttc" id="aclass_lattice_interface_html_a4ffc5dc673f2a07163c341f97b3e8adb"><div class="ttname"><a href="class_lattice_interface.html#a4ffc5dc673f2a07163c341f97b3e8adb">LatticeInterface::initLatticeParas</a></div><div class="ttdeci">void initLatticeParas(const QJsonParsing *)</div><div class="ttdef"><b>定义</b> latticeinterface.cpp:159</div></div>
+<div class="ttc" id="aclass_lattice_interface_html_a6e44c7b2d61625b4716adf3460ab44fe"><div class="ttname"><a href="class_lattice_interface.html#a6e44c7b2d61625b4716adf3460ab44fe">LatticeInterface::d</a></div><div class="ttdeci">QSharedPointer&lt; Priv &gt; d</div><div class="ttdef"><b>定义</b> latticeinterface.h:23</div></div>
+<div class="ttc" id="aclass_lattice_interface_html_af3663583994d3c85e3be727432a49cad"><div class="ttname"><a href="class_lattice_interface.html#af3663583994d3c85e3be727432a49cad">LatticeInterface::LatticeInterface</a></div><div class="ttdeci">LatticeInterface()</div><div class="ttdoc">LatticeInterface</div><div class="ttdef"><b>定义</b> latticeinterface.cpp:157</div></div>
+<div class="ttc" id="aclass_thread_runner_html_a05e6c7bd48917f5364953055acb095f5"><div class="ttname"><a href="class_thread_runner.html#a05e6c7bd48917f5364953055acb095f5">ThreadRunner::waitForFinished</a></div><div class="ttdeci">void waitForFinished()</div><div class="ttdef"><b>定义</b> latticeinterface.h:88</div></div>
+<div class="ttc" id="aclass_thread_runner_html_a515b0d6a8c59504a97d0db2deba4d6dd"><div class="ttname"><a href="class_thread_runner.html#a515b0d6a8c59504a97d0db2deba4d6dd">ThreadRunner::runTask</a></div><div class="ttdeci">void runTask(const std::function&lt; void()&gt; &amp;func)</div><div class="ttdef"><b>定义</b> latticeinterface.h:83</div></div>
+<div class="ttc" id="aclass_thread_runner_html_a6cfc76a789f53e161407af9756743905"><div class="ttname"><a href="class_thread_runner.html#a6cfc76a789f53e161407af9756743905">ThreadRunner::~ThreadRunner</a></div><div class="ttdeci">~ThreadRunner()</div><div class="ttdef"><b>定义</b> latticeinterface.h:78</div></div>
+<div class="ttc" id="aclass_thread_runner_html_a7cad30135a056b05f8070ff1c2d3808c"><div class="ttname"><a href="class_thread_runner.html#a7cad30135a056b05f8070ff1c2d3808c">ThreadRunner::ThreadRunner</a></div><div class="ttdeci">ThreadRunner(QObject *parent=nullptr)</div><div class="ttdef"><b>定义</b> latticeinterface.h:74</div></div>
+<div class="ttc" id="aclass_thread_runner_html_ab966d16ea9afd2b38cbf5fb5a6d1068f"><div class="ttname"><a href="class_thread_runner.html#ab966d16ea9afd2b38cbf5fb5a6d1068f">ThreadRunner::_func</a></div><div class="ttdeci">std::function&lt; void()&gt; _func</div><div class="ttdef"><b>定义</b> latticeinterface.h:98</div></div>
+<div class="ttc" id="aclass_thread_runner_html_ab9ebc3181502a951b73af794755f279b"><div class="ttname"><a href="class_thread_runner.html#ab9ebc3181502a951b73af794755f279b">ThreadRunner::_semaphore</a></div><div class="ttdeci">QSemaphore _semaphore</div><div class="ttdef"><b>定义</b> latticeinterface.h:97</div></div>
+<div class="ttc" id="aclass_thread_runner_html_ae7aaf0daacf178ad7eebb098d58aa569"><div class="ttname"><a href="class_thread_runner.html#ae7aaf0daacf178ad7eebb098d58aa569">ThreadRunner::run</a></div><div class="ttdeci">void run() override</div><div class="ttdef"><b>定义</b> latticeinterface.h:94</div></div>
+<div class="ttc" id="alatticeinterface_8h_html_a4d2e9f87d0a981661cad80a103dbc9af"><div class="ttname"><a href="latticeinterface_8h.html#a4d2e9f87d0a981661cad80a103dbc9af">operator==</a></div><div class="ttdeci">bool operator==(const LatticeInfo &amp;lhs, const LatticeInfo &amp;rhs)</div><div class="ttdef"><b>定义</b> latticeinterface.h:57</div></div>
+<div class="ttc" id="alatticeinterface_8h_html_ab74b27d693a609c0f188c96b641c6eda"><div class="ttname"><a href="latticeinterface_8h.html#ab74b27d693a609c0f188c96b641c6eda">qHash</a></div><div class="ttdeci">uint qHash(LatticeInfo key, uint seed=0)</div><div class="ttdef"><b>定义</b> latticeinterface.h:63</div></div>
+<div class="ttc" id="astruct_lattice_info_html"><div class="ttname"><a href="struct_lattice_info.html">LatticeInfo</a></div><div class="ttdef"><b>定义</b> latticeinterface.h:26</div></div>
+<div class="ttc" id="astruct_lattice_info_html_a38768c481c1684d05e00bc3bcfbbb553"><div class="ttname"><a href="struct_lattice_info.html#a38768c481c1684d05e00bc3bcfbbb553">LatticeInfo::LatticeInfo</a></div><div class="ttdeci">LatticeInfo()=default</div></div>
+<div class="ttc" id="astruct_lattice_info_html_a3d418adfebf99e34071b731d04983022"><div class="ttname"><a href="struct_lattice_info.html#a3d418adfebf99e34071b731d04983022">LatticeInfo::LatticeInfo</a></div><div class="ttdeci">LatticeInfo(const int &amp;type, const double &amp;area, const int &amp;cx, const int &amp;cy)</div><div class="ttdef"><b>定义</b> latticeinterface.h:33</div></div>
+<div class="ttc" id="astruct_lattice_info_html_a5f8e5327f05f035783b4a92a0362c4b0"><div class="ttname"><a href="struct_lattice_info.html#a5f8e5327f05f035783b4a92a0362c4b0">LatticeInfo::_centerY</a></div><div class="ttdeci">int _centerY</div><div class="ttdef"><b>定义</b> latticeinterface.h:30</div></div>
+<div class="ttc" id="astruct_lattice_info_html_a73d98df81131d568489075671aa6f560"><div class="ttname"><a href="struct_lattice_info.html#a73d98df81131d568489075671aa6f560">LatticeInfo::_type</a></div><div class="ttdeci">int _type</div><div class="ttdef"><b>定义</b> latticeinterface.h:27</div></div>
+<div class="ttc" id="astruct_lattice_info_html_aa64f6c003a73f2e39a08f7316643e474"><div class="ttname"><a href="struct_lattice_info.html#aa64f6c003a73f2e39a08f7316643e474">LatticeInfo::_centerX</a></div><div class="ttdeci">int _centerX</div><div class="ttdef"><b>定义</b> latticeinterface.h:29</div></div>
+<div class="ttc" id="astruct_lattice_info_html_ae09ede72223b0841ba1cba142db3e75c"><div class="ttname"><a href="struct_lattice_info.html#ae09ede72223b0841ba1cba142db3e75c">LatticeInfo::_area</a></div><div class="ttdeci">double _area</div><div class="ttdef"><b>定义</b> latticeinterface.h:28</div></div>
+<div class="ttc" id="astruct_lattice_interface_1_1_priv_html"><div class="ttname"><a href="struct_lattice_interface_1_1_priv.html">LatticeInterface::Priv</a></div><div class="ttdoc">Priv</div><div class="ttdef"><b>定义</b> latticeinterface.cpp:14</div></div>
+<div class="ttc" id="astruct_lattice_layer_info_html"><div class="ttname"><a href="struct_lattice_layer_info.html">LatticeLayerInfo</a></div><div class="ttdef"><b>定义</b> latticeinterface.h:48</div></div>
+<div class="ttc" id="astruct_lattice_layer_info_html_a0edb81a1f8ea8826c90663bbe785d5d2"><div class="ttname"><a href="struct_lattice_layer_info.html#a0edb81a1f8ea8826c90663bbe785d5d2">LatticeLayerInfo::initialize</a></div><div class="ttdeci">void initialize()</div><div class="ttdef"><b>定义</b> latticeinterface.h:51</div></div>
+<div class="ttc" id="astruct_lattice_layer_info_html_a8b0f7b0bc378548649d02e3b8789e86b"><div class="ttname"><a href="struct_lattice_layer_info.html#a8b0f7b0bc378548649d02e3b8789e86b">LatticeLayerInfo::_latticeInfo</a></div><div class="ttdeci">QVector&lt; LatticeInfo &gt; _latticeInfo</div><div class="ttdef"><b>定义</b> latticeinterface.h:49</div></div>
+<div class="ttc" id="astruct_lattice_layer_info_html_ac569e1924b7567fadb4211d72647f472"><div class="ttname"><a href="struct_lattice_layer_info.html#ac569e1924b7567fadb4211d72647f472">LatticeLayerInfo::_latticePathInfo</a></div><div class="ttdeci">QMap&lt; int, LatticePathInfo &gt; _latticePathInfo</div><div class="ttdef"><b>定义</b> latticeinterface.h:50</div></div>
+<div class="ttc" id="astruct_lattice_path_info_html"><div class="ttname"><a href="struct_lattice_path_info.html">LatticePathInfo</a></div><div class="ttdef"><b>定义</b> latticeinterface.h:41</div></div>
+<div class="ttc" id="astruct_lattice_path_info_html_a0463bc64c867c8dad1d90a94adaa741b"><div class="ttname"><a href="struct_lattice_path_info.html#a0463bc64c867c8dad1d90a94adaa741b">LatticePathInfo::_path</a></div><div class="ttdeci">ClipperLib::Path _path</div><div class="ttdef"><b>定义</b> latticeinterface.h:43</div></div>
+<div class="ttc" id="astruct_lattice_path_info_html_a52f7c5420574c311c6ecb00cd319751f"><div class="ttname"><a href="struct_lattice_path_info.html#a52f7c5420574c311c6ecb00cd319751f">LatticePathInfo::_type</a></div><div class="ttdeci">int _type</div><div class="ttdef"><b>定义</b> latticeinterface.h:42</div></div>
+<div class="ttc" id="astruct_lattice_path_info_html_a7a9ad17396199e84f33dd5ea84070c29"><div class="ttname"><a href="struct_lattice_path_info.html#a7a9ad17396199e84f33dd5ea84070c29">LatticePathInfo::_centerY</a></div><div class="ttdeci">int _centerY</div><div class="ttdef"><b>定义</b> latticeinterface.h:45</div></div>
+<div class="ttc" id="astruct_lattice_path_info_html_ade31377567c0e9ba1ec713c5ba1dc31b"><div class="ttname"><a href="struct_lattice_path_info.html#ade31377567c0e9ba1ec713c5ba1dc31b">LatticePathInfo::_centerX</a></div><div class="ttdeci">int _centerX</div><div class="ttdef"><b>定义</b> latticeinterface.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2d59634db459b6f6f5769e846d2d1215.html">LatticeModule</a></li><li class="navelem"><a class="el" href="latticeinterface_8h.html">latticeinterface.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

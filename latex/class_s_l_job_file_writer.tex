@@ -1,0 +1,288 @@
+\doxysection{SLJob\+File\+Writer类 参考}
+\hypertarget{class_s_l_job_file_writer}{}\label{class_s_l_job_file_writer}\index{SLJobFileWriter@{SLJobFileWriter}}
+
+
+{\ttfamily \#include $<$sljobfilewriter.\+h$>$}
+
+类 SLJob\+File\+Writer 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_s_l_job_file_writer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_l_job_file_writer_a03562a6bc8febf0f6b93df05fe117235}{SLJob\+File\+Writer}} ()
+\item 
+\mbox{\hyperlink{class_s_l_job_file_writer_a3d77507c520df878ff17554d0cb2de6d}{\texorpdfstring{$\sim$}{\string~}\+SLJob\+File\+Writer}} ()
+\item 
+bool \mbox{\hyperlink{class_s_l_job_file_writer_a48bf2526889dc4e580148560f4314168}{init\+File\+Write}} ()
+\item 
+void \mbox{\hyperlink{class_s_l_job_file_writer_ade9eeecf8c1ae45a964b48bbffaaf4d6}{start\+Buff\+Writer}} ()
+\item 
+void \mbox{\hyperlink{class_s_l_job_file_writer_aaf246cddd4e012beccb3a7822ecef4ce}{wait\+Buff\+Writer}} ()
+\item 
+void \mbox{\hyperlink{class_s_l_job_file_writer_adc8c2feb57ef6bd715003f3ef2a7d60d}{write\+Layer\+Info}} (const int \&, const BOUNDINGRECT \&, const double \&)
+\item 
+void \mbox{\hyperlink{class_s_l_job_file_writer_ab4c537a6e834ff636cecde0374dccd17}{create\+USPFile}} (const QString \&, const QString \&, const float \&, BOUNDINGBOX \texorpdfstring{$\ast$}{*}, const int \&, const int \&, QJson\+Object \&)
+\item 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_s_l_job_file_writer_adc1cd6cdd6e1b2163b6b4ca358cd6776}{get\+Buf\+Para}} ()
+\item 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_s_l_job_file_writer_a3e46e82fab743f53107b10e4f8618a34}{algo}} ()
+\item 
+void \mbox{\hyperlink{class_s_l_job_file_writer_a1ed835e00c399109941cf100c521b021}{set\+Scanner\+Index}} (const int \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{class_file_writer}{File\+Writer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file_writer_ae4dd90b95298451fc84d753b987ddc82}{File\+Writer}} ()=default
+\item 
+\mbox{\hyperlink{class_file_writer_a4b2c19fe58992d3835e047f8ddeb4f8c}{\texorpdfstring{$\sim$}{\string~}\+File\+Writer}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_file_writer_a9ee28aa1a3f575e995c50417304d8f77}{write\+Area\+Info}} (const int \&)
+\item 
+virtual void \mbox{\hyperlink{class_file_writer_a1d09cec7ab06a0357be67c687de25f56}{write\+File\+End}} ()
+\item 
+virtual void \mbox{\hyperlink{class_file_writer_aa0439ca70cd848eb98955a360759bb76}{write\+File\+Begin\+\_\+\+Some\+Propertys}} ()
+\item 
+virtual void \mbox{\hyperlink{class_file_writer_a3a8a365efee70f8d197effbb380e8897}{add\+Volume}} (const double \&)
+\item 
+virtual QShared\+Pointer$<$ \mbox{\hyperlink{class_file_writer}{File\+Writer}} $>$ \mbox{\hyperlink{class_file_writer_ad543887b7aff55a82ebafb5b3a53fc4f}{clone\+Writer}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_a20b23acedf6cb225e6299b91badebf85}{create\+JFile\+Content\+Xml}} (const QString \&, const QString\+List \&, const QString \&, const QShared\+Pointer$<$ \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_a64616fa5021248cb5d7b6e4a208c2b53}{create\+JFile\+Meta\+Data\+XML}} (const QString \&, const QString\+List \&, const QString \&, const QShared\+Pointer$<$ \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_aee574b5bc31d85a0984bfc0ac57200d5}{add\+Bin\+File\+To\+Content\+XML}} (QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}, const QString \&, const QString \&)
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_af9ed5fc286b770962ad302f93356af7e}{add\+Paremeter\+To\+Meta\+Data\+XML}} (QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}, const int \&, const int \&, const float \&, const float \&, const float \&)
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_a56d5d26a5696d07c7b4dfdec2aa23f3c}{add\+Bin\+File\+To\+Meta\+Data\+XML}} (QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}, const QString \&, const int \&, const QString \&, const qint64 \&)
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_a7fbdc7731ae31e464efc96aad278fa08}{add\+Part\+To\+Meta\+Data\+XML}} (QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}, const int \&, const QString \&, const float \&, const float \&, const float \&, const float \&, const float \&, const float \&)
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_a5ede2ccf281ad9b9bff39503cc4f71b2}{add\+Block\+To\+Meta\+Data\+XML}} (QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}, const QString \&, const \mbox{\hyperlink{sljobfilewriter_8h_adc35c25bf958260eba3d0e69d2f2a76a}{Block\+Info\+Ptr}} \&)
+\item 
+static void \mbox{\hyperlink{class_s_l_job_file_writer_a4a6c90a16f9bf4b95856961b1257f745}{load\+Json\+Files}} (const QString \&path, const QString\+List \&, QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&, int \&, int \&, double \&)
+\item 
+static int \mbox{\hyperlink{class_s_l_job_file_writer_ac7da9cb334549b7d54bf955d6bcc4d24}{get\+Vector\+Type}} (const int \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{静态 Public 成员函数 继承自 \mbox{\hyperlink{class_file_writer}{File\+Writer}}}
+\begin{DoxyCompactItemize}
+\item 
+static QByte\+Array \mbox{\hyperlink{class_file_writer_a18243f7a626ec72b89f0c4ea4f198d06}{get\+File\+Hash}} (const QString \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_write_j_file}{Write\+JFile}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_s_l_job_file_writer_a4da660fdb084fd6edb33539d2486d745}{file\+Writer}} = nullptr
+\item 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_s_l_job_file_writer_a30f7b9ba8457aee013616241650cea77}{buff\+Para}} = nullptr
+\item 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_s_l_job_file_writer_a05ab6eba1d2536fccfe65620aea4c9c0}{algorithm}} = nullptr
+\item 
+JFile\+Def\+::\+JFile\+Layer\+Info \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_s_l_job_file_writer_ab80ac82541eaabb49ea0b26fce836adb}{cur\+Layer\+Info}} = nullptr
+\item 
+QMap$<$ int, QShared\+Pointer$<$ JFile\+Def\+::\+JFile\+Layer\+Info $>$ $>$ \mbox{\hyperlink{class_s_l_job_file_writer_ab7c3324cd9a51c4f5a0ae532355a33f1}{layer\+Info\+Ptr\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: SLJob\+File\+Writer}
+负责将打印数据写入特定格式的作业文件,继承自\+File\+Writer类 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_s_l_job_file_writer_a03562a6bc8febf0f6b93df05fe117235}\index{SLJobFileWriter@{SLJobFileWriter}!SLJobFileWriter@{SLJobFileWriter}}
+\index{SLJobFileWriter@{SLJobFileWriter}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{SLJobFileWriter()}{SLJobFileWriter()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a03562a6bc8febf0f6b93df05fe117235} 
+SLJob\+File\+Writer\+::\+SLJob\+File\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_s_l_job_file_writer_a3d77507c520df878ff17554d0cb2de6d}\index{SLJobFileWriter@{SLJobFileWriter}!````~SLJobFileWriter@{\texorpdfstring{$\sim$}{\string~}SLJobFileWriter}}
+\index{````~SLJobFileWriter@{\texorpdfstring{$\sim$}{\string~}SLJobFileWriter}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SLJobFileWriter()}{\string~SLJobFileWriter()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a3d77507c520df878ff17554d0cb2de6d} 
+SLJob\+File\+Writer\+::\texorpdfstring{$\sim$}{\string~}\+SLJob\+File\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_s_l_job_file_writer_aee574b5bc31d85a0984bfc0ac57200d5}\index{SLJobFileWriter@{SLJobFileWriter}!addBinFileToContentXML@{addBinFileToContentXML}}
+\index{addBinFileToContentXML@{addBinFileToContentXML}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{addBinFileToContentXML()}{addBinFileToContentXML()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_aee574b5bc31d85a0984bfc0ac57200d5} 
+void SLJob\+File\+Writer\+::add\+Bin\+File\+To\+Content\+XML (\begin{DoxyParamCaption}\item[{QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}}]{writer}{, }\item[{const QString \&}]{file\+Folder}{, }\item[{const QString \&}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_a56d5d26a5696d07c7b4dfdec2aa23f3c}\index{SLJobFileWriter@{SLJobFileWriter}!addBinFileToMetaDataXML@{addBinFileToMetaDataXML}}
+\index{addBinFileToMetaDataXML@{addBinFileToMetaDataXML}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{addBinFileToMetaDataXML()}{addBinFileToMetaDataXML()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a56d5d26a5696d07c7b4dfdec2aa23f3c} 
+void SLJob\+File\+Writer\+::add\+Bin\+File\+To\+Meta\+Data\+XML (\begin{DoxyParamCaption}\item[{QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}}]{writer}{, }\item[{const QString \&}]{path}{, }\item[{const int \&}]{index}{, }\item[{const QString \&}]{file\+Name}{, }\item[{const qint64 \&}]{sz}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_a5ede2ccf281ad9b9bff39503cc4f71b2}\index{SLJobFileWriter@{SLJobFileWriter}!addBlockToMetaDataXML@{addBlockToMetaDataXML}}
+\index{addBlockToMetaDataXML@{addBlockToMetaDataXML}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{addBlockToMetaDataXML()}{addBlockToMetaDataXML()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a5ede2ccf281ad9b9bff39503cc4f71b2} 
+void SLJob\+File\+Writer\+::add\+Block\+To\+Meta\+Data\+XML (\begin{DoxyParamCaption}\item[{QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}}]{writer}{, }\item[{const QString \&}]{file\+ID}{, }\item[{const \mbox{\hyperlink{sljobfilewriter_8h_adc35c25bf958260eba3d0e69d2f2a76a}{Block\+Info\+Ptr}} \&}]{block}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_af9ed5fc286b770962ad302f93356af7e}\index{SLJobFileWriter@{SLJobFileWriter}!addParemeterToMetaDataXML@{addParemeterToMetaDataXML}}
+\index{addParemeterToMetaDataXML@{addParemeterToMetaDataXML}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{addParemeterToMetaDataXML()}{addParemeterToMetaDataXML()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_af9ed5fc286b770962ad302f93356af7e} 
+void SLJob\+File\+Writer\+::add\+Paremeter\+To\+Meta\+Data\+XML (\begin{DoxyParamCaption}\item[{QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}}]{writer}{, }\item[{const int \&}]{scanner\+Index}{, }\item[{const int \&}]{index}{, }\item[{const float \&}]{speed}{, }\item[{const float \&}]{diameter}{, }\item[{const float \&}]{power}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_a7fbdc7731ae31e464efc96aad278fa08}\index{SLJobFileWriter@{SLJobFileWriter}!addPartToMetaDataXML@{addPartToMetaDataXML}}
+\index{addPartToMetaDataXML@{addPartToMetaDataXML}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{addPartToMetaDataXML()}{addPartToMetaDataXML()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a7fbdc7731ae31e464efc96aad278fa08} 
+void SLJob\+File\+Writer\+::add\+Part\+To\+Meta\+Data\+XML (\begin{DoxyParamCaption}\item[{QXml\+Stream\+Writer \texorpdfstring{$\ast$}{*}}]{writer}{, }\item[{const int \&}]{index}{, }\item[{const QString \&}]{part\+Name}{, }\item[{const float \&}]{xmin}{, }\item[{const float \&}]{ymin}{, }\item[{const float \&}]{zmin}{, }\item[{const float \&}]{xmax}{, }\item[{const float \&}]{ymax}{, }\item[{const float \&}]{zmax}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_a3e46e82fab743f53107b10e4f8618a34}\index{SLJobFileWriter@{SLJobFileWriter}!algo@{algo}}
+\index{algo@{algo}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{algo()}{algo()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a3e46e82fab743f53107b10e4f8618a34} 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}} \texorpdfstring{$\ast$}{*} SLJob\+File\+Writer\+::algo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_ae7410b536cccc854972c13727437e7fc}{File\+Writer}} .
+
+\Hypertarget{class_s_l_job_file_writer_a20b23acedf6cb225e6299b91badebf85}\index{SLJobFileWriter@{SLJobFileWriter}!createJFileContentXml@{createJFileContentXml}}
+\index{createJFileContentXml@{createJFileContentXml}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{createJFileContentXml()}{createJFileContentXml()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a20b23acedf6cb225e6299b91badebf85} 
+void SLJob\+File\+Writer\+::create\+JFile\+Content\+Xml (\begin{DoxyParamCaption}\item[{const QString \&}]{path}{, }\item[{const QString\+List \&}]{list\+Part\+Name}{, }\item[{const QString \&}]{save\+Name}{, }\item[{const QShared\+Pointer$<$ \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}} $>$ \&}]{writer\+Buffer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_a64616fa5021248cb5d7b6e4a208c2b53}\index{SLJobFileWriter@{SLJobFileWriter}!createJFileMetaDataXML@{createJFileMetaDataXML}}
+\index{createJFileMetaDataXML@{createJFileMetaDataXML}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{createJFileMetaDataXML()}{createJFileMetaDataXML()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a64616fa5021248cb5d7b6e4a208c2b53} 
+void SLJob\+File\+Writer\+::create\+JFile\+Meta\+Data\+XML (\begin{DoxyParamCaption}\item[{const QString \&}]{path}{, }\item[{const QString\+List \&}]{list\+Part\+Name}{, }\item[{const QString \&}]{save\+Name}{, }\item[{const QShared\+Pointer$<$ \mbox{\hyperlink{struct_writer_buffer_paras}{Writer\+Buffer\+Paras}} $>$ \&}]{writer\+Buffer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_ab4c537a6e834ff636cecde0374dccd17}\index{SLJobFileWriter@{SLJobFileWriter}!createUSPFile@{createUSPFile}}
+\index{createUSPFile@{createUSPFile}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{createUSPFile()}{createUSPFile()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_ab4c537a6e834ff636cecde0374dccd17} 
+void SLJob\+File\+Writer\+::create\+USPFile (\begin{DoxyParamCaption}\item[{const QString \&}]{}{, }\item[{const QString \&}]{}{, }\item[{const float \&}]{thickness}{, }\item[{BOUNDINGBOX \texorpdfstring{$\ast$}{*}}]{bounding\+Box}{, }\item[{const int \&}]{min\+Hei}{, }\item[{const int \&}]{max\+Hei}{, }\item[{QJson\+Object \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a6b8359d6bdb80c18f76cce2fd9f6f316}{File\+Writer}} .
+
+\Hypertarget{class_s_l_job_file_writer_adc1cd6cdd6e1b2163b6b4ca358cd6776}\index{SLJobFileWriter@{SLJobFileWriter}!getBufPara@{getBufPara}}
+\index{getBufPara@{getBufPara}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{getBufPara()}{getBufPara()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_adc1cd6cdd6e1b2163b6b4ca358cd6776} 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} SLJob\+File\+Writer\+::get\+Buf\+Para (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a0d90a1f3b1d186cc7a77b869c44ea997}{File\+Writer}} .
+
+\Hypertarget{class_s_l_job_file_writer_ac7da9cb334549b7d54bf955d6bcc4d24}\index{SLJobFileWriter@{SLJobFileWriter}!getVectorType@{getVectorType}}
+\index{getVectorType@{getVectorType}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{getVectorType()}{getVectorType()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_ac7da9cb334549b7d54bf955d6bcc4d24} 
+int SLJob\+File\+Writer\+::get\+Vector\+Type (\begin{DoxyParamCaption}\item[{const int \&}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_a48bf2526889dc4e580148560f4314168}\index{SLJobFileWriter@{SLJobFileWriter}!initFileWrite@{initFileWrite}}
+\index{initFileWrite@{initFileWrite}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{initFileWrite()}{initFileWrite()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a48bf2526889dc4e580148560f4314168} 
+bool SLJob\+File\+Writer\+::init\+File\+Write (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_ab346cbe23e8cbf1d7a2ea7bf04e9c7d3}{File\+Writer}} .
+
+\Hypertarget{class_s_l_job_file_writer_a4a6c90a16f9bf4b95856961b1257f745}\index{SLJobFileWriter@{SLJobFileWriter}!loadJsonFiles@{loadJsonFiles}}
+\index{loadJsonFiles@{loadJsonFiles}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{loadJsonFiles()}{loadJsonFiles()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a4a6c90a16f9bf4b95856961b1257f745} 
+void SLJob\+File\+Writer\+::load\+Json\+Files (\begin{DoxyParamCaption}\item[{const QString \&}]{path}{, }\item[{const QString\+List \&}]{list\+Part\+Name}{, }\item[{QList$<$ \mbox{\hyperlink{struct_bin_file}{Bin\+File}} $>$ \&}]{bin\+File\+List}{, }\item[{int \&}]{n\+Min\+Layer}{, }\item[{int \&}]{n\+Max\+Layer}{, }\item[{double \&}]{thickness}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_s_l_job_file_writer_a1ed835e00c399109941cf100c521b021}\index{SLJobFileWriter@{SLJobFileWriter}!setScannerIndex@{setScannerIndex}}
+\index{setScannerIndex@{setScannerIndex}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{setScannerIndex()}{setScannerIndex()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a1ed835e00c399109941cf100c521b021} 
+void SLJob\+File\+Writer\+::set\+Scanner\+Index (\begin{DoxyParamCaption}\item[{const int \&}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_adb8c31e0e18805a70dd52d518ebbf8f2}{File\+Writer}} .
+
+\Hypertarget{class_s_l_job_file_writer_ade9eeecf8c1ae45a964b48bbffaaf4d6}\index{SLJobFileWriter@{SLJobFileWriter}!startBuffWriter@{startBuffWriter}}
+\index{startBuffWriter@{startBuffWriter}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{startBuffWriter()}{startBuffWriter()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_ade9eeecf8c1ae45a964b48bbffaaf4d6} 
+void SLJob\+File\+Writer\+::start\+Buff\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_ac383b392ce45566c4cccd3a4c8369c9d}{File\+Writer}} .
+
+\Hypertarget{class_s_l_job_file_writer_aaf246cddd4e012beccb3a7822ecef4ce}\index{SLJobFileWriter@{SLJobFileWriter}!waitBuffWriter@{waitBuffWriter}}
+\index{waitBuffWriter@{waitBuffWriter}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{waitBuffWriter()}{waitBuffWriter()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_aaf246cddd4e012beccb3a7822ecef4ce} 
+void SLJob\+File\+Writer\+::wait\+Buff\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a2a23d7f3dd604772bc53ef2b64d06442}{File\+Writer}} .
+
+\Hypertarget{class_s_l_job_file_writer_adc8c2feb57ef6bd715003f3ef2a7d60d}\index{SLJobFileWriter@{SLJobFileWriter}!writeLayerInfo@{writeLayerInfo}}
+\index{writeLayerInfo@{writeLayerInfo}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{writeLayerInfo()}{writeLayerInfo()}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_adc8c2feb57ef6bd715003f3ef2a7d60d} 
+void SLJob\+File\+Writer\+::write\+Layer\+Info (\begin{DoxyParamCaption}\item[{const int \&}]{n\+Hei}{, }\item[{const BOUNDINGRECT \&}]{}{, }\item[{const double \&}]{total\+Area}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{class_file_writer_a4ff9205f199c7904d32bcee13b75eddb}{File\+Writer}} .
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_s_l_job_file_writer_a05ab6eba1d2536fccfe65620aea4c9c0}\index{SLJobFileWriter@{SLJobFileWriter}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{algorithm}{algorithm}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a05ab6eba1d2536fccfe65620aea4c9c0} 
+\mbox{\hyperlink{class_algorithm_application}{Algorithm\+Application}}\texorpdfstring{$\ast$}{*} SLJob\+File\+Writer\+::algorithm = nullptr}
+
+\Hypertarget{class_s_l_job_file_writer_a30f7b9ba8457aee013616241650cea77}\index{SLJobFileWriter@{SLJobFileWriter}!buffPara@{buffPara}}
+\index{buffPara@{buffPara}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{buffPara}{buffPara}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a30f7b9ba8457aee013616241650cea77} 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\texorpdfstring{$\ast$}{*} SLJob\+File\+Writer\+::buff\+Para = nullptr}
+
+\Hypertarget{class_s_l_job_file_writer_ab80ac82541eaabb49ea0b26fce836adb}\index{SLJobFileWriter@{SLJobFileWriter}!curLayerInfo@{curLayerInfo}}
+\index{curLayerInfo@{curLayerInfo}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{curLayerInfo}{curLayerInfo}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_ab80ac82541eaabb49ea0b26fce836adb} 
+JFile\+Def\+::\+JFile\+Layer\+Info\texorpdfstring{$\ast$}{*} SLJob\+File\+Writer\+::cur\+Layer\+Info = nullptr}
+
+\Hypertarget{class_s_l_job_file_writer_a4da660fdb084fd6edb33539d2486d745}\index{SLJobFileWriter@{SLJobFileWriter}!fileWriter@{fileWriter}}
+\index{fileWriter@{fileWriter}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{fileWriter}{fileWriter}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_a4da660fdb084fd6edb33539d2486d745} 
+\mbox{\hyperlink{class_write_j_file}{Write\+JFile}}\texorpdfstring{$\ast$}{*} SLJob\+File\+Writer\+::file\+Writer = nullptr}
+
+\Hypertarget{class_s_l_job_file_writer_ab7c3324cd9a51c4f5a0ae532355a33f1}\index{SLJobFileWriter@{SLJobFileWriter}!layerInfoPtrMap@{layerInfoPtrMap}}
+\index{layerInfoPtrMap@{layerInfoPtrMap}!SLJobFileWriter@{SLJobFileWriter}}
+\doxysubsubsection{\texorpdfstring{layerInfoPtrMap}{layerInfoPtrMap}}
+{\footnotesize\ttfamily \label{class_s_l_job_file_writer_ab7c3324cd9a51c4f5a0ae532355a33f1} 
+QMap$<$int, QShared\+Pointer$<$JFile\+Def\+::\+JFile\+Layer\+Info$>$ $>$ SLJob\+File\+Writer\+::layer\+Info\+Ptr\+Map}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sljobfilewriter_8h}{sljobfilewriter.\+h}}\item 
+\mbox{\hyperlink{sljobfilewriter_8cpp}{sljobfilewriter.\+cpp}}\end{DoxyCompactItemize}

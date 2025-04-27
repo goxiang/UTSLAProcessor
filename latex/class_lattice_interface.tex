@@ -1,0 +1,74 @@
+\doxysection{Lattice\+Interface类 参考}
+\hypertarget{class_lattice_interface}{}\label{class_lattice_interface}\index{LatticeInterface@{LatticeInterface}}
+
+
+{\ttfamily \#include $<$latticeinterface.\+h$>$}
+
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_lattice_interface_1_1_priv}{Priv}}
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_lattice_interface_1_1_priv}{Priv} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lattice_interface_af3663583994d3c85e3be727432a49cad}{Lattice\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_lattice_interface}{Lattice\+Interface} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lattice_interface_a4ffc5dc673f2a07163c341f97b3e8adb}{init\+Lattice\+Paras}} (const QJson\+Parsing \texorpdfstring{$\ast$}{*})
+\item 
+bool \mbox{\hyperlink{class_lattice_interface_a4beab198144e1b3856453e461b59442b}{calc\+Layer\+Lattic}} (Clipper\+Lib\+::\+Paths \&, const Clipper\+Lib\+::\+Paths \&, const int \&, Clipper\+Lib\+::\+Paths \&, \mbox{\hyperlink{struct_lattice_layer_info}{Lattice\+Layer\+Info}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_lattice_interface_1_1_priv}{Priv}} $>$ \mbox{\hyperlink{class_lattice_interface_a6e44c7b2d61625b4716adf3460ab44fe}{d}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Lattice\+Interface}
+连接外部系统和内部晶格处理模块的桥梁，为\+SLA打印提供统一的晶格处理入口 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_lattice_interface_af3663583994d3c85e3be727432a49cad}\index{LatticeInterface@{LatticeInterface}!LatticeInterface@{LatticeInterface}}
+\index{LatticeInterface@{LatticeInterface}!LatticeInterface@{LatticeInterface}}
+\doxysubsubsection{\texorpdfstring{LatticeInterface()}{LatticeInterface()}}
+{\footnotesize\ttfamily \label{class_lattice_interface_af3663583994d3c85e3be727432a49cad} 
+Lattice\+Interface\+::\+Lattice\+Interface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_lattice_interface}{Lattice\+Interface} 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_lattice_interface_a4beab198144e1b3856453e461b59442b}\index{LatticeInterface@{LatticeInterface}!calcLayerLattic@{calcLayerLattic}}
+\index{calcLayerLattic@{calcLayerLattic}!LatticeInterface@{LatticeInterface}}
+\doxysubsubsection{\texorpdfstring{calcLayerLattic()}{calcLayerLattic()}}
+{\footnotesize\ttfamily \label{class_lattice_interface_a4beab198144e1b3856453e461b59442b} 
+bool Lattice\+Interface\+::calc\+Layer\+Lattic (\begin{DoxyParamCaption}\item[{Clipper\+Lib\+::\+Paths \&}]{}{, }\item[{const Clipper\+Lib\+::\+Paths \&}]{}{, }\item[{const int \&}]{}{, }\item[{Clipper\+Lib\+::\+Paths \&}]{}{, }\item[{\mbox{\hyperlink{struct_lattice_layer_info}{Lattice\+Layer\+Info}} \&}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_lattice_interface_a4ffc5dc673f2a07163c341f97b3e8adb}\index{LatticeInterface@{LatticeInterface}!initLatticeParas@{initLatticeParas}}
+\index{initLatticeParas@{initLatticeParas}!LatticeInterface@{LatticeInterface}}
+\doxysubsubsection{\texorpdfstring{initLatticeParas()}{initLatticeParas()}}
+{\footnotesize\ttfamily \label{class_lattice_interface_a4ffc5dc673f2a07163c341f97b3e8adb} 
+void Lattice\+Interface\+::init\+Lattice\+Paras (\begin{DoxyParamCaption}\item[{const QJson\+Parsing \texorpdfstring{$\ast$}{*}}]{json\+Parsing}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_lattice_interface_a6e44c7b2d61625b4716adf3460ab44fe}\index{LatticeInterface@{LatticeInterface}!d@{d}}
+\index{d@{d}!LatticeInterface@{LatticeInterface}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \label{class_lattice_interface_a6e44c7b2d61625b4716adf3460ab44fe} 
+QShared\+Pointer$<$\mbox{\hyperlink{struct_lattice_interface_1_1_priv}{Priv}}$>$ Lattice\+Interface\+::d = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Lattice\+Module/\mbox{\hyperlink{latticeinterface_8h}{latticeinterface.\+h}}\item 
+Lattice\+Module/\mbox{\hyperlink{latticeinterface_8cpp}{latticeinterface.\+cpp}}\end{DoxyCompactItemize}

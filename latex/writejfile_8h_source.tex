@@ -1,0 +1,44 @@
+\doxysection{writejfile.\+h}
+\hypertarget{writejfile_8h_source}{}\label{writejfile_8h_source}\mbox{\hyperlink{writejfile_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WRITEJFILE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WRITEJFILE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QThread>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{publicheader_8h}{publicheader.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_j_file_def}{JFileDef}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }JFileLayerInfo;}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_write_j_file_add050b56bf78375452579c45590d5627}{WriteJFile}}\ :\ \textcolor{keyword}{public}\ QThread}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_write_j_file_add050b56bf78375452579c45590d5627}{WriteJFile}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_j_file_ac145333c576e91077f5e4a0491603ee8}{setJFileLayerInfo}}(JFileDef::JFileLayerInfo\ *);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_j_file_a86b2bafdecde5cbfe79cefc3c2aac654}{setUFFStatus}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_j_file_adfe3950c5f03af1c325298fa992e7ca1}{setParaWriteBuff}}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_j_file_a07c39a6e2967579aa80e0b98d533db03}{stopThread}}()\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_write_j_file_aeae1cad6e30fb0627b37aa72220a0237}{m\_bRunning}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_write_j_file_a2647bec6850d6d9c22f20270372780b7}{run}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_write_j_file_ac4814796e0e39801cb1ae308d0ca25c1}{SLJobFileWriter}};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_write_j_file_af5121e4fc5a3d6c9570bae13089141ee}{m\_nUFDataStatus}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_write_j_file_accabcf1e04595e8bbd21f6e58cad6c54}{m\_nScannerIndex}}\ =\ 0;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_write_j_file_aeae1cad6e30fb0627b37aa72220a0237}{m\_bRunning}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_write_j_file_a76b815dc534793c7cc45904e5b8c1aee}{\_writeBuff}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ JFileDef::JFileLayerInfo\ *\mbox{\hyperlink{class_write_j_file_a89d5a9c9373da01b034a0f92ebca279d}{jFLayerInfo}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WRITEJFILE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,139 @@
+\doxysection{algorithmapplication.\+h}
+\hypertarget{algorithmapplication_8h_source}{}\label{algorithmapplication_8h_source}\mbox{\hyperlink{algorithmapplication_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORITHMAPPLICATION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORITHMAPPLICATION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmdistribution_8h}{./DynamicDivider/algorithmdistribution.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmhatching_8h}{algorithmhatching.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//namespace\ Utek\ \{struct\ StartChangerPara;\}}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//using\ namespace\ Utek;}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//struct\ Utek::StartChangerPara;}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_utek}{Utek}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_utek_1_1_s_t_a_r_t_c_h_a_n_g_e_r_p_a_r_a}{STARTCHANGERPARA}};}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a_a7489f2caf3f259e414a8f7d5b920ec10}{\_getScanLines}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00018\ \ \ \ \ std::function<void(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&)>\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a_ab3000cb7ae0b7815a365aa9ed969849d}{\_addWriteData}}\ =}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ [](\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&)\{\ \};}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattice_layer_info}{LatticeLayerInfo}};}
+\DoxyCodeLine{00022\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_part_result}{PartResult}};}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_scan_lines_sortor}{ScanLinesSortor}};}
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_m_splicing_module}{SLMSplicingModule}};}
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_sort_line_info}{SortLineInfo}};}
+\DoxyCodeLine{00026\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_matched_line_info}{MatchedLineInfo}};}
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ std::function<void(Paths\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}\ \&)>\ \mbox{\hyperlink{algorithmapplication_8h_a887d68e2df011000c76697a0c8b20a98}{FunWriteHatching}};}
+\DoxyCodeLine{00028\ \textcolor{keyword}{typedef}\ std::function<void(\textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ int64\_t\ \&,\ QVector<UFFWRITEDATA>\ \&)>\ \mbox{\hyperlink{algorithmapplication_8h_a1d533402408d574b4741df9285a99836}{FuncSplitScanData}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm_application}{AlgorithmApplication}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_algorithm_hatching}{AlgorithmHatching}}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a2c4bf492c05b8049f49466b002ba9d33}{setBuffParas}}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&curScanner\ =\ 0);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ae70195b27e9041aa2cd214ea748fa7ad}{setCurLayerHei}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&layerHei)\ \{\ \mbox{\hyperlink{class_algorithm_application_a832fc907919c482fd2c842b3eb9a8473}{\_layerHei}}\ =\ layerHei;\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a069159ce64d12083a0a8df45350a5f39}{setExportFileMode}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&mode)\ \{\ \mbox{\hyperlink{class_algorithm_application_a748e1ec3461b1f593a9cf3d373ecd083}{nExportFileMode}}\ =\ mode;\}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a126a1b65ba7b85149af0f0d427eaf317}{calcSplicingVec}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a5eb5ff1d6d31f17e20c6e41e263c93a7}{createEnhanceBorderParas}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ab7ba08944728607fff44e986d65a2a32}{writeHatchingData}}(\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}}\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ab7ba08944728607fff44e986d65a2a32}{writeHatchingData}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ab7ba08944728607fff44e986d65a2a32}{writeHatchingData}}(\mbox{\hyperlink{struct_lattice_layer_info}{LatticeLayerInfo}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a329979818cb494c78cdf599e4f80fb13}{setHatchingAngle}}(\textcolor{keywordtype}{double});}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a9ff76b50c7fbca94e97fe2f11c6f5715}{addHatchingAngle}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a76224efea7804190814aae9d41e1ab09}{addSolidSupportHatchingAngle}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_aeb42216ae7bad9524bc4102bf384e01d}{writeSupportToSList}}(QList<AREAINFOPTR>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ad995fe080a7a5a85cd16c1f845a59db9}{writeBorderData}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a293a48bf9c0aedf404ab6b617099214d}{writeExternedBorder}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ad2463542e03e835c9dfe2236f0cb2fa8}{keepHolesAndGaps}}(Paths\ *,\ Paths\ \&,\ Paths\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00054\ \ \ \ \ QMap<int,\ Paths>\ \mbox{\hyperlink{class_algorithm_application_af963f9263144721788d22efed66d3e9b}{splitPathsByFiled}}(\textcolor{keyword}{const}\ Paths\ \&);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a00a385b4409e7f0bbb40a3b4803ad94d}{writeSolidSupportData}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&borderSpeedFactor,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ad6ef3ab8008d1ce76ef7bc6fc356029b}{writeHoleAndGapData}}(Paths\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ad6ef3ab8008d1ce76ef7bc6fc356029b}{writeHoleAndGapData}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ad6ef3ab8008d1ce76ef7bc6fc356029b}{writeHoleAndGapData}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_application_ac78b6d35c640146359fc5c4110e7460f}{createDistributionArea}}(\textcolor{keyword}{const}\ Paths\ \&);}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a9cd26ccd45bf0c4cbc927c68abd51e3b}{writeSupportAreaToPaths}}(QList<AREAINFOPTR>\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_aeb42216ae7bad9524bc4102bf384e01d}{writeSupportToSList}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a0c600b327b1124b1aeea2277cbfe659e}{setBorderDistributionInfo}}(\textcolor{keyword}{const}\ std::vector<PartResult>\ \&);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a019f43e9cee8d131b5ef4b077ecb4c1e}{setSupportDistributionInfo}}(\textcolor{keyword}{const}\ std::vector<PartResult>\ \&);}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ac111aecb133b4fe9128bb7eb8de29f30}{setSolidDistributionInfo}}(\textcolor{keyword}{const}\ std::vector<PartResult>\ \&);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a262981a27791eab5c7ca24319e5c3b45}{getUpDownSurface}}(Paths\ \&,\ Paths\ \&,\ \textcolor{keywordtype}{int}\ \&,\ Paths\ *,\ Paths\ *[],\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_af8a7387562063d8c941c7c91afdbe208}{writeAllHatching}}(\textcolor{keyword}{const}\ Paths\ \&src,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&beamIndex,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&fSpeedRatio,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \mbox{\hyperlink{algorithmapplication_8h_a887d68e2df011000c76697a0c8b20a98}{FunWriteHatching}}\ \&\&,}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}\ \&func\ =\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}());}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a6c3ba09f13e15e61b400ffae0ba902a7}{getBeamStruct}}(Paths\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&BeamIndex);}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ac7345cbd1ed535575a6c589434cc3352}{recalcBeamStruct}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_aa93d9e718d1891ff4b12a70bb08d2ee2}{writeHatching}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}\ \&cbFunc\ =\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}());}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a6d51b802b124292d5d8dce051d35164b}{writeDownFileData}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ade9eafdad1a1a5e909dd08238022c612}{writeUpFileData}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_aa26b8c81acaaf9b71b54f72544e18c36}{writeSmallStruct}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&BeamIndex,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}\ \&);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ad995fe080a7a5a85cd16c1f845a59db9}{writeBorderData}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a7728e5d5c90accdeb24e59339f1ff024}{writeBorderData\_splicing}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_af3f0a49c3bdf03cf1c2405edbf5e75d9}{writeExternedBorder\_p}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a7e8efe2f9b41cedc444abd72f54f8aa0}{writeSolidSupportBorderData}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a8a84239cb220b94a2989d97cf572ef77}{writeHatching\_p}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}\ \&);}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a63adca689f538fec4220e183940231a9}{writeDownFileData\_p}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ab308c3f2c2e8d11ff24f5585c5f9aaa8}{writeUpFileData\_p}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a6ec16fa944cb749677297327aef98eea}{writeSmallStruct\_p}}(Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&BeamIndex,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_b___w_r_i_t_e_d_a_t_a}{CB\_WRITEDATA}}\ \&);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a47fb0809d126cfe7ddaa952c294ea01d}{writeSupportToSList\_p}}(QList<AREAINFOPTR>\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{algorithmapplication_8h_a1d533402408d574b4741df9285a99836}{FuncSplitScanData}}\ \&\&);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ae983d248d2efbc7c7c835e07c9045f1e}{writeSolidSupportHatching\_p}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_aeb42216ae7bad9524bc4102bf384e01d}{writeSupportToSList}}(\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&nScanner);}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_acbae04d40d1f1f2d3acbe9dd175b57aa}{writeUPDownData}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ UPSURFACEPARAMETERS\ *,}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}}\ \&);}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_algorithm_application_a741c08154898ec45b99622ec3c905bcb}{getUpDownMinWall}}(DOWNSURFACEPARAMETERS\ *);}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a6717ab42dab44fd7b9516d30c8274d12}{splitLineByVerLine}}(\textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,\ QVector<UFFWRITEDATA>\ \&);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a1ec3c7b97b3f27915ada5a95509b7622}{writeAreaToPaths}}(QList<AREAINFOPTR>\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_abfc432470b26d71233671aaea5b2135f}{parsingDatas}}(QList<AREAINFOPTR>\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a95ecce5a2003030f7e8d039499d6af66}{getNewBegin}}(Paths\ *lpPaths);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_acb04ccb0e2a6441ebdba4ea320af5d44}{calcLineOnSplicing}}(Paths\ \&);}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_acb04ccb0e2a6441ebdba4ea320af5d44}{calcLineOnSplicing}}(Paths\ \&,\ \mbox{\hyperlink{struct_splicing_line}{SplicingLine}}\ \&);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_ad8e44edfcb8d4af56bfe2f2fbc9cbef6}{recalcSupportList}}(QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a42c648da3cc802b90309342e907a8736}{recalcSupportList}}(QVector<SortLineInfo>\ \&,\ QList<int>\ \&);}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_algorithm_application_a785f1b9ad6bb5e3105733176f523378d}{calcMinDisPos}}(\textcolor{keyword}{const}\ QVector<SortLineInfo>\ \&,\ \textcolor{keyword}{const}\ QList<int>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_application_aebfe7e288cd748611a4b3c39452b5529}{isBigBeam}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&BeamCnt,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&BeamIndex);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a7a437907c11b0a817b35b904658157ff}{writePathsToScanLines}}(\textcolor{keyword}{const}\ Path\ \&,\ QVector<SCANLINE>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \&closedPath\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_application_a7a437907c11b0a817b35b904658157ff}{writePathsToScanLines}}(\textcolor{keyword}{const}\ Paths\ \&,\ QVector<SCANLINE>\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \&closedPath\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_algorithm_application_a832fc907919c482fd2c842b3eb9a8473}{\_layerHei}}\ =\ 0;}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_application_a2c2b5408d59cbe73654e60143811d686}{m\_bPlatPlus}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_algorithm_application_a834ec8c98737ee2923816f8759b465ab}{fHatchingAngle}}\ =\ 0;}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_algorithm_application_ab2a32cd01c91d84c0c22e052c05f185a}{fSolidSupportHatchingAngle}}\ =\ 0;}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_algorithm_application_af9a2de49c130cee2b6ccffa97c56695c}{curScannerIndex}}\ =\ 0;}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_algorithm_application_a748e1ec3461b1f593a9cf3d373ecd083}{nExportFileMode}}\ =\ 0;}
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\ *\mbox{\hyperlink{class_algorithm_application_aa0c5e9ad46a79aca2bf89879a51de9c2}{\_writeBuff}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00125\ \ \ \ \ QSharedPointer<Utek::STARTCHANGERPARA>\ \mbox{\hyperlink{class_algorithm_application_a41f31aeb2e6aa2bb902b9deb527d1103}{lpBEnhancedParas}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00126\ \textcolor{comment}{//\ \ \ \ QSharedPointer<SLMSplicingModule>\ splicingPtr\ =\ nullptr;}}
+\DoxyCodeLine{00127\ \ \ \ \ QSharedPointer<ScanLinesSortor>\ \mbox{\hyperlink{class_algorithm_application_a8156209982818476e90df3543e3b42dd}{scanLinesSortor}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00128\ \ \ \ \ QVector<SplicingArea>\ \mbox{\hyperlink{class_algorithm_application_a53ecf4dd53cf59167924eebaeeecb0e8}{vecSplicingArea}};}
+\DoxyCodeLine{00129\ \ \ \ \ QVector<SplicingLine>\ \mbox{\hyperlink{class_algorithm_application_af102aa0b384daed38422995ca9703ca2}{vecSplicingLine}};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ std::vector<PartResult>\ \mbox{\hyperlink{class_algorithm_application_a89c4fac4d0e1d688bb8a375974a9af1f}{\_borderDisInfoVec}};}
+\DoxyCodeLine{00132\ \ \ \ \ std::vector<PartResult>\ \mbox{\hyperlink{class_algorithm_application_afbde76d7a1f46e43506f877dd4f07ecf}{\_supportDisInfoVec}};}
+\DoxyCodeLine{00133\ \ \ \ \ std::vector<PartResult>\ \mbox{\hyperlink{class_algorithm_application_aa0bcbb5f14971cfac9c846464a4adbed}{\_solidDisInfoVec}};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ std::vector<Path>\ \mbox{\hyperlink{class_algorithm_application_aadf0f78e61df55e76847892fcd43654f}{\_distributionPathVec}};}
+\DoxyCodeLine{00136\ \};}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALGORITHMAPPLICATION\_H}}
+
+\end{DoxyCode}

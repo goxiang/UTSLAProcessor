@@ -1,0 +1,79 @@
+\doxysection{meshdef\+::Edge结构体 参考}
+\hypertarget{structmeshdef_1_1_edge}{}\label{structmeshdef_1_1_edge}\index{meshdef::Edge@{meshdef::Edge}}
+
+
+{\ttfamily \#include $<$meshbase.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structmeshdef_1_1_edge_a4e16df216fef19ca87937c29f4e9e957}{Edge}} ()=default
+\item 
+\mbox{\hyperlink{structmeshdef_1_1_edge_ac4b58fed34265d56a274a09bf7b2ae92}{Edge}} (\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}v1, \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}v2, \mbox{\hyperlink{structmeshdef_1_1_face}{Face}} \texorpdfstring{$\ast$}{*}cur\+Face)
+\item 
+bool \mbox{\hyperlink{structmeshdef_1_1_edge_aa1caf16c312a990b8d26e9dfb83b1fb4}{calc\+Intersection}} (\mbox{\hyperlink{structmeshdef_1_1_calc_edge_result}{Calc\+Edge\+Result}} \&, \mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{Clip\+Path\+Result}} \&)
+\begin{DoxyCompactList}\small\item\em \doxylink{structmeshdef_1_1_edge}{Edge} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+QVector$<$ \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{structmeshdef_1_1_edge_a294780c15f93a4a5dfca6b9280e84bfe}{\+\_\+vertexs}}
+\item 
+\mbox{\hyperlink{structmeshdef_1_1_face}{Face}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmeshdef_1_1_edge_afe89cfa05d2e189f0df84f5131b977f4}{\+\_\+cur\+Face}} = nullptr
+\item 
+\mbox{\hyperlink{structmeshdef_1_1_face}{Face}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmeshdef_1_1_edge_a3428be5f50942910f15b4476b55c8bb6}{\+\_\+next\+Face}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structmeshdef_1_1_edge_a4e16df216fef19ca87937c29f4e9e957}\index{meshdef::Edge@{meshdef::Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!meshdef::Edge@{meshdef::Edge}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_edge_a4e16df216fef19ca87937c29f4e9e957} 
+meshdef\+::\+Edge\+::\+Edge (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{structmeshdef_1_1_edge_ac4b58fed34265d56a274a09bf7b2ae92}\index{meshdef::Edge@{meshdef::Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!meshdef::Edge@{meshdef::Edge}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_edge_ac4b58fed34265d56a274a09bf7b2ae92} 
+meshdef\+::\+Edge\+::\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{v1}{, }\item[{\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{v2}{, }\item[{\mbox{\hyperlink{structmeshdef_1_1_face}{Face}} \texorpdfstring{$\ast$}{*}}]{cur\+Face}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structmeshdef_1_1_edge_aa1caf16c312a990b8d26e9dfb83b1fb4}\index{meshdef::Edge@{meshdef::Edge}!calcIntersection@{calcIntersection}}
+\index{calcIntersection@{calcIntersection}!meshdef::Edge@{meshdef::Edge}}
+\doxysubsubsection{\texorpdfstring{calcIntersection()}{calcIntersection()}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_edge_aa1caf16c312a990b8d26e9dfb83b1fb4} 
+bool meshdef\+::\+Edge\+::calc\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmeshdef_1_1_calc_edge_result}{Calc\+Edge\+Result}} \&}]{edge\+Result}{, }\item[{\mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{Clip\+Path\+Result}} \&}]{clip\+Result}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{structmeshdef_1_1_edge}{Edge} 
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structmeshdef_1_1_edge_afe89cfa05d2e189f0df84f5131b977f4}\index{meshdef::Edge@{meshdef::Edge}!\_curFace@{\_curFace}}
+\index{\_curFace@{\_curFace}!meshdef::Edge@{meshdef::Edge}}
+\doxysubsubsection{\texorpdfstring{\_curFace}{\_curFace}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_edge_afe89cfa05d2e189f0df84f5131b977f4} 
+\mbox{\hyperlink{structmeshdef_1_1_face}{Face}}\texorpdfstring{$\ast$}{*} meshdef\+::\+Edge\+::\+\_\+cur\+Face = nullptr}
+
+\Hypertarget{structmeshdef_1_1_edge_a3428be5f50942910f15b4476b55c8bb6}\index{meshdef::Edge@{meshdef::Edge}!\_nextFace@{\_nextFace}}
+\index{\_nextFace@{\_nextFace}!meshdef::Edge@{meshdef::Edge}}
+\doxysubsubsection{\texorpdfstring{\_nextFace}{\_nextFace}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_edge_a3428be5f50942910f15b4476b55c8bb6} 
+\mbox{\hyperlink{structmeshdef_1_1_face}{Face}}\texorpdfstring{$\ast$}{*} meshdef\+::\+Edge\+::\+\_\+next\+Face = nullptr}
+
+\Hypertarget{structmeshdef_1_1_edge_a294780c15f93a4a5dfca6b9280e84bfe}\index{meshdef::Edge@{meshdef::Edge}!\_vertexs@{\_vertexs}}
+\index{\_vertexs@{\_vertexs}!meshdef::Edge@{meshdef::Edge}}
+\doxysubsubsection{\texorpdfstring{\_vertexs}{\_vertexs}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_edge_a294780c15f93a4a5dfca6b9280e84bfe} 
+QVector$<$\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}$>$ meshdef\+::\+Edge\+::\+\_\+vertexs}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Lattice\+Module/\mbox{\hyperlink{meshbase_8h}{meshbase.\+h}}\item 
+Lattice\+Module/\mbox{\hyperlink{meshbase_8cpp}{meshbase.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\doxysection{Pocket\+Node结构体 参考}
+\hypertarget{struct_pocket_node}{}\label{struct_pocket_node}\index{PocketNode@{PocketNode}}
+
+
+{\ttfamily \#include $<$algorithmhatchingring.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_pocket_node_ade80cb9428652c61098a3a9dda8708f7}{Pocket\+Node}} ()=default
+\item 
+\mbox{\hyperlink{struct_pocket_node_aff64808a2b96e93f6128d3a94561a7a2}{Pocket\+Node}} (const int \&level, const double \&area, const Bounding\+Box \&box, const Path \&path)
+\item 
+Int\+Point \mbox{\hyperlink{struct_pocket_node_a13a697e4ef4b1be0187a71d82df83197}{first\+Coor}} () const
+\item 
+bool \mbox{\hyperlink{struct_pocket_node_a046f1537a84272a45ef89c3ea996af39}{contains\+Coor}} (const Int\+Point \&coor) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_pocket_node_ae1569776a24c75563580e62569dda75f}{n\+Level}} = 0
+\item 
+double \mbox{\hyperlink{struct_pocket_node_a4bbd5362def01bd56faa216eb728b3cb}{f\+Area}} = 0.\+0
+\item 
+Bounding\+Box \mbox{\hyperlink{struct_pocket_node_a90232666ed780c6c7cb0957f57c1588b}{b\+Box}}
+\item 
+Path \mbox{\hyperlink{struct_pocket_node_a057cd68590f98ecd0c1f01d92e22b745}{circle}}
+\item 
+QList$<$ int $>$ \mbox{\hyperlink{struct_pocket_node_af7548a392c0658bb4f6883965ae2e44d}{sub\+Branch\+List}}
+\item 
+\mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} \mbox{\hyperlink{struct_pocket_node_a7039883205b654951dd0d9a9fac03c4a}{wnd\+Info}}
+\item 
+\mbox{\hyperlink{struct_ring_wnd_info}{Ring\+Wnd\+Info}} \mbox{\hyperlink{struct_pocket_node_a77bfd5b4b3b197835263c401cdc5221d}{ring\+Wnd\+Info}}
+\item 
+QList$<$ \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{struct_pocket_node_a31b4a9358b9cea876834b34c914294a2}{list\+Node\+Wnd}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_pocket_node_ade80cb9428652c61098a3a9dda8708f7}\index{PocketNode@{PocketNode}!PocketNode@{PocketNode}}
+\index{PocketNode@{PocketNode}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{PocketNode()}{PocketNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_pocket_node_ade80cb9428652c61098a3a9dda8708f7} 
+Pocket\+Node\+::\+Pocket\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_pocket_node_aff64808a2b96e93f6128d3a94561a7a2}\index{PocketNode@{PocketNode}!PocketNode@{PocketNode}}
+\index{PocketNode@{PocketNode}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{PocketNode()}{PocketNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_pocket_node_aff64808a2b96e93f6128d3a94561a7a2} 
+Pocket\+Node\+::\+Pocket\+Node (\begin{DoxyParamCaption}\item[{const int \&}]{level}{, }\item[{const double \&}]{area}{, }\item[{const Bounding\+Box \&}]{box}{, }\item[{const Path \&}]{path}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_pocket_node_a046f1537a84272a45ef89c3ea996af39}\index{PocketNode@{PocketNode}!containsCoor@{containsCoor}}
+\index{containsCoor@{containsCoor}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{containsCoor()}{containsCoor()}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a046f1537a84272a45ef89c3ea996af39} 
+bool Pocket\+Node\+::contains\+Coor (\begin{DoxyParamCaption}\item[{const Int\+Point \&}]{coor}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_pocket_node_a13a697e4ef4b1be0187a71d82df83197}\index{PocketNode@{PocketNode}!firstCoor@{firstCoor}}
+\index{firstCoor@{firstCoor}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{firstCoor()}{firstCoor()}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a13a697e4ef4b1be0187a71d82df83197} 
+Int\+Point Pocket\+Node\+::first\+Coor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_pocket_node_a90232666ed780c6c7cb0957f57c1588b}\index{PocketNode@{PocketNode}!bBox@{bBox}}
+\index{bBox@{bBox}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{bBox}{bBox}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a90232666ed780c6c7cb0957f57c1588b} 
+Bounding\+Box Pocket\+Node\+::b\+Box}
+
+\Hypertarget{struct_pocket_node_a057cd68590f98ecd0c1f01d92e22b745}\index{PocketNode@{PocketNode}!circle@{circle}}
+\index{circle@{circle}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{circle}{circle}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a057cd68590f98ecd0c1f01d92e22b745} 
+Path Pocket\+Node\+::circle}
+
+\Hypertarget{struct_pocket_node_a4bbd5362def01bd56faa216eb728b3cb}\index{PocketNode@{PocketNode}!fArea@{fArea}}
+\index{fArea@{fArea}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{fArea}{fArea}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a4bbd5362def01bd56faa216eb728b3cb} 
+double Pocket\+Node\+::f\+Area = 0.\+0}
+
+\Hypertarget{struct_pocket_node_a31b4a9358b9cea876834b34c914294a2}\index{PocketNode@{PocketNode}!listNodeWnd@{listNodeWnd}}
+\index{listNodeWnd@{listNodeWnd}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{listNodeWnd}{listNodeWnd}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a31b4a9358b9cea876834b34c914294a2} 
+QList$<$\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \texorpdfstring{$\ast$}{*}$>$ Pocket\+Node\+::list\+Node\+Wnd}
+
+\Hypertarget{struct_pocket_node_ae1569776a24c75563580e62569dda75f}\index{PocketNode@{PocketNode}!nLevel@{nLevel}}
+\index{nLevel@{nLevel}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{nLevel}{nLevel}}
+{\footnotesize\ttfamily \label{struct_pocket_node_ae1569776a24c75563580e62569dda75f} 
+int Pocket\+Node\+::n\+Level = 0}
+
+\Hypertarget{struct_pocket_node_a77bfd5b4b3b197835263c401cdc5221d}\index{PocketNode@{PocketNode}!ringWndInfo@{ringWndInfo}}
+\index{ringWndInfo@{ringWndInfo}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{ringWndInfo}{ringWndInfo}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a77bfd5b4b3b197835263c401cdc5221d} 
+\mbox{\hyperlink{struct_ring_wnd_info}{Ring\+Wnd\+Info}} Pocket\+Node\+::ring\+Wnd\+Info}
+
+\Hypertarget{struct_pocket_node_af7548a392c0658bb4f6883965ae2e44d}\index{PocketNode@{PocketNode}!subBranchList@{subBranchList}}
+\index{subBranchList@{subBranchList}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{subBranchList}{subBranchList}}
+{\footnotesize\ttfamily \label{struct_pocket_node_af7548a392c0658bb4f6883965ae2e44d} 
+QList$<$int$>$ Pocket\+Node\+::sub\+Branch\+List}
+
+\Hypertarget{struct_pocket_node_a7039883205b654951dd0d9a9fac03c4a}\index{PocketNode@{PocketNode}!wndInfo@{wndInfo}}
+\index{wndInfo@{wndInfo}!PocketNode@{PocketNode}}
+\doxysubsubsection{\texorpdfstring{wndInfo}{wndInfo}}
+{\footnotesize\ttfamily \label{struct_pocket_node_a7039883205b654951dd0d9a9fac03c4a} 
+\mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} Pocket\+Node\+::wnd\+Info}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algorithmhatchingring_8h}{algorithmhatchingring.\+h}}\item 
+\mbox{\hyperlink{algorithmhatchingring_8cpp}{algorithmhatchingring.\+cpp}}\end{DoxyCompactItemize}

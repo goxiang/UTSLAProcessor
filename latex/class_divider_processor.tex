@@ -1,0 +1,188 @@
+\doxysection{Divider\+Processor类 参考}
+\hypertarget{class_divider_processor}{}\label{class_divider_processor}\index{DividerProcessor@{DividerProcessor}}
+
+
+{\ttfamily \#include $<$dividerprocessor.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_divider_processor_aec57ed4d4d1872c42d526b2122eef750}{Divider\+Processor}} (\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessor\+Private}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_divider_processor_a7d2fa3a2453c54dd255f2863d1195844}{start\+Processing}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_divider_processor_a787a862397544a6c21f414e21dbd14d5}{create\+Part\+Writer}} ()
+\item 
+void \mbox{\hyperlink{class_divider_processor_a3a9948e65272f632744bd6ee89998b07}{processing\+All\+Parts}} ()
+\item 
+void \mbox{\hyperlink{class_divider_processor_ab15a1a874cb2df9b62a33b5a4c45ed95}{write\+File\+End}} ()
+\item 
+void \mbox{\hyperlink{class_divider_processor_a19d9981cc4e24f1693a20589cc684ace}{update\+Part\+Layer\+Info}} (const int \&, const int \&, QShared\+Pointer$<$ \mbox{\hyperlink{struct_build_part}{Build\+Part}} $>$ \&)
+\item 
+void \mbox{\hyperlink{class_divider_processor_aad61ca733d678b6129d0d0f4b6298e76}{calc\+Border\+Weight}} (const QList$<$ int $>$ \&, std\+::map$<$ int, double $>$ \&)
+\item 
+double \mbox{\hyperlink{class_divider_processor_a8677bd45f3b5dbc69f12ee2e3655861f}{calc\+Border\+Weight}} (const QList$<$ int $>$ \&)
+\item 
+double \mbox{\hyperlink{class_divider_processor_a6b336f99a26dde3b8cddc67010102f59}{calc\+Support\+Weight}} (const Paths \&)
+\item 
+void \mbox{\hyperlink{class_divider_processor_a90b6f48844926eacb90c104ad183ec7b}{run\+Task\+In\+Concurrent}} (const QSet$<$ int $>$ \&, const QList$<$ int $>$ \&, const QList$<$ int $>$ \&, const QMap$<$ int, Paths $>$ \&)
+\item 
+void \mbox{\hyperlink{class_divider_processor_a69c50891e7071ca2cdc497fba42e2f64}{task\+Runner}} (const int \&, const QList$<$ int $>$ \&, const QList$<$ int $>$ \&, const QMap$<$ int, Paths $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessor\+Private}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_divider_processor_adbf8519ac05ea07b08b8a6411311c3ae}{\+\_\+sla\+Priv}} = nullptr
+\item 
+int \mbox{\hyperlink{class_divider_processor_a33c746bd469af81c3924a6afc8f8a8c9}{\+\_\+part\+Cnt}} = 0
+\item 
+int \mbox{\hyperlink{class_divider_processor_acd71bd98ee3f2a09a9138b679959acd3}{\+\_\+min\+Layer}} = -\/1
+\item 
+int \mbox{\hyperlink{class_divider_processor_aa9b08a50fd0aee32faa2050737390dbf}{\+\_\+max\+Layer}} = -\/1
+\item 
+int \mbox{\hyperlink{class_divider_processor_a2de2b2253c3c97410563ee6083660b73}{\+\_\+scanner\+Cnt}} = 1
+\item 
+int \mbox{\hyperlink{class_divider_processor_affba3585f83bfb6de0dc445939b3ff28}{\+\_\+border\+Scanner\+Cnt}} = 1
+\item 
+QMap$<$ int, QShared\+Pointer$<$ \mbox{\hyperlink{struct_build_part}{Build\+Part}} $>$ $>$ \mbox{\hyperlink{class_divider_processor_add6fe2c50fc07e444b86997fc66dd104}{\+\_\+build\+Part\+Map}}
+\item 
+QSemaphore \mbox{\hyperlink{class_divider_processor_a11b5c7c67585c410c8e1b5e203777b86}{\+\_\+running\+Semaphore}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: Divider\+Processor}
+负责动态分割处理,通过组合方式与\+UTSLAProcessor\+Private关联,作为\+UTSLAProcessor\+Private的一个功能组件 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_divider_processor_aec57ed4d4d1872c42d526b2122eef750}\index{DividerProcessor@{DividerProcessor}!DividerProcessor@{DividerProcessor}}
+\index{DividerProcessor@{DividerProcessor}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{DividerProcessor()}{DividerProcessor()}}
+{\footnotesize\ttfamily \label{class_divider_processor_aec57ed4d4d1872c42d526b2122eef750} 
+Divider\+Processor\+::\+Divider\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessor\+Private}} \texorpdfstring{$\ast$}{*}}]{sla\+Priv}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_divider_processor_a8677bd45f3b5dbc69f12ee2e3655861f}\index{DividerProcessor@{DividerProcessor}!calcBorderWeight@{calcBorderWeight}}
+\index{calcBorderWeight@{calcBorderWeight}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{calcBorderWeight()}{calcBorderWeight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_divider_processor_a8677bd45f3b5dbc69f12ee2e3655861f} 
+double Divider\+Processor\+::calc\+Border\+Weight (\begin{DoxyParamCaption}\item[{const QList$<$ int $>$ \&}]{valid\+List}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_aad61ca733d678b6129d0d0f4b6298e76}\index{DividerProcessor@{DividerProcessor}!calcBorderWeight@{calcBorderWeight}}
+\index{calcBorderWeight@{calcBorderWeight}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{calcBorderWeight()}{calcBorderWeight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_divider_processor_aad61ca733d678b6129d0d0f4b6298e76} 
+void Divider\+Processor\+::calc\+Border\+Weight (\begin{DoxyParamCaption}\item[{const QList$<$ int $>$ \&}]{valid\+List}{, }\item[{std\+::map$<$ int, double $>$ \&}]{part\+Area\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a6b336f99a26dde3b8cddc67010102f59}\index{DividerProcessor@{DividerProcessor}!calcSupportWeight@{calcSupportWeight}}
+\index{calcSupportWeight@{calcSupportWeight}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{calcSupportWeight()}{calcSupportWeight()}}
+{\footnotesize\ttfamily \label{class_divider_processor_a6b336f99a26dde3b8cddc67010102f59} 
+double Divider\+Processor\+::calc\+Support\+Weight (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a787a862397544a6c21f414e21dbd14d5}\index{DividerProcessor@{DividerProcessor}!createPartWriter@{createPartWriter}}
+\index{createPartWriter@{createPartWriter}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{createPartWriter()}{createPartWriter()}}
+{\footnotesize\ttfamily \label{class_divider_processor_a787a862397544a6c21f414e21dbd14d5} 
+void Divider\+Processor\+::create\+Part\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a3a9948e65272f632744bd6ee89998b07}\index{DividerProcessor@{DividerProcessor}!processingAllParts@{processingAllParts}}
+\index{processingAllParts@{processingAllParts}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{processingAllParts()}{processingAllParts()}}
+{\footnotesize\ttfamily \label{class_divider_processor_a3a9948e65272f632744bd6ee89998b07} 
+void Divider\+Processor\+::processing\+All\+Parts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a90b6f48844926eacb90c104ad183ec7b}\index{DividerProcessor@{DividerProcessor}!runTaskInConcurrent@{runTaskInConcurrent}}
+\index{runTaskInConcurrent@{runTaskInConcurrent}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{runTaskInConcurrent()}{runTaskInConcurrent()}}
+{\footnotesize\ttfamily \label{class_divider_processor_a90b6f48844926eacb90c104ad183ec7b} 
+void Divider\+Processor\+::run\+Task\+In\+Concurrent (\begin{DoxyParamCaption}\item[{const QSet$<$ int $>$ \&}]{total\+Keys}{, }\item[{const QList$<$ int $>$ \&}]{support\+Keys}{, }\item[{const QList$<$ int $>$ \&}]{solid\+Keys}{, }\item[{const QMap$<$ int, Paths $>$ \&}]{valid\+Support\+Part\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a7d2fa3a2453c54dd255f2863d1195844}\index{DividerProcessor@{DividerProcessor}!startProcessing@{startProcessing}}
+\index{startProcessing@{startProcessing}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{startProcessing()}{startProcessing()}}
+{\footnotesize\ttfamily \label{class_divider_processor_a7d2fa3a2453c54dd255f2863d1195844} 
+void Divider\+Processor\+::start\+Processing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_divider_processor_a69c50891e7071ca2cdc497fba42e2f64}\index{DividerProcessor@{DividerProcessor}!taskRunner@{taskRunner}}
+\index{taskRunner@{taskRunner}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{taskRunner()}{taskRunner()}}
+{\footnotesize\ttfamily \label{class_divider_processor_a69c50891e7071ca2cdc497fba42e2f64} 
+void Divider\+Processor\+::task\+Runner (\begin{DoxyParamCaption}\item[{const int \&}]{part\+Index}{, }\item[{const QList$<$ int $>$ \&}]{support\+Keys}{, }\item[{const QList$<$ int $>$ \&}]{solid\+Keys}{, }\item[{const QMap$<$ int, Paths $>$ \&}]{valid\+Support\+Part\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a19d9981cc4e24f1693a20589cc684ace}\index{DividerProcessor@{DividerProcessor}!updatePartLayerInfo@{updatePartLayerInfo}}
+\index{updatePartLayerInfo@{updatePartLayerInfo}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{updatePartLayerInfo()}{updatePartLayerInfo()}}
+{\footnotesize\ttfamily \label{class_divider_processor_a19d9981cc4e24f1693a20589cc684ace} 
+void Divider\+Processor\+::update\+Part\+Layer\+Info (\begin{DoxyParamCaption}\item[{const int \&}]{index}{, }\item[{const int \&}]{cur\+Layer}{, }\item[{QShared\+Pointer$<$ \mbox{\hyperlink{struct_build_part}{Build\+Part}} $>$ \&}]{build\+Part\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_ab15a1a874cb2df9b62a33b5a4c45ed95}\index{DividerProcessor@{DividerProcessor}!writeFileEnd@{writeFileEnd}}
+\index{writeFileEnd@{writeFileEnd}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{writeFileEnd()}{writeFileEnd()}}
+{\footnotesize\ttfamily \label{class_divider_processor_ab15a1a874cb2df9b62a33b5a4c45ed95} 
+void Divider\+Processor\+::write\+File\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_divider_processor_affba3585f83bfb6de0dc445939b3ff28}\index{DividerProcessor@{DividerProcessor}!\_borderScannerCnt@{\_borderScannerCnt}}
+\index{\_borderScannerCnt@{\_borderScannerCnt}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_borderScannerCnt}{\_borderScannerCnt}}
+{\footnotesize\ttfamily \label{class_divider_processor_affba3585f83bfb6de0dc445939b3ff28} 
+int Divider\+Processor\+::\+\_\+border\+Scanner\+Cnt = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_add6fe2c50fc07e444b86997fc66dd104}\index{DividerProcessor@{DividerProcessor}!\_buildPartMap@{\_buildPartMap}}
+\index{\_buildPartMap@{\_buildPartMap}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_buildPartMap}{\_buildPartMap}}
+{\footnotesize\ttfamily \label{class_divider_processor_add6fe2c50fc07e444b86997fc66dd104} 
+QMap$<$int, QShared\+Pointer$<$\mbox{\hyperlink{struct_build_part}{Build\+Part}}$>$ $>$ Divider\+Processor\+::\+\_\+build\+Part\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_aa9b08a50fd0aee32faa2050737390dbf}\index{DividerProcessor@{DividerProcessor}!\_maxLayer@{\_maxLayer}}
+\index{\_maxLayer@{\_maxLayer}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_maxLayer}{\_maxLayer}}
+{\footnotesize\ttfamily \label{class_divider_processor_aa9b08a50fd0aee32faa2050737390dbf} 
+int Divider\+Processor\+::\+\_\+max\+Layer = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_acd71bd98ee3f2a09a9138b679959acd3}\index{DividerProcessor@{DividerProcessor}!\_minLayer@{\_minLayer}}
+\index{\_minLayer@{\_minLayer}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_minLayer}{\_minLayer}}
+{\footnotesize\ttfamily \label{class_divider_processor_acd71bd98ee3f2a09a9138b679959acd3} 
+int Divider\+Processor\+::\+\_\+min\+Layer = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a33c746bd469af81c3924a6afc8f8a8c9}\index{DividerProcessor@{DividerProcessor}!\_partCnt@{\_partCnt}}
+\index{\_partCnt@{\_partCnt}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_partCnt}{\_partCnt}}
+{\footnotesize\ttfamily \label{class_divider_processor_a33c746bd469af81c3924a6afc8f8a8c9} 
+int Divider\+Processor\+::\+\_\+part\+Cnt = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a11b5c7c67585c410c8e1b5e203777b86}\index{DividerProcessor@{DividerProcessor}!\_runningSemaphore@{\_runningSemaphore}}
+\index{\_runningSemaphore@{\_runningSemaphore}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_runningSemaphore}{\_runningSemaphore}}
+{\footnotesize\ttfamily \label{class_divider_processor_a11b5c7c67585c410c8e1b5e203777b86} 
+QSemaphore Divider\+Processor\+::\+\_\+running\+Semaphore\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_a2de2b2253c3c97410563ee6083660b73}\index{DividerProcessor@{DividerProcessor}!\_scannerCnt@{\_scannerCnt}}
+\index{\_scannerCnt@{\_scannerCnt}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_scannerCnt}{\_scannerCnt}}
+{\footnotesize\ttfamily \label{class_divider_processor_a2de2b2253c3c97410563ee6083660b73} 
+int Divider\+Processor\+::\+\_\+scanner\+Cnt = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_divider_processor_adbf8519ac05ea07b08b8a6411311c3ae}\index{DividerProcessor@{DividerProcessor}!\_slaPriv@{\_slaPriv}}
+\index{\_slaPriv@{\_slaPriv}!DividerProcessor@{DividerProcessor}}
+\doxysubsubsection{\texorpdfstring{\_slaPriv}{\_slaPriv}}
+{\footnotesize\ttfamily \label{class_divider_processor_adbf8519ac05ea07b08b8a6411311c3ae} 
+\mbox{\hyperlink{class_u_t_s_l_a_processor_private}{UTSLAProcessor\+Private}}\texorpdfstring{$\ast$}{*} Divider\+Processor\+::\+\_\+sla\+Priv = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Dynamic\+Divider/\mbox{\hyperlink{dividerprocessor_8h}{dividerprocessor.\+h}}\item 
+Dynamic\+Divider/\mbox{\hyperlink{dividerprocessor_8cpp}{dividerprocessor.\+cpp}}\end{DoxyCompactItemize}

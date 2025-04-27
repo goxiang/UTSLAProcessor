@@ -1,0 +1,168 @@
+\doxysection{algorithmhatchingring.\+cpp 文件参考}
+\hypertarget{algorithmhatchingring_8cpp}{}\label{algorithmhatchingring_8cpp}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+{\ttfamily \#include "{}algorithmhatchingring.\+h"{}}\newline
+{\ttfamily \#include "{}slaprocessorextend.\+h"{}}\newline
+{\ttfamily \#include "{}UTSLAProcessor\+\_\+global.\+h"{}}\newline
+{\ttfamily \#include "{}uspfiledef.\+h"{}}\newline
+{\ttfamily \#include $<$QDebug$>$}\newline
+{\ttfamily \#include $<$QThread$>$}\newline
+{\ttfamily \#include $<$QTime$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}}
+\item 
+struct \mbox{\hyperlink{struct_path_rang}{Path\+Rang}}
+\item 
+struct \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+QDebug \mbox{\hyperlink{algorithmhatchingring_8cpp_a7b8b6ae99899cb0f02bf80e5b87c37d1}{operator$<$$<$}} (QDebug debug, const \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&wnd\+Pos)
+\item 
+QDebug \mbox{\hyperlink{algorithmhatchingring_8cpp_abc5ee93d92c00f8f8586265c96ee022a}{operator$<$$<$}} (QDebug debug, const \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} \&wnd)
+\item 
+bool \mbox{\hyperlink{algorithmhatchingring_8cpp_a923f80b64cf7121da6906bb1c0ddb4e1}{less\+Than\+Bigger\+Wnd}} (const \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} \&wnd1, const \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} \&wnd2)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_a05903a59a741a7b95c92cf0e14a1ef21}{draw\+Path\+Offset}} (const Path \&path, const Int\+Point \&offset\+Coor, const ulong \&ms)
+\item 
+bool \mbox{\hyperlink{algorithmhatchingring_8cpp_a7ea02701cbebd79bb78f50a5c5f047a6}{compare\+Less\+Than}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b1, const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b2)
+\item 
+bool \mbox{\hyperlink{algorithmhatchingring_8cpp_aba4a90bba9f7265057edf4ad0e0fb0ad}{compare\+Bigger}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b1, const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b2)
+\item 
+bool \mbox{\hyperlink{algorithmhatchingring_8cpp_aeaf68443e37c87beb63edc4254c2ab20}{compare\+Total\+Branch}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b1, const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b2)
+\item 
+bool \mbox{\hyperlink{algorithmhatchingring_8cpp_ad57afd836f867626e4545ef5708b209a}{compare\+Total\+Branch\+Wnd}} (const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b1, const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&b2)
+\item 
+uint \mbox{\hyperlink{algorithmhatchingring_8cpp_aa7607ac168bc9475f91cffdf2a327393}{calc\+Ending\+Pos}} (Path \&path, uint \&begin\+Pos, uint \&end\+Pos, const double \&pow\+Dis)
+\item 
+uint \mbox{\hyperlink{algorithmhatchingring_8cpp_aa52bc535581c8337fdba7809a56bc80e}{calc\+Ending\+Pos\+Invert}} (Path \&path, uint \&begin\+Pos, uint \&end\+Pos, const double \&pow\+Dis)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_adebcf98fe0bc726c3304374e9c5a3c90}{calc\+Wnd\+Info}} (Path \&path, \mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} \&wnd\+Info, const double \&pow\+Dis)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_a900b9d13f74817db2295f7d6267f6d24}{calc\+Wnd\+Info\+Mid}} (Path \&path, \mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} \&wnd\+Info, const double \&pow\+Dis)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_aeb812679674ef8e531419465b262ca4c}{update\+Sub\+Branch}} (const uint \&inserted\+Pos, const uint \&total\+Sz, const int \&index, QList$<$ \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} $>$ \&sub\+Branch\+List)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_aae4767fe193a951231157946340d219e}{calc\+Branch\+Wnd\+Info}} (Path \&path, \mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} \&wnd\+Info, const double \&pow\+Dis, const int \&index, QList$<$ \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} $>$ \&sub\+Branch\+List)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_a06ad8213987701e9cd0c74d25a63b856}{calc\+Ending\+Pos}} (Path \&path, \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&wnd\+Pos, const double \&pow\+Dis)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_adf5db26901aca8b9569e4cfd69de88e2}{copy\+Coor}} (Path \&des, const Path \&src, const uint \&begin, const uint \&end)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_a2687f0a43fbc2d34ffc95fa28de8f715}{copy\+Coor\+Invert}} (Path \&des, const Path \&src, const uint \&begin, const uint \&end)
+\item 
+void \mbox{\hyperlink{algorithmhatchingring_8cpp_a3682d065b96a2d71a98fe0188ce98254}{copy\+Coor}} (Path \&des, const Path \&src, const \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&wnd\+Pos, const int \&copy\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{algorithmhatchingring_8cpp_aae4767fe193a951231157946340d219e}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!calcBranchWndInfo@{calcBranchWndInfo}}
+\index{calcBranchWndInfo@{calcBranchWndInfo}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{calcBranchWndInfo()}{calcBranchWndInfo()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_aae4767fe193a951231157946340d219e} 
+void calc\+Branch\+Wnd\+Info (\begin{DoxyParamCaption}\item[{Path \&}]{path}{, }\item[{\mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} \&}]{wnd\+Info}{, }\item[{const double \&}]{pow\+Dis}{, }\item[{const int \&}]{index}{, }\item[{QList$<$ \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} $>$ \&}]{sub\+Branch\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_aa7607ac168bc9475f91cffdf2a327393}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!calcEndingPos@{calcEndingPos}}
+\index{calcEndingPos@{calcEndingPos}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{calcEndingPos()}{calcEndingPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_aa7607ac168bc9475f91cffdf2a327393} 
+uint calc\+Ending\+Pos (\begin{DoxyParamCaption}\item[{Path \&}]{path}{, }\item[{uint \&}]{begin\+Pos}{, }\item[{uint \&}]{end\+Pos}{, }\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_a06ad8213987701e9cd0c74d25a63b856}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!calcEndingPos@{calcEndingPos}}
+\index{calcEndingPos@{calcEndingPos}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{calcEndingPos()}{calcEndingPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a06ad8213987701e9cd0c74d25a63b856} 
+void calc\+Ending\+Pos (\begin{DoxyParamCaption}\item[{Path \&}]{path}{, }\item[{\mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&}]{wnd\+Pos}{, }\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_aa52bc535581c8337fdba7809a56bc80e}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!calcEndingPosInvert@{calcEndingPosInvert}}
+\index{calcEndingPosInvert@{calcEndingPosInvert}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{calcEndingPosInvert()}{calcEndingPosInvert()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_aa52bc535581c8337fdba7809a56bc80e} 
+uint calc\+Ending\+Pos\+Invert (\begin{DoxyParamCaption}\item[{Path \&}]{path}{, }\item[{uint \&}]{begin\+Pos}{, }\item[{uint \&}]{end\+Pos}{, }\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_adebcf98fe0bc726c3304374e9c5a3c90}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!calcWndInfo@{calcWndInfo}}
+\index{calcWndInfo@{calcWndInfo}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{calcWndInfo()}{calcWndInfo()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_adebcf98fe0bc726c3304374e9c5a3c90} 
+void calc\+Wnd\+Info (\begin{DoxyParamCaption}\item[{Path \&}]{path}{, }\item[{\mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} \&}]{wnd\+Info}{, }\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_a900b9d13f74817db2295f7d6267f6d24}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!calcWndInfoMid@{calcWndInfoMid}}
+\index{calcWndInfoMid@{calcWndInfoMid}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{calcWndInfoMid()}{calcWndInfoMid()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a900b9d13f74817db2295f7d6267f6d24} 
+void calc\+Wnd\+Info\+Mid (\begin{DoxyParamCaption}\item[{Path \&}]{path}{, }\item[{\mbox{\hyperlink{struct_wnd_info}{Wnd\+Info}} \&}]{wnd\+Info}{, }\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_aba4a90bba9f7265057edf4ad0e0fb0ad}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!compareBigger@{compareBigger}}
+\index{compareBigger@{compareBigger}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{compareBigger()}{compareBigger()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_aba4a90bba9f7265057edf4ad0e0fb0ad} 
+bool compare\+Bigger (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b1}{, }\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_a7ea02701cbebd79bb78f50a5c5f047a6}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!compareLessThan@{compareLessThan}}
+\index{compareLessThan@{compareLessThan}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{compareLessThan()}{compareLessThan()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a7ea02701cbebd79bb78f50a5c5f047a6} 
+bool compare\+Less\+Than (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b1}{, }\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_aeaf68443e37c87beb63edc4254c2ab20}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!compareTotalBranch@{compareTotalBranch}}
+\index{compareTotalBranch@{compareTotalBranch}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{compareTotalBranch()}{compareTotalBranch()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_aeaf68443e37c87beb63edc4254c2ab20} 
+bool compare\+Total\+Branch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b1}{, }\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_ad57afd836f867626e4545ef5708b209a}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!compareTotalBranchWnd@{compareTotalBranchWnd}}
+\index{compareTotalBranchWnd@{compareTotalBranchWnd}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{compareTotalBranchWnd()}{compareTotalBranchWnd()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_ad57afd836f867626e4545ef5708b209a} 
+bool compare\+Total\+Branch\+Wnd (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b1}{, }\item[{const \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{b2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_adf5db26901aca8b9569e4cfd69de88e2}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!copyCoor@{copyCoor}}
+\index{copyCoor@{copyCoor}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{copyCoor()}{copyCoor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_adf5db26901aca8b9569e4cfd69de88e2} 
+void copy\+Coor (\begin{DoxyParamCaption}\item[{Path \&}]{des}{, }\item[{const Path \&}]{src}{, }\item[{const uint \&}]{begin}{, }\item[{const uint \&}]{end}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_a3682d065b96a2d71a98fe0188ce98254}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!copyCoor@{copyCoor}}
+\index{copyCoor@{copyCoor}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{copyCoor()}{copyCoor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a3682d065b96a2d71a98fe0188ce98254} 
+void copy\+Coor (\begin{DoxyParamCaption}\item[{Path \&}]{des}{, }\item[{const Path \&}]{src}{, }\item[{const \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&}]{wnd\+Pos}{, }\item[{const int \&}]{copy\+Type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_a2687f0a43fbc2d34ffc95fa28de8f715}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!copyCoorInvert@{copyCoorInvert}}
+\index{copyCoorInvert@{copyCoorInvert}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{copyCoorInvert()}{copyCoorInvert()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a2687f0a43fbc2d34ffc95fa28de8f715} 
+void copy\+Coor\+Invert (\begin{DoxyParamCaption}\item[{Path \&}]{des}{, }\item[{const Path \&}]{src}{, }\item[{const uint \&}]{begin}{, }\item[{const uint \&}]{end}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_a05903a59a741a7b95c92cf0e14a1ef21}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!drawPathOffset@{drawPathOffset}}
+\index{drawPathOffset@{drawPathOffset}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{drawPathOffset()}{drawPathOffset()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a05903a59a741a7b95c92cf0e14a1ef21} 
+void draw\+Path\+Offset (\begin{DoxyParamCaption}\item[{const Path \&}]{path}{, }\item[{const Int\+Point \&}]{offset\+Coor}{, }\item[{const ulong \&}]{ms}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_a923f80b64cf7121da6906bb1c0ddb4e1}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!lessThanBiggerWnd@{lessThanBiggerWnd}}
+\index{lessThanBiggerWnd@{lessThanBiggerWnd}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{lessThanBiggerWnd()}{lessThanBiggerWnd()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a923f80b64cf7121da6906bb1c0ddb4e1} 
+bool less\+Than\+Bigger\+Wnd (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} \&}]{wnd1}{, }\item[{const \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} \&}]{wnd2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{algorithmhatchingring_8cpp_abc5ee93d92c00f8f8586265c96ee022a}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_abc5ee93d92c00f8f8586265c96ee022a} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} \&}]{wnd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{algorithmhatchingring_8cpp_a7b8b6ae99899cb0f02bf80e5b87c37d1}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_a7b8b6ae99899cb0f02bf80e5b87c37d1} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{debug}{, }\item[{const \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&}]{wnd\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{algorithmhatchingring_8cpp_aeb812679674ef8e531419465b262ca4c}\index{algorithmhatchingring.cpp@{algorithmhatchingring.cpp}!updateSubBranch@{updateSubBranch}}
+\index{updateSubBranch@{updateSubBranch}!algorithmhatchingring.cpp@{algorithmhatchingring.cpp}}
+\doxysubsubsection{\texorpdfstring{updateSubBranch()}{updateSubBranch()}}
+{\footnotesize\ttfamily \label{algorithmhatchingring_8cpp_aeb812679674ef8e531419465b262ca4c} 
+void update\+Sub\+Branch (\begin{DoxyParamCaption}\item[{const uint \&}]{inserted\+Pos}{, }\item[{const uint \&}]{total\+Sz}{, }\item[{const int \&}]{index}{, }\item[{QList$<$ \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} $>$ \&}]{sub\+Branch\+List}{}\end{DoxyParamCaption})}
+

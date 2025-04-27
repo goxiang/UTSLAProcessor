@@ -1,0 +1,275 @@
+\doxysection{Pocket\+Branch结构体 参考}
+\hypertarget{struct_pocket_branch}{}\label{struct_pocket_branch}\index{PocketBranch@{PocketBranch}}
+
+
+{\ttfamily \#include $<$algorithmhatchingring.\+h$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd}{Inner}} = 0
+, \mbox{\hyperlink{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7}{Outer}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}{Pocket\+Branch}} ()=default
+\item 
+\mbox{\hyperlink{struct_pocket_branch_a43c9841b880c74af5142b4bbf84e15b3}{Pocket\+Branch}} (const qint8 \&circle\+Type, const \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&node)
+\item 
+bool \mbox{\hyperlink{struct_pocket_branch_a75789da4375db35506f6fdba021e9fd9}{contains\+Node}} (const Int\+Point \&coor, const int \&index)
+\item 
+bool \mbox{\hyperlink{struct_pocket_branch_a7e5a73d16ded6b69185ed000c6e0e709}{contains\+In\+Node}} (\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&node, const int \&index) const
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_aeb937f063c9fa5fa00c35ce3f7ef1b30}{update\+Nesting\+List}} (const int \&this\+Index, \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&branch, const int \&sub\+Index)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_a6bc7c5b62ea47c0b5450c48d28787bb7}{add\+Node}} (QList$<$ \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} $>$ \&temp\+Node\+List)
+\item 
+bool \mbox{\hyperlink{struct_pocket_branch_aae31d805dd949b4a54b28656bf6ba513}{add\+Inner\+Branch}} (\mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&inner\+Branch)
+\item 
+bool \mbox{\hyperlink{struct_pocket_branch_acf1aba9a7a1eb71cd40fac9fcbc6d449}{add\+Inner\+Branch\+\_\+upgrade}} (\mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&inner\+Branch)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_ad6189cb99d9b46fd9a3dd4b520de15f9}{update\+Branch\+Order}} ()
+\item 
+double \mbox{\hyperlink{struct_pocket_branch_aecb36257b1106a1a93d5d07aff050860}{max\+Area}} () const
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_a073a85d451e64b062b8cd0a9f7821079}{get\+Node\+Cnt}} (int \&node\+Cnt) const
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_ac23ca20725bb929f161d3fdccc0ddc9c}{create\+Spiral}} (const double \&)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_a7c254843d14f6b8b939d48f56849010e}{calc\+Node\+Wnd\+Pos\+\_\+\+Spiral}} (const double \&)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_ad3c6a88c1969e5e34e6316e932ca27c8}{calc\+Closed\+Pt}} (Path \&bigger, \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&, Path \&smaller, \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&wnd\+Pos, const uint \&min\+Pos, const uint \&max\+Pos, const double \&, QList$<$ \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} $>$ \&)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_a6f18b2eefc7f29e6191c38b7e0adb857}{calc\+Closed\+Pt\+Invert}} (Path \&bigger, \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&, Path \&smaller, \mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&wnd\+Pos, const uint \&min\+Pos, const uint \&max\+Pos, const double \&, QList$<$ \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} $>$ \&)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_a9357412e04d51feeaebb976f1340b6eb}{calc\+Spiral\+Join\+Point}} (const int \&cur\+Index, int \&pre\+Index, uint \&begin\+Pos, uint \&end\+Pos, const double \&, const bool \&max\+Circle=false)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_a7d6c4befe0a0b63d948b3c7ca7b4696f}{create\+Fermat\+Spiral}} (const double \&)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_acee5b28570a7d5e48e32dafc6efb0efd}{calc\+Node\+Wnd\+Pos}} (const double \&)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_a52012e46331c94f36f5cae8c896542ef}{calc\+Node\+Wnd\+Pos}} (\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&, \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&, const double \&, const bool \&)
+\item 
+void \mbox{\hyperlink{struct_pocket_branch_abaa116424f9a166b7a784cff2f94aa0e}{calc\+Branch\+Wnd\+Pos}} (\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&, \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&, const double \&, const int \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{struct_pocket_branch_a5e9d55893f501073b683089558663033}{b\+Merged}} = false
+\item 
+qint8 \mbox{\hyperlink{struct_pocket_branch_a94c3b9034db6a337b962889a39dbb3ac}{m\+Circle\+Type}} = \mbox{\hyperlink{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7}{Outer}}
+\item 
+QList$<$ \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} $>$ \mbox{\hyperlink{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}{m\+Node\+List}}
+\item 
+QList$<$ \mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} $>$ \mbox{\hyperlink{struct_pocket_branch_a3097b0d85c662e40d4647454e1e0206e}{m\+Sub\+Branch\+List}}
+\item 
+QList$<$ int $>$ \mbox{\hyperlink{struct_pocket_branch_afdd64b56e2d95ebb6e3a41f09297b58c}{m\+Nesting\+List}}
+\item 
+QList$<$ int $>$ \mbox{\hyperlink{struct_pocket_branch_ada7b26a2fa671884c6b7c898e33de12d}{m\+Temp\+Index\+List}}
+\item 
+Path \mbox{\hyperlink{struct_pocket_branch_a53c08d2964bac69dc9479a5f4b9c07d4}{spiral\+Path}}
+\item 
+Path \mbox{\hyperlink{struct_pocket_branch_a649db231646e2f47e1ddfe867710a009}{fermat\+Spiral\+Path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{成员枚举类型说明}
+\Hypertarget{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4a}\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4a} 
+anonymous enum}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Inner@{Inner}!PocketBranch@{PocketBranch}}\index{PocketBranch@{PocketBranch}!Inner@{Inner}}}\Hypertarget{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd}\label{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd} 
+Inner&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Outer@{Outer}!PocketBranch@{PocketBranch}}\index{PocketBranch@{PocketBranch}!Outer@{Outer}}}\Hypertarget{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7}\label{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7} 
+Outer&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13}\index{PocketBranch@{PocketBranch}!PocketBranch@{PocketBranch}}
+\index{PocketBranch@{PocketBranch}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{PocketBranch()}{PocketBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_ad8b6d0cc9b1f2575d94ea5a13d0aca13} 
+Pocket\+Branch\+::\+Pocket\+Branch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_pocket_branch_a43c9841b880c74af5142b4bbf84e15b3}\index{PocketBranch@{PocketBranch}!PocketBranch@{PocketBranch}}
+\index{PocketBranch@{PocketBranch}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{PocketBranch()}{PocketBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a43c9841b880c74af5142b4bbf84e15b3} 
+Pocket\+Branch\+::\+Pocket\+Branch (\begin{DoxyParamCaption}\item[{const qint8 \&}]{circle\+Type}{, }\item[{const \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&}]{node}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_pocket_branch_aae31d805dd949b4a54b28656bf6ba513}\index{PocketBranch@{PocketBranch}!addInnerBranch@{addInnerBranch}}
+\index{addInnerBranch@{addInnerBranch}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{addInnerBranch()}{addInnerBranch()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_aae31d805dd949b4a54b28656bf6ba513} 
+bool Pocket\+Branch\+::add\+Inner\+Branch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{inner\+Branch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_acf1aba9a7a1eb71cd40fac9fcbc6d449}\index{PocketBranch@{PocketBranch}!addInnerBranch\_upgrade@{addInnerBranch\_upgrade}}
+\index{addInnerBranch\_upgrade@{addInnerBranch\_upgrade}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{addInnerBranch\_upgrade()}{addInnerBranch\_upgrade()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_acf1aba9a7a1eb71cd40fac9fcbc6d449} 
+bool Pocket\+Branch\+::add\+Inner\+Branch\+\_\+upgrade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{inner\+Branch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a6bc7c5b62ea47c0b5450c48d28787bb7}\index{PocketBranch@{PocketBranch}!addNode@{addNode}}
+\index{addNode@{addNode}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{addNode()}{addNode()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a6bc7c5b62ea47c0b5450c48d28787bb7} 
+void Pocket\+Branch\+::add\+Node (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} $>$ \&}]{temp\+Node\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_abaa116424f9a166b7a784cff2f94aa0e}\index{PocketBranch@{PocketBranch}!calcBranchWndPos@{calcBranchWndPos}}
+\index{calcBranchWndPos@{calcBranchWndPos}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{calcBranchWndPos()}{calcBranchWndPos()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_abaa116424f9a166b7a784cff2f94aa0e} 
+void Pocket\+Branch\+::calc\+Branch\+Wnd\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&}]{cur\+Node}{, }\item[{\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&}]{bigger\+Node}{, }\item[{const double \&}]{pow\+Dis}{, }\item[{const int \&}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_ad3c6a88c1969e5e34e6316e932ca27c8}\index{PocketBranch@{PocketBranch}!calcClosedPt@{calcClosedPt}}
+\index{calcClosedPt@{calcClosedPt}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{calcClosedPt()}{calcClosedPt()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_ad3c6a88c1969e5e34e6316e932ca27c8} 
+void Pocket\+Branch\+::calc\+Closed\+Pt (\begin{DoxyParamCaption}\item[{Path \&}]{bigger}{, }\item[{\mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&}]{bigger\+Wnd\+Pos}{, }\item[{Path \&}]{smaller}{, }\item[{\mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&}]{wnd\+Pos}{, }\item[{const uint \&}]{min\+Pos}{, }\item[{const uint \&}]{max\+Pos}{, }\item[{const double \&}]{pow\+Dis}{, }\item[{QList$<$ \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} $>$ \&}]{bigger\+Wnd\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a6f18b2eefc7f29e6191c38b7e0adb857}\index{PocketBranch@{PocketBranch}!calcClosedPtInvert@{calcClosedPtInvert}}
+\index{calcClosedPtInvert@{calcClosedPtInvert}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{calcClosedPtInvert()}{calcClosedPtInvert()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a6f18b2eefc7f29e6191c38b7e0adb857} 
+void Pocket\+Branch\+::calc\+Closed\+Pt\+Invert (\begin{DoxyParamCaption}\item[{Path \&}]{bigger}{, }\item[{\mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&}]{bigger\+Wnd\+Pos}{, }\item[{Path \&}]{smaller}{, }\item[{\mbox{\hyperlink{struct_wnd_pos}{Wnd\+Pos}} \&}]{wnd\+Pos}{, }\item[{const uint \&}]{min\+Pos}{, }\item[{const uint \&}]{max\+Pos}{, }\item[{const double \&}]{pow\+Dis}{, }\item[{QList$<$ \mbox{\hyperlink{struct_bigger_wnd}{Bigger\+Wnd}} $>$ \&}]{bigger\+Wnd\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_acee5b28570a7d5e48e32dafc6efb0efd}\index{PocketBranch@{PocketBranch}!calcNodeWndPos@{calcNodeWndPos}}
+\index{calcNodeWndPos@{calcNodeWndPos}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{calcNodeWndPos()}{calcNodeWndPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_acee5b28570a7d5e48e32dafc6efb0efd} 
+void Pocket\+Branch\+::calc\+Node\+Wnd\+Pos (\begin{DoxyParamCaption}\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a52012e46331c94f36f5cae8c896542ef}\index{PocketBranch@{PocketBranch}!calcNodeWndPos@{calcNodeWndPos}}
+\index{calcNodeWndPos@{calcNodeWndPos}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{calcNodeWndPos()}{calcNodeWndPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a52012e46331c94f36f5cae8c896542ef} 
+void Pocket\+Branch\+::calc\+Node\+Wnd\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&}]{cur\+Node}{, }\item[{\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&}]{bigger\+Node}{, }\item[{const double \&}]{pow\+Dis}{, }\item[{const bool \&}]{min\+Circle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a7c254843d14f6b8b939d48f56849010e}\index{PocketBranch@{PocketBranch}!calcNodeWndPos\_Spiral@{calcNodeWndPos\_Spiral}}
+\index{calcNodeWndPos\_Spiral@{calcNodeWndPos\_Spiral}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{calcNodeWndPos\_Spiral()}{calcNodeWndPos\_Spiral()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a7c254843d14f6b8b939d48f56849010e} 
+void Pocket\+Branch\+::calc\+Node\+Wnd\+Pos\+\_\+\+Spiral (\begin{DoxyParamCaption}\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a9357412e04d51feeaebb976f1340b6eb}\index{PocketBranch@{PocketBranch}!calcSpiralJoinPoint@{calcSpiralJoinPoint}}
+\index{calcSpiralJoinPoint@{calcSpiralJoinPoint}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{calcSpiralJoinPoint()}{calcSpiralJoinPoint()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a9357412e04d51feeaebb976f1340b6eb} 
+void Pocket\+Branch\+::calc\+Spiral\+Join\+Point (\begin{DoxyParamCaption}\item[{const int \&}]{cur\+Index}{, }\item[{int \&}]{pre\+Index}{, }\item[{uint \&}]{begin\+Pos}{, }\item[{uint \&}]{end\+Pos}{, }\item[{const double \&}]{pow\+Dis}{, }\item[{const bool \&}]{max\+Circle}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a7e5a73d16ded6b69185ed000c6e0e709}\index{PocketBranch@{PocketBranch}!containsInNode@{containsInNode}}
+\index{containsInNode@{containsInNode}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{containsInNode()}{containsInNode()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a7e5a73d16ded6b69185ed000c6e0e709} 
+bool Pocket\+Branch\+::contains\+In\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}} \&}]{node}{, }\item[{const int \&}]{index}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_pocket_branch_a75789da4375db35506f6fdba021e9fd9}\index{PocketBranch@{PocketBranch}!containsNode@{containsNode}}
+\index{containsNode@{containsNode}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{containsNode()}{containsNode()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a75789da4375db35506f6fdba021e9fd9} 
+bool Pocket\+Branch\+::contains\+Node (\begin{DoxyParamCaption}\item[{const Int\+Point \&}]{coor}{, }\item[{const int \&}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a7d6c4befe0a0b63d948b3c7ca7b4696f}\index{PocketBranch@{PocketBranch}!createFermatSpiral@{createFermatSpiral}}
+\index{createFermatSpiral@{createFermatSpiral}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{createFermatSpiral()}{createFermatSpiral()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a7d6c4befe0a0b63d948b3c7ca7b4696f} 
+void Pocket\+Branch\+::create\+Fermat\+Spiral (\begin{DoxyParamCaption}\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_ac23ca20725bb929f161d3fdccc0ddc9c}\index{PocketBranch@{PocketBranch}!createSpiral@{createSpiral}}
+\index{createSpiral@{createSpiral}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{createSpiral()}{createSpiral()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_ac23ca20725bb929f161d3fdccc0ddc9c} 
+void Pocket\+Branch\+::create\+Spiral (\begin{DoxyParamCaption}\item[{const double \&}]{pow\+Dis}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_a073a85d451e64b062b8cd0a9f7821079}\index{PocketBranch@{PocketBranch}!getNodeCnt@{getNodeCnt}}
+\index{getNodeCnt@{getNodeCnt}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{getNodeCnt()}{getNodeCnt()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a073a85d451e64b062b8cd0a9f7821079} 
+void Pocket\+Branch\+::get\+Node\+Cnt (\begin{DoxyParamCaption}\item[{int \&}]{node\+Cnt}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_pocket_branch_aecb36257b1106a1a93d5d07aff050860}\index{PocketBranch@{PocketBranch}!maxArea@{maxArea}}
+\index{maxArea@{maxArea}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{maxArea()}{maxArea()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_aecb36257b1106a1a93d5d07aff050860} 
+double Pocket\+Branch\+::max\+Area (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_pocket_branch_ad6189cb99d9b46fd9a3dd4b520de15f9}\index{PocketBranch@{PocketBranch}!updateBranchOrder@{updateBranchOrder}}
+\index{updateBranchOrder@{updateBranchOrder}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{updateBranchOrder()}{updateBranchOrder()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_ad6189cb99d9b46fd9a3dd4b520de15f9} 
+void Pocket\+Branch\+::update\+Branch\+Order (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct_pocket_branch_aeb937f063c9fa5fa00c35ce3f7ef1b30}\index{PocketBranch@{PocketBranch}!updateNestingList@{updateNestingList}}
+\index{updateNestingList@{updateNestingList}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{updateNestingList()}{updateNestingList()}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_aeb937f063c9fa5fa00c35ce3f7ef1b30} 
+void Pocket\+Branch\+::update\+Nesting\+List (\begin{DoxyParamCaption}\item[{const int \&}]{this\+Index}{, }\item[{\mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}} \&}]{branch}{, }\item[{const int \&}]{sub\+Index}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_pocket_branch_a5e9d55893f501073b683089558663033}\index{PocketBranch@{PocketBranch}!bMerged@{bMerged}}
+\index{bMerged@{bMerged}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{bMerged}{bMerged}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a5e9d55893f501073b683089558663033} 
+bool Pocket\+Branch\+::b\+Merged = false}
+
+\Hypertarget{struct_pocket_branch_a649db231646e2f47e1ddfe867710a009}\index{PocketBranch@{PocketBranch}!fermatSpiralPath@{fermatSpiralPath}}
+\index{fermatSpiralPath@{fermatSpiralPath}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{fermatSpiralPath}{fermatSpiralPath}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a649db231646e2f47e1ddfe867710a009} 
+Path Pocket\+Branch\+::fermat\+Spiral\+Path}
+
+\Hypertarget{struct_pocket_branch_a94c3b9034db6a337b962889a39dbb3ac}\index{PocketBranch@{PocketBranch}!mCircleType@{mCircleType}}
+\index{mCircleType@{mCircleType}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{mCircleType}{mCircleType}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a94c3b9034db6a337b962889a39dbb3ac} 
+qint8 Pocket\+Branch\+::m\+Circle\+Type = \mbox{\hyperlink{struct_pocket_branch_a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7}{Outer}}}
+
+\Hypertarget{struct_pocket_branch_afdd64b56e2d95ebb6e3a41f09297b58c}\index{PocketBranch@{PocketBranch}!mNestingList@{mNestingList}}
+\index{mNestingList@{mNestingList}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{mNestingList}{mNestingList}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_afdd64b56e2d95ebb6e3a41f09297b58c} 
+QList$<$int$>$ Pocket\+Branch\+::m\+Nesting\+List}
+
+\Hypertarget{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13}\index{PocketBranch@{PocketBranch}!mNodeList@{mNodeList}}
+\index{mNodeList@{mNodeList}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{mNodeList}{mNodeList}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_ad933ab577ed4511bf3d16b7b85d83a13} 
+QList$<$\mbox{\hyperlink{struct_pocket_node}{Pocket\+Node}}$>$ Pocket\+Branch\+::m\+Node\+List}
+
+\Hypertarget{struct_pocket_branch_a3097b0d85c662e40d4647454e1e0206e}\index{PocketBranch@{PocketBranch}!mSubBranchList@{mSubBranchList}}
+\index{mSubBranchList@{mSubBranchList}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{mSubBranchList}{mSubBranchList}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a3097b0d85c662e40d4647454e1e0206e} 
+QList$<$\mbox{\hyperlink{struct_pocket_branch}{Pocket\+Branch}}$>$ Pocket\+Branch\+::m\+Sub\+Branch\+List}
+
+\Hypertarget{struct_pocket_branch_ada7b26a2fa671884c6b7c898e33de12d}\index{PocketBranch@{PocketBranch}!mTempIndexList@{mTempIndexList}}
+\index{mTempIndexList@{mTempIndexList}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{mTempIndexList}{mTempIndexList}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_ada7b26a2fa671884c6b7c898e33de12d} 
+QList$<$int$>$ Pocket\+Branch\+::m\+Temp\+Index\+List}
+
+\Hypertarget{struct_pocket_branch_a53c08d2964bac69dc9479a5f4b9c07d4}\index{PocketBranch@{PocketBranch}!spiralPath@{spiralPath}}
+\index{spiralPath@{spiralPath}!PocketBranch@{PocketBranch}}
+\doxysubsubsection{\texorpdfstring{spiralPath}{spiralPath}}
+{\footnotesize\ttfamily \label{struct_pocket_branch_a53c08d2964bac69dc9479a5f4b9c07d4} 
+Path Pocket\+Branch\+::spiral\+Path}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{algorithmhatchingring_8h}{algorithmhatchingring.\+h}}\item 
+\mbox{\hyperlink{algorithmhatchingring_8cpp}{algorithmhatchingring.\+cpp}}\end{DoxyCompactItemize}

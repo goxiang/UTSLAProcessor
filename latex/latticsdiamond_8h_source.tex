@@ -1,0 +1,31 @@
+\doxysection{latticsdiamond.\+h}
+\hypertarget{latticsdiamond_8h_source}{}\label{latticsdiamond_8h_source}\index{LatticeModule/latticsdiamond.h@{LatticeModule/latticsdiamond.h}}
+\mbox{\hyperlink{latticsdiamond_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LATTICSDIAMOND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LATTICSDIAMOND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{latticsabstract_8h}{latticsabstract.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lattics_diamond_af819f7a66ffee6886337386422c8d0cb}{LatticsDiamond}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_lattics_abstract_a2c75701f91fb7ad4f27eef711ac62841}{LatticsAbstract}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_lattics_diamond_af819f7a66ffee6886337386422c8d0cb}{LatticsDiamond}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_lattics_diamond_a9cc027715d7c141e4887addb6be1cee0}{\string~LatticsDiamond}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lattics_diamond_a7c6c857f222c970c808f36a07d19da2d}{initLatticeParas}}(\textcolor{keyword}{const}\ QJsonParsing\ *)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00017\ \ \ \ \ DoublePaths\ \mbox{\hyperlink{class_lattics_diamond_a06076b797aebcc235441152975c0cc86}{createLattics}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lattics_diamond_a6e368e8f7f6e73cc4a106aee9fc15556}{identifyLattices}}(Paths\ \&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_lattics_diamond_a2b5910534cb61770a818221a2a4d2e5c}{getSpacing}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lattics_diamond_a0bd536c41f6acc949e64e3305385a45e}{moveDoublePath}}(DoublePaths\ \&);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lattics_diamond_1_1_priv}{Priv}};}
+\DoxyCodeLine{00026\ \ \ \ \ QSharedPointer<Priv>\ \mbox{\hyperlink{class_lattics_diamond_a3b9ca90964f85ab9b34862549a54f4d4}{d}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LATTICSDIAMOND\_H}}
+
+\end{DoxyCode}

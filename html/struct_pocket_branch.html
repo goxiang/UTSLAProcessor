@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: PocketBranch结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_pocket_branch.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_pocket_branch-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">PocketBranch结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="algorithmhatchingring_8h_source.html">algorithmhatchingring.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2e8220e182a05527c41f24f753fd8c4a" id="r_a2e8220e182a05527c41f24f753fd8c4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="#a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd">Inner</a> = 0
+, <a class="el" href="#a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7">Outer</a>
+ }</td></tr>
+<tr class="separator:a2e8220e182a05527c41f24f753fd8c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad8b6d0cc9b1f2575d94ea5a13d0aca13" id="r_ad8b6d0cc9b1f2575d94ea5a13d0aca13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8b6d0cc9b1f2575d94ea5a13d0aca13">PocketBranch</a> ()=default</td></tr>
+<tr class="separator:ad8b6d0cc9b1f2575d94ea5a13d0aca13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c9841b880c74af5142b4bbf84e15b3" id="r_a43c9841b880c74af5142b4bbf84e15b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43c9841b880c74af5142b4bbf84e15b3">PocketBranch</a> (const qint8 &amp;circleType, const <a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;node)</td></tr>
+<tr class="separator:a43c9841b880c74af5142b4bbf84e15b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75789da4375db35506f6fdba021e9fd9" id="r_a75789da4375db35506f6fdba021e9fd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75789da4375db35506f6fdba021e9fd9">containsNode</a> (const IntPoint &amp;coor, const int &amp;index)</td></tr>
+<tr class="separator:a75789da4375db35506f6fdba021e9fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5a73d16ded6b69185ed000c6e0e709" id="r_a7e5a73d16ded6b69185ed000c6e0e709"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e5a73d16ded6b69185ed000c6e0e709">containsInNode</a> (<a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;node, const int &amp;index) const</td></tr>
+<tr class="separator:a7e5a73d16ded6b69185ed000c6e0e709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb937f063c9fa5fa00c35ce3f7ef1b30" id="r_aeb937f063c9fa5fa00c35ce3f7ef1b30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb937f063c9fa5fa00c35ce3f7ef1b30">updateNestingList</a> (const int &amp;thisIndex, <a class="el" href="struct_pocket_branch.html">PocketBranch</a> &amp;branch, const int &amp;subIndex)</td></tr>
+<tr class="separator:aeb937f063c9fa5fa00c35ce3f7ef1b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc7c5b62ea47c0b5450c48d28787bb7" id="r_a6bc7c5b62ea47c0b5450c48d28787bb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bc7c5b62ea47c0b5450c48d28787bb7">addNode</a> (QList&lt; <a class="el" href="struct_pocket_node.html">PocketNode</a> &gt; &amp;tempNodeList)</td></tr>
+<tr class="separator:a6bc7c5b62ea47c0b5450c48d28787bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae31d805dd949b4a54b28656bf6ba513" id="r_aae31d805dd949b4a54b28656bf6ba513"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae31d805dd949b4a54b28656bf6ba513">addInnerBranch</a> (<a class="el" href="struct_pocket_branch.html">PocketBranch</a> &amp;innerBranch)</td></tr>
+<tr class="separator:aae31d805dd949b4a54b28656bf6ba513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1aba9a7a1eb71cd40fac9fcbc6d449" id="r_acf1aba9a7a1eb71cd40fac9fcbc6d449"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf1aba9a7a1eb71cd40fac9fcbc6d449">addInnerBranch_upgrade</a> (<a class="el" href="struct_pocket_branch.html">PocketBranch</a> &amp;innerBranch)</td></tr>
+<tr class="separator:acf1aba9a7a1eb71cd40fac9fcbc6d449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6189cb99d9b46fd9a3dd4b520de15f9" id="r_ad6189cb99d9b46fd9a3dd4b520de15f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6189cb99d9b46fd9a3dd4b520de15f9">updateBranchOrder</a> ()</td></tr>
+<tr class="separator:ad6189cb99d9b46fd9a3dd4b520de15f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb36257b1106a1a93d5d07aff050860" id="r_aecb36257b1106a1a93d5d07aff050860"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecb36257b1106a1a93d5d07aff050860">maxArea</a> () const</td></tr>
+<tr class="separator:aecb36257b1106a1a93d5d07aff050860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073a85d451e64b062b8cd0a9f7821079" id="r_a073a85d451e64b062b8cd0a9f7821079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a073a85d451e64b062b8cd0a9f7821079">getNodeCnt</a> (int &amp;nodeCnt) const</td></tr>
+<tr class="separator:a073a85d451e64b062b8cd0a9f7821079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23ca20725bb929f161d3fdccc0ddc9c" id="r_ac23ca20725bb929f161d3fdccc0ddc9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac23ca20725bb929f161d3fdccc0ddc9c">createSpiral</a> (const double &amp;)</td></tr>
+<tr class="separator:ac23ca20725bb929f161d3fdccc0ddc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c254843d14f6b8b939d48f56849010e" id="r_a7c254843d14f6b8b939d48f56849010e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c254843d14f6b8b939d48f56849010e">calcNodeWndPos_Spiral</a> (const double &amp;)</td></tr>
+<tr class="separator:a7c254843d14f6b8b939d48f56849010e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c6a88c1969e5e34e6316e932ca27c8" id="r_ad3c6a88c1969e5e34e6316e932ca27c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3c6a88c1969e5e34e6316e932ca27c8">calcClosedPt</a> (Path &amp;bigger, <a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;, Path &amp;smaller, <a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;wndPos, const uint &amp;minPos, const uint &amp;maxPos, const double &amp;, QList&lt; <a class="el" href="struct_bigger_wnd.html">BiggerWnd</a> &gt; &amp;)</td></tr>
+<tr class="separator:ad3c6a88c1969e5e34e6316e932ca27c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f18b2eefc7f29e6191c38b7e0adb857" id="r_a6f18b2eefc7f29e6191c38b7e0adb857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f18b2eefc7f29e6191c38b7e0adb857">calcClosedPtInvert</a> (Path &amp;bigger, <a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;, Path &amp;smaller, <a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;wndPos, const uint &amp;minPos, const uint &amp;maxPos, const double &amp;, QList&lt; <a class="el" href="struct_bigger_wnd.html">BiggerWnd</a> &gt; &amp;)</td></tr>
+<tr class="separator:a6f18b2eefc7f29e6191c38b7e0adb857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9357412e04d51feeaebb976f1340b6eb" id="r_a9357412e04d51feeaebb976f1340b6eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9357412e04d51feeaebb976f1340b6eb">calcSpiralJoinPoint</a> (const int &amp;curIndex, int &amp;preIndex, uint &amp;beginPos, uint &amp;endPos, const double &amp;, const bool &amp;maxCircle=false)</td></tr>
+<tr class="separator:a9357412e04d51feeaebb976f1340b6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6c4befe0a0b63d948b3c7ca7b4696f" id="r_a7d6c4befe0a0b63d948b3c7ca7b4696f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d6c4befe0a0b63d948b3c7ca7b4696f">createFermatSpiral</a> (const double &amp;)</td></tr>
+<tr class="separator:a7d6c4befe0a0b63d948b3c7ca7b4696f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee5b28570a7d5e48e32dafc6efb0efd" id="r_acee5b28570a7d5e48e32dafc6efb0efd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acee5b28570a7d5e48e32dafc6efb0efd">calcNodeWndPos</a> (const double &amp;)</td></tr>
+<tr class="separator:acee5b28570a7d5e48e32dafc6efb0efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52012e46331c94f36f5cae8c896542ef" id="r_a52012e46331c94f36f5cae8c896542ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52012e46331c94f36f5cae8c896542ef">calcNodeWndPos</a> (<a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;, <a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;, const double &amp;, const bool &amp;)</td></tr>
+<tr class="separator:a52012e46331c94f36f5cae8c896542ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa116424f9a166b7a784cff2f94aa0e" id="r_abaa116424f9a166b7a784cff2f94aa0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaa116424f9a166b7a784cff2f94aa0e">calcBranchWndPos</a> (<a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;, <a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;, const double &amp;, const int &amp;)</td></tr>
+<tr class="separator:abaa116424f9a166b7a784cff2f94aa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a5e9d55893f501073b683089558663033" id="r_a5e9d55893f501073b683089558663033"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e9d55893f501073b683089558663033">bMerged</a> = false</td></tr>
+<tr class="separator:a5e9d55893f501073b683089558663033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c3b9034db6a337b962889a39dbb3ac" id="r_a94c3b9034db6a337b962889a39dbb3ac"><td class="memItemLeft" align="right" valign="top">qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94c3b9034db6a337b962889a39dbb3ac">mCircleType</a> = <a class="el" href="#a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7">Outer</a></td></tr>
+<tr class="separator:a94c3b9034db6a337b962889a39dbb3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad933ab577ed4511bf3d16b7b85d83a13" id="r_ad933ab577ed4511bf3d16b7b85d83a13"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="struct_pocket_node.html">PocketNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad933ab577ed4511bf3d16b7b85d83a13">mNodeList</a></td></tr>
+<tr class="separator:ad933ab577ed4511bf3d16b7b85d83a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3097b0d85c662e40d4647454e1e0206e" id="r_a3097b0d85c662e40d4647454e1e0206e"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="struct_pocket_branch.html">PocketBranch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3097b0d85c662e40d4647454e1e0206e">mSubBranchList</a></td></tr>
+<tr class="separator:a3097b0d85c662e40d4647454e1e0206e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd64b56e2d95ebb6e3a41f09297b58c" id="r_afdd64b56e2d95ebb6e3a41f09297b58c"><td class="memItemLeft" align="right" valign="top">QList&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdd64b56e2d95ebb6e3a41f09297b58c">mNestingList</a></td></tr>
+<tr class="separator:afdd64b56e2d95ebb6e3a41f09297b58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7b26a2fa671884c6b7c898e33de12d" id="r_ada7b26a2fa671884c6b7c898e33de12d"><td class="memItemLeft" align="right" valign="top">QList&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada7b26a2fa671884c6b7c898e33de12d">mTempIndexList</a></td></tr>
+<tr class="separator:ada7b26a2fa671884c6b7c898e33de12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c08d2964bac69dc9479a5f4b9c07d4" id="r_a53c08d2964bac69dc9479a5f4b9c07d4"><td class="memItemLeft" align="right" valign="top">Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53c08d2964bac69dc9479a5f4b9c07d4">spiralPath</a></td></tr>
+<tr class="separator:a53c08d2964bac69dc9479a5f4b9c07d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649db231646e2f47e1ddfe867710a009" id="r_a649db231646e2f47e1ddfe867710a009"><td class="memItemLeft" align="right" valign="top">Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649db231646e2f47e1ddfe867710a009">fermatSpiralPath</a></td></tr>
+<tr class="separator:a649db231646e2f47e1ddfe867710a009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a2e8220e182a05527c41f24f753fd8c4a" name="a2e8220e182a05527c41f24f753fd8c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8220e182a05527c41f24f753fd8c4a">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd" name="a2e8220e182a05527c41f24f753fd8c4aa84cf9d35d7ec382a7d684648ddae6abd"></a>Inner&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7" name="a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7"></a>Outer&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ad8b6d0cc9b1f2575d94ea5a13d0aca13" name="ad8b6d0cc9b1f2575d94ea5a13d0aca13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b6d0cc9b1f2575d94ea5a13d0aca13">&#9670;&#160;</a></span>PocketBranch() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PocketBranch::PocketBranch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43c9841b880c74af5142b4bbf84e15b3" name="a43c9841b880c74af5142b4bbf84e15b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c9841b880c74af5142b4bbf84e15b3">&#9670;&#160;</a></span>PocketBranch() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PocketBranch::PocketBranch </td>
+          <td>(</td>
+          <td class="paramtype">const qint8 &amp;</td>          <td class="paramname"><span class="paramname"><em>circleType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aae31d805dd949b4a54b28656bf6ba513" name="aae31d805dd949b4a54b28656bf6ba513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae31d805dd949b4a54b28656bf6ba513">&#9670;&#160;</a></span>addInnerBranch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PocketBranch::addInnerBranch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pocket_branch.html">PocketBranch</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>innerBranch</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf1aba9a7a1eb71cd40fac9fcbc6d449" name="acf1aba9a7a1eb71cd40fac9fcbc6d449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1aba9a7a1eb71cd40fac9fcbc6d449">&#9670;&#160;</a></span>addInnerBranch_upgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PocketBranch::addInnerBranch_upgrade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pocket_branch.html">PocketBranch</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>innerBranch</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6bc7c5b62ea47c0b5450c48d28787bb7" name="a6bc7c5b62ea47c0b5450c48d28787bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc7c5b62ea47c0b5450c48d28787bb7">&#9670;&#160;</a></span>addNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::addNode </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; <a class="el" href="struct_pocket_node.html">PocketNode</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>tempNodeList</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abaa116424f9a166b7a784cff2f94aa0e" name="abaa116424f9a166b7a784cff2f94aa0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa116424f9a166b7a784cff2f94aa0e">&#9670;&#160;</a></span>calcBranchWndPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::calcBranchWndPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curNode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>biggerNode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3c6a88c1969e5e34e6316e932ca27c8" name="ad3c6a88c1969e5e34e6316e932ca27c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c6a88c1969e5e34e6316e932ca27c8">&#9670;&#160;</a></span>calcClosedPt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::calcClosedPt </td>
+          <td>(</td>
+          <td class="paramtype">Path &amp;</td>          <td class="paramname"><span class="paramname"><em>bigger</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>biggerWndPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Path &amp;</td>          <td class="paramname"><span class="paramname"><em>smaller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wndPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint &amp;</td>          <td class="paramname"><span class="paramname"><em>minPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint &amp;</td>          <td class="paramname"><span class="paramname"><em>maxPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; <a class="el" href="struct_bigger_wnd.html">BiggerWnd</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>biggerWndList</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f18b2eefc7f29e6191c38b7e0adb857" name="a6f18b2eefc7f29e6191c38b7e0adb857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f18b2eefc7f29e6191c38b7e0adb857">&#9670;&#160;</a></span>calcClosedPtInvert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::calcClosedPtInvert </td>
+          <td>(</td>
+          <td class="paramtype">Path &amp;</td>          <td class="paramname"><span class="paramname"><em>bigger</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>biggerWndPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Path &amp;</td>          <td class="paramname"><span class="paramname"><em>smaller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wnd_pos.html">WndPos</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wndPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint &amp;</td>          <td class="paramname"><span class="paramname"><em>minPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint &amp;</td>          <td class="paramname"><span class="paramname"><em>maxPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; <a class="el" href="struct_bigger_wnd.html">BiggerWnd</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>biggerWndList</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acee5b28570a7d5e48e32dafc6efb0efd" name="acee5b28570a7d5e48e32dafc6efb0efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee5b28570a7d5e48e32dafc6efb0efd">&#9670;&#160;</a></span>calcNodeWndPos() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::calcNodeWndPos </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52012e46331c94f36f5cae8c896542ef" name="a52012e46331c94f36f5cae8c896542ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52012e46331c94f36f5cae8c896542ef">&#9670;&#160;</a></span>calcNodeWndPos() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::calcNodeWndPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curNode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>biggerNode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;</td>          <td class="paramname"><span class="paramname"><em>minCircle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c254843d14f6b8b939d48f56849010e" name="a7c254843d14f6b8b939d48f56849010e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c254843d14f6b8b939d48f56849010e">&#9670;&#160;</a></span>calcNodeWndPos_Spiral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::calcNodeWndPos_Spiral </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9357412e04d51feeaebb976f1340b6eb" name="a9357412e04d51feeaebb976f1340b6eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9357412e04d51feeaebb976f1340b6eb">&#9670;&#160;</a></span>calcSpiralJoinPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::calcSpiralJoinPoint </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>curIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>preIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint &amp;</td>          <td class="paramname"><span class="paramname"><em>beginPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint &amp;</td>          <td class="paramname"><span class="paramname"><em>endPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;</td>          <td class="paramname"><span class="paramname"><em>maxCircle</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e5a73d16ded6b69185ed000c6e0e709" name="a7e5a73d16ded6b69185ed000c6e0e709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e5a73d16ded6b69185ed000c6e0e709">&#9670;&#160;</a></span>containsInNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PocketBranch::containsInNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pocket_node.html">PocketNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75789da4375db35506f6fdba021e9fd9" name="a75789da4375db35506f6fdba021e9fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75789da4375db35506f6fdba021e9fd9">&#9670;&#160;</a></span>containsNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PocketBranch::containsNode </td>
+          <td>(</td>
+          <td class="paramtype">const IntPoint &amp;</td>          <td class="paramname"><span class="paramname"><em>coor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d6c4befe0a0b63d948b3c7ca7b4696f" name="a7d6c4befe0a0b63d948b3c7ca7b4696f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6c4befe0a0b63d948b3c7ca7b4696f">&#9670;&#160;</a></span>createFermatSpiral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::createFermatSpiral </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac23ca20725bb929f161d3fdccc0ddc9c" name="ac23ca20725bb929f161d3fdccc0ddc9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23ca20725bb929f161d3fdccc0ddc9c">&#9670;&#160;</a></span>createSpiral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::createSpiral </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>powDis</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a073a85d451e64b062b8cd0a9f7821079" name="a073a85d451e64b062b8cd0a9f7821079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073a85d451e64b062b8cd0a9f7821079">&#9670;&#160;</a></span>getNodeCnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::getNodeCnt </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>nodeCnt</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecb36257b1106a1a93d5d07aff050860" name="aecb36257b1106a1a93d5d07aff050860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb36257b1106a1a93d5d07aff050860">&#9670;&#160;</a></span>maxArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PocketBranch::maxArea </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6189cb99d9b46fd9a3dd4b520de15f9" name="ad6189cb99d9b46fd9a3dd4b520de15f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6189cb99d9b46fd9a3dd4b520de15f9">&#9670;&#160;</a></span>updateBranchOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::updateBranchOrder </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb937f063c9fa5fa00c35ce3f7ef1b30" name="aeb937f063c9fa5fa00c35ce3f7ef1b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb937f063c9fa5fa00c35ce3f7ef1b30">&#9670;&#160;</a></span>updateNestingList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PocketBranch::updateNestingList </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>thisIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_pocket_branch.html">PocketBranch</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>branch</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>subIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a5e9d55893f501073b683089558663033" name="a5e9d55893f501073b683089558663033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9d55893f501073b683089558663033">&#9670;&#160;</a></span>bMerged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PocketBranch::bMerged = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a649db231646e2f47e1ddfe867710a009" name="a649db231646e2f47e1ddfe867710a009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649db231646e2f47e1ddfe867710a009">&#9670;&#160;</a></span>fermatSpiralPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path PocketBranch::fermatSpiralPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94c3b9034db6a337b962889a39dbb3ac" name="a94c3b9034db6a337b962889a39dbb3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c3b9034db6a337b962889a39dbb3ac">&#9670;&#160;</a></span>mCircleType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint8 PocketBranch::mCircleType = <a class="el" href="#a2e8220e182a05527c41f24f753fd8c4aaeea9c68a3815ba5c96aab8f616ebbaa7">Outer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdd64b56e2d95ebb6e3a41f09297b58c" name="afdd64b56e2d95ebb6e3a41f09297b58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd64b56e2d95ebb6e3a41f09297b58c">&#9670;&#160;</a></span>mNestingList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;int&gt; PocketBranch::mNestingList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad933ab577ed4511bf3d16b7b85d83a13" name="ad933ab577ed4511bf3d16b7b85d83a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad933ab577ed4511bf3d16b7b85d83a13">&#9670;&#160;</a></span>mNodeList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="struct_pocket_node.html">PocketNode</a>&gt; PocketBranch::mNodeList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3097b0d85c662e40d4647454e1e0206e" name="a3097b0d85c662e40d4647454e1e0206e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3097b0d85c662e40d4647454e1e0206e">&#9670;&#160;</a></span>mSubBranchList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;<a class="el" href="struct_pocket_branch.html">PocketBranch</a>&gt; PocketBranch::mSubBranchList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada7b26a2fa671884c6b7c898e33de12d" name="ada7b26a2fa671884c6b7c898e33de12d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7b26a2fa671884c6b7c898e33de12d">&#9670;&#160;</a></span>mTempIndexList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;int&gt; PocketBranch::mTempIndexList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53c08d2964bac69dc9479a5f4b9c07d4" name="a53c08d2964bac69dc9479a5f4b9c07d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c08d2964bac69dc9479a5f4b9c07d4">&#9670;&#160;</a></span>spiralPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path PocketBranch::spiralPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="algorithmhatchingring_8h_source.html">algorithmhatchingring.h</a></li>
+<li><a class="el" href="algorithmhatchingring_8cpp.html">algorithmhatchingring.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_pocket_branch.html">PocketBranch</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

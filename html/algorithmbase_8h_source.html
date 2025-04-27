@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: algorithmbase.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('algorithmbase_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">algorithmbase.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="algorithmbase_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALGORITHMBASE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALGORITHMBASE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;bpccommon.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="publicheader_8h.html">publicheader.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="class_write_u_f_f.html">WriteUFF</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_algorithm_base.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_algorithm_base.html">AlgorithmBase</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_algorithm_base.html#a6c012eecfcfb7f5153e3ae4f06b7711a">calcAreaList</a>(<span class="keyword">const</span> Paths &amp;, QList&lt;double&gt; &amp;);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a89740e31755f5675070b7acb295ec42b">calcLimitXY</a>(<span class="keyword">const</span> Paths &amp;, BOUNDINGRECT &amp;, QList&lt;BDRECTPTR&gt; *listRc = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a89740e31755f5675070b7acb295ec42b">calcLimitXY</a>(<span class="keyword">const</span> QList&lt;AREAINFOPTR&gt; &amp;, BOUNDINGRECT &amp;, QList&lt;BDRECTPTR&gt; *listRc = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a7821e946765fec4d451a2e114049ad78">getAllPaths</a>(<span class="keyword">const</span> QList&lt;AREAINFOPTR&gt; &amp;, Paths &amp;);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_algorithm_base.html#a7d7ebe56803630dd7d84f71f643d1419">   22</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_algorithm_base.html#a7d7ebe56803630dd7d84f71f643d1419">lineCrossRC</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                     <span class="keyword">const</span> BOUNDINGRECT &amp;);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_algorithm_base.html#a7d7ebe56803630dd7d84f71f643d1419">lineCrossRC</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                     <span class="keyword">const</span> BDRECTPTR &amp;);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a2debbcf38bf9910f82574ea0869db55d">sortPtOnLine</a>(<span class="keywordtype">int</span>, QList&lt;EXPECTPOINTINFO&gt; &amp;);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a2debbcf38bf9910f82574ea0869db55d">sortPtOnLine</a>(<span class="keywordtype">int</span>, QVector&lt;EXPECTPOINTINFO&gt; &amp;);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#abf8b04e05f684ef526e22eb2f59ce646">reducePaths_Inner</a>(Paths &amp;);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a2732f6394eaa7da3244d79ff85b2aa14">addPaths_Upper</a>(Paths &amp;, Paths *);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a7bd1ccc6ab88a3ce86f17e321e8ae035">extendBorders</a>(Paths *, Paths *, Paths *);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#af68be0a18c770ff3664af0ab8c5e8592">getSurfacePaths</a>(Paths &amp;, <span class="keywordtype">int</span> &amp;, Paths *, Paths *[], <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a745b5c5b51ab367b3728eb63947889cb">getDifferencePaths</a>(<span class="keyword">const</span> Paths &amp;, <span class="keyword">const</span> Path &amp;, Paths &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a745b5c5b51ab367b3728eb63947889cb">getDifferencePaths</a>(<span class="keyword">const</span> Paths *, <span class="keyword">const</span> Paths *, Paths &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a0cbc48894224831334c91991c9b4160d">getUnionPaths</a>(<span class="keyword">const</span> Path &amp;, <span class="keyword">const</span> Path &amp;, Paths &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a0cbc48894224831334c91991c9b4160d">getUnionPaths</a>(<span class="keyword">const</span> Path &amp;, <span class="keyword">const</span> Paths &amp;, Paths &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a0cbc48894224831334c91991c9b4160d">getUnionPaths</a>(<span class="keyword">const</span> Paths *, <span class="keyword">const</span> Paths *, Paths &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a53f116f8ed86837c879fdfa3187078e7">getOffsetPaths</a>(Paths *, <span class="keywordtype">int</span> nOffset, <span class="keywordtype">int</span> nReserved, <span class="keywordtype">int</span> nSmallWall);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a53f116f8ed86837c879fdfa3187078e7">getOffsetPaths</a>(Paths *, Paths *, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a5ab9828cb248adf9091925402d15c718">getIntersectionPaths</a>(<span class="keyword">const</span> Paths &amp;, <span class="keyword">const</span> Path &amp;, Paths &amp;);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a5ab9828cb248adf9091925402d15c718">getIntersectionPaths</a>(<span class="keyword">const</span> Paths &amp;, <span class="keyword">const</span> Paths &amp;, Paths &amp;);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_algorithm_base.html#af305c4ee4c37cd65d4c13a437632dae8">lineOnVecSplicingLine</a>(int64_t, int64_t, int64_t, int64_t, QVector&lt;SplicingLine&gt; &amp;);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#aa9a6849100e590a568bb11ff6b371992">filteSmallBorder</a>(<span class="keyword">const</span> Paths &amp;, Paths &amp;, Paths &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a4c4b85dc98285f9ee8a0ed234a26c709">scanner_jumpPos</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a10a401988cbe90e81ca7f710e3cc152a">scanner_outLine</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a4c4b85dc98285f9ee8a0ed234a26c709">scanner_jumpPos</a>(<span class="keyword">const</span> qint64 &amp;, <span class="keyword">const</span> qint64 &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a10a401988cbe90e81ca7f710e3cc152a">scanner_outLine</a>(<span class="keyword">const</span> qint64 &amp;, <span class="keyword">const</span> qint64 &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a6355a54523d0af209e0d3d663472f401">scanner_plotLine</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#ae772223adb17dffb76db2b454d807e18">writeDataToList</a>(<span class="keyword">const</span> int64_t &amp;, <span class="keyword">const</span> int64_t &amp;, <span class="keyword">const</span> int64_t &amp;, <span class="keyword">const</span> int64_t &amp;,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                int64_t &amp;, int64_t &amp;, QVector&lt;SCANLINE&gt; &amp;);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a89740e31755f5675070b7acb295ec42b">calcLimitXY</a>(<span class="keyword">const</span> Path &amp;, BDRECTPTR &amp;);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_algorithm_base.html#a89740e31755f5675070b7acb295ec42b">calcLimitXY</a>(<span class="keyword">const</span> AREAINFOPTR &amp;, BDRECTPTR &amp;);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">// ALGORITHMBASE_H</span></div>
+<div class="ttc" id="aclass_algorithm_base_html"><div class="ttname"><a href="class_algorithm_base.html">AlgorithmBase</a></div><div class="ttdef"><b>定义</b> algorithmbase.h:13</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a0cbc48894224831334c91991c9b4160d"><div class="ttname"><a href="class_algorithm_base.html#a0cbc48894224831334c91991c9b4160d">AlgorithmBase::getUnionPaths</a></div><div class="ttdeci">void getUnionPaths(const Path &amp;, const Path &amp;, Paths &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:412</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a10a401988cbe90e81ca7f710e3cc152a"><div class="ttname"><a href="class_algorithm_base.html#a10a401988cbe90e81ca7f710e3cc152a">AlgorithmBase::scanner_outLine</a></div><div class="ttdeci">static void scanner_outLine(const int &amp;, const int &amp;, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:719</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a2732f6394eaa7da3244d79ff85b2aa14"><div class="ttname"><a href="class_algorithm_base.html#a2732f6394eaa7da3244d79ff85b2aa14">AlgorithmBase::addPaths_Upper</a></div><div class="ttdeci">void addPaths_Upper(Paths &amp;, Paths *)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:553</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a2debbcf38bf9910f82574ea0869db55d"><div class="ttname"><a href="class_algorithm_base.html#a2debbcf38bf9910f82574ea0869db55d">AlgorithmBase::sortPtOnLine</a></div><div class="ttdeci">void sortPtOnLine(int, QList&lt; EXPECTPOINTINFO &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:165</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a4c4b85dc98285f9ee8a0ed234a26c709"><div class="ttname"><a href="class_algorithm_base.html#a4c4b85dc98285f9ee8a0ed234a26c709">AlgorithmBase::scanner_jumpPos</a></div><div class="ttdeci">static void scanner_jumpPos(const int &amp;, const int &amp;, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:710</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a53f116f8ed86837c879fdfa3187078e7"><div class="ttname"><a href="class_algorithm_base.html#a53f116f8ed86837c879fdfa3187078e7">AlgorithmBase::getOffsetPaths</a></div><div class="ttdeci">void getOffsetPaths(Paths *, int nOffset, int nReserved, int nSmallWall)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:501</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a5ab9828cb248adf9091925402d15c718"><div class="ttname"><a href="class_algorithm_base.html#a5ab9828cb248adf9091925402d15c718">AlgorithmBase::getIntersectionPaths</a></div><div class="ttdeci">void getIntersectionPaths(const Paths &amp;, const Path &amp;, Paths &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:535</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a6355a54523d0af209e0d3d663472f401"><div class="ttname"><a href="class_algorithm_base.html#a6355a54523d0af209e0d3d663472f401">AlgorithmBase::scanner_plotLine</a></div><div class="ttdeci">static void scanner_plotLine(const int &amp;, const int &amp;, const int &amp;, const int &amp;, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:738</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a6c012eecfcfb7f5153e3ae4f06b7711a"><div class="ttname"><a href="class_algorithm_base.html#a6c012eecfcfb7f5153e3ae4f06b7711a">AlgorithmBase::calcAreaList</a></div><div class="ttdeci">double calcAreaList(const Paths &amp;, QList&lt; double &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:6</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a745b5c5b51ab367b3728eb63947889cb"><div class="ttname"><a href="class_algorithm_base.html#a745b5c5b51ab367b3728eb63947889cb">AlgorithmBase::getDifferencePaths</a></div><div class="ttdeci">void getDifferencePaths(const Paths &amp;, const Path &amp;, Paths &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:347</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a7821e946765fec4d451a2e114049ad78"><div class="ttname"><a href="class_algorithm_base.html#a7821e946765fec4d451a2e114049ad78">AlgorithmBase::getAllPaths</a></div><div class="ttdeci">void getAllPaths(const QList&lt; AREAINFOPTR &gt; &amp;, Paths &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:71</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a7bd1ccc6ab88a3ce86f17e321e8ae035"><div class="ttname"><a href="class_algorithm_base.html#a7bd1ccc6ab88a3ce86f17e321e8ae035">AlgorithmBase::extendBorders</a></div><div class="ttdeci">void extendBorders(Paths *, Paths *, Paths *)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:672</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a7d7ebe56803630dd7d84f71f643d1419"><div class="ttname"><a href="class_algorithm_base.html#a7d7ebe56803630dd7d84f71f643d1419">AlgorithmBase::lineCrossRC</a></div><div class="ttdeci">bool lineCrossRC(const double &amp;, const double &amp;, const double &amp;, const double &amp;, const BOUNDINGRECT &amp;)</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_a89740e31755f5675070b7acb295ec42b"><div class="ttname"><a href="class_algorithm_base.html#a89740e31755f5675070b7acb295ec42b">AlgorithmBase::calcLimitXY</a></div><div class="ttdeci">void calcLimitXY(const Paths &amp;, BOUNDINGRECT &amp;, QList&lt; BDRECTPTR &gt; *listRc=nullptr)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:19</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_aa9a6849100e590a568bb11ff6b371992"><div class="ttname"><a href="class_algorithm_base.html#aa9a6849100e590a568bb11ff6b371992">AlgorithmBase::filteSmallBorder</a></div><div class="ttdeci">void filteSmallBorder(const Paths &amp;, Paths &amp;, Paths &amp;, const double &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:772</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_abf8b04e05f684ef526e22eb2f59ce646"><div class="ttname"><a href="class_algorithm_base.html#abf8b04e05f684ef526e22eb2f59ce646">AlgorithmBase::reducePaths_Inner</a></div><div class="ttdeci">void reducePaths_Inner(Paths &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:197</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_ae772223adb17dffb76db2b454d807e18"><div class="ttname"><a href="class_algorithm_base.html#ae772223adb17dffb76db2b454d807e18">AlgorithmBase::writeDataToList</a></div><div class="ttdeci">static void writeDataToList(const int64_t &amp;, const int64_t &amp;, const int64_t &amp;, const int64_t &amp;, int64_t &amp;, int64_t &amp;, QVector&lt; SCANLINE &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:793</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_af305c4ee4c37cd65d4c13a437632dae8"><div class="ttname"><a href="class_algorithm_base.html#af305c4ee4c37cd65d4c13a437632dae8">AlgorithmBase::lineOnVecSplicingLine</a></div><div class="ttdeci">bool lineOnVecSplicingLine(int64_t, int64_t, int64_t, int64_t, QVector&lt; SplicingLine &gt; &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:754</div></div>
+<div class="ttc" id="aclass_algorithm_base_html_af68be0a18c770ff3664af0ab8c5e8592"><div class="ttname"><a href="class_algorithm_base.html#af68be0a18c770ff3664af0ab8c5e8592">AlgorithmBase::getSurfacePaths</a></div><div class="ttdeci">void getSurfacePaths(Paths &amp;, int &amp;, Paths *, Paths *[], const int &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> algorithmbase.cpp:268</div></div>
+<div class="ttc" id="aclass_write_u_f_f_html"><div class="ttname"><a href="class_write_u_f_f.html">WriteUFF</a></div><div class="ttdef"><b>定义</b> writeuff.h:8</div></div>
+<div class="ttc" id="apublicheader_8h_html"><div class="ttname"><a href="publicheader_8h.html">publicheader.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="algorithmbase_8h.html">algorithmbase.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

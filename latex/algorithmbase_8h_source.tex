@@ -1,0 +1,65 @@
+\doxysection{algorithmbase.\+h}
+\hypertarget{algorithmbase_8h_source}{}\label{algorithmbase_8h_source}\mbox{\hyperlink{algorithmbase_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORITHMBASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORITHMBASE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}bpccommon.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{publicheader_8h}{publicheader.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_write_u_f_f}{WriteUFF}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm_base}{AlgorithmBase}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_algorithm_base_a6c012eecfcfb7f5153e3ae4f06b7711a}{calcAreaList}}(\textcolor{keyword}{const}\ Paths\ \&,\ QList<double>\ \&);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calcLimitXY}}(\textcolor{keyword}{const}\ Paths\ \&,\ BOUNDINGRECT\ \&,\ QList<BDRECTPTR>\ *listRc\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calcLimitXY}}(\textcolor{keyword}{const}\ QList<AREAINFOPTR>\ \&,\ BOUNDINGRECT\ \&,\ QList<BDRECTPTR>\ *listRc\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a7821e946765fec4d451a2e114049ad78}{getAllPaths}}(\textcolor{keyword}{const}\ QList<AREAINFOPTR>\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419}{lineCrossRC}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ BOUNDINGRECT\ \&);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_base_a7d7ebe56803630dd7d84f71f643d1419}{lineCrossRC}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ BDRECTPTR\ \&);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d}{sortPtOnLine}}(\textcolor{keywordtype}{int},\ QList<EXPECTPOINTINFO>\ \&);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a2debbcf38bf9910f82574ea0869db55d}{sortPtOnLine}}(\textcolor{keywordtype}{int},\ QVector<EXPECTPOINTINFO>\ \&);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_abf8b04e05f684ef526e22eb2f59ce646}{reducePaths\_Inner}}(Paths\ \&);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a2732f6394eaa7da3244d79ff85b2aa14}{addPaths\_Upper}}(Paths\ \&,\ Paths\ *);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a7bd1ccc6ab88a3ce86f17e321e8ae035}{extendBorders}}(Paths\ *,\ Paths\ *,\ Paths\ *);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_af68be0a18c770ff3664af0ab8c5e8592}{getSurfacePaths}}(Paths\ \&,\ \textcolor{keywordtype}{int}\ \&,\ Paths\ *,\ Paths\ *[],\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb}{getDifferencePaths}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ Path\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a745b5c5b51ab367b3728eb63947889cb}{getDifferencePaths}}(\textcolor{keyword}{const}\ Paths\ *,\ \textcolor{keyword}{const}\ Paths\ *,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}{getUnionPaths}}(\textcolor{keyword}{const}\ Path\ \&,\ \textcolor{keyword}{const}\ Path\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}{getUnionPaths}}(\textcolor{keyword}{const}\ Path\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a0cbc48894224831334c91991c9b4160d}{getUnionPaths}}(\textcolor{keyword}{const}\ Paths\ *,\ \textcolor{keyword}{const}\ Paths\ *,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7}{getOffsetPaths}}(Paths\ *,\ \textcolor{keywordtype}{int}\ nOffset,\ \textcolor{keywordtype}{int}\ nReserved,\ \textcolor{keywordtype}{int}\ nSmallWall);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a53f116f8ed86837c879fdfa3187078e7}{getOffsetPaths}}(Paths\ *,\ Paths\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a5ab9828cb248adf9091925402d15c718}{getIntersectionPaths}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ Path\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a5ab9828cb248adf9091925402d15c718}{getIntersectionPaths}}(\textcolor{keyword}{const}\ Paths\ \&,\ \textcolor{keyword}{const}\ Paths\ \&,\ Paths\ \&);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_algorithm_base_af305c4ee4c37cd65d4c13a437632dae8}{lineOnVecSplicingLine}}(int64\_t,\ int64\_t,\ int64\_t,\ int64\_t,\ QVector<SplicingLine>\ \&);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_aa9a6849100e590a568bb11ff6b371992}{filteSmallBorder}}(\textcolor{keyword}{const}\ Paths\ \&,\ Paths\ \&,\ Paths\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709}{scanner\_jumpPos}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a}{scanner\_outLine}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a4c4b85dc98285f9ee8a0ed234a26c709}{scanner\_jumpPos}}(\textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a10a401988cbe90e81ca7f710e3cc152a}{scanner\_outLine}}(\textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a6355a54523d0af209e0d3d663472f401}{scanner\_plotLine}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_ae772223adb17dffb76db2b454d807e18}{writeDataToList}}(\textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,\ \textcolor{keyword}{const}\ int64\_t\ \&,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ \&,\ int64\_t\ \&,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calcLimitXY}}(\textcolor{keyword}{const}\ Path\ \&,\ BDRECTPTR\ \&);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_base_a89740e31755f5675070b7acb295ec42b}{calcLimitXY}}(\textcolor{keyword}{const}\ AREAINFOPTR\ \&,\ BDRECTPTR\ \&);}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALGORITHMBASE\_H}}
+
+\end{DoxyCode}

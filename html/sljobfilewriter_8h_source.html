@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: sljobfilewriter.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('sljobfilewriter_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">sljobfilewriter.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="sljobfilewriter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SLJOBFILEWRITER_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SLJOBFILEWRITER_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="uspfilewriter_8h.html">uspfilewriter.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;qjsonparsing.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="writejfile_8h.html">writejfile.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespace_j_file_def.html">    8</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_j_file_def.html">JFileDef</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span>JFileLayerInfo;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QXmlStreamWriter;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_block_info.html">BlockInfo</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="sljobfilewriter_8h.html#adc35c25bf958260eba3d0e69d2f2a76a">   14</a></span><span class="keyword">typedef</span> QSharedPointer&lt;BlockInfo&gt; <a class="code hl_typedef" href="sljobfilewriter_8h.html#adc35c25bf958260eba3d0e69d2f2a76a">BlockInfoPtr</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_layer.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_layer.html">Layer</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_layer.html#a71453e22c90d67d831a83a8f07160ea2">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_layer.html#a71453e22c90d67d831a83a8f07160ea2">Z</a> = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_layer.html#a9278da2ee42a1e528807a47a57f45d29">   18</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_layer.html#a9278da2ee42a1e528807a47a57f45d29">_totalArea</a> = 0.0f;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_layer.html#a89eca810c18e60753d4fa6d70a224a67">   19</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_layer.html#a89eca810c18e60753d4fa6d70a224a67">fMinX</a> = FLT_MAX;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_layer.html#a79abb712b79013018ea24da1fb79c2c0">   20</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_layer.html#a79abb712b79013018ea24da1fb79c2c0">fMinY</a> = FLT_MAX;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_layer.html#a6d929c92e92b29a1eb32fd0d1301772d">   21</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_layer.html#a6d929c92e92b29a1eb32fd0d1301772d">fMaxX</a> = FLT_MIN;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_layer.html#ab67b77473c9ff8c20b5ee93fbf221855">   22</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_layer.html#ab67b77473c9ff8c20b5ee93fbf221855">fMaxY</a> = FLT_MIN;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_layer.html#ac18d95b8e4456ad0d83f036ed7239033">   23</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_layer.html#ac18d95b8e4456ad0d83f036ed7239033">fCenterX</a> = 0.0;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_layer.html#a410366bac8a78a143191dc1f687dec3d">   24</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_layer.html#a410366bac8a78a143191dc1f687dec3d">fCenterY</a> = 0.0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_layer.html#a2b86e4b0c16fc9ec6cd6431edee0c02f">   25</a></span>    QList&lt;BlockInfoPtr&gt; <a class="code hl_variable" href="struct_layer.html#a2b86e4b0c16fc9ec6cd6431edee0c02f">blockList</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_bin_file.html">   28</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_bin_file.html">BinFile</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_bin_file.html#a266da769850bef79aea80ee9257c6d24">   29</a></span>    QString <a class="code hl_variable" href="struct_bin_file.html#a266da769850bef79aea80ee9257c6d24">strFileName</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_bin_file.html#ad73604c29471e79d7f8dc44f3d72c1f3">   30</a></span>    QMap&lt;int, Layer&gt; <a class="code hl_variable" href="struct_bin_file.html#ad73604c29471e79d7f8dc44f3d72c1f3">layerMap</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html">   37</a></span><span class="keyword">class </span><a class="code hl_function" href="class_s_l_job_file_writer.html#a03562a6bc8febf0f6b93df05fe117235">SLJobFileWriter</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="class_s_l_job_file_writer.html#a03562a6bc8febf0f6b93df05fe117235">SLJobFileWriter</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_s_l_job_file_writer.html#a3d77507c520df878ff17554d0cb2de6d">~SLJobFileWriter</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a48bf2526889dc4e580148560f4314168">initFileWrite</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#ade9eeecf8c1ae45a964b48bbffaaf4d6">startBuffWriter</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#aaf246cddd4e012beccb3a7822ecef4ce">waitBuffWriter</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#adc8c2feb57ef6bd715003f3ef2a7d60d">writeLayerInfo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> BOUNDINGRECT &amp;, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#ab4c537a6e834ff636cecde0374dccd17">createUSPFile</a>(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, BOUNDINGBOX *,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                       <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QJsonObject &amp;);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html#adc1cd6cdd6e1b2163b6b4ca358cd6776">   52</a></span>    <span class="keyword">inline</span> <a class="code hl_struct" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *<a class="code hl_function" href="class_s_l_job_file_writer.html#adc1cd6cdd6e1b2163b6b4ca358cd6776">getBufPara</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_s_l_job_file_writer.html#a30f7b9ba8457aee013616241650cea77">buffPara</a>; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html#a3e46e82fab743f53107b10e4f8618a34">   53</a></span>    <a class="code hl_class" href="class_algorithm_application.html">AlgorithmApplication</a> *<a class="code hl_function" href="class_s_l_job_file_writer.html#a3e46e82fab743f53107b10e4f8618a34">algo</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_s_l_job_file_writer.html#a05ab6eba1d2536fccfe65620aea4c9c0">algorithm</a>; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a1ed835e00c399109941cf100c521b021">setScannerIndex</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a20b23acedf6cb225e6299b91badebf85">createJFileContentXml</a>(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QStringList &amp;, <span class="keyword">const</span> QString &amp;,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                                      <span class="keyword">const</span> QSharedPointer&lt;WriterBufferParas&gt; &amp;);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a64616fa5021248cb5d7b6e4a208c2b53">createJFileMetaDataXML</a>(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QStringList &amp;, <span class="keyword">const</span> QString &amp;,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                       <span class="keyword">const</span> QSharedPointer&lt;WriterBufferParas&gt; &amp;);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#aee574b5bc31d85a0984bfc0ac57200d5">addBinFileToContentXML</a>(QXmlStreamWriter *, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#af9ed5fc286b770962ad302f93356af7e">addParemeterToMetaDataXML</a>(QXmlStreamWriter *, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a56d5d26a5696d07c7b4dfdec2aa23f3c">addBinFileToMetaDataXML</a>(QXmlStreamWriter *, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> qint64 &amp;);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a7fbdc7731ae31e464efc96aad278fa08">addPartToMetaDataXML</a>(QXmlStreamWriter *, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                     <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a5ede2ccf281ad9b9bff39503cc4f71b2">addBlockToMetaDataXML</a>(QXmlStreamWriter *, <span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> <a class="code hl_typedef" href="sljobfilewriter_8h.html#adc35c25bf958260eba3d0e69d2f2a76a">BlockInfoPtr</a> &amp;);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#a4a6c90a16f9bf4b95856961b1257f745">loadJsonFiles</a>(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> QStringList &amp;, QList&lt;BinFile&gt; &amp;, <span class="keywordtype">int</span> &amp;, <span class="keywordtype">int</span> &amp;, <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_s_l_job_file_writer.html#ac7da9cb334549b7d54bf955d6bcc4d24">getVectorType</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html#a4da660fdb084fd6edb33539d2486d745">   73</a></span>    <a class="code hl_class" href="class_write_j_file.html">WriteJFile</a> *<a class="code hl_variable" href="class_s_l_job_file_writer.html#a4da660fdb084fd6edb33539d2486d745">fileWriter</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html#a30f7b9ba8457aee013616241650cea77">   74</a></span>    <a class="code hl_struct" href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a> *<a class="code hl_variable" href="class_s_l_job_file_writer.html#a30f7b9ba8457aee013616241650cea77">buffPara</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html#a05ab6eba1d2536fccfe65620aea4c9c0">   75</a></span>    <a class="code hl_class" href="class_algorithm_application.html">AlgorithmApplication</a> *<a class="code hl_variable" href="class_s_l_job_file_writer.html#a05ab6eba1d2536fccfe65620aea4c9c0">algorithm</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html#ab80ac82541eaabb49ea0b26fce836adb">   77</a></span>    JFileDef::JFileLayerInfo *<a class="code hl_variable" href="class_s_l_job_file_writer.html#ab80ac82541eaabb49ea0b26fce836adb">curLayerInfo</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_s_l_job_file_writer.html#ab7c3324cd9a51c4f5a0ae532355a33f1">   78</a></span>    QMap&lt;int, QSharedPointer&lt;JFileDef::JFileLayerInfo&gt;&gt; <a class="code hl_variable" href="class_s_l_job_file_writer.html#ab7c3324cd9a51c4f5a0ae532355a33f1">layerInfoPtrMap</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">// SLJOBFILEWRITER_H</span></div>
+<div class="ttc" id="aclass_algorithm_application_html"><div class="ttname"><a href="class_algorithm_application.html">AlgorithmApplication</a></div><div class="ttdef"><b>定义</b> algorithmapplication.h:37</div></div>
+<div class="ttc" id="aclass_file_writer_html_ae4dd90b95298451fc84d753b987ddc82"><div class="ttname"><a href="class_file_writer.html#ae4dd90b95298451fc84d753b987ddc82">FileWriter::FileWriter</a></div><div class="ttdeci">FileWriter()=default</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a03562a6bc8febf0f6b93df05fe117235"><div class="ttname"><a href="class_s_l_job_file_writer.html#a03562a6bc8febf0f6b93df05fe117235">SLJobFileWriter::SLJobFileWriter</a></div><div class="ttdeci">SLJobFileWriter()</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:96</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a05ab6eba1d2536fccfe65620aea4c9c0"><div class="ttname"><a href="class_s_l_job_file_writer.html#a05ab6eba1d2536fccfe65620aea4c9c0">SLJobFileWriter::algorithm</a></div><div class="ttdeci">AlgorithmApplication * algorithm</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:75</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a1ed835e00c399109941cf100c521b021"><div class="ttname"><a href="class_s_l_job_file_writer.html#a1ed835e00c399109941cf100c521b021">SLJobFileWriter::setScannerIndex</a></div><div class="ttdeci">void setScannerIndex(const int &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:160</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a20b23acedf6cb225e6299b91badebf85"><div class="ttname"><a href="class_s_l_job_file_writer.html#a20b23acedf6cb225e6299b91badebf85">SLJobFileWriter::createJFileContentXml</a></div><div class="ttdeci">static void createJFileContentXml(const QString &amp;, const QStringList &amp;, const QString &amp;, const QSharedPointer&lt; WriterBufferParas &gt; &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:264</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a30f7b9ba8457aee013616241650cea77"><div class="ttname"><a href="class_s_l_job_file_writer.html#a30f7b9ba8457aee013616241650cea77">SLJobFileWriter::buffPara</a></div><div class="ttdeci">PARAWRITEBUFF * buffPara</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:74</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a3d77507c520df878ff17554d0cb2de6d"><div class="ttname"><a href="class_s_l_job_file_writer.html#a3d77507c520df878ff17554d0cb2de6d">SLJobFileWriter::~SLJobFileWriter</a></div><div class="ttdeci">~SLJobFileWriter()</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:103</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a3e46e82fab743f53107b10e4f8618a34"><div class="ttname"><a href="class_s_l_job_file_writer.html#a3e46e82fab743f53107b10e4f8618a34">SLJobFileWriter::algo</a></div><div class="ttdeci">AlgorithmApplication * algo()</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:53</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a48bf2526889dc4e580148560f4314168"><div class="ttname"><a href="class_s_l_job_file_writer.html#a48bf2526889dc4e580148560f4314168">SLJobFileWriter::initFileWrite</a></div><div class="ttdeci">bool initFileWrite()</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:123</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a4a6c90a16f9bf4b95856961b1257f745"><div class="ttname"><a href="class_s_l_job_file_writer.html#a4a6c90a16f9bf4b95856961b1257f745">SLJobFileWriter::loadJsonFiles</a></div><div class="ttdeci">static void loadJsonFiles(const QString &amp;path, const QStringList &amp;, QList&lt; BinFile &gt; &amp;, int &amp;, int &amp;, double &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:775</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a4da660fdb084fd6edb33539d2486d745"><div class="ttname"><a href="class_s_l_job_file_writer.html#a4da660fdb084fd6edb33539d2486d745">SLJobFileWriter::fileWriter</a></div><div class="ttdeci">WriteJFile * fileWriter</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:73</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a56d5d26a5696d07c7b4dfdec2aa23f3c"><div class="ttname"><a href="class_s_l_job_file_writer.html#a56d5d26a5696d07c7b4dfdec2aa23f3c">SLJobFileWriter::addBinFileToMetaDataXML</a></div><div class="ttdeci">static void addBinFileToMetaDataXML(QXmlStreamWriter *, const QString &amp;, const int &amp;, const QString &amp;, const qint64 &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:713</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a5ede2ccf281ad9b9bff39503cc4f71b2"><div class="ttname"><a href="class_s_l_job_file_writer.html#a5ede2ccf281ad9b9bff39503cc4f71b2">SLJobFileWriter::addBlockToMetaDataXML</a></div><div class="ttdeci">static void addBlockToMetaDataXML(QXmlStreamWriter *, const QString &amp;, const BlockInfoPtr &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:750</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a64616fa5021248cb5d7b6e4a208c2b53"><div class="ttname"><a href="class_s_l_job_file_writer.html#a64616fa5021248cb5d7b6e4a208c2b53">SLJobFileWriter::createJFileMetaDataXML</a></div><div class="ttdeci">static void createJFileMetaDataXML(const QString &amp;, const QStringList &amp;, const QString &amp;, const QSharedPointer&lt; WriterBufferParas &gt; &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:315</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_a7fbdc7731ae31e464efc96aad278fa08"><div class="ttname"><a href="class_s_l_job_file_writer.html#a7fbdc7731ae31e464efc96aad278fa08">SLJobFileWriter::addPartToMetaDataXML</a></div><div class="ttdeci">static void addPartToMetaDataXML(QXmlStreamWriter *, const int &amp;, const QString &amp;, const float &amp;, const float &amp;, const float &amp;, const float &amp;, const float &amp;, const float &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:725</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_aaf246cddd4e012beccb3a7822ecef4ce"><div class="ttname"><a href="class_s_l_job_file_writer.html#aaf246cddd4e012beccb3a7822ecef4ce">SLJobFileWriter::waitBuffWriter</a></div><div class="ttdeci">void waitBuffWriter()</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:138</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_ab4c537a6e834ff636cecde0374dccd17"><div class="ttname"><a href="class_s_l_job_file_writer.html#ab4c537a6e834ff636cecde0374dccd17">SLJobFileWriter::createUSPFile</a></div><div class="ttdeci">void createUSPFile(const QString &amp;, const QString &amp;, const float &amp;, BOUNDINGBOX *, const int &amp;, const int &amp;, QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:175</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_ab7c3324cd9a51c4f5a0ae532355a33f1"><div class="ttname"><a href="class_s_l_job_file_writer.html#ab7c3324cd9a51c4f5a0ae532355a33f1">SLJobFileWriter::layerInfoPtrMap</a></div><div class="ttdeci">QMap&lt; int, QSharedPointer&lt; JFileDef::JFileLayerInfo &gt; &gt; layerInfoPtrMap</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:78</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_ab80ac82541eaabb49ea0b26fce836adb"><div class="ttname"><a href="class_s_l_job_file_writer.html#ab80ac82541eaabb49ea0b26fce836adb">SLJobFileWriter::curLayerInfo</a></div><div class="ttdeci">JFileDef::JFileLayerInfo * curLayerInfo</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:77</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_ac7da9cb334549b7d54bf955d6bcc4d24"><div class="ttname"><a href="class_s_l_job_file_writer.html#ac7da9cb334549b7d54bf955d6bcc4d24">SLJobFileWriter::getVectorType</a></div><div class="ttdeci">static int getVectorType(const int &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:837</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_adc1cd6cdd6e1b2163b6b4ca358cd6776"><div class="ttname"><a href="class_s_l_job_file_writer.html#adc1cd6cdd6e1b2163b6b4ca358cd6776">SLJobFileWriter::getBufPara</a></div><div class="ttdeci">PARAWRITEBUFF * getBufPara()</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:52</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_adc8c2feb57ef6bd715003f3ef2a7d60d"><div class="ttname"><a href="class_s_l_job_file_writer.html#adc8c2feb57ef6bd715003f3ef2a7d60d">SLJobFileWriter::writeLayerInfo</a></div><div class="ttdeci">void writeLayerInfo(const int &amp;, const BOUNDINGRECT &amp;, const double &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:165</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_ade9eeecf8c1ae45a964b48bbffaaf4d6"><div class="ttname"><a href="class_s_l_job_file_writer.html#ade9eeecf8c1ae45a964b48bbffaaf4d6">SLJobFileWriter::startBuffWriter</a></div><div class="ttdeci">void startBuffWriter()</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:132</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_aee574b5bc31d85a0984bfc0ac57200d5"><div class="ttname"><a href="class_s_l_job_file_writer.html#aee574b5bc31d85a0984bfc0ac57200d5">SLJobFileWriter::addBinFileToContentXML</a></div><div class="ttdeci">static void addBinFileToContentXML(QXmlStreamWriter *, const QString &amp;, const QString &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:687</div></div>
+<div class="ttc" id="aclass_s_l_job_file_writer_html_af9ed5fc286b770962ad302f93356af7e"><div class="ttname"><a href="class_s_l_job_file_writer.html#af9ed5fc286b770962ad302f93356af7e">SLJobFileWriter::addParemeterToMetaDataXML</a></div><div class="ttdeci">static void addParemeterToMetaDataXML(QXmlStreamWriter *, const int &amp;, const int &amp;, const float &amp;, const float &amp;, const float &amp;)</div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:697</div></div>
+<div class="ttc" id="aclass_write_j_file_html"><div class="ttname"><a href="class_write_j_file.html">WriteJFile</a></div><div class="ttdef"><b>定义</b> writejfile.h:12</div></div>
+<div class="ttc" id="anamespace_j_file_def_html"><div class="ttname"><a href="namespace_j_file_def.html">JFileDef</a></div><div class="ttdef"><b>定义</b> sljobfilewriter.h:8</div></div>
+<div class="ttc" id="asljobfilewriter_8h_html_adc35c25bf958260eba3d0e69d2f2a76a"><div class="ttname"><a href="sljobfilewriter_8h.html#adc35c25bf958260eba3d0e69d2f2a76a">BlockInfoPtr</a></div><div class="ttdeci">QSharedPointer&lt; BlockInfo &gt; BlockInfoPtr</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:14</div></div>
+<div class="ttc" id="astruct_bin_file_html"><div class="ttname"><a href="struct_bin_file.html">BinFile</a></div><div class="ttdef"><b>定义</b> sljobfilewriter.h:28</div></div>
+<div class="ttc" id="astruct_bin_file_html_a266da769850bef79aea80ee9257c6d24"><div class="ttname"><a href="struct_bin_file.html#a266da769850bef79aea80ee9257c6d24">BinFile::strFileName</a></div><div class="ttdeci">QString strFileName</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:29</div></div>
+<div class="ttc" id="astruct_bin_file_html_ad73604c29471e79d7f8dc44f3d72c1f3"><div class="ttname"><a href="struct_bin_file.html#ad73604c29471e79d7f8dc44f3d72c1f3">BinFile::layerMap</a></div><div class="ttdeci">QMap&lt; int, Layer &gt; layerMap</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:30</div></div>
+<div class="ttc" id="astruct_block_info_html"><div class="ttname"><a href="struct_block_info.html">BlockInfo</a></div><div class="ttdef"><b>定义</b> sljobfilewriter.cpp:55</div></div>
+<div class="ttc" id="astruct_layer_html"><div class="ttname"><a href="struct_layer.html">Layer</a></div><div class="ttdef"><b>定义</b> sljobfilewriter.h:16</div></div>
+<div class="ttc" id="astruct_layer_html_a2b86e4b0c16fc9ec6cd6431edee0c02f"><div class="ttname"><a href="struct_layer.html#a2b86e4b0c16fc9ec6cd6431edee0c02f">Layer::blockList</a></div><div class="ttdeci">QList&lt; BlockInfoPtr &gt; blockList</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:25</div></div>
+<div class="ttc" id="astruct_layer_html_a410366bac8a78a143191dc1f687dec3d"><div class="ttname"><a href="struct_layer.html#a410366bac8a78a143191dc1f687dec3d">Layer::fCenterY</a></div><div class="ttdeci">float fCenterY</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:24</div></div>
+<div class="ttc" id="astruct_layer_html_a6d929c92e92b29a1eb32fd0d1301772d"><div class="ttname"><a href="struct_layer.html#a6d929c92e92b29a1eb32fd0d1301772d">Layer::fMaxX</a></div><div class="ttdeci">float fMaxX</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:21</div></div>
+<div class="ttc" id="astruct_layer_html_a71453e22c90d67d831a83a8f07160ea2"><div class="ttname"><a href="struct_layer.html#a71453e22c90d67d831a83a8f07160ea2">Layer::Z</a></div><div class="ttdeci">int Z</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:17</div></div>
+<div class="ttc" id="astruct_layer_html_a79abb712b79013018ea24da1fb79c2c0"><div class="ttname"><a href="struct_layer.html#a79abb712b79013018ea24da1fb79c2c0">Layer::fMinY</a></div><div class="ttdeci">float fMinY</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:20</div></div>
+<div class="ttc" id="astruct_layer_html_a89eca810c18e60753d4fa6d70a224a67"><div class="ttname"><a href="struct_layer.html#a89eca810c18e60753d4fa6d70a224a67">Layer::fMinX</a></div><div class="ttdeci">float fMinX</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:19</div></div>
+<div class="ttc" id="astruct_layer_html_a9278da2ee42a1e528807a47a57f45d29"><div class="ttname"><a href="struct_layer.html#a9278da2ee42a1e528807a47a57f45d29">Layer::_totalArea</a></div><div class="ttdeci">float _totalArea</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:18</div></div>
+<div class="ttc" id="astruct_layer_html_ab67b77473c9ff8c20b5ee93fbf221855"><div class="ttname"><a href="struct_layer.html#ab67b77473c9ff8c20b5ee93fbf221855">Layer::fMaxY</a></div><div class="ttdeci">float fMaxY</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:22</div></div>
+<div class="ttc" id="astruct_layer_html_ac18d95b8e4456ad0d83f036ed7239033"><div class="ttname"><a href="struct_layer.html#ac18d95b8e4456ad0d83f036ed7239033">Layer::fCenterX</a></div><div class="ttdeci">float fCenterX</div><div class="ttdef"><b>定义</b> sljobfilewriter.h:23</div></div>
+<div class="ttc" id="astruct_p_a_r_a_w_r_i_t_e_b_u_f_f_html"><div class="ttname"><a href="struct_p_a_r_a_w_r_i_t_e_b_u_f_f.html">PARAWRITEBUFF</a></div><div class="ttdef"><b>定义</b> publicheader.h:85</div></div>
+<div class="ttc" id="auspfilewriter_8h_html"><div class="ttname"><a href="uspfilewriter_8h.html">uspfilewriter.h</a></div></div>
+<div class="ttc" id="awritejfile_8h_html"><div class="ttname"><a href="writejfile_8h.html">writejfile.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="sljobfilewriter_8h.html">sljobfilewriter.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

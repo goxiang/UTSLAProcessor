@@ -1,0 +1,22 @@
+\doxysection{UTSLAProcessor\+\_\+global.\+h}
+\hypertarget{_u_t_s_l_a_processor__global_8h_source}{}\label{_u_t_s_l_a_processor__global_8h_source}\mbox{\hyperlink{_u_t_s_l_a_processor__global_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UTSLAPROCESSOR\_GLOBAL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UTSLAPROCESSOR\_GLOBAL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtCore/qglobal.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\#define\ USE\_PROCESSOR\_EXTEND}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifdef\ USE\_PROCESSOR\_EXTEND}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ std::function<void(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int})>\ funDrawLine;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{typedef}\ std::function<void(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ quint8,\ quint8,\ quint8)>\ funDrawColorLine;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{typedef}\ std::function<void(\textcolor{keywordtype}{int})>\ funClearCanvas;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_a_processor_extend}{SLAProcessorExtend}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_s_l_a_processor_extend}{SLAProcessorExtend}}\ *glProcessor;}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UTSLAPROCESSOR\_GLOBAL\_H}}
+
+\end{DoxyCode}

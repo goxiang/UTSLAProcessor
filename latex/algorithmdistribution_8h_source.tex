@@ -1,0 +1,76 @@
+\doxysection{algorithmdistribution.\+h}
+\hypertarget{algorithmdistribution_8h_source}{}\label{algorithmdistribution_8h_source}\index{DynamicDivider/algorithmdistribution.h@{DynamicDivider/algorithmdistribution.h}}
+\mbox{\hyperlink{algorithmdistribution_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ALGORITHMDISTRIBUTION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ALGORITHMDISTRIBUTION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_segements_info_adf4d5ef8607c5dbe9c786c54b87dd57e}{SegementsInfo}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_segements_info_a702585f416c21c76bd19809c19ee713d}{\_index}}\ =\ -\/1;}
+\DoxyCodeLine{00009\ \ \ \ \ std::vector<double>\ \mbox{\hyperlink{struct_segements_info_a73f3090ab7b7d61a3537e07c78d1d84b}{\_rateVec}};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_segements_info_a5e4c0df45b885e28621290e43b0d5f08}{getTotalRate}}()\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ totalWeight\ =\ 0.0;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&weight\ :\ \mbox{\hyperlink{struct_segements_info_a73f3090ab7b7d61a3537e07c78d1d84b}{\_rateVec}})\ totalWeight\ +=\ weight;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ totalWeight;}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{struct_segements_info_adf4d5ef8607c5dbe9c786c54b87dd57e}{SegementsInfo}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{struct_segements_info_a200ffa0f6572c0b7d49c08a7ab109d21}{SegementsInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&index,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&rate)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_segements_info_a73f3090ab7b7d61a3537e07c78d1d84b}{\_rateVec}}.clear();}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_segements_info_a702585f416c21c76bd19809c19ee713d}{\_index}}\ =\ index;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_segements_info_a73f3090ab7b7d61a3537e07c78d1d84b}{\_rateVec}}.push\_back(rate);}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_part_info_a9641662d062290eb4224f1d0b814a345}{PartInfo}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_part_info_a785decd515538ccb2fba72fd81ebdec5}{\_index}}\ =\ -\/1;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_part_info_a811b2cea18798cec4c1b6c9e3ce7ea68}{\_weight}}\ =\ 0.0;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_part_info_a227e31059c739b609fa9606c548ba98f}{\_factor}}\ =\ 1.0;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_part_info_ad108ac4fa8c7526f93e4a12a4abbfe25}{\_realWeight}}\ =\ 0.0;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_part_info_a9641662d062290eb4224f1d0b814a345}{PartInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&index,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&weight,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&factor\ =\ 1.0)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_part_info_a785decd515538ccb2fba72fd81ebdec5}{\_index}}\ =\ index;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_part_info_a811b2cea18798cec4c1b6c9e3ce7ea68}{\_weight}}\ =\ weight;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_part_info_a227e31059c739b609fa9606c548ba98f}{\_factor}}\ =\ factor;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_part_info_ad108ac4fa8c7526f93e4a12a4abbfe25}{\_realWeight}}\ =\ \mbox{\hyperlink{struct_part_info_a811b2cea18798cec4c1b6c9e3ce7ea68}{\_weight}}\ *\ \mbox{\hyperlink{struct_part_info_a227e31059c739b609fa9606c548ba98f}{\_factor}};}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_distribution_result}{DistributionResult}}\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<PartInfo>\ \mbox{\hyperlink{struct_distribution_result_ab87e0100139c6e0d81dd4afb319d1948}{\_partsList}};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_distribution_result_a0b46f55722e0d468484c462d38b6f8be}{\_totalWeight}}\ =\ 0.0;}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_part_result_a3b4d6b512e78d17dd12210bd3979a639}{PartResult}}\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_part_result_a18ac5d441306a3ad47b24d0e858d34ef}{\_containorIndex}}\ =\ 1;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_part_result_a71fc61a1bb00a34dc2ffddb7fa8b8abf}{\_factor}}\ =\ 1.0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{struct_part_result_a3b4d6b512e78d17dd12210bd3979a639}{PartResult}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&index,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&factor)\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_part_result_a18ac5d441306a3ad47b24d0e858d34ef}{\_containorIndex}}\ =\ index;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_part_result_a71fc61a1bb00a34dc2ffddb7fa8b8abf}{\_factor}}\ =\ factor;}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{//\ \ /实现多区域打印任务分配，独立类}}
+\DoxyCodeLine{00056\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm_distribution_ad7eff05ae505c3a25ba125f7e48d5cab}{AlgorithmDistribution}}}
+\DoxyCodeLine{00057\ \{}
+\DoxyCodeLine{00058\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_algorithm_distribution_ad7eff05ae505c3a25ba125f7e48d5cab}{AlgorithmDistribution}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_distribution_a70f7ddf80c3c0fa7f2f482a75f22fd63}{distribution}}(std::vector<DistributionResult>\ \&,\ \textcolor{keyword}{const}\ std::vector<double>\ \&inVec,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&containerCnt\ =\ 2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&tolerance\ =\ 1E-\/1);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_distribution_a70f7ddf80c3c0fa7f2f482a75f22fd63}{distribution}}(std::vector<DistributionResult>\ \&,\ \textcolor{keyword}{const}\ std::map<int,\ double>\ \&inMap,}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&containerCnt\ =\ 2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&tolerance\ =\ 1E-\/1);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_distribution_a70f7ddf80c3c0fa7f2f482a75f22fd63}{distribution}}(std::map<\textcolor{keywordtype}{int},\ std::vector<PartResult>>\ \&,\ \textcolor{keyword}{const}\ std::map<int,\ double>\ \&inMap,}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&containerCnt\ =\ 2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&tolerance\ =\ 1E-\/1);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_algorithm_distribution_a328e9bec497b5e9efa41232044dc38db}{getPartResultMap}}(\textcolor{keyword}{const}\ std::vector<DistributionResult>\ \&,\ std::map<\textcolor{keywordtype}{int},\ std::vector<PartResult>>\ \&partResultMap);}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ALGORITHMDISTRIBUTION\_H}}
+
+\end{DoxyCode}

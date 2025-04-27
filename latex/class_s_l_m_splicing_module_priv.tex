@@ -1,0 +1,122 @@
+\doxysection{SLMSplicing\+Module\+Priv类 参考}
+\hypertarget{class_s_l_m_splicing_module_priv}{}\label{class_s_l_m_splicing_module_priv}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+
+
+{\ttfamily \#include $<$splicingmodulepriv.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_l_m_splicing_module_priv_ac5a814360eb6ecb615f55ede4c3621d9}{SLMSplicing\+Module\+Priv}} ()
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a2338f94606989a54bbfb6b6f8f79d6fc}{calc\+Lines\+On\+Rect}} (const Int\+Rect \&, const Paths \&, Paths \&)
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_priv_aa54909a14e799e80cb503f951cb3f958}{remove\+Line\+On\+Rect}} (const Int\+Rect \&, Paths \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a57882ba8b51dbbf81d3cceb2b89949bf}{calc\+Lines\+On\+Rect}} (const Int\+Rect \&, const Path \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_s_l_m_splicing_module_priv_ae1b4c70b9548a622dfd8d098ee6f5e4f}{remove\+Line\+On\+Rect}} (const Int\+Rect \&, const Path \&, Paths \&)
+\item 
+bool \mbox{\hyperlink{class_s_l_m_splicing_module_priv_af400cbe73fab2424294f7ebc40ca2057}{clip\+Section\+On\+Vertical\+Line}} (const int64\+\_\+t \&x, const int64\+\_\+t \&minY, const int64\+\_\+t \&maxY, Int\+Point \&pt1, Int\+Point \&pt2)
+\item 
+bool \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a2ba3e71bc4392b3e02834bc3ae3c5230}{clip\+Section\+On\+Horizontal\+Line}} (const int64\+\_\+t \&y, const int64\+\_\+t \&minX, const int64\+\_\+t \&maxX, Int\+Point \&pt1, Int\+Point \&pt2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{struct_scanner_splicing_area}{Scanner\+Splicing\+Area}} $>$ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a5c0a09e5fe0c01e2b34d29ed6ec4ef23}{\+\_\+scanner\+Splicing}}
+\item 
+QMap$<$ int, \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}} $>$ \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a23ac2880170d2a7ac2d9483749ab1f24}{\+\_\+layer\+Splicing\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_s_l_m_splicing_module_priv_a68bff0a4cdd14e9b79a7dfabca54b87a}{SLMSplicing\+Module}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+! \begin{DoxyParagraph}{Core Class\+: SLMSplicing\+Module\+Priv}
+拼接模块的私有实现类 
+\end{DoxyParagraph}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_s_l_m_splicing_module_priv_ac5a814360eb6ecb615f55ede4c3621d9}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{SLMSplicingModulePriv()}{SLMSplicingModulePriv()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_ac5a814360eb6ecb615f55ede4c3621d9} 
+SLMSplicing\+Module\+Priv\+::\+SLMSplicing\+Module\+Priv (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_s_l_m_splicing_module_priv_a57882ba8b51dbbf81d3cceb2b89949bf}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!calcLinesOnRect@{calcLinesOnRect}}
+\index{calcLinesOnRect@{calcLinesOnRect}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{calcLinesOnRect()}{calcLinesOnRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_a57882ba8b51dbbf81d3cceb2b89949bf} 
+void SLMSplicing\+Module\+Priv\+::calc\+Lines\+On\+Rect (\begin{DoxyParamCaption}\item[{const Int\+Rect \&}]{rect}{, }\item[{const Path \&}]{path}{, }\item[{Paths \&}]{on\+Rect\+Line\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_s_l_m_splicing_module_priv_a2338f94606989a54bbfb6b6f8f79d6fc}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!calcLinesOnRect@{calcLinesOnRect}}
+\index{calcLinesOnRect@{calcLinesOnRect}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{calcLinesOnRect()}{calcLinesOnRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_a2338f94606989a54bbfb6b6f8f79d6fc} 
+void SLMSplicing\+Module\+Priv\+::calc\+Lines\+On\+Rect (\begin{DoxyParamCaption}\item[{const Int\+Rect \&}]{rect}{, }\item[{const Paths \&}]{paths}{, }\item[{Paths \&}]{on\+Rect\+Line\+Vec}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_s_l_m_splicing_module_priv_a2ba3e71bc4392b3e02834bc3ae3c5230}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!clipSectionOnHorizontalLine@{clipSectionOnHorizontalLine}}
+\index{clipSectionOnHorizontalLine@{clipSectionOnHorizontalLine}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{clipSectionOnHorizontalLine()}{clipSectionOnHorizontalLine()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_a2ba3e71bc4392b3e02834bc3ae3c5230} 
+bool SLMSplicing\+Module\+Priv\+::clip\+Section\+On\+Horizontal\+Line (\begin{DoxyParamCaption}\item[{const int64\+\_\+t \&}]{y}{, }\item[{const int64\+\_\+t \&}]{minX}{, }\item[{const int64\+\_\+t \&}]{maxX}{, }\item[{Int\+Point \&}]{pt1}{, }\item[{Int\+Point \&}]{pt2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_s_l_m_splicing_module_priv_af400cbe73fab2424294f7ebc40ca2057}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!clipSectionOnVerticalLine@{clipSectionOnVerticalLine}}
+\index{clipSectionOnVerticalLine@{clipSectionOnVerticalLine}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{clipSectionOnVerticalLine()}{clipSectionOnVerticalLine()}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_af400cbe73fab2424294f7ebc40ca2057} 
+bool SLMSplicing\+Module\+Priv\+::clip\+Section\+On\+Vertical\+Line (\begin{DoxyParamCaption}\item[{const int64\+\_\+t \&}]{x}{, }\item[{const int64\+\_\+t \&}]{minY}{, }\item[{const int64\+\_\+t \&}]{maxY}{, }\item[{Int\+Point \&}]{pt1}{, }\item[{Int\+Point \&}]{pt2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_s_l_m_splicing_module_priv_ae1b4c70b9548a622dfd8d098ee6f5e4f}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!removeLineOnRect@{removeLineOnRect}}
+\index{removeLineOnRect@{removeLineOnRect}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{removeLineOnRect()}{removeLineOnRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_ae1b4c70b9548a622dfd8d098ee6f5e4f} 
+bool SLMSplicing\+Module\+Priv\+::remove\+Line\+On\+Rect (\begin{DoxyParamCaption}\item[{const Int\+Rect \&}]{rect}{, }\item[{const Path \&}]{path}{, }\item[{Paths \&}]{des\+Paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_s_l_m_splicing_module_priv_aa54909a14e799e80cb503f951cb3f958}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!removeLineOnRect@{removeLineOnRect}}
+\index{removeLineOnRect@{removeLineOnRect}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{removeLineOnRect()}{removeLineOnRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_aa54909a14e799e80cb503f951cb3f958} 
+void SLMSplicing\+Module\+Priv\+::remove\+Line\+On\+Rect (\begin{DoxyParamCaption}\item[{const Int\+Rect \&}]{rect}{, }\item[{Paths \&}]{paths}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{友元及相关符号说明}
+\Hypertarget{class_s_l_m_splicing_module_priv_a68bff0a4cdd14e9b79a7dfabca54b87a}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!SLMSplicingModule@{SLMSplicingModule}}
+\index{SLMSplicingModule@{SLMSplicingModule}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{SLMSplicingModule}{SLMSplicingModule}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_a68bff0a4cdd14e9b79a7dfabca54b87a} 
+friend class \mbox{\hyperlink{class_s_l_m_splicing_module}{SLMSplicing\+Module}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_s_l_m_splicing_module_priv_a23ac2880170d2a7ac2d9483749ab1f24}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!\_layerSplicingMap@{\_layerSplicingMap}}
+\index{\_layerSplicingMap@{\_layerSplicingMap}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{\_layerSplicingMap}{\_layerSplicingMap}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_a23ac2880170d2a7ac2d9483749ab1f24} 
+QMap$<$int, \mbox{\hyperlink{struct_layer_splicing_area}{Layer\+Splicing\+Area}}$>$ SLMSplicing\+Module\+Priv\+::\+\_\+layer\+Splicing\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_s_l_m_splicing_module_priv_a5c0a09e5fe0c01e2b34d29ed6ec4ef23}\index{SLMSplicingModulePriv@{SLMSplicingModulePriv}!\_scannerSplicing@{\_scannerSplicing}}
+\index{\_scannerSplicing@{\_scannerSplicing}!SLMSplicingModulePriv@{SLMSplicingModulePriv}}
+\doxysubsubsection{\texorpdfstring{\_scannerSplicing}{\_scannerSplicing}}
+{\footnotesize\ttfamily \label{class_s_l_m_splicing_module_priv_a5c0a09e5fe0c01e2b34d29ed6ec4ef23} 
+QShared\+Pointer$<$\mbox{\hyperlink{struct_scanner_splicing_area}{Scanner\+Splicing\+Area}}$>$ SLMSplicing\+Module\+Priv\+::\+\_\+scanner\+Splicing\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Splicing\+Module/\mbox{\hyperlink{splicingmodulepriv_8h}{splicingmodulepriv.\+h}}\item 
+Splicing\+Module/\mbox{\hyperlink{splicingmodulepriv_8cpp}{splicingmodulepriv.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\doxysection{quadtreesortor.\+h}
+\hypertarget{quadtreesortor_8h_source}{}\label{quadtreesortor_8h_source}\index{ScanLinesSortor/quadtreesortor.h@{ScanLinesSortor/quadtreesortor.h}}
+\mbox{\hyperlink{quadtreesortor_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ QUADTREESORTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ QUADTREESORTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{quadtreedef_8h}{quadtreedef.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}bpccommon.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quadtree_sortor_a65bc1f7cbcecea8ca76e438b79949516}{QuadtreeSortor}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_quadtree_sortor_a65bc1f7cbcecea8ca76e438b79949516}{QuadtreeSortor}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadtree_sortor_afd06386bb10e8723f29e1b11add9f25a}{sortPaths}}(Paths\ \&);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_quadtree_sortor_1_1_priv}{Priv}};}
+\DoxyCodeLine{00022\ \ \ \ \ QSharedPointer<Priv>\ \mbox{\hyperlink{class_quadtree_sortor_a67e751671049ffe7760e969eee54bbbf}{d}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_q_tree_sortor_a61650873bde465a44efd7cca73ec9c42}{QTreeSortor}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_q_tree_sortor_a61650873bde465a44efd7cca73ec9c42}{QTreeSortor}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_q_tree_sortor_a1f9b13518d3c7394ec29a69897445fbf}{sortDatas}}(QVector<T>\ \&);}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_q_tree_sortor_a1f9b13518d3c7394ec29a69897445fbf}{QTreeSortor::sortDatas}}(QVector<T>\ \&datas)}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_m_quad_tree}{MQuadTree}}\ quadtree;}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPtInfoPtr}}\ firstPt\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{for}(uint\ i\ =\ 0;\ i\ <\ datas.size();\ ++\ i)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \&data\ =\ datas[i];}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ pt1\ =\ \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPtInfoPtr}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{struct_m_pt_info}{MPtInfo}}(data.\_centerX,\ data.\_centerY,\ i,\ 0));}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ pt2\ =\ \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPtInfoPtr}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{struct_m_pt_info}{MPtInfo}}(data.\_centerX,\ data.\_centerY,\ i,\ 1));}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ pt1-\/>\_bro\ =\ pt2;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ pt2-\/>\_bro\ =\ pt1;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ quadtree.\mbox{\hyperlink{struct_m_quad_tree_afbe78bdf01aac2561768b84948f79378}{insertNode}}(pt1);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ quadtree.\mbox{\hyperlink{struct_m_quad_tree_afbe78bdf01aac2561768b84948f79378}{insertNode}}(pt2);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (0\ ==\ i)\ firstPt\ =\ pt1;}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ QVector<T>\ desVec;}
+\DoxyCodeLine{00052\ \ \ \ \ quadtree.\mbox{\hyperlink{struct_m_quad_tree_a606ad04f796b982ba5151a8e9b100e1d}{sortPaths}}(firstPt,\ datas,\ desVec);}
+\DoxyCodeLine{00053\ \ \ \ \ datas\ =\ std::move(desVec);}
+\DoxyCodeLine{00054\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ QUADTREESORTOR\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,144 @@
+\doxysection{Utek\+::Polygon\+Start\+Changer类 参考}
+\hypertarget{class_utek_1_1_polygon_start_changer}{}\label{class_utek_1_1_polygon_start_changer}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+
+
+{\ttfamily \#include $<$polygonstartchanger.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a537060f58a86f01d3a90260827d89c32}{Polygon\+Start\+Changer}} ()
+\item 
+\mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{Return\+Path\+Pack}} \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a0accae1530c0ad440193b5ca94f6b6c9}{get\+Start\+Changer}} (const Clipper\+Lib\+::\+Path \&path, const \mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{Start\+Changer\+Para}} \&paras) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{Return\+Path\+Pack}} \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_aaa88da97d08b77dfa0975b7af7828f6d}{get\+Start\+Changer\+Private}} (const Clipper\+Lib\+::\+Path \&path, const \mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{Start\+Changer\+Para}} \&paras) const
+\item 
+float \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a8c35f42b3a22bda268cd01eb66d8b82e}{get\+Length}} (const Clipper\+Lib\+::\+Path \&path) const
+\item 
+float \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a35ed804bec3d7b2c26c5c4159d678902}{dis}} (const Clipper\+Lib\+::\+Int\+Point \&p1, const Clipper\+Lib\+::\+Int\+Point \&p2) const
+\item 
+float \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a9ea2ad1930ac10530bf35e541e324a3e}{area}} (const Clipper\+Lib\+::\+Path \&path) const
+\item 
+Clipper\+Lib\+::\+Int\+Point \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_ab804f92e8092366daaf563075c757476}{get\+Possible\+Start\+Pt}} (const Clipper\+Lib\+::\+Int\+Point \&first\+Pt, const Clipper\+Lib\+::\+Int\+Point \&before\+Pt, float startK, float start\+Dis) const
+\item 
+Clipper\+Lib\+::\+Int\+Point \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a6c91af49f4e6ebf3c685e97d8fc75c6e}{get\+Possible\+Start\+Pt\+Rev}} (const Clipper\+Lib\+::\+Int\+Point \&first\+Pt, const Clipper\+Lib\+::\+Int\+Point \&before\+Pt, float startK, float start\+Dis) const
+\item 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a20f08cccb91ed780567896398a081bd1}{normal\+Vector}} (const Clipper\+Lib\+::\+Int\+Point \&pt1, const Clipper\+Lib\+::\+Int\+Point \&pt2) const
+\item 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a8d501992cc3ba65fcc0fb11c368bacbf}{normal\+Vector}} (float x1, float y1, float x2, float y2) const
+\item 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a98c65fc0618e9a3a2c620f0bca760f05}{normal\+Vector}} (float k) const
+\item 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_aa592a6744de4bdae7cd95a92b5c31d40}{unit\+Vector}} (const \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \&vec) const
+\item 
+float \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_aff6a468fd4641b0a1754ca31fbde0b50}{cross\+Product}} (const \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \&vec1, const \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \&vec2) const
+\item 
+void \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_a7f1fdd75d2e98edb6d15f41e83679bf8}{push}} (Clipper\+Lib\+::\+Path \&path, int move\+Step) const
+\item 
+bool \mbox{\hyperlink{class_utek_1_1_polygon_start_changer_ab1534468627d15629ec8a4f9ae8d54a3}{intersecting}} (const Clipper\+Lib\+::\+Path \&, const int \&, const Clipper\+Lib\+::\+Int\+Point \&) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_utek_1_1_polygon_start_changer_a537060f58a86f01d3a90260827d89c32}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!PolygonStartChanger@{PolygonStartChanger}}
+\index{PolygonStartChanger@{PolygonStartChanger}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{PolygonStartChanger()}{PolygonStartChanger()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a537060f58a86f01d3a90260827d89c32} 
+Utek\+::\+Polygon\+Start\+Changer\+::\+Polygon\+Start\+Changer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_utek_1_1_polygon_start_changer_a9ea2ad1930ac10530bf35e541e324a3e}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!area@{area}}
+\index{area@{area}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a9ea2ad1930ac10530bf35e541e324a3e} 
+float Utek\+::\+Polygon\+Start\+Changer\+::area (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{path}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_aff6a468fd4641b0a1754ca31fbde0b50}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!crossProduct@{crossProduct}}
+\index{crossProduct@{crossProduct}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{crossProduct()}{crossProduct()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_aff6a468fd4641b0a1754ca31fbde0b50} 
+float Utek\+::\+Polygon\+Start\+Changer\+::cross\+Product (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \&}]{vec1}{, }\item[{const \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \&}]{vec2}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a35ed804bec3d7b2c26c5c4159d678902}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!dis@{dis}}
+\index{dis@{dis}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{dis()}{dis()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a35ed804bec3d7b2c26c5c4159d678902} 
+float Utek\+::\+Polygon\+Start\+Changer\+::dis (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{p1}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{p2}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a8c35f42b3a22bda268cd01eb66d8b82e}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!getLength@{getLength}}
+\index{getLength@{getLength}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a8c35f42b3a22bda268cd01eb66d8b82e} 
+float Utek\+::\+Polygon\+Start\+Changer\+::get\+Length (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{path}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_ab804f92e8092366daaf563075c757476}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!getPossibleStartPt@{getPossibleStartPt}}
+\index{getPossibleStartPt@{getPossibleStartPt}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{getPossibleStartPt()}{getPossibleStartPt()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_ab804f92e8092366daaf563075c757476} 
+Clipper\+Lib\+::\+Int\+Point Utek\+::\+Polygon\+Start\+Changer\+::get\+Possible\+Start\+Pt (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{first\+Pt}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{before\+Pt}{, }\item[{float}]{startK}{, }\item[{float}]{start\+Dis}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a6c91af49f4e6ebf3c685e97d8fc75c6e}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!getPossibleStartPtRev@{getPossibleStartPtRev}}
+\index{getPossibleStartPtRev@{getPossibleStartPtRev}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{getPossibleStartPtRev()}{getPossibleStartPtRev()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a6c91af49f4e6ebf3c685e97d8fc75c6e} 
+Clipper\+Lib\+::\+Int\+Point Utek\+::\+Polygon\+Start\+Changer\+::get\+Possible\+Start\+Pt\+Rev (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{first\+Pt}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{before\+Pt}{, }\item[{float}]{startK}{, }\item[{float}]{start\+Dis}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a0accae1530c0ad440193b5ca94f6b6c9}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!getStartChanger@{getStartChanger}}
+\index{getStartChanger@{getStartChanger}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{getStartChanger()}{getStartChanger()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a0accae1530c0ad440193b5ca94f6b6c9} 
+\mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{Return\+Path\+Pack}} Utek\+::\+Polygon\+Start\+Changer\+::get\+Start\+Changer (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{path}{, }\item[{const \mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{Start\+Changer\+Para}} \&}]{paras}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_aaa88da97d08b77dfa0975b7af7828f6d}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!getStartChangerPrivate@{getStartChangerPrivate}}
+\index{getStartChangerPrivate@{getStartChangerPrivate}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{getStartChangerPrivate()}{getStartChangerPrivate()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_aaa88da97d08b77dfa0975b7af7828f6d} 
+\mbox{\hyperlink{namespace_utek_af2db6906e33fb8fe0bee1f3faf62128a}{Return\+Path\+Pack}} Utek\+::\+Polygon\+Start\+Changer\+::get\+Start\+Changer\+Private (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{path}{, }\item[{const \mbox{\hyperlink{namespace_utek_a40061f8f23c585e8b8fc7644784c6418}{Start\+Changer\+Para}} \&}]{paras}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_ab1534468627d15629ec8a4f9ae8d54a3}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!intersecting@{intersecting}}
+\index{intersecting@{intersecting}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{intersecting()}{intersecting()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_ab1534468627d15629ec8a4f9ae8d54a3} 
+bool Utek\+::\+Polygon\+Start\+Changer\+::intersecting (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Path \&}]{path}{, }\item[{const int \&}]{n\+Index}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{pt}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a20f08cccb91ed780567896398a081bd1}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!normalVector@{normalVector}}
+\index{normalVector@{normalVector}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{normalVector()}{normalVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a20f08cccb91ed780567896398a081bd1} 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} Utek\+::\+Polygon\+Start\+Changer\+::normal\+Vector (\begin{DoxyParamCaption}\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{pt1}{, }\item[{const Clipper\+Lib\+::\+Int\+Point \&}]{pt2}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a98c65fc0618e9a3a2c620f0bca760f05}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!normalVector@{normalVector}}
+\index{normalVector@{normalVector}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{normalVector()}{normalVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a98c65fc0618e9a3a2c620f0bca760f05} 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} Utek\+::\+Polygon\+Start\+Changer\+::normal\+Vector (\begin{DoxyParamCaption}\item[{float}]{k}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a8d501992cc3ba65fcc0fb11c368bacbf}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!normalVector@{normalVector}}
+\index{normalVector@{normalVector}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{normalVector()}{normalVector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a8d501992cc3ba65fcc0fb11c368bacbf} 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} Utek\+::\+Polygon\+Start\+Changer\+::normal\+Vector (\begin{DoxyParamCaption}\item[{float}]{x1}{, }\item[{float}]{y1}{, }\item[{float}]{x2}{, }\item[{float}]{y2}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_a7f1fdd75d2e98edb6d15f41e83679bf8}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!push@{push}}
+\index{push@{push}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_a7f1fdd75d2e98edb6d15f41e83679bf8} 
+void Utek\+::\+Polygon\+Start\+Changer\+::push (\begin{DoxyParamCaption}\item[{Clipper\+Lib\+::\+Path \&}]{path}{, }\item[{int}]{move\+Step}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_utek_1_1_polygon_start_changer_aa592a6744de4bdae7cd95a92b5c31d40}\index{Utek::PolygonStartChanger@{Utek::PolygonStartChanger}!unitVector@{unitVector}}
+\index{unitVector@{unitVector}!Utek::PolygonStartChanger@{Utek::PolygonStartChanger}}
+\doxysubsubsection{\texorpdfstring{unitVector()}{unitVector()}}
+{\footnotesize\ttfamily \label{class_utek_1_1_polygon_start_changer_aa592a6744de4bdae7cd95a92b5c31d40} 
+\mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} Utek\+::\+Polygon\+Start\+Changer\+::unit\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_utek_1_1_vector2d}{Vector2d}} \&}]{vec}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{polygonstartchanger_8h}{polygonstartchanger.\+h}}\item 
+\mbox{\hyperlink{polygonstartchanger_8cpp}{polygonstartchanger.\+cpp}}\end{DoxyCompactItemize}

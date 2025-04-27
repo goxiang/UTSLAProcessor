@@ -1,0 +1,97 @@
+\doxysection{uspfiledef.\+h}
+\hypertarget{uspfiledef_8h_source}{}\label{uspfiledef_8h_source}\mbox{\hyperlink{uspfiledef_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ USPFILEDEF\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ USPFILEDEF\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtGlobal>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QMutex>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QFile>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a33472975c4e219d671961ac701c74182a5c1b3ea062541039d95de6c5a6fefadb}{UFFWRITE\_BEGIN}}\ =\ 0,}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a33472975c4e219d671961ac701c74182a87b6ad567a7d0c58e1a1e9b4bf28c848}{UFFWRITE\_END}}}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72}{\_\_FILE\_SECTIONID}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aca4a81835c0e98b41081925446c4d679}{SECTION\_LAYER}}\ \ \ \ \ \ \ =\ 0xB,}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72adb64779740a7357af57b5ce20dc57541}{SECTION\_PARTINDEX}},}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5022b3baac1c509960d29da899d50759}{SECTION\_MINX}},}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2740f8df0b8b7f5d4a8bab1d4a35c003}{SECTION\_MAXX}},}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bacb9d1d57ebc4213343f3fb07f5ec2}{SECTION\_MINY}},}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a195eda6a6a43a68afe3f5a18ef58f56c}{SECTION\_MAXY}},}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a54d293cebe1fa85c5dad25966010f7ae}{SECTION\_LASERPOWER}},}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a672ace573c1cc09e3b84737e056d4068}{SECTION\_MARKSPEED}},}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a13043892bf5e1cd12c4e7261b1fe7892}{SECTION\_FOCUSSHIFT}},}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aff2b72bebd69fa1e27a8bd6d9fb2f704}{SECTION\_CURRENTBEAMINDEX}},}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a77220cf1a92d14a954774548b62ccab8}{SECTION\_LAYERAREAS}},}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aa1e63b35a5b6a7aa3d9993a9a359d537}{SECTION\_CURRENTSCANNERINDEX}},}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5f67d86d36470307473000c625950cf8}{SECTION\_POLYGON}}\ \ \ \ \ =\ 0x30,}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0bb50446b9a4f1ac5e4ec91355d44084}{SECTION\_POLYGONCOOR}},}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a041febfaf7a50e2c9d15d5c4d2db7a34}{SECTION\_HATCH}},}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ab3f1f6a157d669cd26fd11307c903d22}{SECTION\_HATCHCOOR}},}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a17453789a06cec3fec136807be644013}{SECTION\_SUPPORT}},}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a0693c3a327a9f77351297c01dd4866ff}{SECTION\_SUPPORTCOOR}},}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a93d6068a4bd22a4dacdcabf5ce9207b1}{SECTION\_HATCH\_DOWNFILL}},}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72ad2b41c6be6f18d312814fb379c1fe371}{SECTION\_HATCHDOWNFILLCOOR}},}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72aeafe781d644db76dfa9ec3c990678ed2}{SECTION\_HATCH\_UPFILL}},}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a2e1b7a556e127c861110a65d37a64ef7}{SECTION\_HATCHUPFILLCOOR}},}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a5513522970b77fc4edc220c104fa2c89}{SECTION\_HATCH\_SMALL}},}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a86143ba9f629cd245217431e76245557}{SECTION\_HATCHSMALL\_COOR}},}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a19af26280a2f410f3995ea35c36c1b73}{SECTION\_LAYEREND}},}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a40d838b0939d7897ef0b37d3bc0d1151}{SECTION\_FILEEND}},}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a590b9f26a46c5b42e9c945241476b926}{SECTION\_SSHATCH}}\ =\ 0x50,\ \textcolor{comment}{//SolidSupport}}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72af545445f5fc1956a66a53f5c537140ee}{SECTION\_SSHATCHCOOR}},}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a45bb897f23cb952cc4c5b6cb0f43ce9d}{SECTION\_SSPOLYGON}},}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a3dea7d03e6fe97504dfa3bcb9ca258b8}{SECTION\_SSPOLYGONCOOR}},}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a6cf7918eb867be2861a87484714b2489}{SECTION\_SCANTYPE\_JUMP}}\ \ \ =\ 0x60,}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a9242b7e6173871e8377ef97e593e2f9b}{SECTION\_SCANTYPE\_MARK}},}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a8409fd1ff81ec5d3f87bbf0ede42fed2}{SECTION\_SCANTYPE\_MARKLOOP}},}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{uspfiledef_8h_a506156d9309c69ccab6f8c9c66973b72a657fbead48b5fe6f883cfdea43b48031}{SECTION\_SCANTYPE\_FINISHED}}}
+\DoxyCodeLine{00053\ \}\mbox{\hyperlink{uspfiledef_8h_abbc0bb2d96622a76f20c00c549b81389}{FILE\_SECTIONID}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}}\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ qint8\ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e_a3b5773941df5e709004f8754b751d0b8}{nLineType}};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e_a54216a4632a245d8c83528adaf336dd1}{nX}};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e_a23340b552f7bc1309b85ae594122db7a}{nY}};}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{comment}{//typedef\ QSharedPointer<SCANLINE>\ SCANLINEPTR;}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a7f8965b687144be5d06052419803fb6a}{UFFWRITEDATA}}\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ qint8\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a61252256a18411dcb583c2b6711c3dbe}{nMode\_Section}};}
+\DoxyCodeLine{00065\ \ \ \ \ qint8\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_af9b8a0b33f1b891865b3f8d3e1fa1e45}{nMode\_Coor}};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a909244201c111d4873a17156bdd60a2e}{nPartIndex}}\ =\ 0;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a3b16a2eb9b2f2b26da737c34b194be8c}{nLaserPower}};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a35cb0cb15ce964c387439e8cc4e4a844}{nMarkSpeed}};}
+\DoxyCodeLine{00069\ \ \ \ \ QVector<SCANLINE>\ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a834d88229774c47dcb5ce5193bf5e449}{listSLines}};}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a7f8965b687144be5d06052419803fb6a}{UFFWRITEDATA}}()\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a61252256a18411dcb583c2b6711c3dbe}{nMode\_Section}}\ =\ -\/1;}
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{typedef}\ QSharedPointer<UFFWRITEDATA>\ \mbox{\hyperlink{uspfiledef_8h_a91daa2136671e89e1287d6857a990ae8}{UFFWDATAPTR}};}
+\DoxyCodeLine{00076\ \textcolor{comment}{//typedef\ QVector<UFFWDATAPTR>\ LISTUFFWDATAPTR;}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a_aaedd03595b050e0b8472229bf9091331}{UFILEDATA}}\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ QMutex\ \mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a_a74d9eb1f6acf740ecd9008a94d3db4cb}{gLocker\_UFD}};}
+\DoxyCodeLine{00080\ \ \ \ \ QVector<UFFWRITEDATA>\ \mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a_a1ee659d8be61236f924b6dcaaa3cf60e}{gListUFileData}};}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a_aaedd03595b050e0b8472229bf9091331}{UFILEDATA}}()\ \{\textcolor{comment}{/*gListUFileData.clear();*/}\}}
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00085\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{uspfiledef_8h_a9c8c392c2e62ad12e1fc787aafe416a7}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}}\ \&line)}
+\DoxyCodeLine{00086\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ debug\ =\ debug.nospace();}
+\DoxyCodeLine{00088\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}("{}}\ <<\ line.\mbox{\hyperlink{struct_s_c_a_n_l_i_n_e_a3b5773941df5e709004f8754b751d0b8}{nLineType}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ line.\mbox{\hyperlink{struct_s_c_a_n_l_i_n_e_a54216a4632a245d8c83528adaf336dd1}{nX}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ line.\mbox{\hyperlink{struct_s_c_a_n_l_i_n_e_a23340b552f7bc1309b85ae594122db7a}{nY}}\ <<\ \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00090\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ USPFILEDEF\_H}}
+
+\end{DoxyCode}

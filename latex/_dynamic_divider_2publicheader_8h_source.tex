@@ -1,0 +1,85 @@
+\doxysection{publicheader.\+h}
+\hypertarget{_dynamic_divider_2publicheader_8h_source}{}\label{_dynamic_divider_2publicheader_8h_source}\index{DynamicDivider/publicheader.h@{DynamicDivider/publicheader.h}}
+\mbox{\hyperlink{_dynamic_divider_2publicheader_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PUBLICHEADER\_HHH\_HH\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PUBLICHEADER\_HHH\_HH\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{algorithmdistribution_8h}{algorithmdistribution.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_distribution_info}{DistributionInfo}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{struct_distribution_info_a749d974e10571889097a175108aecafc}{\_waitingDistribution}};}
+\DoxyCodeLine{00011\ \ \ \ \ std::set<int>\ \mbox{\hyperlink{struct_distribution_info_a754ebc1977c18f3579694e8a216dec1d}{\_waitingSegmented}};}
+\DoxyCodeLine{00012\ \ \ \ \ std::set<int>\ \mbox{\hyperlink{struct_distribution_info_ae823c8999312d092aec43391d1882010}{\_dynamicSegmented}};}
+\DoxyCodeLine{00013\ \ \ \ \ std::set<int>\ \mbox{\hyperlink{struct_distribution_info_ac8718dd1d56026538e2c91824e5c6788}{\_distributing}};}
+\DoxyCodeLine{00014\ \ \ \ \ std::set<int>\ \mbox{\hyperlink{struct_distribution_info_ac9f1b0819855dd547794782faa15bbea}{\_distributed}};}
+\DoxyCodeLine{00015\ \ \ \ \ std::vector<DistributionResult>\ \mbox{\hyperlink{struct_distribution_info_a81001ab650cdf0e1fbffda3caa8b1813}{\_distriResult}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_distribution_info_a0f05fa6446713811ac2823dab1ada659}{initValue}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&containerCnt)\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_distribution_info_a749d974e10571889097a175108aecafc}{\_waitingDistribution}}.clear();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_distribution_info_a754ebc1977c18f3579694e8a216dec1d}{\_waitingSegmented}}.clear();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_distribution_info_ae823c8999312d092aec43391d1882010}{\_dynamicSegmented}}.clear();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_distribution_info_ac8718dd1d56026538e2c91824e5c6788}{\_distributing}}.clear();}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_distribution_info_ac9f1b0819855dd547794782faa15bbea}{\_distributed}}.clear();}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_distribution_info_a81001ab650cdf0e1fbffda3caa8b1813}{\_distriResult}}.clear();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ containerCnt;\ ++\ i)\ \mbox{\hyperlink{struct_distribution_info_a81001ab650cdf0e1fbffda3caa8b1813}{\_distriResult}}.push\_back(\mbox{\hyperlink{struct_distribution_result}{DistributionResult}}());}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ DistributionResult\ Operate}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a01b72dbeca6c3b6f901639c95f0f53ab}{updateResInfo}}(\mbox{\hyperlink{struct_distribution_result}{DistributionResult}}\ \&disRes,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \&refWeigth)}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ disRes.\mbox{\hyperlink{struct_distribution_result_a0b46f55722e0d468484c462d38b6f8be}{\_totalWeight}}\ =\ 0.0;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&partInfo\ :\ disRes.\mbox{\hyperlink{struct_distribution_result_ab87e0100139c6e0d81dd4afb319d1948}{\_partsList}})\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ disRes.\mbox{\hyperlink{struct_distribution_result_a0b46f55722e0d468484c462d38b6f8be}{\_totalWeight}}\ +=\ partInfo.\_realWeight;}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_distribution_result}{DistributionResult}}\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(\mbox{\hyperlink{struct_distribution_result}{DistributionResult}}\ \&disRes,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_part_info}{PartInfo}}\ \&partInfo)}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ disRes.\mbox{\hyperlink{struct_distribution_result_ab87e0100139c6e0d81dd4afb319d1948}{\_partsList}}.push\_back(partInfo);}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a01b72dbeca6c3b6f901639c95f0f53ab}{updateResInfo}}(disRes,\ 0);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{return}\ disRes;}
+\DoxyCodeLine{00043\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{comment}{//QDebug}}
+\DoxyCodeLine{00046\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_part_info}{PartInfo}}\ \&partInfo)}
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ QDebugStateSaver\ saver(debug);}
+\DoxyCodeLine{00049\ \ \ \ \ debug.nospace()\ <<\ \textcolor{charliteral}{'\{'}\ <<\ partInfo.\mbox{\hyperlink{struct_part_info_a785decd515538ccb2fba72fd81ebdec5}{\_index}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ partInfo.\mbox{\hyperlink{struct_part_info_ad108ac4fa8c7526f93e4a12a4abbfe25}{\_realWeight}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ partInfo.\mbox{\hyperlink{struct_part_info_a811b2cea18798cec4c1b6c9e3ce7ea68}{\_weight}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ partInfo.\mbox{\hyperlink{struct_part_info_a227e31059c739b609fa9606c548ba98f}{\_factor}}\ <<\ \textcolor{charliteral}{'\}'};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00055\ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_distribution_result}{DistributionResult}}\ \&disRes)}
+\DoxyCodeLine{00058\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ QDebugStateSaver\ saver(debug);}
+\DoxyCodeLine{00060\ \ \ \ \ debug.nospace()\ <<\ \textcolor{charliteral}{'\{'}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ disRes.\mbox{\hyperlink{struct_distribution_result_a0b46f55722e0d468484c462d38b6f8be}{\_totalWeight}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&part\ :\ disRes.\mbox{\hyperlink{struct_distribution_result_ab87e0100139c6e0d81dd4afb319d1948}{\_partsList}})\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ debug.nospace()\ <<\ part;}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ debug.nospace()\ <<\ \textcolor{charliteral}{'\}'};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00069\ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_segements_info}{SegementsInfo}}\ \&segementsInfo)}
+\DoxyCodeLine{00072\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ QDebugStateSaver\ saver(debug);}
+\DoxyCodeLine{00074\ \ \ \ \ debug.nospace()\ <<\ \textcolor{stringliteral}{"{}\{\ "{}}\ <<\ segementsInfo.\mbox{\hyperlink{struct_segements_info_a702585f416c21c76bd19809c19ee713d}{\_index}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ segementsInfo.\mbox{\hyperlink{struct_segements_info_a73f3090ab7b7d61a3537e07c78d1d84b}{\_rateVec}}\ <<\ \textcolor{stringliteral}{"{}\ \}"{}};}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00077\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

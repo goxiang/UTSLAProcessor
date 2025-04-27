@@ -1,0 +1,248 @@
+\doxysection{Scan\+Lines\+Sortor\+::Priv结构体 参考}
+\hypertarget{struct_scan_lines_sortor_1_1_priv}{}\label{struct_scan_lines_sortor_1_1_priv}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_ac8b0d99082630c7803fa29922aa90cbf}{calc\+Sort\+Line\+Vec}} (const QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&src\+Vec, QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&sort\+Line\+Vec)
+\begin{DoxyCompactList}\small\item\em 从原始扫描线数据中提取有效的扫描线段信息 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_aae283f96ef968b3f2c819c2f1c154b87}{calc\+Sort\+Line\+Vec}} (const Paths \&paths, QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&sort\+Line\+Vec)
+\begin{DoxyCompactList}\small\item\em 从路径集合中提取扫描线段信息 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_ae0dc656f08a0f31aac1637fbc0717592}{recalc\+Scan\+Line}} (QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&src\+Vec, QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ sort\+Line\+Vec, const QVector$<$ int $>$ \&index\+Vec)
+\begin{DoxyCompactList}\small\item\em 根据优化后的顺序重新计算扫描线序列 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_a989d2ad7673c5b541268ba1bdfa9ff68}{recalc\+Scan\+Line}} (Paths \&src\+Vec, QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ sort\+Line\+Vec, const QVector$<$ int $>$ \&index\+Vec)
+\begin{DoxyCompactList}\small\item\em 根据优化后的顺序重新计算路径序列 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_a60b7a0f26235ccd1af88e4afc4e21f60}{calc\+Jump\+And\+Mark\+Lenth}} (const QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&line\+List, qint64 \&jump, qint64 \&mark, qint64 \&jump\+Count, qint64 \&mark\+Count)
+\begin{DoxyCompactList}\small\item\em 计算扫描线序列的跳转和标记长度 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_ac8b52971c8da4d4bde7ebe6812cfbdd5}{calc\+Jump\+And\+Mark\+Lenth}} (const Paths \&paths, qint64 \&jump, qint64 \&mark, qint64 \&jump\+Count, qint64 \&mark\+Count)
+\begin{DoxyCompactList}\small\item\em 计算路径集合的跳转和标记长度 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_a35758bec02204a1d9be47a26c0837a25}{calc\+Index\+Vec}} (QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&src\+Vec, QVector$<$ int $>$ \&index\+Vec)
+\begin{DoxyCompactList}\small\item\em 计算扫描线的最优连接顺序 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_adbdc02fe3b25b36707f01ebcb1184567}{calc\+Min\+Dis\+Pos}} (const QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&src\+Vec, const QVector$<$ int $>$ \&index\+Vec, const QVector$<$ int $>$ \&list\+Index, const bool \&reversed, \mbox{\hyperlink{struct_matched_line_info}{Matched\+Line\+Info}} \&matched\+Info)
+\begin{DoxyCompactList}\small\item\em 计算给定网格中距离最近的扫描线位置 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_a94766712aee1eebaee497bd1ecc35845}{platform\+Width}} = 300
+\item 
+int \mbox{\hyperlink{struct_scan_lines_sortor_1_1_priv_a352dfdbdcc09ef5b53f9b66a8bd7b819}{platform\+Height}} = 300
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_a35758bec02204a1d9be47a26c0837a25}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!calcIndexVec@{calcIndexVec}}
+\index{calcIndexVec@{calcIndexVec}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{calcIndexVec()}{calcIndexVec()}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_a35758bec02204a1d9be47a26c0837a25} 
+static void Scan\+Lines\+Sortor\+::\+Priv\+::calc\+Index\+Vec (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&}]{src\+Vec}{, }\item[{QVector$<$ int $>$ \&}]{index\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+计算扫描线的最优连接顺序 
+
+该函数通过网格划分和最近邻搜索算法,计算扫描线的最优连接顺序。 主要步骤\+:
+\begin{DoxyEnumerate}
+\item 计算所有扫描线的边界框
+\item 根据边界框创建网格划分
+\item 将扫描线端点映射到网格
+\item 通过网格搜索计算最优连接顺序
+\item 支持双向搜索以获得全局最优解
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{参数}
+{\em src\+Vec} & 输入参数,原始扫描线信息向量,包含每条扫描线的起点终点坐标等信息 \\
+\hline
+{\em index\+Vec} & 输出参数,计算得到的最优连接顺序索引向量\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{注解}
+函数使用网格划分来优化搜索效率,通过\+BIDIRECTIONAL宏控制是否启用双向搜索 
+\end{DoxyNote}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_ac8b52971c8da4d4bde7ebe6812cfbdd5}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!calcJumpAndMarkLenth@{calcJumpAndMarkLenth}}
+\index{calcJumpAndMarkLenth@{calcJumpAndMarkLenth}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{calcJumpAndMarkLenth()}{calcJumpAndMarkLenth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_ac8b52971c8da4d4bde7ebe6812cfbdd5} 
+void Scan\+Lines\+Sortor\+::\+Priv\+::calc\+Jump\+And\+Mark\+Lenth (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{qint64 \&}]{jump}{, }\item[{qint64 \&}]{mark}{, }\item[{qint64 \&}]{jump\+Count}{, }\item[{qint64 \&}]{mark\+Count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+计算路径集合的跳转和标记长度 
+
+该函数计算路径集合中的跳转和标记总长度及次数。 每条路径的第一个点到上一条路径终点的距离计为跳转长度, 路径内部点之间的距离计为标记长度。
+
+
+\begin{DoxyParams}{参数}
+{\em paths} & 输入参数,路径集合 \\
+\hline
+{\em jump} & 输出参数,跳转总长度 \\
+\hline
+{\em mark} & 输出参数,标记总长度 \\
+\hline
+{\em jump\+Count} & 输出参数,跳转次数 \\
+\hline
+{\em mark\+Count} & 输出参数,标记次数 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_a60b7a0f26235ccd1af88e4afc4e21f60}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!calcJumpAndMarkLenth@{calcJumpAndMarkLenth}}
+\index{calcJumpAndMarkLenth@{calcJumpAndMarkLenth}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{calcJumpAndMarkLenth()}{calcJumpAndMarkLenth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_a60b7a0f26235ccd1af88e4afc4e21f60} 
+void Scan\+Lines\+Sortor\+::\+Priv\+::calc\+Jump\+And\+Mark\+Lenth (\begin{DoxyParamCaption}\item[{const QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{line\+List}{, }\item[{qint64 \&}]{jump}{, }\item[{qint64 \&}]{mark}{, }\item[{qint64 \&}]{jump\+Count}{, }\item[{qint64 \&}]{mark\+Count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+计算扫描线序列的跳转和标记长度 
+
+该函数计算扫描线序列中跳转(\+JUMP)和标记(\+MARK)的总长度及次数。 长度通过欧氏距离计算,并乘以0.001的比例系数转换单位。
+
+
+\begin{DoxyParams}{参数}
+{\em line\+List} & 输入参数,扫描线序列 \\
+\hline
+{\em jump} & 输出参数,跳转总长度 \\
+\hline
+{\em mark} & 输出参数,标记总长度 \\
+\hline
+{\em jump\+Count} & 输出参数,跳转次数 \\
+\hline
+{\em mark\+Count} & 输出参数,标记次数 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_adbdc02fe3b25b36707f01ebcb1184567}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!calcMinDisPos@{calcMinDisPos}}
+\index{calcMinDisPos@{calcMinDisPos}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{calcMinDisPos()}{calcMinDisPos()}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_adbdc02fe3b25b36707f01ebcb1184567} 
+static void Scan\+Lines\+Sortor\+::\+Priv\+::calc\+Min\+Dis\+Pos (\begin{DoxyParamCaption}\item[{const QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&}]{src\+Vec}{, }\item[{const QVector$<$ int $>$ \&}]{index\+Vec}{, }\item[{const QVector$<$ int $>$ \&}]{list\+Index}{, }\item[{const bool \&}]{reversed}{, }\item[{\mbox{\hyperlink{struct_matched_line_info}{Matched\+Line\+Info}} \&}]{matched\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+计算给定网格中距离最近的扫描线位置 
+
+该函数计算当前端点到网格中所有未使用扫描线端点的距离, 找出距离最短的扫描线及其方向信息。
+
+
+\begin{DoxyParams}{参数}
+{\em src\+Vec} & 输入参数,所有扫描线信息向量 \\
+\hline
+{\em index\+Vec} & 输入参数,已使用的扫描线索引向量 \\
+\hline
+{\em list\+Index} & 输入参数,当前网格中的扫描线索引列表 \\
+\hline
+{\em reversed} & 输入参数,是否检查反向连接 \\
+\hline
+{\em matched\+Info} & 输出参数,存储找到的最近扫描线信息 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_aae283f96ef968b3f2c819c2f1c154b87}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!calcSortLineVec@{calcSortLineVec}}
+\index{calcSortLineVec@{calcSortLineVec}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{calcSortLineVec()}{calcSortLineVec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_aae283f96ef968b3f2c819c2f1c154b87} 
+void Scan\+Lines\+Sortor\+::\+Priv\+::calc\+Sort\+Line\+Vec (\begin{DoxyParamCaption}\item[{const Paths \&}]{paths}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&}]{sort\+Line\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+从路径集合中提取扫描线段信息 
+
+该函数遍历路径集合,将每条有效路径(至少包含2个点)的起点和终点信息 提取为扫描线段。每条路径生成一个扫描线段,包含起点终点坐标和在路径 集合中的索引位置。
+
+
+\begin{DoxyParams}{参数}
+{\em paths} & 输入参数,原始路径集合 \\
+\hline
+{\em sort\+Line\+Vec} & 输出参数,提取的扫描线段信息向量 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_ac8b0d99082630c7803fa29922aa90cbf}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!calcSortLineVec@{calcSortLineVec}}
+\index{calcSortLineVec@{calcSortLineVec}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{calcSortLineVec()}{calcSortLineVec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_ac8b0d99082630c7803fa29922aa90cbf} 
+void Scan\+Lines\+Sortor\+::\+Priv\+::calc\+Sort\+Line\+Vec (\begin{DoxyParamCaption}\item[{const QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{src\+Vec}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$ \&}]{sort\+Line\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+从原始扫描线数据中提取有效的扫描线段信息 
+
+该函数遍历原始扫描线数据,识别跳转点(JUMP类型)来确定每条有效扫描线的起点和终点, 并将提取的扫描线段信息保存到结果向量中。
+
+工作流程\+:
+\begin{DoxyEnumerate}
+\item 遇到\+JUMP类型点时\+:
+\begin{DoxyItemize}
+\item 如果是新扫描线开始,记录起点信息
+\item 如果是已开始扫描线的结束,记录终点信息并保存该线段
+\end{DoxyItemize}
+\item 处理最后一条未完成的扫描线(如果存在)
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{参数}
+{\em src\+Vec} & 输入参数,原始扫描线数据向量 \\
+\hline
+{\em sort\+Line\+Vec} & 输出参数,提取的有效扫描线段信息向量 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_a989d2ad7673c5b541268ba1bdfa9ff68}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!recalcScanLine@{recalcScanLine}}
+\index{recalcScanLine@{recalcScanLine}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{recalcScanLine()}{recalcScanLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_a989d2ad7673c5b541268ba1bdfa9ff68} 
+void Scan\+Lines\+Sortor\+::\+Priv\+::recalc\+Scan\+Line (\begin{DoxyParamCaption}\item[{Paths \&}]{src\+Vec}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$}]{sort\+Line\+Vec}{, }\item[{const QVector$<$ int $>$ \&}]{index\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+根据优化后的顺序重新计算路径序列 
+
+该函数根据优化后的索引顺序重新组织路径序列,支持路径的正向和反向处理。 对于需要反向的路径,会调用\+Reverse\+Path进行反转。
+
+
+\begin{DoxyParams}{参数}
+{\em src\+Vec} & 输入输出参数,原始路径向量,最终会被优化后的序列替换 \\
+\hline
+{\em sort\+Line\+Vec} & 输入参数,扫描线段信息向量 \\
+\hline
+{\em index\+Vec} & 输入参数,优化后的路径索引顺序 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_ae0dc656f08a0f31aac1637fbc0717592}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!recalcScanLine@{recalcScanLine}}
+\index{recalcScanLine@{recalcScanLine}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{recalcScanLine()}{recalcScanLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_ae0dc656f08a0f31aac1637fbc0717592} 
+void Scan\+Lines\+Sortor\+::\+Priv\+::recalc\+Scan\+Line (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{struct_s_c_a_n_l_i_n_e}{SCANLINE}} $>$ \&}]{src\+Vec}{, }\item[{QVector$<$ \mbox{\hyperlink{struct_sort_line_info}{Sort\+Line\+Info}} $>$}]{sort\+Line\+Vec}{, }\item[{const QVector$<$ int $>$ \&}]{index\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+根据优化后的顺序重新计算扫描线序列 
+
+该函数根据优化后的索引顺序重新组织扫描线序列,支持扫描线的正向和反向处理。 对于需要反向的扫描线,会交换其起点和终点的扫描类型。
+
+
+\begin{DoxyParams}{参数}
+{\em src\+Vec} & 输入输出参数,原始扫描线向量,最终会被优化后的序列替换 \\
+\hline
+{\em sort\+Line\+Vec} & 输入参数,扫描线段信息向量 \\
+\hline
+{\em index\+Vec} & 输入参数,优化后的扫描线索引顺序 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_a352dfdbdcc09ef5b53f9b66a8bd7b819}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!platformHeight@{platformHeight}}
+\index{platformHeight@{platformHeight}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{platformHeight}{platformHeight}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_a352dfdbdcc09ef5b53f9b66a8bd7b819} 
+int Scan\+Lines\+Sortor\+::\+Priv\+::platform\+Height = 300}
+
+\Hypertarget{struct_scan_lines_sortor_1_1_priv_a94766712aee1eebaee497bd1ecc35845}\index{ScanLinesSortor::Priv@{ScanLinesSortor::Priv}!platformWidth@{platformWidth}}
+\index{platformWidth@{platformWidth}!ScanLinesSortor::Priv@{ScanLinesSortor::Priv}}
+\doxysubsubsection{\texorpdfstring{platformWidth}{platformWidth}}
+{\footnotesize\ttfamily \label{struct_scan_lines_sortor_1_1_priv_a94766712aee1eebaee497bd1ecc35845} 
+int Scan\+Lines\+Sortor\+::\+Priv\+::platform\+Width = 300}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{scanlinessortor_8cpp}{scanlinessortor.\+cpp}}\end{DoxyCompactItemize}

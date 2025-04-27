@@ -1,0 +1,138 @@
+\doxysection{Write\+JFile类 参考}
+\hypertarget{class_write_j_file}{}\label{class_write_j_file}\index{WriteJFile@{WriteJFile}}
+
+
+{\ttfamily \#include $<$writejfile.\+h$>$}
+
+类 Write\+JFile 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_write_j_file}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_write_j_file_add050b56bf78375452579c45590d5627}{Write\+JFile}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_write_j_file_ac145333c576e91077f5e4a0491603ee8}{set\+JFile\+Layer\+Info}} (JFile\+Def\+::\+JFile\+Layer\+Info \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_write_j_file_a86b2bafdecde5cbfe79cefc3c2aac654}{set\+UFFStatus}} (int)
+\item 
+void \mbox{\hyperlink{class_write_j_file_adfe3950c5f03af1c325298fa992e7ca1}{set\+Para\+Write\+Buff}} (\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_write_j_file_a07c39a6e2967579aa80e0b98d533db03}{stop\+Thread}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_write_j_file_a2647bec6850d6d9c22f20270372780b7}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_write_j_file_af5121e4fc5a3d6c9570bae13089141ee}{m\+\_\+n\+UFData\+Status}}
+\item 
+int \mbox{\hyperlink{class_write_j_file_accabcf1e04595e8bbd21f6e58cad6c54}{m\+\_\+n\+Scanner\+Index}} = 0
+\item 
+bool \mbox{\hyperlink{class_write_j_file_aeae1cad6e30fb0627b37aa72220a0237}{m\+\_\+b\+Running}} = true
+\item 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_write_j_file_a76b815dc534793c7cc45904e5b8c1aee}{\+\_\+write\+Buff}} = nullptr
+\item 
+JFile\+Def\+::\+JFile\+Layer\+Info \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_write_j_file_a89d5a9c9373da01b034a0f92ebca279d}{j\+FLayer\+Info}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_write_j_file_ac4814796e0e39801cb1ae308d0ca25c1}{SLJob\+File\+Writer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_write_j_file_add050b56bf78375452579c45590d5627}\index{WriteJFile@{WriteJFile}!WriteJFile@{WriteJFile}}
+\index{WriteJFile@{WriteJFile}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{WriteJFile()}{WriteJFile()}}
+{\footnotesize\ttfamily \label{class_write_j_file_add050b56bf78375452579c45590d5627} 
+Write\+JFile\+::\+Write\+JFile (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_write_j_file_a2647bec6850d6d9c22f20270372780b7}\index{WriteJFile@{WriteJFile}!run@{run}}
+\index{run@{run}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_write_j_file_a2647bec6850d6d9c22f20270372780b7} 
+void Write\+JFile\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_j_file_ac145333c576e91077f5e4a0491603ee8}\index{WriteJFile@{WriteJFile}!setJFileLayerInfo@{setJFileLayerInfo}}
+\index{setJFileLayerInfo@{setJFileLayerInfo}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{setJFileLayerInfo()}{setJFileLayerInfo()}}
+{\footnotesize\ttfamily \label{class_write_j_file_ac145333c576e91077f5e4a0491603ee8} 
+void Write\+JFile\+::set\+JFile\+Layer\+Info (\begin{DoxyParamCaption}\item[{JFile\+Def\+::\+JFile\+Layer\+Info \texorpdfstring{$\ast$}{*}}]{layer\+Info}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_write_j_file_adfe3950c5f03af1c325298fa992e7ca1}\index{WriteJFile@{WriteJFile}!setParaWriteBuff@{setParaWriteBuff}}
+\index{setParaWriteBuff@{setParaWriteBuff}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{setParaWriteBuff()}{setParaWriteBuff()}}
+{\footnotesize\ttfamily \label{class_write_j_file_adfe3950c5f03af1c325298fa992e7ca1} 
+void Write\+JFile\+::set\+Para\+Write\+Buff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}} \texorpdfstring{$\ast$}{*}}]{lp\+Para\+Write\+Buff}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_write_j_file_a86b2bafdecde5cbfe79cefc3c2aac654}\index{WriteJFile@{WriteJFile}!setUFFStatus@{setUFFStatus}}
+\index{setUFFStatus@{setUFFStatus}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{setUFFStatus()}{setUFFStatus()}}
+{\footnotesize\ttfamily \label{class_write_j_file_a86b2bafdecde5cbfe79cefc3c2aac654} 
+void Write\+JFile\+::set\+UFFStatus (\begin{DoxyParamCaption}\item[{int}]{n\+Status}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_write_j_file_a07c39a6e2967579aa80e0b98d533db03}\index{WriteJFile@{WriteJFile}!stopThread@{stopThread}}
+\index{stopThread@{stopThread}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{stopThread()}{stopThread()}}
+{\footnotesize\ttfamily \label{class_write_j_file_a07c39a6e2967579aa80e0b98d533db03} 
+void Write\+JFile\+::stop\+Thread (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{友元及相关符号说明}
+\Hypertarget{class_write_j_file_ac4814796e0e39801cb1ae308d0ca25c1}\index{WriteJFile@{WriteJFile}!SLJobFileWriter@{SLJobFileWriter}}
+\index{SLJobFileWriter@{SLJobFileWriter}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{SLJobFileWriter}{SLJobFileWriter}}
+{\footnotesize\ttfamily \label{class_write_j_file_ac4814796e0e39801cb1ae308d0ca25c1} 
+friend class \mbox{\hyperlink{class_s_l_job_file_writer}{SLJob\+File\+Writer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_write_j_file_a76b815dc534793c7cc45904e5b8c1aee}\index{WriteJFile@{WriteJFile}!\_writeBuff@{\_writeBuff}}
+\index{\_writeBuff@{\_writeBuff}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{\_writeBuff}{\_writeBuff}}
+{\footnotesize\ttfamily \label{class_write_j_file_a76b815dc534793c7cc45904e5b8c1aee} 
+\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f}{PARAWRITEBUFF}}\texorpdfstring{$\ast$}{*} Write\+JFile\+::\+\_\+write\+Buff = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_j_file_a89d5a9c9373da01b034a0f92ebca279d}\index{WriteJFile@{WriteJFile}!jFLayerInfo@{jFLayerInfo}}
+\index{jFLayerInfo@{jFLayerInfo}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{jFLayerInfo}{jFLayerInfo}}
+{\footnotesize\ttfamily \label{class_write_j_file_a89d5a9c9373da01b034a0f92ebca279d} 
+JFile\+Def\+::\+JFile\+Layer\+Info\texorpdfstring{$\ast$}{*} Write\+JFile\+::j\+FLayer\+Info = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_j_file_aeae1cad6e30fb0627b37aa72220a0237}\index{WriteJFile@{WriteJFile}!m\_bRunning@{m\_bRunning}}
+\index{m\_bRunning@{m\_bRunning}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{m\_bRunning}{m\_bRunning}}
+{\footnotesize\ttfamily \label{class_write_j_file_aeae1cad6e30fb0627b37aa72220a0237} 
+bool Write\+JFile\+::m\+\_\+b\+Running = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_j_file_accabcf1e04595e8bbd21f6e58cad6c54}\index{WriteJFile@{WriteJFile}!m\_nScannerIndex@{m\_nScannerIndex}}
+\index{m\_nScannerIndex@{m\_nScannerIndex}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{m\_nScannerIndex}{m\_nScannerIndex}}
+{\footnotesize\ttfamily \label{class_write_j_file_accabcf1e04595e8bbd21f6e58cad6c54} 
+int Write\+JFile\+::m\+\_\+n\+Scanner\+Index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_write_j_file_af5121e4fc5a3d6c9570bae13089141ee}\index{WriteJFile@{WriteJFile}!m\_nUFDataStatus@{m\_nUFDataStatus}}
+\index{m\_nUFDataStatus@{m\_nUFDataStatus}!WriteJFile@{WriteJFile}}
+\doxysubsubsection{\texorpdfstring{m\_nUFDataStatus}{m\_nUFDataStatus}}
+{\footnotesize\ttfamily \label{class_write_j_file_af5121e4fc5a3d6c9570bae13089141ee} 
+int Write\+JFile\+::m\+\_\+n\+UFData\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{writejfile_8h}{writejfile.\+h}}\item 
+\mbox{\hyperlink{writejfile_8cpp}{writejfile.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\doxysection{Water\+Distribution\+Priv类 参考}
+\hypertarget{class_water_distribution_priv}{}\label{class_water_distribution_priv}\index{WaterDistributionPriv@{WaterDistributionPriv}}
+
+
+{\ttfamily \#include $<$waterdistributionpriv.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_water_distribution_priv_ad5a43f05521a66323fc378531142014d}{Water\+Distribution\+Priv}} ()=default
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_distribution_result}{Distribution\+Result}} $>$ \mbox{\hyperlink{class_water_distribution_priv_a504518376759508fd8f332d5a049c345}{init\+Distribution}} (const std\+::map$<$ int, double $>$ \&in\+Map, const int \&container\+Cnt, const double \&tolerance)
+\item 
+void \mbox{\hyperlink{class_water_distribution_priv_ae88526c9df21cd23044e5ed56f53e7c7}{start\+Distribution}} (std\+::vector$<$ \mbox{\hyperlink{struct_distribution_result}{Distribution\+Result}} $>$ \&, std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&, const int \&, const int \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_water_distribution_priv_aecf896c97d4daddd6c0119f6ecaea4b1}{create\+Mate\+Vec}} (const std\+::map$<$ int, double $>$ \&in\+Map, std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&, const int \&)
+\begin{DoxyCompactList}\small\item\em private \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_water_distribution_priv_afe2d4279ce8d4a830547d36dd993132e}{sort\+Weight\+Vec}} (std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&mate\+Vec)
+\item 
+void \mbox{\hyperlink{class_water_distribution_priv_a86884b3d1183b644c0c1a5f0c5efbd12}{segement\+Parts}} (std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&in\+Array, std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&out1, std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&out2, const double \&, const double \&, const int \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_water_distribution_priv_a172f8a1d8830e6744d25a5708572d59e}{\+\_\+distribution\+Num}} = 1
+\item 
+double \mbox{\hyperlink{class_water_distribution_priv_abbae62d192ac019e55b15b18d3d59173}{\+\_\+tolerance}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_water_distribution_priv_ae4ea806e890ed18ec82b7a708dba938f}{\+\_\+average\+Weight}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_water_distribution_priv_ae81461c6cad6323357371ad43210aa96}{\+\_\+max\+Total\+Weight}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_water_distribution_priv_a1c61fa369dc29e70776f7486a67e90da}{\+\_\+allowed\+Segement\+Area}} = 2.\+5E7
+\item 
+double \mbox{\hyperlink{class_water_distribution_priv_a7cadcb4c8221e211e0539c624b481aaf}{\+\_\+allowed\+Min\+Area}} = 2E6
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{class_water_distribution_priv_ad5a43f05521a66323fc378531142014d}\index{WaterDistributionPriv@{WaterDistributionPriv}!WaterDistributionPriv@{WaterDistributionPriv}}
+\index{WaterDistributionPriv@{WaterDistributionPriv}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{WaterDistributionPriv()}{WaterDistributionPriv()}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_ad5a43f05521a66323fc378531142014d} 
+Water\+Distribution\+Priv\+::\+Water\+Distribution\+Priv (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{class_water_distribution_priv_aecf896c97d4daddd6c0119f6ecaea4b1}\index{WaterDistributionPriv@{WaterDistributionPriv}!createMateVec@{createMateVec}}
+\index{createMateVec@{createMateVec}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{createMateVec()}{createMateVec()}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_aecf896c97d4daddd6c0119f6ecaea4b1} 
+double Water\+Distribution\+Priv\+::create\+Mate\+Vec (\begin{DoxyParamCaption}\item[{const std\+::map$<$ int, double $>$ \&}]{in\+Map}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&}]{mate\+Vec}{, }\item[{const int \&}]{distribution\+Num}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+private 
+
+\Hypertarget{class_water_distribution_priv_a504518376759508fd8f332d5a049c345}\index{WaterDistributionPriv@{WaterDistributionPriv}!initDistribution@{initDistribution}}
+\index{initDistribution@{initDistribution}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{initDistribution()}{initDistribution()}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_a504518376759508fd8f332d5a049c345} 
+std\+::vector$<$ \mbox{\hyperlink{struct_distribution_result}{Distribution\+Result}} $>$ Water\+Distribution\+Priv\+::init\+Distribution (\begin{DoxyParamCaption}\item[{const std\+::map$<$ int, double $>$ \&}]{in\+Map}{, }\item[{const int \&}]{container\+Cnt}{, }\item[{const double \&}]{tolerance}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_water_distribution_priv_a86884b3d1183b644c0c1a5f0c5efbd12}\index{WaterDistributionPriv@{WaterDistributionPriv}!segementParts@{segementParts}}
+\index{segementParts@{segementParts}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{segementParts()}{segementParts()}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_a86884b3d1183b644c0c1a5f0c5efbd12} 
+void Water\+Distribution\+Priv\+::segement\+Parts (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&}]{in\+Array}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&}]{out1}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&}]{out2}{, }\item[{const double \&}]{rate1}{, }\item[{const double \&}]{rate2}{, }\item[{const int \&}]{container\+Cnt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_water_distribution_priv_afe2d4279ce8d4a830547d36dd993132e}\index{WaterDistributionPriv@{WaterDistributionPriv}!sortWeightVec@{sortWeightVec}}
+\index{sortWeightVec@{sortWeightVec}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{sortWeightVec()}{sortWeightVec()}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_afe2d4279ce8d4a830547d36dd993132e} 
+void Water\+Distribution\+Priv\+::sort\+Weight\+Vec (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&}]{mate\+Vec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_water_distribution_priv_ae88526c9df21cd23044e5ed56f53e7c7}\index{WaterDistributionPriv@{WaterDistributionPriv}!startDistribution@{startDistribution}}
+\index{startDistribution@{startDistribution}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{startDistribution()}{startDistribution()}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_ae88526c9df21cd23044e5ed56f53e7c7} 
+void Water\+Distribution\+Priv\+::start\+Distribution (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_distribution_result}{Distribution\+Result}} $>$ \&}]{res}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_part_info}{Part\+Info}} $>$ \&}]{mate\+Vec}{, }\item[{const int \&}]{container\+Cnt}{, }\item[{const int \&}]{start\+Pos}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{class_water_distribution_priv_a7cadcb4c8221e211e0539c624b481aaf}\index{WaterDistributionPriv@{WaterDistributionPriv}!\_allowedMinArea@{\_allowedMinArea}}
+\index{\_allowedMinArea@{\_allowedMinArea}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{\_allowedMinArea}{\_allowedMinArea}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_a7cadcb4c8221e211e0539c624b481aaf} 
+double Water\+Distribution\+Priv\+::\+\_\+allowed\+Min\+Area = 2E6\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_water_distribution_priv_a1c61fa369dc29e70776f7486a67e90da}\index{WaterDistributionPriv@{WaterDistributionPriv}!\_allowedSegementArea@{\_allowedSegementArea}}
+\index{\_allowedSegementArea@{\_allowedSegementArea}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{\_allowedSegementArea}{\_allowedSegementArea}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_a1c61fa369dc29e70776f7486a67e90da} 
+double Water\+Distribution\+Priv\+::\+\_\+allowed\+Segement\+Area = 2.\+5E7\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_water_distribution_priv_ae4ea806e890ed18ec82b7a708dba938f}\index{WaterDistributionPriv@{WaterDistributionPriv}!\_averageWeight@{\_averageWeight}}
+\index{\_averageWeight@{\_averageWeight}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{\_averageWeight}{\_averageWeight}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_ae4ea806e890ed18ec82b7a708dba938f} 
+double Water\+Distribution\+Priv\+::\+\_\+average\+Weight = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_water_distribution_priv_a172f8a1d8830e6744d25a5708572d59e}\index{WaterDistributionPriv@{WaterDistributionPriv}!\_distributionNum@{\_distributionNum}}
+\index{\_distributionNum@{\_distributionNum}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{\_distributionNum}{\_distributionNum}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_a172f8a1d8830e6744d25a5708572d59e} 
+double Water\+Distribution\+Priv\+::\+\_\+distribution\+Num = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_water_distribution_priv_ae81461c6cad6323357371ad43210aa96}\index{WaterDistributionPriv@{WaterDistributionPriv}!\_maxTotalWeight@{\_maxTotalWeight}}
+\index{\_maxTotalWeight@{\_maxTotalWeight}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{\_maxTotalWeight}{\_maxTotalWeight}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_ae81461c6cad6323357371ad43210aa96} 
+double Water\+Distribution\+Priv\+::\+\_\+max\+Total\+Weight = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_water_distribution_priv_abbae62d192ac019e55b15b18d3d59173}\index{WaterDistributionPriv@{WaterDistributionPriv}!\_tolerance@{\_tolerance}}
+\index{\_tolerance@{\_tolerance}!WaterDistributionPriv@{WaterDistributionPriv}}
+\doxysubsubsection{\texorpdfstring{\_tolerance}{\_tolerance}}
+{\footnotesize\ttfamily \label{class_water_distribution_priv_abbae62d192ac019e55b15b18d3d59173} 
+double Water\+Distribution\+Priv\+::\+\_\+tolerance = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Dynamic\+Divider/\+Water\+Distribution/\mbox{\hyperlink{waterdistributionpriv_8h}{waterdistributionpriv.\+h}}\item 
+Dynamic\+Divider/\+Water\+Distribution/\mbox{\hyperlink{waterdistributionpriv_8cpp}{waterdistributionpriv.\+cpp}}\end{DoxyCompactItemize}

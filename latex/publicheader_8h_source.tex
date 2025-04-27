@@ -1,0 +1,302 @@
+\doxysection{publicheader.\+h}
+\hypertarget{publicheader_8h_source}{}\label{publicheader_8h_source}\mbox{\hyperlink{publicheader_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PUBLICHEADER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PUBLICHEADER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\#define\ MaxScanLayers\ 1}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263}{EXPORT\_FILE\_MODE}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c}{EXPORT\_NORMAL}}\ =\ 0,}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a6154167c92de0db2d2cb4ed2e0fe6263aa35a940035a8ab0a79a1fb9c6b70eae8}{EXPORT\_SLM\_BUILDFILE}}}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ DEF\_PI\ \ \ \ \ \ 3.14159265358979323846}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{uspfiledef_8h}{uspfiledef.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}bppbuildparameters.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{slmsplicingmodule_8h}{slmsplicingmodule.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{slascaninfodef_8h}{slascaninfodef.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pathparameters_8h}{pathparameters.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}qjsonparsing.h"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QMutex>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QFile>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QRect>}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ FILEDATAUNIT\ UNITSPRECISION}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ COMMONUNIT\ FILEDATAUNIT}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ LAYERHEIFACTOR\ \ \ \ \ \ (1.0\ /\ FILEDATAUNIT)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ AREAFACTOR\ \ \ \ \ \ \ \ \ \ (1.0\ /\ FILEDATAUNIT\ /\ FILEDATAUNIT)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ FILEDATAUNIT\_0\_2\ \ \ \ (FILEDATAUNIT\ *\ 0.2)}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ FILEDATAUNIT\_0\_4\ \ \ \ (FILEDATAUNIT\ *\ 0.4)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ FILEDATAUNIT\_0\_5\ \ \ \ (FILEDATAUNIT\ *\ 0.5)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ FILEDATAUNIT\_0\_05\ \ \ (FILEDATAUNIT\ *\ 0.05)}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ MINFILTERAREA\ \ \ \ \ \ \ ((FILEDATAUNIT\ *\ 0.1)\ *\ (FILEDATAUNIT\ *\ 0.1))}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ SPLICING\_ERROR\_HOR\ \ \ \ \ \ 3}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ SPLICING\_ERROR\_HORx2\ \ \ \ ((SPLICING\_ERROR\_HOR\ -\/\ 1)\ <<\ 1)}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ BppParas\ \_writeBuff-\/>\_writerBufferParas-\/>\_bppParaPtr}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ BpcParas\ \_writeBuff-\/>\_writerBufferParas-\/>\_bpcParaPtr}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ SplicingPtr\ \_writeBuff-\/>\_writerBufferParas-\/>\_splicingPtr}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ ExtendedObj\ \_writeBuff-\/>\_writerBufferParas-\/>\_extendObj}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ ExtendedParas\ \_writeBuff-\/>getExtendedValue}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{publicheader_8h_a488e3a61f533f34ab3faf2f4a03ec7d0}{writeData8}}(QFile\ *,\ qint8);}
+\DoxyCodeLine{00046\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{publicheader_8h_aacec619a40ee953a896588a561b4b92b}{writeData32}}(QFile\ *,\ qint32);}
+\DoxyCodeLine{00047\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{publicheader_8h_a66eae2bd7027ef42943c12562a8b8929}{writeScanLines}}(QFile\ *,\ QVector<SCANLINE>\ \&);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{typedef}\ QSharedPointer<UFILEDATA>\ \mbox{\hyperlink{publicheader_8h_a48efa2b7e2ff14833a057a22f4c16b6a}{UFILEDATAPTR}};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1b}{HATCHINGBEAM}}\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba7c705eba700361b1da2471465ec5aeca}{HATCHINGBEAM\_NORMAL}}\ =\ 0,}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1ba19d5e893555da1a8e7c38a612baf0dbb}{HATCHINGBEAM\_SMALL}}\ \ =\ 1,}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{publicheader_8h_ab0060ae4c0a60a13dbe117a2550faa1bad9e7699086957a7796d48113fe8986fb}{HATCHINGBEAM\_REMAINING}}\ =\ 2}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_splicing_info}{SplicingInfo}}\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_splicing_info_aa861969e2833fa3b87e134098cec896e}{\_splicingPos}};}
+\DoxyCodeLine{00059\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_splicing_info_aef1d72b619827d32aa16d842305efef4}{\_overlap}};}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_writer_buffer_paras_a45a6675e3012512459b4e9dfa9eb7353}{WriterBufferParas}}\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ QSharedPointer<BPPBUILDPARAMETERS>\ \mbox{\hyperlink{struct_writer_buffer_paras_a764760d4b6677c94b9e818ac9f2966b0}{\_bppParaPtr}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00064\ \ \ \ \ QSharedPointer<BPCUSTOMERPARAS>\ \mbox{\hyperlink{struct_writer_buffer_paras_a1b5b1346e898cdc9f4b03c9b36418954}{\_bpcParaPtr}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00065\ \ \ \ \ QSharedPointer<QJsonParsing>\ \mbox{\hyperlink{struct_writer_buffer_paras_a9e2af41a74787f3ae51cc4454a849882}{\_extendedParaPtr}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00066\ \ \ \ \ QSharedPointer<SLMSplicingModule>\ \mbox{\hyperlink{struct_writer_buffer_paras_a70e7ec3496b5bbb91500db26e307bcd9}{\_splicingPtr}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00067\ \ \ \ \ QJsonObject\ \mbox{\hyperlink{struct_writer_buffer_paras_a00a120a73c26821df683aa4ae242a4be}{\_extendObj}};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{struct_writer_buffer_paras_a45a6675e3012512459b4e9dfa9eb7353}{WriterBufferParas}}()\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_writer_buffer_paras_a764760d4b6677c94b9e818ac9f2966b0}{\_bppParaPtr}}\ =\ QSharedPointer<BPPBUILDPARAMETERS>(\textcolor{keyword}{new}\ BPPBUILDPARAMETERS);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_writer_buffer_paras_a1b5b1346e898cdc9f4b03c9b36418954}{\_bpcParaPtr}}\ =\ QSharedPointer<BPCUSTOMERPARAS>(\textcolor{keyword}{new}\ BPCUSTOMERPARAS);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_writer_buffer_paras_a9e2af41a74787f3ae51cc4454a849882}{\_extendedParaPtr}}\ =\ QSharedPointer<QJsonParsing>(\textcolor{keyword}{new}\ QJsonParsing);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_writer_buffer_paras_a70e7ec3496b5bbb91500db26e307bcd9}{\_splicingPtr}}\ =\ QSharedPointer<SLMSplicingModule>(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_s_l_m_splicing_module}{SLMSplicingModule}});}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_writer_buffer_paras_a00a120a73c26821df683aa4ae242a4be}{\_extendObj}}\ =\ QJsonObject();}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00077\ \ \ \ \ T\ \mbox{\hyperlink{struct_writer_buffer_paras_a0590c5b6f130d358de77d575522a31b6}{getExtendedValue}}(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ T\ \&defVal\ =\ T())\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_writer_buffer_paras_a9e2af41a74787f3ae51cc4454a849882}{\_extendedParaPtr}}-\/>getValue(name,\ defVal);}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_writer_buffer_paras_a8593a3662347143caf3813175d3a418d}{extendedContains}}(\textcolor{keyword}{const}\ QString\ \&key)\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_writer_buffer_paras_a9e2af41a74787f3ae51cc4454a849882}{\_extendedParaPtr}}-\/>keys().contains(key);}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a7ac639c319f4eaa9f032894c1864bae3}{PARAWRITEBUFF}}\ \{}
+\DoxyCodeLine{00086\ \ \ \ \ QFile\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ac6ca94a28bbe18ca975f47878ef17d}{gFile}};}
+\DoxyCodeLine{00087\ \ \ \ \ QSharedPointer<WriterBufferParas>\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ab140502ec5029833bb2a099f9af3b5}{\_writerBufferParas}};}
+\DoxyCodeLine{00088\ \ \ \ \ QList<QList<UFILEDATAPTR>>\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00091\ \ \ \ \ T\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_af287ccf36af9fceb571b2a805d5352cf}{getExtendedValue}}(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ T\ \&defVal\ =\ T())\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ab140502ec5029833bb2a099f9af3b5}{\_writerBufferParas}}-\/>\_extendedParaPtr-\/>getValue(name,\ defVal);}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_ae45ca5959d53b9c46d4724f93c5e3baa}{createUFileData}}()\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ *\_writeBuff\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ Q\_UNUSED(\_writeBuff);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ab140502ec5029833bb2a099f9af3b5}{\_writerBufferParas}}-\/>extendedContains(\textcolor{stringliteral}{"{}Splicing/nNumber\_SplicingScanner"{}}))\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner\ =\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_af287ccf36af9fceb571b2a805d5352cf}{getExtendedValue}}(\textcolor{stringliteral}{"{}Splicing/nNumber\_SplicingScanner"{}},\ 1);}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ab140502ec5029833bb2a099f9af3b5}{\_writerBufferParas}}-\/>extendedContains(\textcolor{stringliteral}{"{}Splicing/nUseSplicingMode"{}}))\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sGeneralPara.nUseSplicingMode\ =\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_af287ccf36af9fceb571b2a805d5352cf}{getExtendedValue}}(\textcolor{stringliteral}{"{}Splicing/nUseSplicingMode"{}},\ 1);}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(0\ ==\ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner)}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nPlatformType\ =\ \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sPlatformPara.nPlatformType;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nPlatWidthX\ =\ \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sPlatformPara.nPlatWidthX;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nPlatWidthY\ =\ \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sPlatformPara.nPlatWidthY;}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner\ =\ \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sGeneralPara.nNumber\_SplicingScanner;}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ iIndex\ =\ 0;\ iIndex\ <\ 3;\ ++\ iIndex)}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>fSplicingPos[iIndex]\ =\ \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sGeneralPara.fSplicingPos[iIndex];}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>fSplicingLength[iIndex]\ =\ \mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sGeneralPara.fSplicingLength[iIndex];}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner\ <\ 1)\ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner\ =\ 1;}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ maxScannerCnt\ =\ quint8(qMax(\mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner,\ \mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nScannerNumber));}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(quint8\ iScanner\ =\ 0;\ iScanner\ <\ maxScannerCnt;\ ++\ iScanner)\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ QList<UFILEDATAPTR>\ listFileData;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(quint8\ iBeam\ =\ 0;\ iBeam\ <\ quint8(\mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sGeneralPara.nNumber\_Beam);\ ++\ iBeam)\ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ listFileData\ <<\ \mbox{\hyperlink{publicheader_8h_a48efa2b7e2ff14833a057a22f4c16b6a}{UFILEDATAPTR}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{struct_u_f_i_l_e_d_a_t_a}{UFILEDATA}}());}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}\ <<\ listFileData;}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ac6ca94a28bbe18ca975f47878ef17d}{gFile}}.exists())\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ac6ca94a28bbe18ca975f47878ef17d}{gFile}}.remove();}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ac6ca94a28bbe18ca975f47878ef17d}{gFile}}.open(QIODevice::ReadWrite))\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00130\ \ \ \ \ \}}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a0e6f015ab0690484dad5e96dce995b89}{clearFileDataList}}()\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}.size())\ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}.takeFirst().clear();}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \ \ \ \ \}}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a96ccd524c02ea91e1d237243c891b8b8}{appendFileData}}(\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a}{UFFWRITEDATA}}\ \&mUFileData,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&scanner\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&beam\ =\ 0)\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (scanner\ >=\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}.size())}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ qDebug()\ <<\ \textcolor{stringliteral}{"{}appendFileData\ Scanner\ Error"{}}\ <<\ scanner\ <<\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}.size();}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (beam\ >=\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}.at(scanner).size())}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ qDebug()\ <<\ \textcolor{stringliteral}{"{}appendFileData\ Beam\ Error"{}}\ <<\ beam\ <<\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}.at(scanner).size();}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(mUFileData.\mbox{\hyperlink{struct_u_f_f_w_r_i_t_e_d_a_t_a_a834d88229774c47dcb5ce5193bf5e449}{listSLines}}.size()\ <\ 1)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ QMutexLocker\ locker(\&\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}[scanner][beam]-\/>gLocker\_UFD);}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a1f05d60f3a454ec7c94649b057f35c61}{gUFileData}}[scanner][beam]-\/>gListUFileData\ <<\ mUFileData;}
+\DoxyCodeLine{00150\ \ \ \ \ \}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_af7dfdc1bfb473e4d824814978ed0799b}{isSolidSplicing}}()\ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ *\_writeBuff\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ Q\_UNUSED(\_writeBuff);}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner\ >\ 1)\ \&\&\ ((\mbox{\hyperlink{publicheader_8h_a8cc20057f4c52f1155b2dd3d64916c27}{BppParas}}-\/>sGeneralPara.nUseSplicingMode\ \&\ 0x1))}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ !\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_af287ccf36af9fceb571b2a805d5352cf}{getExtendedValue<int>}}(\textcolor{stringliteral}{"{}Splicing/nScanRangeMode"{}},\ 0));}
+\DoxyCodeLine{00157\ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_ade7ec1f5b0d77d2159a2fb82eace66ba}{isSupportSplicing}}()\ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ *\_writeBuff\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ Q\_UNUSED(\_writeBuff);}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{publicheader_8h_a54162cb8ae7d0105877b476ab18dbb4e}{BpcParas}}-\/>nNumber\_SplicingScanner\ >\ 1\ \&\&\ !\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_af287ccf36af9fceb571b2a805d5352cf}{getExtendedValue<int>}}(\textcolor{stringliteral}{"{}Splicing/nScanRangeMode"{}},\ 0));}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a7ac639c319f4eaa9f032894c1864bae3}{PARAWRITEBUFF}}()\ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a0e6f015ab0690484dad5e96dce995b89}{clearFileDataList}}();}
+\DoxyCodeLine{00166\ \ \ \ \ \}}
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a85aae7470bf75895e1476c62c8046858}{\string~PARAWRITEBUFF}}()\ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a0e6f015ab0690484dad5e96dce995b89}{clearFileDataList}}();}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ac6ca94a28bbe18ca975f47878ef17d}{gFile}}.isOpen())\ \mbox{\hyperlink{struct_p_a_r_a_w_r_i_t_e_b_u_f_f_a9ac6ca94a28bbe18ca975f47878ef17d}{gFile}}.close();}
+\DoxyCodeLine{00170\ \ \ \ \ \}}
+\DoxyCodeLine{00171\ \};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_aa0e6eaed57cbc6268f801cfc82507a4a}{\_\_NORMALLINE}}\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a8943ebb14a2ac6d76e59c42e1906c25c}{x1}};}
+\DoxyCodeLine{00175\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a93def527ba560da228a0800bff2e543b}{y1}};}
+\DoxyCodeLine{00176\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a87ecd9be59caa7d926ae1e213e992fd4}{x2}};}
+\DoxyCodeLine{00177\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_abf78818eb20a8608dd31281a598d809e}{y2}};}
+\DoxyCodeLine{00178\ \ \ \ \ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_aa0e6eaed57cbc6268f801cfc82507a4a}{\_\_NORMALLINE}}(int64\_t\ in\_x1\ =\ -\/1,\ int64\_t\ in\_y1\ =\ -\/1,\ int64\_t\ in\_x2\ =\ -\/1,\ int64\_t\ in\_y2\ =\ -\/1)\ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a8943ebb14a2ac6d76e59c42e1906c25c}{x1}}\ =\ in\_x1;}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a93def527ba560da228a0800bff2e543b}{y1}}\ =\ in\_y1;}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a87ecd9be59caa7d926ae1e213e992fd4}{x2}}\ =\ in\_x2;}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_abf78818eb20a8608dd31281a598d809e}{y2}}\ =\ in\_y2;}
+\DoxyCodeLine{00183\ \ \ \ \ \}}
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a5c4c701c34392ee54521cc5a6ff723e2}{operator\ ==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_aa0e6eaed57cbc6268f801cfc82507a4a}{\_\_NORMALLINE}}\ \&line)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (this-\/>x1\ ==\ line.\mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a8943ebb14a2ac6d76e59c42e1906c25c}{x1}}\ \&\&\ this-\/>y1\ ==\ line.\mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a93def527ba560da228a0800bff2e543b}{y1}}}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ this-\/>x2\ ==\ line.\mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_a87ecd9be59caa7d926ae1e213e992fd4}{x2}}\ \&\&\ this-\/>y2\ ==\ line.\mbox{\hyperlink{struct_____n_o_r_m_a_l_l_i_n_e_abf78818eb20a8608dd31281a598d809e}{y2}});}
+\DoxyCodeLine{00187\ \ \ \ \ \}}
+\DoxyCodeLine{00188\ \}\mbox{\hyperlink{publicheader_8h_a711d632d3f4373babf317c9f783039e5}{LINENORMAL}};}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_splicing_area}{SplicingArea}}\ \{}
+\DoxyCodeLine{00191\ \ \ \ \ Path\ \mbox{\hyperlink{struct_splicing_area_a8d91f93c008274f867e272ba031e2d96}{pathArea}};}
+\DoxyCodeLine{00192\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_splicing_area_a45b92534c7c6a97c2d5c8cdccd9681c8}{nSplicingPosLeft}};}
+\DoxyCodeLine{00193\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_splicing_area_af77e94e6dbe1173a580fa731cc6db2bb}{nSplicingPosRight}};}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_splicing_area_a23957dedfd19e0aa6d063e859cb1cf82}{nLastX}}\ =\ -\/1;}
+\DoxyCodeLine{00196\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_splicing_area_add7505669e3945c9a478e875e6c2f68e}{nLastY}}\ =\ -\/1;}
+\DoxyCodeLine{00197\ \};}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_splicing_line}{SplicingLine}}\ \{}
+\DoxyCodeLine{00200\ \ \ \ \ int64\_t\ \mbox{\hyperlink{struct_splicing_line_a02a498d7dba134dd06ec8182861357f1}{nSplicingPos}};}
+\DoxyCodeLine{00201\ \ \ \ \ QVector<LINENORMAL>\ \mbox{\hyperlink{struct_splicing_line_aa328d390044eca267cf6fdadfb5d17ce}{vecLine}};}
+\DoxyCodeLine{00202\ \};}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h}{SOLIDPATH}}\ \{}
+\DoxyCodeLine{00205\ \ \ \ \ qint8\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_afab440da2e0997322e629b6877658678}{nLayerUsed}}[11];}
+\DoxyCodeLine{00206\ \ \ \ \ CLISOLIDINFO\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a44f9b55d297bb8d06d867a31af58184f}{sLayerDatas}}[11];}
+\DoxyCodeLine{00207\ \ \ \ \ Paths\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a512c62e37cc7fd917bcad64dced37a7e}{nullPaths}};}
+\DoxyCodeLine{00208\ \ \ \ \ Paths\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a018d644a123d34333ca993c86f93251a}{curPaths}};}
+\DoxyCodeLine{00209\ \ \ \ \ Paths\ *\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_ad9333ed130f3d6ee51c6a8ef3588c293}{lpPath\_Cur}};}
+\DoxyCodeLine{00210\ \ \ \ \ Paths\ *\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_aeec18c8fcfe0cff466b4ff8574cac867}{lpPath\_Dw}}[5];}
+\DoxyCodeLine{00211\ \ \ \ \ Paths\ *\mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a250e9c5c40a809409926fd5fa2e448df}{lpPath\_Up}}[5];}
+\DoxyCodeLine{00212\ \ \ \ \ Paths\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a66e37c1949512adedb347e352e943df9}{paths\_smallGaps}};}
+\DoxyCodeLine{00213\ \ \ \ \ Paths\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a247736e877be7c8c82cc2be1ad47a6e4}{paths\_smallHoles}};}
+\DoxyCodeLine{00214\ \ \ \ \ Paths\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a2ab154c62a6d7a84c86322e78a4de7aa}{paths\_exceptHolesAndGaps}};}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_ae45dfae591b0cefaddad80ece43dfe23}{clearAllPathPointer}}()\ \{}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_ad9333ed130f3d6ee51c6a8ef3588c293}{lpPath\_Cur}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ iSur\ =\ 0;\ iSur\ <\ 5;\ iSur\ ++)\ \{}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_aeec18c8fcfe0cff466b4ff8574cac867}{lpPath\_Dw}}[iSur]\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_s_o_l_i_d_p_a_t_h_a250e9c5c40a809409926fd5fa2e448df}{lpPath\_Up}}[iSur]\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00222\ \ \ \ \ \}}
+\DoxyCodeLine{00223\ \};}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ IntPoint\ \&p)}
+\DoxyCodeLine{00226\ \{}
+\DoxyCodeLine{00227\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}("{}}\ <<\ p.X\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ p.Y\ <<\ \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00229\ \}}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ IntRect\ \&p)}
+\DoxyCodeLine{00232\ \{}
+\DoxyCodeLine{00233\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}("{}}\ <<\ p.left\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ p.right\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ p.top\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ p.bottom\ <<\ \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00235\ \}}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ Path\ \&path)}
+\DoxyCodeLine{00238\ \{}
+\DoxyCodeLine{00239\ \ \ \ \ debug\ =\ debug.nospace();}
+\DoxyCodeLine{00240\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}Path\ "{}}\ <<\ path.size()\ <<\ \textcolor{stringliteral}{"{}\ \{\ "{}};}
+\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&coor\ :\ path)}
+\DoxyCodeLine{00242\ \ \ \ \ \{}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}("{}}\ <<\ coor.X\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ coor.Y\ <<\ \textcolor{stringliteral}{"{}),\ "{}};}
+\DoxyCodeLine{00244\ \ \ \ \ \}}
+\DoxyCodeLine{00245\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}};}
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00247\ \}}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \textcolor{keyword}{inline}\ QDebug\ \mbox{\hyperlink{_dynamic_divider_2publicheader_8h_a965a777926ea7efbf1aa19087b30456c}{operator<<}}(QDebug\ debug,\ \textcolor{keyword}{const}\ DoublePoint\ \&p)}
+\DoxyCodeLine{00250\ \{}
+\DoxyCodeLine{00251\ \ \ \ \ debug\ <<\ \textcolor{stringliteral}{"{}("{}}\ <<\ p.X\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ p.Y\ <<\ \textcolor{stringliteral}{"{})"{}};}
+\DoxyCodeLine{00252\ \ \ \ \ \textcolor{keywordflow}{return}\ debug;}
+\DoxyCodeLine{00253\ \}}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00255\ \textcolor{preprocessor}{\#include\ <QElapsedTimer>}}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \textcolor{preprocessor}{\#define\ RunTimerReset()\ RunElapsedTimer::getInterface()-\/>resetTimer()}}
+\DoxyCodeLine{00258\ \textcolor{preprocessor}{\#define\ RunTimerRecord(msg)\ RunElapsedTimer::getInterface()-\/>runRecord(msg)}}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00260\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_run_elapsed_timer_abb32717c78cd3323c11288c67633e8c4}{RunElapsedTimer}}\ \{}
+\DoxyCodeLine{00261\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_run_elapsed_timer_abb32717c78cd3323c11288c67633e8c4}{RunElapsedTimer}}\ *\mbox{\hyperlink{class_run_elapsed_timer_a29599b6a8ddceb0c08fc58c38dd8193d}{getInterface}}()\ \{}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_run_elapsed_timer_abb32717c78cd3323c11288c67633e8c4}{RunElapsedTimer}}\ runTimer;}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&runTimer;}
+\DoxyCodeLine{00265\ \ \ \ \ \}}
+\DoxyCodeLine{00266\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_run_elapsed_timer_a1801dc3d6df4987e0d5a902d707a49c1}{resetTimer}}()\ \{}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_run_elapsed_timer_a653181a53caf5bc6054b279aca51c07d}{timer}}.start();}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_run_elapsed_timer_a2f15cae2cf34b72bc8283679c1c464a8}{nLastTime}}\ =\ 0;}
+\DoxyCodeLine{00269\ \ \ \ \ \}}
+\DoxyCodeLine{00270\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_run_elapsed_timer_acebc164cf5b352c879f6c5f0cf6c39ef}{runRecord}}(\textcolor{keyword}{const}\ QString\ \&msg)\ \{}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ nCurRunTime\ =\ \mbox{\hyperlink{class_run_elapsed_timer_a653181a53caf5bc6054b279aca51c07d}{timer}}.elapsed();}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ qDebug()\ <<\ nCurRunTime\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}}\ <<\ \ nCurRunTime\ -\/\ \mbox{\hyperlink{class_run_elapsed_timer_a2f15cae2cf34b72bc8283679c1c464a8}{nLastTime}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}}\ <<\ msg.toLocal8Bit().data();}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_run_elapsed_timer_a2f15cae2cf34b72bc8283679c1c464a8}{nLastTime}}\ =\ nCurRunTime;}
+\DoxyCodeLine{00274\ \ \ \ \ \}}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00276\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00277\ \ \ \ \ \mbox{\hyperlink{class_run_elapsed_timer_abb32717c78cd3323c11288c67633e8c4}{RunElapsedTimer}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00278\ }
+\DoxyCodeLine{00279\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00280\ \ \ \ \ QElapsedTimer\ \mbox{\hyperlink{class_run_elapsed_timer_a653181a53caf5bc6054b279aca51c07d}{timer}};}
+\DoxyCodeLine{00281\ \ \ \ \ qint64\ \mbox{\hyperlink{class_run_elapsed_timer_a2f15cae2cf34b72bc8283679c1c464a8}{nLastTime}}\ =\ 0;}
+\DoxyCodeLine{00282\ \};}
+\DoxyCodeLine{00283\ }
+\DoxyCodeLine{00284\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_paths_info_ad1e6d9ed22d9d1712bd34ff9ea397d1c}{PathsInfo}}}
+\DoxyCodeLine{00285\ \{}
+\DoxyCodeLine{00286\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00287\ \ \ \ \ \mbox{\hyperlink{class_paths_info_ad1e6d9ed22d9d1712bd34ff9ea397d1c}{PathsInfo}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00288\ \ \ \ \ \textcolor{keyword}{static}\ QString\ \mbox{\hyperlink{class_paths_info_a1a4e799271b8ab5131e4144955f81298}{getPathsInfo}}(\textcolor{keyword}{const}\ Paths\ \&paths)\ \{}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ QString\ tempStr\ =\ QString(\textcolor{stringliteral}{"{}\ \%1:"{}}).arg(paths.size());}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&path\ :\ paths)\ \{}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \ \ \ \ tempStr\ +=\ QString(\textcolor{stringliteral}{"{}\ \%1"{}}).arg(path.size());}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ tempStr;}
+\DoxyCodeLine{00294\ \ \ \ \ \}}
+\DoxyCodeLine{00295\ \};}
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PUBLICHEADER\_H}}
+
+\end{DoxyCode}

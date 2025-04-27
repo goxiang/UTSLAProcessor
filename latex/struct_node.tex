@@ -1,0 +1,193 @@
+\doxysection{Node结构体 参考}
+\hypertarget{struct_node}{}\label{struct_node}\index{Node@{Node}}
+
+
+{\ttfamily \#include $<$quadtreedef.\+h$>$}
+
+类 Node 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_node}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_node_a082d5efb0be81faaeb35dc02b2a4fc76}{Node}} ()=default
+\item 
+\mbox{\hyperlink{struct_node_a143b69a8d2c725a485dfc61a46562eab}{Node}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}, const int \&, const int \&)
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_node}{Node} \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_node_abce703f211f6a577085b4b8ad68cbb19}{\texorpdfstring{$\sim$}{\string~}\+Node}} ()=default
+\item 
+virtual bool \mbox{\hyperlink{struct_node_a07dfd4c5e87c8ffba300308ece0f720e}{insert\+Node}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&pt, const int \&x0, const int \&y0, const int \&width, const int \&height)
+\begin{DoxyCompactList}\small\item\em 在四叉树中插入节点 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{struct_node_a62c897c7a1ab81a3532022d7f6c1338c}{remove\+Pt}} (const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&pt)
+\begin{DoxyCompactList}\small\item\em 从四叉树中移除指定点 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_node_a7e3ec7b603bdfb8eacfeae4a584ca1f6}{\+\_\+depths}} = 0
+\item 
+int \mbox{\hyperlink{struct_node_ae08368e90941bf3d5fa422986f4c8b40}{\+\_\+node\+Count}} = 0
+\item 
+int \mbox{\hyperlink{struct_node_a2166aa3f0f77cec9c3ea94a8768b07e9}{\+\_\+node\+Type}} = \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd}{UL}}
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node_a4609e1daa55bd61615102d7ca6e439d6}{\+\_\+parent}}
+\item 
+QMap$<$ int, QShared\+Pointer$<$ \mbox{\hyperlink{struct_node}{Node}} $>$ $>$ \mbox{\hyperlink{struct_node_abb86c6e527223a2e5700a7507eda25b4}{\+\_\+node\+Map}}
+\item 
+int \mbox{\hyperlink{struct_node_a8b7c1d52522d564d18fe9f36c8a9f606}{\+\_\+minX}} = 0
+\item 
+int \mbox{\hyperlink{struct_node_ab5dd11cdd6d10f7d0458f2d852b3a851}{\+\_\+maxX}} = 0
+\item 
+int \mbox{\hyperlink{struct_node_af34f5d3c33ffb81a3e16f7fe8e448aed}{\+\_\+minY}} = 0
+\item 
+int \mbox{\hyperlink{struct_node_a844ba6b25db62e56acfc6995383156be}{\+\_\+maxY}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{struct_node_a082d5efb0be81faaeb35dc02b2a4fc76}\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_node_a082d5efb0be81faaeb35dc02b2a4fc76} 
+Node\+::\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_node_a143b69a8d2c725a485dfc61a46562eab}\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_node_a143b69a8d2c725a485dfc61a46562eab} 
+Node\+::\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{parent}{, }\item[{const int \&}]{depth}{, }\item[{const int \&}]{node\+Type}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{struct_node}{Node} 
+
+\Hypertarget{struct_node_abce703f211f6a577085b4b8ad68cbb19}\index{Node@{Node}!````~Node@{\texorpdfstring{$\sim$}{\string~}Node}}
+\index{````~Node@{\texorpdfstring{$\sim$}{\string~}Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Node()}{\string~Node()}}
+{\footnotesize\ttfamily \label{struct_node_abce703f211f6a577085b4b8ad68cbb19} 
+virtual Node\+::\texorpdfstring{$\sim$}{\string~}\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{struct_node_a07dfd4c5e87c8ffba300308ece0f720e}\index{Node@{Node}!insertNode@{insertNode}}
+\index{insertNode@{insertNode}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{insertNode()}{insertNode()}}
+{\footnotesize\ttfamily \label{struct_node_a07dfd4c5e87c8ffba300308ece0f720e} 
+bool Node\+::insert\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{pt}{, }\item[{const int \&}]{x0}{, }\item[{const int \&}]{y0}{, }\item[{const int \&}]{width}{, }\item[{const int \&}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+在四叉树中插入节点 
+
+
+\begin{DoxyParams}{参数}
+{\em pt} & 要插入的点信息指针 \\
+\hline
+{\em x0} & 当前节点区域的左上角x坐标 \\
+\hline
+{\em y0} & 当前节点区域的左上角y坐标 \\
+\hline
+{\em width} & 当前节点区域的宽度 \\
+\hline
+{\em height} & 当前节点区域的高度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 插入成功返回true 
+\end{DoxyReturn}
+
+
+被 \mbox{\hyperlink{struct_end_node_ad1b0c104b03ddeb0ea5dfd7c11f2cb49}{End\+Node}} 重载.
+
+\Hypertarget{struct_node_a62c897c7a1ab81a3532022d7f6c1338c}\index{Node@{Node}!removePt@{removePt}}
+\index{removePt@{removePt}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{removePt()}{removePt()}}
+{\footnotesize\ttfamily \label{struct_node_a62c897c7a1ab81a3532022d7f6c1338c} 
+bool Node\+::remove\+Pt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{quadtreedef_8h_a3c27b131437429d162a1e9e738a4b897}{MPt\+Info\+Ptr}} \&}]{pt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+从四叉树中移除指定点 
+
+
+\begin{DoxyParams}{参数}
+{\em pt} & 要移除的点信息指针 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+bool 移除成功返回true
+\end{DoxyReturn}
+该函数通过递归方式从四叉树中移除点\+:
+\begin{DoxyEnumerate}
+\item 如果存在父节点,则递归调用父节点的remove\+Pt
+\item 减少节点计数 
+\end{DoxyEnumerate}
+
+被 \mbox{\hyperlink{struct_end_node_ac3886bb9ddfe5c7d44336bc22ba46e9a}{End\+Node}} 重载.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{struct_node_a7e3ec7b603bdfb8eacfeae4a584ca1f6}\index{Node@{Node}!\_depths@{\_depths}}
+\index{\_depths@{\_depths}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_depths}{\_depths}}
+{\footnotesize\ttfamily \label{struct_node_a7e3ec7b603bdfb8eacfeae4a584ca1f6} 
+int Node\+::\+\_\+depths = 0}
+
+\Hypertarget{struct_node_ab5dd11cdd6d10f7d0458f2d852b3a851}\index{Node@{Node}!\_maxX@{\_maxX}}
+\index{\_maxX@{\_maxX}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_maxX}{\_maxX}}
+{\footnotesize\ttfamily \label{struct_node_ab5dd11cdd6d10f7d0458f2d852b3a851} 
+int Node\+::\+\_\+maxX = 0}
+
+\Hypertarget{struct_node_a844ba6b25db62e56acfc6995383156be}\index{Node@{Node}!\_maxY@{\_maxY}}
+\index{\_maxY@{\_maxY}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_maxY}{\_maxY}}
+{\footnotesize\ttfamily \label{struct_node_a844ba6b25db62e56acfc6995383156be} 
+int Node\+::\+\_\+maxY = 0}
+
+\Hypertarget{struct_node_a8b7c1d52522d564d18fe9f36c8a9f606}\index{Node@{Node}!\_minX@{\_minX}}
+\index{\_minX@{\_minX}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_minX}{\_minX}}
+{\footnotesize\ttfamily \label{struct_node_a8b7c1d52522d564d18fe9f36c8a9f606} 
+int Node\+::\+\_\+minX = 0}
+
+\Hypertarget{struct_node_af34f5d3c33ffb81a3e16f7fe8e448aed}\index{Node@{Node}!\_minY@{\_minY}}
+\index{\_minY@{\_minY}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_minY}{\_minY}}
+{\footnotesize\ttfamily \label{struct_node_af34f5d3c33ffb81a3e16f7fe8e448aed} 
+int Node\+::\+\_\+minY = 0}
+
+\Hypertarget{struct_node_ae08368e90941bf3d5fa422986f4c8b40}\index{Node@{Node}!\_nodeCount@{\_nodeCount}}
+\index{\_nodeCount@{\_nodeCount}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_nodeCount}{\_nodeCount}}
+{\footnotesize\ttfamily \label{struct_node_ae08368e90941bf3d5fa422986f4c8b40} 
+int Node\+::\+\_\+node\+Count = 0}
+
+\Hypertarget{struct_node_abb86c6e527223a2e5700a7507eda25b4}\index{Node@{Node}!\_nodeMap@{\_nodeMap}}
+\index{\_nodeMap@{\_nodeMap}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_nodeMap}{\_nodeMap}}
+{\footnotesize\ttfamily \label{struct_node_abb86c6e527223a2e5700a7507eda25b4} 
+QMap$<$int, QShared\+Pointer$<$\mbox{\hyperlink{struct_node}{Node}}$>$ $>$ Node\+::\+\_\+node\+Map}
+
+\Hypertarget{struct_node_a2166aa3f0f77cec9c3ea94a8768b07e9}\index{Node@{Node}!\_nodeType@{\_nodeType}}
+\index{\_nodeType@{\_nodeType}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_nodeType}{\_nodeType}}
+{\footnotesize\ttfamily \label{struct_node_a2166aa3f0f77cec9c3ea94a8768b07e9} 
+int Node\+::\+\_\+node\+Type = \mbox{\hyperlink{quadtreedef_8h_acac9cbaeea226ed297804c012dc12b16a2a84d47f8670a3209d5fd5c8be8c5ffd}{UL}}}
+
+\Hypertarget{struct_node_a4609e1daa55bd61615102d7ca6e439d6}\index{Node@{Node}!\_parent@{\_parent}}
+\index{\_parent@{\_parent}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{\_parent}{\_parent}}
+{\footnotesize\ttfamily \label{struct_node_a4609e1daa55bd61615102d7ca6e439d6} 
+\mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*} Node\+::\+\_\+parent}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8h}{quadtreedef.\+h}}\item 
+Scan\+Lines\+Sortor/\mbox{\hyperlink{quadtreedef_8cpp}{quadtreedef.\+cpp}}\end{DoxyCompactItemize}

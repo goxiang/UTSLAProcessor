@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['m_5fbplatplus_0',['m_bPlatPlus',['../class_algorithm_application.html#a2c2b5408d59cbe73654e60143811d686',1,'AlgorithmApplication']]],
+  ['m_5fbrunning_1',['m_bRunning',['../class_write_j_file.html#aeae1cad6e30fb0627b37aa72220a0237',1,'WriteJFile::m_bRunning'],['../class_write_u_f_f.html#ad2c98515058fe405816b42542fb3ad28',1,'WriteUFF::m_bRunning']]],
+  ['m_5fftotalvolume_2',['m_fTotalVolume',['../class_u_s_p_file_writer.html#a67c86501a556a20752ce53fd1bcb36a9',1,'USPFileWriter']]],
+  ['m_5fncenterx_3',['m_nCenterX',['../class_p_a_t_h_p_a_r_a_m_e_t_e_r_s.html#a7d67e85eb49fa8a1de91effda8faa5f4',1,'PATHPARAMETERS']]],
+  ['m_5fncentery_4',['m_nCenterY',['../class_p_a_t_h_p_a_r_a_m_e_t_e_r_s.html#ab8c8f0ac412f161b329b11ee3372cac8',1,'PATHPARAMETERS']]],
+  ['m_5fnscannerindex_5',['m_nScannerIndex',['../class_write_j_file.html#accabcf1e04595e8bbd21f6e58cad6c54',1,'WriteJFile']]],
+  ['m_5fnufdatastatus_6',['m_nUFDataStatus',['../class_write_j_file.html#af5121e4fc5a3d6c9570bae13089141ee',1,'WriteJFile::m_nUFDataStatus'],['../class_write_u_f_f.html#ab68d5149050a5e072bad890aba22e107',1,'WriteUFF::m_nUFDataStatus']]],
+  ['m_5fstrsystemtime_7',['m_strSystemTime',['../class_u_s_p_file_writer.html#a061044bf0689af0ae036be35078ed15a',1,'USPFileWriter']]],
+  ['maxrangepos_8',['maxRangePos',['../struct_splicing_base_settings.html#a23c0ea3d4cc9e9efa8cf9154873fe725',1,'SplicingBaseSettings']]],
+  ['maxsplicingpos_9',['maxSplicingPos',['../struct_splicing_base_settings.html#a3fd106e0b3402825662c88eb2c4e40ad',1,'SplicingBaseSettings']]],
+  ['maxsz_10',['maxSz',['../struct_path_rang.html#a768df12337519ba23de50b800bb09712',1,'PathRang']]],
+  ['mcircletype_11',['mCircleType',['../struct_pocket_branch.html#a94c3b9034db6a337b962889a39dbb3ac',1,'PocketBranch']]],
+  ['meshcoorx_12',['meshCoorX',['../struct_matched_line_info.html#a6204ee5b05fbb7864b99a5e1d8d0d736',1,'MatchedLineInfo']]],
+  ['meshcoory_13',['meshCoorY',['../struct_matched_line_info.html#af33dfcfbc5f0f21f4800d9b9a4cce9f7',1,'MatchedLineInfo']]],
+  ['minrangepos_14',['minRangePos',['../struct_splicing_base_settings.html#a8d6636a9b93f53b3c19fa4b3c3f2b76c',1,'SplicingBaseSettings']]],
+  ['minsplicinglineoffset_15',['minSplicingLineOffset',['../class_random_line_splicing.html#aba2bafd84e0da40e4396f207a403b872',1,'RandomLineSplicing']]],
+  ['minsplicingpos_16',['minSplicingPos',['../struct_splicing_base_settings.html#abaefa4e2f1c02ca3174f37024852eaaf',1,'SplicingBaseSettings']]],
+  ['mnestinglist_17',['mNestingList',['../struct_pocket_branch.html#afdd64b56e2d95ebb6e3a41f09297b58c',1,'PocketBranch']]],
+  ['mnodelist_18',['mNodeList',['../struct_pocket_branch.html#ad933ab577ed4511bf3d16b7b85d83a13',1,'PocketBranch']]],
+  ['moutrc_19',['mOutRC',['../class_p_a_t_h_p_a_r_a_m_e_t_e_r_s.html#a0458766e3fc289b272aa02f23425198a',1,'PATHPARAMETERS']]],
+  ['mpath_20',['mPath',['../class_p_a_t_h_p_a_r_a_m_e_t_e_r_s.html#a23788462fb922ea398318adeeb4b7f2a',1,'PATHPARAMETERS']]],
+  ['msubbranchlist_21',['mSubBranchList',['../struct_pocket_branch.html#a3097b0d85c662e40d4647454e1e0206e',1,'PocketBranch']]],
+  ['mtempindexlist_22',['mTempIndexList',['../struct_pocket_branch.html#ada7b26a2fa671884c6b7c898e33de12d',1,'PocketBranch']]]
+];

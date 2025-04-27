@@ -1,0 +1,74 @@
+\doxysection{slascaninfodef.\+h}
+\hypertarget{slascaninfodef_8h_source}{}\label{slascaninfodef_8h_source}\mbox{\hyperlink{slascaninfodef_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SLASCANINFODEF\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SLASCANINFODEF\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtGlobal>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QSharedPointer>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838d}{INNERPERPARAMETERS}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da800802b3d4d9c0145e91d49973140095}{LIMITTYPE\_SMALL2BIG}}\ =\ 0,}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da08a622e013d8b3474a15601d6ed2f30a}{LIMITTYPE\_BIG2SMALL}},}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dacc6965ebcb4d1d0f7d842adcaf3f2c0f}{KMODE\_HORIZONTAL}},}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da8efcbd383e6f9d1ff2b1952394add212}{KMODE\_NORMAL}},}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6e7b804412eb944541ee1b57321a7aad}{KMODE\_VERTICAL}},}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dab2bb281d39567f326f3d1d97f54fe3c4}{SORTTYPE\_X}},}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6890b39b06a1e18769666c62bf19b3c4}{SORTTYPE\_Y}},}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6fef226005924786c9975ee050f6ca22}{LINETYPE\_ORIGINAL}},}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da391d4ef0f439bffbc77f808bfc5e475b}{LINETYPE\_SORTPATH\_NEAR}},}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da4db2d59ae0d50c2f1fbe1b223a0d9a59}{LINETYPE\_SORTPATH\_TRIANGLE}},}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da0ca229083ea045b43e6e5eb91b2b93ae}{LINETYPE\_SORTPATH\_GREED}}}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ quint32\ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o_a2f52c1b74554a030742af25be7070929}{nPtPos}};}
+\DoxyCodeLine{00028\ \ \ \ \ quint32\ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o_a1262fd54f5937413b55c388c7b449e63}{nAreaIndex}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o_ac371458a25a7dede7ab28e70479b829e}{X}};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o_ac6bf3ef8ddedf67787f9808bdce45778}{Y}};}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ \textcolor{keyword}{typedef}\ QSharedPointer<EXPECTPOINTINFO>\ \mbox{\hyperlink{slascaninfodef_8h_add0d3a9b36e056c85bb67d31ed0b011d}{EXPECTPTINFOPTR}};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___l_i_n_e_c_o_o_r}{\_LINECOOR}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ quint32\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_ac95781cdbd7ab4a1d3663cb6e5ca867d}{nPtPos\_1}};}
+\DoxyCodeLine{00036\ \ \ \ \ quint32\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_a194de8f1a873473b89113149fbae4b8d}{nPtPos\_2}};}
+\DoxyCodeLine{00037\ \ \ \ \ quint32\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_a2ede819c0f2a79a6dabf02d56944f5d5}{nArea\_1}};}
+\DoxyCodeLine{00038\ \ \ \ \ quint32\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_a3e4fa460bc28844f5a93fe4844182140}{nArea\_2}};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_a3f87818d1d921d87649bca29a14d1886}{X1}};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_aa0ac63ad9544006ed0255700cd8ad49e}{Y1}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_a2e7c692153ea57cad36f7a71b0ab9acf}{X2}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r_a2ab3f6185c93d9bfbb127db3f3f438a7}{Y2}};}
+\DoxyCodeLine{00043\ \}\mbox{\hyperlink{slascaninfodef_8h_a8d583f77834e31136129ebb3824cca23}{LINECOOR}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{typedef}\ QSharedPointer<LINECOOR>\ \mbox{\hyperlink{slascaninfodef_8h_ae14ac223dd7671ba882a1768c9af12a1}{LINECOORPTR}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_____h_a_t_c_h_i_n_g_l_i_n_e}{\_\_HATCHINGLINE}}\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ QVector<LINECOOR>\ \mbox{\hyperlink{struct_____h_a_t_c_h_i_n_g_l_i_n_e_abf1a187ac0c72512c1b95a6a985fd972}{listLineCoor}};}
+\DoxyCodeLine{00049\ \ \ \ \ qint64\ \mbox{\hyperlink{struct_____h_a_t_c_h_i_n_g_l_i_n_e_a9ad4bfbc18f3a6e0d6e5deebb5c57ed4}{nLineIndex}};}
+\DoxyCodeLine{00050\ \}\mbox{\hyperlink{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}{HATCHINGLINE}};}
+\DoxyCodeLine{00051\ \textcolor{keyword}{typedef}\ QSharedPointer<HATCHINGLINE>\ \mbox{\hyperlink{slascaninfodef_8h_aa60939cdc2ac34feb296a5b61eea640c}{HATCHINGLINEPTR}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{typedef}\ QVector<HATCHINGLINE>\ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o}{REFLINEINFO}}\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a81baeb82c56c803f62612a922e0722e1}{nKMode}}\ =\ 0;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_ae01feab080777f01bc8822263c601a1e}{nSortType}}\ =\ 0;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a9cdce27213a412351f20e25ec43db947}{nLimitType}}\ =\ 0;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a09a0c377158bf69a89b9a8184a6e2076}{X1}}\ =\ 0.0;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_af4cbef4fb986c442d2edc39b32f69049}{Y1}}\ =\ 0.0;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a5a884858e9dc620a8f147cee7b69a85e}{X2}}\ =\ 0.0;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a661d5687047e0d4e379ca7f60e1ef2ec}{Y2}}\ =\ 0.0;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_afc3dd4b692ca8f85d660ad0279503bf0}{fDelta\_X}}\ =\ 0.0;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a7c7983a1be04aaaebf6fa4dc385014be}{fDelta\_Y}}\ =\ 0.0;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a09a27a586a88e9b08d9a1c101e9421e2}{fLimit\_X}}\ =\ 0.0;}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o_a6cc5423c5929ed1608861493b702262b}{fLimit\_Y}}\ =\ 0.0;}
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SLASCANINFODEF\_H}}
+
+\end{DoxyCode}

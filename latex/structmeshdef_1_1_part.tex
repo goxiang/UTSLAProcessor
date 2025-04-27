@@ -1,0 +1,99 @@
+\doxysection{meshdef\+::Part结构体 参考}
+\hypertarget{structmeshdef_1_1_part}{}\label{structmeshdef_1_1_part}\index{meshdef::Part@{meshdef::Part}}
+
+
+{\ttfamily \#include $<$meshbase.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structmeshdef_1_1_part_a6133e3110c26d681031cc7bf19dbfbe2}{create\+Part\+Info}} (const QVector$<$ QVector3D $>$ \&vertexs, const QVector$<$ QVector$<$ int $>$ $>$ \&faces)
+\begin{DoxyCompactList}\small\item\em \doxylink{structmeshdef_1_1_part}{Part} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structmeshdef_1_1_part_a0f06b48440d8a65c2cd8722c378b9dfa}{tranform\+Part}} (const QMatrix4x4 \&mat)
+\item 
+Clipper\+Lib\+::\+Double\+Path \mbox{\hyperlink{structmeshdef_1_1_part_a90a676b02c9b40fe8bfb6a8b962f09a5}{cut\+Part\+OnZ}} (const float \&layer\+Hei)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+QList$<$ \mbox{\hyperlink{namespacemeshdef_a2d55473c6fbf5769e366f445c52ef0ee}{Vertex\+Ptr}} $>$ \mbox{\hyperlink{structmeshdef_1_1_part_a38f812f08ddde14ffe07fe37a480c559}{\+\_\+vertex\+List}}
+\item 
+QMap$<$ QPair$<$ long long, long long $>$, \mbox{\hyperlink{namespacemeshdef_a187db0ead7484e893b40c03d9f0e9dea}{Edge\+Ptr}} $>$ \mbox{\hyperlink{structmeshdef_1_1_part_ae29b47478e34ee12e382d964965e2603}{\+\_\+edge\+Map}}
+\item 
+QList$<$ \mbox{\hyperlink{namespacemeshdef_ad7ee4450006f080892cc73269c431ea6}{Face\+Ptr}} $>$ \mbox{\hyperlink{structmeshdef_1_1_part_aa347bb2aeb9710e67da2d97270c385ba}{\+\_\+face\+List}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structmeshdef_1_1_part_af01a3edf72c97676d2039304c6d6055c}{find\+Next\+Intersection}} (\mbox{\hyperlink{structmeshdef_1_1_face}{Face}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{Clip\+Path\+Result}} \&)
+\item 
+void \mbox{\hyperlink{structmeshdef_1_1_part_a6f0587b58c6af225e1e5341c1cd7540e}{update\+Face\+Info}} (\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Private \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structmeshdef_1_1_part_a6133e3110c26d681031cc7bf19dbfbe2}\index{meshdef::Part@{meshdef::Part}!createPartInfo@{createPartInfo}}
+\index{createPartInfo@{createPartInfo}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{createPartInfo()}{createPartInfo()}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_a6133e3110c26d681031cc7bf19dbfbe2} 
+void meshdef\+::\+Part\+::create\+Part\+Info (\begin{DoxyParamCaption}\item[{const QVector$<$ QVector3D $>$ \&}]{vertexs}{, }\item[{const QVector$<$ QVector$<$ int $>$ $>$ \&}]{faces}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{structmeshdef_1_1_part}{Part} 
+
+\Hypertarget{structmeshdef_1_1_part_a90a676b02c9b40fe8bfb6a8b962f09a5}\index{meshdef::Part@{meshdef::Part}!cutPartOnZ@{cutPartOnZ}}
+\index{cutPartOnZ@{cutPartOnZ}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{cutPartOnZ()}{cutPartOnZ()}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_a90a676b02c9b40fe8bfb6a8b962f09a5} 
+Double\+Path meshdef\+::\+Part\+::cut\+Part\+OnZ (\begin{DoxyParamCaption}\item[{const float \&}]{layer\+Hei}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structmeshdef_1_1_part_af01a3edf72c97676d2039304c6d6055c}\index{meshdef::Part@{meshdef::Part}!findNextIntersection@{findNextIntersection}}
+\index{findNextIntersection@{findNextIntersection}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{findNextIntersection()}{findNextIntersection()}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_af01a3edf72c97676d2039304c6d6055c} 
+void meshdef\+::\+Part\+::find\+Next\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmeshdef_1_1_face}{Face}} \texorpdfstring{$\ast$}{*}}]{face}{, }\item[{\mbox{\hyperlink{structmeshdef_1_1_clip_path_result}{Clip\+Path\+Result}} \&}]{clip\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{structmeshdef_1_1_part_a0f06b48440d8a65c2cd8722c378b9dfa}\index{meshdef::Part@{meshdef::Part}!tranformPart@{tranformPart}}
+\index{tranformPart@{tranformPart}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{tranformPart()}{tranformPart()}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_a0f06b48440d8a65c2cd8722c378b9dfa} 
+void meshdef\+::\+Part\+::tranform\+Part (\begin{DoxyParamCaption}\item[{const QMatrix4x4 \&}]{mat}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structmeshdef_1_1_part_a6f0587b58c6af225e1e5341c1cd7540e}\index{meshdef::Part@{meshdef::Part}!updateFaceInfo@{updateFaceInfo}}
+\index{updateFaceInfo@{updateFaceInfo}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{updateFaceInfo()}{updateFaceInfo()}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_a6f0587b58c6af225e1e5341c1cd7540e} 
+void meshdef\+::\+Part\+::update\+Face\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{v1}{, }\item[{\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{v2}{, }\item[{\mbox{\hyperlink{structmeshdef_1_1_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{v3}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private 
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structmeshdef_1_1_part_ae29b47478e34ee12e382d964965e2603}\index{meshdef::Part@{meshdef::Part}!\_edgeMap@{\_edgeMap}}
+\index{\_edgeMap@{\_edgeMap}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{\_edgeMap}{\_edgeMap}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_ae29b47478e34ee12e382d964965e2603} 
+QMap$<$QPair$<$long long, long long$>$, \mbox{\hyperlink{namespacemeshdef_a187db0ead7484e893b40c03d9f0e9dea}{Edge\+Ptr}}$>$ meshdef\+::\+Part\+::\+\_\+edge\+Map}
+
+\Hypertarget{structmeshdef_1_1_part_aa347bb2aeb9710e67da2d97270c385ba}\index{meshdef::Part@{meshdef::Part}!\_faceList@{\_faceList}}
+\index{\_faceList@{\_faceList}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{\_faceList}{\_faceList}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_aa347bb2aeb9710e67da2d97270c385ba} 
+QList$<$\mbox{\hyperlink{namespacemeshdef_ad7ee4450006f080892cc73269c431ea6}{Face\+Ptr}}$>$ meshdef\+::\+Part\+::\+\_\+face\+List}
+
+\Hypertarget{structmeshdef_1_1_part_a38f812f08ddde14ffe07fe37a480c559}\index{meshdef::Part@{meshdef::Part}!\_vertexList@{\_vertexList}}
+\index{\_vertexList@{\_vertexList}!meshdef::Part@{meshdef::Part}}
+\doxysubsubsection{\texorpdfstring{\_vertexList}{\_vertexList}}
+{\footnotesize\ttfamily \label{structmeshdef_1_1_part_a38f812f08ddde14ffe07fe37a480c559} 
+QList$<$\mbox{\hyperlink{namespacemeshdef_a2d55473c6fbf5769e366f445c52ef0ee}{Vertex\+Ptr}}$>$ meshdef\+::\+Part\+::\+\_\+vertex\+List}
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+Lattice\+Module/\mbox{\hyperlink{meshbase_8h}{meshbase.\+h}}\item 
+Lattice\+Module/\mbox{\hyperlink{meshbase_8cpp}{meshbase.\+cpp}}\end{DoxyCompactItemize}

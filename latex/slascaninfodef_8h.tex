@@ -1,0 +1,145 @@
+\doxysection{slascaninfodef.\+h 文件参考}
+\hypertarget{slascaninfodef_8h}{}\label{slascaninfodef_8h}\index{slascaninfodef.h@{slascaninfodef.h}}
+{\ttfamily \#include $<$QList$>$}\newline
+{\ttfamily \#include $<$QVector$>$}\newline
+{\ttfamily \#include $<$Qt\+Global$>$}\newline
+{\ttfamily \#include $<$QShared\+Pointer$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}}
+\item 
+struct \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r}{\+\_\+\+LINECOOR}}
+\item 
+struct \mbox{\hyperlink{struct_____h_a_t_c_h_i_n_g_l_i_n_e}{\+\_\+\+\_\+\+HATCHINGLINE}}
+\item 
+struct \mbox{\hyperlink{struct_r_e_f_l_i_n_e_i_n_f_o}{REFLINEINFO}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef QShared\+Pointer$<$ \mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}} $>$ \mbox{\hyperlink{slascaninfodef_8h_add0d3a9b36e056c85bb67d31ed0b011d}{EXPECTPTINFOPTR}}
+\item 
+typedef struct \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r}{\+\_\+\+LINECOOR}} \mbox{\hyperlink{slascaninfodef_8h_a8d583f77834e31136129ebb3824cca23}{LINECOOR}}
+\item 
+typedef QShared\+Pointer$<$ \mbox{\hyperlink{slascaninfodef_8h_a8d583f77834e31136129ebb3824cca23}{LINECOOR}} $>$ \mbox{\hyperlink{slascaninfodef_8h_ae14ac223dd7671ba882a1768c9af12a1}{LINECOORPTR}}
+\item 
+typedef struct \mbox{\hyperlink{struct_____h_a_t_c_h_i_n_g_l_i_n_e}{\+\_\+\+\_\+\+HATCHINGLINE}} \mbox{\hyperlink{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}{HATCHINGLINE}}
+\item 
+typedef QShared\+Pointer$<$ \mbox{\hyperlink{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}{HATCHINGLINE}} $>$ \mbox{\hyperlink{slascaninfodef_8h_aa60939cdc2ac34feb296a5b61eea640c}{HATCHINGLINEPTR}}
+\item 
+typedef QVector$<$ \mbox{\hyperlink{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}{HATCHINGLINE}} $>$ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838d}{INNERPERPARAMETERS}} \{ \newline
+\mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da800802b3d4d9c0145e91d49973140095}{LIMITTYPE\+\_\+\+SMALL2\+BIG}} = 0
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da08a622e013d8b3474a15601d6ed2f30a}{LIMITTYPE\+\_\+\+BIG2\+SMALL}}
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dacc6965ebcb4d1d0f7d842adcaf3f2c0f}{KMODE\+\_\+\+HORIZONTAL}}
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da8efcbd383e6f9d1ff2b1952394add212}{KMODE\+\_\+\+NORMAL}}
+, \newline
+\mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6e7b804412eb944541ee1b57321a7aad}{KMODE\+\_\+\+VERTICAL}}
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dab2bb281d39567f326f3d1d97f54fe3c4}{SORTTYPE\+\_\+X}}
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6890b39b06a1e18769666c62bf19b3c4}{SORTTYPE\+\_\+Y}}
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6fef226005924786c9975ee050f6ca22}{LINETYPE\+\_\+\+ORIGINAL}}
+, \newline
+\mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da391d4ef0f439bffbc77f808bfc5e475b}{LINETYPE\+\_\+\+SORTPATH\+\_\+\+NEAR}}
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da4db2d59ae0d50c2f1fbe1b223a0d9a59}{LINETYPE\+\_\+\+SORTPATH\+\_\+\+TRIANGLE}}
+, \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da0ca229083ea045b43e6e5eb91b2b93ae}{LINETYPE\+\_\+\+SORTPATH\+\_\+\+GREED}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{slascaninfodef_8h_add0d3a9b36e056c85bb67d31ed0b011d}\index{slascaninfodef.h@{slascaninfodef.h}!EXPECTPTINFOPTR@{EXPECTPTINFOPTR}}
+\index{EXPECTPTINFOPTR@{EXPECTPTINFOPTR}!slascaninfodef.h@{slascaninfodef.h}}
+\doxysubsubsection{\texorpdfstring{EXPECTPTINFOPTR}{EXPECTPTINFOPTR}}
+{\footnotesize\ttfamily \label{slascaninfodef_8h_add0d3a9b36e056c85bb67d31ed0b011d} 
+typedef QShared\+Pointer$<$\mbox{\hyperlink{struct_e_x_p_e_c_t_p_o_i_n_t_i_n_f_o}{EXPECTPOINTINFO}}$>$ \mbox{\hyperlink{slascaninfodef_8h_add0d3a9b36e056c85bb67d31ed0b011d}{EXPECTPTINFOPTR}}}
+
+\Hypertarget{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}\index{slascaninfodef.h@{slascaninfodef.h}!HATCHINGLINE@{HATCHINGLINE}}
+\index{HATCHINGLINE@{HATCHINGLINE}!slascaninfodef.h@{slascaninfodef.h}}
+\doxysubsubsection{\texorpdfstring{HATCHINGLINE}{HATCHINGLINE}}
+{\footnotesize\ttfamily \label{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca} 
+typedef struct \mbox{\hyperlink{struct_____h_a_t_c_h_i_n_g_l_i_n_e}{\+\_\+\+\_\+\+HATCHINGLINE}} \mbox{\hyperlink{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}{HATCHINGLINE}}}
+
+\Hypertarget{slascaninfodef_8h_aa60939cdc2ac34feb296a5b61eea640c}\index{slascaninfodef.h@{slascaninfodef.h}!HATCHINGLINEPTR@{HATCHINGLINEPTR}}
+\index{HATCHINGLINEPTR@{HATCHINGLINEPTR}!slascaninfodef.h@{slascaninfodef.h}}
+\doxysubsubsection{\texorpdfstring{HATCHINGLINEPTR}{HATCHINGLINEPTR}}
+{\footnotesize\ttfamily \label{slascaninfodef_8h_aa60939cdc2ac34feb296a5b61eea640c} 
+typedef QShared\+Pointer$<$\mbox{\hyperlink{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}{HATCHINGLINE}}$>$ \mbox{\hyperlink{slascaninfodef_8h_aa60939cdc2ac34feb296a5b61eea640c}{HATCHINGLINEPTR}}}
+
+\Hypertarget{slascaninfodef_8h_a8d583f77834e31136129ebb3824cca23}\index{slascaninfodef.h@{slascaninfodef.h}!LINECOOR@{LINECOOR}}
+\index{LINECOOR@{LINECOOR}!slascaninfodef.h@{slascaninfodef.h}}
+\doxysubsubsection{\texorpdfstring{LINECOOR}{LINECOOR}}
+{\footnotesize\ttfamily \label{slascaninfodef_8h_a8d583f77834e31136129ebb3824cca23} 
+typedef struct \mbox{\hyperlink{struct___l_i_n_e_c_o_o_r}{\+\_\+\+LINECOOR}} \mbox{\hyperlink{slascaninfodef_8h_a8d583f77834e31136129ebb3824cca23}{LINECOOR}}}
+
+\Hypertarget{slascaninfodef_8h_ae14ac223dd7671ba882a1768c9af12a1}\index{slascaninfodef.h@{slascaninfodef.h}!LINECOORPTR@{LINECOORPTR}}
+\index{LINECOORPTR@{LINECOORPTR}!slascaninfodef.h@{slascaninfodef.h}}
+\doxysubsubsection{\texorpdfstring{LINECOORPTR}{LINECOORPTR}}
+{\footnotesize\ttfamily \label{slascaninfodef_8h_ae14ac223dd7671ba882a1768c9af12a1} 
+typedef QShared\+Pointer$<$\mbox{\hyperlink{slascaninfodef_8h_a8d583f77834e31136129ebb3824cca23}{LINECOOR}}$>$ \mbox{\hyperlink{slascaninfodef_8h_ae14ac223dd7671ba882a1768c9af12a1}{LINECOORPTR}}}
+
+\Hypertarget{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}\index{slascaninfodef.h@{slascaninfodef.h}!TOTALHATCHINGLINE@{TOTALHATCHINGLINE}}
+\index{TOTALHATCHINGLINE@{TOTALHATCHINGLINE}!slascaninfodef.h@{slascaninfodef.h}}
+\doxysubsubsection{\texorpdfstring{TOTALHATCHINGLINE}{TOTALHATCHINGLINE}}
+{\footnotesize\ttfamily \label{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438} 
+typedef QVector$<$\mbox{\hyperlink{slascaninfodef_8h_a170cc3bb30d716f4fa0d8c2b15dc71ca}{HATCHINGLINE}}$>$ \mbox{\hyperlink{slascaninfodef_8h_a87cd46bd0dde23b6ad973000f1463438}{TOTALHATCHINGLINE}}}
+
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838d}\index{slascaninfodef.h@{slascaninfodef.h}!INNERPERPARAMETERS@{INNERPERPARAMETERS}}
+\index{INNERPERPARAMETERS@{INNERPERPARAMETERS}!slascaninfodef.h@{slascaninfodef.h}}
+\doxysubsubsection{\texorpdfstring{INNERPERPARAMETERS}{INNERPERPARAMETERS}}
+{\footnotesize\ttfamily \label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838d} 
+enum \mbox{\hyperlink{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838d}{INNERPERPARAMETERS}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIMITTYPE\_SMALL2BIG@{LIMITTYPE\_SMALL2BIG}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!LIMITTYPE\_SMALL2BIG@{LIMITTYPE\_SMALL2BIG}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da800802b3d4d9c0145e91d49973140095}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da800802b3d4d9c0145e91d49973140095} 
+LIMITTYPE\+\_\+\+SMALL2\+BIG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIMITTYPE\_BIG2SMALL@{LIMITTYPE\_BIG2SMALL}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!LIMITTYPE\_BIG2SMALL@{LIMITTYPE\_BIG2SMALL}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da08a622e013d8b3474a15601d6ed2f30a}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da08a622e013d8b3474a15601d6ed2f30a} 
+LIMITTYPE\+\_\+\+BIG2\+SMALL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KMODE\_HORIZONTAL@{KMODE\_HORIZONTAL}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!KMODE\_HORIZONTAL@{KMODE\_HORIZONTAL}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dacc6965ebcb4d1d0f7d842adcaf3f2c0f}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dacc6965ebcb4d1d0f7d842adcaf3f2c0f} 
+KMODE\+\_\+\+HORIZONTAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KMODE\_NORMAL@{KMODE\_NORMAL}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!KMODE\_NORMAL@{KMODE\_NORMAL}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da8efcbd383e6f9d1ff2b1952394add212}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da8efcbd383e6f9d1ff2b1952394add212} 
+KMODE\+\_\+\+NORMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KMODE\_VERTICAL@{KMODE\_VERTICAL}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!KMODE\_VERTICAL@{KMODE\_VERTICAL}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6e7b804412eb944541ee1b57321a7aad}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6e7b804412eb944541ee1b57321a7aad} 
+KMODE\+\_\+\+VERTICAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SORTTYPE\_X@{SORTTYPE\_X}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!SORTTYPE\_X@{SORTTYPE\_X}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dab2bb281d39567f326f3d1d97f54fe3c4}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838dab2bb281d39567f326f3d1d97f54fe3c4} 
+SORTTYPE\+\_\+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SORTTYPE\_Y@{SORTTYPE\_Y}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!SORTTYPE\_Y@{SORTTYPE\_Y}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6890b39b06a1e18769666c62bf19b3c4}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6890b39b06a1e18769666c62bf19b3c4} 
+SORTTYPE\+\_\+Y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LINETYPE\_ORIGINAL@{LINETYPE\_ORIGINAL}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!LINETYPE\_ORIGINAL@{LINETYPE\_ORIGINAL}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6fef226005924786c9975ee050f6ca22}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da6fef226005924786c9975ee050f6ca22} 
+LINETYPE\+\_\+\+ORIGINAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LINETYPE\_SORTPATH\_NEAR@{LINETYPE\_SORTPATH\_NEAR}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!LINETYPE\_SORTPATH\_NEAR@{LINETYPE\_SORTPATH\_NEAR}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da391d4ef0f439bffbc77f808bfc5e475b}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da391d4ef0f439bffbc77f808bfc5e475b} 
+LINETYPE\+\_\+\+SORTPATH\+\_\+\+NEAR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LINETYPE\_SORTPATH\_TRIANGLE@{LINETYPE\_SORTPATH\_TRIANGLE}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!LINETYPE\_SORTPATH\_TRIANGLE@{LINETYPE\_SORTPATH\_TRIANGLE}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da4db2d59ae0d50c2f1fbe1b223a0d9a59}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da4db2d59ae0d50c2f1fbe1b223a0d9a59} 
+LINETYPE\+\_\+\+SORTPATH\+\_\+\+TRIANGLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LINETYPE\_SORTPATH\_GREED@{LINETYPE\_SORTPATH\_GREED}!slascaninfodef.h@{slascaninfodef.h}}\index{slascaninfodef.h@{slascaninfodef.h}!LINETYPE\_SORTPATH\_GREED@{LINETYPE\_SORTPATH\_GREED}}}\Hypertarget{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da0ca229083ea045b43e6e5eb91b2b93ae}\label{slascaninfodef_8h_ada87dd01eaacc52b9760bf196f3d838da0ca229083ea045b43e6e5eb91b2b93ae} 
+LINETYPE\+\_\+\+SORTPATH\+\_\+\+GREED&\\
+\hline
+
+\end{DoxyEnumFields}

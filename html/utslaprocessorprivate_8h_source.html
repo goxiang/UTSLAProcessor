@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UTSLAProcessor: utslaprocessorprivate.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">UTSLAProcessor
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('utslaprocessorprivate_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">utslaprocessorprivate.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="utslaprocessorprivate_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef UTSLAPROCESSORPRIVATE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define UTSLAPROCESSORPRIVATE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="utslaprocessor_8h.html">utslaprocessor.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QFutureWatcher&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QSharedPointer&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QSemaphore&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QJsonArray&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="algorithmapplication_8h.html">algorithmapplication.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_lattice_layer_info.html">LatticeLayerInfo</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_writer_buffer_paras.html">WriterBufferParas</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="class_self_adaptive_module.html">SelfAdaptiveModule</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span><a class="code hl_class" href="class_lattice_interface.html">LatticeInterface</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span>QJsonParsing;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span><a class="code hl_class" href="class_file_writer.html">FileWriter</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">   20</a></span><span class="keyword">typedef</span> QSharedPointer&lt;FileWriter&gt; <a class="code hl_typedef" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="utslaprocessorprivate_8h.html#a89b1e6ca2f61de8325fc3a4b8e517d05">   21</a></span><span class="keyword">typedef</span> QSharedPointer&lt;AlgorithmApplication&gt; <a class="code hl_typedef" href="utslaprocessorprivate_8h.html#a89b1e6ca2f61de8325fc3a4b8e517d05">AlgrithmPtr</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html">   23</a></span><span class="keyword">class </span><a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a42e3e18cc51ecfb4fe1385654fe539fe">UTSLAProcessorPrivate</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a42e3e18cc51ecfb4fe1385654fe539fe">UTSLAProcessorPrivate</a>(<a class="code hl_class" href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a> *);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a973592f44164f63c46dd401195e0f508">processing</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> QJsonObject &amp;);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a84a5b7e6a21ff95215ecead0db3c968e">stopBuildProcessing</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a9a4695360a0fd9af8fe114d0df2f6f3c">loadParameters</a>(<span class="keyword">const</span> QString &amp;, <span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a136767835fb2725962b6d238856bc939">building</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#acbd1ac7a5b0b847913251c1906c178a2">buildProcessing</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a8b8ddb46eefb400f8d540167a740276e">partProcessing</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#ac57398b2dd4cf24b34dafee39b57e91a">readDatas</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a9adcce8c1dfff095b3e1d5d0d5ab82d5">calcLayerDatas</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <a class="code hl_typedef" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;, <a class="code hl_struct" href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a> &amp;);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a3cd6ce0d5de54aa5d416bf2b0b241d19">readLayerDatas</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <a class="code hl_typedef" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;, <a class="code hl_struct" href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a> &amp;);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a5df5e72ef017efc546303f112715d5ff">getPreLayerHei</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a5fbe0429325d15d300f3708b3d0a5447">getNextLayerHei</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#ad7fb93c9f5dc3558aefed35fc1508e00">updateLayerSplicingInfo</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#ada1f0a79c0c09079e1329425db719147">parsingDatas</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, QList&lt;AREAINFOPTR&gt; &amp;);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a6ef2dc274d39855958998f965c0d975d">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a6ef2dc274d39855958998f965c0d975d">updateProgress</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a6ef2dc274d39855958998f965c0d975d">updateProgress</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a9734ab13f7fe584988ecc1119465aabc">createJsonResult</a>(QJsonObject &amp;);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#afcd5ec189903193eb9f37400c32f9ff2">createJsonResultWithCompress</a>(QJsonObject &amp;);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a3e294c1f92f0c3652b757e19ae1a185e">createJobFileResult</a>(QJsonObject &amp;);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#aaf145af44406c4020bd603db1040d101">loadExportParameters</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#ac998355b32ae504da47cc21e353a9b26">calcSLMScale</a>(QList&lt;AREAINFOPTR&gt; &amp;);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#aca791cb383f324b607216908e612f48b">createFileWriter</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <a class="code hl_typedef" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#aca791cb383f324b607216908e612f48b">createFileWriter</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, <span class="keyword">const</span> QString &amp;, <a class="code hl_typedef" href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a> &amp;);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a36f66947c693c2fc2ac80dede4994047">initializeLattice</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_t_s_l_a_processor_private.html#a3e9497b1624393ae7f31233586860827">createLattice</a>(Paths &amp;, <span class="keyword">const</span> Paths &amp;, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;, Paths &amp;, <a class="code hl_struct" href="struct_lattice_layer_info.html">LatticeLayerInfo</a> &amp;);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#aa99af7976873dfad34d605ab8c3fb96b">   63</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="class_u_t_s_l_a_processor_private.html#aa99af7976873dfad34d605ab8c3fb96b">DividerProcessor</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    Q_DECLARE_PUBLIC(<a class="code hl_class" href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a>)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#aa839e815c12558f700bf697afa585899">   65</a></span>    <a class="code hl_class" href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a> * const <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#aa839e815c12558f700bf697afa585899">q_ptr</a> = <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a3189fc5af5627964dd62c5e61cef9239">   67</a></span>    QString <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#a3189fc5af5627964dd62c5e61cef9239">strBPPName</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#ac95b8cf666b6c5ecd45ac977bd1f5759">   68</a></span>    QFutureWatcher&lt;<span class="keywordtype">void</span>&gt; <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#ac95b8cf666b6c5ecd45ac977bd1f5759">futureWatcher</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#af805f6fb804786f598ec3dfe99578d86">   70</a></span>    QSharedPointer&lt;<a class="code hl_class" href="class_self_adaptive_module.html">SelfAdaptiveModule</a>&gt; <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#af805f6fb804786f598ec3dfe99578d86">_selfAdaptiveModule</a> = <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#aa32de06a2d734e0e9de048c4f14a7ffc">   71</a></span>    QSharedPointer&lt;<a class="code hl_struct" href="struct_writer_buffer_paras.html">WriterBufferParas</a>&gt; <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#aa32de06a2d734e0e9de048c4f14a7ffc">_writerBufferParas</a> = <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#ab139396957d882816ffc0d24fea64c04">   72</a></span>    QSharedPointer&lt;<a class="code hl_class" href="class_lattice_interface.html">LatticeInterface</a>&gt; <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#ab139396957d882816ffc0d24fea64c04">_latticeInfPtr</a> = <span class="keywordtype">nullptr</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a836ae48837ff41939a08fc31fce45684">   74</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#a836ae48837ff41939a08fc31fce45684">_progressPos</a> = -1;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#af76fea8eef93b12fe1386c83ec42bc22">   75</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#af76fea8eef93b12fe1386c83ec42bc22">fProcessing</a> = 0.0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a8bfe84a944f299cb27d99c4e34eabe97">   76</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#a8bfe84a944f299cb27d99c4e34eabe97">fSinglePartRatio</a> = 1.0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a73e6b92cbd22028b7615f3dcdd8dd1a9">   77</a></span>    QJsonArray <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#a73e6b92cbd22028b7615f3dcdd8dd1a9">objZipDescFile</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a399cd4bc7462ed99aac5eb0ebc207450">   79</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#a399cd4bc7462ed99aac5eb0ebc207450">nExportFileMode</a> = <a class="code hl_enumvalue" href="publicheader_8h.html#a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c">EXPORT_NORMAL</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a039840ee45d05cb679d6f82e900d61f7">   80</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#a039840ee45d05cb679d6f82e900d61f7">fScaleX</a> = 1.0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#a57c12befd18d4e256baaa91d4b6780e9">   81</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#a57c12befd18d4e256baaa91d4b6780e9">fScaleY</a> = 1.0;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_u_t_s_l_a_processor_private.html#abc725cd95cac906b9a239f58a464e29f">   82</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_u_t_s_l_a_processor_private.html#abc725cd95cac906b9a239f58a464e29f">_threadCount</a> = 1;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif </span><span class="comment">// UTSLAPROCESSORPRIVATE_H</span></div>
+<div class="ttc" id="aalgorithmapplication_8h_html"><div class="ttname"><a href="algorithmapplication_8h.html">algorithmapplication.h</a></div></div>
+<div class="ttc" id="aclass_file_writer_html"><div class="ttname"><a href="class_file_writer.html">FileWriter</a></div><div class="ttdef"><b>定义</b> uspfilewriter.h:15</div></div>
+<div class="ttc" id="aclass_lattice_interface_html"><div class="ttname"><a href="class_lattice_interface.html">LatticeInterface</a></div><div class="ttdef"><b>定义</b> latticeinterface.h:13</div></div>
+<div class="ttc" id="aclass_self_adaptive_module_html"><div class="ttname"><a href="class_self_adaptive_module.html">SelfAdaptiveModule</a></div><div class="ttdef"><b>定义</b> selfadaptivemodule.h:7</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_html"><div class="ttname"><a href="class_u_t_s_l_a_processor.html">UTSLAProcessor</a></div><div class="ttdef"><b>定义</b> utslaprocessor.h:28</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a039840ee45d05cb679d6f82e900d61f7"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a039840ee45d05cb679d6f82e900d61f7">UTSLAProcessorPrivate::fScaleX</a></div><div class="ttdeci">double fScaleX</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:80</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a136767835fb2725962b6d238856bc939"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a136767835fb2725962b6d238856bc939">UTSLAProcessorPrivate::building</a></div><div class="ttdeci">void building(const int &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:117</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a3189fc5af5627964dd62c5e61cef9239"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a3189fc5af5627964dd62c5e61cef9239">UTSLAProcessorPrivate::strBPPName</a></div><div class="ttdeci">QString strBPPName</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:67</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a36f66947c693c2fc2ac80dede4994047"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a36f66947c693c2fc2ac80dede4994047">UTSLAProcessorPrivate::initializeLattice</a></div><div class="ttdeci">void initializeLattice()</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:893</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a399cd4bc7462ed99aac5eb0ebc207450"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a399cd4bc7462ed99aac5eb0ebc207450">UTSLAProcessorPrivate::nExportFileMode</a></div><div class="ttdeci">int nExportFileMode</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:79</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a3cd6ce0d5de54aa5d416bf2b0b241d19"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a3cd6ce0d5de54aa5d416bf2b0b241d19">UTSLAProcessorPrivate::readLayerDatas</a></div><div class="ttdeci">void readLayerDatas(const int &amp;, const int &amp;, const USPFileWriterPtr &amp;, SOLIDPATH &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:396</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a3e294c1f92f0c3652b757e19ae1a185e"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a3e294c1f92f0c3652b757e19ae1a185e">UTSLAProcessorPrivate::createJobFileResult</a></div><div class="ttdeci">void createJobFileResult(QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:708</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a3e9497b1624393ae7f31233586860827"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a3e9497b1624393ae7f31233586860827">UTSLAProcessorPrivate::createLattice</a></div><div class="ttdeci">void createLattice(Paths &amp;, const Paths &amp;, const int &amp;, Paths &amp;, LatticeLayerInfo &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:902</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a42e3e18cc51ecfb4fe1385654fe539fe"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a42e3e18cc51ecfb4fe1385654fe539fe">UTSLAProcessorPrivate::UTSLAProcessorPrivate</a></div><div class="ttdeci">UTSLAProcessorPrivate(UTSLAProcessor *)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:23</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a57c12befd18d4e256baaa91d4b6780e9"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a57c12befd18d4e256baaa91d4b6780e9">UTSLAProcessorPrivate::fScaleY</a></div><div class="ttdeci">double fScaleY</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:81</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a5df5e72ef017efc546303f112715d5ff"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a5df5e72ef017efc546303f112715d5ff">UTSLAProcessorPrivate::getPreLayerHei</a></div><div class="ttdeci">int getPreLayerHei(const int &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:532</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a5fbe0429325d15d300f3708b3d0a5447"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a5fbe0429325d15d300f3708b3d0a5447">UTSLAProcessorPrivate::getNextLayerHei</a></div><div class="ttdeci">int getNextLayerHei(const int &amp;, const int &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:544</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a6ef2dc274d39855958998f965c0d975d"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a6ef2dc274d39855958998f965c0d975d">UTSLAProcessorPrivate::updateProgress</a></div><div class="ttdeci">void updateProgress()</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a73e6b92cbd22028b7615f3dcdd8dd1a9"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a73e6b92cbd22028b7615f3dcdd8dd1a9">UTSLAProcessorPrivate::objZipDescFile</a></div><div class="ttdeci">QJsonArray objZipDescFile</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:77</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a836ae48837ff41939a08fc31fce45684"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a836ae48837ff41939a08fc31fce45684">UTSLAProcessorPrivate::_progressPos</a></div><div class="ttdeci">int _progressPos</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:74</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a84a5b7e6a21ff95215ecead0db3c968e"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a84a5b7e6a21ff95215ecead0db3c968e">UTSLAProcessorPrivate::stopBuildProcessing</a></div><div class="ttdeci">void stopBuildProcessing()</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:82</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a8b8ddb46eefb400f8d540167a740276e"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a8b8ddb46eefb400f8d540167a740276e">UTSLAProcessorPrivate::partProcessing</a></div><div class="ttdeci">void partProcessing(const int &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:131</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a8bfe84a944f299cb27d99c4e34eabe97"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a8bfe84a944f299cb27d99c4e34eabe97">UTSLAProcessorPrivate::fSinglePartRatio</a></div><div class="ttdeci">double fSinglePartRatio</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:76</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a9734ab13f7fe584988ecc1119465aabc"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a9734ab13f7fe584988ecc1119465aabc">UTSLAProcessorPrivate::createJsonResult</a></div><div class="ttdeci">void createJsonResult(QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:650</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a973592f44164f63c46dd401195e0f508"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a973592f44164f63c46dd401195e0f508">UTSLAProcessorPrivate::processing</a></div><div class="ttdeci">void processing(const int &amp;, const int &amp;, const QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:32</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a9a4695360a0fd9af8fe114d0df2f6f3c"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a9a4695360a0fd9af8fe114d0df2f6f3c">UTSLAProcessorPrivate::loadParameters</a></div><div class="ttdeci">bool loadParameters(const QString &amp;, const QString &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:87</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_a9adcce8c1dfff095b3e1d5d0d5ab82d5"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#a9adcce8c1dfff095b3e1d5d0d5ab82d5">UTSLAProcessorPrivate::calcLayerDatas</a></div><div class="ttdeci">void calcLayerDatas(const int &amp;, const int &amp;, const int &amp;, const USPFileWriterPtr &amp;, SOLIDPATH &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:299</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_aa32de06a2d734e0e9de048c4f14a7ffc"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#aa32de06a2d734e0e9de048c4f14a7ffc">UTSLAProcessorPrivate::_writerBufferParas</a></div><div class="ttdeci">QSharedPointer&lt; WriterBufferParas &gt; _writerBufferParas</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:71</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_aa839e815c12558f700bf697afa585899"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#aa839e815c12558f700bf697afa585899">UTSLAProcessorPrivate::q_ptr</a></div><div class="ttdeci">UTSLAProcessor *const q_ptr</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:65</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_aa99af7976873dfad34d605ab8c3fb96b"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#aa99af7976873dfad34d605ab8c3fb96b">UTSLAProcessorPrivate::DividerProcessor</a></div><div class="ttdeci">friend class DividerProcessor</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:63</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_aaf145af44406c4020bd603db1040d101"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#aaf145af44406c4020bd603db1040d101">UTSLAProcessorPrivate::loadExportParameters</a></div><div class="ttdeci">void loadExportParameters()</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:762</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_ab139396957d882816ffc0d24fea64c04"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#ab139396957d882816ffc0d24fea64c04">UTSLAProcessorPrivate::_latticeInfPtr</a></div><div class="ttdeci">QSharedPointer&lt; LatticeInterface &gt; _latticeInfPtr</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:72</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_abc725cd95cac906b9a239f58a464e29f"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#abc725cd95cac906b9a239f58a464e29f">UTSLAProcessorPrivate::_threadCount</a></div><div class="ttdeci">int _threadCount</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:82</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_ac57398b2dd4cf24b34dafee39b57e91a"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#ac57398b2dd4cf24b34dafee39b57e91a">UTSLAProcessorPrivate::readDatas</a></div><div class="ttdeci">void readDatas(const int &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:290</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_ac95b8cf666b6c5ecd45ac977bd1f5759"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#ac95b8cf666b6c5ecd45ac977bd1f5759">UTSLAProcessorPrivate::futureWatcher</a></div><div class="ttdeci">QFutureWatcher&lt; void &gt; futureWatcher</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:68</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_ac998355b32ae504da47cc21e353a9b26"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#ac998355b32ae504da47cc21e353a9b26">UTSLAProcessorPrivate::calcSLMScale</a></div><div class="ttdeci">void calcSLMScale(QList&lt; AREAINFOPTR &gt; &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:787</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_aca791cb383f324b607216908e612f48b"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#aca791cb383f324b607216908e612f48b">UTSLAProcessorPrivate::createFileWriter</a></div><div class="ttdeci">bool createFileWriter(const int &amp;, USPFileWriterPtr &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:803</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_acbd1ac7a5b0b847913251c1906c178a2"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#acbd1ac7a5b0b847913251c1906c178a2">UTSLAProcessorPrivate::buildProcessing</a></div><div class="ttdeci">void buildProcessing()</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:266</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_ad7fb93c9f5dc3558aefed35fc1508e00"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#ad7fb93c9f5dc3558aefed35fc1508e00">UTSLAProcessorPrivate::updateLayerSplicingInfo</a></div><div class="ttdeci">void updateLayerSplicingInfo()</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:556</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_ada1f0a79c0c09079e1329425db719147"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#ada1f0a79c0c09079e1329425db719147">UTSLAProcessorPrivate::parsingDatas</a></div><div class="ttdeci">void parsingDatas(const int &amp;, QList&lt; AREAINFOPTR &gt; &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:582</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_af76fea8eef93b12fe1386c83ec42bc22"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#af76fea8eef93b12fe1386c83ec42bc22">UTSLAProcessorPrivate::fProcessing</a></div><div class="ttdeci">double fProcessing</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:75</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_af805f6fb804786f598ec3dfe99578d86"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#af805f6fb804786f598ec3dfe99578d86">UTSLAProcessorPrivate::_selfAdaptiveModule</a></div><div class="ttdeci">QSharedPointer&lt; SelfAdaptiveModule &gt; _selfAdaptiveModule</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:70</div></div>
+<div class="ttc" id="aclass_u_t_s_l_a_processor_private_html_afcd5ec189903193eb9f37400c32f9ff2"><div class="ttname"><a href="class_u_t_s_l_a_processor_private.html#afcd5ec189903193eb9f37400c32f9ff2">UTSLAProcessorPrivate::createJsonResultWithCompress</a></div><div class="ttdeci">void createJsonResultWithCompress(QJsonObject &amp;)</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.cpp:672</div></div>
+<div class="ttc" id="apublicheader_8h_html_a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c"><div class="ttname"><a href="publicheader_8h.html#a6154167c92de0db2d2cb4ed2e0fe6263a5c3ce4617ca3fb28239f02d708958a0c">EXPORT_NORMAL</a></div><div class="ttdeci">@ EXPORT_NORMAL</div><div class="ttdef"><b>定义</b> publicheader.h:7</div></div>
+<div class="ttc" id="astruct_lattice_layer_info_html"><div class="ttname"><a href="struct_lattice_layer_info.html">LatticeLayerInfo</a></div><div class="ttdef"><b>定义</b> latticeinterface.h:48</div></div>
+<div class="ttc" id="astruct_s_o_l_i_d_p_a_t_h_html"><div class="ttname"><a href="struct_s_o_l_i_d_p_a_t_h.html">SOLIDPATH</a></div><div class="ttdef"><b>定义</b> publicheader.h:204</div></div>
+<div class="ttc" id="astruct_writer_buffer_paras_html"><div class="ttname"><a href="struct_writer_buffer_paras.html">WriterBufferParas</a></div><div class="ttdef"><b>定义</b> publicheader.h:62</div></div>
+<div class="ttc" id="autslaprocessor_8h_html"><div class="ttname"><a href="utslaprocessor_8h.html">utslaprocessor.h</a></div></div>
+<div class="ttc" id="autslaprocessorprivate_8h_html_a85b812d9cc6fd373702254d2f774bc11"><div class="ttname"><a href="utslaprocessorprivate_8h.html#a85b812d9cc6fd373702254d2f774bc11">USPFileWriterPtr</a></div><div class="ttdeci">QSharedPointer&lt; FileWriter &gt; USPFileWriterPtr</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:20</div></div>
+<div class="ttc" id="autslaprocessorprivate_8h_html_a89b1e6ca2f61de8325fc3a4b8e517d05"><div class="ttname"><a href="utslaprocessorprivate_8h.html#a89b1e6ca2f61de8325fc3a4b8e517d05">AlgrithmPtr</a></div><div class="ttdeci">QSharedPointer&lt; AlgorithmApplication &gt; AlgrithmPtr</div><div class="ttdef"><b>定义</b> utslaprocessorprivate.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="utslaprocessorprivate_8h.html">utslaprocessorprivate.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

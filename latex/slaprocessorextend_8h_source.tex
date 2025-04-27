@@ -1,0 +1,49 @@
+\doxysection{slaprocessorextend.\+h}
+\hypertarget{slaprocessorextend_8h_source}{}\label{slaprocessorextend_8h_source}\mbox{\hyperlink{slaprocessorextend_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SLAPROCESSOREXTEND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SLAPROCESSOREXTEND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_t_s_l_a_processor__global_8h}{UTSLAProcessor\_global.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_l_a_processor_extend_af10381625cfa1df033ca0ca5f0cbe3bd}{SLAProcessorExtend}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_s_l_a_processor_extend_af10381625cfa1df033ca0ca5f0cbe3bd}{SLAProcessorExtend}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_s_l_a_processor_extend_ac9eaf2a0a6ca4fbf5582a1d788846ae7}{\string~SLAProcessorExtend}}();}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#ifdef\ USE\_PROCESSOR\_EXTEND}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ setCallbackFun(funDrawLine\ \&\&,\ funDrawColorLine\ \&\&);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ setCallbackFun(funClearCanvas\ \&\&);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ drawLines(\textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ drawLines(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ drawLines(\textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ quint8\ \&r,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ quint8\ \&g,\ \textcolor{keyword}{const}\ quint8\ \&b);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ drawLines(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&x1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&y1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&x2,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&y2,\ \textcolor{keyword}{const}\ quint8\ \&r,\ \textcolor{keyword}{const}\ quint8\ \&g,\ \textcolor{keyword}{const}\ quint8\ \&b);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ setPenColor(\textcolor{keyword}{const}\ quint8\ \&r,\ \textcolor{keyword}{const}\ quint8\ \&g,\ \textcolor{keyword}{const}\ quint8\ \&b);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ drawMark(\textcolor{keyword}{const}\ qint64\ \&,\ \textcolor{keyword}{const}\ qint64\ \&);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ drawMark(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&x1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&y1);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ clearCanvas(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ funDrawLine\ funDraw\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00037\ \ \ \ \ funDrawColorLine\ funDrawColor\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00038\ \ \ \ \ funClearCanvas\ funClear\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ nLastX\ =\ 0.0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ nLastY\ =\ 0.0;}
+\DoxyCodeLine{00042\ \ \ \ \ quint8\ nR\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \ \ quint8\ nG\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ quint8\ nB\ =\ 0;}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SLAPROCESSOREXTEND\_H}}
+
+\end{DoxyCode}
